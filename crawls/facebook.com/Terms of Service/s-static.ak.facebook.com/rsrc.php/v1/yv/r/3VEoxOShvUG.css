@@ -1,0 +1,20 @@
+/*1320118119,169775558*/
+
+.fbHelpDivider{font-size: 13px;line-height:14px;padding-top:10px;padding-bottom:10px;position:relative;width:300px}
+.fbHelpDivider .line{background-color:gray;height:1px;width:100%}
+.fbHelpDivider .textbox{position:absolute;text-align:center;top:0;width:100%
+}
+.fbHelpDivider .text{background:#fff;padding:0 12px}
+.help_identify .profile_card_image{margin-top:3px}
+.help_identify #identify_email{margin-bottom:3px;width:255px}
+.help_identify #identify_profile_url{margin-bottom:3px;width:255px}
+.help_identify #identify_friends_name{margin-bottom:3px;width:255px}
+.help_identify #identify_your_name{margin-bottom:3px;width:255px}
+.help_identify .identify_yourself_dialog_box{margin-left:auto;margin-right:auto}
+.help_identify .identify_yourself_subtitle{display:block;margin-bottom:2px}
+.help_identify .identify_yourself_block{margin-left:auto;margin-right:auto;width:330px}
+.help_identify #identify_yourself_error{margin-top:5px}
+.contextualBlind{background-color:#fff;opacity:.8;position:absolute;z-index:110}
+.contextualBlindContext{position:absolute;z-index:110;background-color:#fff;opacity:0}
+
+#bootloader_fTqf5 { height: 42px; }

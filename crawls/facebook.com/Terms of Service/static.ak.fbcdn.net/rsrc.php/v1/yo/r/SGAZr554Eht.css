@@ -1,0 +1,124 @@
+/*1320876856,169775557*/
+
+div.experienceAttachment{border-left:2px solid #ccc;float:none}
+div.experienceAttachment .img{margin-top:1px}
+.uiStreamStory .uiPhotoThumb img{max-width:121px}
+.uiStreamStory .largePhoto img{max-width:300px}
+.uiStream .uiStreamHeader{background-color:#e9e9e9;border-top:1px solid #ccc;height:1px;margin:20px 0 5px -18px;padding:0;position:relative}
+.uiStream .uiStreamHeaderCollapsed .uiStreamHeaderChronologicalForm,.uiStream .uiStreamHeader .uiStreamHeaderText{background-color:#fff;left:0;padding-right:2px;position:absolute}
+.uiStream .uiStreamHeader .uiStreamHeaderText{color:gray;margin-left:68px;top:-6px}
+.uiStream .uiStreamHeaderCollapsed .uiStreamHeaderChronologicalForm{left:auto;right:35px;top:-7px}
+.uiStream li.uiStreamHeaderTall{border-top:1px solid #ccc;border-bottom:1px solid #e9e9e9;margin:20px 0 6px -18px;padding:7px 0 9px 0;position:relative}
+.uiStream .uiStreamHeaderTall .uiStreamHeaderBorder{background-color:#e9e9e9;height:1px;position:absolute;top:0;width:100%}
+.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton .uiButtonText,.uiStream .uiStreamHeaderTall .uiStreamHeaderText{color:gray}
+.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton .uiButtonText{font-size: 9px;font-weight:bold}
+.ff3.win .uiStreamHeaderChronologicalForm .uiButton{line-height:14px}
+.ff3.mac .uiStreamHeaderChronologicalForm .uiButton{line-height:12px}
+.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:hover .uiButtonText{text-decoration:underline}
+.uiStream .uiStreamHeaderTall .uiStreamHeaderTextRight{color:#6d84b4}
+.uiStream .uiStreamHeaderTall .uiStreamHeaderTextLeft{margin-left:8px;margin-top:2px}
+.uiStream .uiStreamHeaderTall .uiStreamHeaderChronologicalForm{color:gray;float:right;margin-top:2px}
+.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton,.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:active,.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:focus,.uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm .uiSelectorButton:hover{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:right -343px;background-color:transparent;border:none;-moz-box-shadow:none;-moz-box-shadow:none;padding:0 9px 0 3px;margin:-1px 2px 0 2px}
+.uiStream .uiStreamHeaderCollapsed .uiStreamHeaderText,.uiStream .uiStreamHeaderHideLink .uiStreamHeaderLink{display:none}
+.uiStream .uiStreamHeaderCollapsed.uiStreamHeaderTall{border-bottom:none;padding:0}
+.uiStream .uiStreamHeaderLink{margin-top:2px}
+.uiStream .uiStreamHeaderLink img{top:2px !important}
+.uiStreamHeaderChronologicalFormNux{background-color:#f6f6f6;border-top:1px solid #ddd;margin-bottom:-4px;margin-top:4px;max-width:300px;padding:10px}
+.uiStreamHeaderChronologicalFormNuxRed{color:#cf5f35}
+.uiStreamHeaderChronologicalForm .uiStreamHeaderChronologicalFormNux .uiCloseButton{float:right;margin:-5px -5px 0 0}
+.uiSelector .openToggler .uiStreamHeaderChronologicalFormNux .uiCloseButtonSmall{background-position:left 0}
+.uiSelector .openToggler .uiStreamHeaderChronologicalFormNux .uiCloseButtonSmall:hover,.uiSelector .openToggler .uiStreamHeaderChronologicalFormNux .uiCloseButtonSmall:focus{background-position:left -24px}
+.uiSelector .openToggler .uiStreamHeaderChronologicalFormNux .uiCloseButtonSmall:active{background-position:left -36px}
+.uiStreamMinistoryGroup{padding:10px 0 11px 60px}
+.uiStreamMinistoryGroup .uiStreamStory{padding-top:1px}
+.uiStreamMinistoryGroup .header{color:#aaa;padding:2px 0 8px}
+.uiStreamMinistoryGroup .uiStreamStory .ministoryMessage{color:#333}
+.uiStreamMinistoryGroup .uiStreamStory .ministoryInlineMessage{display:inline}
+.uiStreamMinistoryGroup .showSimilar{display:block;margin:0 2px 8px 22px}
+.uiStreamMinistoryGroup .showSimilarAjax{display:block;margin:2px 2px 0 22px}
+.uiStreamMinistoryGroup .ministoryUfi{margin-bottom:6px}
+div.uiAttachmentPhotoBox .uiMediaThumb,
+div.uiAttachmentPhotoBox div.horizontalSplitContainer{display:inline-block;float:left}
+div.uiAttachmentPhotoBox .uiMediaThumb{padding:2px}
+div.uiAttachmentPhotoBox .beforeHorizontalSplit{margin-right:3px}
+div.uiAttachmentPhotoBox .beforeVerticalSplit{margin-bottom:3px}
+.pymkAttachment .uiListItem{margin-top:2px}
+.pymkAttachment{display:inline;outline:none}
+.pymkAttachmentGridBox{outline:none}
+.pymkAttachmentGridBox .pymkAttachment{display:table-cell}
+.pymkAttachmentGridBox .uiProfilePhotoLarge{height:40px;width:40px}
+.pymkAttachmentWithBorder{border-bottom:1px solid #e9e9e9;padding-bottom:15px}
+.pymkAttachmentGridBox .pymkAttachment .uiListItem{margin-top:0}
+.uiStream .uiStreamMessage{color:#000;font-size: 11px;font-weight:normal;margin:0 0 5px 0}
+.Locale_zh_CN .uiStream .uiStreamMessage,.Locale_zh_TW .uiStream .uiStreamMessage,.Locale_zh_HK .uiStream .uiStreamMessage{font-size: 13px}
+.Locale_ja_JP .uiStream .uiStreamMessage{font-size: 12px}
+.uiStreamMessage,.uiAttachmentTitle,.uiAttachmentDesc{word-wrap:break-word}
+.uiStreamMessage .actorDescription{padding-bottom:3px}
+.uiStreamMessage .suggestionBio .actorDescription{padding-bottom:0}
+.uiStreamMessage .suggestionBio{width:410px}
+.fbStreamPrivacy .lock{bottom:-2px;margin-bottom:-5px;position:relative;vertical-align:top}
+div.uiAttachmentTitle{color:#333}
+.uiStreamStory{padding-right:35px;zoom:1}
+.uiStream .uiStreamHide{float:right;margin:-2px -35px 0 0}
+.uiStream .substoryHideSelector{float:right;margin:-2px 0 0 0}
+.uiStreamHide .uiSelectorButton,a.uiCloseButton.uiStreamHide,.uiStream .uiStreamStory:hover .uiStreamSubstory .uiStreamHide .uiSelectorButton{left:-9999px;position:absolute}
+.uiStream .uiStreamStory:hover .uiStreamHide .uiSelectorButton,.uiStream .uiStreamStory:hover a.uiCloseButton.uiStreamHide,.uiStream .uiStreamStory .uiStreamSubstory:hover .uiStreamHide .uiSelectorButton,.uiStream .uiStreamStory .uiStreamHide .openToggler .uiSelectorButton,.uiStream .uiStreamStory:hover .uiStreamSubstory .uiStreamHide .openToggler .uiSelectorButton{left:auto;position:relative}
+.uiStream .uiAttachmentDesc,.uiStream .uiStreamPassive,.uiStream .uiAdminAttribution{color:gray}
+.uiStream .tagIcon{vertical-align:bottom}
+.uiStream .text_exposed_link{display:block;padding-top:4px;font-size: 11px}
+.uiStream .uiStreamStoryHide .storyContent{display:none}
+.uiStreamAttachments .external img{max-height:90px;max-width:90px}
+.uiStream .uiAttachmentDetails{color:#333}
+.uiAttachmentInline .uiAttachmentTitle,.uiAttachmentInline .uiAttachmentDesc{display:inline}
+.uiStreamMessage .actorName,.uiStreamMessage .passiveName{font-weight:bold}
+.uiStreamMessage .wallArrowIcon{background-image:url(../../yU/r/DpIr-7bdqXs.png);background-repeat:no-repeat;background-position:-85px -27px;height:9px;margin:0 5px;width:11px}
+.uiStreamMessage .readButton{float:right}
+.uiAttachmentNoMedia{border-left:2px solid #ccc}
+.uiAttachmentMedia{float:left}
+.uiStreamAttachments .exploded .UIImageBlock_Image{margin-right:0}
+.uiStreamAttachments .exploded .UIImageBlock_Content,.uiStreamAttachments .text_exposed .truncatedMediaInfo{clear:both;display:block;padding-left:0;width:auto}
+.uiStreamAttachments .truncatedMediaItem{display:none}
+.uiStreamAttachments .text_exposed .truncatedMediaItem{display:block}
+.uiStreamAttachments .truncatedMediaInfo{display:table;zoom:1}
+.uiStreamPrivacyContainer{color:#999}
+.uiStreamCollapsed{border-top:1px solid #eee}
+.uiStreamSubstories li.showAll{line-height:15px;padding:8px 0 0}
+.uiStreamSubstories li.showAll a{color:#6d84b4}
+.uiStreamSubstories .unseenItem{border-left:2px solid #a8b2ce;margin-left:-4px;padding-left:2px}
+.uiStreamSubstories .uiUfi{width:358px}
+.uiStream .uiStreamSeparator{background-color:#e9e9e9;border:0;height:7px;margin:6px 0;padding:0;text-align:center}
+.uiStream .uiStreamSeparatorText{background-color:#fff;padding:0 5px;position:relative;top:-4px}
+.uiStream .suppressBorder{border-top:0}
+.uiStreamFooter,.uiStreamSource,.uiStreamAdditionalLogging{color:#999}
+.uiStreamFooter a{color:#6d84b4}
+.uiStreamSource a{color:#999}
+.uiStreamActionFooter .UIActionLinks_bottom a{color:#3b5998}
+.uiStreamNub{border-bottom:1px solid #c2cbe1;margin-top:2px}
+.uiStreamStoryOverlayContainer{z-index:3 !important}
+.uiStreamStoryOverlayContainer .uiContextualDialogContent{padding:7px 7px 7px 10px}
+.uiStream .uiStreamNoBorderStory{border-width:0}
+.uiStreamBoulderStyleAgg .uiStreamAttachments .external{display:block;margin:0;padding-bottom:5px;padding-right:10px}
+.uiStreamBoulderStyleAgg .uiStreamAttachments .external img{max-height:100px;max-width:120px}
+.uiStreamInlineTextarea{height:13px;width:98%}
+.uiStream .uiStreamBoulderStyle{margin-left:-18px;padding:12px 35px 14px 18px;position:relative}
+.uiStreamBoulderStyleAgg .substoryActorPic img,.uiStreamBoulderStyleAgg .uiStreamInlineAction .inlineActionInputPic{height:40px;width:40px}
+.uiStreamBoulderStyleAgg .storyContent{padding-bottom:2px}
+.uiStream .uiStreamFirstStory{border-top:0}
+.uiStreamBoulderStyleAgg .storyInnerContent .mainWrapper{margin-top:0}
+.uiStreamBoulderStyleAgg .uiStreamSubstories{border-top:1px solid #e5e5e5;padding-top:5px}
+.uiStreamBoulderStyle .uiStreamSubstories .uiUfi{width:350px}
+.uiStreamBoulderStyleAgg .uiStreamSubstories .uiStreamShowAll{border-bottom:0;text-align:left}
+.uiStreamBoulderStyleAgg .uiStreamSubstories .uiStreamShowAll span{font-weight:normal}
+.uiStreamBoulderStyleAgg .uiStreamSubstory{margin:0;padding:3px 0}
+.uiStreamBoulderStyleAgg .inlineSubstory .uiStreamSubstory{border-bottom:1px solid #e5e5e5;padding-bottom:10px}
+.uiStream .uiStreamAllowTopBorder:first-child{border-top-width:1px}
+.uiStream .uiStreamBoulderStyle .highlightSelector{margin:-14px -25px 0 0}
+.uiStream .uiStreamFirstStory .highlightSelector{margin-top:-20px}
+.uiStream .uiStreamBoulderStyle .substoryHideSelector{margin:-2px 0 0}
+.uiStream .uiStreamBoulderStyle .highlightSelector .uiSelectorButton{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:0 -309px;display:inline-block;height:24px;width:21px}
+.uiStream .uiStreamBoulderStyle .highlightSelector .uiSelectorButton,.uiStream .uiStreamBoulderStyle .highlightSelector .uiSelectorButton:active,.uiStream .uiStreamBoulderStyle .highlightSelector .uiSelectorButton:focus,.uiStream .uiStreamBoulderStyle .highlightSelector .uiSelectorButton:hover{background-color:transparent;border:0}
+.uiStream .uiStreamBoulderStyle .highlightSelector .uiSelectorMenuWrapper{margin:-3px 1px 0 0}
+.uiStream .uiStreamBoulderStyle .highlightSelector .uiSelectorButton:hover{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-21px -309px}
+.uiStream .uiStreamBoulderStyle .highlightSelector .openToggler .uiSelectorButton{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-42px -309px}
+
+#bootloader_7Lmid { height: 42px; }

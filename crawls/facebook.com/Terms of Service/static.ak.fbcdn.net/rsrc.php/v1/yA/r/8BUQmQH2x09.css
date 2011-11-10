@@ -1,0 +1,24 @@
+/*1320697076,169776069*/
+
+.uiContextualLayerPositioner{height:0;position:absolute;z-index:200}
+.uiContextualLayer{position:absolute}
+div.uiContextualLayerPositionerFixed{position:fixed}
+.uiTooltipX{position:relative;zoom:1}
+.uiTooltipX .content{background-color:#282828;color:#fff;font-size: 11px;line-height:14px;padding:4px 8px;text-align:left}
+.uiTooltipX .tooltipText{max-width:334px;white-space:nowrap}
+.uiTooltipX .tooltipWrap{white-space:normal;width:334px;word-wrap:break-word}
+.uiTooltipX .tooltipText span{zoom:1}
+.uiTooltipX i.arrow{border:4px solid transparent;font-size:0;height:0;line-height:0;position:absolute;width:0}
+.aboveleft .uiTooltipX,.aboveright .uiTooltipX,.abovecenter .uiTooltipX{padding-bottom:4px}
+.aboveleft .uiTooltipX i.arrow,.aboveright .uiTooltipX i.arrow,.abovecenter .uiTooltipX i.arrow{border-bottom:0;border-top-color:#282828;bottom:0}
+.belowleft .uiTooltipX,.belowright .uiTooltipX,.belowcenter .uiTooltipX{padding-top:4px}
+.belowleft .uiTooltipX i.arrow,.belowright .uiTooltipX i.arrow,.belowcenter .uiTooltipX i.arrow{border-bottom-color:#282828;border-top:0;top:0}
+.aboveleft .uiTooltipX i.arrow,.belowleft .uiTooltipX i.arrow{left:5px}
+.aboveright .uiTooltipX i.arrow,.belowright .uiTooltipX i.arrow{right:5px}
+.abovecenter .uiTooltipX i.arrow,.belowcenter .uiTooltipX i.arrow{left:50%;margin-left:-4px}
+.left .uiTooltipX{padding-right:4px}
+.left .uiTooltipX i.arrow{border-left-color:#282828;border-right:0;right:0;top:6px}
+.right .uiTooltipX{padding-left:4px}
+.right .uiTooltipX i.arrow{border-left:0;border-right-color:#282828;left:0;top:6px}
+
+#bootloader_dcfaK { height: 42px; }

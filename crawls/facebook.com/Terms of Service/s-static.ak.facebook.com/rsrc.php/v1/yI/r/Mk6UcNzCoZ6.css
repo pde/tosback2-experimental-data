@@ -1,0 +1,249 @@
+/*1320697351,169775814*/
+
+.fbChatIE6Rooster{border-top:1px solid #eee;margin:7px 0 0 6px;padding:8px 6px 3px 0}
+.pageNotifMenu{display:inline-block}
+.pageNotifMenu .pageNotifToggler{position:relative}
+.pageNotifMenu .pageNotifLink{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:right -53px;padding-right:20px;text-decoration:none}
+.pageNotifMenu .pageNotifText :hover{text-decoration:underline}
+.pageNotifMenu .pageNotifBubble{display:inline-block}
+.pageNotifMenu .pageNotifPopup{background-color:#fff;border:1px solid #333;border-bottom:2px solid #293e6a;left:0;position:absolute;top:17px;width:330px;z-index:3}
+.pageNotifMenu .pageNotifPopupRight{left:auto;right:0}
+.pageNotifMenu .pageNotifLoading{display:block;margin:5px auto}
+.pageNotifMenu .pageNotifFooter a{background-color:#f7f7f7;border-top:1px solid #e0e0e0;display:block;font-weight:bold;padding:8px;text-align:center}
+.pageNotifMenu .pageNotifFooter a:hover,.pageNotifMenu .pageNotifFooter a:active,.pageNotifMenu .pageNotifFooter a:focus{background-color:#6d84b4;border-top:1px solid #3b5998;color:#fff;outline:none;text-decoration:none}
+.uiHelpLink{background:transparent url(../../yt/r/7rpZ7CHyvX7.gif)
+no-repeat 0 center;display:inline-block;height:9px;width:12px}
+.uiHelpLink .uiTooltipWrap{left:-3px}
+.uiHelpLink .right{left:auto;right:-4px}
+div.activation_actions_box{background:#fff9d7 none repeat scroll 0 0;margin-bottom:20px;padding:4px 0 12px 0}
+div.activation_actions_box a:hover{background-color:#3b5998;color:#fff}
+.activation_actions_box .profile_needy_message{display:block;font-weight:bold;padding:3px 8px 6px 8px;text-decoration:none}
+.activation_actions_box a.activation_action{border-bottom:1px solid #e6deb0;display:block;padding:3px 28px 3px 8px;text-decoration:none}
+.activation_actions_box a.completed{background-image:url(../../y9/r/Ar6K0o_04bw.gif);background-repeat:no-repeat;background-position:180px center}
+#profile_activation_score{display:block;padding:7px 8px 2px 8px;text-decoration:none}
+.needy_progress_bar{margin-top:5px}
+.needy_progress_bar .progress_bar_left, .needy_progress_bar .progress_bar, .needy_progress_bar .progress_bar_right{float:left;margin:0;padding:0;display:block;overflow:hidden}
+.needy_progress_bar .progress_bar_left{width:3px;height:8px;background:#f0f0f0 url(../../yU/r/bX7fuJsR7qK.gif) no-repeat top left}
+.needy_progress_bar .progress_bar_left.complete{background:#f0f0f0 url(../../y-/r/i3MWJV-V_Z4.gif) no-repeat top left}
+.needy_progress_bar .progress_bar_right{width:4px;height:8px;background:#f0f0f0 url(../../ys/r/7LhjbZQH3Sx.gif) no-repeat top left}
+.needy_progress_bar .progress_bar_right.complete{background:#f0f0f0 url(../../y4/r/peuIxelDcq9.gif) no-repeat top left}
+.needy_progress_bar .progress_bar{height:8px;background:#f1f2f8 url(../../yC/r/oGGz_CGun3e.gif) repeat-x top left}
+#needy_progress_bar_progress{margin:0;padding:0;height:8px;display:block;overflow:hidden;background:#3b5998}
+.needy_activation_box{float:none;padding:2px}
+.needy_activation_box .needy{font-weight:bold;padding:2px;border-bottom:1px solid #e5e5e5}
+.needy_activation_box .needy .needy_image{font-weight:lighter;float:left;margin-right:8px;padding:2px}
+.needy_activation_box .needy .needy_info{font-weight:lighter;float:none}
+.needy_activation_box .needy .needy_name{font-weight:lighter;float:none;padding:2px}
+.needy_activation_box .needy .needy_score{font-weight:lighter;float:none;padding:2px}
+.friend_suggester_dialog #fb_multi_friend_selector_wrapper,
+.friend_suggester_dialog .pop_content .dialog_body{padding:0}
+.friend_suggester_dialog #fb_multi_friend_selector h2{background:none;border:none}
+.friend_suggester_dialog #fb_multi_friend_selector .multi_friend_status,
+.friend_suggester_dialog #fb_multi_friend_selector h3{border:none;padding:4px 10px}
+.friend_suggester_dialog #fb_multi_friend_selector .buttons,
+.friend_suggester_dialog #fb_multi_friend_selector #view_unselected{display:none}
+.friend_suggester_dialog #fb_multi_friend_selector #friends{border:none;padding:0}
+.friend_suggester_dialog #fb_multi_friend_selector{width:auto}
+.friend_suggester_dialog #fb_multi_friend_selector #friends .recommended_text{background-color:#edeff4}
+.friend_suggester_dialog #fb_multi_friend_selector #friends
+.recommended_friends{background-color:#edeff4;border-bottom:1px solid #dadada}
+.dialog_body .dialog_option{padding:14px 0 7px 0}
+.dialog_body .dialog_option input{width:13px;height:13px;padding:0;margin:0;vertical-align:bottom;position:relative;top:0}
+.dialog_body .dialog_option .dialog_option_text{padding-left:5px;text-indent:-15px}
+.friendshipPageLikes .mediaRow{padding-bottom:10px}
+.friendshipPageLikesNoSubheader .label{display:none}
+.friendshipRecommendationDoublePic{width:55px}
+.friendshipRecommendationDoublePic .uiProfilePhoto{padding-right:1px}
+#pagelet_friendship_wall .uiComposer ul{padding-left:5px}
+#pagelet_friendship_status_text{line-height:15px;padding-top:4px;width:490px;color:#666}
+.friendshipPageGroups{padding-top:8px;padding-bottom:8px}
+.friendshipPageGroupsBottomBorder{border-bottom:1px solid #e9e9e9}
+.friendshipPageGroupsLeftCol{margin-right:15px}
+#wall{padding-top:15px}
+.wall #wall{width:540px}
+.fbxNullState{border-top:1px solid #ccc;padding:62px 82px}
+.fbxNullState p{font-size: 13px;padding-top:7px;margin:0}
+.fbxNullState a{white-space:nowrap}
+.stream-search-pages .Search_Name{font-weight:bold}
+.profile .stream-search-pages .highlight{background:none;border:none;margin:0;padding:0}
+.stream-search-pages .uiStreamMessage{font-size: 11px}
+.fbx .pageInfoTable tr th.label{padding-right:8px;width:125px}
+.fbx .pageInfoTable div.data_field{width:350px}
+.fbx .pageInfoTable div.data_field .day{padding-right:8px}
+#wall_section_header .uiSelectorButton,#wall_section_header .uiSelectorButton:active,#wall_section_header .uiSelectorButton:focus,#wall_section_header .uiSelectorButton:hover{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:right -53px;background-color:transparent;border:none;-moz-box-shadow:none;-moz-box-shadow:none;margin:0;outline:0;padding:0 20px 2px 0}
+#wall_section_header .uiHeaderActions,#wall_section_header .uiSelectorButton .uiButtonText{color:#333;padding:0}
+#wall_section_header .uiSelectorButton:hover .uiButtonText{text-decoration:underline}
+#wall_section_header .openToggler .uiSelectorButton:hover .uiButtonText{text-decoration:none}
+.placePageStats{margin:0 6px 5px;overflow:hidden}
+.placePageStatsNumber{font-family:Helvetica,Arial,default;font-size: 18px;font-weight:bold}
+.placePageHereNowContent{margin-top:10px;overflow:hidden}
+.placeVisitorsFacepile{margin:2px 6px 14px 6px}
+.profile .app_tab{position:relative;zoom:1;overflow:hidden}
+.pagelet_app_runner_centered{text-align:center}
+div.fbGearMenu .uiCloseButton{background-image:url(../../yL/r/Rfeox6F2wdM.png);height:16px;width:16px}
+div.fbGearMenu .uiCloseButton:hover,div.fbGearMenu .uiCloseButton:focus{background-position:left -32px}
+div.fbGearMenu .uiCloseButton:active{background-position:left -48px}
+div.fbGearMenu .openToggler .uiCloseButton{background-position:left -32px}
+.fbPrivacyWidget .customEdit .editLink:hover{text-decoration:underline}
+.fbPrivacyWidget .customEdit,
+.fbPrivacyWidget .checked .customize{display:none}
+.fbPrivacyWidget .checked .customEdit{display:inline}
+.fbPrivacyWidget .uiSelectorButton .customimg{margin:2px -4px 2px -1px}
+.megaphone_story_wrapper{margin-bottom:20px}
+.dialog_content .megaphone_story_wrapper{margin-bottom:0}
+.megaphone_story{position:relative;overflow:hidden}
+.megaphone_story .megaphone_content{font-size: 11px}
+.megaphone_story .megaphone_hide_link{float:right}
+.megaphone_story_highlighted{background-color:#fcf5d0;border:1px solid #cbb631}
+.megaphone_box{background-color:#f5f7fa;border:1px dashed #ced5e5}
+.hasLeftCol .megaphone_box{border-width:0 0 1px 0;margin-left:-20px;margin-top:-15px}
+#headerArea .megaphone_box{margin-right:-20px;margin-top:-17px}
+.megaphone_location_friends{margin:0}
+.megaphone_location_privacy{margin-left:auto;margin-right:auto;width:760px}
+#above_the_profile{margin-bottom:21px;margin-left:auto;margin-right:auto;padding-right:180px;width:760px}
+#above_the_profile .unpublished a{color:#dd3c10}
+#above_the_profile .unpublished a:hover{text-decoration:underline}
+#above_the_profile .unpublished img{margin:0 8px}
+#above_the_profile .full_width{padding-right:0;width:940px}
+.mobile_disclaimer{margin-top:2px;color:#999}
+.mobile_dash_bar{margin-top:0;padding-top:0}
+.mobile_dash{background:#f7f7f7;padding:0 0 18px 0}
+.mobile_dash_images,
+.mobile_dash_images td{vertical-align:bottom}
+.mobile_dash_infos,
+.mobile_dash_infos td{vertical-align:top}
+.mobile_dash_image{padding:16px 0 0 10px;width:140px}
+.mobile_dash_image img{border:solid #ccc 1px;padding:3px}
+.mobile_dash_byline{line-height:14px;padding:4px 0 6px 20px}
+.mobile_dash_byline strong{display:block;overflow:hidden;width:120px}
+.mobile_dash_byline .mobile_dash_comment{display:block;font-size: 9px;padding-top:4px}
+.mobile_dash_bottom{background:#fff;border-top:solid #d8dfea 1px;padding:15px 15px 20px}
+.mobile_dash_bottom h2{font-size: 11px;font-weight:bold;padding:4px 0 1px 0}
+.mobile_url_container{padding:12px 0 12px}
+.mobile_dash_bottom p{margin:0;padding:8px 0 0}
+.mobile_dash_bottom_left{float:left;padding:12px 30px 15px 7px;width:355px}
+.mobile_dash_bottom_left h3{font-size: 11px;font-weight:normal;padding:8px 0}
+.mobile_dash_bottom_left .notifications_off{border-top:solid #ccc 1px;color:#666;font-weight:bold;margin-top:16px;padding:16px 0}
+.mobile_dash_bottom_left .subscription{color:#444}
+.mobile_dash_bottom_left .mobile_texts h2{background-image:url(../../ym/r/y-2LR9eyI1L.gif);background-repeat:no-repeat;background-position:-5px 2px;padding-left:17px}
+.mobile_dash_bottom_left .mobile_texts_address{background:#f2f5ff;border:solid #d8dfea 1px;font-size: 14px;font-weight:bold;padding:5px}
+.mobile_dash_bottom_left .mobile_subscriptions{padding-top:16px}
+.mobile_dash_bottom_right{border-left:solid #ccc 1px;float:left;padding:12px 0 15px 35px;width:250px}
+.mobile_dash_bottom_right .mobile_uploads h2{background-image:url(../../yx/r/og8V99JVf8G.gif);background-repeat:no-repeat;padding-left:22px}
+.mobile_dash_bottom_right .mobile_uploads_address{background:#f2f5ff;border:solid #d8dfea 1px;font-size: 14px;font-weight:bold;padding:5px}
+.mobile_dash_bottom_right .mobile_web{padding-top:16px}
+.mobile_dash_bottom .mobile_add_app{color:#777;font-weight:bold;padding-top:16px}
+.mobile_dash_bottom .confirm_phone{display:block;padding-top:0}
+.mobile_dash_bottom .confirm_phone .confirmation_prompt{display:block;margin-top:6px}
+.back_to_mobile{display:block;padding:10px 8px 0 0}
+.back_to_mobile_right{display:block;float:right;padding:5px 20px 15px 0}
+.mobile_settings{margin:0 auto;padding:0 130px 0}
+.mobile_settings h2{border-bottom:solid #d8dfea 1px;color:#000;font-size: 11px;font-weight:bold;margin-top:24px;padding:4px 0}
+.mobile_settings h3{color:#000;font-size: 12px;font-weight:bold;margin:0;padding:18px 0 8px}
+.mobile_settings label{color:#000;font-weight:normal;padding:0;margin:0}
+.mobile_account_inlay{background:#f7f7f7;padding-top:10px;border-left:1px solid #d7d7d7;border-right:1px solid #d7d7d7;border-bottom:1px solid #d7d7d7;padding:10px 0 20px}
+.mobile_account_inlay #standard_status{margin:30px 120px 20px 128px}
+.mobile_account_container{padding:15px 130px 10px}
+.mobile_account_main h2{border-bottom:solid #d8dfea 1px;font-size: 12px;font-weight:bold;margin:16px 0 18px;padding:3px 0}
+.mobile_account_main h4{margin:30px 0 15px 0}
+.mobile_account_main .phones{list-style:none;margin:0;padding:8px 0}
+.mobile_account_main .phones li,
+.mobile_account_main .mobile_mails li{list-style:none;margin:0;padding:3px 0}
+.mobile_account_main .phones li span,
+.mobile_account_main .mobile_mails li span{color:#933;font-weight:bold}
+.mobile_account_main .phones li small,
+.mobile_account_main .mobile_mails li small{color:#777}
+.mobile_add_phone{margin-bottom:4px}
+.mobile_add_phone td{vertical-align:top}
+.mobile_add_phone th{text-align:left}
+.mobile_add_phone th{color:#777;font-size: 9px;font-weight:normal;padding:0 0 3px 2px}
+.mobile_add_phone td{padding-right:6px}
+.mobile_error{background:#ffebe8;border:solid 1px #dd3c10;margin:0 0 5px;padding:5px}
+#mobile_conf{background:#fff9d7;border:solid 1px #e2c822;margin:0 0 5px;padding:5px}
+#activate .actually_important{padding:8px 20px 8px 10px;background:url(../../ys/r/7X-NSgAzXpV.gif) no-repeat bottom left;height:55px}
+#activate .actually_important .read_this{font-size: 13px;font-weight:bold;color:#d85d01}
+#activate .actually_important .important_text{font-size: 13px;font-weight:bold;color:#391800 }
+.mobile_activation_note .note_dialog{margin:0 0 10px}
+.mobile_activation_carrier_container{padding:5px 5px 5px 5px}
+.mobile_promo_container{display:block;overflow:auto;padding:5px}
+.mobile_promo_text{color:#999;padding:10px 0 0 60px}
+.mobile_promo_logo{float:left}
+.MobileMMSEmailSplash_Container{font-size: 12px;color:#444}
+.MobileMMSEmailSplash_Left{float:left;font-size: 13px;padding:5px;width:375px}
+.MobileMMSEmailSplash_Pic{width:350px}
+.MobileMMSEmailSplash_Right{float:left;font-size: 13px;line-height:1.3;padding:5px;width:400px}
+.MobileMMSEmailSplash_Description{padding:5px 0}
+.MobileMMSEmailSplash_Address_Container{padding:10px 0}
+.MobileMMSEmailSplash_Address{background:#ECEFF5 none repeat scroll 0 0;color:#203360;font-size: 14px;font-weight:bold;padding:7px 0 7px 15px;width:70%}
+.MobileMMSEmailSplash_Calltoaction_Container{background:transparent url(../../yn/r/XdSS2PgDdQ_.gif) no-repeat scroll 0 0;font-weight:bold;margin:10px 0;padding:0 26px}
+.MobileMMSEmailSplash_Tipsandtricks_Container{}
+.MobileMMSEmailSplash_Tipsandtricks_Title{font-size: 14px;font-weight:bold;padding:5px 0 0}
+.MobileMMSEmailSplash_Tipsandtricks_UL{margin:5px 0;padding:0 16px 10px}
+.MobileMMSEmailSplash_Tipsandtricks_LI{padding:0}
+.MobileMMSEmailSplash_Notice{font-size: 12px;color:#444;line-height:1.3;padding:5px}
+.sms_link_dialog{color:#3b5998;line-height:1.5}
+.sms_link_dialog_description{font-size: 12px;color:#444}
+.sms_link_dialog_label{padding:5px 10px;font-size: 12px;font-weight:bold;color:#444}
+.sms_link_dialog_checkbox{color:#444;font-size: 12px;padding:5px 0}
+.sms_link_dialog_notice{padding:10px;font-size: 12px;color:#444}
+.sms_link_alternative_flow{font-size: 10px;padding:2px 10px}
+.sms_link_disclaimer{padding:4px 8px;color:#999}
+.egoMediaThumbVideo{background-image:url(../../yN/r/aERK2-5sOBX.png);background-repeat:no-repeat;background-position:0 0;height:26px;position:relative;left:3px;top:40px;width:31px}
+.egoTimelineIntro .egoMediaThumbVideo{top:44px}
+.ego_video_thumb .img{vertical-align:bottom;width:80px}
+.egoVideoFriend .ego_title{max-width:110px}
+.atwWidget:hover .fbProfileNavHeaderEditButton{display:block}
+.atwWidget .fbProfileNavHeaderEditButton{display:none}
+.atwWidget .fbProfileNavHeaderEditButton{position:relative;top:-2px;margin-bottom:-7px}
+.pagesElsewhere:hover{background-color:#eff2f7;text-decoration:none}
+.pagesElsewhere:hover .pagesElsewhereReportBtn{visibility:visible}
+.pagesElsewhere .pagesElsewhereReportBtn{visibility:hidden}
+.pagesElsewhere{padding:3px 2px 3px 7px}
+.pagesElsewhere a{color:#333;text-decoration:none}
+.pagesFriendActivity .uiStreamStory{padding-right:7px}
+.pagesFacepileEllipsis{height:24px;width:24px;background-color:#d8dfea}
+.tipsRightBoxText{width:226px;height:14px;margin-top:5px}
+.tipsRecommendButton{margin-top:5px}
+.tipsRightList .tipsRightItem{padding:8px 2px 5px 0;border-color:#e9e9e9}
+.tipsRightList .tipsRightItem .tipOwner{font-weight:bold}
+.tipsRightList .tipsRightItem .tipsRightItemContent{width:180px}
+.tipsCloseButton.uiCloseButton,.tipsCloseButton .uiCloseButton{opacity:0}
+.tipsCloseButton .openToggler .uiCloseButton,.tipsRightItem:hover .tipsCloseButton .uiCloseButton,.tipsRightItem:hover .tipsCloseButton{opacity:1}
+.tipsRightItem .feedbackBling .img{margin-top:-1px}
+.UIIntentionalStreamSearch .highlight,
+.UIIntentionalStreamSearch .inserted{color:#000;font-weight:bold;margin:0 0 0 0}
+.UIResultSet_MoreLink{display:block;padding-top:4px}
+.UIResultSet{padding:0 6px}
+.UIResultSet_SuppressBasePadding{padding:0}
+.profile .wikipedia-description .uiTextSubtitle{margin-bottom:5px}
+.profile .wikipedia-description p{margin:1px 0 10px;line-height:16px}
+.profile .wikipedia-description h2,.profile .wikipedia-description h3{margin:0;font-size: 11px}
+.profile .wikipedia-description h2 + h3{display:none}
+.profile .wikipedia-description i{font-family:"lucida sans", "lucida grande", tahoma, verdana, arial, sans-serif}
+.profile .wikipedia-description ul{line-height:14px;list-style-position:outside;list-style-type:disc;padding-left:15px;margin-bottom:7px}
+.profile .wikipedia-description ul li{display:list-item;padding-bottom:3px}
+.profile .wikipedia-description .external{padding-right:12px;background:url(../../yW/r/AebrcwrBeG6.png) no-repeat right 3px}
+li.notification .uiCloseButton{visibility:hidden}
+li.notification:hover .uiCloseButton,
+.notification .openToggler .uiCloseButton{visibility:visible}
+.notificationHidden .UIImageBlock{display:none}
+.nearby_image_block{display:block;float:left;padding-top:3px}
+.nearby_pager{margin:0 -7px;padding:6px 7px 6px 1px}
+.nearby_results_text{padding-top:2px;color:#333}
+.nearby_pager .prev{margin-left:6px}
+.nearby_pager .next{float:right;margin-left:-1px;vertical-align:top}
+div.sidebarNearbyMap{height:244px;width:244px}
+div.mainNearbyMap{height:375px;margin:0 -7px;width:500px}
+.uiSideNav .divider{border-bottom:1px solid #ededed;border-top:1px solid #ededed;height:1px;left:auto;display:none;padding-left:0;margin-bottom:1px;width:179px;font-size: 1px;line-height:1px;overflow:hidden}
+.editMode .uiSideNav .hidden,
+.expandedMode .uiSideNav .hidden,
+.expandedMode .uiSideNav .divider{display:block}
+.navMoreLessCount{margin:0}
+.navMoreText{display:block;width:100%}
+.navMoreTextWithCount{width:75% !important}
+.navLess{line-height:12px}
+div.navLess,
+.expandedMode .navMore{display:none}
+.expandedMode .navLess{display:block}
+
+#bootloader_FUFS3 { height: 42px; }

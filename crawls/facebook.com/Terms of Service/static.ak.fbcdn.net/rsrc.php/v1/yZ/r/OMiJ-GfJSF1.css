@@ -1,0 +1,102 @@
+/*1320162063,169775556*/
+
+#contentArea .uiHeader{margin-left:44px}
+.co_reg_banner{width:100%}
+.step_frame{padding:25px 55px 20px;background:#f7f7f7;width:650px;margin-bottom:30px}
+.step_frame #progress{text-align:center}
+.create_header{padding:0 2px;margin-bottom:5px}
+.create_header .adreview_explanation{margin-top:5px}
+.create_header p{margin-top:5px;padding-right:5px}
+.create_step h3{padding:4px 5px 5px;font-size: 11px;font-weight:normal}
+.create_step h3 strong{color:#000;padding-right:1px}
+.step_change{padding:20px 0 10px;text-align:center}
+.radioset{background:#fff;margin:0;padding:5px 0 5px}
+.radioset .radio_option{color:#333;cursor:pointer;float:left;padding:3px 5px 3px 5px;width:380px}
+.radioset a:hover{background:#f3f5f9;text-decoration:none}
+.radioset .radio_button{float:left;width:5%}
+.radioset .radio_content{float:right;width:94%}
+.radioset h5{padding-top:2px;padding-bottom:2px;font-size: 11px;font-weight:normal}
+.radioset .checked_option .category_name{font-weight:bold;padding-bottom:2px;padding-top:2px}
+.radioset .inputtext{width:220px}
+.radioset select{margin-right:3px}
+.stylized_radioset{border-bottom:1px solid #ddd;border-top:1px solid #ddd;padding:7px}
+.stylized_radioset .radio_option{display:inline;padding:10px 5px;width:624px}
+.stylized_radioset div.checked_option{background:#d8dfea}
+.choose_page_type select{width:300px}
+.create_page .pages_authorize_field{padding:0 5px 10px}
+.create_page .pages_authorize_field .pages_authorize_field_inputs{text-align:center}
+.create_page .pages_authorize_field .pages_authorize_sig{padding:5px 0 0 0}
+.create_page .pages_legal_prefix{text-align:left}
+.create_page .pages_legal_suffix{margin:0;padding:20px 5px 0;text-align:left}
+.create_page .page_option{background:#fff;border-bottom:1px solid #ddd;border-top:1px solid #ddd;margin-top:15px;padding:15px 15px 20px}
+.create_page .page_option h3{background:none;padding:0}
+.create_page .page_option .inputtext{margin:8px 0 0 2px;width:610px}
+.create_page .page_option .pages_publish_field{padding:10px 0 0}
+#create_frame{padding-left:45px}
+#create_frame .box{float:left;margin-right:15px;background-color:#fff;border:5px solid #e9e9e9;overflow:hidden;position:relative}
+#create_frame .box .inner{position:relative;display:block;margin:3px}
+#create_frame .box .button_text{display:block;margin:0 auto}
+#create_frame .box .largeIcon{display:block;margin:0 auto;margin-bottom:10px}
+#create_frame .box:hover .facade{background-color:#e9e9e9}
+#create_frame .facade{position:absolute;top:0;left:0;width:270px;height:270px;background-color:#f2f2f2;cursor:pointer}
+#create_frame .facade_text{font-size: 15px;font-weight:normal;color:#333;text-align:center}
+#create_frame .form{position:absolute;top:270px;left:0;width:220px;margin:0 auto;padding:20px 25px}
+#create_frame .form label{padding-bottom:1px;height:18px;width:68px;margin:0 0 3px;font-size: 11px;font-weight:normal}
+#create_frame #official_check{width:212px;padding-bottom:5px}
+#create_frame #official_check label{width:212px}
+#create_frame .form .subtitle{margin-bottom:15px;color:#666}
+#create_frame .form .uiButton input{width:68px;height:15px}
+#create_frame #localbusiness .phone{width:125px}
+#create_frame #localbusiness .form .button{float:right;padding-bottom:0;margin-bottom:0}
+#create_frame .tall_box{float:left;width:276px;height:276px;margin-bottom:15px}
+#create_frame .tall_box .inner{height:270px}
+#create_frame .tall_box .largeIcon{margin-top:50px}
+#create_frame .uiSelectorButton{margin:0 0 5px;text-align:left;max-width:189px;width:189px}
+#create_frame .inputtext{margin:0 0 5px;width:212px}
+#create_frame .old_ui_selector{max-width:220px;width:220px;margin:0 0 5px}
+#create_frame .short_box{height:187px;width:276px;margin-bottom:20px;margin-top:15px}
+#create_frame .short_box .facade{width:270px;height:181px}
+#create_frame .short_box .form{top:181px;width:270px;height:131px;padding:25px}
+#create_frame .short_box .inner{height:181px}
+#create_frame .short_box .largeIcon{display:block;padding-top:22px}
+#create_frame select{width:173px;margin-left:0}
+#create_error{width:866px;margin-bottom:10px}
+.pageCreation{padding:20px 40px}
+.pageCreation .box{border-top:1px solid #ddd;border-bottom:1px solid #ddd}
+.pageCreation .errorBox{width:870px;margin-bottom:10px}
+.pageCreation .leftColumn,.pageCreation .rightColumn{width:415px;float:left}
+.pageCreation .boxTitle{font-size: 15px;font-weight:bold;margin-bottom:6px}
+.pageCreation .leftColumn .pageType{margin-bottom:6px}
+.pageCreation .leftColumn .pageType input{margin-left:10px;vertical-align:middle}
+.pageCreation .leftColumn .pageType label{color:#333;font-weight:normal;margin-left:4px}
+.pageCreation .pageNamePolicy{margin-top:10px}
+.pageCreation .pageName{margin-top:14px}
+.pageCreation .pageName label{color:#333;float:left;font-size: 13px;margin-top:4px}
+.pageCreation .pageNameRight{float:left}
+.pageCreation .pageName input{margin-left:10px;width:280px}
+.pageCreation .pageNameExamples{margin-top:3px;text-align:right}
+.pageCreation .officialPage{margin:20px 0 8px}
+.pageCreation .officialPage .isofficialRight{float:left;margin-left:6px;width:320px}
+.pageCreation .officialPage .isofficialRight label{font-weight:normal;vertical-align:top}
+.pageCreation .officialPage .isofficialRight a{display:block;font-weight:normal;font-size: 11px}
+.pageCreation .officialPage input{float:left;margin:0;vertical-align:top}
+.pageCreation .submitContainer{margin-top:30px;text-align:center}
+.pageCreation .rightColumn{margin-left:20px}
+.pageCreation .stylized_radioset{border-bottom:none;border-top:none;padding:0}
+.pageCreation .stylized_radioset .radio_option{color:#333;float:left;padding:5px;width:94%}
+.pageCreation .stylized_radioset div.checked_option{background:#d8dfea}
+.pageCreation .stylized_radioset .radio_button{float:left}
+.pageCreation .stylized_radioset .radio_content .option_title{padding:2px 0}
+.pageCreation .stylized_radioset .checked_option .category_name{font-weight:bold;padding:2px 0}
+.migrateNotice,
+.errorBox{margin:0 50px 0 45px}
+.errorBox{margin-top:10px}
+.migrateNotice{font-size: 12px;padding:20px}
+.migrateNotice .underline{text-decoration:underline}
+.migrateNoticeMsg{margin-left:10px}
+.password_prompt{margin:10px 5px 0}
+.password_prompt #ajax_error_msg{color:red;margin-bottom:5px}
+.password_prompt .inputpassword{margin-left:5px}
+.content_list{margin:5px 15px}
+
+#bootloader_MfHxy { height: 42px; }

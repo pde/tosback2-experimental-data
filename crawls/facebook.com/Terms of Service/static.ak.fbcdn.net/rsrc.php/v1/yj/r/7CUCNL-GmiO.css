@@ -1,0 +1,374 @@
+/*1320117691,169776317*/
+
+.devsitePage{min-width:1024px}
+.devsitePage .body .content{margin:auto;max-width:940px}
+.devsitePage .clear{clear:both}
+.devsitePage .plugin_form{float:left;background:#efefef;margin:10px 10px 15px 0;padding:10px;border-top:solid #C1C1C1 1px;width:220px}
+.devsitePage .plugin_form dt{color:#666}
+.devsitePage .plugin_form dt a.uiTooltip{font-weight:normal;font-size: 11px}
+.devsitePage .plugin_form dd{padding:5px 0 10px 0;border-bottom:solid #D0D0D0 1px;margin-bottom:5px}
+.devsitePage .plugin_form dd label{color:#000;font-weight:normal}
+.devsitePage .plugin_form .wideinputtext{width:210px}
+.devsitePage .plugin_example{float:left;width:420px;padding:10px}
+.devsitePage .dark_background{background-color:#333;padding:10px}
+.devsitePage .nofloat{float:none;width:auto;margin-left:-10px}
+.dialog_body{padding-bottom:0}
+.dialog_body .code{margin-bottom:16px}
+.dialog_body .code div{margin:5px 0}
+.dialog_body .code input,.dialog_body .code textarea{width:600px;font:12px monospace}
+.dialog_body ol .code input,.dialog_body ol .code textarea{width:575px}
+.dialog_body #snip-html5 ol,.dialog_body #snip-xfbml ol,.dialog_body #snip-iframe ol{padding-left:2em}
+.LDialog_DeveloperPluginCode .pop_container,.LDialog_DeveloperPluginCode .pop_container_advanced{width:630px}
+.LDialog_DeveloperPluginCode label{margin:5px;font-size: 12px}
+html body{background:#e7e7e7}
+.devsitePage .body > .content{background:#fff;border:1px solid #d9d9d9;border-top:0;-moz-box-shadow:#ddd 0 1px 1px;padding:75px 20px 20px}
+.devsitePage .nav > .content{background:#fff url(../../yz/r/coK3kMStN_j.gif) repeat-y}
+.devsitePage .body ol,.devsitePage .body ul{list-style-type:disc;padding-left:3em}
+.devsitePage .body .uiSelector ul,.devsitePage .body ul.uiList{list-style-type:none;margin:0;padding-left:0}
+.devsitePage .body ol{list-style-type:decimal}
+.devsitePage .body .uiStepList ol{background:none repeat scroll 0 0 #e9e9e9}
+.devsitePage .body .uiStepListSingleLine ol{background:none repeat scroll 0 0 #e9e9e9}
+.devsitePage .body strong{font-weight:bold}
+.devsitePage em,.devsitePage .body i{font-style:italic}
+.devsitePage .body h1{font-size: 28px;font-weight:normal;margin:0;margin-bottom:8px}
+.devsitePage .body h2{font-size: 20px;font-weight:normal;letter-spacing:-0.03em;margin:25px 0 15px 0}
+.devsitePage .body h3{font-size: 15px;margin:25px 0 10px 0}
+.devsitePage .body dl,.devsitePage .body table,.devsitePage .body pre,.devsitePage .body ul,.devsitePage .body ol,.devsitePage .body p{margin:0;margin-bottom:1em}
+.devsitePage .body pre,.devsitePage .body code,.devsitePage .body table.params td.name{font-family:monospace;color:#006000;font-size: 13px}
+.devsitePage .body h2 code{font-size:inherit}
+.devsitePage .body pre,.devsitePage .body .pre{background:#f2f2f2;border:1px solid #d8dfea;border-left-width:3px;margin:18px;padding-top:7px;padding-bottom:7px;padding-left:10px;overflow:auto}
+.devsitePage .body img.externalLink{left:5px;position:relative;top:-5px;width:10px}
+.devsitePage .body table{margin-bottom:1em}
+.devsitePage .body table td,.devsitePage .body table th{border:1px solid #ddd;text-align:left;padding:6px;padding-top:4px;padding-bottom:4px;padding-right:10px;vertical-align:top}
+.devsitePage .body table td.closeButton{padding-right:0}
+.devsitePage .body table.noborder td{border:0}
+.devsitePage .body table.bordered td,.devsitePage .body table.bordered th{border:1px solid #ddd}
+.devsitePage .body table.uiGrid td{border:0}
+.devsitePage .body table td p:last-child{margin-bottom:0}
+.devsitePage .body table.uiInfoTable{width:auto}
+.devsitePage .body table.uiInfoTable td,.devsitePage .body table.uiInfoTable th{border:0;padding:6px;width:auto;height:auto;vertical-align:middle}
+.devsitePage .body table.uiInfoTable th{width:auto}
+.devsitePage .footer{color:#777;padding-bottom:30px}
+.devsitePage .footer .content{margin:0 auto;max-width:980px;padding:10px}
+.devsitePage .footer .copyright{float:left}
+.devsitePage .footer .links{text-align:right}
+.devsitePage .footer .links a{margin-left:15px}
+.devsitePage .header{background:white;border-bottom:1px solid #ddd;margin-bottom:20px;padding-bottom:25px;padding-top:0}
+.devsitePage .header h1{margin:0;font-size: 24px;font-weight:normal}
+.devsitePage .header h1 a{color:#333;text-decoration:none}
+.devsitePage .header .breadcrumbs{margin-top:4px}
+.devsitePage div.admin{background:#eee;border:1px solid #ddd;float:right;font-size: 11px;z-index:0;padding:8px;position:relative}
+.devsitePage div.admin a{margin:0 6px}
+.devsitePage div.admin a.gatekeeper{background:url(../../y9/r/uADs2cgkzVe.png) no-repeat left center;padding-left:12px;font-weight:bold}
+.devsiteWiki{font-family:"Lucida Grande", Tahoma, Verdana, Arial, sans-serif;font-size: 11px;color:#333;margin:0;font-size: 11px}
+.devsiteWiki a:hover{text-decoration:underline}
+.devsiteWiki a.uiButton:hover,
+.devsiteWiki a.itemAnchor:hover{text-decoration:none}
+.devsiteWiki img{border:0}
+.devsiteWiki table{border:0;margin:0;border-collapse:collapse;border-spacing:0}
+.devsiteWiki table td,
+.devsiteWiki table th{border:0;padding:0;text-align:left;vertical-align:top}
+.devsiteWiki table th{font-weight:bold}
+.devsiteWiki h1,
+.devsiteWiki h2,
+.devsiteWiki h3,
+.devsiteWiki h4{margin:0;padding:0;border:0}
+.devsiteWiki .header,
+.devsiteWiki .body,
+.devsiteWiki .body p,
+.devsiteWiki .body ul,
+.devsiteWiki .body ol,
+.devsiteWiki .body li,
+.devsiteWiki .body th,
+.devsiteWiki .body th,
+.devsiteWiki .body td{font-size: 12px}
+.devsiteWiki .body pre,
+.devsiteWiki .body p,
+.devsiteWiki .body li,
+.devsiteWiki .body dt,
+.devsiteWiki .body dd,
+.devsiteWiki .refindex .page,
+.devsiteWiki .body textarea,
+.devsiteWiki .body td{line-height:18px}
+.devsiteWiki dl,
+.devsiteWiki dt,
+.devsiteWiki dd{margin:0}
+.devsiteWiki dd,
+.devsiteWiki .refindex .page{margin-bottom:10px}
+.devsiteWiki dd p,
+.devsiteWiki .refindex .page .snippet p{margin:0}
+.devsiteWiki dt,
+.devsiteWiki .refindex .page .title{font-weight:bold}
+.devsiteWiki dt a.private,
+.devsiteWiki .refindex .page .title a.private,
+.devsiteWiki .bodyMenu li a.private{background:url(../../y9/r/uADs2cgkzVe.png) no-repeat left center;padding-left:13px}
+.devsiteWiki .metanotice{background:#fff9d7;border:1px solid #e2c822;padding:1em;margin:1em}
+.devsiteWiki textarea{resize:none}
+.clearfix:after{clear:both;content:".";display:block;font-size:0;height:0;line-height:0;visibility:hidden}
+.clearfix{display:block;zoom:1}
+.devsiteWiki .titleblock{margin:20px 0}
+.devsiteWiki .titleblock h1{font-size: 24px;font-weight:normal;padding:0}
+.devsiteWiki .titleblock h3{color:#797c80;font-size: 16px;font-weight:normal;line-height:22px;margin:0 0 3px 0;padding:0}
+.devsiteWiki .titleblock div.stats{margin-top:20px}
+.devsiteWiki .titleblock .statsbox{background:#eee;float:right;padding:20px 20px 10px 20px;width:200px}
+.devsiteWiki .titleblock div.stats .statsbox li{color:#333;font-size: 11px;line-height:14px}
+.devsiteWiki .titleblock div.stats ul{color:#627aad;list-style-type:square;padding:0 0 0 17px}
+.devsiteWiki .titleblock div.stats li{font-size: 14px;line-height:22px;margin-bottom:5px}
+.devsiteWiki .titleblock div.stats li span{color:#333}
+.devsiteWiki .titleblock img{float:left;height:65px;margin:0 10px 0 0}
+.devsiteWiki p.intro{color:#797c80;font-size: 14px;line-height:21px;margin-bottom:20px}
+.devsiteWiki p.intro b{color:#444}
+.devsiteWiki .contentblock{clear:right;float:left;margin:1.5em 0;position:relative;width:100%}
+.devsiteWiki hr{clear:right;margin:20px 0}
+.devsiteWiki .contentblock h2{margin:0 0 15px 0;padding:0}
+.devsiteWiki .contentblock h2.mbn{margin:0}
+.devsiteWiki .contentblock h3{color:#999;font-size: 13px;font-weight:normal;margin:0 0 20px 0}
+.devsiteWiki .contentblock h4{color:#000;font-size: 14px;font-weight:bold;line-height:18px;margin-bottom:4px}
+.devsiteWiki .contentblock p{color:#333;font-size: 12px;line-height:18px;margin-bottom:18px}
+.devsiteWiki .contentblock a.more{background:url(http://static.ak.fbcdn.net/attachment/more.png) no-repeat 100% 3px;padding-right:10px}
+.devsiteWiki .contentblock img.right{float:right;margin:0 0 10px 20px}
+.devsiteWiki .contentblock img.left{display:table-cell;float:left;margin:0 20px 10px 0}
+.devsiteWiki .contentblock img.bleed{margin-right:-16px}
+.devsiteWiki .contentblock img.bordered{border:1px solid #ddd;margin-bottom:10px;padding:5px}
+.devsiteWiki .contentblock ol{margin:10px 0;padding:0 0 0 23px}
+.devsiteWiki .contentblock ol li{margin-bottom:10px}
+.devsiteWiki .fleft{float:left;width:357px}
+.devsiteWiki .fright{float:right;width:357px}
+.devsiteWiki .fleft ul,
+.devsiteWiki .fright ul{list-style-type:square;margin:0;padding:0 0 0 20px}
+.devsiteWiki .fleft ul li,
+.devsiteWiki .fright ul li{margin:0 0 10px 0}
+.devsiteWiki .fcol{float:left;width:231px}
+.devsiteWiki .poq{background:#f1f2f9;margin-bottom:20px;margin-top:-20px;padding:20px}
+.devsiteWiki .poq p{color:#666}
+.devsiteWiki .poq p.small{color:#999;font-size: 11px;margin:0}
+.devsiteWiki .poq .credit img.left{margin-right:10px}
+.devsiteWiki .poq.right{float:right;margin-left:20px;width:280px}
+.devsiteWiki .poq.left{float:left;margin-right:20px;width:280px}
+.devsiteWiki .pagebottom{border-top:1px solid #ddd;clear:both;height:25px;padding-top:20px}
+.devsiteWiki .pagebottom a.right{float:right}
+.devsiteWiki .pagebottom a.left{float:left}
+.devsiteWiki .thumbnail{float:left;margin-right:10px}
+.devsiteWiki .thumbnail .img{border:1px solid #ccc}
+.devsiteWiki .plugin .name, .devsiteWiki .plugin .desc{margin-left:143px}
+.devsiteWiki .plugin .name{font-size: 16px;line-height:24px}
+.devsiteWiki .timestamp{color:#666;font-size: 11px}
+.devsiteWiki .clearcols{clear:both;display:block;height:0;overflow:hidden;visibility:hidden;width:0}
+.devsitePage .menu{background:#254b82;font-weight:bold;padding-top:8px}
+.devsitePage .menu .content{background:#325c99;border-bottom:0;border:1px solid #1a3c6c;margin:0 auto;padding:0;width:980px}
+.devsitePage .menu,
+.devsitePage .menu a{color:#fff}
+.devsitePage .menu a.logo{border-right:1px solid #1a3c6c;margin-right:10px;padding:7px 20px 9px;line-height:0}
+.devsitePage .menu a.logo img{width:166px;height:17px}
+.devsitePage .menu a.logo,
+.devsitePage .menu a.l{display:block;float:left}
+.devsitePage .menu a.l{line-height:29px;padding:2px 11px 2px}
+.devsitePage .menu a.l:hover, .devsitePage .menu a.logo:hover{background:#1a3c6c;text-decoration:none}
+.devsitePage .menu .search{float:right;padding:5px 20px 5px 20px;width:280px}
+.devsitePage .menu .uiTypeahead{border:0}
+.devsitePage .menu .uiTypeahead .wrap{border:0}
+.devsitePage .menu .uiSearchInput{border:0}
+.devsitePage .menu .uiSearchInput input{width:270px}
+.devsitePage .menu .uiSearchInput span{border:0;padding:0}
+.devsitePage .menu .uiSearchInput button{top:1px}
+.devsitePage .menu .uiTypeaheadView{z-index:1}
+.devsitePage .menu .uiTypeaheadView li{color:#3b5998}
+.devsitePage .menu .inputtext{border:0;padding:5px 4px}
+.devsitePage .menu{position:fixed;width:100%;z-index:100}
+.devsitePage #navsubsectionpages{margin-top:20px}
+.devsitePage #navsubsectionpages h5{color:#777;font-size: 11px;margin:25px 0 10px 10px}
+.devsitePage #navsubsectionpages ul{margin-left:10px}
+.devsitePage #navsubsectionpages li{border:0;font-size: 11px;padding:1px 0;line-height:18px}
+.devsitePage #navsubsectionpages li a{padding:0}
+.devsitePage .bodyText{margin-left:208px}
+.devsitePage .bodyMenu li a.private.selected{background-image:url(../../yE/r/JQgQHls27pw.png),
+url(../../y9/r/uADs2cgkzVe.png);background-position:160px center, left center;background-repeat:no-repeat, no-repeat}
+.devsitePage .bodyMenu li a.private{margin-left:5px}
+.devsitePage .bodyMenu{float:left;overflow:hidden;width:166px}
+.devsitePage .bodyMenu.fixed{position:fixed}
+.devsitePage .bodyMenu.fixedScrolling{bottom:0}
+.devsitePage .bodyMenu .title{color:#666;font-size: 24px;font-weight:normal;line-height:28px;margin:0;padding:0}
+.devsitePage .bodyMenu ul{list-style-type:none;padding:0;margin:0;margin-bottom:0}
+.devsitePage .bodyMenu li{margin:0}
+.devsitePage .bodyMenu h4,
+.devsitePage .bodyMenu li a{padding:6px 6px 6px 10px}
+.devsitePage .bodyMenu h4{font-size: 16px;font-weight:normal;color:#666;padding-top:0;padding-bottom:0;margin-bottom:8px}
+.devsitePage .bodyMenu li a{display:block}
+.devsitePage .bodyMenu li a.selected{color:#333;font-weight:bold;background:url(../../yE/r/JQgQHls27pw.png) no-repeat right center}
+.devsitePage .bodyMenu li ul.subsections li a.selected{background-image:none}
+.devsitePage .body.reference hr{border:0;background-color:#d2d2d2;height:1px;margin:0;margin-top:40px}
+.devsitePage .body.reference h2{font-weight:normal;color:#666;font-size: 16px;margin-bottom:16px}
+.devsitePage .body div.fql_example{margin-bottom:1em}
+.devsitePage .bodyMenu .toplevelnav ul.subsections{margin:0;padding:0}
+.devsitePage .bodyMenu .toplevelnav li{border-bottom:1px solid #e5e5e5;line-height:18px;font-size: 12px}
+.devsitePage .bodyMenu .toplevelnav li.active.withsubsections{padding-bottom:5px}
+.devsitePage .bodyMenu .toplevelnav li:first-child{border-top:1px solid #e5e5e5}
+.devsitePage .bodyMenu .toplevelnav ul.subsections li{border:0;padding:0 0 0 25px}
+.devsitePage .bodyMenu .toplevelnav ul.subsections li a{color:#333;font-size: 12px;overflow:hidden;padding:3px 6px;text-overflow:ellipsis;white-space:nowrap}
+.devsitePage .bodyMenu .toplevelnav ul.subsections li a.selected{overflow:auto;white-space:normal}
+.devsitePage .bodyMenu .toplevelnav li a:hover{background:url(../../yE/r/JQgQHls27pw.png)
+no-repeat right center;color:#333;text-decoration:none}
+.devsitePage .bodyMenu .toplevelnav li ul.subsections li a:hover{background-image:none}
+.devsitePage .bodyMenu .toplevelnav ul li img.imgWrap{float:left;margin:6px 0 0 5px}
+.devsitePage .bodyMenu .toplevelnav ul li a.aWrap{display:inline-block;width:128px}
+.devsitePage .imageLinkText{float:left;padding:15px 25px;text-align:center;width:275px}
+.devsitePage .imageLinkText .title a{text-decoration:none}
+.devsitePage .imageLinkText .caption{color:#666}
+.devsitePage #devsiteHomeBody > .content{padding:0;max-width:980px}
+.devsitePage #devsiteHomeBody .content .wikiPanel{border-bottom:1px solid #d2d2d2;height:315px;overflow:hidden}
+.devsitePage #devsiteHomeBody .content .wikiPanel .header{border:none;margin:40px 0 0 0;padding:0}
+.devsitePage #devsiteHomeBody .content .wikiPanel .header .content{position:absolute;right:0}
+.devsitePage #devsiteHomeBody .content .wikiPanel .mWikiRevision{display:none}
+.devsitePage #devsiteHomeBody .linkBanner{margin-top:-75px}
+.devsitePage #devsiteHomeBody .linkBanner img{-moz-transform:scale(1);-moz-transition-timing-function:ease-out;-moz-transition-duration:200ms}
+.devsitePage #devsiteHomeBody .linkBanner img:hover{-moz-transform:scale(1.05);-moz-transition-timing-function:ease-out;-moz-transition-duration:200ms}
+.devsitePage #devsiteHomeBody .sectionContainer{margin:5px 10px;padding:10px}
+.devsitePage #devsiteHomeBody .section{border-bottom:1px solid #d2d2d2;border-top:1px solid #d2d2d2;float:left;height:235px;width:290px}
+.devsitePage #devsiteHomeBody .section h2{border:none;font-weight:bold;font-size: 16px;padding:15px 0 10px 0;margin:0 0 5px 0}
+.devsitePage #devsiteHomeBody .section .caption{color:#666;font-size: 11px;line-height:14px}
+.devsitePage #devsiteHomeBody .sectionImg{text-align:center}
+.devsitePage #devsiteHomeBody .sectionNew{border-left:none;margin:0;padding-right:15px}
+.devsitePage #devsiteHomeBody .sectionNew .platformHealth{padding-bottom:10px}
+.devsitePage #devsiteHomeBody .sectionNew .platformHealth .healthIndicator{display:inline-block;height:15px;margin-right:7px;width:13px}
+.devsitePage #devsiteHomeBody .sectionNew .platformHealth .liveStatus{width:268px}
+.devsitePage #devsiteHomeBody .section ul li{margin-bottom:10px}
+.devsitePage #devsiteHomeBody .sectionNew ul{list-style:none;margin:0;padding:0 20px 0 0}
+.devsitePage #devsiteHomeBody .sectionNew ul li{background:url(../../yY/r/1gBp2bDGEuh.gif) 0 2px no-repeat;padding-left:22px}
+.devsitePage #devsiteHomeBody .sectionNew ul li .title{font-weight:bold}
+.devsitePage #devsiteHomeBody .sectionNew ul li.readmore{background:none}
+.devsitePage #devsiteHomeBody .sectionNew ul li.readmore a{font-weight:bold;background:url(../../yI/r/llncLdVc0JC.gif) no-repeat right center;padding-right:9px}
+.devsitePage #devsiteHomeBody .sectionPromo{border-left:1px solid #d2d2d2;border-right:1px solid #d2d2d2;padding:0 15px}
+.devsitePage #devsiteHomeBody .sectionPromo #devsiteHomePromoContainer{height:200px;overflow:hidden}
+.devsitePage #devsiteHomeBody .sectionPromo .promoHidden{opacity:0}
+.devsitePage #devsiteHomeBody .sectionPromo #devsiteHomePromoIndicators{margin-top:10px;text-align:center}
+.devsitePage #devsiteHomeBody .sectionPromo .sectionImg{text-align:center}
+.devsitePage #devsiteHomeBody .sectionPromo .caption{margin:10px 0}
+.devsitePage #devsiteHomeBody .sectionPromo .sectionTemplateLink{font-weight:bold;margin:0 5px}
+.devsitePage #devsiteHomeBody .sectionPromo .emptyPromo{height:300px;width:300px}
+.devsitePage #devsiteHomeBody .sectionPromo .indicatorOn,.devsitePage #devsiteHomeBody .sectionPromo .indicatorOff{cursor:pointer;display:inline-block;height:14px;width:14px;zoom:1}
+.devsitePage #devsiteHomeBody .sectionPromo .indicatorOn{background:url(../../yG/r/NtT_fCHHAK2.png) no-repeat}
+.devsitePage #devsiteHomeBody .sectionPromo .indicatorOff{background:url(../../yR/r/CVsrcVvoa9c.png) no-repeat}
+.devsitePage #devsiteHomeBody .sectionShowcase{border-right:none;padding-left:20px}
+.devsitePage #devsiteHomeBody .sectionShowcase .caption{margin-top:5px}
+.devsitePage #devsiteHomeBody .likePlugin{padding:0 10px;margin:0 10px}
+.devsitePage .header .subscribe{float:right;font-size: 11px;z-index:0}
+.devsitePage .header .subscribe a{padding-left:20px;position:relative}
+.devsitePage .header .subscribe a.feed{background:url(../../yx/r/SSq2mOM05E8.gif) no-repeat left center}
+.devsitePage .header .subscribe a.email{background:url(../../yS/r/I-6WhcLLGrb.gif) no-repeat left center;margin-left:15px}
+.devsitePage .header .subscribe a.API_MSG_HEALTH_GOOD{background:url(../../yn/r/q4PSsflOO9Q.png) no-repeat left center;margin-left:15px}
+.devsitePage .header .subscribe a.API_MSG_HEALTH_TEMPORARY{background:url(../../yX/r/6JTrVW_BvXv.png) no-repeat left center;margin-left:15px}
+.devsitePage .header .subscribe a.API_MSG_HEALTH_BAD{background:url(../../y_/r/cGxVwK5wVa-.png) no-repeat left center;margin-left:15px}
+.devsitePage .header .subscribe a.API_MSG_HEALTH_NEUTRAL{background:url(../../yX/r/KA0fetER5Mg.png) no-repeat left center;margin-left:15px}
+.devsitePage .header .subscribe .pls_header_link{font-weight:bold}
+.devsitePage .blogHome .blogPost{margin-bottom:2em;padding-bottom:2em;border-bottom:1px solid #eaeaea}
+.devsitePage .blogPost .picture{float:left;padding-right:10px}
+.devsitePage .blogPost .picture img{width:50px;height:50px}
+.devsitePage .blogPost h1{font-size: 16px;margin-bottom:2px;font-weight:bold}
+.devsitePage .body .blogPost h2{font-weight:bold;color:#333;font-size: 14px}
+.devsitePage .blogPost .info{margin-left:60px}
+.devsitePage .blogPost .byline{font-size: 14px;font-weight:bold;margin-left:60px}
+.devsitePage .blogPost .date{margin:4px 0 0 60px;font-size: 11px;line-height:15px}
+.devsitePage .blogPost .postBody{padding-top:1em;margin:0 0 18px 0;border-bottom:1px solid #ccc;font-size: 12px;line-height:18px}
+.devsitePage .blogPost .like{margin-top:2em;height:80px}
+.devsitePage .blogPost ul{list-style-type:disc;padding-left:2em}
+.devsitePage .blogPost .bodyText{margin-left:60px}
+.devsitePage .blogPostSummary{margin-bottom:1em}
+.devsitePage .blogPostSummary h2{font-size: 16px;margin:0;margin-bottom:2px;font-weight:normal}
+.devsitePage .blogPostSummary .date{font-size: 11px}
+.devsitePage .blogHome .archive{margin-bottom:1em}
+.devsitePage .blogArchive h3{font-size: 16px;margin-bottom:1.5em}
+.devsitePage .blogArchive .blogArchiveMonth{margin-bottom:2em;padding-bottom:1em;border-bottom:1px solid #eaeaea}
+.devsitePage .blogArchive .bodyMenu .yearMenu{margin-top:25px}
+.devsitePage #DeveloperAppBody > .content{padding-top:60px}
+.devsitePage .devAppTitle{font-size: 18px}
+.devsitePage #developerAppNav ul{padding-left:0}
+.devsitePage .developerAppDashLeft{width:20%;float:left}
+.devsitePage .developerAppDashRight{width:79%;float:right}
+.devsitePage .developerAppDetailsLeft{width:20%;float:left}
+.devsitePage .developerAppDetailsRight{width:79%;float:right}
+.devsitePage .body #developerAppNav ul,.devsitePage .body #developerAppNavigation ul{list-style-type:none}
+.devsitePage #DeveloperAppDashHeader{min-height:32px !important}
+.devsitePage .dashboardHeader .dashboardTitle{font-size: 18px;font-weight:bold;width:420px}
+.devsitePage .dashboardHeader .dashboardTitle a{color:#000}
+.devsitePage .dashboardHeader .appTypeahead{display:inline-block;margin:0 5px 0 0}
+.devsitePage .uiTypeahead ul{margin:2px 0;padding:0}
+.devsitePage .uiTypeahead .bucketed li.header{margin:0}
+.devsitePage .developerAppDashLeft .toplevelnav ul li a.aWrap{background-position:135px 10px}
+.devsitePage .developerAppDashLeft .toplevelnav ul li a div.navSectionTitle{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:123px}
+.devsitePage .developerAppDashLeft .bodyMenu li{padding-bottom:3px}
+.devsitePage .developerAppDashLeft .bodyMenu li a,.devsitePage .developerAppDashLeft .bodyMenu li a.selected{padding:5px 6px 0 10px}
+.devsitePage .developerAppDashLeft .bodyMenu ul li .imgWrap{float:left;height:16px;width:16px}
+.devsitePage .developerAppDashLeft .uiTypeahead{margin-bottom:10px;width:170px}
+.devsitePage .directoryStatus,.devsitePage span.dirPending,.devaitePage span.dirUnsubmitted{color:#666}
+.devsitePage .appNameTitleBar{font-size: 18px}
+.devsitePage img.appLogo{max-height:40px;width:40px}
+.devsitePage span.dirApproved{color:green}
+.devsitePage span.dirDenied{color:#a00}
+.devsitePage .body h3.uiHeaderTitle,.devsitePage .body #developerAppDetailsContent p{font-size: 11px;margin:0}
+.devsitePage #developerAppDashContent td,.devsitePage #developerAppDetailsContent td,.devsitePage #developerAppDetailsContent div{line-height:normal;font-size: 11px}
+.devsitePage #developerAppDashContent .plugin .thumbnail{float:left;margin-right:10px}
+.devsitePage #developerAppDashContent .plugin .name{font-size: 16px;line-height:24px;padding-top:16px}
+.devsitePage #developerAppDashContent .plugin .desc{font-size: 12px}
+.devsitePage td.overviewHeaderColumn{width:100px}
+.devsitePage td.headerColumn{width:190px}
+.devsitePage #developerAppDashContent td.contentColumn div{width:250px}
+.devsitePage #developerAppDashContent td.contentPane{padding:0}
+.devsitePage #developerAppDashContent #test_accounts{padding:5px}
+.devsitePage .uiFacepile ul{padding:0}
+.devsitePage div.content_loading{background:url(../../y9/r/jKEcVPZFk-2.gif) center no-repeat;height:400px;min-width:250px;overflow:hidden}
+.devsitePage .noApps{font-size: 12px;font-weight:bold;padding:20px 0;text-align:center}
+.devsitePage #developerAppDetailsContent td.contentPane .preview_img{margin-bottom:10px}
+.devsitePage #developerAppDetailsContent td.contentPane div div:last-child
+.preview_img{margin-bottom:0}
+.devsitePage #developerAppDetailsContent td.contentPane,.devsitePage #developerAppDetailsContent .contentPane{width:460px}
+.devsitePage #developerAppDetailsContent .inputtext,.developerAppInlineTokenizer .inputtext{width:452px}
+.devsitePage #developerAppDetailsContent .textfield_array_input_text{width:80%}
+.devsitePage #developerAppDetailsContent .shortinput .inputtext{width:140px}
+.devsitePage #developerAppDetailsContent .uiTypeahead .inputtext{width:100%}
+.devsitePage #developerAppDashContent .devAppOpenGraph{margin-bottom:0}
+.devsitePage #developerAppDashContent .devAppOpenGraph .ogColumn{width:200px}
+.devsitePage #developerAppDashContent .devAppOpenGraph .ogColumn ul{list-style-type:none;margin-bottom:0;padding:0}
+.devsitePage #developerAppDashContent .devAppOpenGraph .ogColumn li{font-size: 11px;line-height:18px}
+.devsitePage #developerAppDashContent .devAppInsights .fbInsightsTinyStatistic{float:right}
+.devsitePage #developerAppDashContent .editSettings{text-align:center}
+.devsitePage #contentCol{background:none;padding-top:8px}
+.devsitePage .developerAppDashLeft .toplevelnav a,.devsitePage .developerAppDashLeft .toplevelnav a:hover,.devsitePage .uiTypeahead li{font-size: 11px}
+.devsitePage .throbber{text-align:center;vertical-align:middle}
+.devsitePage img.throbber{display:inline-block;padding-bottom:8px;visibility:hidden}
+.devsitePage .async_saving img.throbber{visibility:visible}
+.devsitePage .developerAppDashLeft .seeAllApps{margin:10px 0;text-align:center}
+.devsitePage .developerAppDashLeft .newAppButton{width:162px}
+.devsitePage #edit_button{outline:none}
+.devsitePage .developerAppAccessToken{display:inline;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:560px}
+.devsitePage .developerAppDashRight .name,.devsitePage .developerAppDashRight .desc{margin-left:105px}
+.devsitePage .developerAppDashRight .thumbnail .img{border:none}
+#termsCheckbox{margin:4px 5px}
+#fbCreateAppTermsRow{margin-top:5px}
+.appCreateTooltip{margin:0 5px 0 -4px}
+#fbCreateAppDialog .async_saving{background:url(../../yb/r/GsNJNwuI-UM.gif) no-repeat 0 0;height:10px;margin-left:10px;width:35px}
+#fbCreateAppDialog span.valid{color:green}
+#disclaimerMetadata{padding-left:13px}
+#termsLabel{padding-left:8px}
+span.failed{color:#c00;padding-right:5px}
+.devsitePage .searchResults .result{margin-bottom:1em;max-width:650px}
+.devsitePage .searchResults .result .title{font-weight:bold}
+.devsitePage .searchResults .result .url{color:gray;font-size: 11px}
+.devsitePage .searchResults .pager{margin-top:2em}
+.devsitePage .searchResults .pager a{padding-right:10px}
+.devsitePage .searchResults .pager a.selected{color:#333;font-weight:bold;text-decoration:none}
+.devsitePage .searchResults .branding{float:right;font-size: 11px;color:gray;text-align:right}
+.devsitePage .searchResults .branding .logo{margin-top:2px}
+.devsitePage .searchResults .branding .logo img{width:45px;height:17px}
+.devsitePage .body li.permBucket table.uiGrid{margin:0}
+.profileUnitShowcaseItem{float:right;position:relative;text-align:center;width:100px}
+.warning{border:1px solid #efc63f}
+.warning div{cursor:pointer;opacity:.6}
+.warning img{opacity:.6}
+.warning .warningIcon{position:absolute;right:5px;top:5px;z-index:2}
+.previewReferralDialogLink{display:block;text-align:right;width:670px}
+.devsitePage .body table.aggregationPreviews th,.devsitePage .body table.aggregationPreviews td{padding:0 12px 0 0}
+#lint table td{word-break:break-all}
+.devsitePage .refindex .page .thumbnail{float:left}
+.devsitePage .refindex .page .thumbnail img{width:100px;height:75px;border:1px solid #d3dae5}
+
+#bootloader__mpWQ { height: 42px; }

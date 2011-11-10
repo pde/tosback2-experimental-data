@@ -1,0 +1,16 @@
+/*1319503736,169776318*/
+
+.localeLink{padding:3px 0 2px 7px;white-space:nowrap}
+.localeLink a{display:inline-block;padding:1px 0 2px}
+.ff3.mac .localeLink{padding-bottom:1px}
+.localeButton .uiButtonText,.localeLink{font-size: 12px;color:#3b5998;font-weight:normal}
+.suggestedLocale .uiButtonText,.localeLink .suggestedLocale{background-color:#fff8cc}
+.selectedLocale .uiButtonText,.localeLink .selectedLocale{color:#333;font-weight:bold}
+.localeLink .selectedLocale{cursor:default}
+.suggestedLocale .uiSelectorButton.selected .uiButtonText,.suggestedLocale .uiSelectorButton:hover .uiButtonText{background-color:transparent}
+.intl-region-none{display:none}
+div.intl-region1 .intl-region1,div.intl-region2 .intl-region2,div.intl-region3 .intl-region3,div.intl-region4 .intl-region4,div.intl-region5 .intl-region5,div.intl-region6 .intl-region6{display:block}
+.fbEventPostField{width:260px}
+.fbEventPostWideField{width:418px}
+
+#bootloader_MDiGq { height: 42px; }

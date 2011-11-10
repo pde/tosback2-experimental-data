@@ -1,0 +1,146 @@
+/*1320864848,169775811*/
+
+.HC_Page_Header{color:#1c2a47;font-size: 16px;padding:6px 0 16px}
+.HC_Center{float:left;width:520px}
+.HC_Center .uiHeader h2 a{color:#3b5998}
+.HC_Header .HC_LikeButton{border:none;overflow:hidden;width:300px;height:35px}
+.HelpCenter_Search .HC_Search_Input{border:0;float:left;font-size: 13px;font-weight:bold;height:18px;width:420px}
+.HelpCenter_Search .HC_Center .HC_Search_Button{border-width:0 0 0 1px;float:right;height:18px;margin:0;padding:4px 6px;width:78px;z-index:1}
+.HelpCenter_Search .HC_Typeahead .HC_Search_Input{margin:0 0 -2px 0}
+.HelpCenter_Search .HC_Typeahead .HC_Search_Button{margin:0 0 -4px 0}
+.HC_Side{float:right;width:220px}
+.HelpCenter_MessageBox{margin-bottom:10px}
+.HelpCenter .HelpCenter_ContentArea{margin-bottom:20px}
+.img.throbber{display:none}
+.async_saving img.throbber{display:inline}
+.async_saving .content{display:none}
+.HelpCenter .UIFaq_Answer img{max-width:460px}
+.HelpCenter #HelpCenter_Side .topic_lists{width:250px}
+.HelpCenter .index_section .topic_lists{float:left;margin:0;width:173px;padding-bottom:6px}
+.HelpCenter .uiHeaderSection{margin-top:0}
+#HelpCenter_Categories .uiGrid td{width:165px}
+.HelpCenter_Subcategories{border-top:1px solid #ccc;font-size: 12px;margin-bottom:5px;margin-top:5px;padding-top:10px}
+.HelpCenter .HC_Breadcrumb{font-size: 14px;font-weight:bold;margin-bottom:4px}
+.HC_BreadcrumbAction{font-size: 12px;font-weight:normal;padding-left:8px}
+.no_js .HC_BreadcrumbAction{display:none}
+.HelpCenter .subsection h4{font-size: 12px;padding-bottom:8px;padding-top:5px}
+.HelpCenter .faq_category{line-height:18px}
+.HelpCenter .more_help ul{padding:5px 0 0 0;line-height:16px}
+.HelpCenter_PageContainer{font-size: 12px;margin-top:5px;border-top:1px solid #ccc;padding-top:10px}
+.HelpCenter .UIFaq_Answer ul li{margin:10px 0 0 15px}
+.HelpCenter .uiHeader h2{font-size: 14px}
+.HelpCenter .UIFaq_Answer ul{list-style-image:none;list-style-position:outside;list-style-type:square}
+.HelpCenter .UITitledBox_Content{margin-top:8px}
+#HelpCenter_Side .UITitledBox_Content li{line-height:16px}
+.HelpCenter_LeaderBadge .UILeaderBadge_Info{width:160px}
+.HelpCenter .HelpCenter_List{list-style-position:outside;list-style-type:disc;padding-left:15px;line-height:14px}
+.HelpCenter_List li{padding-bottom:5px;color:#ccc;display:list-item}
+.UIWell{background:#f2f2f2;border-top:1px solid #ccc;zoom:1}
+.UIFaq_Container{font-size: 12px;line-height:16px;padding-bottom:5px}
+.UIFaq_Container p{font-size: 12px}
+.UIFaq_Inert_Link{padding-top:1px}
+.UIFaq_Inert_Link input:hover{text-decoration:none}
+.UIFaq_Inline_Feedback input{margin-top:1px}
+.UIFaq_Inline_Feedback{display:inline}
+.UIFaq_Inline_Feedback div{display:inline}
+.UIFaq_Arrow{width:12px;float:left}
+.UIFaq_ClosedArrow{display:block}
+.UIFaq_OpenArrow{display:none}
+.UIFaq_Content{float:left;width:460px;padding-left:5px}
+.UIFaq_Open > .UIFaq_Arrow > .UIFaq_ClosedArrow{display:none}
+.no_js .UIFaq_ClosedArrow{display:none}
+.UIFaq_Open > .UIFaq_Arrow > .UIFaq_OpenArrow{display:block}
+.no_js .UIFaq_OpenArrow{display:block}
+.UIFaq_Content > .UIFaq_Answer{display:none}
+.UIFaq_Open > .UIFaq_Content > .UIFaq_Question{font-weight:bold;padding-bottom:2px}
+.no_js .UIFaq_Question{font-weight:bold;padding-bottom:2px}
+.UIFaq_Open > .UIFaq_Content > .UIFaq_Answer{display:block;padding-bottom:10px}
+.no_js .UIFaq_Answer{display:block;padding-bottom:10px}
+.UIFaq_Open > .UIFaq_Content > .UIFaq_Snippet{display:none}
+.no_js .UIFaq_Snippet{display:none}
+.UIFaq_Highlight{background:#fff8cc;border-bottom:1px solid #ffe222;padding:1px 1px 2px}
+.UIFaq_QuestionHighlight{font-weight:bold}
+.UIFaq_Question a{font-weight:bold}
+.UIFaq_Snippet{font-size: 11px;color:gray}
+.UIFaq_Sharing{padding:5px 0}
+.UIFaq_Sharing a{color:#6d84b4;text-decoration:none}
+.UIFaq_Feedback{font-size: 11px;vertical-align:middle}
+.UIFaq_Feedback .tiny_indent{margin-left:2px}
+.helpPage .backLink{display:inline;font-size: 13px;font-weight:bold;padding-bottom:10px;text-transform:none}
+.helpPage{min-width:1024px}
+.helpPage .menu{background-color:#3b5998;font-weight:bold;padding-top:8px;margin:0;width:100%;z-index:1}
+.helpPage .menu a{color:#fff;text-decoration:none}
+.helpPage .body .HCContents #HCContent{font-size: 13px;max-width:670px}
+.helpPage .menu .HCContents{background:#627aad;border:1px solid #1a3c6c;border-bottom-width:0;margin:0 auto;max-width:980px}
+.helpPage .menu .search{display:inline-block;width:300px}
+.helpPage .body{background-color:#f2f2f2;margin:0;padding-bottom:30px}
+.helpPage .body .HCContents{border:1px solid #ddd;border-top-width:0;margin:0 auto;width:940px;background-color:#fff;padding:70px 20px 40px 20px;min-height:400px}
+.helpPage .body .HCContents .bodyMenu{float:left;width:250px;background-attachment:scroll}
+.helpPage .body .HCContents .bodyMenu li{font-size: 16px}
+.helpPage .body .HCContents .bodyMenu ul{border-color:#ccc;border-width:1px 0;border-style:solid}
+.helpPage .body .HCContents .bodyMenu .menuOption{width:240px;padding-left:10px}
+.helpPage .body .HCContents .bodyMenu .menuOption .label{width:190px}
+.helpPage .body .HCContents .bodyMenu .firstMenuItem{padding-top:11px}
+.helpPage .body .HCContents .bodyMenu .lastMenuItem{padding-bottom:11px}
+.helpPage .body .HCContents .bodyMenu .selected{font-weight:bold;background-color:#f9f9f9}
+.helpPage .body .HCContents .bodyMenu .selected a{color:#333}
+.helpPage .body .HCContents .bodyMenu a{text-decoration:none}
+.helpPage .body .HCContents .bodyMenu li :hover{color:#333}
+.helpPage .body .HCContents .bodyMenu li .selectionIndicator{padding-bottom:2px}
+.helpPage .body .HCContents .bodyMenu li :hover .hidden{display:inline}
+.helpPage .body .HCContents .bodyMenu a{text-decoration:none;color:#333}
+.helpPage .body .HCContents .bodyMenu a :hover{color:#3b5998}
+.helpPage .body .HCContents .topics a{text-decoration:none;display:block}
+.helpPage .body .HCContents .topics a:hover{background:#edeff4}
+.helpPage .body .HCContents .narrow{max-width:635px;padding-left:30px}
+.helpPage .body .HCContents .bodyText .help_title{font-size: 20px;font-weight:bold}
+.helpPage .body .HCContents .bodyText .breadcrumb{font-size: 12px;margin-top:7px}
+.helpPage .body .HCContents .bodyText .help_title .rfloat{margin-top:7px}
+.helpPage .body .HCContents .bodyText td, td.label{font-size: 13px}
+.menuButton{background:#627aad;font-size: 14px;padding:7px 21px 6px}
+.logo{text-transform:uppercase}
+.menuButton:hover{background:#293870;text-decoration:none}
+.helpPage .logo .menuButton.lfloat{padding-left:21px;padding-right:0;padding-top:7px;padding-bottom:6px}
+.helpPage .logo .menuButton.rfloat{padding-left:2px;padding-right:21px;padding-top:11px;padding-bottom:5px
+}
+.fixed{position:fixed}
+.hidden{display:none}
+.appsPile tr{line-height:20px}
+.helpPage{background:#f2f2f2}
+.helpPage #contentCurve{background:#f2f2f2}
+.HC_MainContent td{text-align:center}
+.helpPage .uiComboInput .comboButton{z-index:0}
+.block{display:block}
+.HCGray{background-color:#f2f2f2}
+.surveyBox{padding-top:50px}
+.helpPage .fakeWash{margin:-28px -20px 0;padding:30px 60px 53px}
+.helpPage .searchHeading{font-size: 22px}
+.helpPage .body .HC_Typeahead{width:500px}
+.helpPage .body .HC_Search_Input{border:auto;float:none;font-size: 15px;font-weight:normal;height:17px;outline:none;width:390px}
+.helpPage .body .HC_Search_Button{float:right;height:20px}
+.helpPage .body .title{font-size: 20px;font-weight:normal}
+.helpPage .body .subtitle{font-size: 12px}
+.helpPage .helpBrowser{width:610px}
+.helpPage .helpFeed{width:370px}
+.helpPage .helpFeed li{border-style:none}
+.helpPage .helpFeed .profilePic{height:30px;width:30px}
+.helpPage .helpFeed .uiStream .uiStreamMessage{width:295px}
+.helpPage .uiUfi{width:295px}
+.helpPage .topics{width:480px}
+.helpPage .helpSpacer{border-color:#ececec}
+.helpPage .inlineImageBlock i, .helpPage .inlineImageBlock span{vertical-align:middle}
+.helpPage .topics .additionalLinks a.inlineImageBlock{display:inline}
+.helpPage .shortSelect{max-height:19px}
+.helpPage .HC_Center{width:395px}
+.helpPage .wideContent{width:640px}
+.helpPage #HCContent{float:left}
+.helpPage .helpFeed .helpMore .showMoreLink{font-size: 13px;font-weight:bold;float:right;margin-right:35px}
+.helpMore.collapsed .showMoreLink{display:inline}
+.helpMore .showMoreLink{display:none}
+.helpMore.collapsed > div{display:none}
+.helpMore > div{display:inline}
+.lightbox .pop_content .dialog_content{border:1px solid #333}
+.lightbox .pop_content .dialog_body{background-color:#000;border-bottom:none;line-height:0;padding:0}
+.close a{color:#fff;display:none;float:right;padding:4px 8px 4px 0}
+
+#bootloader_iizWj { height: 42px; }

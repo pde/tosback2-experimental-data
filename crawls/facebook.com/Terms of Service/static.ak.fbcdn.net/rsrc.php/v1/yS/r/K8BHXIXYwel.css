@@ -1,0 +1,12 @@
+/*1317398723,169776319*/
+
+.dialog_page_wrapper{margin-top:20px;margin-left:auto;margin-right:auto}
+.dialog_page_wrapper .pop_content{border:1px solid #cfcfcf;-moz-border-radius:5px}
+.dialog_page_wrapper .dialog_title{margin:0 0 10px;padding:0 0 10px;border-bottom:1px solid #ccc;margin:25px 25px 0}
+.dialog_page_wrapper .dialog_body{margin:0 25px}
+.dialog_page_wrapper .dialog_buttons{padding:15px 20px;text-align:center;background-color:#f2f2f2;border-top:1px solid #e5e5e5;border-bottom-left-radius:4px;-moz-border-radius-bottomleft:4px;border-bottom-right-radius:4px;-moz-border-radius-bottomright:4px}
+.dialog_page_wrapper .dialog_buttons .inputsubmit{margin:0 3px}
+.orderSelectionTable{border-collapse:collapse}
+.orderSelectionContainer{height:400px;width:inherit;overflow:auto}
+
+#bootloader_Rc3NA { height: 42px; }
