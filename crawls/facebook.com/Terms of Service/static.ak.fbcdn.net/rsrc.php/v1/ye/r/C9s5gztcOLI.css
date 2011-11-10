@@ -1,0 +1,61 @@
+/*1319435167,169776317*/
+
+.uiMenu .privUnselectable{color:#333}
+.uiMenu .privUnselectable .itemAnchor{opacity:1}
+.uiMenu .fixedWidthDesc .itemLabel{white-space:normal;width:200px}
+#copyright_outer{padding-top:15px;width:800px}
+#copyright_outer #notification_section{padding:10px 10px 0 10px}
+#copyright_outer #counter_notification_section{padding:10px 10px 0 10px}
+#copyright_outer h1{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#d8dfea;font-size: 14px;padding-bottom:2px}
+#copyright_outer h2{border-bottom-width:1px;border-bottom-style:solid;border-bottom-color:#d8dfea;font-size: 13px;padding-bottom:2px}
+#copyright_outer .cr_captcha{clear:both;text-align:center;width:700px}
+#copyright_outer .cr_captcha .captcha{padding:10px 0 6px 0}
+#copyright_outer .captcha #recaptcha_image{margin-left:auto;margin-right:auto;margin-top:10px}
+#copyright_outer .copyright_header_text{line-height:16px;padding:5px;margin:20px 10px 10px 10px;background-color:#f7f7f7;border:1px solid #b7b7b7}
+#copyright_outer .revision_date{padding:2px 5px 5px 0;float:right}
+#copyright_outer .copyright_header_text p{margin-top:0}
+#copyright_outer .copyright_form_header{line-height:16px;padding-right:10px}
+#copyright_outer .copyright_form_footer{clear:both;line-height:16px;padding:10px}
+#copyright_outer p.nobottom{margin-bottom:0}
+#copyright_outer .notification_info{line-height:16px}
+#copyright_outer .contact_info{line-height:16px}
+#copyright_outer .notification_steps{line-height:16px}
+#copyright_outer .notification_steps ol{}
+#copyright_outer .extra_info{line-height:16px;padding-bottom:10px}
+#copyright_outer .contact_info{clear:both;line-height:16px;padding:10px}
+#copyright_outer .contact_info_title{clear:both;float:left;width:75px}
+#copyright_outer .contact_info_text{float:left}
+#copyright_outer .copyright_tb{clear:both;float:left;padding-top:5px;padding-bottom:5px;width:500px}
+#copyright_outer .copyright_tb .copyright_tb_label{clear:right;float:left;padding-bottom:5px;width:140px}
+#copyright_outer .copyright_tb .copyright_tb_field{float:left;clear:right;width:300px}
+#copyright_outer .copyright_tb .copyright_tb_field_label{font-size: 10px;float:left;clear:right;width:200px}
+#copyright_outer .copyright_tb .copyright_tb_field #mailing_address{height:56px;width:180px}
+#copyright_outer .copyright_tb .copyright_tb_field #full_name,
+#copyright_outer .copyright_tb .copyright_tb_field #first_name,
+#copyright_outer .copyright_tb .copyright_tb_field #last_name,
+#copyright_outer .copyright_tb .copyright_tb_field #phone,
+#copyright_outer .copyright_tb .copyright_tb_field #contact_email{width:180px}
+#copyright_outer .copyright_notify_fields{clear:both;float:left;width:750px}
+#copyright_outer .copyright_notify_fields .copyright_notify_field{clear:both;float:left;padding-top:5px;padding-bottom:5px;width:750px}
+#copyright_outer .copyright_notify_field .copyright_notify_field_label{float:left;padding-top:5px;padding-bottom:5px;padding-right:5px;width:350px}
+#copyright_outer .copyright_notify_field .copyright_notify_field_ta{float:left;width:350px}
+#copyright_outer .copyright_initials_tb{padding-left:10px}
+#copyright_outer .copyright_initials_tb .copyright_initials_text{}
+#copyright_outer .copyright_initials_tb .copyright_initials_field{}
+#copyright_outer .confirm_field{clear:both;float:left;line-height:16px;width:700px}
+#copyright_outer .confirm_field .confirm_field_text ul{margin:0}
+#copyright_outer .confirm_field .confirm_field_inputs{text-align:center}
+#copyright_outer .copyright_buttons{clear:both;float:left;padding:10px;text-align:center;width:700px}
+#copyright_outer label{color:#000;font-weight:normal}
+#copyright_outer .copyright_notify_fields .copyright_tb{width:750px}
+#copyright_outer .copyright_notify_fields .copyright_tb .copyright_tb_label{float:left;padding-top:5px;padding-bottom:5px;padding-right:5px;width:350px}
+#copyright_outer .copyright_notify_fields .copyright_tb .copyright_tb_field{float:left;padding-top:5px;padding-bottom:5px;width:350px}
+#copyright_outer .answer{padding:0 0 10px 0}
+#copyright_outer .answer .address{padding:0 0 0 16px}
+#copyright_outer .cr_question{font-size: 10px;padding:4px 0 0 0}
+.copyright_optional_msg{display:block;font-size:xx-small}
+#copyright_outer .error{border:1px solid #dd3c10;background-color:#ffebe8}
+#copyright_outer span.error{padding:5px}
+#standard_status, #error_invalid, div.error{margin-bottom:20px}
+
+#bootloader_pSxyZ { height: 42px; }

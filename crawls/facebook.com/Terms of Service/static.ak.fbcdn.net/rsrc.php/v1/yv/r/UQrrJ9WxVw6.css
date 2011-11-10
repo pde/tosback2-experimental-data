@@ -1,0 +1,550 @@
+/*1320697173,169775814*/
+
+#pagelet_eventbox input.async_saving{background:url(../../yb/r/GsNJNwuI-UM.gif) 207px center no-repeat}
+#pagelet_eventbox input.with_selector.async_saving{background:url(../../yb/r/GsNJNwuI-UM.gif) 183px center no-repeat}
+#pagelet_eventbox .menuButton{position:static}
+#pagelet_eventbox input.event_name{width:226px}
+#pagelet_eventbox input.with_selector{width:202px}
+.UIUpcoming_Item{padding-bottom:4px}
+.UIUpcoming_Item .uiCloseButton{display:none}
+.UIUpcoming_Item:hover .uiCloseButton{display:block}
+#UIUpcoming_New{background-color:#fff7c5;margin:-3px 0 0 -2px;padding:3px 0 2px 3px}
+.UIUpcoming_Item .UIUpcoming_NameAndTime{width:202px}
+.UIUpcoming_Time{display:inline-block;white-space:nowrap}
+#UIUpcoming_New a{margin-top:2px}
+.UIUpcoming .UIImageBlock{padding:2px 0 3px}
+.UIUpcoming_More .arrow,
+.UIUpcoming_Toggle .saving_message{position:absolute}
+.UIUpcoming_More .arrow{display:inline}
+.callout_parent_box{position:relative;z-index:6}
+.callout_outer_box{background-repeat:no-repeat;position:absolute}
+.callout_inner_box{margin:15px;position:relative;overflow:hidden;zoom:1}
+.callout_inner_box .close_x_wrapper{position:absolute;top:8px;right:8px}
+.callout_inner_box .close_x_wrapper .uiCloseButton{display:block}
+.callout_border{background:#525252;-moz-border-radius:8px;bottom:0;left:0;opacity:.7;position:absolute;right:0;top:0}
+.callout_content{border:1px solid #555;position:relative}
+.callout_buttons{background:#f2f2f2;padding:6px 7px 6px 8px}
+.callout_arrow_left{background-image:url(../../yF/r/l2vGZXcaq0M.png)}
+.callout_arrow_right{background-image:url(../../yW/r/5GjpfuVilIN.png)}
+.callout_arrow_up{background-image:url(../../yy/r/lGuyaNRz5TI.png)}
+.callout_arrow_down{background-image:url(../../yh/r/yuTcDB9W2aw.png)}
+.callout_footer_link{margin-top:4px}
+.MessagingHoverlist a.allLink{background:#f7f7f7;border-top:1px solid #e0e0e0;display:block;font-weight:bold;margin:0 -10px -10px -10px;padding:8px;text-align:center}
+.MessagingHoverlist a.allLink:hover{background:#6d84b4;border-color:#3b5998;color:#fff;text-decoration:none}
+.fbChatEventMsg{border-top:1px solid #eee;position:relative}
+.fbChatEventMsg .eventIcon{margin-top:1px;height:16px;width:16px}
+.fbChatEventMsg .addActionIcon{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-82px -309px}
+.fbChatEventMsg .leaveActionIcon{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-133px -309px}
+.fbChatEventMsg .videoCallIcon{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-150px -309px}
+.fbChatEventMsg .editNameIcon{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-116px -309px}
+.fbChatEventMsg .changePictureIcon{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-99px -309px}
+.fbChatEventMsg .songIcon{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-17px -294px;height:12px}
+.fbChatEventMsg .playErrorIcon{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:0 -294px;height:12px}
+.fbChatEventMsg .iconWrapper{float:left;text-align:right;width:32px}
+.fbChatEventMsg .messageWrapper{margin-left:40px}
+.fbDockChatTab .fbChatEventMsg .timestamp{background-color:#fff;position:absolute;right:0;top:-6px;visibility:hidden}
+.fbDockChatTab .fbChatEventMsg:hover .timestamp{visibility:visible}
+.fbChatConvItem .metaInfoContainer{visibility:hidden}
+.fbChatConvItem:hover .metaInfoContainer{visibility:visible}
+.fbChatMessageGroup{border-top:1px solid #eee;position:relative}
+.fbChatMessageGroup .profileLink{float:left}
+.fbChatMessageGroup .profileLink .profilePhoto{display:block;height:32px;width:32px}
+.fbChatMessageGroup .messages{margin-left:40px}
+.fbChatMessage{margin-bottom:3px;white-space:pre-wrap;word-wrap:break-word}
+.fbChatMessage.cyphertext{color:#999;font-size: 9px;line-height:11px}
+.fbChatMessage .attachment{margin-top:3px}
+.fbChatMessage .more{display:inline-block}
+.fbChatMessageSubject{margin-bottom:3px;white-space:pre-wrap;word-wrap:break-word}
+.fbChatOrderedList .item,.fbChatOrderedList .separator{float:left;width:100%}
+.fbChatOrderedList .item a{color:#333;display:block;padding:2px 20px 2px 10px;position:relative}
+.fbChatOrderedList .item a:hover,.fbChatOrderedList .item a.selected{background-color:#e0e4ee;text-decoration:none}
+.fbChatOrderedList .item a .pic{float:left;height:28px;margin-right:8px;width:28px}
+.fbChatOrderedList .item a .name{display:block;line-height:28px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fbChatOrderedList .item .status{display:block;height:14px;margin-top:-7px;position:absolute;right:9px;top:50%;width:7px}
+.fbChatOrderedList .lb_status{display:none}
+.fbChatOrderedList .item.active .status{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-493px -324px}
+.fbChatOrderedList .item.mobile .status{height:12px;width:8px;margin-top:-6px;background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-43px -339px}
+.fbChatOrderedList .item.invis{opacity:.3}
+.fbChatOrderedList .separator{display:table;height:32px;user-select:none;-moz-user-select:-moz-none}
+.fbChatOrderedList .separator .outer{display:table-cell;vertical-align:middle}
+.fbChatOrderedList .separator .outer .inner{cursor:pointer;position:relative;text-align:center;top:-50%;z-index:1}
+.fbChatOrderedList .separator .text{background-color:#fff;color:#989db3;display:inline-block;padding:0 5px;font-size: 9px;font-weight:bold;text-transform:uppercase}
+.fbChatOrderedList .separator .dive{left:0;position:absolute;top:50%;width:100%;z-index:-1}
+.fbChatOrderedList .separator .dive .bar{border-bottom:2px solid #ccd0da;display:block;margin:0 5px}
+div.fbChatSidebarDropdown .uiCloseButton{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-298px -407px;border:0;height:24px;width:26px}
+div.fbChatSidebarDropdown .uiCloseButton:hover{background-color:#fff}
+div.fbChatSidebarDropdown .openToggler .uiCloseButton{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-325px -407px;border:0 !important;border-left:1px solid #3b5998 !important;border-right:1px solid #3b5998 !important;margin:0 -1px}
+div.fbChatSidebarDropdown .openToggler .uiSelectorMenuWrapper{margin-right:-1px}
+.fbChatSidebarDropdown .uiMenuItem .itemLabel{white-space:normal;width:110px}
+.fbChatSidebarDropdown .uiMenu .disabled{display:none}
+.fbChatSidebarDropdown .uiMenu .checked .itemAnchor{font-weight:normal}
+.offline .fbChatGoOnlineItem,.fbChatGoOfflineItem{display:block}
+.offline .fbChatGoOfflineItem,.fbChatGoOnlineItem{display:none}
+.fbSidebarGripper{border-bottom:1px solid #e9eaee;border-top:1px solid #cad0db;cursor:ns-resize;width:100%}
+.fbSidebarGripper div{background:#e7e9ef;border-bottom:1px solid #c1c9d5;border-top:1px solid #f0f1f6;height:4px;position:relative}
+.fbSidebarGripper div span{background:#f0f1f6;border-top:1px solid #cad0db;display:block;height:1px;left:50%;margin-left:-6px;margin-top:1px;position:absolute;width:12px}
+.fbChatSidebar .fbChatTypeaheadView{bottom:0;position:absolute;top:auto;width:100%}
+.fbChatTab .name{white-space:nowrap}
+.fbChatTab .name a,
+.fbChatTab .name a:hover{color:#333;text-decoration:none}
+.highlight .fbChatTab .name a,
+.highlight .fbChatTab .name a:hover{color:#fff}
+a .fbChatTab .funhouse{left:-9999px;position:absolute}
+a:hover .fbChatTab .funhouse{left:auto;position:static}
+.bb .highlight.active .fbChatUserTab .wrap{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:left -499px}
+.bb .active .fbChatUserTab .wrap{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:left -469px;padding-left:12px}
+.bb .typing .fbChatUserTab .wrapWrapper{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:right -293px;padding-right:15px}
+.show_on_presence_error,
+.presence_error .hide_on_presence_error{display:none}
+.presence_error .show_on_presence_error{display:block}
+.bb .fbDockChatBuddyListNub{height:25px;width:180px}
+.bb .presence_error .fbDockChatBuddyListNub{display:none}
+.bb .fbDockChatBuddyListNub.openToggler{z-index:99}
+.bb .fbDockChatBuddyListNub.openToggler .fbNubButton{display:none}
+.bb .fbDockChatBuddyListNub .fbNubButton .icon{background-image:url(../../yU/r/DpIr-7bdqXs.png);background-repeat:no-repeat;background-position:-68px -27px;float:left;height:10px;margin:3px 4px 0 0;width:16px}
+.bb .offline .fbDockChatBuddyListNub .fbNubButton .icon{background-image:url(../../yU/r/DpIr-7bdqXs.png);background-repeat:no-repeat;background-position:-34px -27px}
+.bb .channelDown .fbDockChatBuddyListNub .fbNubButton .icon{background-image:url(../../yU/r/DpIr-7bdqXs.png);background-repeat:no-repeat;background-position:0 -27px;height:15px;width:17px}
+.bb .fbDockChatBuddyListNub .fbNubButton .label{display:block;line-height:15px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bb .fbDockChatBuddyListNub .fbNubButton .label .count{color:#777}
+.bb .fbDockChatBuddyListNub .fbNubButton .label .count strong{color:#333}
+.bb .fbDockChatBuddyListNub .fbNubFlyout{bottom:0;min-height:280px;width:100%}
+.bb .fbDockChatBuddyListNub .fbNubFlyoutInner{border-bottom:0}
+.bb .fbDockChatBuddyListNub .fbNubFlyoutTitlebar .titlebarLabel{padding:0}
+.bb .fbDockChatBuddyListNub .fbNubFlyoutTitlebar .titlebarTextWrapper{margin:3px 3px 3px 5px}
+.bb .fbDockChatBuddyListNub .fbChatOrderedList,.bb .fbDockChatBuddyListNub .fbChatTypeaheadView{padding:5px 0}
+.bb .fbDockChatBuddyListNub .fbChatTypeahead,.bb .fbDockChatBuddyListNub .fbChatTypeahead .wrap{border-style:none}
+.bb .fbDockChatBuddyListNub .fbChatTypeahead{border-top:1px solid #dadfea}
+.bb .fbDockChatBuddyListNub .fbChatTypeahead input{background-image:url(../../yU/r/DpIr-7bdqXs.png);background-repeat:no-repeat;background-position:0 -2px;height:17px}
+.ff3 .bb .fbDockChatBuddyListNub .fbChatTypeahead input{margin-bottom:1px}
+.fbDockChatBuddyListNub div.fbChatSidebarDropdown .uiCloseButton{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-340px -432px;border:0 !important;-moz-box-shadow:none;height:24px;width:22px}
+.fbDockChatBuddyListNub div.fbChatSidebarDropdown .uiCloseButton:active,.fbDockChatBuddyListNub div.fbChatSidebarDropdown .uiCloseButton:focus,.fbDockChatBuddyListNub div.fbChatSidebarDropdown .uiCloseButton:hover,.fbDockChatBuddyListNub div.fbChatSidebarDropdown .openToggler .uiCloseButton,.fbDockChatBuddyListNub div.fbChatSidebarDropdown .openToggler .uiCloseButton:active,.fbDockChatBuddyListNub div.fbChatSidebarDropdown .openToggler .uiCloseButton:focus,.fbDockChatBuddyListNub div.fbChatSidebarDropdown .openToggler .uiCloseButton:hover{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-363px -432px;background-color:#4a66a0;margin:0}
+.fbDockChatBuddyListNub .fbDockChatBuddyListNubMessage{background-color:#fff;border-top:1px solid #ccd0db;-moz-box-shadow:inset 0 1px #fafafa;display:none;padding:6px}
+.error .fbDockChatBuddyListNub .fbDockChatBuddyListNubMessage,.offline .fbDockChatBuddyListNub .fbDockChatBuddyListNubMessage{display:block}
+.fbDockChatBuddyListNub .fbDockChatBuddyListNubMessage .img{float:left;margin-top:3px}
+.offline .fbDockChatBuddyListNub .fbDockChatBuddyListNubMessage .img{background-image:url(../../yU/r/DpIr-7bdqXs.png);background-repeat:no-repeat;background-position:-34px -27px;height:10px;width:16px}
+.error .fbDockChatBuddyListNub .fbDockChatBuddyListNubMessage .img{background-image:url(../../yU/r/DpIr-7bdqXs.png);background-repeat:no-repeat;background-position:0 -27px;height:16px;width:16px}
+.fbDockChatBuddyListNub .fbDockChatBuddyListNubMessage .message{margin-left:24px}
+.fbDockChatDropdown .button{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-340px -432px;display:inline-block;width:22px}
+.fbDockChatDropdown .button:active,.fbDockChatDropdown .button:focus,.fbDockChatDropdown .button:hover{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-363px -432px}
+.fbDockChatDropdown .wrap a.button:active,.fbDockChatDropdown .wrap.openToggler a.button,.fbDockChatDropdown .wrap.openToggler a.button:active,.fbDockChatDropdown .wrap.openToggler a.button:focus
+.fbDockChatDropdown .wrap.openToggler a.button:hover{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-363px -432px;background-color:#4a66a0;border:0}
+.bb .fbDockChatTab{height:25px;width:160px}
+.bb .fbDockChatTab.openToggler{width:260px}
+.bb .fbDockChatTab.highlight .fbNubButton{background-color:#6d84b4;border-color:#3a5997;-moz-box-shadow:inset 0 1px rgba(255, 255, 255, .1);color:#fff}
+.bb .fbDockChatTab.highlight:hover .fbNubButton{background-color:#627bae}
+.bb .fbDockChatTab.openToggler .fbNubButton{display:none}
+.bb .fbDockChatTab .fbChatTab{margin-left:2px}
+.bb .fbDockChatTab .fbChatTab .name{line-height:15px;overflow:hidden;text-overflow:ellipsis}
+.bb .fbDockChatTab .numMessages{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-64px -309px;color:#fff;font-size: 9px;font-weight:bold;height:16px;padding-top:1px;position:absolute;right:12px;text-align:center;top:-8px;width:17px}
+.bb .fbDockChatTab .fbDockChatTabFlyout{bottom:0;height:285px;width:100%}
+.bb .fbDockChatTab .fbNubFlyoutInner{border-bottom:0}
+.bb .fbDockChatTab .fbNubFlyoutHeader{position:relative}
+.bb .fbDockChatTab .sheetContainer{position:absolute;top:100%}
+.bb .fbDockChatTab.sheetSlide .sheetContainer{overflow:hidden}
+.bb .fbDockChatTab .sheetContainer .sheet{-moz-background-clip:padding;background-color:#f2f2f2;border-bottom:1px solid rgba(0, 0, 0, .1);position:relative;z-index:1}
+.bb .fbDockChatTab .sheetContainer .sheet .UIImageBlock_Content{width:212px}
+.bb .fbDockChatTab.sheetSlide .sheetContainer .sheet{bottom:100%}
+.bb .fbDockChatTab.active .sheet_img{background-image:url(../../yU/r/DpIr-7bdqXs.png);background-repeat:no-repeat;background-position:-51px -27px;height:10px;margin-top:4px;width:16px}
+.bb .fbDockChatTab.mobile .sheet_img{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-32px -339px;height:15px;margin:3px 3px 0 0;width:13px}
+.bb .fbDockChatTab.blocked .sheet_img{background-image:url(../../yU/r/DpIr-7bdqXs.png);background-repeat:no-repeat;background-position:0 -58px;height:15px;margin:3px 3px 0 0;width:13px}
+.bb .fbDockChatTab.chatOffline .sheet_img{background-image:url(../../yU/r/DpIr-7bdqXs.png);background-repeat:no-repeat;background-position:-34px -27px;height:10px;margin-top:4px;width:16px}
+.bb .no-titan .fbDockChatTab.disabled .fbNubFlyoutBody{background-color:#f7f7f7}
+.bb .fbDockChatTab .fbNubFlyoutBodyContent,.bb .fbDockChatTab .conversationContainer{height:100%;width:100%}
+.bb .fbDockChatTab .conversationContainer .conversation{padding-top:3px}
+.bb .fbDockChatTab .conversationContainer .fbChatMessage{max-width:193px}
+.bb .fbDockChatTab .fbNubFlyoutFooter{position:relative}
+.bb .fbDockChatTab .typingIndicator{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:left -369px;margin-left:28px;padding:0 8px 5px 17px;visibility:hidden;user-select:none;-moz-user-select:-moz-none}
+.bb .fbDockChatTab.typing .typingIndicator{visibility:visible}
+.bb .fbDockChatTab .inputContainer{position:relative}
+.bb .fbDockChatTab .input{border:0;border-top:1px solid #c9d0da;display:block;height:0;margin:0;max-height:77px;min-height:16px;outline:none;overflow:auto;overflow-x:hidden;padding:5px 4px 3px 20px;resize:none;width:234px}
+.bb .no-titan .fbDockChatTab.disabled .input{background-color:#e4e4e4;color:#888}
+.bb .fbDockChatTab .inputIcon{left:4px;position:absolute;top:5px}
+.bb .fbDockChatTab.mobile .inputIcon{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-52px -339px;height:12px;width:8px;margin-top:2px;left:7px}
+.bb .fbDockChatTab .funhouse .close{vertical-align:top}
+.bb .fbDockChatTab .funhouse{margin-top:1px}
+.bb .fbDockChatTab.openToggler .funhouse{display:block;margin-left:5px}
+.bb .fbDockChatTab .titlebar .titlebarLabel{padding:0}
+.bb .fbDockChatTab .titlebar .titlebarLink{float:left;color:#fff;padding:3px 7px 4px}
+.bb .fbDockChatTab .titlebar .titlebarTextWrapper{margin:3px 7px 4px}
+.bb .fbDockChatTab .titlebar .titlebarLink .titlebarTextWrapper{margin:0}
+.bb .fbDockChatTab .titlebar .titlebarText{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bb .fbDockChatTab .titlebar .button{display:inline-block;height:25px;margin-right:-1px;vertical-align:top}
+.bb .fbDockChatTab .titlebar .close{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-409px -432px;margin-right:3px;width:21px}
+.bb .fbDockChatTab .titlebar .close:active,.bb .fbDockChatTab .titlebar .close:focus,.bb .fbDockChatTab .titlebar .close:hover{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-431px -432px}
+.bb .fbDockChatTab .fbNubButton .uiTooltipWrap,.bb .fbDockChatTab .titlebar .uiTooltipWrap{font-weight:normal;margin-bottom:3px}
+.bb .fbDockChatTab .fbChatMessageGroup .metaInfoContainer{background-color:#fff;position:absolute;right:0;top:-6px}
+.bb .no-titan .fbDockChatTab.disabled .fbChatMessageGroup .metaInfoContainer{background-color:#f7f7f7}
+.fbDockChatTab.thread .titlebarText{max-width:172px}
+.fbDockChatTab.thread .uiTooltipWrap td + td{padding-left:10px}
+.fbDockChatTab.thread .titlebar .addToThread{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-386px -432px;width:22px}
+.fbDockChatTab.thread .titlebar .addToThread:active,.fbDockChatTab.thread .titlebar .addToThread:focus,.fbDockChatTab.thread .titlebar .addToThread:hover{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-317px -432px}
+.bb .fbDockChatTab.typing .fbChatUserTab .wrapWrapper{float:left;max-width:133px}
+.bb .fbDockChatTab.typing .fbNubButton:hover .fbChatUserTab .wrapWrapper{max-width:113px}
+.bb .fbDockChatTab.user.active .titlebarTextWrapper{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:left -498px;padding-left:11px}
+.bb .fbDockChatTab.user .titlebar .videoicon{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-294px -432px;display:none;width:22px}
+.bb .fbDockChatTab.user .titlebar .videoicon:active,.bb .fbDockChatTab.user .titlebar .videoicon:focus,.bb .fbDockChatTab.user .titlebar .videoicon:hover{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-271px -432px}
+.videoCallEnabled .bb .fbDockChatTab.user .titlebar .videoicon{display:inline-block}
+.videoCallEnabled .bb .fbDockChatTab.user.disabled .titlebar .videoicon{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-294px -432px;cursor:default}
+.bb .fbDockChatTab .callBackLink{white-space:nowrap}
+.bb .fbDockChatTab.disabled .callBackLink{display:none}
+#fbDockChatTabSlider .arrow{background-image:url(../../yU/r/DpIr-7bdqXs.png);background-repeat:no-repeat;background-position:-97px -27px;width:4px;height:8px;margin:4px 2px 0 0;float:left}
+#fbDockChatTabSlider .previous .arrow{background-image:url(../../yU/r/DpIr-7bdqXs.png);background-repeat:no-repeat;background-position:-107px -27px}
+#fbDockChatTabSlider .next.disabled .arrow{background-image:url(../../yU/r/DpIr-7bdqXs.png);background-repeat:no-repeat;background-position:-102px -27px}
+#fbDockChatTabSlider .previous.disabled .arrow{background-image:url(../../yU/r/DpIr-7bdqXs.png);background-repeat:no-repeat;background-position:-112px -27px}
+.no-titan #fbDockChatTabSlider .disabled a.fbNubButton:hover{background-color:#d8d8d8}
+#fbDockChatTabSlider .numTabs{margin:1px 5px;float:left}
+.no-titan #fbDockChatTabSlider .disabled .numTabs{color:#999}
+#fbDockChatTabs{min-height:1px;position:static}
+#fbDockChatTabsWrapper{height:25px}
+#fbDockChatTabSlider .numMessages{background-image:url(../../yX/r/ZLH-gtXrchd.png);background-repeat:no-repeat;background-position:-64px -309px;color:#fff;font-size: 9px;font-weight:bold;height:16px;padding-top:1px;position:absolute;text-align:center;top:-8px;width:17px}
+#fbDockChatTabSlider .next .numMessages{right:2px}
+#fbDockChatTabSlider .previous .numMessages{right:6px}
+.bb .fbNub,.bb .fbNubGroup{float:left;position:relative}
+.bb .fbNub{-moz-box-shadow:0 1px 1px rgba(0, 0, 0, .3)}
+.bb .fbNub.openToggler{-moz-box-shadow:none}
+.bb .lNubContainer .fbNub{margin-right:4px}
+.bb .rNubContainer .fbNub{margin-left:4px}
+.bb .fbNubButton{background:#ebeef4;border:1px solid rgba(29, 49, 91, .3);border-bottom:0;-moz-box-shadow:inset 0 1px rgba(255, 255, 255, .5);color:#333;display:block;height:16px;font-weight:bold;padding:4px 5px;position:relative;z-index:1}
+.bb .fbNubButton,.bb .fbNubFlyoutTitlebar,.bb .fbNub .noTitlebar{border-top-left-radius:1px 1px;border-top-right-radius:1px 1px}
+.bb .fbNubButton:hover{background:#f5f7fa;text-decoration:none}
+.bb .openToggler .fbNubButton{background:#fff;-moz-border-radius:0;border-top:0;-moz-box-shadow:0 1px 1px rgba(0, 0, 0, .3);padding:5px}
+.bb .fbNubFlyout{bottom:25px;-moz-box-shadow:0 1px 1px rgba(0, 0, 0, .3);position:absolute}
+.bb .fbNub.maxHeight .fbNubFlyoutOuter{height:9999px}
+.bb .fbNub .noTitlebar{border-top:1px solid rgba(0, 0, 0, .3)}
+.bb .lNubContainer .fbNubFlyout,.bb .rNubContainer .fbNub .swapDirection{left:0;right:auto}
+.bb .rNubContainer .fbNubFlyout,.bb .lNubContainer .fbNub .swapDirection{left:auto;right:0}
+.bb .fbNubFlyoutInner{border-bottom:1px solid rgba(0, 0, 0, .3)}
+.bb .fbNubFlyoutTitlebar,.bb .menuOpened .fbNubFlyoutTitlebar,.bb .menuOpened .fbNubFlyoutTitlebar:hover{background-color:#6d84b4;border:1px solid rgba(0, 39, 121, .76);border-bottom:none;border-top-left-radius:1px 1px;border-top-right-radius:1px 1px;cursor:pointer}
+.bb .fbNubFlyoutTitlebar:hover{background-color:#627bae}
+.bb .menuOpened .fbNubFlyoutTitlebar,.bb .menuOpened .fbNubFlyoutTitlebar:hover{-moz-box-shadow:none}
+.bb .fbNubFlyoutTitlebar .titlebarLabel{color:#fff;font-weight:bold;line-height:18px;padding:3px 7px 4px}
+.bb .fbNubFlyoutHeader,.bb .fbNubFlyoutBody,.bb .fbNubFlyoutFooter{background-color:#fff;border:1px solid rgba(0, 0, 0, .3);border-width:0 1px}
+.bb .fbNubFlyoutBody{overflow-x:hidden;overflow-y:auto;position:relative}
+.bb .fbNubButton,.bb .fbNubButton:hover,.bb .openToggler .fbNubButton,.bb .fbNubFlyout,.bb .fbNubFlyout .flyoutInner,.bb .fbNubFlyoutTitlebar,.bb .fbNubFlyoutHeader,.bb .fbNubFlyoutBody,.bb .fbNubFlyoutFooter{-moz-background-clip:padding}
+.bb .fbNub .fbNubButton .UIImageBlock_Content{float:left;width:auto}
+.bb .fbNub .fbNubButton .spritemap_icons{display:block}
+.fbDockWrapper.bb{bottom:0;direction:ltr;height:25px;left:0;position:fixed;right:0;z-index:300}
+.fbDockWrapperLeft.bb{right:auto}
+.fbDockWrapperRight.bb{left:auto}
+.bb .fbDock{margin:0 15px}
+.bb .fbDock .lNubContainer{float:left}
+.bb .fbDock .rNubContainer{float:right}
+.emote_text{display:none}
+.emote_img,.emote_custom{height:16px;vertical-align:top;width:16px}
+.emote_img{background:url(../../yM/r/WlL6q4xDPOA.png) no-repeat;overflow:hidden}
+.sidebarMode.ticker .fbDockWrapper.bb{right:205px}
+.sidebarMode.ticker.theaterMode .fbDockWrapper.bb{right:220px}
+.sidebarMode.ticker .tickerStoryBlock .UIImageBlock_Content{max-width:159px}
+.sidebarMode.ticker .fbChatSidebar,
+.sidebarMode.ticker .fbChatSidebar .uiScrollableAreaBody{width:205px !important}
+.sidebarMode.ticker .fbChatSidebar .tickerHeader{display:none}
+.sidebarMode.ticker .fbChatSidebar .ticker_container{border:0 !important;height:100% !important;width:205px !important}
+.sidebarMode.ticker .fbChatSidebar .scrollTopPrompt{width:205px !important}
+.sidebarMode.ticker .fbChatSidebar .fbFeedTicker{height:100% !important}
+.sidebarMode.ticker .fbChatSidebar .uiSideHeader{background-color:#d8dfea !important;border-bottom:1px solid #ccd4e2 !important;border-top:0 !important;margin-bottom:0}
+.sidebarMode.ticker .fbChatSidebar .tickerStoryBlock{margin-left:0 !important}
+.sidebarMode.ticker .fbChatSidebar .fbFeedTicker .fbFeedTickerStory{background-color:#f2f4f8;border-bottom-color:#f2f4f8;border-top-color:#d8dfea;line-height:13px;padding-right:5px}
+.sidebarMode.ticker .fbChatSidebar .fbFeedTicker .tickerStoryHidden,
+.sidebarMode.ticker .fbChatSidebar .fbFeedTicker .tickerStoryHidden:hover{background-color:#f2f4f8 !important;border-bottom-color:#f2f4f8 !important;border-top-color:#d8dfea !important}
+.sidebarMode.ticker .fbChatSidebar .fbChatOrderedList .item a,
+.sidebarMode.ticker .fbChatSidebar .fbChatTypeaheadView li{padding-left:2px !important}
+.sidebarMode.ticker .fbChatSidebar #pagelet_ticker{height:50%;overflow:hidden;position:relative}
+.sidebarMode.ticker .fbChatSidebar .uiProfilePhoto,
+.sidebarMode.ticker .fbChatSidebar .fbChatOrderedList .item .pic,
+.sidebarMode.ticker .fbChatSidebar .fbChatTypeaheadView li img{height:28px !important;width:28px !important;margin-left:3px !important}
+.sidebarMode.ticker .fbChatSidebar .fbFeedTicker .tickerStorySelected{background-position:11px 15px}
+.sidebarMode.ticker .fbChatSidebar .fbFeedTicker .fbFeedTickerStory.tickerNuxStory{background-color:#fff;border-bottom:1px solid #b0b0b0;border-top:1px solid #fff;padding:8px 8px 9px 10px;width:190px;z-index:10}
+.sidebarMode.ticker .fbChatSidebar .fbFeedTicker .fbFeedTickerStory.tickerNuxStory:hover{background-color:#f2f4f8 !important;border-bottom:1px solid #a8afd0;border-top:1px solid #f2f4f8}
+.sidebarMode.ticker .fbChatSidebar .fbFeedTicker .tickerStorySelected.tickerNuxStory,
+.sidebarMode.ticker .fbChatSidebar .fbFeedTicker .tickerStorySelected.tickerNuxStory:hover{background-color:#d7deeb !important;border-bottom:1px solid #899bc1;border-top:1px solid #d7deeb}
+.fbChatLiveListenTab .wrap{background:transparent url(../../yC/r/Pm-a0iEMj8t.png) 0 1px no-repeat;padding-left:20px}
+.fbChatLiveListenTab .wrap .name{padding-right:3px}
+.bb .fbDockChatTab.highlight .fbNubButton .fbChatLiveListenTab .wrap{background-image:url(../../yf/r/OLh2eY9cN4s.png)}
+.bb .livelisten .titlebarTextWrapper{background:transparent url(../../yf/r/OLh2eY9cN4s.png) 0 2px no-repeat;padding-left:20px}
+.fbRequestList .async_saving{position:relative}
+.fbRequestList .loadingIndicator{display:none;top:50%;left:50%;margin:-5px 0 0 -8px;position:absolute}
+.fbRequestList .async_saving .loadingIndicator{display:block}
+.fbRequestList .async_saving .addButtonWrapper,.fbRequestList .async_saving .uiButton{visibility:hidden}
+div.fbRequestList .addButtonWrapper{display:inline-block;margin-right:5px;text-align:left}
+.fbRequestList .addButtonWrapper .FriendListMenu li,#fbRequestsFlyout .addButtonWrapper .FriendListMenu li{overflow:hidden;padding:0;text-overflow:ellipsis;white-space:nowrap}
+.fbRequestList .networkContextWrapper{margin:2px 0}
+#so_sound_player{left:0;position:absolute;top:0;z-index:1000}
+#sound_player_holder{position:absolute}
+.uiSelectorBottomUp .openToggler .uiSelectorButton,
+.uiSelectorBottomUp .openToggler .uiSelectorButton:active,
+.uiSelectorBottomUp .openToggler .uiSelectorButton:focus,
+.uiSelectorBottomUp .openToggler .uiSelectorButton:hover,
+.uiSelectorBottomUp .openToggler .uiButtonSuppressed,
+.uiSelectorBottomUp .openToggler .uiButtonSuppressed:active,
+.uiSelectorBottomUp .openToggler .uiButtonSuppressed:focus,
+.uiSelectorBottomUp .openToggler .uiButtonSuppressed:hover{border:1px solid #3b5998;border-top-color:#6d84b4}
+.uiSelectorBottomUp .uiSelectorMenuWrapper{bottom:100%;margin-bottom:-2px;top:auto}
+#MessagingDashboard #error,#MessagingDashboard .status{margin:10px 0}
+#MessagingDashboard #MessagingFooter{clear:both;float:left;margin:25px 0 20px;overflow:hidden;width:100%}
+#MessagingDashboard #MessagingFooter dl{display:inline;margin:0;overflow:hidden;padding:0}
+#MessagingDashboard #MessagingFooter dt{display:inline;font-weight:bold;margin:0;padding:0 5px 0 0}
+#MessagingDashboard #MessagingFooter dd{display:inline;margin:0;padding:0 20px 0 0}
+#MessagingDashboard #MessagingFooter form{display:inline}
+#MessagingDashboard .footerActionBar{width:100%}
+#MessagingDashboard .uiHeaderActions .uiPager .lfloat,#MessagingDashboard .uiHeaderActions .uiPager .rfloat,#MessagingDashboard .footerActionBar .footerPager .lfloat,#MessagingDashboard .footerActionBar .footerPager .rfloat{display:inline-block;float:none;vertical-align:top;zoom:1}
+#MessagingDashboard .UIPager .UIPager_PageNum{display:none}
+#MessagingDashboard .MessagingFooterContent .UIPager{float:right}
+#MessagingFrame{display:block;float:left;margin-bottom:-10px;min-height:200px;width:759px}
+.MessagingComposerBody{border-color:#6d84b4;outline:none;overflow-y:auto !important;resize:none;height:30px;width:335px;max-height:280px}
+.MessagingSimpleComposer .MessagingComposerBody{width:270px}
+.MessagingSimpleComposer .toField .label,.MessagingSimpleComposer .attendeeField .label,.MessagingSimpleComposer .messageField .label{width:20px}
+.MessagingComposerTypeaheadWrapper .uiInlineTokenizer{border-color:#6d84b4}
+.MessagingComposerTypeaheadWrapper .compact{width:340px}
+.MessagingComposer .standard_status_element{display:none}
+.MessagingComposer .standard_status_element.async_saving{display:block}
+.MessagingComposer .uploading .loadingIndicator{margin-top:2px}
+.MessagingComposer .uploaded{margin:3px 0}
+.MessagingComposer .uploaded .uiCloseButton{margin:-2px 0 0 4px}
+.MessagingComposer .toField .data{vertical-align:bottom}
+#MessagingInlineComposer{padding-left:45px}
+#MessagingInlineComposer .MessagingComposerBody{width:100%}
+#MessagingInlineComposer .MessagingComposerForm{max-width:406px}
+#MessagingInlineComposer .MessagingComposerFormLeft{width:100%}
+#MessagingInlineComposer textarea{border-color:#899bc1;font-size: 11px;height:14px;margin-right:6px;overflow:hidden;width:100%;max-width:342px}
+#MessagingComposerOptions{margin-top:2px;max-width:350px}
+.MessagingComposerButton{margin-right:2px}
+.MessagingAttachmentFrame{background-image:url(../../y8/r/UGE-nhtXnV9.png);background-repeat:no-repeat;background-position:-31px -19px;height:18px;width:18px;opacity:.5}
+.MessagingShareOption{cursor:default;display:block;background-image:url(../../y8/r/UGE-nhtXnV9.png);background-repeat:no-repeat;background-position:-31px 0;height:18px;width:18px}
+.MessagingShareOption:hover{background-image:url(../../y8/r/UGE-nhtXnV9.png);background-repeat:no-repeat;background-position:-49px 0}
+.MessagingShareOption:active{background-image:url(../../y8/r/UGE-nhtXnV9.png);background-repeat:no-repeat;background-position:-67px 0}
+.MessagingAttachmentEnabled .MessagingAttachmentFrame{opacity:1}
+.MessagingAttachmentEnabled .MessagingAttachmentFrame:hover{background-image:url(../../y8/r/UGE-nhtXnV9.png);background-repeat:no-repeat;background-position:-49px -19px}
+.MessagingAttachmentEnabled .MessagingAttachmentFrame:active{background-image:url(../../y8/r/UGE-nhtXnV9.png);background-repeat:no-repeat;background-position:-67px -19px}
+.MessagingCheckboxTooltip{padding-top:2px}
+.MessagingCheckboxTooltip input.MessagingCheckbox{font-size: 9px;height:13px;margin-bottom:0;margin-top:1px;vertical-align:baseline}
+.MessagingComposer .FBAttachmentStage{border:1px solid #aeaeae;background:#fff;overflow:hidden;width:331px}
+.MessagingComposer .previewWrapper img{max-height:78px;border:1px solid #ccc;padding:2px}
+.MessagingComposer .FBAttachmentStageLoader{text-align:center}
+.MessagingComposer .attachmentContainer{width:300px}
+.MessagingComposer .UIShareStage_HasImage .UIShareStage_ShareContent{width:199px}
+.MessagingComposer .attachupload iframe{height:25px}
+.hasFBShare .MessagingShareOption{display:none}
+.MessagingComposer .webCamContainer{position:relative}
+.MessagingComposer .webCamContainer .webCamModeLink{background-color:#555;position:absolute;right:10px;text-decoration:none;top:10px}
+.MessagingSOECallout,.MessagingSMSCallout{background-position:237px 146px;display:none;left:-245px;position:absolute;top:-164px;width:367px}
+.MessagingSMSCallout{background-position:237px 147px;top:-165px}
+.MessagingSMSCallout.multiplePeople{background-position:237px 160px;top:-178px}
+.showSOECallout .MessagingSOECallout,.showSMSCallout .MessagingSMSCallout{display:block}
+.showSOECallout .sendOnEnterBox,.showSMSCallout .smsBox{background-color:#fbf4db;border:1px solid #f5df7e;display:inline-block;margin:-1px -5px -1px -1px;padding-right:4px}
+.hideTooltip .uiTooltipWrap{display:none !important}
+#MessagingFrame .fallback{color:#ccc;font-size: 13px;font-weight:bold;padding:120px 0;text-align:center}
+#MessagingFrame .fallback a{color:#6d84b4}
+#MessagingTypingIndicator{border-style:solid;border-color:#e9e9e9;border-width:1px 0 0 0}
+#MessagingShelfSpacer{height:33px}
+#MessagingLoadingSpinner,.MessagingForwardedContent,.MessagingReadViewMainContent,#MessagingShelf{width:493px;overflow:hidden}
+#MessagingShelf{overflow:visible}
+#MessagingNetegoWrapper{width:244px}
+.MessagingReadHeader{background-color:#fff;width:759px;z-index:2}
+.MessagingContentHeaderWrapper{position:absolute;margin-top:-1px}
+.MessagingContentBorder{border-top:1px solid #ccc;width:493px}
+.MessagingForwardForm,.MessagingDeleteForm{background-color:#fef8cb;border:1px solid #debe00;padding:10px 10px 9px 5px}
+#MessagingActionShelf{display:none}
+.MessagingActionShelfSpacer{background-color:#fff;width:493px;height:10px}
+.MessagingReadHeader .hoverlistLink{color:#3b5998}
+#MessagingEarlierMessagesLink:hover{text-decoration:none}
+#MessagingMessages .heavySeparator{border-top:1px solid #aaa}
+#MessagingMessages .uiList:first-child .uiListItem:first-child{border-top-width:0}
+#MessagingMessages .uiList .uiListItem:first-child{border-top-width:1px}
+.fixedBody #MessagingScroller{position:relative}
+.fixedBody #MessagingScroller #MessagingMessages{bottom:0;position:absolute}
+#MessagingLoadingSpinner{position:absolute;padding-top:100px;text-align:center}
+.MessagingMessage .main,.MessagingParticipantList{margin:0 -15px;padding:8px 15px}
+.MessagingLogMessage .UIImageBlock{margin:0 -15px;padding:4px 15px 4px 49px;color:gray}
+.MessagingLogMessage .timestamp{color:#ccc;cursor:default;display:inline-block;font-size: 9px;margin-left:4px;vertical-align:baseline;float:none}
+.uiList .MessagingLogMessage{border-style:none}
+.uiList .MessagingLogMessageHead{border-style:solid}
+.MessagingLogMessageAttachment{margin-top:10px}
+.MessagingLogMessageAttachment img{height:100px;width:100px}
+.MessagingMessage .favicon{background-color:#f2f2f2;border-top:1px solid #e9e9e9;height:16px;padding:7px 8px 8px;width:16px}
+.MessagingMessage .body{margin-top:2px}
+.MessagingMessage .subject{margin:4px 0 2px;overflow:hidden;width:350px}
+.MessagingMessage .rightSide{padding-top:2px}
+.MessagingMessage .content{line-height:14px;overflow:hidden;padding:2px 0 1px;width:350px;word-wrap:break-word}
+.MessagingMessage .content p{display:inline;margin:0}
+.MessagingMessage .animateRow{padding:0}
+.MessagingMessage .animateRow p{padding:2px 0 1px}
+.MessagingMessage .animateRow p.emote_text{display:none}
+.MessagingMessage .forwardedBlock{border-left:2px solid #ccc;padding-left:8px}
+.MessagingMessage pre{font-family:"lucida grande",tahoma,verdana,arial,sans-serif;font-size: 11px;margin:0;white-space:pre-wrap;word-wrap:break-word}
+.MessagingMessage iframe{border:0;display:block;height:0;width:100%}
+.MessagingMessage .attachments iframe{height:inherit}
+.MessagingMessage .emote_img{bottom:1px;margin-bottom:-2px;position:relative}
+.MessagingMessage .attachments{margin-bottom:8px;max-width:460px}
+.MessagingMessage .attachments .previewWrapper{height:78px;margin:5px 0 15px}
+.MessagingMessage .attachments li:last-child .previewWrapper{margin-bottom:2px}
+.MessagingMessage .attachments img.preview{border:1px solid #ccc;max-height:78px;max-width:400px;padding:2px}
+.MessagingMessage .attachments img.preview:hover{border-color:#3b5998}
+#MessagingMessages a.participantListReply:hover{background-color:#d8dfea}
+#MessagingEarlierMessages{margin:1px 0 -1px;text-align:center}
+#MessagingEarlierMessages img{position:relative;top:1px}
+#MessagingEarlierMessages .no_fixed_support .loading_earlier_label,#MessagingEarlierMessages .async_saving span.load_earlier_label{display:none}
+#MessagingEarlierMessages .async_saving span.loading_earlier_label{display:inline}
+.MessagingMessage .showFullMsg{color:#aaa;display:inline-block;margin-right:3px;vertical-align:top}
+.MessagingMessage .showFullMsg .dialogLink{vertical-align:top}
+.MessagingMessage .timestamp{color:#aaa;cursor:default;display:inline-block;vertical-align:top}
+.MessagingMessage .sourceTooltip{cursor:default;padding-top:3px}
+.MessagingMessage .bccTooltipWrapper{color:#aaa;font-weight:bold;vertical-align:top}
+.MessagingMessage .bccTooltip{cursor:default;color:#aaa}
+#MessagingReadParticipants,.MessagingReadHeader h2{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.MessagingReadHeader .MessagingThreadSearch input{width:160px}
+.MessagingThreadNameAndPeopleCount{font-size: 13px;color:gray;font-weight:normal}
+.MessagingThreadNameAndPeopleCount .MessagingThreadName{color:#1c2a47;font-size: 16px;font-weight:bold;margin-right:2px}
+.MessagingThreadNameAndPeopleCount .hoverlistLink{color:#3b5998}
+.MessagingMessage .quotedTextLink{font-size: 9px}
+.MessagingOnlineIndicator{display:none;background:url(../../yV/r/AA4mSyZRGOi.png) no-repeat;width:12px;height:8px}
+.MessagingOnlineIndicator_Online{display:inline-block}
+.MessagingOnlineIndicator_Idle{background-position:0 -119px;display:inline-block}
+.MessagingLocation{height:12px;width:7px;margin-left:3px}
+.MessagingNoResults{color:#ccc;font-size: 22px;font-weight:bold;padding:140px 0;text-align:center;width:550px}
+.MessagingMessage .files{display:inline-block;vertical-align:top}
+.MessagingSenderWarning .img{margin-top:1px}
+.fixedBody .MessagingReadHeader{position:fixed !important;margin-top:-15px;padding-top:15px}
+.fixedBody .MessagingContentWrapperNuxVisible{margin-top:104px}
+.fixedBody .MessagingContentWrapper{margin-top:45px}
+.fixedBody .MessagingContentHeaderWrapper{position:fixed !important;z-index:1}
+.fixedBody #MessagingContentBorderShingle{background-color:rgba(0, 0, 0, .07);height:3px}
+#MessagingMessages .searchMessages > li{border-style:dashed}
+#MessagingMessages .moreLink{padding:0;border-style:none;background-color:#fff}
+.MessagingMessage .messageCheck{padding:14px 6px 0 4px}
+.MessagingLogMessage .messageCheck{padding-left:4px}
+.messageCheck,.SearchThreadPage #MessagingShelf,.MessagingShelfNoReply,.selectionMode .seeMore,.selectionMode .MessagingComposerForm,.selectionMode .MessagingThreadNoReplyInfo,.selectionMode .MessagingLogMessage .messageCheck,.selectionMode #MessagingShelf{display:none}
+.MessagingThreadNoReplyInfo,.selectionMode .messageCheck,.selectionMode .MessagingShelfNoReply,.selectionMode.deleteSelectionMode .messageCheck{display:block}
+.selectionMode .selected{background-color:#eff2f7}
+#MessagingActionShelf{display:none}
+.selectionMode #MessagingActionShelf{display:block}
+.selectionMode #MessagingMainContent{margin-top:55px}
+#MessagingNoReplyContent,#MessagingShelfContent{padding:8px 10px 23px}
+#MessagingNoReplyContent{padding-left:58px}
+#MessagingShelf.fixedScrolling{bottom:0}
+.ComposerForward{min-height:250px;max-height:450px;overflow-x:hidden;overflow-y:auto}
+.ComposerForward .MessagingComposerForm .label{width:55px}
+.ComposerForward .MessagingComposerContainer{padding:0 4px}
+.ComposerForward .MessagingForwardPreview{margin:8px 0 0 65px}
+.ComposerForward .MessagingComposerBody{width:100%;margin:0 -4px}
+.ImageDialogContent{text-align:center;vertical-align:middle}
+.ResizableDialogContent{overflow:auto}
+div.MessagingImageDialogLoading{background:url(../../y9/r/jKEcVPZFk-2.gif) no-repeat center;height:200px;min-width:400px;overflow:hidden}
+.MessagingImageDialogLoading img{visibility:hidden}
+.MessagingDirections .img{margin:-7px -7px -9px -7px}
+a.MessagingMapLink{color:#aaa}
+.uiToolbarBordered{margin:0 -7px;padding:6px 7px 6px 1px}
+.uiToolbar .uiToolbarItem{float:left;margin-left:6px;vertical-align:top}
+.uiToolbarUnbordered .uiToolbarItem:first-child{margin-left:0}
+.uiToolbar .uiToolbarDivider{background:#d6d6d6;height:22px;width:1px}
+.messaging_nux_header{background:#f2f2f2;border-bottom:1px dashed #b3b3b3;margin:-15px -20px 15px -20px;padding:24px 20px 19px;position:relative;zoom:1}
+.messaging_nux_header .tip_wrapper{position:relative}
+.active_tip .tip_link{color:#333;cursor:text;text-decoration:none}
+.chat_setup_tip_callout,
+.email_setup_tip_callout,
+.sms_setup_tip_callout{margin-left:-16px;margin-top:5px}
+.chat_setup_tip_callout .uiOverlayContent,
+.email_setup_tip_callout .uiOverlayContent,
+.sms_setup_tip_callout .uiOverlayContent{zoom:1}
+.messaging_email_setup_confirmation_row{width:250px}
+.sms_setup_tip_callout .sms_activation_instructions{display:none}
+.sms_carrier_selection{margin-left:-40px}
+.sms_setup_tip_callout .sms_carrier_selection .select{width:160px}
+.messaging_sms_disclaimer{color:#999}
+.async_saving .tip_content_status_wrapper{background:url(../../yk/r/LOOn0JtHNzb.gif);background-position:center center;background-repeat:no-repeat;min-height:80px}
+.async_saving .tip_content_wrapper{visibility:hidden}
+.async_saving .loading_shield{position:absolute;bottom:0;left:0;right:0;top:0}
+.async_saving .callout_check_alias_button,
+.async_saving .callout_actions,
+.async_saving .callout_next_button,
+.async_saving .callout_activate_button{visibility:hidden}
+.async_saving .alias_picker_wrapper{background:url(../../yb/r/GsNJNwuI-UM.gif);background-position:305px center;background-repeat:no-repeat}
+.messaging_nux_tip_list li.tip_wrapper{padding-right:20px}
+.messaging_nux_tip_callout .callout_arrow_up{background-position:35px 0;position:absolute}
+.messaging_nux_tip_callout .uiContextualDialogFooter{overflow:auto}
+.messaging_nux_tip_callout .callout_actions{line-height:22px}
+.messaging_callout_title{font-size: 11px;line-height:16px}
+#messaging_nux_done{position:absolute;top:23px;right:20px}
+.messaging_nux_info_table th.label{width:auto;text-align:left}
+.sms_setup_tip_callout .mobile_activation_carrier_container{padding:5px 0}
+.sms_setup_tip_callout .mobile_activation_carrier_container select{margin-right:10px}
+.sms_setup_tip_callout .sms_requests{margin-left:-40px}
+.callout_activate_button,
+.callout_check_alias_button,
+.activate_step .callout_next_button,
+.check_alias_step .callout_next_button,
+.check_alias_step .callout_activate_button,
+.check_alias_step .alias_unavailable_wrapper,
+.success_result .alias_picker_wrapper,
+.success_result .alias_unavailable_wrapper,
+.check_alias_step .alias_picker_confirm_wrapper{display:none}
+.failure_result .alias_unavailable_wrapper,
+.success_result .alias_picker_confirm_wrapper{display:block}
+.check_alias_step .callout_check_alias_button,
+.activate_step .callout_activate_button{display:inline-block}
+.messaging_nux_tip_callout .alias_picker{width:200px}
+.messaging_nux_tip_callout .alias_checker_results{position:relative}
+.messaging_nux_tip_callout .cancel_alias_link{position:absolute;top:5px;right:5px}
+.threadRow .snippet{max-width:430px;overflow:hidden;position:absolute;text-overflow:ellipsis;white-space:nowrap}
+.threadRow .snippet .indicator,#fbMessagesItemList .snippet .indicator{vertical-align:middle}
+.MessagingSearchTypeahead{width:240px}
+.MessagingSearchTypeahead .details{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#MessagingSearch .MessagingSearchFilter{border-color:#6484b4 #899bc1 #899bc1}
+#MessagingSearch .MessagingSearchFilter .uiSelectorButton{background-image:url(../../yI/r/5m16xRDPVSk.png);background-repeat:no-repeat;background-position:0 -49px}
+#MessagingSearch .MessagingSearchFilter .uiSelectorButton:active,#MessagingSearch .MessagingSearchFilter .openToggler .uiSelectorButton{background-image:none}
+#MessagingSearch #MessagingQuery{border-top:1px solid #ededed;padding-left:6px;padding-top:2px}
+#MessagingInviteFriends{line-height:20px;margin-left:3px;position:absolute}
+.MessagingSecondaryHeader a{color:#3b5998 !important}
+.MessagingExitViewButton{bottom:1px;padding-bottom:3px;position:relative}
+#MessagingThreadlist{min-height:525px}
+.MessagingEmptyMessages{border:solid #e9e9e9;border-width:1px 0;color:#ccc;font-size: 22px;font-weight:bold;margin:0;padding:218px 0 280px;text-align:center}
+.ArchiveCallout{top:-40px;left:-400px;background-position:385px 34px;width:400px}
+.ArchiveCallout h3{margin:0 0 10px}
+#MessagingArchiveCallout .archiveLink{display:inline-block}
+#MessagingThreadlist .threadRow{border-top-width:1px}
+.threadRow .authorsWrapper{max-width:500px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.threadRow .authors{font-size: 13px}
+.threadRow .threadLink:hover{text-decoration:none}
+.threadRow .threadLink:hover .authors{text-decoration:underline}
+.threadRow .content{line-height:16px;padding-top:8px}
+.threadRow .timestamp,.threadRow .mutualFriends{color:#aaa}
+.threadRow .emote_img{margin-bottom:-4px}
+.threadRow .unarchiveLink .uiCloseButton{background:url(../../yn/r/ij5EGgoOSQ3.png) right top}
+.threadRow .unarchiveLink .uiCloseButton:hover{background-position:left top}
+.threadRow .right{padding-top:18px}
+.threadRow .draft{padding-right:12px;vertical-align:top;color:#a2b2cf;font-weight:normal}
+.threadRow.unread{background-color:#ebeef4}
+.threadRow .unarchiveLink,.threadRow .markAsReadLink,.threadRow.archived .archiveLink,.threadRow.unread .markAsUnreadLink{display:none}
+.threadRow .archiveLink,.threadRow .markAsUnreadLink,.threadRow.archived .unarchiveLink,.threadRow.unread .markAsReadLink{display:block}
+.threadRow.unread,.threadRow.unread + .threadRow{border-color:#dce2ec;margin:0 -20px;padding:0 20px}
+.threadRow.unread .snippet,.threadRow.unread .timestamp{color:#6d84b4}
+.threadRow.unread .mutualFriends{color:#9c9c9c}
+.threadRow .readState{vertical-align:middle}
+.threadRow .markunread,.threadRow .markread{display:inline-block;height:11px;width:11px}
+.threadRow .markunread{background-image:url(../../yf/r/FXHwATCgsY8.png);background-repeat:no-repeat;background-position:-11px -106px}
+.threadRow .markunread:hover{background-image:url(../../yf/r/FXHwATCgsY8.png);background-repeat:no-repeat;background-position:0 -106px}
+.threadRow .markread{background-image:url(../../yf/r/FXHwATCgsY8.png);background-repeat:no-repeat;background-position:-11px -118px}
+.threadRow .markread:hover{background-image:url(../../yf/r/FXHwATCgsY8.png);background-repeat:no-repeat;background-position:0 -106px}
+.threadMainCol{width:1000px}
+.threadRow.noDraft .draft{display:none}
+.uiComboInput{border:1px solid #bdc7d8;display:inline-block;zoom:1}
+.uiComboInput .inputtext,.uiComboInput .uiTypeahead,.uiComboInput .uiTypeahead .wrap{border:transparent}
+.uiComboInput .uiTypeahead{display:inline-block;vertical-align:top;zoom:1}
+.uiComboInput .comboButton{margin:-1px;position:relative;z-index:2;zoom:1}
+.uiSplitPics{width:50px}
+.uiSplitPics_small .uiSplitPics{width:32px}
+.uiSplitPics .uiSplitPic{float:left;overflow:hidden;width:24px}
+.uiSplitPics .leftThree{width:33px}
+.uiSplitPics .rBottom .img{height:25px}
+.uiSplitPics .rTop .img,
+.uiSplitPics .rBottom .img{margin-left:-4px}
+.uiSplitPics .rBottom{margin-top:1px}
+.uiSplitPics .rTop,
+.uiSplitPics .rBottom{margin-left:1px;width:16px}
+.uiSplitPics_small .uiSplitPics .uiSplitPic{width:15px}
+.uiSplitPics .img{display:block;margin-left:-13px}
+.uiSplitPics_small .uiSplitPics .img,
+.uiSplitPics .leftThree .img{margin-left:-8px}
+.uiSplitPics .leftPic{margin-right:1px;width:25px}
+.uiSplitPics_small .uiSplitPics .leftPic{width:16px}
+
+#bootloader_4Tr_C { height: 42px; }

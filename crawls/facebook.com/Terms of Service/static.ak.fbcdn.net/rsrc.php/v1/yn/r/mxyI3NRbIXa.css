@@ -1,0 +1,348 @@
+/*1320700136,169775813*/
+
+.UIDashboardHeader_Container{padding:0;margin:0}
+.UIDashboardHeader_TitleBar{padding:0;zoom:1}
+.UIDashboardHeader_Icon{width:16px;height:16px;overflow:hidden;float:left;padding:0 6px 0 0}
+.UIDashboardHeader_BottomMargin{padding-bottom:17px}
+.UIDashboardHeader_Title{float:left;font-size: 14px;color:#444}
+.UIDashboardHeader_Subtitle{background:url(../../ym/r/3v78q9B7Nju.gif) no-repeat left 5px;margin:7px 0 0 5px;padding:0 0 0 13px}
+.UIDashboardHeader_RightContent{float:right}
+.UIDashboardHeader_Actions{float:left;padding:3px 5px 0 7px}
+.UIDashboardHeader_Actions a{margin:0 3px}
+#badge_subheader{padding:0 10px 5px 10px}
+#badge_subheader h2{color:#3b5998;display:inline;font-size: 11px}
+#badges{padding:5px 10px}
+.blog_buttons_form{display:inline}
+.badge_holder p{margin:-3px 0 5px 0}
+.badge_holder{margin:5px;padding:10px;border:1px solid #ccc;background:#fff}
+.bh_badge{width:200px;height:100px;float:left;overflow:hidden}
+.dialog_body{overflow:auto;max-height:400px}
+.preview_popup{padding:10px}
+.preview_badge{width:200px;margin:0 16px 0 0;float:left}
+.badge_desc{float:left;width:380px}
+.badge_holder td{width:100%;margin:0;padding:0;border:0}
+.other_desc{overflow:hidden;width:320px}
+.other_desc p{padding:0;margin:0;font-weight:bold}
+.badge_html_box{width:250px;margin:5px 0 7px 0}
+.badge_holder h2{color:#3b5998;display:inline}
+.explanation{padding:0 180px 12px 22px}
+.badge_holder .actions{vertical-align:top;width:120px;margin-left:10px}
+.badge_holder .actions a{display:block;margin:0;padding:2px 4px;border-bottom:solid 1px #d8dfea}
+.badge_holder .actions a:hover{color:#fff;background:#3b5998;text-decoration:none}
+#horiz_preview_area{width:360px;max-height:104px;overflow:auto}
+#preview_area{float:right;overflow:auto}
+#bigger_badge_box{float:left;width:480px}
+#smaller_badge_box{float:left;margin-right:6px;width:255px}
+.item_selector{margin-bottom:6px}
+#end_item_selector{margin:0;margin-top:-18px;height:12px}
+.description{font-size: 14px;font-weight:bold;padding:0 0 5px}
+.description h3{font-weight:lighter;display:inline}
+#save_instruction{width:400px}
+.aim_link{background:#f7f7f7;border-top:1px solid #ccc;clear:both;color:#333;font-size: 9px;padding:5px 5px;text-align:center;margin:10px 0 0 0}
+.aim_link span{color:#000;display:block;font-size: 11px}
+.connect_widget{padding:10px 20px 25px}
+.connect_widget div.options{float:left;width:405px}
+.connect_widget div.options-pagelike{float:left}
+.connect_widget .textarea{width:250px;margin:5px 0 7px 0}
+.connect_widget .selector{font-size: 13px;width:160px;margin:0 10px}
+.connect_widget .preview_container{float:right;margin:0 0 0 20px}
+.preview_likebadge{width:200px}
+.no_js .show_if_no_js{display:inline}
+.show_if_no_js{display:none}
+.connect_widget .hidden{display:none}
+.connect_widget .description{padding:0 0 10px 0;font-size: 16px;font-weight:bold;line-height:25px}
+.connect_widget .description_small{padding:0 0 10px 0;font-size: 12px;font-weight:bold;line-height:25px}
+.connect_widget .blog_buttons_form{display:inline}
+.connect_widget .add_button_desc{width:320px;overflow:hidden}
+.connect_widget .add_button_desc p{padding:0;margin:0;font-weight:bold}
+.publish_page_desc{width:320px;overflow:hidden;margin-bottom:10px}
+.connect_widget .addbox{padding:50px 0 20px 0}
+.connect_widget .addbox-pagelike{padding:20px 0 20px 0}
+.no_page_text{padding:10px 10px 40px 10px}
+.UIFilterList_ListTitle{font-weight:bold;padding:0 0 4px 2px}
+.UIFilterList_BottomMargin{padding-bottom:20px}
+.UIFilterList_Footer,.UIFilterList_EditLink{border-top:1px solid #d6d9de;display:none;font-size: 9px;font-weight:bold;padding:4px 6px 4px 5px;position:relative}
+.UIFilterList_Create{float:right}
+.UIFilterList_Plus,.UIMutableFilterList_Arrow{background:transparent url(../../yi/r/8OjNXDy3pHp.gif) no-repeat;display:inline-block;height:10px;margin:0 3px 0 0;padding-left:7px}
+.UIFilterList_Plus{background-position:-232px -87px}
+.UIFilterList_BlankState{border-top:1px solid #ddd;color:#666;display:none;line-height:16px;padding:5px 3px}
+.UIFilterList_HasBlankState .UIFilterList_BlankState{display:block}
+.UIFilterList_List{display:block;margin:0;padding:0}
+.UIFilterList_HasBlankState .UIFilterList_List{display:none}
+.UIFilterList_Item{display:block;margin:0;overflow:hidden;position:relative}
+.UIFilterList_Icon{background-position:top right;background-repeat:no-repeat;display:block;height:16px;width:16px}
+.selected .UIFilterList_Icon{background-position:top left}
+.UIFilterList_EditIcon{display:none}
+.UIFilterList .selected{background-color:#6d84b4;border:1px solid #3b5998;padding-left:1px}
+.selected .UIFilterList_EditIcon{background:transparent url(7XSngI8jDpL.gif) no-repeat 0 -70px;cursor:pointer;display:block;height:16px;left:auto;position:absolute;right:4px;top:4px;width:16px;z-index:1}
+.selected .UIFilterList_EditIcon:hover{background-position:0 -54px}
+.UIFilterList_ItemLink{border-top:1px solid #d6d9de;color:#333;display:block;overflow:hidden;padding:5px 0 4px 5px;text-overflow:ellipsis}
+.UIFilterList_Item .UIFilterList_TitleWithoutIcon{padding-top:6px}
+.UIFilterList_Item .UIFilterList_Title{font-weight:normal}
+.UIFilterList_Item .UIFilterList_ItemLink:hover{background-color:#eceef4;text-decoration:none}
+.selected .UIFilterList_ItemLink:hover{background-color:transparent}
+.selected .UIFilterList_ItemLink{border-top:0 none;padding-left:3px;padding-top:4px}
+.selected .UIFilterList_TitleWithoutIcon{padding-top:5px}
+.selected .UIFilterList_Title{color:#fff}
+.selected .UIFilterList_HasEditIcon{padding-right:19px}
+.selected .UIFilterList_LoadingIndicator{background:transparent url(../../y-/r/AGUNXgX_Wx3.gif) top left no-repeat;display:none;height:11px;position:absolute;right:10px;top:7px;width:16px;z-index:2}
+.UIFilterList_Loading .selected .UIFilterList_LoadingIndicator{display:block}
+.UIFilterList_Loading .selected .UIFilterList_EditIcon{display:none}
+.UIFilterList_Loading .selected{padding-right:31px}
+.UIFilterList_Button{padding-left:3px;padding-top:5px}
+.UIFilterList_CreateLink{display:block;padding-bottom:5px;padding-top:3px}
+.UIFilterList_DragHandle{background:url(7XSngI8jDpL.gif) no-repeat -16px -70px;cursor:move;display:none;height:16px;position:absolute;right:5px;top:7px;width:16px;z-index:1}
+.selected .UIFilterList_DragHandle{background-position:-16px -56px}
+.UIFilterList_EditMode .UIFilterList_DragHandle,.UIFilterList_EditLink,.UIFilterList_EditMode .UIFilterList_Footer{display:block}
+.UIFilterList_Loading .selected .UIFilterList_DragHandle,.UIFilterList_EditMode .UIFilterList_EditLink{display:none}
+.UIFilterList_NoBorder{border:none}
+.UIFilterList_EditMode .UIFilterList_ItemLink{padding-right:25px}
+.UIFilterList_EditMode .UIFilterList_Title{display:block;overflow:hidden;text-overflow:ellipsis}
+.UIFilterList_ShowHiddenSection .UIMutableFilterList_HiddenSection{display:block}
+.UIMutableFilterList_HiddenSection,.UIFilterList_ShowHiddenSection .UIFilterList_EditLink{display:none}
+.UIMutableFilterList_Separator{border-top:1px solid #b3b3b3;height:1px}
+.UITabStructure_Container{margin:0;padding:3px 0}
+.UITabStructure_BottomBorder{border-bottom:1px solid #898989}
+.UITabStructure_Left{padding-left:10px;float:left}
+.UITabStructure_Right{padding-right:10px;float:right}
+.UITabStructure_FullBleed{padding:0}
+.UITabStructure_Tabs{text-align:center}
+.UITabStructure_Tabs li{display:inline;padding:2px 0 3px;background:#f1f1f1 url(../../ys/r/YoX0fw76s5z.gif) top left repeat-x;font-size: 13px}
+.UITabStructure_Tabs li a{border:1px solid #898989;border-left:0;color:#333;font-weight:bold;padding:2px 8px 3px 9px}
+.UITabStructure_Tabs li a:focus{outline:0}
+.UITabStructure_Tabs li.UITabStructure_TabFirst a{border:1px solid #898989}
+.UITabStructure_Tabs li a.UITabStructure_TabSelected{margin-left:-1px;background:#6d84b4;border:1px solid #3b5998;border-left:1px solid #5973a9;border-right:1px solid #5973a9;color:#fff}
+.UITabStructure_Tabs li.UITabStructure_TabLast a.UITabStructure_TabSelected{margin-left:-1px;border-left:1px solid #5973a9;border-right:1px solid #36538f}
+.UITabStructure_Tabs li.UITabStructure_TabFirst a.UITabStructure_TabSelected{margin:0;border-left:1px solid #36538f;border-right:1px solid #5973a9}
+.UITabStructure_Tabs li.UITabStructure_TabFirst.UITabStructure_TabLast a.UITabStructure_TabSelected{border:1px solid #36538f}
+.UITabStructure_Tabs li a.UITabStructure_TabSelected:hover{text-decoration:none}
+.UITabStructure_Tabs li a.UITabStructure_TabDisabled{color:#999;cursor:default}
+.UITabStructure_Tabs li a.UITabStructure_TabDisabled:hover{text-decoration:none}
+.app_switcher{float:right;z-index:4;width:130px;position:relative}
+.app_switcher .app_switcher_unselected{position:relative;float:left}
+.app_switcher .app_switcher_button{cursor:pointer;color:#555;float:left;display:block;padding:0 5px;margin:0;font-weight:bold;line-height:14px;text-decoration:none;border:solid 1px #dfdfdf}
+.app_switcher .app_switcher_button .arrow,
+.app_switcher .app_switcher_button .name,
+.app_switcher .app_switcher_button .icon{float:left}
+.app_switcher .app_switcher_unselected .app_switcher_button:hover{border:solid 1px #666;background:#fff url(../../yd/r/MMyXHKANlkW.gif) repeat-x bottom left}
+.app_switcher .app_switcher_selected .app_switcher_button{color:#fff;background:#6d84b4;border:solid 1px #3b5998}
+.app_switcher .app_switcher_button .arrow{width:13px;padding:4px 0 3px;margin-top:1px;background:transparent url(../../yC/r/NmxBJWEMU_h.gif) no-repeat -11px center}
+.app_switcher .app_switcher_selected .app_switcher_button .arrow{background-position:2px center}
+.app_switcher .app_switcher_button .name{padding:4px 0 4px 6px}
+.app_switcher .app_switcher_button .icon{width:16px;padding:4px 0;background-position:-16px center;background-repeat:no-repeat}
+.app_switcher .app_switcher_selected .app_switcher_button .icon{background-position:left center}
+#app_switcher_menu{width:165px}
+.dropdown_menu .menu_content a{padding-top:1px;padding-bottom:1px}
+.app_switcher_menu .menu_content{padding-top:2px;padding-bottom:6px}
+.app_switcher_menu .menu_content .menu_item{padding-left:10px}
+.app_switcher_menu a:hover{color:#fff;text-decoration:none;background:#6d84b4;border-right:solid 1px #3b5998;border-left:solid 1px #3b5998;cursor:pointer}
+.app_switcher_menu .inline_stuff:hover{background:none;color:#3b5998}
+.app_switcher_menu .inline_stuff .app_name_text{display:inline}
+.app_switcher_menu .inline_stuff .app_name_text:hover{background:none;text-decoration:underline;color:#3b5998;display:inline}
+.app_switcher_menu .app_icon,
+.app_switcher_menu .name{float:left}
+.app_switcher_menu .app_icon{width:16px;padding:4px 0;margin:0 0 0 2px;background:url(../../yK/r/T_cyWjDTq84.gif) no-repeat -16px center}
+.app_switcher_menu a:hover .app_icon{background-position:left center}
+.app_switcher_menu .name{padding:4px 0;margin:0 0 0 5px;width:100px}
+.profile_box .staticfbml{padding-bottom:15px}
+.app_edit .app_settings{padding:20px 131px}
+.app_edit .app_settings .app_settings_table{margin:10px 6px}
+.app_edit .app_settings .app_settings_table label{color:#000;font-weight:normal}
+.pages_edit.app_edit .title_header{padding-top:10px}
+.back_header{padding:6px 10px 5px;border-bottom:solid 1px #d6cfd6}
+.back_header div{background:url(../../yo/r/sH9ptwl6tJW.gif) no-repeat left 55%;color:#333;padding:5px 0 5px 10px}
+.control_panel_header{padding-top:15px;padding-bottom:14px;border-bottom:solid 1px #d6cfd6;width:100%}
+.control_panel_header .header_page_summary{float:left;width:500px}
+.control_panel_header .create_page_button{float:right;padding-right:15px;padding-top:15px}
+.control_panel_header .header_page_summary .thumb{float:left;padding:0 10px 0 20px}
+.control_panel_header .header_page_summary .thumb a{background:white;display:block;width:50px;height:50px;line-height:1px}
+.control_panel_header .header_page_summary .thumb a:hover{border-color:#3b5998}
+.control_panel_header .header_page_summary .info{float:left}
+.control_panel_header .header_page_summary .info h2{padding-top:8px;padding-bottom:4px;font-size: 14px;color:#000;width:400px}
+.no_border{border:none}
+.control_panel .main_column{vertical-align:top;padding-left:6px}
+.control_panel .main_column .card{border:solid 1px #cecfce;background:white no-repeat scroll 7px 7px;padding:7px 10px 11px 30px;margin:0 4px 5px 4px;width:515px}
+.control_panel .main_column .card a.card_menu{background:url(../../yI/r/4DVNAxs9NoZ.gif) left -36px no-repeat;float:right;width:18px;height:18px}
+.control_panel .main_column .card a.card_menu:hover,
+.control_panel .main_column .card a.selected{background-position:right -18px}
+.control_panel .main_column h2{padding:7px 0 6px 10px}
+.control_panel .main_column h2.first_card_section{padding-top:0}
+.control_panel .main_column .card h3{border-bottom:solid 1px #efe7ef;margin-bottom:6px;padding-bottom:2px}
+.control_panel .main_column .card_title{font-size: 13px;font-weight:bold;padding-bottom:2px}
+.control_panel .main_column .card_actions{font-size: 11px;font-weight:normal}
+#settings_status{padding-top:10px}
+.recommended_apps{padding:5px 0}
+.recommended_app{background:none no-repeat left 2px;float:left;padding:2px 12px 2px 20px}
+.control_panel .side_column{width:190px;vertical-align:top;padding-left:6px;padding-top:0}
+.control_panel .side_column .section{margin-bottom:20px}
+.control_panel .side_column .section h3{background:#efebef;font-size: 11px;padding:4px 6px;margin-bottom:12px}
+.control_panel .side_column .section .communication_item{background:transparent;margin:0;padding:0;padding-top:0;padding-bottom:3px;padding-left:10px}
+.control_panel .side_column .section .communication_item a{padding:0;margin:0;padding-left:22px;padding-bottom:5px;display:block}
+.control_panel .side_column .section .send_message a{background:transparent url(../../yS/r/I-6WhcLLGrb.gif) no-repeat left 2px}
+.control_panel .side_column .section .sent_updates a{background:transparent url(../../y0/r/6Mt9pkkoM-C.gif) no-repeat left top;padding-top:1px}
+.control_panel .side_column .section .promo_page a{background:transparent url(../../yN/r/xC785tTCIQO.gif) no-repeat left 2px}
+.control_panel .side_column .section .fan_widget a{background:transparent url(../../yf/r/lKFv2Mx5YjV.gif) no-repeat scroll left 2px}
+.control_panel .side_column .section .sent_updates{padding-bottom:0}
+.control_panel .side_column .section .admin{margin:6px}
+.control_panel .side_column .section .admin img{float:left;margin-right:8px}
+.control_panel .side_column .section .admin a{display:block;font-weight:bold}
+.control_panel .side_column .section .admin a.remove{font-weight:normal}
+.control_panel .side_column .section .top_right_link{float:right;padding:4px 6px 0 0}
+.control_panel .side_column .section .footer_link{text-align:right;margin-top:11px;border-top:solid 1px #e7e3e7;padding-top:4px;padding-right:5px}
+.tab_permalink_dialog .dialog_body .dialog_content_txt{float:none;width:500px}
+.invite .editor_panel{border-top:1px solid #ccc}
+.invite .admins_back{text-align:right;margin:0;padding:0;padding-right:20px;padding-bottom:5px}
+.hours_time_input table{border-collapse:collapse}
+.hours_time_input td{padding:0}
+.export_data_dialog{}
+.export_data_dialog .export_data_explanation{padding:8px 0}
+.export_data_dialog .export_data_field{padding:3px 0 3px 20px}
+.export_data_dialog .export_data_field label.export_data_label{color:#555;display:block;float:left;padding:5px 0;width:85px}
+.export_data_dialog .export_data_field div.inputs{display:block;float:left}
+.export_data_dialog .export_data_field#export_report_type div.inputs{padding:3px 0 0 0}
+.export_data_dialog .export_data_field#export_file_format div.inputs{padding:5px 0 0 0}
+.export_data_dialog .export_data_field select{margin:0;width:150px}
+.export_data_dialog .export_data_field div.inputs input.inputradio{margin:0 4px 0 0}
+.export_data_dialog .export_data_field div.inputs label{color:#000;font-weight:normal;margin-right:10px}
+.recent_news li{background:url(../../yq/r/SC2ZmEkfI-X.png) no-repeat left 1px;padding:0 0 6px 22px}
+.recent_news li a{display:block;padding:0 0 1px 0}
+.recent_news small{color:#333;font-weight:normal;display:block;font-size: 9px}
+.recent_news small span{color:gray}
+#fbpage_rich_media{margin:0 10px 10px;padding:10px}
+#fbpage_rich_media_status{margin:10px 0 0 0}
+.pages_edit .editor_panel,
+.pages_edit .editor_div{border-bottom:1px solid #d7d7d7;border-left:1px solid #d7d7d7;border-right:1px solid #d7d7d7}
+.pages_edit .editor td.label{color:#666;font-weight:bold;padding-right:10px;text-align:right}
+.pages_edit .title_header{padding:0}
+#editvideo_pane{padding:20px 0 0 0}
+.edit_video .edit_video_content_box{padding:0}
+#notify_option{margin-top:2px}
+#notify{vertical-align:middle}
+#standard_status{margin:0 45px 20px 45px}
+#video_editor{padding:0 100px 0 100px}
+.edit_video div.main_column{background:transparent;float:left;padding:10px 0 20px 75px;padding:0;width:390px}
+div.side_column{float:right;padding-left:6px;width:162px}
+#metadata{padding:0 0 9px 0}
+#metadata .metadata_row{padding:0 0 6px 0}
+#metadata .metadata_label{display:block;float:left;padding:4px 10px 4px 0;text-align:right;width:80px}
+#metadata .metadata_input{float:left;width:300px}
+#metadata .metadata_input .inputtext{margin:1px 0 0 0;width:280px}
+#metadata .metadata_input textarea{margin:3px 0 0 0;height:6.5em;width:280px}
+#metadata .metadata_input label{color:#000;font-weight:normal}
+#metadata .metadata_input .inputcheckbox{margin:0 4px 0 0}
+#metadata .metadata_row .metadata_input select{margin-left:0;margin-bottom:5px}
+#metadata .metadata_row .metadata_input .privacy_widget select{margin-bottom:0}
+#tag_zone{padding:4px 0}
+#tagger_prompt{color:#333;font-size: 9px;padding:4px 0 0 0}
+#metadata .metadata_row .video_privacy_description{color:#111;padding:4px 0;width:270px}
+#thumbnail_selector{padding:0 0 11px 0}
+#thumbnail_selector .metadata_label{display:block;padding:4px 0}
+#thumbnail_selector #thumb_img{border:1px solid #aaa;display:block}
+#thumbnail_selector #selector_controls{padding:7px 0 0 0}
+#thumbnail_selector #selector_arrows{float:left}
+#thumbnail_selector #selector_arrows img{display:block;float:left}
+#thumbnail_selector #selector_status{color:#333;color:#000;float:left;padding:5px 0 0 8px}
+div.main_column .profile_box_checkbox{padding:4px 0 5px 0}
+div.side_column .profile_box_checkbox .inputcheckbox{margin-left:0;margin-right:4px}
+div.side_column .profile_box_checkbox label{color:#000;font-weight:normal}
+#editvideo_buttons{border-top:1px solid #ccc;clear:both;margin:0 45px;padding:15px 0 10px 0;text-align:center}
+#editvideo_buttons input{margin:0 2px 0 2px}
+.fbEditVideoAlbumName{clear:left}
+.business_pages .product_selector ul,.business_pages .banner_content,.business_pages .tabs,.business_pages .ads_info,.business_pages .contact_sales{margin:0 auto;width:940px}
+.business_pages .product_selector{background:url(../../yb/r/3LyZkLVshsc.gif) repeat-x left bottom}
+.business_pages .product_selector ul{clear:both}
+.business_pages .product_selector li{background-position:left top;background-repeat:no-repeat;display:block;float:left;margin-right:28px;padding-left:21px}
+.business_pages .product_selector li a{display:block;font-weight:bold;padding:0 0 12px 0}
+.business_pages .product_selector li.active a{color:#000;background:url(../../yr/r/7hldQMCSxYx.gif) no-repeat center bottom}
+.business_pages .banner_wrapper{background:#edeff4 url(../../yb/r/3LyZkLVshsc.gif) repeat-x left bottom;padding-bottom:1px}
+.business_pages .banner_content{padding:30px 0}
+.business_pages .banner_content .copy{float:left;width:500px}
+.business_pages .banner_content h1{font-size: 19px;margin-bottom:5px}
+.business_pages .banner_content h2{color:#666;font-size: 14px;font-weight:normal;line-height:1.4em;margin:0}
+.business_pages .banner_content .action{float:right;text-align:right}
+.business_pages .banner_content .action .login_reminder{padding-top:3px;width:200px}
+.business_pages .tabs.top{background-color:transparent}
+.business_pages .tabs{border:0}
+.business_pages .tabs .left_tabs{padding-left:0}
+.business_pages .tabs .toggle_tabs{float:left}
+.business_pages .toggle_tabs li,.business_pages .toggle_tabs li.first{margin-right:2px}
+.business_pages .toggle_tabs li a,.business_pages .toggle_tabs li.first a,.business_pages .toggle_tabs li.last a{background:#d8dfea;border:1px solid #d8dfea;color:#3b5998;font-size: 13px;font-weight:bold;padding:3px 10px}
+.business_pages .toggle_tabs li a:hover,.business_pages .toggle_tabs li.first a:hover,.business_pages .toggle_tabs li.last a:hover{background:#627aad;border:1px solid #627aad;color:#fff;text-decoration:none}
+.business_pages .banner_wrapper .toggle_tabs li a.selected,.business_pages .banner_wrapper .toggle_tabs li.first a.selected,.business_pages .banner_wrapper .toggle_tabs li.last a.selected{background:#fff;border:1px solid #d8dfea;border-bottom-width:0;color:#000;margin-left:0;padding:5px 10px 4px 10px}
+.business_pages .ads_info{padding:20px 0}
+.business_pages .ads_info h3{line-height:1.3em;margin-bottom:2px}
+.business_pages .ads_info p{line-height:1.5em}
+.business_pages .ads_info p{color:#666;font-size: 12px;margin:0 0 15px 0;padding:0}
+.business_pages blockquote{background:url(../../y3/r/wqgmw5_LyHh.gif) no-repeat left 2px;font-size: 12px;font-style:italic;line-height:1.5em;margin:0;padding-left:23px}
+.business_pages blockquote span{background:url(../../y6/r/KBgHNyzSerU.gif) no-repeat right 3px;color:#666;padding-right:23px}
+.business_pages blockquote div{padding-top:5px;text-align:right}
+.business_pages .ads_info ul{color:#666;font-size: 12px;line-height:1.5em;list-style:square;margin:0 0 15px 17px;padding-left:0}
+.business_pages .ads_info li{margin-bottom:7px}
+.business_pages .ads_info p.short{width:550px}
+.business_pages .ads_info p.intro{color:#666;font-size: 14px}
+.business_pages .ads_info .border{background-color:#fff;border:1px solid #d7d7d7;margin-bottom:10px}
+.business_pages .ads_info .left_col,.business_pages .ads_info .right_col{float:left;width:232px}
+.business_pages .ads_info .mid_col{float:left;margin:0 20px;width:232px}
+.business_pages .ads_info .left_col p,.business_pages .ads_info .mid_col p,.business_pages .ads_info .right_col p{margin:0}
+.business_pages .ads_landing_info{float:left;width:270px}
+.business_pages .ads_info .ad_step{clear:both;margin-bottom:10px}
+.business_pages .target_list{background-color:#f7f7f7;border:1px solid #d7d7d7;float:right;margin:0 0 15px 20px;padding:10px 12px}
+.business_pages .target_list h4{font-size: 12px;margin-bottom:10px}
+.business_pages .target_list ul{float:left;font-size: 11px;margin:0 25px -8px 0}
+.business_pages .target_list li{line-height:1em;margin-bottom:7px}
+.business_pages .target_list ul.last_column{margin-right:0}
+.business_pages .ads_info .link_container{margin:0}
+.business_pages .ads_info p.button_subtext{clear:left;font-size: 10px;margin:0;padding:5px 0 0 0}
+.business_pages #cases{width:936px;padding-top:50px;padding-bottom:50px}
+.business_pages .ads_info .UITwoColumnLayout_Content{width:756px}
+.business_pages .ads_info .ads_case{color:#333;font-size: 13px}
+.business_pages .ads_info .ads_case p{font-size: 13px;color:#333}
+.business_pages .ads_info .ads_case ul{color:#333;font-size: 13px;list-style-position:inside}
+.business_pages .ads_info .ads_case li{margin-bottom:3px}
+.business_pages .ads_info .ads_case h3{font-size: 17px;color:#26335c;padding:0 70px 15px 0}
+.business_pages .ads_info .ads_case .original_ad_container{float:left;margin-right:15px;font-size: 11px;color:#858585;margin-bottom:150px}
+.business_pages .ads_info .ads_case .img.original_ad{border:1px solid #c2c2c2;display:block;margin-bottom:5px}
+.business_pages .ads_info .ads_case .highlight_box{width:260px;border:1px solid #c2c2c2;float:right;margin:0 0 20px 20px;padding:15px 20px 20px;background-color:#f7f7f7}
+.business_pages .ads_info .ads_case .highlight_box h4{padding-bottom:8px;font-size: 12px}
+.business_pages .ads_info .highlight_box blockquote{margin-bottom:20px}
+.business_pages .ads_info .highlight_box img.flag_icon{margin:1px 8px 0 0;float:left}
+.business_pages .ads_info .highlight_box a.case_page_link{font-size: 11px;font-weight:bold;line-height:16px}
+.business_pages .ads_info .ads_case img.case_graph{display:block;margin-bottom:20px}
+.business_pages .img_right{float:right;margin:4px 0 15px 30px}
+.business_pages .img_left{float:left;margin:4px 30px 15px 0}
+.business_pages .hide_info{display:none !important}
+.business_pages .contact_sales{background:#e9e9e9;color:#666;padding:10px 13px}
+.business_pages .contact_sales a{background:url(../../ye/r/1x0T5GU6FqP.gif) right 4px no-repeat;font-weight:bold;margin-left:8px;margin-right:8px;padding-right:8px}
+.business_pages .ads_guide{padding-top:5px}
+.business_pages #example_grid{float:left;margin-bottom:25px;width:490px}
+.business_pages #example_grid table{border-collapse:collapse;width:100%}
+.business_pages #example_grid td{border-color:#e9e9e9;border-style:solid;border-width:0 0 1px 1px;height:95px;text-align:center;vertical-align:middle}
+.business_pages #example_grid td.first{border-left:0}
+.business_pages #example_grid tr.last td{border-bottom:0}
+.business_pages #example_list{float:right;width:220px}
+.business_pages #example_list_wrapper{padding:3px 10px 0}
+.business_pages #example_list #left_col{float:left;width:90px}
+.business_pages #example_list #right_col{float:right;width:90px}
+.business_pages #example_list dl{font-size: 11px;margin:0 0 15px 0}
+.business_pages #example_list dt{color:#333;font-weight:bold;margin-bottom:3px}
+.business_pages #example_list dd{margin:0 0 3px 0}
+.ads_info h2{font-size: 16px;font-weight:bold;padding-bottom:10px}
+.ads_manager .media_btn{float:left;padding:20px 0}
+.ads_info .media_btn{float:left}
+.ads_info .link_container{margin:20px 0 15px 0}
+.ads_manager .learn_more_link{float:left;padding:23px 0 20px 15px}
+.ads_info .learn_more_link{float:left;padding-left:10px;padding-top:3px}
+.ads_info dl.upsell,.ads_manager dl.upsell{margin:0}
+.ads_info dl.upsell dt,.ads_manager dl.upsell dt{font-size: 12px;font-weight:bold;padding-top:10px}
+.ads_info dl.upsell dd,.ads_manager dl.upsell dd{color:#666;margin-left:0;padding-left:0}
+.ad_campaigns_upsell{padding:20px 0 30px 44px;border-bottom:1px solid #ccc}
+.ads_manager .ad_resubmit{float:right;padding:1px 50px 0 0}
+.ads_manager .social_ads_info p{color:#777;margin:0;padding-top:7px}
+.ads_manager .social_ads_info .intro{float:left;padding-right:20px;width:170px}
+.ads_manager .social_ads_info .description{border-left:1px solid #ddd;float:left;padding-left:20px;width:415px}
+.ads_manager .social_ads_info dl.upsell dt{padding-top:0}
+.ads_manager .social_ads_info dl.upsell dd{padding-bottom:20px}
+.ads_manager .social_ads_info .fb_pages_img{display:none}
+.fb_page_info ul.fb_pages_list li{background:url(../../yb/r/3yVrVXjVljx.gif) no-repeat left .5em;padding-left:10px}
+
+#bootloader_YZulF { height: 42px; }

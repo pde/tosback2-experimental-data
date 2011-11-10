@@ -1,0 +1,287 @@
+/*1320697350,176820406*/
+
+.HC_Top_3 .HC_Title{width:985px}
+.HC_Top_3 .HC_Title div{margin-top:0;padding-top:20px}
+.HC_Top_3 .HC_Title img{padding-top:4px}
+.HC_Top_3 .help_center_content{border-color:#d1d1d1;margin-bottom:0;width:920px}
+.HC_Top_3 .HC_Content_Wrapper{min-height:260px}
+.HC_Top_3 .HC_Nav{width:275px}
+.HC_Top_3 .HC_Boxed_Content{min-height:230px;padding:35px 30px 0 30px}
+.HC_Top_3 .HC_SearchText{width:470px}
+.HC_Top_3 .HC_Content_Area{width:610px}
+.HC_Top_3 .HC_Search_Input{padding:2px;outline:none}
+.HC_Top_3 .HelpCenter_Search .HC_Search_Button{float:right;margin:-1px -1px -2px 0}
+.HC_Top_3 .HC_Typeahead{height:23px}
+.HC_Top_3 .HC_Center{width:100%}
+.HC_Top_3 #HelpCenter_Categories .uiGrid td{width:33.3%}
+.HC_Top_3 .async_saving .throbber{display:inline}
+.HC_Top_3 .async_saving .async_inactive{display:none}
+.HC_Top_3 .help_wash{background-color:#edeff4;border-color:#e5eaf1;height:80px}
+.HC_Top_3 .help_soft{border-color:#ececec}
+.HC_Top_3 .HC_Tab .label{margin-right:8px;width:213px}
+.HC_Top_3 #pageFooter div{border:none}
+.HC_Top_3 #contentCurve{display:none}
+.HC_Top_3 #user_messaging{background-color:#f5f6f9;border-color:#d0d6e7}
+.marketingBodyCopy{line-height:19px}
+h4.marketingBodyTitle{color:#333;font-weight:bold}
+h4.marketingBodyTitleMedium{font-size: 14px}
+h4.marketingBodyTitleLarge{font-size: 16px}
+h1.marketingHeadline{color:#333;font-weight:normal}
+h1.marketingHeadlineSmall{font-size: 20px}
+h1.marketingHeadlineMedium{font-size: 24px}
+h1.marketingHeadlineLarge{font-size: 28px}
+h1.marketingHeadlineHuge{font-size: 32px}
+.marketingNav{font-size: 13px;margin-left:auto;margin-right:auto;width:980px}
+body.UIPage_LoggedOut .marketingNav{width:946px;padding-left:18px}
+.marketingNav a.marketingNavLink,
+.marketingNav .marketingNavTitle{display:block;padding:8px 10px}
+.marketingNav .marketingNavTitle{padding-left:0}
+.marketingNav a.marketingNavLink:hover{background-color:#fff;text-decoration:none}
+.marketingNav .marketingNavSignup{padding:8px 0}
+h2.marketingSubheader{color:gray;font-weight:normal}
+h2.marketingSubheaderPetite{font-size: 16px;line-height:24px}
+h2.marketingSubheaderSmall{font-size: 18px;line-height:24px}
+h2.marketingSubheaderMedium{font-size: 20px;line-height:26px}
+h2.marketingSubheaderLarge{font-size: 22px;line-height:28px}
+.fbMarketingBlock{display:inline-block;vertical-align:top}
+.fbMarketingBlock1Column{width:67px}
+.fbMarketingBlock2Column{width:150px}
+.fbMarketingBlock3Column{width:233px}
+.fbMarketingBlock4Column{width:316px}
+.fbMarketingBlock5Column{width:399px}
+.fbMarketingBlock6Column{width:482px}
+.fbMarketingBlock7Column{width:565px}
+.fbMarketingBlock8Column{width:648px}
+.fbMarketingBlock9Column{width:731px}
+.fbMarketingBlock10Column{width:814px}
+.fbMarketingBlock11Column{width:897px}
+.fbMarketingBlock12Column{width:980px}
+.fbMarketingBlockSpacingLeft{margin-left:16px !important}
+.fbMarketingBlockSpacingRight{margin-right:16px !important}
+.educationMarketing .educationMarketingWashEmpty{padding-bottom:40px}
+.educationMarketing .educationMarketingWashBody{background-color:transparent;margin-top:-60px}
+.educationMarketing .educationMarketingPage{padding-top:27px}
+.educationMarketing .nav_like{margin-bottom:25px}
+.educationMarketing .nav_like .title span.fwb{display:none}
+.educationMarketing .nav .content{padding-left:20px;padding-right:20px}
+.educationMarketing .description{width:90%}
+.educationMarketingHeader .likeButton{margin-top:26px}
+.educationMarketingBody{padding-top:40px}
+.educationMarketingBody, .educationMarketingFooter{border-top:1px solid #d9d9d9}
+.educationMarketingBody .educationMarketingStackedBlock{display:block}
+.educationMarketing .dummyComposerContainer{position:relative}
+.educationMarketing .dummyComposerContainer .dummyComposer{left:146px;position:absolute;top:109px}
+.educationMarketing .dummyComposerContainer .sharingSteps{top:188px;left:122px;position:absolute;z-index:1}
+.educationMarketing .dummyComposerContainer .composerTag{color:#3b5998}
+.educationMarketing .itemDetailList{list-style-type:square}
+.educationMarketing .UIFaq_Content{width:95%}
+.educationMarketing .UIFaq_Snippet{display:none}
+.educationMarketing .UIFaq_Question, .educationMarketingFooter{font-size: 14px}
+.educationMarketingFooter{padding-top:30px}
+.educationMarketing .marketingVideoTheater{width:814px;position:relative}
+.educationMarketing .marketingVideoCarouselViewport{height:auto;width:auto}
+.educationMarketing .contentRow{margin:30px 0}
+.educationMarketing .threeColGridItem{width:33.3%}
+.educationMarketing .largeVertical{margin-bottom:60px}
+.educationMarketing .latest .description{width:100%}
+.allChangesTable{border-collapse:collapse;margin-bottom:50px}
+table.last{margin-bottom:0}
+.allChangesTable tr.first th{background:#eaeff4;border-top:4px solid #006095;border-bottom:2px solid #d1dfe7}
+.allChangesTable td,
+.allChangesTable th{padding:15px 18px;vertical-align:top}
+.allChangesTable td{border-bottom:1px solid #ccc;padding-top:8px;padding-bottom:8px}
+.allChangesTable tr.last td{border:none}
+.allChangesTable .settingNameColumn{width:200px}
+.allChangesTable .settingDetails{padding-right:40px}
+.allChangesTable .fbMarketingTextSizeSmall{font-size: 13px;line-height:18px}
+.marketingPage{background-color:#eceff5}
+.marketingPage #contentCurve{display:none}
+.marketingContainer{margin:20px auto 0;padding:75px 83px;width:814px}
+.marketingContainerNoPadding{padding:0;width:980px}
+.privacy_policy_breadcrumb{margin:-20px 0 20px}
+i.privacy_policy_center_img,
+img.privacy_policy_center_img{display:block;margin-left:auto;margin-right:auto}
+.privacy_icon{margin-top:4px}
+.fbMarketingTextSizeHuge{font-size: 23px;line-height:28px}
+.fbMarketingTextSizeLarge{font-size: 19px;line-height:24px}
+.fbMarketingTextSizeMedium{font-size: 17px;line-height:22px}
+.fbMarketingTextSizeSmall{font-size: 15px;line-height:20px}
+.fbMarketingTextSizeLegal{font-size: 11px;line-height:16px}
+.fbMarketingTextColorDark{color:#333}
+.fbMarketingTextColorNormal{color:#666}
+.fbMarketingTextColorLight{color:#999}
+.fbMarketingTextWeightBold{font-weight:bold}
+.fbMarketingTextWeightNormal{font-weight:normal}
+.fbMarketingTextAlignLeft{text-align:left}
+.fbMarketingTextAlignCenter{text-align:center}
+.fbMarketingTextAlignRight{text-align:right}
+.fbMarketingTextAlignJustify{text-align:justify}
+.MobileHub_More{font-size: 16px;font-weight:bold;padding:10px 10px 0}
+.MobileHub_Body{padding:15px 0;width:960px}
+.UIPage_LoggedOut .mobile_hub{margin-top:-130px;padding-top:130px}
+.MobileHub_Center{width:1000px;float:left}
+.MobileHub_Center .UIPromoStoryContainer{float:left}
+.UIPage_LoggedOut .mobile_hub{margin-top:-160px;padding-top:130px}
+.MobileHub_TestConsole{border:1px solid;float:left;padding:10px;width:200px}
+.MobileHub_TestConsole_Title{color:green;font-size: 12px;font-weight:bold;padding:3px 10px 3px 0}
+.MobileHub_TestConsole_Row{padding:3px}
+.MobileHub_TestConsole_Row_Label{border-bottom:1px solid grey;color:#666;font-size: 13px;padding:2px 2px 2px 0}
+.MobileHub_TestConsole_Row_Link{padding:1px}
+.MobileHub_TestConsole_Submit{padding:10px 10px 10px 0}
+.MobileHub_FooterBlurb{font-size: 13px;padding:15px;zoom:1;background-color:#e9e9e9;clear:both}
+.MobileHub_FooterBlurb a{padding:0 8px 0 22px;background:url(../../ye/r/1x0T5GU6FqP.gif) no-repeat right center;font-weight:bold}
+.MobileHub_FooterBlurb a.spaced{float:right}
+.mobileSnaptuPromo{width:124px}
+.mobileSnaptuPromo .title{font-size: 22px;font-weight:bold;margin-left:160px;padding-top:10px;width:350px}
+.mobileSnaptuPromo .genericSnaptuPromo .title{padding-top:40px}
+.mobileSnaptuPromo .phoneImage{position:absolute}
+.mobileSnaptuPromo .summary{color:#888;font-size: 15px;margin-left:160px;width:450px}
+.mobileSnaptuPromo .listTitle{font-size: 15px}
+.mobileSnaptuPromo .listElt{color:#888;font-size: 15px}
+.mobileSnaptuPromo .list{margin-top:30px;padding-left:40px}
+.mobileSnaptuPromo .genericSnaptuPromo .list{margin-top:60px}
+.mobileSnaptuPromo .button{margin-left:160px;padding:5px 30px}
+.mobileSnaptuPromo .genericSnaptuPromo .button{margin-bottom:40px}
+.mobileSnaptuPromo .logoGrid{margin-left:200px}
+.mobileSnaptuPromoWhiteSpace{padding-bottom:80px}
+.mobileSnaptuPromo .specialOffer{margin-left:40px}
+.mobileSnaptuPromo .offerTitle{color:#3c579a}
+.mobileSnaptuPromo .offerSubTitle,
+.mobileSnaptuPromo .offerTitle{font-size: 15px;font-weight:bold}
+.mobileSnaptuPromo .offerDescr{font-size: 13px;color:#888;margin-bottom:60px}
+.UIPromoHeader_Container{margin:0 0 20px}
+.UIPromoStoryContainer{color:#3a3a3a;font-size: 13px;padding:20px 10px 30px;width:300px}
+.UIPromoStoryContainer img{}
+.UIPromoStoryContainer_Title{color:#333;font-size: 14px;padding:10px 0 5px 0}
+.UIPromoStoryContainer_Description{color:#666;font-size: 12px;line-height:18px;padding:5px 0}
+.UIPromoStoryContainer .highlightedContent_Container{margin:5px auto;padding:5px 0}
+.UIPromoStoryContainer .highlightedContent{background:#ECEFF5 none repeat scroll 0 0;color:#203360;font-size: 12px;font-weight:bold;padding:5px}
+.UIPromoStoryContainer_UL{color:#666;font-size: 12px;line-height:18px;margin:2px;list-style-type:square;padding:2px 5px 2px 10px}
+.UIPromoStoryContainer_LI{padding:3px 0}
+.UIPromoStoryContainer_TwoColumnNavItems{padding:5px 0;font-weight:bold}
+.UIPromoStoryContainer_TwoColumnNavItems .navItem{padding:2px 0}
+.UIPromoStoryContainer_TwoColumnNavItems .leftColumn{float:left;padding:5px 30px 5px 0}
+.UIPromoStoryContainer_TwoColumnNavItems .rightColumn{float:left;padding:5px 20px}
+.UIPromoStoryContainer_RowNavItem{font-weight:bold;padding:5px 0}
+.UIWashFrame_Container .UIOneOffHeader_Container{background:#edeff4;border-bottom:1px solid #d8dfea}
+.UIPage_LoggedOut .UIWashFrame_Container .UIOneOffHeader_Container{margin-top:-160px;padding-top:131px}
+.UIOneOffHeader_Container .UIOneOffHeader_Content{margin:0 auto;padding:22px 0 5px;width:925px}
+.UIPromoHeader_Container{width:910px}
+.UIPromoHeader_Container h2{color:#203360;font-size: 19px}
+.UIPromoHeader_Container p{color:#49597e;font-size: 14px;line-height:25px;margin:4px 0}
+.UIPromoHeader_Container .promo_image{float:left;padding:10px 10px 0 0}
+.UIPromoHeader_Container .flush{margin:0 0 -30px}
+.UIPromoHeader_Container .UIPromoHeader_Button{float:left;margin:5px 0}
+.UIPromoHeader_Container .UIPromoHeader_Button a{margin:0}
+.UIPromoHeader_Container{float:left;margin:20px 0 40px 0;padding:5px 10px 0 0}
+.UIPromoHeader_Container .UIPromoHeader_inputfield{float:left;font-size: 12px;margin:1px 10px;padding:3px;width:160px}
+.UIPromoHeader_Container .UIPromoHeader_inputTextLeft{color:#203360;float:left;font-size: 14px;font-weight:bold;padding:6px 8px 6px 5px}
+.UIPromoHeader_Container .UIPromoHeader_Content{float:left;margin:0 auto;padding:20px 0 0 30px;width:400px}
+.UIPromoHeader_Container .highlightedContent{font-size: 14px;font-weight:bold;margin:10px 0}
+.UIPromoHeader_Container .UIPromoHeader_Content .extra_content{float:left;margin-top:5px}
+.UIPromoHeader_Container .UIPromoHeader_Content .extra_content span{padding:0 6px;color:#49597e;font-size: 14px}
+.communityStandardsBody{border:1px solid #ccc;padding:50px;width:700px}
+.communityStandardsText{width:400px}
+.data_archiver{border:1px solid #ccc;padding:45px;width:800px}
+.data_archiver_logo{width:180px;height:180px}
+.data_archiver_body{width:580px}
+.data_archiver_constrict_width{width:85%}
+.data_archiver_dialog .dialog_content .dialog_body{padding:0 !important}
+.data_archiver_dialog_body{padding:20px}
+.data_archiver_captcha_buttons{padding-top:15px;text-align:center}
+.badgesMarketing .mainContent{width:960px}
+.widgets_central_box{float:left;margin:20px 0 0;width:390px}
+.widgets_central_box .desc{float:left;font-size: 13px;line-height:18px;width:220px;color:#555}
+.widgets_central_box .desc h3{font-size: 16px;line-height:20px;margin-bottom:4px;margin-top:13px;font-weight:normal}
+.widgets_central_box .photo{border:1px solid #d3dae5;width:128px;height:88px}
+.widgets_central_box .photo_holder{padding:0 20px 0 0;float:left}
+.widgets_central_left{width:450px;padding:0 0 0 0;float:left}
+.widgets_central_right{width:450px;padding:0 0 0 15px;float:left}
+.widgets_central_container{margin-top:20px}
+.widgets_central_container h4{font-size: 13px;margin:0 0 3px 0}
+.widgets_central_icon{margin:0 5px -5px 3px}
+.widgets_central_header{background:url(../../y4/r/EAbydW1M_XR.png) right 0 no-repeat;height:190px;margin-top:0;margin-bottom:-5px}
+.widgets_central_header h1{padding-top:58px}
+.widgets_central_footer{float:left;margin:40px 0 30px 0;width:900px;font-size: 13px;padding:10px;background-color:#edeff4;border:1px solid #ccc}
+.widgets_central_footer a{background:url(../../ye/r/1x0T5GU6FqP.gif) right 5px no-repeat;padding-right:10px}
+.fbFollowMarketing{padding:60px 0 43px 0;margin:0 auto;width:981px}
+.fbFollowMarketingImage{border:1px solid #899bc1}
+.fbFollowMarketingButton{padding:5px 25px}
+.fbFollowMarketingFAQ .marketingBodyTitle{color:#3b5998}
+.fbFollowMarketingFooter{margin-top:36px}
+.fbFollowMarketingSidebarWrap{background:url(../../yX/r/bI6GkRIPWiU.png) bottom center no-repeat;padding:0 0 10px 0}
+.fbFollowMarketingSidebar{background:url(../../yj/r/N8REqmbXuVF.png) top left repeat-x;border:1px solid #d0d8e6;padding:0 24px 20px}
+.fbFollowMarketingSidebarMessage{background:white;border:1px solid #a4bfdd;padding:12px 16px}
+.fbFollowMarketingHearGuide{background:url(../../y6/r/rv4Q2HSia3N.png) top left no-repeat;float:right;height:160px;margin-left:30px;overflow:hidden;position:relative;width:213px}
+.fbFollowMarketingTune{clear:right}
+.fbFollowMarketingTuneGuide{background:url(../../yM/r/NoiYTTaATYq.png) top left no-repeat;float:right;height:160px;margin-left:30px;overflow:hidden;position:relative;width:210px}
+.fbFollowMarketingTuneMask{background:url(../../yT/r/HwJ7cF2C9mO.png) top left repeat-x;height:180px;position:absolute;width:210px}
+.fbFollowMarketingGuideSubscribe{left:96px;position:absolute;text-align:center;top:53px;width:100px}
+.fbFollowMarketingGuideSubscribed{left:16px;position:absolute;text-align:left;top:9px;width:133px}
+.fbFollowMarketingGuideMenu{left:17px;position:absolute;top:54px;width:180px}
+div.fbFollowMarketingGuideMenu,div.fbFollowMarketingGuideMenu .uiMenuInner{border:none;padding:0}
+.fbFollowMarketingGuideOption{margin:6px 7px}
+div.fbFollowMarketingSidebarHeader{line-height:17px}
+div.fbFollowMarketingFAQ{padding-right:40px}
+.groupsMarketingContent{width:980px}
+.membersGrid .img{display:block}
+.useList{font-size: 14px}
+.groupsMarketingContent .fbGroupsMarketingBox{padding:50px 80px}
+.groupsMarketingBlock1{width:310px;padding-right:30px}
+.groupsMarketingBlock2{width:225px;padding-right:30px}
+.groupsMarketingBlock3{width:225px}
+.groupsMarketingHeader{width:100%}
+.groupsMarketingButton{padding:3px 25px 5px}
+.groupsMarketingBlurbHeader{padding-top:35px}
+.groupsMarketingIllustration{margin-top:-20px;position:relative}
+.fbMarketingAccordian{border-bottom:1px solid #d9d9d9}
+.fbMarketingAccordian .bellow{border-top:1px solid #d9d9d9;padding:15px 0}
+.fbMarketingAccordian .bellow .opener{background-image:url(Ot-bbH8HHao.png);background-repeat:no-repeat;background-position:0 0;display:block;margin-top:3px;height:16px;width:16px}
+.fbMarketingAccordian .bellowOpen .opener{background-image:url(../../yd/r/YN5QR3E0NZT.png);background-repeat:no-repeat;background-position:0 0}
+.fbMarketingAccordian .bellow .body{display:none}
+.fbMarketingAccordian .bellowOpen .body{display:block}
+.fbMarketingAccordian .expandControls{text-align:right}
+.sitetourChat_Header{padding:45px 0 41px;width:977px}
+.sitetourChat_Header .sitetourChat_InnerWelcome{color:#203360;display:table-cell;padding:87px 0 0 47px}
+.sitetourChat_Header .sitetourChat_WelcomeText{padding:1px 10px 9px}
+.sitetourChat_Content{margin:0 auto;padding:0;width:977px}
+.sitetourChat_Steps{font-size: 17px;margin:43px 0 76px;padding:0}
+.sitetourChat_Steps .uiList{font-size: 12px;font-weight:normal;padding:0}
+.sitetourChat_Steps .uiListItem{padding:0}
+.sitetourChat_Steps a{font-weight:bold}
+.sitetourChat_Step{float:left;margin-right:36px;width:300px}
+.sitetourChat_Step.short{margin:0;width:286px}
+.sitetourChat_Step .uiList{margin-top:6px}
+.sitetourChat_Step .sitetourChat_ContentSubtitle{font-size: 12px;color:#333;line-height:21px}
+.sitetourChat_Step .sitetourChat_WithIcons li{background-position:0 50%;background-repeat:no-repeat;padding:4px 0 4px 24px;margin-bottom:2px}
+.sitetourChat_Step .pidgin{background-image:url(../../yr/r/V6UuHBnKT4k.png)}
+.sitetourChat_Step .adium{background-image:url(../../yN/r/N07X9UCKt2_.png)}
+.sitetourChat_Step .ichat{background-image:url(../../yK/r/sQJpOPbJDv6.png)}
+.sitetourChat_Step .generic{background-image:url(../../yE/r/CTOcCKReQCg.gif)}
+.sitetourChat_Step .sitetourChat_WithoutIcons li{padding:3px 0}
+.fbVideoCallingMarketingWash,
+.fbVideoCallingMarketingBody{width:980px}
+.fbVideoCallingMarketingWash{padding:35px 0;height:290px}
+.uiWashLayoutGradientWash{border-bottom:1px solid #c7d4e4;margin-bottom:35px}
+.fbVideoCallingHeadline{margin-top:85px}
+.fbVideoCallingGetStartedButton{padding:5px 30px;margin-top:15px}
+.fbVideoCallingIcon{margin-top:3px}
+.fbVideoCallingAlert{background-color:#fff;border:1px solid #a9bde0;padding:15px;width:240px;margin-top:15px}
+.fbVideoCallingVideo{background:url(../../ye/r/QGRc7J77qqR.png) no-repeat 0 1px;width:480px;height:270px;padding:10px 0}
+.fbVideoCallingMarketingWash .getStarted .getStartedThrobber{display:none}
+.fbVideoCallingMarketingWash .getStarted.async_saving .getStartedThrobber{display:inline}
+.conversationsToLifeText{margin-right:40px}
+.videoCallingBuddylistCallout .calloutTitle{display:block;margin:2px 0}
+.videoCallingBuddylistCallout .onlineStatusIcon{position:relative;top:3px}
+.registrationAbout{background-color:#eceff5}
+.registrationAbout .frame{margin:20px auto 0 auto;width:980px}
+.registrationAbout .main_top{padding:40px}
+.registrationAbout .main_text{padding:115px 40px 0 60px}
+.registrationAbout .main_footer{color:gray;font-size: 12px;text-align:center}
+.registrationAbout .blurb{height:230px;padding:15px}
+.registrationAbout .blurb_text{color:gray;font-size: 12px;line-height:16px;margin-top:4px}
+.registrationAbout #logo{height:125px;width:100%
+}
+.registrationAbout #contentCurve{background-color:transparent}
+
+#bootloader_U_Opv { height: 42px; }

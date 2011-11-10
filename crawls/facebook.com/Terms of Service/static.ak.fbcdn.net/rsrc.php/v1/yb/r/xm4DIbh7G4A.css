@@ -1,0 +1,32 @@
+/*1311558320,169776067*/
+
+.fbDirectoryBoxColumn{float:left;font-size: 13px;width:145px}
+.directory .header{float:left;line-height:16px;padding:20px 0 10px 20px;width:650px}
+.directory .header p{margin:5px 0}
+.directory .dh_search{float:right;margin:30px 10px}
+.directory .alphabet_list{background:#f7f7f7;border-bottom:1px solid #ccc;font-size: 13px;padding:0 0 0 12px}
+.directory .alphabet_list_desc{background:#f7f7f7;border-bottom:1px solid #ccc;font-size: 11px;padding:1px 0 1px 12px}
+.directory .alphabet_list a{display:block;float:left;font-weight:bold;margin:3px 11px 0 0;padding:3px 0 4px;text-align:center;width:16px}
+.directory .alphabet_list a:hover{color:#fff;text-decoration:none;background:#3b5998}
+.directory .alphabet_list a.selected{border-bottom:2px solid #3b5998;margin-bottom:0;text-decoration:none}
+.directory .breadcrumbs{border-bottom:1px solid #ccc;margin:10px 20px 0 20px;padding:0 0 5px 0}
+.directory .breadcrumbs span.dash{font-size: 15px}
+.directory .breadcrumbs span.names{font-size: 12px}
+.directory .breadcrumbs span.slash{color:#555}
+.directory .columns .left_column{float:left;padding:10px 20px 20px 20px;width:285px}
+.directory .columns .right_column{float:right;padding:10px 20px 20px 0;width:285px}
+.directory .columns div.entry{font-size: 11px;margin:8px 4px 8px 0}
+.directory .fbDirectoryBoxColumn{width:300px}
+.directory .direct_listing .fbDirectoryBoxColumn{width:178px}
+.directory .fbDirectoryBoxColumnItem{font-size: 12px;margin-bottom:7px}
+.directory .dh_search .inputtext{border-color:#94a4c6;margin:0;float:left}
+.directory .dh_search .inputsubmit{background:url(../../yV/r/-pf2bdz3vEg.gif) scroll no-repeat left 60%;background-color:#3b5998;border-left:none;border-top:1px solid #5973a9;float:left;padding:3px 5px 3px 20px}
+.directory .top_pages{margin:20px 0 0 10px;padding:0 0 0 0}
+.directory .top_pages_title{background-color:#f1f2f6;border:0;font-weight:bold;margin:10px 0;padding:5px 10px}
+.directory .UIGridRenderer{margin:0;padding:0}
+.directory .UIGridRenderer_Row{border:0 solid #ccc;float:left;margin:0;padding:10px 0 0 0;width:186px}
+.directory .UIGridRenderer_Row .UIImageBlock{margin:0;padding:10px 0 0 10px}
+.directory .UIGridRenderer_Row .UIImageBlock p.name{margin:0;padding:0 0 0 4px;font-weight:bold}
+.directory .UIGridRenderer_Row .UIImageBlock p.fans{margin:0;padding:4px 0 0 4px;font-weight:normal;font-size: 10px;color:#777}
+
+#bootloader_937y9 { height: 42px; }
