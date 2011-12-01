@@ -1,0 +1,66 @@
+--2011-12-01 14:39:30--  http://www.comcast.net/terms/network/
+Resolving www.comcast.net (www.comcast.net)... 216.156.213.56, 216.156.213.8
+Connecting to www.comcast.net (www.comcast.net)|216.156.213.56|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://www.comcast.com/policies [following]
+--2011-12-01 14:39:30--  http://www.comcast.com/policies
+Resolving www.comcast.com (www.comcast.com)... 69.241.45.4
+Connecting to www.comcast.com (www.comcast.com)|69.241.45.4|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://www.comcast.com/policies/ [following]
+--2011-12-01 14:39:30--  http://www.comcast.com/policies/
+Connecting to www.comcast.com (www.comcast.com)|69.241.45.4|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8769 (8.6K) [text/html]
+Saving to: `code/../crawls/www.comcast.net/Network-Management-Policy/raw/www.comcast.net/terms/network/index.html'
+
+     0K ........                                              100% 1.00M=0.008s
+
+2011-12-01 14:39:30 (1.00 MB/s) - `code/../crawls/www.comcast.net/Network-Management-Policy/raw/www.comcast.net/terms/network/index.html' saved [8769/8769]
+
+--2011-12-01 14:39:30--  http://www.comcast.com/Includes/js/CookieHelper.js
+Connecting to www.comcast.com (www.comcast.com)|69.241.45.4|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6427 (6.3K) [application/x-javascript]
+Saving to: `code/../crawls/www.comcast.net/Network-Management-Policy/raw/www.comcast.com/Includes/js/CookieHelper.js'
+
+     0K ......                                                100% 15.5M=0s
+
+2011-12-01 14:39:31 (15.5 MB/s) - `code/../crawls/www.comcast.net/Network-Management-Policy/raw/www.comcast.com/Includes/js/CookieHelper.js' saved [6427/6427]
+
+--2011-12-01 14:39:31--  http://www.comcast.com/Includes/js/javascript.js
+Connecting to www.comcast.com (www.comcast.com)|69.241.45.4|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 24119 (24K) [application/x-javascript]
+Saving to: `code/../crawls/www.comcast.net/Network-Management-Policy/raw/www.comcast.com/Includes/js/javascript.js'
+
+     0K .......... .......... ...                             100%  219K=0.1s
+
+2011-12-01 14:39:31 (219 KB/s) - `code/../crawls/www.comcast.net/Network-Management-Policy/raw/www.comcast.com/Includes/js/javascript.js' saved [24119/24119]
+
+--2011-12-01 14:39:31--  http://www.comcast.com/Includes/omniture/websidestory.js
+Connecting to www.comcast.com (www.comcast.com)|69.241.45.4|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6805 (6.6K) [application/x-javascript]
+Saving to: `code/../crawls/www.comcast.net/Network-Management-Policy/raw/www.comcast.com/Includes/omniture/websidestory.js'
+
+     0K ......                                                100% 1.01M=0.006s
+
+2011-12-01 14:39:31 (1.01 MB/s) - `code/../crawls/www.comcast.net/Network-Management-Policy/raw/www.comcast.com/Includes/omniture/websidestory.js' saved [6805/6805]
+
+--2011-12-01 14:39:31--  http://www.comcast.com/includes/omniture/s_code.js
+Connecting to www.comcast.com (www.comcast.com)|69.241.45.4|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 66828 (65K) [application/x-javascript]
+Saving to: `code/../crawls/www.comcast.net/Network-Management-Policy/raw/www.comcast.com/includes/omniture/s_code.js'
+
+     0K .......... .......... .......... .......... .......... 76%  264K 0s
+    50K .......... .....                                      100%  747K=0.2s
+
+2011-12-01 14:39:32 (311 KB/s) - `code/../crawls/www.comcast.net/Network-Management-Policy/raw/www.comcast.com/includes/omniture/s_code.js' saved [66828/66828]
+
+FINISHED --2011-12-01 14:39:32--
+Total wall clock time: 1.6s
+Downloaded: 5 files, 110K in 0.3s (332 KB/s)
+Converting code/../crawls/www.comcast.net/Network-Management-Policy/raw/www.comcast.net/terms/network/index.html... 4-1
+Converted 1 files in 0.001 seconds.

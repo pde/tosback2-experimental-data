@@ -5,6 +5,7 @@ import random
 import git
 import time
 import os,os.path,shutil
+import re
 import sys
 from lxml import etree
 
@@ -20,28 +21,32 @@ class TOSCrawler(object):
         if xml_file_name:
             self.read(xml_file_name)
 
+    def sanitize(self, filename):
+        return re.sub(r'\W+', '-', filename)
+
     def read(self, file_name):
         """Parses XML file."""
         # TODO(dta) test on many-to-one urls
         xmlData = etree.parse(os.path.join(CODE_PATH, "..", "rules", file_name))
-        self.data = {}
+        data = {}
         for node in xmlData.iter():
-            self.data[str(node.tag)] = node.attrib['name']
+            data[str(node.tag)] = node.attrib['name']
+        return data
 
-    def process(self):
+    def process(self, data):
         # 0. Determine parameters for this crawl
-        assert "sitename" in self.data, "Every rule needs a sitename"
-        sitename = self.data["sitename"]
-        assert "docname" in self.data, "Every rule needs a sitename"
-        docname = self.data["docname"]
-        assert "url" in self.data, "Every rule needs a url"
-        url = self.data["url"]
+        assert "sitename" in data, "Every rule needs a sitename"
+        sitename = data["sitename"]
+        assert "docname" in data, "Every rule needs a docname"
+        docname = self.sanitize(data["docname"])
+        assert "url" in data, "Every rule needs a url"
+        url = data["url"]
 
-        recurse = "norecurse" not in self.data
-        xpath = "xpath" not in self.data
+        recurse = "norecurse" not in data
+        xpath = "xpath" not in data
 
-        if 'UAs' in self.data:
-            UAs = self.data['UAs']
+        if 'UAs' in data:
+            UAs = data['UAs']
         else:
             UAs = GLOBAL_UAS
 
@@ -55,7 +60,7 @@ class TOSCrawler(object):
         os.makedirs(rawtarget)
 
         # 2. Do wget lookup
-        print "Crawling %s\n" % url
+        print "Crawling %s" % url
         args = [
             'wget', 
             # Obtain images, CSS, etc, even from other domains
@@ -71,13 +76,15 @@ class TOSCrawler(object):
             # Format things for historical/offline browsing
             '--convert-links',
             '--adjust-extension',
+            # Sensible timeout/retries
+            '--timeout', '15',
+            '--tries', '3',
             url]
         if recurse:
             args[-1:-1] = ['--recursive', '--level', '1']
         print "calling ", args
         subprocess.call(args)
         return reltarget
-        # TODO(dta): rename directory tree, manipulate files
 
 
 def main():
@@ -96,15 +103,19 @@ def main():
 
         # 3. Traverse
         crawl_paths = []
+        parsed_xml_files = []
         for fi in os.listdir(os.path.join(CODE_PATH,"..","rules")):
             if fi[-4:]!=".xml": continue
-            print "Reading %s" % fi
-            t.read(fi)
-            path = t.process()
+            print "Reading in XML file %s" % fi
+            parsed_xml_files.append(t.read(fi))
+
+        for data in parsed_xml_files:
+            path = t.process(data)
             crawl_paths.append(path)
 
         # 4. commit results
 
+        print "Committing results..."
         gitrepo.index.add(crawl_paths)
         commit_msg = "Crawl completed at " + time.strftime("%Y-%m-%d-%H-%M-%S")
         os.environ["GIT_AUTHOR_NAME"]="Robbie Robot"
@@ -119,8 +130,7 @@ def main():
             # won't keep the result
             gitrepo.branches[branchname].delete(gitrepo,branchname)
             if branchname in gitrepo.branches:
-                print "Failed to delete crawl branch", branchname, 
-                print "for mysterious reasons"
+                print "Failed to delete crawl branch %s for mysterious reasons" % branchname
             # PS -- who on earth designed this API
 
 main()

@@ -1,0 +1,134 @@
+--2011-12-01 14:40:50--  http://www.netflix.com/TermsOfUse
+Resolving www.netflix.com (www.netflix.com)... 69.53.236.17
+Connecting to www.netflix.com (www.netflix.com)|69.53.236.17|:80... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: http://www.netflix.com/TermsOfUse?tcw=1&cqs= [following]
+--2011-12-01 14:40:51--  http://www.netflix.com/TermsOfUse?tcw=1&cqs=
+Reusing existing connection to www.netflix.com:80.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: http://www.netflix.com/TermsOfUse [following]
+--2011-12-01 14:40:51--  http://www.netflix.com/TermsOfUse
+Reusing existing connection to www.netflix.com:80.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://signup.netflix.com/TermsOfUse?country=1&rdirfdc=true [following]
+--2011-12-01 14:40:51--  https://signup.netflix.com/TermsOfUse?country=1&rdirfdc=true
+Resolving signup.netflix.com (signup.netflix.com)... 107.22.199.54, 107.22.211.106, 107.22.175.38
+Connecting to signup.netflix.com (signup.netflix.com)|107.22.199.54|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `code/../crawls/www.netflix.com/Terms-of-Use/raw/www.netflix.com/TermsOfUse.html'
+
+     0K .......... .......... .......... .......... ..........  184K
+    50K .......... .......... ..                                243K=0.4s
+
+2011-12-01 14:40:51 (199 KB/s) - `code/../crawls/www.netflix.com/Terms-of-Use/raw/www.netflix.com/TermsOfUse.html' saved [74083]
+
+--2011-12-01 14:40:51--  https://netflix.hs.llnwd.net/e1/us/icons/nficon.ico
+Resolving netflix.hs.llnwd.net (netflix.hs.llnwd.net)... 69.28.151.90, 69.28.151.91
+Connecting to netflix.hs.llnwd.net (netflix.hs.llnwd.net)|69.28.151.90|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1150 (1.1K) [text/plain]
+Saving to: `code/../crawls/www.netflix.com/Terms-of-Use/raw/netflix.hs.llnwd.net/e1/us/icons/nficon.ico'
+
+     0K .                                                     100%  240M=0s
+
+2011-12-01 14:40:52 (240 MB/s) - `code/../crawls/www.netflix.com/Terms-of-Use/raw/netflix.hs.llnwd.net/e1/us/icons/nficon.ico' saved [1150/1150]
+
+--2011-12-01 14:40:52--  https://signup.netflix.com/css/include?f=core;WEB_CSS;06575ff56b9802da2851bde8ef618035%7Cshared;WEB_CSS;06575ff56b9802da2851bde8ef618035%7Cheader_navigation;WEB_CSS;06575ff56b9802da2851bde8ef618035%7CsetLanguagePrefMenu;WEB_CSS;06575ff56b9802da2851bde8ef618035%7Cfooter;WEB_CSS;06575ff56b9802da2851bde8ef618035%7Cregistration_panel;WEB_CSS;06575ff56b9802da2851bde8ef618035%7Clogin_pages;WEB_CSS;06575ff56b9802da2851bde8ef618035%7Csignup_flow;WEB_CSS;06575ff56b9802da2851bde8ef618035%7C
+Connecting to signup.netflix.com (signup.netflix.com)|107.22.199.54|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/css]
+code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/css/include?f=core;WEB_CSS;06575ff56b9802da2851bde8ef618035|shared;WEB_CSS;06575ff56b9802da2851bde8ef618035|header_navigation;WEB_CSS;06575ff56b9802da2851bde8ef618035|setLanguagePrefMenu;WEB_CSS;06575ff56b9802da2851bde8ef618035|footer;WEB_CSS;06575ff56b9802da2851bde8ef618035|registration_panel;WEB_CSS;06575ff56b9802da2851bde8ef618035|login_pages;WEB_CSS;06575ff56b9802da2851bde8ef618035|signup_flow;WEB_CSS;06575ff56b9802da2851bde8ef618035|.css: File name too long
+
+Cannot write to `code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/css/include?f=core;WEB_CSS;06575ff56b9802da2851bde8ef618035|shared;WEB_CSS;06575ff56b9802da2851bde8ef618035|header_navigation;WEB_CSS;06575ff56b9802da2851bde8ef618035|setLanguagePrefMenu;WEB_CSS;06575ff56b9802da2851bde8ef618035|footer;WEB_CSS;06575ff56b9802da2851bde8ef618035|registration_panel;WEB_CSS;06575ff56b9802da2851bde8ef618035|login_pages;WEB_CSS;06575ff56b9802da2851bde8ef618035|signup_flow;WEB_CSS;06575ff56b9802da2851bde8ef618035|.css' (Success).
+--2011-12-01 14:40:52--  https://signup.netflix.com/css/include?f=TERMSOFUSE;WEB_CSS;06575ff56b9802da2851bde8ef618035%7C
+Connecting to signup.netflix.com (signup.netflix.com)|107.22.199.54|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 0 [text/css]
+Saving to: `code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/css/include?f=TERMSOFUSE;WEB_CSS;06575ff56b9802da2851bde8ef618035|.css'
+
+     0K                                                        0.00 =0s
+
+2011-12-01 14:40:52 (0.00 B/s) - `code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/css/include?f=TERMSOFUSE;WEB_CSS;06575ff56b9802da2851bde8ef618035|.css' saved [0/0]
+
+--2011-12-01 14:40:52--  https://signup.netflix.com/js/include?f=modernizr;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76%7C
+Reusing existing connection to signup.netflix.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 8989 (8.8K) [application/x-javascript]
+Saving to: `code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/js/include?f=modernizr;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|'
+
+     0K ........                                              100%  144M=0s
+
+2011-12-01 14:40:52 (144 MB/s) - `code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/js/include?f=modernizr;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|' saved [8989/8989]
+
+--2011-12-01 14:40:52--  https://netflix.hs.llnwd.net/e1/us/layout/headers/logos/nf_logo.png
+Connecting to netflix.hs.llnwd.net (netflix.hs.llnwd.net)|69.28.151.90|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 4459 (4.4K) [image/png]
+Saving to: `code/../crawls/www.netflix.com/Terms-of-Use/raw/netflix.hs.llnwd.net/e1/us/layout/headers/logos/nf_logo.png'
+
+     0K ....                                                  100%  874M=0s
+
+2011-12-01 14:40:53 (874 MB/s) - `code/../crawls/www.netflix.com/Terms-of-Use/raw/netflix.hs.llnwd.net/e1/us/layout/headers/logos/nf_logo.png' saved [4459/4459]
+
+--2011-12-01 14:40:53--  https://signup.netflix.com/css/include?f=mainContentStatic;WEB_CSS;06575ff56b9802da2851bde8ef618035%7Clegal;WEB_CSS;06575ff56b9802da2851bde8ef618035%7C
+Connecting to signup.netflix.com (signup.netflix.com)|107.22.199.54|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2421 (2.4K) [text/css]
+Saving to: `code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/css/include?f=mainContentStatic;WEB_CSS;06575ff56b9802da2851bde8ef618035|legal;WEB_CSS;06575ff56b9802da2851bde8ef618035|.css'
+
+     0K ..                                                    100%  485M=0s
+
+2011-12-01 14:40:53 (485 MB/s) - `code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/css/include?f=mainContentStatic;WEB_CSS;06575ff56b9802da2851bde8ef618035|legal;WEB_CSS;06575ff56b9802da2851bde8ef618035|.css' saved [2421/2421]
+
+--2011-12-01 14:40:53--  https://signup.netflix.com/js/include?f=jquery_1_6_2;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76%7Ctracking;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76%7Cjquery_ui_1_8_16;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76%7C
+Reusing existing connection to signup.netflix.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-javascript]
+code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/js/include?f=jquery_1_6_2;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|tracking;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|jquery_ui_1_8_16;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|: File name too long
+
+Cannot write to `code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/js/include?f=jquery_1_6_2;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|tracking;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|jquery_ui_1_8_16;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|' (Success).
+--2011-12-01 14:40:53--  https://signup.netflix.com/js/include?f=nflib_namespace;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76%7Cnfjs_constants;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76%7C
+Connecting to signup.netflix.com (signup.netflix.com)|107.22.199.54|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1245 (1.2K) [application/x-javascript]
+Saving to: `code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/js/include?f=nflib_namespace;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|nfjs_constants;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|'
+
+     0K .                                                     100%  296M=0s
+
+2011-12-01 14:40:53 (296 MB/s) - `code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/js/include?f=nflib_namespace;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|nfjs_constants;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|' saved [1245/1245]
+
+--2011-12-01 14:40:53--  https://signup.netflix.com/js/include?f=brightedge_core;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76%7Cbrightedge;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76%7C
+Reusing existing connection to signup.netflix.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: 6813 (6.7K) [application/x-javascript]
+Saving to: `code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/js/include?f=brightedge_core;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|brightedge;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|'
+
+     0K ......                                                100% 1.09G=0s
+
+2011-12-01 14:40:53 (1.09 GB/s) - `code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/js/include?f=brightedge_core;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|brightedge;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|' saved [6813/6813]
+
+--2011-12-01 14:40:53--  https://signup.netflix.com/js/include?f=registration;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76%7Cnflib_html5_shim;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76%7Cnflib_utils_common;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76%7Cbootstrap;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76%7CTERMSOFUSE;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76%7C
+Reusing existing connection to signup.netflix.com:443.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-javascript]
+code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/js/include?f=registration;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|nflib_html5_shim;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|nflib_utils_common;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|bootstrap;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|TERMSOFUSE;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|: File name too long
+
+Cannot write to `code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/js/include?f=registration;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|nflib_html5_shim;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|nflib_utils_common;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|bootstrap;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|TERMSOFUSE;WEB_JS;ab18e3cf0ed6ebf70dfb1b82c6d74d76|' (Success).
+--2011-12-01 14:40:54--  https://netflix.hs.llnwd.net/e1/us/layout/page_titles/bgvignette/950w/Blank.jpg
+Connecting to netflix.hs.llnwd.net (netflix.hs.llnwd.net)|69.28.151.90|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3307 (3.2K) [image/jpeg]
+Saving to: `code/../crawls/www.netflix.com/Terms-of-Use/raw/netflix.hs.llnwd.net/e1/us/layout/page_titles/bgvignette/950w/Blank.jpg'
+
+     0K ...                                                   100% 28.2M=0s
+
+2011-12-01 14:40:54 (28.2 MB/s) - `code/../crawls/www.netflix.com/Terms-of-Use/raw/netflix.hs.llnwd.net/e1/us/layout/page_titles/bgvignette/950w/Blank.jpg' saved [3307/3307]
+
+FINISHED --2011-12-01 14:40:54--
+Total wall clock time: 3.3s
+Downloaded: 9 files, 100K in 0.4s (275 KB/s)
+Converting code/../crawls/www.netflix.com/Terms-of-Use/raw/www.netflix.com/TermsOfUse.html... 41-0
+Converting code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/css/include?f=TERMSOFUSE;WEB_CSS;06575ff56b9802da2851bde8ef618035|.css... nothing to do.
+Converting code/../crawls/www.netflix.com/Terms-of-Use/raw/signup.netflix.com/css/include?f=mainContentStatic;WEB_CSS;06575ff56b9802da2851bde8ef618035|legal;WEB_CSS;06575ff56b9802da2851bde8ef618035|.css... 1-0
+Converted 3 files in 0.005 seconds.

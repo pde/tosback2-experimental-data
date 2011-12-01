@@ -1,0 +1,100 @@
+--2011-12-01 14:40:29--  http://mail.google.com/mail/help/intl/en/legal_notices.html
+Resolving mail.google.com (mail.google.com)... 74.125.39.83, 74.125.39.17, 74.125.39.18, ...
+Connecting to mail.google.com (mail.google.com)|74.125.39.83|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/mail.google.com/mail/help/intl/en/legal_notices.html'
+
+     0K ..                                                     91.9M=0s
+
+2011-12-01 14:40:29 (91.9 MB/s) - `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/mail.google.com/mail/help/intl/en/legal_notices.html' saved [2453]
+
+--2011-12-01 14:40:29--  http://www.google.com/css/go-inlay.css
+Resolving www.google.com (www.google.com)... 74.125.39.105, 74.125.39.106, 74.125.39.147, ...
+Connecting to www.google.com (www.google.com)|74.125.39.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/css]
+Saving to: `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/www.google.com/css/go-inlay.css'
+
+     0K .......... .......... .......... .......... ..........  137K
+    50K ..                                                     3.51M=0.4s
+
+2011-12-01 14:40:30 (143 KB/s) - `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/www.google.com/css/go-inlay.css' saved [53616]
+
+--2011-12-01 14:40:30--  http://www.google.com/js/gweb/analytics/autotrack.js
+Reusing existing connection to www.google.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/javascript]
+Saving to: `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/www.google.com/js/gweb/analytics/autotrack.js'
+
+     0K ...                                                    66.9M=0s
+
+2011-12-01 14:40:30 (66.9 MB/s) - `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/www.google.com/js/gweb/analytics/autotrack.js' saved [3719]
+
+--2011-12-01 14:40:30--  http://mail.google.com/mail/help/css/about.css
+Connecting to mail.google.com (mail.google.com)|74.125.39.83|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/css]
+Saving to: `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/mail.google.com/mail/help/css/about.css'
+
+     0K                                                        25.9M=0s
+
+2011-12-01 14:40:31 (25.9 MB/s) - `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/mail.google.com/mail/help/css/about.css' saved [471]
+
+--2011-12-01 14:40:31--  http://www.google.com/intl/en/images/logos/mail_logo.png
+Connecting to www.google.com (www.google.com)|74.125.39.105|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8083 (7.9K) [image/png]
+Saving to: `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/www.google.com/intl/en/images/logos/mail_logo.png'
+
+     0K .......                                               100% 8.31M=0.001s
+
+2011-12-01 14:40:31 (8.31 MB/s) - `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/www.google.com/intl/en/images/logos/mail_logo.png' saved [8083/8083]
+
+--2011-12-01 14:40:31--  http://www.google.com/images/modules/buttons/g-button-chocobo-1.gif
+Reusing existing connection to www.google.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 8175 (8.0K) [image/gif]
+Saving to: `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/www.google.com/images/modules/buttons/g-button-chocobo-1.gif'
+
+     0K .......                                               100% 2.63M=0.003s
+
+2011-12-01 14:40:31 (2.63 MB/s) - `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/www.google.com/images/modules/buttons/g-button-chocobo-1.gif' saved [8175/8175]
+
+--2011-12-01 14:40:31--  http://www.google.com/images/modules/buttons/g-button-chocobo-2.gif
+Reusing existing connection to www.google.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 524 [image/gif]
+Saving to: `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/www.google.com/images/modules/buttons/g-button-chocobo-2.gif'
+
+     0K                                                       100% 53.7M=0s
+
+2011-12-01 14:40:31 (53.7 MB/s) - `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/www.google.com/images/modules/buttons/g-button-chocobo-2.gif' saved [524/524]
+
+--2011-12-01 14:40:31--  http://www.google.com/images/modules/buttons/g-button-chocobo-basic-1.gif
+Reusing existing connection to www.google.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 8987 (8.8K) [image/gif]
+Saving to: `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/www.google.com/images/modules/buttons/g-button-chocobo-basic-1.gif'
+
+     0K ........                                              100% 6.55M=0.001s
+
+2011-12-01 14:40:31 (6.55 MB/s) - `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/www.google.com/images/modules/buttons/g-button-chocobo-basic-1.gif' saved [8987/8987]
+
+--2011-12-01 14:40:31--  http://www.google.com/images/modules/buttons/g-button-chocobo-basic-2.gif
+Reusing existing connection to www.google.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 313 [image/gif]
+Saving to: `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/www.google.com/images/modules/buttons/g-button-chocobo-basic-2.gif'
+
+     0K                                                       100% 50.7M=0s
+
+2011-12-01 14:40:32 (50.7 MB/s) - `code/../crawls/mail.google.com/GMail-Legal-Notices/raw/www.google.com/images/modules/buttons/g-button-chocobo-basic-2.gif' saved [313/313]
+
+FINISHED --2011-12-01 14:40:32--
+Total wall clock time: 2.7s
+Downloaded: 9 files, 84K in 0.4s (227 KB/s)
+Converting code/../crawls/mail.google.com/GMail-Legal-Notices/raw/mail.google.com/mail/help/intl/en/legal_notices.html... 4-5
+Converting code/../crawls/mail.google.com/GMail-Legal-Notices/raw/www.google.com/css/go-inlay.css... 8-0
+Converting code/../crawls/mail.google.com/GMail-Legal-Notices/raw/mail.google.com/mail/help/css/about.css... nothing to do.
+Converted 3 files in 0.002 seconds.
