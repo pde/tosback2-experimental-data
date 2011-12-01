@@ -1,0 +1,820 @@
+--2011-12-01 14:39:36--  http://www.data.gov/privacypolicy
+Resolving www.data.gov (www.data.gov)... 184.51.2.173
+Connecting to www.data.gov (www.data.gov)|184.51.2.173|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 18933 (18K) [text/html]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/privacypolicy.html'
+
+     0K .......... ........                                   100%  865K=0.02s
+
+2011-12-01 14:39:36 (865 KB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/privacypolicy.html' saved [18933/18933]
+
+--2011-12-01 14:39:36--  http://www.data.gov/css/style.css?v=5d18
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/css]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/style.css?v=5d18.css'
+
+     0K .......... .......... .......... .......               1.28M=0.03s
+
+2011-12-01 14:39:36 (1.28 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/style.css?v=5d18.css' saved [38674]
+
+--2011-12-01 14:39:36--  http://www.data.gov/css/print.css
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 23410 (23K) [text/css]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/print.css'
+
+     0K .......... .......... ..                              100% 2.57M=0.009s
+
+2011-12-01 14:39:36 (2.57 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/print.css' saved [23410/23410]
+
+--2011-12-01 14:39:36--  http://www.data.gov/css/nav.css
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 3306 (3.2K) [text/css]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/nav.css'
+
+     0K ...                                                   100% 18.3M=0s
+
+2011-12-01 14:39:36 (18.3 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/nav.css' saved [3306/3306]
+
+--2011-12-01 14:39:36--  http://www.data.gov/css/jquery.tooltip.css
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 213 [text/css]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/jquery.tooltip.css'
+
+     0K                                                       100% 20.0M=0s
+
+2011-12-01 14:39:36 (20.0 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/jquery.tooltip.css' saved [213/213]
+
+--2011-12-01 14:39:36--  http://www.data.gov/thickbox/thickbox.css
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 5150 (5.0K) [text/css]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/thickbox/thickbox.css'
+
+     0K .....                                                 100% 10.7M=0s
+
+2011-12-01 14:39:36 (10.7 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/thickbox/thickbox.css' saved [5150/5150]
+
+--2011-12-01 14:39:36--  http://www.data.gov/css/jquery.rating.css
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 890 [text/css]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/jquery.rating.css'
+
+     0K                                                       100% 75.0M=0s
+
+2011-12-01 14:39:36 (75.0 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/jquery.rating.css' saved [890/890]
+
+--2011-12-01 14:39:36--  http://www.data.gov/css/tabs.css
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 6173 (6.0K) [text/css]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/tabs.css'
+
+     0K ......                                                100% 7.12M=0.001s
+
+2011-12-01 14:39:36 (7.12 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/tabs.css' saved [6173/6173]
+
+--2011-12-01 14:39:36--  http://www.data.gov/js/jquery-1.4.4.min.js
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/javascript]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/jquery-1.4.4.min.js'
+
+     0K .......... .......... .......... .......... .......... 1.84M
+    50K .......... .......... ......                           2.84M=0.04s
+
+2011-12-01 14:39:36 (2.10 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/jquery-1.4.4.min.js' saved [78601]
+
+--2011-12-01 14:39:36--  http://www.data.gov/js/jquery-ui-1.7.1.custom.min.js
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 18863 (18K) [application/javascript]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/jquery-ui-1.7.1.custom.min.js'
+
+     0K .......... ........                                   100% 2.70M=0.007s
+
+2011-12-01 14:39:36 (2.70 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/jquery-ui-1.7.1.custom.min.js' saved [18863/18863]
+
+--2011-12-01 14:39:36--  http://www.data.gov/js/datagov.js
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 5698 (5.6K) [application/javascript]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/datagov.js'
+
+     0K .....                                                 100% 3.22M=0.002s
+
+2011-12-01 14:39:36 (3.22 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/datagov.js' saved [5698/5698]
+
+--2011-12-01 14:39:36--  http://www.data.gov/js/dw_event.js
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1372 (1.3K) [application/javascript]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/dw_event.js'
+
+     0K .                                                     100%  138M=0s
+
+2011-12-01 14:39:36 (138 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/dw_event.js' saved [1372/1372]
+
+--2011-12-01 14:39:36--  http://www.data.gov/js/dw_cookies.js
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1757 (1.7K) [application/javascript]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/dw_cookies.js'
+
+     0K .                                                     100% 73.6M=0s
+
+2011-12-01 14:39:36 (73.6 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/dw_cookies.js' saved [1757/1757]
+
+--2011-12-01 14:39:36--  http://www.data.gov/js/dw_sizerdx.js
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 9392 (9.2K) [application/javascript]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/dw_sizerdx.js'
+
+     0K .........                                             100% 3.85M=0.002s
+
+2011-12-01 14:39:36 (3.85 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/dw_sizerdx.js' saved [9392/9392]
+
+--2011-12-01 14:39:36--  http://www.data.gov/js/dw_init.js
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1352 (1.3K) [application/javascript]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/dw_init.js'
+
+     0K .                                                     100%  113M=0s
+
+2011-12-01 14:39:36 (113 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/dw_init.js' saved [1352/1352]
+
+--2011-12-01 14:39:36--  http://www.data.gov/thickbox/jquery.thickbox.js
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 5967 (5.8K) [application/javascript]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/thickbox/jquery.thickbox.js'
+
+     0K .....                                                 100% 15.3M=0s
+
+2011-12-01 14:39:36 (15.3 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/thickbox/jquery.thickbox.js' saved [5967/5967]
+
+--2011-12-01 14:39:36--  http://www.data.gov/thickbox/externallinks.js
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 2561 (2.5K) [application/javascript]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/thickbox/externallinks.js'
+
+     0K ..                                                    100% 90.0M=0s
+
+2011-12-01 14:39:36 (90.0 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/thickbox/externallinks.js' saved [2561/2561]
+
+--2011-12-01 14:39:36--  http://www.data.gov/js/jquery.tooltip.js
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 8087 (7.9K) [application/javascript]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/jquery.tooltip.js'
+
+     0K .......                                               100% 6.27M=0.001s
+
+2011-12-01 14:39:36 (6.27 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/jquery.tooltip.js' saved [8087/8087]
+
+--2011-12-01 14:39:36--  http://www.data.gov/js/jquery.rating.js
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 13097 (13K) [application/javascript]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/jquery.rating.js'
+
+     0K .......... ..                                         100% 3.07M=0.004s
+
+2011-12-01 14:39:37 (3.07 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/js/jquery.rating.js' saved [13097/13097]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/usaflag.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 669 [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/usaflag.gif'
+
+     0K                                                       100% 62.3M=0s
+
+2011-12-01 14:39:37 (62.3 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/usaflag.gif' saved [669/669]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/addthis.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1229 (1.2K) [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/addthis.jpg'
+
+     0K .                                                     100% 29.0M=0s
+
+2011-12-01 14:39:37 (29.0 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/addthis.jpg' saved [1229/1229]
+
+--2011-12-01 14:39:37--  http://s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a53a8c7029120ed
+Resolving s7.addthis.com (s7.addthis.com)... 96.6.220.20
+Connecting to s7.addthis.com (s7.addthis.com)|96.6.220.20|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/x-javascript]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a53a8c7029120ed'
+
+     0K .......... .......... .......... .......... .......... 1.05M
+    50K .......... .......... .......... .......... ..         1.50M=0.07s
+
+2011-12-01 14:39:37 (1.22 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/s7.addthis.com/js/250/addthis_widget.js?pub=xa-4a53a8c7029120ed' saved [94393]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/textsize-plus.gif
+Connecting to www.data.gov (www.data.gov)|184.51.2.173|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 63 [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/textsize-plus.gif'
+
+     0K                                                       100% 5.75M=0s
+
+2011-12-01 14:39:37 (5.75 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/textsize-plus.gif' saved [63/63]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/textsize-minus.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 61 [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/textsize-minus.gif'
+
+     0K                                                       100% 6.56M=0s
+
+2011-12-01 14:39:37 (6.56 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/textsize-minus.gif' saved [61/61]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/textsize-normal.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 60 [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/textsize-normal.gif'
+
+     0K                                                       100% 5.57M=0s
+
+2011-12-01 14:39:37 (5.57 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/textsize-normal.gif' saved [60/60]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/logo.png
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 10471 (10K) [image/png]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/logo.png'
+
+     0K ..........                                            100%  539K=0.02s
+
+2011-12-01 14:39:37 (539 KB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/logo.png' saved [10471/10471]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/search.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1545 (1.5K) [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/search.jpg'
+
+     0K .                                                     100%  156M=0s
+
+2011-12-01 14:39:37 (156 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/search.jpg' saved [1545/1545]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/logo_gs.png
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 7052 (6.9K) [image/png]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/logo_gs.png'
+
+     0K ......                                                100% 2.62M=0.003s
+
+2011-12-01 14:39:37 (2.62 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/logo_gs.png' saved [7052/7052]
+
+--2011-12-01 14:39:37--  http://www.data.gov/fonts/trajanpro-regular-webfont.eot
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [application/vnd.ms-fontobject]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/fonts/trajanpro-regular-webfont.eot'
+
+     0K .......... .......... .......... .....                 1.05M=0.03s
+
+2011-12-01 14:39:37 (1.05 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/fonts/trajanpro-regular-webfont.eot' saved [36857]
+
+--2011-12-01 14:39:37--  http://www.data.gov/fonts/trajanpro-regular-webfont.woff
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/fonts/trajanpro-regular-webfont.woff'
+
+     0K .......... .......... .......... .......... ..         1.06M=0.04s
+
+2011-12-01 14:39:37 (1.06 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/fonts/trajanpro-regular-webfont.woff' saved [43520]
+
+--2011-12-01 14:39:37--  http://www.data.gov/fonts/trajanpro-regular-webfont.ttf
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/plain]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/fonts/trajanpro-regular-webfont.ttf'
+
+     0K .......... .......... .......... .......... .......... 1.92M
+    50K .......... .......... ..........                       1.37M=0.05s
+
+2011-12-01 14:39:37 (1.67 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/fonts/trajanpro-regular-webfont.ttf' saved [82256]
+
+--2011-12-01 14:39:37--  http://www.data.gov/fonts/trajanpro-regular-webfont.svg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [image/svg+xml]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/fonts/trajanpro-regular-webfont.svg'
+
+     0K .......... .......... .......... .......... .......... 3.30M
+    50K .......... .......... .......... .......... .......... 1.49M
+   100K .......... ..........                                  1.57M=0.06s
+
+2011-12-01 14:39:37 (1.95 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/fonts/trajanpro-regular-webfont.svg' saved [123753]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/body-bg.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 547 [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/body-bg.jpg'
+
+     0K                                                       100% 60.3M=0s
+
+2011-12-01 14:39:37 (60.3 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/body-bg.jpg' saved [547/547]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/container-bg.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 317 [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/container-bg.jpg'
+
+     0K                                                       100% 36.3M=0s
+
+2011-12-01 14:39:37 (36.3 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/container-bg.jpg' saved [317/317]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/toplinks-bg.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 2909 (2.8K) [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/toplinks-bg.jpg'
+
+     0K ..                                                    100% 19.6M=0s
+
+2011-12-01 14:39:37 (19.6 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/toplinks-bg.jpg' saved [2909/2909]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/toplinks-left.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 321 [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/toplinks-left.jpg'
+
+     0K                                                       100% 30.6M=0s
+
+2011-12-01 14:39:37 (30.6 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/toplinks-left.jpg' saved [321/321]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/logo-pad-bg.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 2850 (2.8K) [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/logo-pad-bg.jpg'
+
+     0K ..                                                    100% 21.8M=0s
+
+2011-12-01 14:39:37 (21.8 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/logo-pad-bg.jpg' saved [2850/2850]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/logo-bg.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 4560 (4.5K) [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/logo-bg.jpg'
+
+     0K ....                                                  100% 2.94M=0.001s
+
+2011-12-01 14:39:37 (2.94 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/logo-bg.jpg' saved [4560/4560]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/logo-home-bg.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 3601 (3.5K) [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/logo-home-bg.jpg'
+
+     0K ...                                                   100% 10.1M=0s
+
+2011-12-01 14:39:37 (10.1 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/logo-home-bg.jpg' saved [3601/3601]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/nav-pad-bg.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 3290 (3.2K) [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/nav-pad-bg.jpg'
+
+     0K ...                                                   100% 10.2M=0s
+
+2011-12-01 14:39:37 (10.2 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/nav-pad-bg.jpg' saved [3290/3290]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/panel-pad-bg.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 25112 (25K) [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/panel-pad-bg.jpg'
+
+     0K .......... .......... ....                            100% 2.11M=0.01s
+
+2011-12-01 14:39:37 (2.11 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/panel-pad-bg.jpg' saved [25112/25112]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/content-pad-bg.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 582 [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/content-pad-bg.jpg'
+
+     0K                                                       100% 60.0M=0s
+
+2011-12-01 14:39:37 (60.0 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/content-pad-bg.jpg' saved [582/582]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/footer-pad-bg.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 3407 (3.3K) [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/footer-pad-bg.jpg'
+
+     0K ...                                                   100% 6.63M=0s
+
+2011-12-01 14:39:37 (6.63 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/footer-pad-bg.jpg' saved [3407/3407]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/more-information-bg.png
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11986 (12K) [image/png]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/more-information-bg.png'
+
+     0K .......... .                                          100% 1.19M=0.01s
+
+2011-12-01 14:39:37 (1.19 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/more-information-bg.png' saved [11986/11986]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/panel-search-bg.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 13089 (13K) [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/panel-search-bg.jpg'
+
+     0K .......... ..                                         100% 4.04M=0.003s
+
+2011-12-01 14:39:37 (4.04 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/panel-search-bg.jpg' saved [13089/13089]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/datagov-home-bg.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 11023 (11K) [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/datagov-home-bg.jpg'
+
+     0K ..........                                            100% 2.40M=0.004s
+
+2011-12-01 14:39:37 (2.40 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/datagov-home-bg.jpg' saved [11023/11023]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/homehead-arrow.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 121 [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/homehead-arrow.gif'
+
+     0K                                                       100% 13.8M=0s
+
+2011-12-01 14:39:37 (13.8 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/homehead-arrow.gif' saved [121/121]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/content-bg.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 2425 (2.4K) [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/content-bg.gif'
+
+     0K ..                                                    100%  104M=0s
+
+2011-12-01 14:39:37 (104 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/content-bg.gif' saved [2425/2425]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/tri-col-h3-bg.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 2564 (2.5K) [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/tri-col-h3-bg.jpg'
+
+     0K ..                                                    100% 32.2M=0s
+
+2011-12-01 14:39:37 (32.2 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/tri-col-h3-bg.jpg' saved [2564/2564]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/h1-highlight-pad-bg.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 7800 (7.6K) [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/h1-highlight-pad-bg.jpg'
+
+     0K .......                                               100% 2.42M=0.003s
+
+2011-12-01 14:39:37 (2.42 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/h1-highlight-pad-bg.jpg' saved [7800/7800]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/h2-highlight-pad-bg.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 3535 (3.5K) [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/h2-highlight-pad-bg.jpg'
+
+     0K ...                                                   100% 5.33M=0.001s
+
+2011-12-01 14:39:37 (5.33 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/h2-highlight-pad-bg.jpg' saved [3535/3535]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/sub-panel-bg.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 6609 (6.5K) [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/sub-panel-bg.jpg'
+
+     0K ......                                                100% 6.88M=0.001s
+
+2011-12-01 14:39:37 (6.88 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/sub-panel-bg.jpg' saved [6609/6609]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/line_v.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1290 (1.3K) [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/line_v.gif'
+
+     0K .                                                     100%  128M=0s
+
+2011-12-01 14:39:37 (128 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/line_v.gif' saved [1290/1290]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/line_v_short.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 612 [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/line_v_short.gif'
+
+     0K                                                       100% 57.2M=0s
+
+2011-12-01 14:39:37 (57.2 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/line_v_short.gif' saved [612/612]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/ul-check.png
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 293 [image/png]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/ul-check.png'
+
+     0K                                                       100% 27.5M=0s
+
+2011-12-01 14:39:37 (27.5 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/ul-check.png' saved [293/293]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/whatsnew-stage-bg.png
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 182 [image/png]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/whatsnew-stage-bg.png'
+
+     0K                                                       100% 17.6M=0s
+
+2011-12-01 14:39:37 (17.6 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/whatsnew-stage-bg.png' saved [182/182]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/whatsnew-stage-top.png
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 372 [image/png]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/whatsnew-stage-top.png'
+
+     0K                                                       100% 41.8M=0s
+
+2011-12-01 14:39:37 (41.8 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/whatsnew-stage-top.png' saved [372/372]
+
+--2011-12-01 14:39:37--  http://www.data.gov/images/whatsnew-stage-bottom.png
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 372 [image/png]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/whatsnew-stage-bottom.png'
+
+     0K                                                       100% 33.7M=0s
+
+2011-12-01 14:39:38 (33.7 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/whatsnew-stage-bottom.png' saved [372/372]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/whatsnew-container2r-bg.png
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 3034 (3.0K) [image/png]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/whatsnew-container2r-bg.png'
+
+     0K ..                                                    100% 11.5M=0s
+
+2011-12-01 14:39:38 (11.5 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/whatsnew-container2r-bg.png' saved [3034/3034]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/separator-horizontal.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1880 (1.8K) [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/separator-horizontal.jpg'
+
+     0K .                                                     100% 5.20M=0s
+
+2011-12-01 14:39:38 (5.20 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/separator-horizontal.jpg' saved [1880/1880]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/gallery-bg.jpg
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 441 [image/jpeg]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/gallery-bg.jpg'
+
+     0K                                                       100% 50.0M=0s
+
+2011-12-01 14:39:38 (50.0 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/gallery-bg.jpg' saved [441/441]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/opendatasite-info-bg.png
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 3341 (3.3K) [image/png]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/opendatasite-info-bg.png'
+
+     0K ...                                                   100% 26.5M=0s
+
+2011-12-01 14:39:38 (26.5 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/opendatasite-info-bg.png' saved [3341/3341]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/magglass.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 351 [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/magglass.gif'
+
+     0K                                                       100% 32.5M=0s
+
+2011-12-01 14:39:38 (32.5 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/magglass.gif' saved [351/351]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/catname-back.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1466 (1.4K) [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/catname-back.gif'
+
+     0K .                                                     100% 61.7M=0s
+
+2011-12-01 14:39:38 (61.7 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/catname-back.gif' saved [1466/1466]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/catheader-back.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 153 [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/catheader-back.gif'
+
+     0K                                                       100% 17.6M=0s
+
+2011-12-01 14:39:38 (17.6 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/catheader-back.gif' saved [153/153]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/connect-bg.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 93 [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/connect-bg.gif'
+
+     0K                                                       100% 10.8M=0s
+
+2011-12-01 14:39:38 (10.8 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/connect-bg.gif' saved [93/93]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/nav-has-items.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 79 [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/nav-has-items.gif'
+
+     0K                                                       100% 7.57M=0s
+
+2011-12-01 14:39:38 (7.57 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/nav-has-items.gif' saved [79/79]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/submenu-arrow.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 87 [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/submenu-arrow.gif'
+
+     0K                                                       100% 8.25M=0s
+
+2011-12-01 14:39:38 (8.25 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/submenu-arrow.gif' saved [87/87]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/submenubottom.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 93 [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/submenubottom.gif'
+
+     0K                                                       100% 8.58M=0s
+
+2011-12-01 14:39:38 (8.58 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/submenubottom.gif' saved [93/93]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/submenuhoverbg.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1020 [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/submenuhoverbg.gif'
+
+     0K                                                       100% 96.7M=0s
+
+2011-12-01 14:39:38 (96.7 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/submenuhoverbg.gif' saved [1020/1020]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/submenubg.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 1020 [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/submenubg.gif'
+
+     0K                                                       100%  113M=0s
+
+2011-12-01 14:39:38 (113 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/submenubg.gif' saved [1020/1020]
+
+--2011-12-01 14:39:38--  http://www.data.gov/thickbox/macFFBgHack.png
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 207 [image/png]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/thickbox/macFFBgHack.png'
+
+     0K                                                       100% 23.8M=0s
+
+2011-12-01 14:39:38 (23.8 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/thickbox/macFFBgHack.png' saved [207/207]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/star_delete.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 381 [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/star_delete.gif'
+
+     0K                                                       100% 43.1M=0s
+
+2011-12-01 14:39:38 (43.1 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/star_delete.gif' saved [381/381]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/star_rating.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 789 [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/star_rating.gif'
+
+     0K                                                       100% 89.0M=0s
+
+2011-12-01 14:39:38 (89.0 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/star_rating.gif' saved [789/789]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/tabs-raw.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 8898 (8.7K) [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/tabs-raw.gif'
+
+     0K ........                                              100% 3.66M=0.002s
+
+2011-12-01 14:39:38 (3.66 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/tabs-raw.gif' saved [8898/8898]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/tabs-raw2.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 8551 (8.4K) [text/html]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/tabs-raw2.gif.html'
+
+     0K ........                                              100% 6.60M=0.001s
+
+2011-12-01 14:39:38 (6.60 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/tabs-raw2.gif.html' saved [8551/8551]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/tabs-tools.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 9016 (8.8K) [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/tabs-tools.gif'
+
+     0K ........                                              100% 1.79M=0.005s
+
+2011-12-01 14:39:38 (1.79 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/tabs-tools.gif' saved [9016/9016]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/tabs-geo.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 8954 (8.7K) [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/tabs-geo.gif'
+
+     0K ........                                              100% 1.99M=0.004s
+
+2011-12-01 14:39:38 (1.99 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/tabs-geo.gif' saved [8954/8954]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/ogd-raw.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 5684 (5.6K) [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/ogd-raw.gif'
+
+     0K .....                                                 100% 6.10M=0.001s
+
+2011-12-01 14:39:38 (6.10 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/ogd-raw.gif' saved [5684/5684]
+
+--2011-12-01 14:39:38--  http://www.data.gov/images/ogd-tools.gif
+Reusing existing connection to www.data.gov:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 5804 (5.7K) [image/gif]
+Saving to: `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/ogd-tools.gif'
+
+     0K .....                                                 100% 2.97M=0.002s
+
+2011-12-01 14:39:38 (2.97 MB/s) - `code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/ogd-tools.gif' saved [5804/5804]
+
+FINISHED --2011-12-01 14:39:38--
+Total wall clock time: 1.9s
+Downloaded: 80 files, 797K in 0.4s (1.77 MB/s)
+Converting code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/privacypolicy.html... 33-18
+Converting code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/images/tabs-raw2.gif.html... 33-15
+Converting code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/jquery.rating.css... 2-0
+Converting code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/tabs.css... 24-0
+Converting code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/print.css... 16-0
+Converting code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/thickbox/thickbox.css... 1-0
+Converting code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/style.css?v=5d18.css... 48-0
+Converting code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/jquery.tooltip.css... nothing to do.
+Converting code/../crawls/www.data.gov/Privacy-Policy/raw/www.data.gov/css/nav.css... 8-0
+Converted 9 files in 0.01 seconds.
