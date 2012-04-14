@@ -2,13 +2,15 @@ var dynamicParams = {
 	xparams : {
 		supern : [],
 		drock : [],
-		urock : []
+		urock : [],
+		sbc : []
 	},
-	offsites : ['supern','drock','urock'],
+	offsites : ['supern','drock','urock','sbc'],
 	patterns : {
-			supern : ["/gen/general","/swot/ldCatalog.do","/apps/supern"],
+			supern : ["/gen/general","/swot/ldCatalog.do","/apps/supern",],
 			drock : ["/dsl"],
-			urock : ["/u-verse/channel-lineup","/u-verse/shop/"]
+			urock : ["/u-verse/channel-lineup","/u-verse/shop/"],
+			sbc : ["/loc/controller","/swot/qualifyingController.do"]
 	},
 	xcall : function xcall(href,site) {
 		if (site == null) {

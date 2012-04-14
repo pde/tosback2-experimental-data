@@ -1,4 +1,4 @@
-/* craigslist.css cl_version: 9 */
+/* craigslist.css cl_version: 11 */
 
 /* things we just want all the time */
 
@@ -597,7 +597,57 @@ div.checklist li.optgroup:hover {
 #flags a.fl:visited { position: relative; }
 
 /* body blurbs*/
-ul.blurbs { margin-left: 0px;  padding-left: 10px;  font-size: smaller; }
+ul.blurbs { clear: left; margin-left: 10px; padding: 10px 0 0 10px; font-size: smaller; }
+
+/****************
+ IMAGE WIDGET 
+ ***************/
+
+.iw div {
+	float: left;
+	margin: 2px;
+}
+.iw:before, .iw:after {
+	content: "";
+	display: table;
+}
+.iw:after {
+	clear: both;
+}
+
+#iwt {
+	margin: 0;
+}
+
+#ci {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 602px; 
+	height: 452px;
+	border: 1px #ccc solid;
+}
+#ci * {
+	vertical-align: middle;
+}
+#ci span {
+    display: inline-block;
+    height: 100%;
+}
+/* IE/Mac *//*/
+#ci {
+    display: block;
+}
+#ci span {
+    display: inline-block;
+    height: 100%;
+    width: 1px;
+}
+/**/
+
+.tn {
+	clear: both;
+}
 
 /************
  SIMPLE PAGES

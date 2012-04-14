@@ -16,6 +16,8 @@
 
 body {
 	background: #ededed;
+	float: left;
+    width: 100%;
 }
 a {
 	font-size: 1em;
@@ -391,6 +393,11 @@ width:31px;
 	display: block;
 	float: none;
 }  
+#global-nav #follow-fb-btn {
+	position: absolute;
+	right: 30px;
+	top: 3px;
+}
 #banner-box {position: relative; width: 975px; z-index: 1; height: 290px; }
 #banner {min-height: 165px; _height: 165px; margin-bottom: 2px; padding:10px 0 0 0; overflow: hidden !important; position: relative; z-index: 1; margin-top: 5px;}
 #banner #title {margin-bottom: 15px;}
@@ -493,6 +500,7 @@ width:31px;
 	background: #ffffff;
 	width: 1090px;
 	padding-bottom: 50px;
+	margin-bottom: 90px;
 }
 #logo { 
 	 float: left; 
@@ -575,26 +583,32 @@ width:31px;
 	color:#FF7200;
 	padding:20px 0 0 146px;
 }
+
+.promo-box h3 {
+	font-size:1.1em !important;
+	font-weight: normal;
+	margin-bottom: 10px;
+	color:#FF7200;
+	padding:20px 0 0 146px;
+	line-height:120% !important;
+}
 .promo-box p {
 	padding: 0px 0 0 146px;
 }
-#promo-box-01 {
-	background: url(../_images/homepage/promo_homepage_01.jpg) left top no-repeat;
-}
-#promo-box-02 {
-	background: url(../_images/homepage/promo_homepage_02.jpg) left top no-repeat;
-}
-#promo-box-03 {
-	background: url(../_images/homepage/promo_homepage_03.jpg) left top no-repeat;
-}
-#home #promo-box-01 {
+
+  #promo-box-01 {
 	width: 265px;
 }
-#home #promo-box-02 {
-	padding-left: 25px;
+
+  #promo-box-01  {
+	width: 265px;
 }
-#home #promo-box-03 {
-	padding-left: 20px;
+ #promo-box-02 h3, #promo-box-02 p {
+ 			padding-left:161px !important;
+			
+}
+  #promo-box-03 {
+	
 }
 
 

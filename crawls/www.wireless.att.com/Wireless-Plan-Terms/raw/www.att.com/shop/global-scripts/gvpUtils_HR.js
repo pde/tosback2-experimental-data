@@ -25,7 +25,7 @@ function gvpUtils() {
 	var gvpVersion = '';
 	var headerStr = '';
 	var contentStr = '';
-	var h264PathMarker = '//www.wireless.att.com/home/video_progressive/gvp/mp4/';	
+	var h264PathMarker = 'http://www.wireless.att.com/home/video_progressive/gvp/mp4/';	
 	
 	var metaData = {};
 
@@ -59,6 +59,8 @@ function gvpUtils() {
 					}
 				}
 			}
+		} else if(p_QArray.gvpDiv) {
+			gvp.showPopUp(' ', true, true, 'div', p_QArray.gvpDiv+'|800|600');
 		}
 	};
 	
@@ -80,6 +82,10 @@ function gvpUtils() {
 				cleanArr[unescape(tokens[0])] = unescape(tokens[1]);
 			}
 			if (tokens[0].indexOf('gvpLgFormat') != -1 ) {
+				foundFlag = true;
+				cleanArr[unescape(tokens[0])] = unescape(tokens[1]);
+			}
+			if (tokens[0].indexOf('gvpDiv') != -1 ) {
 				foundFlag = true;
 				cleanArr[unescape(tokens[0])] = unescape(tokens[1]);
 			}
@@ -525,18 +531,18 @@ function gvpUtils() {
 			mediaItem.id = currObj.id;
 			//status
 			mediaItem.status = "ok";
-			//xmlFileName
-			( metaData.language == "en_US" ) ? mediaItem.xmlFileName = currObj.url_configFile_en : mediaItem.xmlFileName = currObj.url_configFile_es;
 			//language
 			( currObj.language == "en" ) ? mediaItem.language = "en_US" : mediaItem.language = "es_US";
+			//xmlFileName
+			mediaItem.xmlFileName = this.getMetaData_getNodeValue( currObj.url_configFile_en, currObj.url_configFile_es );
 			//title
-			( metaData.language == "en_US" ) ? mediaItem.title = currObj.thumbTitle_en : mediaItem.title = currObj.thumbTitle_es;
+			mediaItem.title = this.getMetaData_getNodeValue( currObj.thumbTitle_en, currObj.thumbTitle_es );
 			//description
-			( metaData.language == "en_US" ) ? mediaItem.description = currObj.description_en : mediaItem.title = currObj.description_es;
+			mediaItem.description = this.getMetaData_getNodeValue( currObj.description_en, currObj.description_es );
 			//video length
 			mediaItem.videoLength = currObj.lengthInSeconds;
 			//thumb file path
-			( metaData.language == "en_US" ) ? mediaItem.thumbFilePath = currObj.url_thumbIcon_en : mediaItem.thumbFilePath = currObj.url_thumbIcon_es;
+			mediaItem.thumbFilePath = this.getMetaData_getNodeValue( currObj.url_thumbIcon_en, currObj.url_thumbIcon_es );
 			//thumb width
 			mediaItem.thumbWidth = currObj.thumbWidth;
 			//thumb height
@@ -545,6 +551,21 @@ function gvpUtils() {
 			mediaItem.shareable = currObj.shareable;
 			
 			return mediaItem;
+	}
+	
+	this.getMetaData_getNodeValue = function getMetaData_getNodeValue( enVal, esVal )
+	{
+		var enIsValid = false;
+		var esIsValid = false;
+		
+		if ( enVal !== undefined && enVal !== null && enVal !== "" && enVal !== "null" ) enIsValid = true;
+		
+		if ( esVal !== undefined && esVal !== null && esVal !== "" && esVal !== "null" ) esIsValid = true;
+
+		if ( metaData.language == "en_US" && enIsValid ) return enVal;
+		if ( metaData.language == "es_US" && esIsValid ) return esVal;
+		if ( metaData.language == "es_US" && !esIsValid ) return enVal;
+		return enVal;
 	}
 	
 	/**
@@ -821,7 +842,7 @@ function gvpUtils() {
 	// param: title, modal or not, close button or not (T/F)
 	// return: nothing
 	this.showPopUp = function showPopUp(title, blockBG, closeButton, playerType, mSkuOrPath) {
-		gvpVersion = '_2.1.5';
+		gvpVersion = '_2.2.1';
 		body = document.getElementsByTagName('body')[0];
 		var p_contentHt;
 		if(arguments.length >= 4) {
@@ -903,15 +924,26 @@ function gvpUtils() {
 									close: '', 
 									width: p_colorBWidth, 
 									height: p_colorBHeight});
-				} else {
-					jQuery.colorbox({html: headerStr+'<div id="gvp_modalInjection" style="padding-top:10px;"><center>'+contentStr+'</center></div>', 
-									close: '',
-									onComplete: function(){
-											jQuery('#gvp_mainPopUpTitle').attr('tabindex',-1).focus();
-											jQuery('#gvp_pop_embed').attr('tabindex',0);
-										}
-									});
-				}
+				} 	else {
+						if(isIphone || isIpad || isAndroid) {
+							jQuery.colorbox({html: headerStr+'<div id="gvp_modalInjection" style="padding-top:10px;"><center>'+contentStr+'</center></div>', 
+											close: '',
+											onComplete: function(){
+													// brute force video tag for iOS 5+ until mobile safari supports load events for streaming content
+													document.getElementById('gvp_modalInjection').innerHTML = "<center>"+contentStr+"</center>";
+												}
+											});
+						} else {
+							jQuery.colorbox({html: headerStr+'<div id="gvp_modalInjection" style="padding-top:10px;"><center>'+contentStr+'</center></div>', 
+											close: '',
+											onComplete: function(){
+													jQuery('#gvp_mainPopUpTitle').attr('tabindex',-1).focus();
+													jQuery('#gvp_pop_embed').attr('tabindex',0);
+												}
+											});
+						}
+					}
+				
 				
 				
 			}

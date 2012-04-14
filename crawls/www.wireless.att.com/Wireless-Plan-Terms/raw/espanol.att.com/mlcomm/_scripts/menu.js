@@ -205,8 +205,8 @@ function() {
 						$(currentTab).show(); 
 						}
 						else {
-						$('#item01').addClass('active');
-						$('#mbox01').show();
+						$('#archive-menu ul li:first-child').addClass('active');
+						$('#news-box div:first-child').show();
 						}
  
 						$('.menu-item').click(function() {

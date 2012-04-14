@@ -80,7 +80,11 @@ td.alt {background-color: #f6f6f6}
 .tabledata tr.alt td{background-color:#f5f5f5;}
 .tabledatatitle{color:#F27D00;font-size:12px;font-weight:bold;height:24px;text-align:center;}
 .center{text-align:center;}
-.sup{font-size:.8em;position:relative;top:-2px;}
+.sup{font-size: 0.9em;
+    left: 0.2em;
+    position: relative;
+    top: 0.2em;}
+
 hr{background-color:#cccccc;border:0;color:#cccccc;padding:0;}
 .smallstar{font-size: 0.8em;position: relative;top: -3px;}
 .trademark {
@@ -158,7 +162,7 @@ right:0px;
 .suggestProductItem_ShopNowBtn{
     width:113px;
     height:31px;
-    margin-left:5px;
+    margin-left:-1px;
     position:absolute;
     cursor:pointer;
     bottom:0;
@@ -200,10 +204,10 @@ right:0px;
 }
 
 div#manageMyAccount{
-    background-image:url(../images/loginwindow_img2.png);
+    background-image:url(../images/loginwindow_img4.png);
     background-repeat:no-repeat;
     display:block;
-    height:255px;
+    height:315px;
     width:153px;
     z-index:1200;
     position: absolute;
@@ -363,12 +367,12 @@ div#prototypeFooter{
 		.rotateHero {
 			font-family: Arial;
 			font-size: 10px;
-			font-color:#999;
+			color:#999999;
 		}
 		.rotateHeroActive {
 			font-family: Arial;
 			font-size: 10px;
-			font-color: #FF7200;
+			color: #FF7200;
 		}
 	.mNavOn {
 		background-image:url('../images/marquees/mrq_control_active.png');
@@ -436,7 +440,7 @@ div#prototypeFooter{
 .carouselLegal {
 	color: #99999;
 	font-size: 10px;
-	line-height:14pt;
+	line-height:10pt;
 	font-weight:normal;
 }
 
@@ -518,7 +522,7 @@ div#prototypeFooter{
 		#homeSearch label{font-size:1.1em; margin-left:5px; visibility:hidden;height:15px;}
 		#homeSearch input{z-index:100;;border:none; text-indent:5px; font-size:1.1em; margin-left:2px; background:#ffffff; font-family: arial, helvetica, sans-serif;}	
 		
-		#homeSearch #query, #homeSearch #q{height:1.4em; width:110px;  margin:0; padding-top:2px !important }
+		#homeSearch #query, #homeSearch #q{height:1.4em; width:105px;  margin:0; padding-top:2px !important }
 		#ie #homeSearch #query, #homeSearch #q{height:1.6em; line-height:1.5em; padding-top:0 !important}
 		#homeSearch input.btnGo{border:none; width:15px; height:15px; margin-bottom:1px; margin-left:2px}
 		#ie #homeSearch input.btnGo{margin-left:0px}
@@ -544,4 +548,74 @@ div#toolbar {
 
 .mute a:hover {
 	color: #999999;
+}
+/*Footer styles*/
+.footer {
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 945px;
+}
+.standardfooter {
+    border-top: 1px solid #F2F2F2;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 960px;
+}
+.standardfooter .attlogo {
+    float: left;
+    padding: 0 50px 0 0;
+}
+.standardfooter .footercenter {
+    float: left;
+    width: 755px;
+}
+.standardfooter .padBtm20 {
+    padding-bottom: 20px;
+}
+.standardfooter .footerLinks {
+    color: #3381B7;
+    font-family: arial;
+    font-size: 10px;
+}
+.standardfooter .footerDivider {
+    color: #999999;
+    font-family: arial;
+    font-size: 10px;
+}
+.standardfooter .footerContent {
+    padding-bottom: 25px;
+    padding-right: 100px;
+}
+.standardfooter .copyRight {
+    color: #3381B7;
+    font-family: arial;
+    font-size: 10px;
+}
+.standardfooter .footerLegal {
+    color: #666666;
+    font-family: arial;
+    font-size: 10px;
+}
+.standardfooter .marginRt40 {
+    margin-right: 40px;
+}
+.standardfooter .footerRight {
+    float: left;
+    padding-right: 25px;
+}
+.standardfooter .clearFloat {
+    clear: both;
+}
+.footerdiv {
+    float: left;
+    line-height: 18px;
+    padding-bottom: 10px;
+    text-align: left;
+    width: 25%;
+}
+.footertitle {
+    color: #000000;
+    font-size: 10px;
+    margin-bottom: 10px;
 }

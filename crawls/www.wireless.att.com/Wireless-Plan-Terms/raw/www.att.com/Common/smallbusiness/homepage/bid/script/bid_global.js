@@ -1,3 +1,15 @@
+  /*added for Jamei's SEO project by Allen 12/09/2011 */
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27486893-1']);
+  _gaq.push(['_setDomainName', 'att.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  /*--------------------------------------------------*/
 jQuery.noConflict();
 var $jQuery = jQuery;
 
@@ -141,7 +153,7 @@ function BubblePopup(){
 			
 function ieSwitch() {
 	if ($jQuery.browser.msie && parseInt($jQuery.browser.version, 10) == 7) {
-		$jQuery('#manageMyAccount').css('background','url(/Common/smallbusiness/homepage/bid/images/loginwindow_img3.png) no-repeat');
+		$jQuery('#manageMyAccount').css('background','url(/Common/smallbusiness/homepage/bid/images/loginwindow_img4_IE.png) no-repeat');
 	}
 }
 

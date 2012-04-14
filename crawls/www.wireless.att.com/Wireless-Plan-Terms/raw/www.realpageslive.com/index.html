@@ -1,11 +1,7 @@
 
-<script language="javascript" type="text/javascript">
-function change_map(map) {
-}
-function reset_map() {
-    document.US_Map.src = "images/mapImg.jpg";
-}
-</script>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html>
 <head id="Head1"><title>
 	AT&amp;T Real Yellow Pages Online - Welcome
@@ -16,11 +12,31 @@ function reset_map() {
     <![if ! IE 6]>
         <link href="skin/entrymap/_search/search.css" rel="stylesheet" type="text/css" />
     <![endif]>
-    <link rel="shortcut icon" href="skin/entrymap/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="skin/entrymap/images/favicon.ico" type="image/x-icon" /><link href="includes/footer.css" rel="stylesheet" type="text/css" />
     <script src="includes/google_analytics.js" language="javascript" type="text/javascript"></script>  
+    <link rel="canonical" href="index.html" />
+<script language="javascript" type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18553584-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+  
+//The below code has been moved from entrymap_att.aspx file
+function change_map(map) {
+}
+function reset_map() {
+    document.US_Map.src = "skin/entrymap/_att/images/mapImg.jpg";
+}
+</script>
 </head>
 
-<body onload="javascript:changeHeaderClass('homeTab','navHomeSel');javascript:homePageOnLoad();">
+ <body onload="javascript:changeHeaderClass('homeTab','navHomeSel');javascript:homePageOnLoad();javascript:hideListingsDiv();">
 
     
   <table width="1003px" cellspacing="0" cellpadding="0">
@@ -30,11 +46,11 @@ function reset_map() {
         </div>
     </td>
     <td class="langPlacement" align="right">
-        <form name="mainForm" method="post" action="index.html" id="mainForm">
+        <form name="mainForm" method="post" action="http://www.realpageslive.com/default.aspx" id="mainForm">
 <div>
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTY5MzY3ODQxNg9kFgICAQ9kFgICBg8WAh4JaW5uZXJodG1sBfgdPHNwYW4gaWQ9J3NwX1N0YXRlcycgY2xhc3M9J2VudHJ5JyBzdHlsZT0nd2lkdGg6MTM1cHg7b3ZlcmZsb3c6aGlkZGVuO3doaXRlLXNwYWNlOm5vd3JhcDsnPi0gU2VsZWN0IGEgU3RhdGUgLTwvc3Bhbj4KPHNwYW4gc3R5bGU9J2hlaWdodDogMTBweCc+PC9zcGFuPgo8dWwgaWQ9J3VsX1N0YXRlcycgY2xhc3M9J3N1Ym5hdicgc3R5bGU9J2Rpc3BsYXk6IG5vbmU7Jz4KPGxpIHN0eWxlPSdwb3NpdGlvbjpyZWxhdGl2ZScgb25jbGljaz0iamF2YXNjcmlwdDpyZXR1cm4gU2V0UmVnaW9uKCdEVU1NWScsJy0gU2VsZWN0IGEgU3RhdGUgLScsIG51bGwpOyI+PGEgaHJlZj0nIyc+LSBTZWxlY3QgYSBTdGF0ZSAtPC9hPjwvbGk+CjxsaSBzdHlsZT0ncG9zaXRpb246cmVsYXRpdmUnIG9uY2xpY2s9ImphdmFzY3JpcHQ6cmV0dXJuIFNldFJlZ2lvbignQUwnLCdBbGFiYW1hJywgbnVsbCk7Ij48YSBocmVmPScjJz5BbGFiYW1hPC9hPjwvbGk+CjxsaSBzdHlsZT0ncG9zaXRpb246cmVsYXRpdmUnIG9uY2xpY2s9ImphdmFzY3JpcHQ6cmV0dXJuIFNldFJlZ2lvbignQVInLCdBcmthbnNhcycsIG51bGwpOyI+PGEgaHJlZj0nIyc+QXJrYW5zYXM8L2E+PC9saT4KPGxpIHN0eWxlPSdwb3NpdGlvbjpyZWxhdGl2ZScgb25jbGljaz0iamF2YXNjcmlwdDpyZXR1cm4gU2V0UmVnaW9uKCdDQScsJ0NhbGlmb3JuaWEnLCBudWxsKTsiPjxhIGhyZWY9JyMnPkNhbGlmb3JuaWE8L2E+PC9saT4KPGxpIHN0eWxlPSdwb3NpdGlvbjpyZWxhdGl2ZScgb25jbGljaz0iamF2YXNjcmlwdDpyZXR1cm4gU2V0UmVnaW9uKCdDVCcsJ0Nvbm5lY3RpY3V0ICcsIG51bGwpOyI+PGEgaHJlZj0nIyc+Q29ubmVjdGljdXQgPC9hPjwvbGk+CjxsaSBzdHlsZT0ncG9zaXRpb246cmVsYXRpdmUnIG9uY2xpY2s9ImphdmFzY3JpcHQ6cmV0dXJuIFNldFJlZ2lvbignRkwnLCdGbG9yaWRhJywgbnVsbCk7Ij48YSBocmVmPScjJz5GbG9yaWRhPC9hPjwvbGk+CjxsaSBzdHlsZT0ncG9zaXRpb246cmVsYXRpdmUnIG9uY2xpY2s9ImphdmFzY3JpcHQ6cmV0dXJuIFNldFJlZ2lvbignR0EnLCdHZW9yZ2lhJywgbnVsbCk7Ij48YSBocmVmPScjJz5HZW9yZ2lhPC9hPjwvbGk+CjxsaSBzdHlsZT0ncG9zaXRpb246cmVsYXRpdmUnIG9uY2xpY2s9ImphdmFzY3JpcHQ6cmV0dXJuIFNldFJlZ2lvbignSU4nLCdJbmRpYW5hJywgbnVsbCk7Ij48YSBocmVmPScjJz5JbmRpYW5hPC9hPjwvbGk+CjxsaSBzdHlsZT0ncG9zaXRpb246cmVsYXRpdmUnIG9uY2xpY2s9ImphdmFzY3JpcHQ6cmV0dXJuIFNldFJlZ2lvbignS1MnLCdLYW5zYXMnLCBudWxsKTsiPjxhIGhyZWY9JyMnPkthbnNhczwvYT48L2xpPgo8bGkgc3R5bGU9J3Bvc2l0aW9uOnJlbGF0aXZlJyBvbmNsaWNrPSJqYXZhc2NyaXB0OnJldHVybiBTZXRSZWdpb24oJ0tZJywnS2VudHVja3knLCBudWxsKTsiPjxhIGhyZWY9JyMnPktlbnR1Y2t5PC9hPjwvbGk+CjxsaSBzdHlsZT0ncG9zaXRpb246cmVsYXRpdmUnIG9uY2xpY2s9ImphdmFzY3JpcHQ6cmV0dXJuIFNldFJlZ2lvbignTEEnLCdMb3Vpc2lhbmEnLCBudWxsKTsiPjxhIGhyZWY9JyMnPkxvdWlzaWFuYTwvYT48L2xpPgo8bGkgc3R5bGU9J3Bvc2l0aW9uOnJlbGF0aXZlJyBvbmNsaWNrPSJqYXZhc2NyaXB0OnJldHVybiBTZXRSZWdpb24oJ01JJywnTWljaGlnYW4nLCBudWxsKTsiPjxhIGhyZWY9JyMnPk1pY2hpZ2FuPC9hPjwvbGk+CjxsaSBzdHlsZT0ncG9zaXRpb246cmVsYXRpdmUnIG9uY2xpY2s9ImphdmFzY3JpcHQ6cmV0dXJuIFNldFJlZ2lvbignTU8nLCdNaXNzb3VyaScsIG51bGwpOyI+PGEgaHJlZj0nIyc+TWlzc291cmk8L2E+PC9saT4KPGxpIHN0eWxlPSdwb3NpdGlvbjpyZWxhdGl2ZScgb25jbGljaz0iamF2YXNjcmlwdDpyZXR1cm4gU2V0UmVnaW9uKCdNUycsJ01pc3Npc3NpcHBpJywgbnVsbCk7Ij48YSBocmVmPScjJz5NaXNzaXNzaXBwaTwvYT48L2xpPgo8bGkgc3R5bGU9J3Bvc2l0aW9uOnJlbGF0aXZlJyBvbmNsaWNrPSJqYXZhc2NyaXB0OnJldHVybiBTZXRSZWdpb24oJ05DJywnTm9ydGggQ2Fyb2xpbmEnLCBudWxsKTsiPjxhIGhyZWY9JyMnPk5vcnRoIENhcm9saW5hPC9hPjwvbGk+CjxsaSBzdHlsZT0ncG9zaXRpb246cmVsYXRpdmUnIG9uY2xpY2s9ImphdmFzY3JpcHQ6cmV0dXJuIFNldFJlZ2lvbignTlYnLCdOZXZhZGEnLCBudWxsKTsiPjxhIGhyZWY9JyMnPk5ldmFkYTwvYT48L2xpPgo8bGkgc3R5bGU9J3Bvc2l0aW9uOnJlbGF0aXZlJyBvbmNsaWNrPSJqYXZhc2NyaXB0OnJldHVybiBTZXRSZWdpb24oJ09IJywnT2hpbycsIG51bGwpOyI+PGEgaHJlZj0nIyc+T2hpbzwvYT48L2xpPgo8bGkgc3R5bGU9J3Bvc2l0aW9uOnJlbGF0aXZlJyBvbmNsaWNrPSJqYXZhc2NyaXB0OnJldHVybiBTZXRSZWdpb24oJ09LJywnT2tsYWhvbWEnLCBudWxsKTsiPjxhIGhyZWY9JyMnPk9rbGFob21hPC9hPjwvbGk+CjxsaSBzdHlsZT0ncG9zaXRpb246cmVsYXRpdmUnIG9uY2xpY2s9ImphdmFzY3JpcHQ6cmV0dXJuIFNldFJlZ2lvbignU0MnLCdTb3V0aCBDYXJvbGluYScsIG51bGwpOyI+PGEgaHJlZj0nIyc+U291dGggQ2Fyb2xpbmE8L2E+PC9saT4KPGxpIHN0eWxlPSdwb3NpdGlvbjpyZWxhdGl2ZScgb25jbGljaz0iamF2YXNjcmlwdDpyZXR1cm4gU2V0UmVnaW9uKCdUTicsJ1Rlbm5lc3NlZScsIG51bGwpOyI+PGEgaHJlZj0nIyc+VGVubmVzc2VlPC9hPjwvbGk+CjxsaSBzdHlsZT0ncG9zaXRpb246cmVsYXRpdmUnIG9uY2xpY2s9ImphdmFzY3JpcHQ6cmV0dXJuIFNldFJlZ2lvbignVFgnLCdUZXhhcycsIG51bGwpOyI+PGEgaHJlZj0nIyc+VGV4YXM8L2E+PC9saT4KPGxpIHN0eWxlPSdwb3NpdGlvbjpyZWxhdGl2ZScgb25jbGljaz0iamF2YXNjcmlwdDpyZXR1cm4gU2V0UmVnaW9uKCdXSScsJ1dpc2NvbnNpbicsIG51bGwpOyI+PGEgaHJlZj0nIyc+V2lzY29uc2luPC9hPjwvbGk+CjwvdWw+PHNlbGVjdCBpZD0ic2xfU3RhdGVzIiBzdHlsZT0iZGlzcGxheTogbm9uZTsiPgo8b3B0aW9uIHZhbHVlPSJEVU1NWSI+LSBTZWxlY3QgYSBTdGF0ZSAtPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9IkFMIj5BbGFiYW1hPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9IkFSIj5BcmthbnNhczwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJDQSI+Q2FsaWZvcm5pYTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJDVCI+Q29ubmVjdGljdXQgPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9IkZMIj5GbG9yaWRhPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9IkdBIj5HZW9yZ2lhPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9IklOIj5JbmRpYW5hPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9IktTIj5LYW5zYXM8L29wdGlvbj4KPG9wdGlvbiB2YWx1ZT0iS1kiPktlbnR1Y2t5PC9vcHRpb24+CjxvcHRpb24gdmFsdWU9IkxBIj5Mb3Vpc2lhbmE8L29wdGlvbj4KPG9wdGlvbiB2YWx1ZT0iTUkiPk1pY2hpZ2FuPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9Ik1PIj5NaXNzb3VyaTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJNUyI+TWlzc2lzc2lwcGk8L29wdGlvbj4KPG9wdGlvbiB2YWx1ZT0iTkMiPk5vcnRoIENhcm9saW5hPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9Ik5WIj5OZXZhZGE8L29wdGlvbj4KPG9wdGlvbiB2YWx1ZT0iT0giPk9oaW88L29wdGlvbj4KPG9wdGlvbiB2YWx1ZT0iT0siPk9rbGFob21hPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9IlNDIj5Tb3V0aCBDYXJvbGluYTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJUTiI+VGVubmVzc2VlPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9IlRYIj5UZXhhczwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJXSSI+V2lzY29uc2luPC9vcHRpb24+Cjwvc2VsZWN0PmRkhvYzFRwNd6+W8rgrk5jTpCxlVJo=" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE1NjkwMzM5NDAPZBYCAgEPZBYCAgIPFgIeCWlubmVyaHRtbAX4HTxzcGFuIGlkPSdzcF9TdGF0ZXMnIGNsYXNzPSdlbnRyeScgc3R5bGU9J3dpZHRoOjEzNXB4O292ZXJmbG93OmhpZGRlbjt3aGl0ZS1zcGFjZTpub3dyYXA7Jz4tIFNlbGVjdCBhIFN0YXRlIC08L3NwYW4+CjxzcGFuIHN0eWxlPSdoZWlnaHQ6IDEwcHgnPjwvc3Bhbj4KPHVsIGlkPSd1bF9TdGF0ZXMnIGNsYXNzPSdzdWJuYXYnIHN0eWxlPSdkaXNwbGF5OiBub25lOyc+CjxsaSBzdHlsZT0ncG9zaXRpb246cmVsYXRpdmUnIG9uY2xpY2s9ImphdmFzY3JpcHQ6cmV0dXJuIFNldFJlZ2lvbignRFVNTVknLCctIFNlbGVjdCBhIFN0YXRlIC0nLCBudWxsKTsiPjxhIGhyZWY9JyMnPi0gU2VsZWN0IGEgU3RhdGUgLTwvYT48L2xpPgo8bGkgc3R5bGU9J3Bvc2l0aW9uOnJlbGF0aXZlJyBvbmNsaWNrPSJqYXZhc2NyaXB0OnJldHVybiBTZXRSZWdpb24oJ0FMJywnQWxhYmFtYScsIG51bGwpOyI+PGEgaHJlZj0nIyc+QWxhYmFtYTwvYT48L2xpPgo8bGkgc3R5bGU9J3Bvc2l0aW9uOnJlbGF0aXZlJyBvbmNsaWNrPSJqYXZhc2NyaXB0OnJldHVybiBTZXRSZWdpb24oJ0FSJywnQXJrYW5zYXMnLCBudWxsKTsiPjxhIGhyZWY9JyMnPkFya2Fuc2FzPC9hPjwvbGk+CjxsaSBzdHlsZT0ncG9zaXRpb246cmVsYXRpdmUnIG9uY2xpY2s9ImphdmFzY3JpcHQ6cmV0dXJuIFNldFJlZ2lvbignQ0EnLCdDYWxpZm9ybmlhJywgbnVsbCk7Ij48YSBocmVmPScjJz5DYWxpZm9ybmlhPC9hPjwvbGk+CjxsaSBzdHlsZT0ncG9zaXRpb246cmVsYXRpdmUnIG9uY2xpY2s9ImphdmFzY3JpcHQ6cmV0dXJuIFNldFJlZ2lvbignQ1QnLCdDb25uZWN0aWN1dCAnLCBudWxsKTsiPjxhIGhyZWY9JyMnPkNvbm5lY3RpY3V0IDwvYT48L2xpPgo8bGkgc3R5bGU9J3Bvc2l0aW9uOnJlbGF0aXZlJyBvbmNsaWNrPSJqYXZhc2NyaXB0OnJldHVybiBTZXRSZWdpb24oJ0ZMJywnRmxvcmlkYScsIG51bGwpOyI+PGEgaHJlZj0nIyc+RmxvcmlkYTwvYT48L2xpPgo8bGkgc3R5bGU9J3Bvc2l0aW9uOnJlbGF0aXZlJyBvbmNsaWNrPSJqYXZhc2NyaXB0OnJldHVybiBTZXRSZWdpb24oJ0dBJywnR2VvcmdpYScsIG51bGwpOyI+PGEgaHJlZj0nIyc+R2VvcmdpYTwvYT48L2xpPgo8bGkgc3R5bGU9J3Bvc2l0aW9uOnJlbGF0aXZlJyBvbmNsaWNrPSJqYXZhc2NyaXB0OnJldHVybiBTZXRSZWdpb24oJ0lOJywnSW5kaWFuYScsIG51bGwpOyI+PGEgaHJlZj0nIyc+SW5kaWFuYTwvYT48L2xpPgo8bGkgc3R5bGU9J3Bvc2l0aW9uOnJlbGF0aXZlJyBvbmNsaWNrPSJqYXZhc2NyaXB0OnJldHVybiBTZXRSZWdpb24oJ0tTJywnS2Fuc2FzJywgbnVsbCk7Ij48YSBocmVmPScjJz5LYW5zYXM8L2E+PC9saT4KPGxpIHN0eWxlPSdwb3NpdGlvbjpyZWxhdGl2ZScgb25jbGljaz0iamF2YXNjcmlwdDpyZXR1cm4gU2V0UmVnaW9uKCdLWScsJ0tlbnR1Y2t5JywgbnVsbCk7Ij48YSBocmVmPScjJz5LZW50dWNreTwvYT48L2xpPgo8bGkgc3R5bGU9J3Bvc2l0aW9uOnJlbGF0aXZlJyBvbmNsaWNrPSJqYXZhc2NyaXB0OnJldHVybiBTZXRSZWdpb24oJ0xBJywnTG91aXNpYW5hJywgbnVsbCk7Ij48YSBocmVmPScjJz5Mb3Vpc2lhbmE8L2E+PC9saT4KPGxpIHN0eWxlPSdwb3NpdGlvbjpyZWxhdGl2ZScgb25jbGljaz0iamF2YXNjcmlwdDpyZXR1cm4gU2V0UmVnaW9uKCdNSScsJ01pY2hpZ2FuJywgbnVsbCk7Ij48YSBocmVmPScjJz5NaWNoaWdhbjwvYT48L2xpPgo8bGkgc3R5bGU9J3Bvc2l0aW9uOnJlbGF0aXZlJyBvbmNsaWNrPSJqYXZhc2NyaXB0OnJldHVybiBTZXRSZWdpb24oJ01PJywnTWlzc291cmknLCBudWxsKTsiPjxhIGhyZWY9JyMnPk1pc3NvdXJpPC9hPjwvbGk+CjxsaSBzdHlsZT0ncG9zaXRpb246cmVsYXRpdmUnIG9uY2xpY2s9ImphdmFzY3JpcHQ6cmV0dXJuIFNldFJlZ2lvbignTVMnLCdNaXNzaXNzaXBwaScsIG51bGwpOyI+PGEgaHJlZj0nIyc+TWlzc2lzc2lwcGk8L2E+PC9saT4KPGxpIHN0eWxlPSdwb3NpdGlvbjpyZWxhdGl2ZScgb25jbGljaz0iamF2YXNjcmlwdDpyZXR1cm4gU2V0UmVnaW9uKCdOQycsJ05vcnRoIENhcm9saW5hJywgbnVsbCk7Ij48YSBocmVmPScjJz5Ob3J0aCBDYXJvbGluYTwvYT48L2xpPgo8bGkgc3R5bGU9J3Bvc2l0aW9uOnJlbGF0aXZlJyBvbmNsaWNrPSJqYXZhc2NyaXB0OnJldHVybiBTZXRSZWdpb24oJ05WJywnTmV2YWRhJywgbnVsbCk7Ij48YSBocmVmPScjJz5OZXZhZGE8L2E+PC9saT4KPGxpIHN0eWxlPSdwb3NpdGlvbjpyZWxhdGl2ZScgb25jbGljaz0iamF2YXNjcmlwdDpyZXR1cm4gU2V0UmVnaW9uKCdPSCcsJ09oaW8nLCBudWxsKTsiPjxhIGhyZWY9JyMnPk9oaW88L2E+PC9saT4KPGxpIHN0eWxlPSdwb3NpdGlvbjpyZWxhdGl2ZScgb25jbGljaz0iamF2YXNjcmlwdDpyZXR1cm4gU2V0UmVnaW9uKCdPSycsJ09rbGFob21hJywgbnVsbCk7Ij48YSBocmVmPScjJz5Pa2xhaG9tYTwvYT48L2xpPgo8bGkgc3R5bGU9J3Bvc2l0aW9uOnJlbGF0aXZlJyBvbmNsaWNrPSJqYXZhc2NyaXB0OnJldHVybiBTZXRSZWdpb24oJ1NDJywnU291dGggQ2Fyb2xpbmEnLCBudWxsKTsiPjxhIGhyZWY9JyMnPlNvdXRoIENhcm9saW5hPC9hPjwvbGk+CjxsaSBzdHlsZT0ncG9zaXRpb246cmVsYXRpdmUnIG9uY2xpY2s9ImphdmFzY3JpcHQ6cmV0dXJuIFNldFJlZ2lvbignVE4nLCdUZW5uZXNzZWUnLCBudWxsKTsiPjxhIGhyZWY9JyMnPlRlbm5lc3NlZTwvYT48L2xpPgo8bGkgc3R5bGU9J3Bvc2l0aW9uOnJlbGF0aXZlJyBvbmNsaWNrPSJqYXZhc2NyaXB0OnJldHVybiBTZXRSZWdpb24oJ1RYJywnVGV4YXMnLCBudWxsKTsiPjxhIGhyZWY9JyMnPlRleGFzPC9hPjwvbGk+CjxsaSBzdHlsZT0ncG9zaXRpb246cmVsYXRpdmUnIG9uY2xpY2s9ImphdmFzY3JpcHQ6cmV0dXJuIFNldFJlZ2lvbignV0knLCdXaXNjb25zaW4nLCBudWxsKTsiPjxhIGhyZWY9JyMnPldpc2NvbnNpbjwvYT48L2xpPgo8L3VsPjxzZWxlY3QgaWQ9InNsX1N0YXRlcyIgc3R5bGU9ImRpc3BsYXk6IG5vbmU7Ij4KPG9wdGlvbiB2YWx1ZT0iRFVNTVkiPi0gU2VsZWN0IGEgU3RhdGUgLTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJBTCI+QWxhYmFtYTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJBUiI+QXJrYW5zYXM8L29wdGlvbj4KPG9wdGlvbiB2YWx1ZT0iQ0EiPkNhbGlmb3JuaWE8L29wdGlvbj4KPG9wdGlvbiB2YWx1ZT0iQ1QiPkNvbm5lY3RpY3V0IDwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJGTCI+RmxvcmlkYTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJHQSI+R2VvcmdpYTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJJTiI+SW5kaWFuYTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJLUyI+S2Fuc2FzPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9IktZIj5LZW50dWNreTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJMQSI+TG91aXNpYW5hPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9Ik1JIj5NaWNoaWdhbjwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJNTyI+TWlzc291cmk8L29wdGlvbj4KPG9wdGlvbiB2YWx1ZT0iTVMiPk1pc3Npc3NpcHBpPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9Ik5DIj5Ob3J0aCBDYXJvbGluYTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJOViI+TmV2YWRhPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9Ik9IIj5PaGlvPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9Ik9LIj5Pa2xhaG9tYTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJTQyI+U291dGggQ2Fyb2xpbmE8L29wdGlvbj4KPG9wdGlvbiB2YWx1ZT0iVE4iPlRlbm5lc3NlZTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJUWCI+VGV4YXM8L29wdGlvbj4KPG9wdGlvbiB2YWx1ZT0iV0kiPldpc2NvbnNpbjwvb3B0aW9uPgo8L3NlbGVjdD5kZA==" />
 </div>
 
 <script type="text/javascript">
@@ -56,7 +72,7 @@ function __doPostBack(eventTarget, eventArgument) {
 
 <div>
 
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBAKp5+OiCQLRnJ3FBALfnIXFBAKkn5H6AphcxkX48uMfC2EbevEK6xgqgH07" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBAKl3dBvAtGcncUEAt+chcUEAqSfkfoC" />
 </div>  
         <div>  
 
@@ -70,10 +86,10 @@ function __doPostBack(eventTarget, eventArgument) {
   <tr width="100%">
     <td nowrap class="stripe" align="left" colspan=2>
         <ul id="tabs">
-            <li><a id="homeTab" href="index.html" class="navHome"></a></li>
-            <li><a id="downloadTab" href="http://www.realpageslive.com/skin/entrymap/_att/downloads.aspx" class="navDownload"></a></li>
-            <li><a id="orderTab" href="http://www.realpageslive.com/skin/entrymap/_att/order_cd.aspx" class="navOrder"></a></li>
-            <li><a id="csTab" href="http://www.realpageslive.com/skin/entrymap/_att/csupport.aspx" class="navCS"></a></li>
+            <li><a id="homeTab" href='http://www.realpageslive.com/Default.aspx' class="navHome"></a></li>
+            <li><a id="downloadTab" href='http://www.realpageslive.com/downloads.aspx' class="navDownload"></a></li>
+            <li><a id="orderTab" href='http://www.realpageslive.com/order_cd.aspx' class="navOrder"></a></li>
+            <li><a id="csTab" href='http://www.realpageslive.com/csupport.aspx' class="navCS"></a></li>
             <li><a id="advTab" href="http://adsolutions.att.com/" class="navAdvertise"></a></li>
         </ul>
     </td>
@@ -174,7 +190,7 @@ function __doPostBack(eventTarget, eventArgument) {
 				                                    </div>
 			                                    </div>
 		                                    </div>
-		                                    <input id="SearchBtn" type="button" value=""  onclick="return SearchBtn_onclick()" />
+		                                    <input id="searchBtn" type="button" value="" onclick="return SearchBtn_onclick()" />
 	                                    </div> 	 	
 	                                    <div class="searchArea_bottomStrip"></div>
                                     </div><!-- Close searchArea div. --> 
@@ -242,15 +258,185 @@ function __doPostBack(eventTarget, eventArgument) {
           <a href="../www.att.com/gen/privacy-policy%3Fpid=2587.html" target="_blank" class="entrylegal">&copy;2010 AT&amp;T Intellectual Property.</a>&nbsp;&nbsp;
           <a href="http://www.att.com/privacy" target="_blank" class="entrylegal">Privacy Policy</a></td>
     </tr>
+    <tr><td class="footer entry12"><BR><BR> </td></tr>
+    <tr><td valign="Center" style="cursor: hand" onclick="gotoAppStore();" >&nbsp;&nbsp;&nbsp;<IMG ALIGN=CENTER SRC='skin/entrymap/images/App_Store.gif'><FONT FACE="Arial" SIZE=2><B>&nbsp;&nbsp;Download our app for the iPad today for use while on the go. Click here</B></FONT>
+    </td></tr>
+    <tr><td class="footer entry12"><br/></td></tr>
+</table>
+
+
+<div class="entireBanner">
+<table width="990px">    
+    <tr>
+        <td>        
+        &nbsp;&nbsp;<a id="textDivLink" class="leftBanner" href="../www.yellowpages.com/index.html"><img align="middle" src='skin/entrymap/images/yp_com.png' alt="YP.com"/>&nbsp;&nbsp;Go to YP.com for more listings</a>
+        </td>   
+        <td align="right">        
+        <a id="imageDivLink" href="javascript:void(0)" onclick="toggle('contentDivImg','imageDivLink')"><img alt="expand" align="right" src='skin/entrymap/images/plus_box.png'/></a>
+        </td>                
+    </tr>
+</table>
+</div>
+
+<table>
+    <tr>
+        <td> 
+            <div class="toggle_container">
+            <div id="contentDivImg">
+                <table width="1003px" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td>
+                            <table>
+                            <tr><th align="left"><a class="footer_anchors" href="http://www.yellowpages.com/atlanta-ga">Atlanta</a></th></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/atlanta-ga/air-conditioning">Air Conditioning</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/atlanta-ga/attorneys">Attorneys</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/atlanta-ga/auto-glass-repair">Auto Glass Repair</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/atlanta-ga/auto-repair-service">Auto Repair</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/atlanta-ga/dentists">Dentists</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/atlanta-ga/plumbers">Plumbers</a></td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                            <tr><th align="left"><a class="footer_anchors" href="http://www.yellowpages.com/houston-tx">Houston</a></th></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/houston-tx/attorneys">Attorneys</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/houston-tx/bail-bonds">Bail Bonds</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/houston-tx/dentists">Dentists</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/houston-tx/movers">Movers</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/houston-tx/foundation-contractors">Foundation Repair</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/houston-tx/roofing-contractors">Roofing</a></td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                            <tr><th align="left"><a class="footer_anchors" href="http://www.yellowpages.com/miami-fl">Miami</a></th></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/miami-fl/air-conditioning-repair">Air Conditioning</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/miami-fl/bankruptcy-law-attorneys">Bankruptcy Attorneys</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/miami-fl/criminal-law-attorneys">Criminal Lawyers</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/miami-fl/dentists">Dentists</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/miami-fl/lawyers">Lawyers</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/miami-fl/pest-control-services">Pest Control</a></td></tr>
+                            </table> 
+                        </td>
+                        <td>
+                            <table>
+                            <tr><th align="left"><a class="footer_anchors" href="http://www.yellowpages.com/indianapolis-in">Indianapolis</a></th></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/indianapolis-in/attorneys">Attorneys</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/indianapolis-in/dentists">Dentists</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/indianapolis-in/doctors">Doctors</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/indianapolis-in/personal-injury-law-attorneys">Personal Injury Lawyers</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/indianapolis-in/plumbers">Plumbers</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/indianapolis-in/roofing-contractors">Roofing</a></td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                            <tr><th align="left"><a class="footer_anchors" href="http://www.yellowpages.com/orlando-fl">Orlando</a></th></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/orlando-fl/air-conditioning-contractors-systems">Air Conditioning</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/orlando-fl/attorneys">Attorneys</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/orlando-fl/auto-insurance">Auto Insurance</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/orlando-fl/dentists">Dentists</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/orlando-fl/garage-door-repair">Garage Door Repair</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/orlando-fl/personal-injury-law-attorneys">Personal Injury Lawyers</a></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr><td class="footer entry12"><BR></td></tr>
+                    <tr>
+                        <td>
+                            <table>
+                            <tr><th align="left"><a class="footer_anchors" href="http://www.yellowpages.com/charlotte-nc">Charlotte</a></th></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/charlotte-nc/air-conditioning-contractors-systems">Air Conditioning</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/charlotte-nc/auto-repair-service">Auto Repair</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/charlotte-nc/dentists">Dentists</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/charlotte-nc/lawyers">Lawyers</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/charlotte-nc/pest-control-services">Pest Control</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/charlotte-nc/veterinarians">Veterinarians</a></td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                            <tr><th align="left"><a class="footer_anchors" href="http://www.yellowpages.com/milwaukee-wi">Milwaukee</a></th></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/milwaukee-wi/air-conditioning-contractors-systems">Air Conditioning</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/milwaukee-wi/attorneys">Attorneys</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/milwaukee-wi/used-car-dealers">Car Dealerships</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/milwaukee-wi/dentists">Dentists</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/milwaukee-wi/garage-door-repair">Garage Door Repair</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/milwaukee-wi/plumbers">Plumbers</a></td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                            <tr><th align="left"><a class="footer_anchors" href="http://www.yellowpages.com/san-diego-ca">San Diego</a></th></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/san-diego-ca/auto-repair-service">Auto Repair</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/san-diego-ca/dentists">Dentists</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/san-diego-ca/lawyers">Lawyers</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/san-diego-ca/movers">Movers</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/san-diego-ca/plumbers">Plumbers</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/san-diego-ca/roofing-contractors">Roofing</a></td></tr>
+                            </table> 
+                        </td>
+                        <td>
+                            <table>
+                            <tr><th align="left"><a class="footer_anchors" href="http://www.yellowpages.com/fort-lauderdale-fl">Fort Lauderdale</a></th></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/fort-lauderdale-fl/criminal-law-attorneys">Criminal Lawyers</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/fort-lauderdale-fl/dentists">Dentists</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/fort-lauderdale-fl/auto-insurance">Insurance</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/fort-lauderdale-fl/attorneys">Lawyers</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/fort-lauderdale-fl/roofing-contractors">Roofing</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/fort-lauderdale-fl/windows-repair-replacement-installation">Windows</a></td></tr>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                            <tr><th align="left"><a class="footer_anchors" href="http://www.yellowpages.com/columbus-oh">Columbus</a></th></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/columbus-oh/auto-repair-service">Auto Repair</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/columbus-oh/attorneys">Attorneys</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/columbus-oh/bankruptcy-law-attorneys">Bankruptcy Attorneys</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/columbus-oh/dentists">Dentists</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/columbus-oh/roofing-contractors">Roofing</a></td></tr>
+                            <tr><td><a class="footer_anchors" href="http://www.yellowpages.com/columbus-oh/veterinarians">Veterinarian</a></td></tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr><td class="footer entry12"><br/></td></tr>
+                    <tr>
+                        <td colspan="5"><h5 class="bottom">Also available on YP.com <a class="footer_anchors" href="http://www.yellowpages.com/whitepages">White Pages</a> &amp; <a href="http://www.anywho.com/reverse-lookup" class="footer_anchors">Reverse Phone Lookup</a></h5></td>
+                    </tr>
+                    <tr><td class="footer entry12"><br/></td></tr>
+                </table>
+            </div>
+            </div>
+        </td>
+    </tr>
 </table>
 
 </div>
 </form>
+
+<script language="javascript" type="text/javascript">
+function gotoAppStore() {
+	var AppStoreWIndow = window.open("http://itunes.apple.com/us/app/the-real-yellow-pages-for-ipad/id473422049?mt=8", "AppStores", 'toolbar=1,location=1,status=1,scrollbars=1,resizable=1,width=800,height=645');
+}
+function toggle(showHideDiv, switchImgTag) {
+    var contentElement = document.getElementById(showHideDiv);
+    var imgElement = document.getElementById(switchImgTag);
+    if(contentElement.style.display == "block") {
+        contentElement.style.display = "none";
+        imgElement.innerHTML = '<img alt="expand" align="center" src="skin/entrymap/images/plus_box.png"/>';
+    }else {
+        contentElement.style.display = "block";
+        imgElement.innerHTML = '<img alt="collapse" align="center" src="skin/entrymap/images/minus_box.png"/>';
+    }
+}
+function hideListingsDiv() {
+        document.getElementById("contentDivImg").style.display = "none";
+}
+</script>
 <input type="hidden" id="sl_Directories" value="">
 <input type="hidden" id="sl_DirectoriesURL" value="">                                                                                                                    
 </body>
 </html>
-
 <script src="includes/common.js" language="javascript" type="text/javascript"></script>
 <script src="skin/entrymap/_search/tooltipForm.js" language="JavaScript" type="text/javascript" ></script>
 <script src="skin/entrymap/_code/AC_RunActiveContent.js" language="javascript" type="text/javascript"></script>
@@ -303,3 +489,4 @@ function __doPostBack(eventTarget, eventArgument) {
 <script language="javascript" type="text/javascript">
     document.onkeypress = preventEnterOnDoc;
 </script>
+

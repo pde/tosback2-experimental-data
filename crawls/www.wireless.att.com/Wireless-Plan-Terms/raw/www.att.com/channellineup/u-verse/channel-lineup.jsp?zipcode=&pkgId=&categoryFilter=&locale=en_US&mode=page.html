@@ -107,7 +107,7 @@
 	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 	<html lang="en">
 	<head>
-	<link rel="stylesheet" href="http://www.att.com/channellineup/styles/channel-lineup.css" type="text/css" />
+	<link rel="stylesheet" href="http://www.att.com/channellineup/styles/channel-lineup-20120309.css" type="text/css" />
 	<script type="text/javascript" src="http://www.att.com/channellineup/scripts/custom-elements.js"></script>
 	<script type="text/javascript" src="http://www.att.com/channellineup/scripts/jquery.min.js"></script>
 	<script type="text/javascript" src="http://www.att.com/channellineup/scripts/jquery.colorbox-min.js"></script>
@@ -135,7 +135,7 @@
 
 		<div style="width:950px" >
 			
-			
+			﻿
 
  
 
@@ -194,9 +194,10 @@ var premiumFilterSelectedValue = '';
 var message='',custType='',isBusinessCustomer=false;
 var comparePkgIdArr = new Array();
 var sortBy ='',sortOrder='',localeForLat='',browserName = navigator.appName;
-var externalFilter ='',isLatinoFlag=false,externalPreFilter = '';
-var favListArray = new Array();	
-var favList = true;
+var externalFilter ='',isLatinoFlag=false,externalPreFilter = '',brChk=false;
+var favListArray = new Array();
+var isExtPkg = new Array();
+var favList = true,isValidPkg=false;
 var compListPkgChk = new Array();
  </script>
 <div style="display:none">
@@ -249,22 +250,41 @@ premiumFilterSelectedValue = externalPreFilter;
 }
 //function to determine actiontype
 var setActionType = function()
-{   var pkgLength='';
+{	var pkgLength='';
     var myPkgId='';
 	if(myPkgId == '' || myPkgId == null ){
 	myPkgId='';
 	}
+	if(myPkgId == '' || myPkgId == null ){
+	myPkgId='';
+	}
+	chkValidPkg(myPkgId);
 	if (myPkgId =="")
 	{
 	actionType ='markerView';
 	}
 	else{
        pkgLength =myPkgId.split(",").length;
-       if(pkgLength == '1')
+	   if(pkgLength == '1' && isValidPkg)
 	      actionType ='listView'; 
 	   else
 	     actionType ='markerView';
 	}
+}
+var chkValidPkg = function(myPkgId){
+//Changed for cheching valid pkgs
+	var tempPkg=new Array();
+		tempPkg=myPkgId.split(",");	
+		for(i=0;i<tempPkg.length;i++){
+		   		if(tempPkg[i]=='UBASIC' || tempPkg[i]=='Ubasic' || tempPkg[i]=='UFAMILY' || tempPkg[i]=='UFAM' || tempPkg[i]=='U200LATINO' || tempPkg[i]=='U200la' || tempPkg[i]=='U300LATINO' || tempPkg[i]=='U300LA' || tempPkg[i]=='U450LATINO' || tempPkg[i]=='U450LA' || tempPkg[i]=='BVBPO-DELUXE' || tempPkg[i]=='BP200' || tempPkg[i]=='BVBPO-STANDARD'|| tempPkg[i]=='BVSTAN' || tempPkg[i]=='BVBPO-BASIC' || tempPkg[i]=='UPBLC' || tempPkg[i]=='U100' || tempPkg[i]=='U200' || tempPkg[i]=='U300' || tempPkg[i]=='U450' || tempPkg[i]=='U-family' || tempPkg[i]=='U-basic' || tempPkg[i]=='U200 Latino' || tempPkg[i]=='U300 Latino' || tempPkg[i]=='U450 Latino'){
+				
+				isValidPkg = true;
+			}else {
+			     isValidPkg = false;
+				 break;
+			}
+		}
+	//end
 }
 zipcodejs = '';
 if(zipcodejs == '' || zipcodejs == null ){
@@ -362,14 +382,14 @@ isBusinessCustomer = false;
 
 	
 	
-	<input id="view-channel-lineup" name="att/ecom/uverse/channellineup/view/ChannelLineUpFormHandler.channelSearchByZipCode" value="View ChannelLineUp" class="viewchannellineup" src="http://www.att.com/media/att/2011/global/btn/btn-en-viewchannellineup-blu29.gif" type="image"><input name="_D:att/ecom/uverse/channellineup/view/ChannelLineUpFormHandler.channelSearchByZipCode" value=" " type="hidden">
+	<input id="view-channel-lineup" alt="View Channellineup" name="att/ecom/uverse/channellineup/view/ChannelLineUpFormHandler.channelSearchByZipCode" value="View ChannelLineUp" class="viewchannellineup" src="http://www.att.com/media/att/2011/global/btn/btn-en-viewchannellineup-blu29.gif" type="image"><input name="_D:att/ecom/uverse/channellineup/view/ChannelLineUpFormHandler.channelSearchByZipCode" value=" " type="hidden">
 	
 
 <input name="att/ecom/uverse/channellineup/view/ChannelLineUpFormHandler.channelLineUpSuccessUrl" value="/channellineup/u-verse/channel-lineup.jsp?locale=en_US&mode=page" type="hidden"><input name="_D:att/ecom/uverse/channellineup/view/ChannelLineUpFormHandler.channelLineUpSuccessUrl" value=" " type="hidden">
 <input name="att/ecom/uverse/channellineup/view/ChannelLineUpFormHandler.channelLineUpValidationErrUrl" value="/channellineup/u-verse/channel-lineup.jsp?locale=en_US&mode=page" type="hidden"><input name="_D:att/ecom/uverse/channellineup/view/ChannelLineUpFormHandler.channelLineUpValidationErrUrl" value=" " type="hidden">
 </div><input name="_DARGS" value="/channellineup/u-verse/channel-lineupbody.jsp" type="hidden"></input></form>
 	<div id="displaytext" class="colsec_650">
-					ZIP code:  <a id="changeZip" href="javascript:void(0);" onclick="changeZipCode();">Change</a>&nbsp;|&nbsp;As of:&nbsp;December 01, 2011 &nbsp;
+					ZIP code:  <a id="changeZip" href="javascript:void(0);" onclick="changeZipCode();">Change</a>&nbsp;|&nbsp;As of:&nbsp;April 14, 2012 &nbsp;
 	</div>
 <!--Changing for latino-->
 	<div style="display:inline;" id="showOnly">Show only:</div>
@@ -383,10 +403,10 @@ isBusinessCustomer = false;
 	</div>
 <div class="colsec_200">
 	<div id="channelLineUpSearch">	
-	<input type="text" maxlength="600" id="searchbox" onclick="clickSearchTextBox();" class="searchbox" value="Search by channel names" />
+	<input type="text" maxlength="600" id="searchbox" title="Search Box" onclick="clickSearchTextBox();" class="searchbox" value="Search by channel names" />
 	<input type="button" class="searchbox_submit" title="Submit" value="" />
 	</div>
-	<div id="searchtext" class="searchtext">Ex.: CNN, Cartoon, ESPN&nbsp;<a href="javascript:void(0);"><img src="../../media/att/2011/global/btn/btn-help-icon.gif" class="helpicon"  onmouseover="searchToolTip();" height="14"/></a><a class="reset" onclick="clickReset();">Reset</a></div>
+	<div id="searchtext" class="searchtext">Ex.: CNN, Cartoon, ESPN&nbsp;<a href="javascript:void(0);"><img alt="Help" src="../../media/att/2011/global/btn/btn-help-icon.gif" class="helpicon"  onmouseover="searchToolTip();" height="14"/></a><a name="resetLink" class="reset" onclick="clickReset();">Reset</a></div>
 	<!--Compare Tab-->
 	<div id = "comparebox" class="colfilter_130" > 
 	<div class="clearelements" >
@@ -407,7 +427,7 @@ isBusinessCustomer = false;
 
 	
 	
-	<img class="maincomparebtn" src="http://www.att.com/media/att/2011/global/btn/btn-en-selecttocompare-blu24.gif" title="Compare TV Packages"/>
+	<img alt="Select to Compare" class="maincomparebtn" src="http://www.att.com/media/att/2011/global/btn/btn-en-selecttocompare-blu24.gif" title="Compare TV Packages"/>
 	
 
 </a>
@@ -423,12 +443,12 @@ isBusinessCustomer = false;
 						<div id="limitfavmodal">
 										<div class="favheader">
 										<div class="compinnertxtfav">Add to Favorites</div>
-										<div class="closetext"><a href="javascript:void(0);" onclick="closeCompareModal('limitFavModal');">Close</a></div><div><a href="javascript:void(0);" onclick="closeCompareModal('limitFavModal');"><img class="favclosebtn" src="../../media/att/2011/global/btn/btn_close.gif"/></a></div>
+										<div class="closetext"><a href="javascript:void(0);" onclick="closeCompareModal('limitFavModal');">Close</a></div><div><a href="javascript:void(0);" onclick="closeCompareModal('limitFavModal');"><img alt="Close" class="favclosebtn" src="../../media/att/2011/global/btn/btn_close.gif"/></a></div>
 										</div>
 										<div class="textcomp">You've selected the maximum number of Favorites.</div><br>
 										
 										<div class="favdivider"></div>
-										<a href="javascript:void(0);" class="okbtn" onclick="closeCompareModal('limitFavModal');"><img src="http://www.att.com/media/att/2011/global/btn/btn-en-OK-blu29.gif" style="border:0;"/></a>
+										<a href="javascript:void(0);" class="okbtn" onclick="closeCompareModal('limitFavModal');"><img alt="Ok" rc="/media/att/2011/global/btn/btn-en-OK-blu29.gif" style="border:0;"/></a>
 										
 						</div>
 					<!--End modal-->
@@ -436,7 +456,7 @@ isBusinessCustomer = false;
 						<div id="favhelpmodal">
 										<div class="favheader">
 										<div class="compinnertxtfav">Add to Favorites</div>
-										<div class="closetext"><a href="javascript:void(0);" onclick="closeCompareModal('filterFavModal');">Close</a></div><div><a href="javascript:void(0);" onclick="closeCompareModal('filterFavModal');"><img class="favclosebtn" src="../../media/att/2011/global/btn/btn_close.gif"/></a></div>
+										<div class="closetext"><a href="javascript:void(0);" onclick="closeCompareModal('filterFavModal');">Close</a></div><div><a href="javascript:void(0);" onclick="closeCompareModal('filterFavModal');"><img alt="Close" class="favclosebtn" src="../../media/att/2011/global/btn/btn_close.gif"/></a></div>
 										</div>
 										<div class="textcomp">Click the star next to your favorite channels, and then click the Favorites filter.</div><br>
 										
@@ -480,12 +500,12 @@ isBusinessCustomer = false;
 						
                                                                                                                                                                                                                                                                                                                                 
 		<div class="filterlabel" style="margin-top:15px;">
-		<input class="styled" type="checkbox" id="Favorites" value="favorite"/>
-		<img src="http://www.att.com/media/att/2011/shop/u-verse/channel-lineup/ico-star.gif" class="favleftside" />		
+		<input title="favorite" class="styled" type="checkbox" id="Favorites" value="favorite"/>
+		<img alt="Favorite" src="http://www.att.com/media/att/2011/shop/u-verse/channel-lineup/ico-star.gif" class="favleftside" />		
 		Favorites 
 		<div class="filtergreyline"></div>		
 		</div>
-		<div class="emtyclass" style="margin-top:-35px;*margin-top:-32px; margin-left:140px;margin-bottom:20px"><a href="javascript:void(0);" onclick="javascript:void(0);"><img class="helpleftside" onmouseover="filterByCategoryToolTip();" src="../../media/att/2011/global/btn/btn-help-icon.gif" /></a></div>
+		<div class="emtyclass" style="margin-top:-35px;*margin-top:-32px; margin-left:140px;margin-bottom:20px"><a href="javascript:void(0);" onclick="javascript:void(0);"><img alt="Help" class="helpleftside" onmouseover="filterByCategoryToolTip();" src="../../media/att/2011/global/btn/btn-help-icon.gif" /></a></div>
 		
 		
 		
@@ -505,7 +525,7 @@ isBusinessCustomer = false;
 		
 		
 		<div class="filterlabel">
-		<input class="styled" type="checkbox" id="HD" value="hdand3d"/>
+		<input title="hd and 3d" class="styled" type="checkbox" id="HD" value="hdand3d"/>
 		HD	
 		<div class="filtergreyline"></div>
 		</div>
@@ -527,7 +547,7 @@ isBusinessCustomer = false;
 		
 		
 		<div class="filterlabel">
-		<input class="styled" type="checkbox" id="Movies" value="Movies,Premium"/>
+		<input title="Movies,Premium" class="styled" type="checkbox" id="Movies" value="Movies,Premium"/>
 		Movies
 		</div>
 		
@@ -547,7 +567,7 @@ isBusinessCustomer = false;
 		
 		
 		<div class="filterlabel">
-		<input class="styled" type="checkbox" id="Sports" value="Sports"/>
+		<input title="Sports" class="styled" type="checkbox" id="Sports" value="Sports"/>
 		Sports
 		</div>
 		
@@ -567,7 +587,7 @@ isBusinessCustomer = false;
 		
 		
 		<div class="filterlabel">
-		<input class="styled" type="checkbox" id="News" value="News"/>
+		<input title="News" class="styled" type="checkbox" id="News" value="News"/>
 		News
 		</div>
 		
@@ -587,7 +607,7 @@ isBusinessCustomer = false;
 		
 		
 		<div class="filterlabel">
-		<input class="styled" type="checkbox" id="Local" value="Local"/>
+		<input title="Local" class="styled" type="checkbox" id="Local" value="Local"/>
 		Local
 		</div>
 		
@@ -607,7 +627,7 @@ isBusinessCustomer = false;
 		
 		
 		<div class="filterlabel">
-		<input class="styled" type="checkbox" id="Educational" value="Educational"/>
+		<input title="Educational" class="styled" type="checkbox" id="Educational" value="Educational"/>
 		Educational
 		</div>
 		
@@ -764,7 +784,7 @@ isBusinessCustomer = false;
 							  
 							
 								 <option value="ENCORE">
-								   Encore
+								   ENCORE
 								</option>
 							
 							
@@ -1703,7 +1723,7 @@ isBusinessCustomer = false;
 <div class="colsec_800">
 		<div id = "tabs" >
 						<ul id="all-packs" class="tabs" style="width:780px;margin-left:-40px;*margin-left:0px;"></ul>
-							<div id="ajaxLoadImage" style="display:none;margin-left: 380px;margin-top: 200px;"><img  src="http://www.att.com/channellineup/images/ajaxLoader.gif"/></div>
+							<div id="ajaxLoadImage" style="display:none;margin-left: 380px;margin-top: 200px;"><img  alt="Loading" src="http://www.att.com/channellineup/images/ajaxLoader.gif"/></div>
 
 								 <div id="ListViewPackages"></div>
 		</div>
@@ -1837,9 +1857,9 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		return '';
 	}},
 	{selector: 'head:page(channel-lineup)', type: 'wtmeta', name: 'wtPN',value: 'UVerse Channel LineUp Localization Pg'},
-	{selector: 'head:page(channel-lineup)', type: 'wtmeta', name: 'wtBuyFlowType',value: 'NEW'},
+	{selector: 'head:page(channel-lineup)', type: 'wtmeta', name: 'wtBuyFlowType',value: 'DRYLOOP'},
 	{selector: 'head:page(channel-lineup)', type: 'wtmeta', name: 'wtQualCriteria',value:function(){
-	if('30319' != '') {
+	if('' != '') {
 		return 'Zip Code';}
 	else{
 		return '';}
@@ -1851,13 +1871,13 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		return '';}},
 	{selector: 'head:page(channel-lineup)', type: 'wtmeta', name: 'wtCustType',value:'Consumer'},	
 	{selector: 'head:page(channel-lineup)', type: 'wtmeta', name: 'wtELUID',value:function() {
-	if(('30319' != '') && (errorCode == "")) {
+	if(('' != '') && (errorCode == "")) {
 		return 'unknown';}
 	else{
 		return '';}
 	}},
 	{selector: 'head:page(channel-lineup)', type: 'wtmeta', name: 'wtEligResult',value:function(){
-	if( ('30319' != '') && (errorCode == "")) {
+	if( ('' != '') && (errorCode == "")) {
 		return 'unknown';}
 	else {
 		return '';}
@@ -1890,7 +1910,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	else
 	return 'Business';
 	}},
-	{selector: '.maincomparebtn', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '.maincomparebtn', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '.maincomparebtn', type: 'wtparam', name: 'wtCustType',value:'Consumer'},
 	{selector: '.maincomparebtn', type: 'wtparam', name: 'DCSext.wtPN',value: 'UVerse Channel Lineup Pkg Comparison Pg'},
 	{selector: '.maincomparebtn', type: 'wtevent', name: 'UVerse_ChannelLineup_Pkg_Comparison_Submit',params: 'DCSext.wtPN,wtCustType,wtCustTypeSub,wtBuyFlowType'},
@@ -1900,7 +1920,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	else
 	return 'Business';
 	}},
-	{selector: '.U450', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '.U450', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '.U450', type: 'wtparam', name: 'wtCustType',value:'Consumer'},
 	{selector: '.U450', type: 'wtparam', name: 'DCSext.wtPN',value: 'UVerse Channel Lineup U450 Pkg Pg'},
 	{selector: '.U450', type: 'wtparam', name: 'DCSext.wtEventType',value:''},
@@ -1909,7 +1929,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	{selector: '.U450', type: 'wtparam', name: 'DCSext.wtNoHit',value:''},
 	{selector: '.U450', type: 'wtevent', name: '',params: 'DCSext.wtPN,wtCustType,wtCustTypeSub,wtBuyFlowType,DCSext.wtEventType,DCSext.wtStatusCode,DCSext.wtSuccessFlag,DCSext.wtNoHit'},
 	
-	{selector: '.U300', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '.U300', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '.U300', type: 'wtparam', name: 'wtCustTypeSub',value: function (){
 	if($('#residential').is(':checked'))
 	return 'Residential';
@@ -1924,7 +1944,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	{selector: '.U300', type: 'wtparam', name: 'DCSext.wtNoHit',value:''},
 	{selector: '.U300', type: 'wtevent', name: '',params: 'DCSext.wtPN,wtCustType,wtCustTypeSub,wtBuyFlowType,DCSext.wtEventType,DCSext.wtStatusCode,DCSext.wtSuccessFlag,DCSext.wtNoHit'},
 	
-	{selector: '.U200', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '.U200', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '.U200', type: 'wtparam', name: 'wtCustTypeSub',value: function (){
 	if($('#residential').is(':checked'))
 	return 'Residential';
@@ -1939,7 +1959,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	{selector: '.U200', type: 'wtparam', name: 'DCSext.wtNoHit',value:''},
 	{selector: '.U200', type: 'wtevent', name: '',params: 'DCSext.wtPN,wtCustType,wtCustTypeSub,wtBuyFlowType,DCSext.wtEventType,DCSext.wtStatusCode,DCSext.wtSuccessFlag,DCSext.wtNoHit'},
 	
-	{selector: '.U200Latino', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '.U200Latino', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '.U200Latino', type: 'wtparam', name: 'wtCustTypeSub',value: function (){
 	if($('#residential').is(':checked'))
 	return 'Residential';
@@ -1954,7 +1974,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	{selector: '.U200Latino', type: 'wtparam', name: 'DCSext.wtNoHit',value:''},
 	{selector: '.U200Latino', type: 'wtevent', name: '',params: 'DCSext.wtPN,wtCustType,wtCustTypeSub,wtBuyFlowType,DCSext.wtEventType,DCSext.wtStatusCode,DCSext.wtSuccessFlag,DCSext.wtNoHit'},	
 	
-	{selector: '.U100', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '.U100', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '.U100', type: 'wtparam', name: 'wtCustTypeSub',value: function (){
 	if($('#residential').is(':checked'))
 	return 'Residential';
@@ -1970,7 +1990,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	{selector: '.U100', type: 'wtparam', name: 'DCSext.wtNoHit',value:''},
 	{selector: '.U100', type: 'wtevent', name: '',params: 'DCSext.wtPN,wtCustType,wtCustTypeSub,wtBuyFlowType,DCSext.wtEventType,DCSext.wtStatusCode,DCSext.wtSuccessFlag,DCSext.wtNoHit'},
 	
-	{selector: '.U300Latino', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '.U300Latino', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '.U300Latino', type: 'wtparam', name: 'wtCustTypeSub',value: function (){
 	if($('#residential').is(':checked'))
 	return 'Residential';
@@ -1985,7 +2005,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	{selector: '.U300Latino', type: 'wtparam', name: 'DCSext.wtNoHit',value:''},
 	{selector: '.U300Latino', type: 'wtevent', name: '',params: 'DCSext.wtPN,wtCustType,wtCustTypeSub,wtBuyFlowType,DCSext.wtEventType,DCSext.wtStatusCode,DCSext.wtSuccessFlag,DCSext.wtNoHit'},
 
-	{selector: '.U450Latino', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '.U450Latino', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '.U450Latino', type: 'wtparam', name: 'wtCustTypeSub',value: function (){
 	if($('#residential').is(':checked'))
 	return 'Residential';
@@ -2000,7 +2020,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	{selector: '.U450Latino', type: 'wtparam', name: 'DCSext.wtNoHit',value:''},
 	{selector: '.U450Latino', type: 'wtevent', name: '',params: 'DCSext.wtPN,wtCustType,wtCustTypeSub,wtBuyFlowType,DCSext.wtEventType,DCSext.wtStatusCode,DCSext.wtSuccessFlag,DCSext.wtNoHit'},	
 	
-	{selector: '.U-family', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '.U-family', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '.U-family', type: 'wtparam', name: 'wtCustTypeSub',value: function (){
 	if($('#residential').is(':checked'))
 	return 'Residential';
@@ -2015,7 +2035,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	{selector: '.U-family', type: 'wtparam', name: 'DCSext.wtNoHit',value:''},
 	{selector: '.U-family', type: 'wtevent', name: '',params: 'DCSext.wtPN,wtCustType,wtCustTypeSub,wtBuyFlowType,DCSext.wtEventType,DCSext.wtStatusCode,DCSext.wtSuccessFlag,DCSext.wtNoHit'},
 	
-	{selector: '.U-basic', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '.U-basic', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '.U-basic', type: 'wtparam', name: 'wtCustTypeSub',value: function (){
 	if($('#residential').is(':checked'))
 	return 'Residential';
@@ -2030,7 +2050,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	{selector: '.U-basic', type: 'wtparam', name: 'DCSext.wtNoHit',value:''},
 	{selector: '.U-basic', type: 'wtevent', name: '',params: 'DCSext.wtPN,wtCustType,wtCustTypeSub,wtBuyFlowType,DCSext.wtEventType,DCSext.wtStatusCode,DCSext.wtSuccessFlag,DCSext.wtNoHit'},
 	
-	{selector: '.Deluxe', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '.Deluxe', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '.Deluxe', type: 'wtparam', name: 'wtCustTypeSub',value: function (){
 	if($('#residential').is(':checked'))
 	return 'Residential';
@@ -2045,7 +2065,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	{selector: '.Deluxe', type: 'wtparam', name: 'DCSext.wtNoHit',value:''},
 	{selector: '.Deluxe', type: 'wtevent', name: '',params: 'DCSext.wtPN,wtCustType,wtCustTypeSub,wtBuyFlowType,DCSext.wtEventType,DCSext.wtStatusCode,DCSext.wtSuccessFlag,DCSext.wtNoHit'},
 	
-	{selector: '.basic', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '.basic', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '.basic', type: 'wtparam', name: 'wtCustTypeSub',value: function (){
 	if($('#residential').is(':checked'))
 	return 'Residential';
@@ -2061,7 +2081,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	{selector: '.basic', type: 'wtevent', name: '',params: 'DCSext.wtPN,wtCustType,wtCustTypeSub,wtBuyFlowType,DCSext.wtEventType,DCSext.wtStatusCode,DCSext.wtSuccessFlag,DCSext.wtNoHit'},
 	
 	
-	{selector: '.Standard', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '.Standard', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '.Standard', type: 'wtparam', name: 'wtCustTypeSub',value: function (){
 	if($('#residential').is(':checked'))
 	return 'Residential';
@@ -2078,7 +2098,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	
 		
 	{selector: '.ComparePackages', type: 'wtparam', name: 'DCSext.wtPN',value: 'UVerse Channel Lineup Pkg Comparison Pg'},
-	{selector: '.ComparePackages', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '.ComparePackages', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '.ComparePackages', type: 'wtparam', name: 'DCSext.wtEventType',value:''},
 	{selector: '.ComparePackages', type: 'wtparam', name: 'DCSext.wtStatusCode',value:''},
 	{selector: '.ComparePackages', type: 'wtparam', name: 'DCSext.wtSuccessFlag',value:''},
@@ -2091,7 +2111,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	}},
 	{selector: '.ComparePackages', type: 'wtparam', name: 'wtCustType',value:'Consumer'},
 	{selector: '.ComparePackages', type: 'wtevent', name: '',params:'DCSext.wtPN,wtBuyFlowType,DCSext.wtEventType,DCSext.wtStatusCode,DCSext.wtSuccessFlag,wtCustTypeSub,wtCustType,DCSext.wtNoHit'},
-	{selector: '#latinoTab', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '#latinoTab', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '#latinoTab', type: 'wtparam', name: 'wtCustTypeSub',value: function (){
 	if($('#residential').is(':checked'))
 	return 'Residential';
@@ -2105,7 +2125,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	{selector: '#latinoTab', type: 'wtparam', name: 'DCSext.wtSuccessFlag',value:''},
 	{selector: '#latinoTab', type: 'wtparam', name: 'DCSext.wtNoHit',value:''},
 	{selector: '#latinoTab', type: 'wtevent', name: '',params: 'DCSext.wtPN,wtCustType,wtCustTypeSub,wtBuyFlowType,DCSext.wtEventType,DCSext.wtStatusCode,DCSext.wtSuccessFlag,DCSext.wtNoHit'},
-	{selector: '#engTab', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '#engTab', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '#engTab', type: 'wtparam', name: 'wtCustTypeSub',value: function (){
 	if($('#residential').is(':checked'))
 	return 'Residential';
@@ -2120,7 +2140,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	{selector: '#engTab', type: 'wtparam', name: 'DCSext.wtNoHit',value:''},
 	{selector: '#engTab', type: 'wtevent', name: '',params: 'DCSext.wtPN,wtCustType,wtCustTypeSub,wtBuyFlowType,DCSext.wtEventType,DCSext.wtStatusCode,DCSext.wtSuccessFlag,DCSext.wtNoHit'},
 
-	{selector: '#spnLatinoTab', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '#spnLatinoTab', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '#spnLatinoTab', type: 'wtparam', name: 'wtCustTypeSub',value: function (){
 	if($('#residential').is(':checked'))
 	return 'Residential';
@@ -2133,7 +2153,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	{selector: '#spnLatinoTab', type: 'wtparam', name: 'DCSext.wtStatusCode',value:''},
 	{selector: '#spnLatinoTab', type: 'wtparam', name: 'DCSext.wtSuccessFlag',value:''},
 	{selector: '#spnLatinoTab', type: 'wtevent', name: '',params: 'DCSext.wtPN,wtCustType,wtCustTypeSub,wtBuyFlowType,DCSext.wtEventType,DCSext.wtStatusCode,DCSext.wtSuccessFlag'},
-	{selector: '#spnEngTab', type: 'wtparam', name: 'wtBuyFlowType',value:"+NEW+"},
+	{selector: '#spnEngTab', type: 'wtparam', name: 'wtBuyFlowType',value:"+DRYLOOP+"},
 	{selector: '#spnEngTab', type: 'wtparam', name: 'wtCustTypeSub',value: function (){
 	if($('#residential').is(':checked'))
 	return 'Residential';
@@ -2196,7 +2216,7 @@ function handleLastFieldInteracted(e) {
  
 <script type="text/javascript" src="http://www.att.com/webtrends/scripts/dcs_tag.js"></script>
 <input type="hidden" id="hiddenFavorite" value=""/>
-<input type="hidden" id="hiddenBuyFlowType" value="NEW"/>
+<input type="hidden" id="hiddenBuyFlowType" value="DRYLOOP"/>
 <!--Placing the scripts at the end to resolve the javascript error -->
 <script type="text/javascript">
 //Global variables
@@ -2237,7 +2257,7 @@ return parameterStr;
 }
 //Creating the tabs 
 var createTabs = function (packageIdArray,isBusinessCustomer,isLatinoFlag){
-	var residentialTabArr = ["Compare Packages","U450","U300","U200","U100","U-family","U-basic"];
+	var residentialTabArr = ["Compare Packages","U450","U300","U200","U-family","U-basic"];
 	var businessTabArr = ["Compare Packages","BV/BPO-Deluxe","BV/BPO-Standard","BV/BPO-Basic"];
 	var latTabArr = ["Compare Packages","U450 Latino","U300 Latino","U200 Latino"];
 	var tabsArray = new Array();
@@ -2245,8 +2265,7 @@ var createTabs = function (packageIdArray,isBusinessCustomer,isLatinoFlag){
 	var isBusinessUser = false;
 	var html='',famBas=false;
 	var tabId = '',tabCount=0;
-	var tabWidth = 0;
-	var totWidth = 498;
+	var tabWidth = 0,totWidth=0;
 	var frmCompare = false;
 	var resTabCount = packageIdArray.length;
 	var busTabCount = businessTabArr.length;
@@ -2270,6 +2289,13 @@ var createTabs = function (packageIdArray,isBusinessCustomer,isLatinoFlag){
 			}
 		}
 	}
+	tabCount = tabsArray.length;
+	if(brChk && !frmCompare){
+		totWidth = 497;
+	}
+	else{
+		totWidth = 498;
+	}
 	if(frmCompare){
 		tabWidth  = Math.round(totWidth/(resTabCount-1));
 	}
@@ -2277,9 +2303,8 @@ var createTabs = function (packageIdArray,isBusinessCustomer,isLatinoFlag){
 		tabWidth  = Math.round(totWidth/(busTabCount-1));
 	}
 	else{
-		tabWidth = Math.round(totWidth/6);
+		tabWidth = Math.round(totWidth/(tabCount-1));
 	}
-	tabCount = tabsArray.length;
 	for(tabHeaderCount = 0;tabHeaderCount<tabCount;tabHeaderCount++){
 		tabId = tabsArray[tabHeaderCount];
 		tabId = tabId.replace(/ +/g,"");
@@ -2293,6 +2318,9 @@ var createTabs = function (packageIdArray,isBusinessCustomer,isLatinoFlag){
 		else{
 		if(frmCompare && (tabWidth == 71 && (tabId== "U200Latino" || tabId== "U450Latino" || tabId == "U300Latino"))){
 			html+= '<li class="othertabs" style="border-bottom:1px solid #D8D8D8;width:'+tabWidth+'px;" id="'+tabId+'"><a href="JavaScript:void(0);"><span style="font-size:12px;height:24px;padding-top:0px;" class="'+tabId+'">'+tabsArray[tabHeaderCount]+'</span></a></li>';
+		}
+		else if(!frmCompare && (tabId== "U-basic") && brChk){
+			html+= '<li class="othertabs" style="border-bottom:1px solid #D8D8D8;width:101px;" id="'+tabId+'"><a href="JavaScript:void(0);"><span style="font-size:12px;" class="'+tabId+'">'+tabsArray[tabHeaderCount]+'</span></a></li>';	
 		}
 		else{
 			html+= '<li class="othertabs" style="border-bottom:1px solid #D8D8D8;width:'+tabWidth+'px;" id="'+tabId+'"><a href="JavaScript:void(0);"><span style="font-size:12px;" class="'+tabId+'">'+tabsArray[tabHeaderCount]+'</span></a></li>';	
@@ -2308,12 +2336,20 @@ var createTabs = function (packageIdArray,isBusinessCustomer,isLatinoFlag){
 
 var tabSelector = function(){
 	var tabName = getCompareTabName();
+	var compLength = 0;
 	$("."+tabName).click(function(){ 
 	actionType = "markerView";
 	var temp = '';
 	packageId = temp;
-	if(comparePkgIdArr.length > 0){
+	if(isExtPkg != ''){
+		packageId = isExtPkg;
+	}
+	compLength = comparePkgIdArr.length;
+	if(compLength > 0){
 	packageId = comparePkgIdArr;
+	}
+	if(!isValidPkg && actionType == "markerView" && compLength == 0){
+	packageId = '';
 	}	
 	var parameterStr = '';
 	parameterStr = 'zipcode='+zipcodejs+'&pkgId='+packageId+'&actType='+actionType;	
@@ -2394,6 +2430,9 @@ var ajaxCall = function(url,data){
 $(".zipcodecontent").hide();
 data =data+'&locale=en_US';
 			$.ajax({
+			       //Fix Start for PROD12-209
+			       async:false,
+			       //Fix End for PROD12-209  
 				   type: "GET",
 				   dataType:'html',
 				   url:url,
@@ -2465,6 +2504,14 @@ var clickReset = function (){
 		packageId = comparePkgIdArr;
 		parameterStr = parameterStr+'&pkgId='+packageId;
 		}
+		if(isExtPkg != '' && comparePkgIdArr.length == 0){
+		packageId = isExtPkg;
+		packageId = convertPackageId(packageId);
+		if(!isValidPkg && actionType == "markerView" && comparePkgIdArr.length == 0){
+		packageId = '';
+		}
+		parameterStr = parameterStr+'&pkgId='+packageId;
+		}	
 		ajaxCall("/channellineup/u-verse/markerViewFragment.jsp",parameterStr);
 		}else{
 		parameterStr = parameterStr+'&pkgId='+packageId;
@@ -2504,7 +2551,8 @@ var clickClearComparison = function(isLatinoFlag){
 	actionType = "markerView";
 	var temp = '';
 	comparePkgIdArr = '';
-	var rescheckboxes = ["U450","U300","U200","U100","U-family","U-basic"];
+	isExtPkg='';
+	var rescheckboxes = ["U450","U300","U200","U-family","U-basic"];
 	var buscheckboxes = ["BV/BPO-Deluxe","BV/BPO-Standard","BV/BPO-Basic"]; 
 	var latcheckboxes = ["U450Latino","U300Latino","U200Latino"]; 
 	if(isBusinessCustomer){
@@ -2547,7 +2595,7 @@ var clickClearComparison = function(isLatinoFlag){
 			}
 		}
 			packageId = temp;
-			var parameterStr = 'zipcode='+zipcodejs+'&pkgId='+packageId+'&actType='+actionType;			
+			var parameterStr = 'zipcode='+zipcodejs+'&pkgId='+packageId+'&actType='+actionType;
 			parameterStr = combinedParamterStr(parameterStr,'');
 			if(isLatinoFlag){
 			$("#latinoTab").removeClass('engimg lnselfirst');
@@ -2569,7 +2617,7 @@ var clickClearComparison = function(isLatinoFlag){
 //On selecting packages from the compare modal it shud show the selected packages in marker view
 var comparePackageView = function(){
 actionType = "markerView";
-var rescheckboxes = ["U450","U300","U200","U100","U-family","U-basic","U450Latino","U300Latino","U200Latino"];
+var rescheckboxes = ["U450","U300","U200","U-family","U-basic","U450Latino","U300Latino","U200Latino"];
 var buscheckboxes = ["BV/BPO-Deluxe","BV/BPO-Standard","BV/BPO-Basic"]; 
 var pkgName = 'Compare Packages';
 pkgName = pkgName.replace(/ +/g,"");
@@ -2692,12 +2740,14 @@ for(var i=0;i<checkboxes.length;i++){
 			return false;
 		}	
 	//Code for webtrends			
-	webTrendTag('Uverse_ChannelLineup_Compare_Pkg_Modal_Submit',0,'User','DCSext.wtPN','UVerse ChannelLineup Compare Pkg Modal Pg','wtUserResp',userResp,'wtBuyFlowType','NEW','wtCustType','Consumer','wtCustTypeSub',customerType);
+	webTrendTag('Uverse_ChannelLineup_Compare_Pkg_Modal_Submit',0,'User','DCSext.wtPN','UVerse ChannelLineup Compare Pkg Modal Pg','wtUserResp',userResp,'wtBuyFlowType','DRYLOOP','wtCustType','Consumer','wtCustTypeSub',customerType);
 }
 //Filter By Category
 var checkboxSelectCheck = function() {  
-setActionType();                                                                                             
-	$('.filterlabel').click(function() {
+setActionType();
+var chkboxcomplen = 0;
+    $('.filterlabel').click(function() {
+	chkboxcomplen = comparePkgIdArr.length;
 	var favSelectedCount = $('.fsi').length;
 	var inputs = document.getElementsByTagName("input");
 	var i = 0,size=0;
@@ -2716,7 +2766,7 @@ setActionType();
 				isFavFilter = true;
 				$.colorbox({inline:true, opacity:0.5 , scrolling:false, width:350 , height:235 ,top:220, href:"#favhelpmodal"});
 				//Code for webtrends
-				  webTrendTag('','','','DCSext.wtPN','UVerse ChannelLineUp No Favorites Popup Pg','wtBuyFlowType','NEW','DCSext.wtStatusCode','','DCSext.wtSuccessFlag','','DCSext.wtEventType','','DCSext.wtNoHit','');
+				  webTrendTag('','','','DCSext.wtPN','UVerse ChannelLineUp No Favorites Popup Pg','wtBuyFlowType','DRYLOOP','DCSext.wtStatusCode','','DCSext.wtSuccessFlag','','DCSext.wtEventType','','DCSext.wtNoHit','');
 				}
 			  }
 			categoryFilterArray[i] = inputs[a].value;
@@ -2746,7 +2796,14 @@ setActionType();
 				$('#select'+this.id).html('International Pkgs.');	
 				}
 	});
-		if(categoryFilterArray != 0){			
+		if(categoryFilterArray != 0){
+			if(isExtPkg != '' && actionType == "markerView" && chkboxcomplen == 0){
+				packageId = isExtPkg;
+			}	
+			packageId = convertPackageId(packageId);
+			if(!isValidPkg && actionType == "markerView" && chkboxcomplen == 0){
+			packageId = '';
+			}
 			var parameterStr='';			
 				parameterStr = 'zipcode='+zipcodejs+'&pkgId='+packageId+'&categoryFilter='+categoryFilterArray+'&actType='+actionType+'&webTrendCFL='+categoryFilterLabel;
 				parameterStr = combinedParamterStr(parameterStr,'catFilterSec');			
@@ -2785,6 +2842,7 @@ var checkEvent = function() {
 if(actionType == "markerView"){
 packageId = '';
 }
+var srchboxcomplen = 0;
 	//On click of the view channel line button up show the channel details
 	$('.viewchannellineup').click(function() {
 		//viewChannelLineup();
@@ -2792,6 +2850,7 @@ packageId = '';
 	});
 	//On click of the search button up show the channels matching the search criteria
 	$('.searchbox_submit').click(function() {
+	srchboxcomplen = comparePkgIdArr.length;
 	//setActionType();
 		//clears the Category filter selected value 
 		$('#filter input:checkbox').removeAttr('checked');
@@ -2815,6 +2874,13 @@ packageId = '';
 		searchText = $("#searchbox").val();
 		if(searchText != ""){
 		if (searchText!='Search by channel names'){
+			if(isExtPkg != '' && actionType == "markerView" && srchboxcomplen == 0){
+				packageId = isExtPkg;
+			}	 
+			packageId = convertPackageId(packageId);
+			if(!isValidPkg && actionType == "markerView" && srchboxcomplen == 0){
+				packageId = '';
+			}
 			var parameterStr = 'zipcode='+zipcodejs+'&searchString='+escape(searchText)+'&actType='+actionType+'&pkgId='+packageId+'&fromSearch=true';
 			parameterStr = combinedParamterStr(parameterStr,'searchSec');
 			//Modified after fragmentation
@@ -2829,6 +2895,7 @@ packageId = '';
 	
 //On pressing enter key after entering the search string show the channels matching the search criteria
 	$('#searchbox').keypress(function(e) {
+	srchboxcomplen = comparePkgIdArr.length;
 	if(e.keyCode==13){
 		//clears the Category filter selected value 
 		$('#filter input:checkbox').removeAttr('checked');
@@ -2850,6 +2917,13 @@ packageId = '';
 		});	
 		premiumFilterSelectedValue = '';			
 			searchText = $("#searchbox").val();
+			if(isExtPkg != '' && actionType == "markerView" && srchboxcomplen == 0){
+				packageId = isExtPkg;
+			}	
+			packageId = convertPackageId(packageId);
+			if(!isValidPkg && actionType == "markerView" && srchboxcomplen == 0){
+				packageId = '';
+			}
 			if(searchText != ""){
 				var parameterStr = 'zipcode='+zipcodejs+'&searchString='+escape(searchText)+'&actType='+actionType+'&pkgId='+packageId+'&fromSearch=true';
 				parameterStr = combinedParamterStr(parameterStr,'searchSec');			
@@ -2864,12 +2938,20 @@ packageId = '';
 }
 //Premium Filter On Change
 var premiumFilterSelect = function(){
+var preboxcomplen = 0;
 	$("select").change(function() {	
+	preboxcomplen = comparePkgIdArr.length;
 		var parameterStr='';
 		premiumFilterSelectedValue = this.value;
 		if((premiumFilterSelectedValue == 'Sports') || (premiumFilterSelectedValue == 'Movies') || (premiumFilterSelectedValue == 'International')){
 		premiumFilterSelectedValue = '';
-		}
+		}   if(isExtPkg != '' && actionType == "markerView" && preboxcomplen == 0){
+				packageId = isExtPkg;
+		    }
+		    packageId = convertPackageId(packageId);
+			if(!isValidPkg && actionType == "markerView" && preboxcomplen == 0){
+			packageId = '';
+			}
 			if(premiumFilterSelectedValue != ''){
 			parameterStr = 'zipcode='+zipcodejs+'&pkgId='+packageId+'&gpId='+premiumFilterSelectedValue+'&actType='+actionType+'&fromPreFilter=true';
 			}else{
@@ -2947,6 +3029,7 @@ var clearAllCategoryFilters = function(){
 var sortOrder='';
 // Sort by Channel Name
 var sortByChannelName = function(){
+var sortcomplen = comparePkgIdArr.length;
 	if(filterOnOfSort == 'true'){
 	sortBy = 'channelName';
 	if(sortOrder == "" || sortOrder == null || sortOrder == "descending"){
@@ -2954,6 +3037,13 @@ var sortByChannelName = function(){
 	}
 	else{
 		sortOrder = "descending";
+	}
+	if(isExtPkg != '' && actionType == "markerView" && sortcomplen == 0){
+		packageId = isExtPkg;
+	}
+	packageId = convertPackageId(packageId);
+	if(!isValidPkg && actionType == "markerView" && sortcomplen == 0){
+		packageId = '';
 	}
 			var parameterStr = '';
 			parameterStr = 'zipcode='+zipcodejs+'&pkgId='+packageId+'&actType='+actionType+'&sortOrder='+sortOrder+'&sortBy='+sortBy;
@@ -2969,6 +3059,7 @@ var sortByChannelName = function(){
 
 // Sort by Channel id
 var sortByChannelId = function(){
+var sortcomplenid = comparePkgIdArr.length;
 	if(filterOnOfSort == 'true'){
 	sortBy = 'channelNumber';
 
@@ -2976,6 +3067,13 @@ var sortByChannelId = function(){
 		sortOrder = "descending";
 	}else{
 		sortOrder = "ascending";
+	}
+	if(isExtPkg != '' && actionType == "markerView" && sortcomplenid == 0){
+		packageId = isExtPkg;
+	}
+	packageId = convertPackageId(packageId);
+	if(!isValidPkg && actionType == "markerView" && sortcomplenid == 0){
+		packageId = '';
 	}
 				var parameterStr = '';
 			parameterStr = 'zipcode='+zipcodejs+'&pkgId='+packageId+'&actType='+actionType+'&sortOrder='+sortOrder+'&sortBy='+sortBy;
@@ -3071,12 +3169,12 @@ var parameterStr='',favSubstr='',actionType = "markerView",webTrFavCount = 0,dna
 		if($("#"+channelLetter).is('.fi')){	
 			  $("#"+channelLetter).removeClass('fi');
 			  $("#"+channelLetter).addClass('fsi');					  
-			webTrendTag('Uverse_ChannelLineup_Favorite_Click',0,'User','DCSext.wtPN','UVerse Channel Lineup Localization Pg','wtChannelName',favChannel,'wtFavoriteAction','Add','wtBuyFlowType','NEW','wtCustType','Consumer','wtCustTypeSub',customerType,'wtChannelCt',webTrFavCount);
+			webTrendTag('Uverse_ChannelLineup_Favorite_Click',0,'User','DCSext.wtPN','UVerse Channel Lineup Localization Pg','wtChannelName',favChannel,'wtFavoriteAction','Add','wtBuyFlowType','DRYLOOP','wtCustType','Consumer','wtCustTypeSub',customerType,'wtChannelCt',webTrFavCount);
 		}
 		else{
 			$("#"+channelLetter).removeClass('fsi');
 			$("#"+channelLetter).addClass('fi');
-			webTrendTag('Uverse_ChannelLineup_Favorite_Click',0,'User','DCSext.wtPN','UVerse Channel Lineup Localization Pg','wtChannelName',favChannel,'wtFavoriteAction','Remove','wtBuyFlowType','NEW','wtCustType','Consumer','wtCustTypeSub',customerType,'wtChannelCt',webTrFavCount);
+			webTrendTag('Uverse_ChannelLineup_Favorite_Click',0,'User','DCSext.wtPN','UVerse Channel Lineup Localization Pg','wtChannelName',favChannel,'wtFavoriteAction','Remove','wtBuyFlowType','DRYLOOP','wtCustType','Consumer','wtCustTypeSub',customerType,'wtChannelCt',webTrFavCount);
 		}
 		
 	}
@@ -3090,7 +3188,7 @@ var createPkgCompareModal = function (){
 	modalError = modalError.replace("'","\'");
 	var packageArray = new Array();
 	var buspkgArr = ["BV/BPO-Deluxe","BV/BPO-Standard","BV/BPO-Basic"]; 
-	var latinoEngArr = ["U450","U300","U200","U100","U-family","U-basic","U450 Latino","U300 Latino","U200 Latino"];
+	var latinoEngArr = ["U450","U300","U200","U-family","U-basic","U450 Latino","U300 Latino","U200 Latino"];
 	if(isBusinessCustomer){
 		packageArray = buspkgArr;
 	}
@@ -3117,7 +3215,10 @@ var createPkgCompareModal = function (){
 	if(isBusinessCustomer){
 	pkgId = packageArray[z].replace("/","");
 	}
-	if(z==1 || z==2){
+	if(z==1){
+	html+='<input type="checkbox" class="itstyln" id="'+pkgId+'1" name="'+pkgId+'"><label class="complabel" for="'+pkgId+'1">'+packageArray[z]+'</label>';
+	}
+	else if(z==2){
 	html+='<input type="checkbox" class="itstyl" id="'+pkgId+'1" name="'+pkgId+'"><label class="complabel" for="'+pkgId+'1">'+packageArray[z]+'</label>';
 	}
 	else{
@@ -3136,7 +3237,8 @@ var createPkgCompareModal = function (){
 	$("#pkgcomparemodal").html(html);
 	//B2C-102752 IE 8 issue
 	if($.browser.msie  && parseInt($.browser.version) == 8){
-	     $(".compcheckbox").css('margin-right','30px');
+		 $(".itstyln").css('margin-left','37px');
+	     $(".compcheckbox").css('margin-right','110px');
 		 $(".complabel:eq(6),.complabel:eq(7)").css('padding-right','18px');
 	  }
 		//PROD1108-234 : to enable the compare button only when a package is selected - START
@@ -3230,6 +3332,59 @@ var inactiveComps=function(){
 	$("#engTab").removeClass('engimg engsel');
 	$("#engTab").addClass('engimg enselfirst');
 }
+var convertPackageId = function(packageId){
+    switch(packageId){
+	case 'UBASIC':
+		packageId="U-basic";
+	break;
+	case 'UFAMILY':
+		packageId="U-family";
+	break;
+	case 'U450LATINO':
+		packageId="U450 Latino";
+	break;
+	case 'U300LATINO':
+		packageId="U300 Latino";
+	break;
+	case 'U200LATINO':
+		packageId="U200 Latino";
+	break;
+	case 'BVBPO-DELUXE':
+		packageId="BV-Deluxe(Business)";
+	break;
+	case 'BVBPO-STANDARD':
+		packageId="BV-Standard(Business)";
+	break;
+	case 'BVBPO-BASIC':
+		packageId="Upublic";
+	break;
+	case 'UFAM':
+		packageId="U-family";
+	break;
+	case 'Ubasic':
+		packageId="U-basic";
+	break;
+	case 'U450LA':
+		packageId="U450 Latino";
+	break;
+	case 'U300LA':
+		packageId="U300 Latino";
+	break;
+	case 'U200la':
+		packageId="U200 Latino";
+	break;
+	case 'BP200':
+		packageId="BV-Deluxe(Business)";
+	break;
+	case 'BVSTAN':
+		packageId="BV-Standard(Business)";
+	break;
+	case 'UPBLC':
+		packageId="Upublic";
+	break;
+	}
+	return packageId;
+}
   $(document).ready(function() {
   if($.browser.mozilla) $("form").attr("autocomplete", "off");
   var parameterStr='';
@@ -3246,16 +3401,25 @@ var inactiveComps=function(){
 	if(packageId == '' || packageId == null ){
 	packageId='';
 	}
-	if(packageId=='UBASIC'){
+	if(packageId == '' || packageId == null ){
+	packageId='';
+	}
+	if(packageId=='UBASIC' || packageId=='Ubasic'){
 	packageId="U-basic";
-	}else if (packageId=='UFAMILY'){
+	}else if (packageId=='UFAMILY' || packageId=='UFAM'){
 	packageId="U-family";
-	}else if (packageId=='U200LATINO'){
+	}else if (packageId=='U200LATINO' || packageId=='U200la'){
 	packageId="U200 Latino";
-	}else if (packageId=='U300LATINO'){
+	}else if (packageId=='U300LATINO' || packageId=='U300LA'){
 	packageId="U300 Latino";
-	}else if (packageId=='U450LATINO'){
+	}else if (packageId=='U450LATINO' || packageId=='U450LA'){
 	packageId="U450 Latino";
+	}else if (packageId=='BVBPO-DELUXE' || packageId=='BP200'){
+	packageId="BV-Deluxe(Business)";
+	}else if (packageId=='BVBPO-STANDARD' || packageId=='BVSTAN'){
+	packageId="BV-Standard(Business)";
+	}else if (packageId=='BVBPO-BASIC' || packageId=='UPBLC'){
+	packageId="Upublic";     	
 	}
 	searchText='';
 	if(searchText == '' || searchText == null ){
@@ -3348,6 +3512,18 @@ var inactiveComps=function(){
 		parameterStr = 'isLatino=Y&'; 
 		outerTabPkId = "U450 Latino";
 		packageId = "U450 Latino";
+	}else if(outerTabPkId == 'Upublic'){
+		outerTabPkId = "BVBPO-Basic";
+	}
+	else if(outerTabPkId == 'BV-Deluxe(Business)'){
+		outerTabPkId = "BVBPO-Deluxe";
+	}
+	else if(outerTabPkId == 'BV-Standard(Business)'){
+		outerTabPkId = "BVBPO-Standard";
+	}
+	if(isBusinessCustomer){
+		$("#dumyLtTab").show();
+		$("#showOnly,#engTab,#latinoTab").hide();
 	}
 	//Code changed for latino CR from shop page for list view
 	if(parameterStr!=''){
@@ -3363,30 +3539,50 @@ var inactiveComps=function(){
 	if(packageId == '' || packageId == null ){
 	packageId='';
 	}
+	if(packageId == '' || packageId == null ){
+	packageId='';
+	}
 	var temp1=new Array();
 	var packageIdArray1=new Array();
 		temp1=packageId.split(",");	
 		for(i=0;i<temp1.length;i++){
-			if(temp1[i]=='UBASIC'){
+			if(temp1[i]=='UBASIC' || temp1[i]=='Ubasic'){
 			temp1[i]="U-basic";
-			}else if (temp1[i]=='UFAMILY'){
+			}else if (temp1[i]=='UFAMILY' || temp1[i]=='UFAM'){
 			temp1[i]="U-family";
-			}else if (temp1[i]=='U200LATINO'){
+			}else if (temp1[i]=='U200LATINO' || temp1[i]=='U200la'){
 			temp1[i]="U200 Latino";
-			}else if (temp1[i]=='U300LATINO'){
+			}else if (temp1[i]=='U300LATINO' || temp1[i]=='U300LA'){
 			temp1[i]="U300 Latino";
-			}else if (temp1[i]=='U450LATINO'){
+			}else if (temp1[i]=='U450LATINO' || temp1[i]=='U450LA'){
 			temp1[i]="U450 Latino";
+			}else if (temp1[i]=='BVBPO-DELUXE' || temp1[i]=='BP200'){
+			temp1[i]="BV-Deluxe(Business)";
+			}else if (temp1[i]=='BVBPO-STANDARD' || temp1[i]=='BVSTAN'){
+			temp1[i]="BV-Standard(Business)";
+			}else if (temp1[i]=='BVBPO-BASIC' || temp1[i]=='UPBLC'){
+			temp1[i]="Upublic";
 			}
 			packageIdArray1[i]=temp1[i];
 		}
 		packageId = packageIdArray1;
 		
 	if(parameterStr!=''){
+	isExtPkg = packageId;
+	//Changed for valid pkg
+	if(!isValidPkg){
+	packageId = '';
+	}
+	//end
 	parameterStr = parameterStr+'zipcode='+zipcodejs+'&locale=en_US&pkgId='+packageId+'&actType=markerView&sortOrder='+sortOrder+'&sortBy='+sortBy+'&searchString='+searchText+'&categoryFilter='+externalFilter+'&gpId='+externalPreFilter;
 	}
 	else{
-	
+	isExtPkg = packageId;
+	//Changed for valid pkg
+	if(!isValidPkg){
+	packageId = '';
+	}
+	//end
 	parameterStr = 'zipcode='+zipcodejs+'&locale=en_US&pkgId='+packageId+'&actType=markerView&sortOrder='+sortOrder+'&sortBy='+sortBy+'&searchString='+searchText+'&categoryFilter='+externalFilter+'&gpId='+externalPreFilter;
 	}
 		if(isBusinessCustomer){
@@ -3420,19 +3616,46 @@ var inactiveComps=function(){
 	packageId='';
 	if(packageId == '' || packageId == null ){
 		packageId='';
-		}
-	
+	}
+	if(packageId == '' || packageId == null ){
+		packageId='';
+	}
 	if(packageId != '' && actionType!='listView'){
 		var tabName = 'Compare Packages';
 		tabName = tabName.replace(/ +/g,"");	
 		packageIdArray[0]=tabName;
 		var temp=new Array();
 		temp=packageId.split(",");	
-		for(i=0;i<temp.length;i++){			
+		for(i=0;i<temp.length;i++){	
+				if(temp[i] == 'UFAMILY' || temp[i] == 'UFAM'){
+				temp[i] = 'U-family';
+				}else if(temp[i] == 'UBASIC' || temp[i] == 'Ubasic'){
+				temp[i] = 'U-basic';
+				}else if(temp[i] == 'U450LATINO' || temp[i] == 'U450LA'){
+				temp[i] = 'U450 Latino';
+				}else if(temp[i] == 'U300LATINO' || temp[i] == 'U300LA'){
+				temp[i] = 'U300 Latino';
+				}else if(temp[i] == 'U200LATINO' || temp[i] == 'U200la'){
+				temp[i] = 'U200 Latino';
+				}else if(temp[i] == 'BVBPO-DELUXE' || temp[i] == 'BP200'){
+				temp[i] = 'BV/BPO-Deluxe';
+				}else if(temp[i] == 'BVBPO-STANDARD' || temp[i] == 'BVSTAN'){
+				temp[i] = 'BV/BPO-Standard';
+				}else if(temp[i] == 'BVBPO-BASIC' || temp[i] == 'UPBLC'){
+				temp[i] = 'BV/BPO-Basic';
+				}
 			packageIdArray[i+1]=temp[i];
 		}
 		inactiveComps();
-	}		
+	}
+	if($.browser.msie  && parseInt($.browser.version) == 7){
+		brChk = true;
+	}
+	//Changed for valid pkg
+	if(!isValidPkg){
+	packageIdArray = '';
+	}
+	//end	
 	createTabs(packageIdArray,isBusinessCustomer,isLatinoFlag);
 	if (actionType == 'listView'){
 	 	 if(outerTabPkId =='U200 Latino'){

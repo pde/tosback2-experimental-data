@@ -1,1246 +1,1133 @@
---2011-12-01 14:38:57--  http://twitter.com/tos
-Resolving twitter.com (twitter.com)... 199.59.149.198, 199.59.149.230, 199.59.148.10
-Connecting to twitter.com (twitter.com)|199.59.149.198|:80... connected.
+--2012-04-14 12:19:13--  http://twitter.com/tos
+Resolving twitter.com... 199.59.148.10, 199.59.148.82, 199.59.150.7
+Connecting to twitter.com|199.59.148.10|:80... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: 28825 (28K) [text/html]
+Length: 28838 (28K) [text/html]
 Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/twitter.com/tos.html'
 
-     0K .......... .......... ........                        100%  820K=0.03s
+     0K .......... .......... ........                        100% 2.32M=0.01s
 
-2011-12-01 14:38:58 (820 KB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/twitter.com/tos.html' saved [28825/28825]
+2012-04-14 12:19:13 (2.32 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/twitter.com/tos.html' saved [28838/28838]
 
---2011-12-01 14:38:58--  http://a3.twimg.com/a/1322681100/images/favicon.ico
-Resolving a3.twimg.com (a3.twimg.com)... 204.2.145.64, 204.2.145.57
-Connecting to a3.twimg.com (a3.twimg.com)|204.2.145.64|:80... connected.
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/favicon.ico
+Resolving a0.twimg.com... 199.96.57.57
+Connecting to a0.twimg.com|199.96.57.57|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 1150 (1.1K) [image/vnd.microsoft.icon]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a3.twimg.com/a/1322681100/images/favicon.ico'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/favicon.ico'
 
-     0K .                                                     100% 82.6M=0s
+     0K .                                                     100%  164M=0s
 
-2011-12-01 14:38:58 (82.6 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a3.twimg.com/a/1322681100/images/favicon.ico' saved [1150/1150]
+2012-04-14 12:19:13 (164 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/favicon.ico' saved [1150/1150]
 
---2011-12-01 14:38:58--  http://a0.twimg.com/a/1322681100/stylesheets/twitter.css?1322504248
-Resolving a0.twimg.com (a0.twimg.com)... 204.2.145.90, 204.2.145.67, 204.2.145.88
-Connecting to a0.twimg.com (a0.twimg.com)|204.2.145.90|:80... connected.
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/stylesheets/twitter.css?1334337170
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
-Length: unspecified [text/css]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/stylesheets/twitter.css?1322504248.css'
+Length: 159826 (156K) [text/css]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/twitter.css?1334337170.css'
 
-     0K .......... .......... .......... .......... ..........  376K
-    50K .......... .......... .......... .......... ..........  549K
-   100K .......... .......... .......... .......... ..........  673K
-   150K ......                                                  859K=0.3s
+     0K .......... .......... .......... .......... .......... 32% 7.39M 0s
+    50K .......... .......... .......... .......... .......... 64% 6.72M 0s
+   100K .......... .......... .......... .......... .......... 96% 7.72M 0s
+   150K ......                                                100% 15.7M=0.02s
 
-2011-12-01 14:38:58 (511 KB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/stylesheets/twitter.css?1322504248.css' saved [159826]
+2012-04-14 12:19:13 (7.41 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/twitter.css?1334337170.css' saved [159826/159826]
 
---2011-12-01 14:38:58--  http://a0.twimg.com/a/1322681100/stylesheets/geo.css?1322504248
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/stylesheets/geo.css?1334337170
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 11714 (11K) [text/css]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/stylesheets/geo.css?1322504248.css'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/geo.css?1334337170.css'
 
-     0K .......... .                                          100% 1.83M=0.006s
+     0K .......... .                                          100% 14.5M=0.001s
 
-2011-12-01 14:38:58 (1.83 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/stylesheets/geo.css?1322504248.css' saved [11714/11714]
+2012-04-14 12:19:13 (14.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/geo.css?1334337170.css' saved [11714/11714]
 
---2011-12-01 14:38:58--  http://a1.twimg.com/a/1322681100/stylesheets/buttons_new.css?1322504248
-Resolving a1.twimg.com (a1.twimg.com)... 204.2.145.65, 204.2.145.49
-Connecting to a1.twimg.com (a1.twimg.com)|204.2.145.65|:80... connected.
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/stylesheets/buttons_new.css?1334337170
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 9640 (9.4K) [text/css]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/stylesheets/buttons_new.css?1322504248.css'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/buttons_new.css?1334337170.css'
 
-     0K .........                                             100%  119M=0s
+     0K .........                                             100% 16.0M=0.001s
 
-2011-12-01 14:38:59 (119 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/stylesheets/buttons_new.css?1322504248.css' saved [9640/9640]
+2012-04-14 12:19:13 (16.0 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/buttons_new.css?1334337170.css' saved [9640/9640]
 
---2011-12-01 14:38:59--  http://a3.twimg.com/a/1322681100/stylesheets/layout_newtwitter.css?1322504248
-Connecting to a3.twimg.com (a3.twimg.com)|204.2.145.64|:80... connected.
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/stylesheets/layout_newtwitter.css?1334337170
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 3452 (3.4K) [text/css]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a3.twimg.com/a/1322681100/stylesheets/layout_newtwitter.css?1322504248.css'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/layout_newtwitter.css?1334337170.css'
 
-     0K ...                                                   100%  241M=0s
+     0K ...                                                   100% 51.9M=0s
 
-2011-12-01 14:38:59 (241 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a3.twimg.com/a/1322681100/stylesheets/layout_newtwitter.css?1322504248.css' saved [3452/3452]
+2012-04-14 12:19:13 (51.9 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/layout_newtwitter.css?1334337170.css' saved [3452/3452]
 
---2011-12-01 14:38:59--  http://a3.twimg.com/a/1322681100/images/bg-clouds.png
-Reusing existing connection to a3.twimg.com:80.
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/bg-clouds.png
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 7637 (7.5K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a3.twimg.com/a/1322681100/images/bg-clouds.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/bg-clouds.png'
 
-     0K .......                                               100%  517K=0.01s
+     0K .......                                               100% 16.6M=0s
 
-2011-12-01 14:38:59 (517 KB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a3.twimg.com/a/1322681100/images/bg-clouds.png' saved [7637/7637]
+2012-04-14 12:19:13 (16.6 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/bg-clouds.png' saved [7637/7637]
 
---2011-12-01 14:38:59--  http://a2.twimg.com/a/1322681100/stylesheets/internal.css?1322504248
-Resolving a2.twimg.com (a2.twimg.com)... 184.169.75.33
-Connecting to a2.twimg.com (a2.twimg.com)|184.169.75.33|:80... connected.
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/stylesheets/internal.css?1334337170
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
-Length: unspecified [text/css]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/stylesheets/internal.css?1322504248.css'
+Length: 5213 (5.1K) [text/css]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/internal.css?1334337170.css'
 
-     0K .....                                                  1.81M=0.003s
+     0K .....                                                 100% 26.1M=0s
 
-2011-12-01 14:38:59 (1.81 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/stylesheets/internal.css?1322504248.css' saved [5213]
+2012-04-14 12:19:13 (26.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/internal.css?1334337170.css' saved [5213/5213]
 
---2011-12-01 14:38:59--  http://a0.twimg.com/a/1322681100/stylesheets/terms.css?1322504248
-Connecting to a0.twimg.com (a0.twimg.com)|204.2.145.90|:80... connected.
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/stylesheets/terms.css?1334337170
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 1832 (1.8K) [text/css]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/stylesheets/terms.css?1322504248.css'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/terms.css?1334337170.css'
 
-     0K .                                                     100%  129M=0s
+     0K .                                                     100%  268M=0s
 
-2011-12-01 14:38:59 (129 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/stylesheets/terms.css?1322504248.css' saved [1832/1832]
+2012-04-14 12:19:13 (268 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/terms.css?1334337170.css' saved [1832/1832]
 
---2011-12-01 14:38:59--  http://a2.twimg.com/a/1322681100/stylesheets/layout_newtwitter_topbar.css?1322504248
-Connecting to a2.twimg.com (a2.twimg.com)|184.169.75.33|:80... connected.
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/stylesheets/layout_newtwitter_topbar.css?1334337170
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
-Length: unspecified [text/css]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/stylesheets/layout_newtwitter_topbar.css?1322504248.css'
+Length: 24423 (24K) [text/css]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/layout_newtwitter_topbar.css?1334337170.css'
 
-     0K .......... .......... ...                              1.83M=0.01s
+     0K .......... .......... ...                             100% 12.1M=0.002s
 
-2011-12-01 14:38:59 (1.83 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/stylesheets/layout_newtwitter_topbar.css?1322504248.css' saved [24423]
+2012-04-14 12:19:13 (12.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/layout_newtwitter_topbar.css?1334337170.css' saved [24423/24423]
 
---2011-12-01 14:38:59--  http://a3.twimg.com/a/1322681100/images/loader.gif
-Connecting to a3.twimg.com (a3.twimg.com)|204.2.145.64|:80... connected.
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/loader.gif
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 759 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a3.twimg.com/a/1322681100/images/loader.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/loader.gif'
 
-     0K                                                       100% 39.4M=0s
+     0K                                                       100%  133M=0s
 
-2011-12-01 14:39:00 (39.4 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a3.twimg.com/a/1322681100/images/loader.gif' saved [759/759]
+2012-04-14 12:19:13 (133 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/loader.gif' saved [759/759]
 
---2011-12-01 14:39:00--  http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js
-Resolving ajax.googleapis.com (ajax.googleapis.com)... 74.125.39.95
-Connecting to ajax.googleapis.com (ajax.googleapis.com)|74.125.39.95|:80... connected.
+--2012-04-14 12:19:13--  http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js
+Resolving ajax.googleapis.com... 173.194.79.95
+Connecting to ajax.googleapis.com|173.194.79.95|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/javascript]
 Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js'
 
-     0K .......... .......... .......... .......... ..........  138K
-    50K ...                                                    4.44M=0.4s
+     0K .......... .......... .......... .......... ..........  698K
+    50K ...                                                    16.2M=0.07s
 
-2011-12-01 14:39:00 (148 KB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js' saved [55026]
+2012-04-14 12:19:13 (748 KB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js' saved [55026]
 
---2011-12-01 14:39:00--  http://a0.twimg.com/a/1322681100/javascripts/twitter.js?1322504248
-Connecting to a0.twimg.com (a0.twimg.com)|204.2.145.90|:80... connected.
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/javascripts/twitter.js?1334337170
+Connecting to a0.twimg.com|199.96.57.57|:80... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/javascripts/twitter.js?1322504248'
+Length: 143724 (140K) [application/javascript]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/javascripts/twitter.js?1334337170'
 
-     0K .......... .......... .......... .......... ..........  427K
-    50K .......... .......... .......... .......... .......... 1.30M
-   100K .......... .......... .......... .......... .          1.56M=0.2s
+     0K .......... .......... .......... .......... .......... 35% 7.73M 0s
+    50K .......... .......... .......... .......... .......... 71% 8.11M 0s
+   100K .......... .......... .......... ..........           100% 8.62M=0.02s
 
-2011-12-01 14:39:01 (783 KB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/javascripts/twitter.js?1322504248' saved [144660]
+2012-04-14 12:19:13 (8.11 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/javascripts/twitter.js?1334337170' saved [143724/143724]
 
---2011-12-01 14:39:01--  http://a2.twimg.com/a/1322681100/javascripts/lib/jquery.tipsy.min.js?1322504248
-Connecting to a2.twimg.com (a2.twimg.com)|184.169.75.33|:80... connected.
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/javascripts/lib/jquery.tipsy.min.js?1334337170
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/javascripts/lib/jquery.tipsy.min.js?1322504248'
+Length: 2332 (2.3K) [application/javascript]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/javascripts/lib/jquery.tipsy.min.js?1334337170'
 
-     0K ..                                                     88.6M=0s
+     0K ..                                                    100%  334M=0s
 
-2011-12-01 14:39:01 (88.6 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/javascripts/lib/jquery.tipsy.min.js?1322504248' saved [2332]
+2012-04-14 12:19:13 (334 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/javascripts/lib/jquery.tipsy.min.js?1334337170' saved [2332/2332]
 
---2011-12-01 14:39:01--  http://www.google.com/jsapi
-Resolving www.google.com (www.google.com)... 74.125.39.99, 74.125.39.103, 74.125.39.104, ...
-Connecting to www.google.com (www.google.com)|74.125.39.99|:80... connected.
+--2012-04-14 12:19:13--  http://www.google.com/jsapi
+Resolving www.google.com... 173.194.79.106, 173.194.79.147, 173.194.79.99, ...
+Connecting to www.google.com|173.194.79.106|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/javascript]
 Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/www.google.com/jsapi'
 
-     0K .......... .......... ..                                123K=0.2s
+     0K .......... .......... ...                               499K=0.05s
 
-2011-12-01 14:39:01 (123 KB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/www.google.com/jsapi' saved [23277]
+2012-04-14 12:19:13 (499 KB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/www.google.com/jsapi' saved [24174]
 
---2011-12-01 14:39:01--  http://a2.twimg.com/a/1322681100/javascripts/lib/gears_init.js?1322504248
-Connecting to a2.twimg.com (a2.twimg.com)|184.169.75.33|:80... connected.
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/javascripts/lib/gears_init.js?1334337170
+Connecting to a0.twimg.com|199.96.57.57|:80... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/javascripts/lib/gears_init.js?1322504248'
+Length: 3392 (3.3K) [application/javascript]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/javascripts/lib/gears_init.js?1334337170'
 
-     0K ...                                                    29.1M=0s
+     0K ...                                                   100% 54.8M=0s
 
-2011-12-01 14:39:01 (29.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/javascripts/lib/gears_init.js?1322504248' saved [3392]
+2012-04-14 12:19:13 (54.8 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/javascripts/lib/gears_init.js?1334337170' saved [3392/3392]
 
---2011-12-01 14:39:01--  http://a3.twimg.com/a/1322681100/javascripts/lib/mustache.js?1322504248
-Connecting to a3.twimg.com (a3.twimg.com)|204.2.145.64|:80... connected.
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/javascripts/lib/mustache.js?1334337170
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 12767 (12K) [application/javascript]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a3.twimg.com/a/1322681100/javascripts/lib/mustache.js?1322504248'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/javascripts/lib/mustache.js?1334337170'
 
-     0K .......... ..                                         100%  401K=0.03s
+     0K .......... ..                                         100% 14.5M=0.001s
 
-2011-12-01 14:39:01 (401 KB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a3.twimg.com/a/1322681100/javascripts/lib/mustache.js?1322504248' saved [12767/12767]
+2012-04-14 12:19:13 (14.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/javascripts/lib/mustache.js?1334337170' saved [12767/12767]
 
---2011-12-01 14:39:01--  http://a2.twimg.com/a/1322681100/javascripts/geov1.js?1322504247
-Connecting to a2.twimg.com (a2.twimg.com)|184.169.75.33|:80... connected.
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/javascripts/geov1.js?1334337169
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/javascripts/geov1.js?1322504247'
+Length: 52387 (51K) [application/javascript]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/javascripts/geov1.js?1334337169'
 
-     0K .......... .......... .......... .......... .......... 1.37M
-    50K .                                                      5.80M=0.04s
+     0K .......... .......... .......... .......... .......... 97% 7.07M 0s
+    50K .                                                     100% 2211G=0.007s
 
-2011-12-01 14:39:01 (1.40 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/javascripts/geov1.js?1322504247' saved [52387]
+2012-04-14 12:19:13 (7.23 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/javascripts/geov1.js?1334337169' saved [52387/52387]
 
---2011-12-01 14:39:01--  http://a2.twimg.com/a/1322681100/javascripts/api.js?1322504247
-Reusing existing connection to a2.twimg.com:80.
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/javascripts/api.js?1334337169
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/javascripts/api.js?1322504247'
+Length: 7407 (7.2K) [application/javascript]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/javascripts/api.js?1334337169'
 
-     0K .......                                                6.25M=0.001s
+     0K .......                                               100% 16.1M=0s
 
-2011-12-01 14:39:01 (6.25 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/javascripts/api.js?1322504247' saved [7405]
+2012-04-14 12:19:13 (16.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/javascripts/api.js?1334337169' saved [7407/7407]
 
---2011-12-01 14:39:01--  http://a2.twimg.com/a/1322681100/javascripts/layout_newtwitter.js?1322504247
-Reusing existing connection to a2.twimg.com:80.
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/javascripts/layout_newtwitter.js?1334337170
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/javascript]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/javascripts/layout_newtwitter.js?1322504247'
+Length: 710 [application/javascript]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/javascripts/layout_newtwitter.js?1334337170'
 
-     0K                                                        50.2M=0s
+     0K                                                       100%  128M=0s
 
-2011-12-01 14:39:01 (50.2 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/javascripts/layout_newtwitter.js?1322504247' saved [710]
+2012-04-14 12:19:13 (128 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/javascripts/layout_newtwitter.js?1334337170' saved [710/710]
 
---2011-12-01 14:39:01--  http://a0.twimg.com/a/1322681100/images/tipsy/tipsy-north.gif
-Connecting to a0.twimg.com (a0.twimg.com)|204.2.145.90|:80... connected.
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/tipsy/tipsy-north.gif
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 3223 (3.1K) [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/tipsy/tipsy-north.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/tipsy/tipsy-north.gif'
 
-     0K ...                                                   100% 2.11M=0.001s
+     0K ...                                                   100%  238M=0s
 
-2011-12-01 14:39:01 (2.11 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/tipsy/tipsy-north.gif' saved [3223/3223]
+2012-04-14 12:19:13 (238 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/tipsy/tipsy-north.gif' saved [3223/3223]
 
---2011-12-01 14:39:01--  http://a0.twimg.com/a/1322681100/images/tipsy/tipsy-south.gif
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/tipsy/tipsy-south.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 3222 (3.1K) [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/tipsy/tipsy-south.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/tipsy/tipsy-south.gif'
 
-     0K ...                                                   100%  228M=0s
+     0K ...                                                   100% 42.4M=0s
 
-2011-12-01 14:39:02 (228 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/tipsy/tipsy-south.gif' saved [3222/3222]
+2012-04-14 12:19:13 (42.4 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/tipsy/tipsy-south.gif' saved [3222/3222]
 
---2011-12-01 14:39:02--  http://a0.twimg.com/a/1322681100/images/tipsy/tipsy-east.gif
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/tipsy/tipsy-east.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 3224 (3.1K) [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/tipsy/tipsy-east.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/tipsy/tipsy-east.gif'
 
-     0K ...                                                   100% 11.6M=0s
+     0K ...                                                   100% 43.3M=0s
 
-2011-12-01 14:39:02 (11.6 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/tipsy/tipsy-east.gif' saved [3224/3224]
+2012-04-14 12:19:13 (43.3 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/tipsy/tipsy-east.gif' saved [3224/3224]
 
---2011-12-01 14:39:02--  http://a0.twimg.com/a/1322681100/images/tipsy/tipsy-west.gif
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/tipsy/tipsy-west.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 3224 (3.1K) [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/tipsy/tipsy-west.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/tipsy/tipsy-west.gif'
 
-     0K ...                                                   100% 9.80M=0s
+     0K ...                                                   100% 41.8M=0s
 
-2011-12-01 14:39:02 (9.80 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/tipsy/tipsy-west.gif' saved [3224/3224]
+2012-04-14 12:19:13 (41.8 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/tipsy/tipsy-west.gif' saved [3224/3224]
 
---2011-12-01 14:39:02--  http://a0.twimg.com/a/1322681100/images/arr2.gif
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/arr2.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 68 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/arr2.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/arr2.gif'
 
-     0K                                                       100% 7.23M=0s
+     0K                                                       100% 12.5M=0s
 
-2011-12-01 14:39:02 (7.23 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/arr2.gif' saved [68/68]
+2012-04-14 12:19:13 (12.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/arr2.gif' saved [68/68]
 
---2011-12-01 14:39:02--  http://a0.twimg.com/a/1322681100/images/verified/verified.png
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/verified/verified.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 592 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/verified/verified.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/verified/verified.png'
 
-     0K                                                       100% 66.7M=0s
+     0K                                                       100%  104M=0s
 
-2011-12-01 14:39:02 (66.7 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/verified/verified.png' saved [592/592]
+2012-04-14 12:19:13 (104 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/verified/verified.png' saved [592/592]
 
---2011-12-01 14:39:02--  http://a0.twimg.com/a/1322681100/images/translator/translator.png
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/translator/translator.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 803 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/translator/translator.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/translator/translator.png'
 
-     0K                                                       100% 88.9M=0s
+     0K                                                       100%  140M=0s
 
-2011-12-01 14:39:02 (88.9 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/translator/translator.png' saved [803/803]
+2012-04-14 12:19:13 (140 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/translator/translator.png' saved [803/803]
 
---2011-12-01 14:39:02--  http://a0.twimg.com/a/1322681100/images/sprite-icons.png
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/sprite-icons.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 16702 (16K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/sprite-icons.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/sprite-icons.png'
 
-     0K .......... ......                                     100%  509K=0.03s
+     0K .......... ......                                     100% 13.5M=0.001s
 
-2011-12-01 14:39:02 (509 KB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/sprite-icons.png' saved [16702/16702]
+2012-04-14 12:19:13 (13.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/sprite-icons.png' saved [16702/16702]
 
---2011-12-01 14:39:02--  http://a0.twimg.com/a/1322681100/images/spinner.gif
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/spinner.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 457 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/spinner.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/spinner.gif'
 
-     0K                                                       100% 40.6M=0s
+     0K                                                       100% 85.1M=0s
 
-2011-12-01 14:39:02 (40.6 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/spinner.gif' saved [457/457]
+2012-04-14 12:19:13 (85.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/spinner.gif' saved [457/457]
 
---2011-12-01 14:39:02--  http://a0.twimg.com/a/1322681100/images/nav_search_submit.png
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/nav_search_submit.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 634 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/nav_search_submit.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/nav_search_submit.png'
 
-     0K                                                       100% 55.5M=0s
+     0K                                                       100%  116M=0s
 
-2011-12-01 14:39:02 (55.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/nav_search_submit.png' saved [634/634]
+2012-04-14 12:19:13 (116 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/nav_search_submit.png' saved [634/634]
 
---2011-12-01 14:39:02--  http://a0.twimg.com/a/1322681100/images/toggle_up_dark.png
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/toggle_up_dark.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 203 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toggle_up_dark.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toggle_up_dark.png'
 
-     0K                                                       100% 22.8M=0s
+     0K                                                       100% 38.0M=0s
 
-2011-12-01 14:39:02 (22.8 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toggle_up_dark.png' saved [203/203]
+2012-04-14 12:19:13 (38.0 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toggle_up_dark.png' saved [203/203]
 
---2011-12-01 14:39:02--  http://a0.twimg.com/a/1322681100/images/toggle_down_dark.png
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/toggle_down_dark.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 202 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toggle_down_dark.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toggle_down_dark.png'
 
-     0K                                                       100% 23.2M=0s
+     0K                                                       100% 37.9M=0s
 
-2011-12-01 14:39:02 (23.2 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toggle_down_dark.png' saved [202/202]
+2012-04-14 12:19:13 (37.9 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toggle_down_dark.png' saved [202/202]
 
---2011-12-01 14:39:02--  http://a0.twimg.com/a/1322681100/images/rss.gif
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/rss.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 408 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/rss.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/rss.gif'
 
-     0K                                                       100% 35.2M=0s
+     0K                                                       100% 75.1M=0s
 
-2011-12-01 14:39:02 (35.2 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/rss.gif' saved [408/408]
+2012-04-14 12:19:13 (75.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/rss.gif' saved [408/408]
 
---2011-12-01 14:39:02--  http://a0.twimg.com/a/1322681100/images/btn_green_arrow.gif
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/btn_green_arrow.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 1849 (1.8K) [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/btn_green_arrow.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/btn_green_arrow.gif'
 
-     0K .                                                     100%  280K=0.006s
+     0K .                                                     100%  265M=0s
 
-2011-12-01 14:39:02 (280 KB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/btn_green_arrow.gif' saved [1849/1849]
+2012-04-14 12:19:13 (265 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/btn_green_arrow.gif' saved [1849/1849]
 
---2011-12-01 14:39:02--  http://a0.twimg.com/a/1322681100/images/btn_green_arrow_small.gif
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/btn_green_arrow_small.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 1563 (1.5K) [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/btn_green_arrow_small.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/btn_green_arrow_small.gif'
 
-     0K .                                                     100% 48.7M=0s
+     0K .                                                     100%  239M=0s
 
-2011-12-01 14:39:02 (48.7 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/btn_green_arrow_small.gif' saved [1563/1563]
+2012-04-14 12:19:13 (239 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/btn_green_arrow_small.gif' saved [1563/1563]
 
---2011-12-01 14:39:02--  http://a0.twimg.com/a/1322681100/images/btn_red_small.gif
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/btn_red_small.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 1370 (1.3K) [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/btn_red_small.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/btn_red_small.gif'
 
-     0K .                                                     100% 47.5M=0s
+     0K .                                                     100%  208M=0s
 
-2011-12-01 14:39:02 (47.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/btn_red_small.gif' saved [1370/1370]
+2012-04-14 12:19:13 (208 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/btn_red_small.gif' saved [1370/1370]
 
---2011-12-01 14:39:02--  http://a0.twimg.com/a/1322681100/images/divot.gif
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/divot.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 49 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/divot.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/divot.gif'
 
-     0K                                                       100% 3.49M=0s
+     0K                                                       100% 8.90M=0s
 
-2011-12-01 14:39:02 (3.49 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/divot.gif' saved [49/49]
+2012-04-14 12:19:13 (8.90 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/divot.gif' saved [49/49]
 
---2011-12-01 14:39:02--  http://a0.twimg.com/a/1322681100/images/round-btn.gif
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/round-btn.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 2470 (2.4K) [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/round-btn.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/round-btn.gif'
 
-     0K ..                                                    100% 13.2M=0s
+     0K ..                                                    100% 37.8M=0s
 
-2011-12-01 14:39:03 (13.2 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/round-btn.gif' saved [2470/2470]
+2012-04-14 12:19:13 (37.8 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/round-btn.gif' saved [2470/2470]
 
---2011-12-01 14:39:03--  http://a0.twimg.com/a/1322681100/images/round-btn-hover.gif
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/round-btn-hover.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 2470 (2.4K) [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/round-btn-hover.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/round-btn-hover.gif'
 
-     0K ..                                                    100% 3.84M=0.001s
+     0K ..                                                    100% 47.4M=0s
 
-2011-12-01 14:39:03 (3.84 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/round-btn-hover.gif' saved [2470/2470]
+2012-04-14 12:19:13 (47.4 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/round-btn-hover.gif' saved [2470/2470]
 
---2011-12-01 14:39:03--  http://a0.twimg.com/a/1322681100/images/larry-shadowed-big.png
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/larry-shadowed-big.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 3809 (3.7K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/larry-shadowed-big.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/larry-shadowed-big.png'
 
-     0K ...                                                   100% 22.1M=0s
+     0K ...                                                   100% 47.8M=0s
 
-2011-12-01 14:39:03 (22.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/larry-shadowed-big.png' saved [3809/3809]
+2012-04-14 12:19:13 (47.8 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/larry-shadowed-big.png' saved [3809/3809]
 
---2011-12-01 14:39:03--  http://a0.twimg.com/a/1322681100/images/larry-shadowed-big.gif
+--2012-04-14 12:19:13--  http://a0.twimg.com/a/1334333797/images/larry-shadowed-big.gif
 Reusing existing connection to a0.twimg.com:80.
-HTTP request sent, awaiting response... 403 Forbidden
-2011-12-01 14:39:03 ERROR 403: Forbidden.
+HTTP request sent, awaiting response... 404 Forbidden
+2012-04-14 12:19:14 ERROR 404: Forbidden.
 
---2011-12-01 14:39:03--  http://a0.twimg.com/a/1322681100/images/bg-btn-signup_gold.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/bg-btn-signup_gold.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 341 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/bg-btn-signup_gold.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/bg-btn-signup_gold.png'
 
-     0K                                                       100% 35.1M=0s
+     0K                                                       100% 63.2M=0s
 
-2011-12-01 14:39:03 (35.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/bg-btn-signup_gold.png' saved [341/341]
+2012-04-14 12:19:14 (63.2 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/bg-btn-signup_gold.png' saved [341/341]
 
---2011-12-01 14:39:03--  http://a0.twimg.com/a/1322681100/images/icon-mobile.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/icon-mobile.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 66 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/icon-mobile.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/icon-mobile.gif'
 
-     0K                                                       100% 5.93M=0s
+     0K                                                       100% 12.2M=0s
 
-2011-12-01 14:39:03 (5.93 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/icon-mobile.gif' saved [66/66]
+2012-04-14 12:19:14 (12.2 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/icon-mobile.gif' saved [66/66]
 
---2011-12-01 14:39:03--  http://a0.twimg.com/a/1322681100/images/trendtip-pointer.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/trendtip-pointer.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 63 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/trendtip-pointer.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/trendtip-pointer.gif'
 
-     0K                                                       100% 7.22M=0s
+     0K                                                       100% 11.5M=0s
 
-2011-12-01 14:39:03 (7.22 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/trendtip-pointer.gif' saved [63/63]
+2012-04-14 12:19:14 (11.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/trendtip-pointer.gif' saved [63/63]
 
---2011-12-01 14:39:03--  http://a0.twimg.com/a/1322681100/images/toggle_closed.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/toggle_closed.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 70 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toggle_closed.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toggle_closed.gif'
 
-     0K                                                       100% 7.72M=0s
+     0K                                                       100% 12.8M=0s
 
-2011-12-01 14:39:03 (7.72 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toggle_closed.gif' saved [70/70]
+2012-04-14 12:19:14 (12.8 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toggle_closed.gif' saved [70/70]
 
---2011-12-01 14:39:03--  http://a0.twimg.com/a/1322681100/images/toggle_opened.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/toggle_opened.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 68 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toggle_opened.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toggle_opened.gif'
 
-     0K                                                       100% 7.48M=0s
+     0K                                                       100% 12.3M=0s
 
-2011-12-01 14:39:03 (7.48 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toggle_opened.gif' saved [68/68]
+2012-04-14 12:19:14 (12.3 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toggle_opened.gif' saved [68/68]
 
---2011-12-01 14:39:03--  http://a0.twimg.com/a/1322681100/images/checkmark.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/checkmark.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 64 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/checkmark.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/checkmark.gif'
 
-     0K                                                       100% 5.66M=0s
+     0K                                                       100% 11.5M=0s
 
-2011-12-01 14:39:03 (5.66 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/checkmark.gif' saved [64/64]
+2012-04-14 12:19:14 (11.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/checkmark.gif' saved [64/64]
 
---2011-12-01 14:39:03--  http://a0.twimg.com/a/1322681100/images/icon_lock.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/icon_lock.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 226 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/icon_lock.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/icon_lock.gif'
 
-     0K                                                       100% 23.2M=0s
+     0K                                                       100% 42.0M=0s
 
-2011-12-01 14:39:03 (23.2 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/icon_lock.gif' saved [226/226]
+2012-04-14 12:19:14 (42.0 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/icon_lock.gif' saved [226/226]
 
---2011-12-01 14:39:03--  http://a0.twimg.com/a/1322681100/images/verified/verified_small.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/verified/verified_small.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 324 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/verified/verified_small.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/verified/verified_small.png'
 
-     0K                                                       100% 49.5M=0s
+     0K                                                       100% 59.2M=0s
 
-2011-12-01 14:39:03 (49.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/verified/verified_small.png' saved [324/324]
+2012-04-14 12:19:14 (59.2 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/verified/verified_small.png' saved [324/324]
 
---2011-12-01 14:39:03--  http://a0.twimg.com/a/1322681100/images/btn-bg.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/btn-bg.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 593 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/btn-bg.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/btn-bg.gif'
 
-     0K                                                       100% 54.7M=0s
+     0K                                                       100%  110M=0s
 
-2011-12-01 14:39:03 (54.7 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/btn-bg.gif' saved [593/593]
+2012-04-14 12:19:14 (110 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/btn-bg.gif' saved [593/593]
 
---2011-12-01 14:39:03--  http://a0.twimg.com/a/1322681100/images/icon-check.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/icon-check.gif
 Reusing existing connection to a0.twimg.com:80.
-HTTP request sent, awaiting response... 403 Forbidden
-2011-12-01 14:39:03 ERROR 403: Forbidden.
+HTTP request sent, awaiting response... 404 Forbidden
+2012-04-14 12:19:14 ERROR 404: Forbidden.
 
---2011-12-01 14:39:03--  http://a0.twimg.com/a/1322681100/images/icon-check2.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/icon-check2.gif
 Reusing existing connection to a0.twimg.com:80.
-HTTP request sent, awaiting response... 403 Forbidden
-2011-12-01 14:39:04 ERROR 403: Forbidden.
+HTTP request sent, awaiting response... 404 Forbidden
+2012-04-14 12:19:14 ERROR 404: Forbidden.
 
---2011-12-01 14:39:04--  http://a0.twimg.com/a/1322681100/images/icon-lock.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/icon-lock.png
 Reusing existing connection to a0.twimg.com:80.
-HTTP request sent, awaiting response... 403 Forbidden
-2011-12-01 14:39:04 ERROR 403: Forbidden.
+HTTP request sent, awaiting response... 404 Forbidden
+2012-04-14 12:19:14 ERROR 404: Forbidden.
 
---2011-12-01 14:39:04--  http://a0.twimg.com/a/1322681100/images/lock_icon_small.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/lock_icon_small.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 238 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/lock_icon_small.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/lock_icon_small.png'
 
-     0K                                                       100% 21.1M=0s
+     0K                                                       100% 43.2M=0s
 
-2011-12-01 14:39:04 (21.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/lock_icon_small.png' saved [238/238]
+2012-04-14 12:19:14 (43.2 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/lock_icon_small.png' saved [238/238]
 
---2011-12-01 14:39:04--  http://a0.twimg.com/a/1322681100/images/icon_reply.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/icon_reply.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 336 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/icon_reply.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/icon_reply.gif'
 
-     0K                                                       100% 31.5M=0s
+     0K                                                       100% 61.8M=0s
 
-2011-12-01 14:39:04 (31.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/icon_reply.gif' saved [336/336]
+2012-04-14 12:19:14 (61.8 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/icon_reply.gif' saved [336/336]
 
---2011-12-01 14:39:04--  http://a0.twimg.com/a/1322681100/images/divider.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/divider.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 180 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/divider.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/divider.png'
 
-     0K                                                       100% 18.9M=0s
+     0K                                                       100% 33.1M=0s
 
-2011-12-01 14:39:04 (18.9 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/divider.png' saved [180/180]
+2012-04-14 12:19:14 (33.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/divider.png' saved [180/180]
 
---2011-12-01 14:39:04--  http://a0.twimg.com/a/1322681100/images/warning-sign.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/warning-sign.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 4043 (3.9K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/warning-sign.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/warning-sign.png'
 
-     0K ...                                                   100% 5.87M=0.001s
+     0K ...                                                   100% 20.4M=0s
 
-2011-12-01 14:39:04 (5.87 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/warning-sign.png' saved [4043/4043]
+2012-04-14 12:19:14 (20.4 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/warning-sign.png' saved [4043/4043]
 
---2011-12-01 14:39:04--  http://a0.twimg.com/a/1322681100/phoenix/img/sprite-icons.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/phoenix/img/sprite-icons.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 19149 (19K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/phoenix/img/sprite-icons.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/phoenix/img/sprite-icons.png'
 
-     0K .......... ........                                   100%  415K=0.05s
+     0K .......... ........                                   100% 13.6M=0.001s
 
-2011-12-01 14:39:04 (415 KB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/phoenix/img/sprite-icons.png' saved [19149/19149]
+2012-04-14 12:19:14 (13.6 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/phoenix/img/sprite-icons.png' saved [19149/19149]
 
---2011-12-01 14:39:04--  http://a0.twimg.com/a/1322681100/images/tables/tablesorter-indicators.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/tables/tablesorter-indicators.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 351 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/tables/tablesorter-indicators.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/tables/tablesorter-indicators.png'
 
-     0K                                                       100% 30.4M=0s
+     0K                                                       100% 61.9M=0s
 
-2011-12-01 14:39:04 (30.4 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/tables/tablesorter-indicators.png' saved [351/351]
+2012-04-14 12:19:14 (61.9 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/tables/tablesorter-indicators.png' saved [351/351]
 
---2011-12-01 14:39:04--  http://a0.twimg.com/a/1322681100/images/dialog_arrows_sprite.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/dialog_arrows_sprite.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 1299 (1.3K) [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/dialog_arrows_sprite.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/dialog_arrows_sprite.gif'
 
-     0K .                                                     100%  104M=0s
+     0K .                                                     100%  201M=0s
 
-2011-12-01 14:39:04 (104 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/dialog_arrows_sprite.gif' saved [1299/1299]
+2012-04-14 12:19:14 (201 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/dialog_arrows_sprite.gif' saved [1299/1299]
 
---2011-12-01 14:39:04--  http://a0.twimg.com/a/1322681100/images/ajax.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/ajax.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 1737 (1.7K) [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/ajax.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/ajax.gif'
 
-     0K .                                                     100% 57.9M=0s
+     0K .                                                     100%  256M=0s
 
-2011-12-01 14:39:04 (57.9 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/ajax.gif' saved [1737/1737]
+2012-04-14 12:19:14 (256 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/ajax.gif' saved [1737/1737]
 
---2011-12-01 14:39:04--  http://a0.twimg.com/a/1322681100/images/icon_add.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/icon_add.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 3174 (3.1K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/icon_add.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/icon_add.png'
 
-     0K ...                                                   100% 23.8M=0s
+     0K ...                                                   100% 42.3M=0s
 
-2011-12-01 14:39:04 (23.8 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/icon_add.png' saved [3174/3174]
+2012-04-14 12:19:14 (42.3 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/icon_add.png' saved [3174/3174]
 
---2011-12-01 14:39:04--  http://a0.twimg.com/a/1322681100/images/icon_remove.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/icon_remove.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 3195 (3.1K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/icon_remove.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/icon_remove.png'
 
-     0K ...                                                   100% 1.41M=0.002s
+     0K ...                                                   100% 41.5M=0s
 
-2011-12-01 14:39:04 (1.41 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/icon_remove.png' saved [3195/3195]
+2012-04-14 12:19:14 (41.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/icon_remove.png' saved [3195/3195]
 
---2011-12-01 14:39:04--  http://a0.twimg.com/a/1322681100/images/petal_spinner.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/petal_spinner.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 3971 (3.9K) [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/petal_spinner.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/petal_spinner.gif'
 
-     0K ...                                                   100% 12.0M=0s
+     0K ...                                                   100% 20.1M=0s
 
-2011-12-01 14:39:04 (12.0 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/petal_spinner.gif' saved [3971/3971]
+2012-04-14 12:19:14 (20.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/petal_spinner.gif' saved [3971/3971]
 
---2011-12-01 14:39:04--  http://a0.twimg.com/a/1322681100/images/inline-media.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/inline-media.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 30034 (29K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/inline-media.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/inline-media.png'
 
-     0K .......... .......... .........                       100%  662K=0.04s
+     0K .......... .......... .........                       100% 9.67M=0.003s
 
-2011-12-01 14:39:05 (662 KB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/inline-media.png' saved [30034/30034]
+2012-04-14 12:19:14 (9.67 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/inline-media.png' saved [30034/30034]
 
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/icon_throbber.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/icon_throbber.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 864 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/icon_throbber.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/icon_throbber.gif'
 
-     0K                                                       100% 79.3M=0s
+     0K                                                       100%  160M=0s
 
-2011-12-01 14:39:05 (79.3 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/icon_throbber.gif' saved [864/864]
+2012-04-14 12:19:14 (160 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/icon_throbber.gif' saved [864/864]
 
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/icon_trash.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/icon_trash.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 148 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/icon_trash.gif'
-
-     0K                                                       100% 15.2M=0s
-
-2011-12-01 14:39:05 (15.2 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/icon_trash.gif' saved [148/148]
-
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/icon_direct_reply.gif
-Reusing existing connection to a0.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 371 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/icon_direct_reply.gif'
-
-     0K                                                       100% 33.7M=0s
-
-2011-12-01 14:39:05 (33.7 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/icon_direct_reply.gif' saved [371/371]
-
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/close_small.png
-Reusing existing connection to a0.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 202 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/close_small.png'
-
-     0K                                                       100% 17.3M=0s
-
-2011-12-01 14:39:05 (17.3 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/close_small.png' saved [202/202]
-
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/more.gif
-Reusing existing connection to a0.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 129 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/more.gif'
-
-     0K                                                       100% 11.8M=0s
-
-2011-12-01 14:39:05 (11.8 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/more.gif' saved [129/129]
-
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/commercial/garuda-overlay.gif
-Reusing existing connection to a0.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 162 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/commercial/garuda-overlay.gif'
-
-     0K                                                       100% 14.9M=0s
-
-2011-12-01 14:39:05 (14.9 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/commercial/garuda-overlay.gif' saved [162/162]
-
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/toptweet-overlay.gif
-Reusing existing connection to a0.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 295 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toptweet-overlay.gif'
-
-     0K                                                       100% 24.6M=0s
-
-2011-12-01 14:39:05 (24.6 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toptweet-overlay.gif' saved [295/295]
-
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/sprite-icons.png?v3
-Reusing existing connection to a0.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 16702 (16K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/sprite-icons.png?v3'
-
-     0K .......... ......                                     100% 1.71M=0.009s
-
-2011-12-01 14:39:05 (1.71 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/sprite-icons.png?v3' saved [16702/16702]
-
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/arr-inline-form.gif
-Reusing existing connection to a0.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 68 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/arr-inline-form.gif'
-
-     0K                                                       100% 6.47M=0s
-
-2011-12-01 14:39:05 (6.47 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/arr-inline-form.gif' saved [68/68]
-
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/retweet/retweet-x.png
-Reusing existing connection to a0.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 221 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/retweet/retweet-x.png'
-
-     0K                                                       100% 19.1M=0s
-
-2011-12-01 14:39:05 (19.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/retweet/retweet-x.png' saved [221/221]
-
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/arrow_right_dark.png
-Reusing existing connection to a0.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 290 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/arrow_right_dark.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/icon_trash.gif'
 
      0K                                                       100% 27.1M=0s
 
-2011-12-01 14:39:05 (27.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/arrow_right_dark.png' saved [290/290]
+2012-04-14 12:19:14 (27.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/icon_trash.gif' saved [148/148]
 
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/thumb-bird-bw.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/icon_direct_reply.gif
+Reusing existing connection to a0.twimg.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 371 [image/gif]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/icon_direct_reply.gif'
+
+     0K                                                       100% 70.5M=0s
+
+2012-04-14 12:19:14 (70.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/icon_direct_reply.gif' saved [371/371]
+
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/close_small.png
+Reusing existing connection to a0.twimg.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 202 [image/png]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/close_small.png'
+
+     0K                                                       100% 38.1M=0s
+
+2012-04-14 12:19:14 (38.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/close_small.png' saved [202/202]
+
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/more.gif
+Reusing existing connection to a0.twimg.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 129 [image/gif]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/more.gif'
+
+     0K                                                       100% 23.6M=0s
+
+2012-04-14 12:19:14 (23.6 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/more.gif' saved [129/129]
+
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/commercial/garuda-overlay.gif
+Reusing existing connection to a0.twimg.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 162 [image/gif]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/commercial/garuda-overlay.gif'
+
+     0K                                                       100% 29.4M=0s
+
+2012-04-14 12:19:14 (29.4 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/commercial/garuda-overlay.gif' saved [162/162]
+
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/toptweet-overlay.gif
+Reusing existing connection to a0.twimg.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 295 [image/gif]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toptweet-overlay.gif'
+
+     0K                                                       100% 54.6M=0s
+
+2012-04-14 12:19:14 (54.6 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toptweet-overlay.gif' saved [295/295]
+
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/sprite-icons.png?v3
+Reusing existing connection to a0.twimg.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 16702 (16K) [image/png]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/sprite-icons.png?v3'
+
+     0K .......... ......                                     100% 13.5M=0.001s
+
+2012-04-14 12:19:14 (13.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/sprite-icons.png?v3' saved [16702/16702]
+
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/arr-inline-form.gif
+Reusing existing connection to a0.twimg.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 68 [image/gif]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/arr-inline-form.gif'
+
+     0K                                                       100% 12.7M=0s
+
+2012-04-14 12:19:14 (12.7 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/arr-inline-form.gif' saved [68/68]
+
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/retweet/retweet-x.png
+Reusing existing connection to a0.twimg.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 221 [image/png]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/retweet/retweet-x.png'
+
+     0K                                                       100% 38.4M=0s
+
+2012-04-14 12:19:14 (38.4 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/retweet/retweet-x.png' saved [221/221]
+
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/arrow_right_dark.png
+Reusing existing connection to a0.twimg.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: 290 [image/png]
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/arrow_right_dark.png'
+
+     0K                                                       100% 53.7M=0s
+
+2012-04-14 12:19:14 (53.7 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/arrow_right_dark.png' saved [290/290]
+
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/thumb-bird-bw.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 972 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/thumb-bird-bw.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/thumb-bird-bw.gif'
 
-     0K                                                       100% 80.7M=0s
+     0K                                                       100%  175M=0s
 
-2011-12-01 14:39:05 (80.7 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/thumb-bird-bw.gif' saved [972/972]
+2012-04-14 12:19:14 (175 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/thumb-bird-bw.gif' saved [972/972]
 
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/buttons/bg-btn.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/buttons/bg-btn.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 594 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn.gif'
 
-     0K                                                       100% 50.3M=0s
+     0K                                                       100%  105M=0s
 
-2011-12-01 14:39:05 (50.3 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn.gif' saved [594/594]
+2012-04-14 12:19:14 (105 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn.gif' saved [594/594]
 
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/buttons/bg-btn-light.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/buttons/bg-btn-light.gif
 Reusing existing connection to a0.twimg.com:80.
-HTTP request sent, awaiting response... 403 Forbidden
-2011-12-01 14:39:05 ERROR 403: Forbidden.
+HTTP request sent, awaiting response... 404 Forbidden
+2012-04-14 12:19:14 ERROR 404: Forbidden.
 
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/buttons/bg-btn-dark.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/buttons/bg-btn-dark.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 612 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn-dark.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn-dark.gif'
 
-     0K                                                       100% 54.5M=0s
+     0K                                                       100%  115M=0s
 
-2011-12-01 14:39:05 (54.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn-dark.gif' saved [612/612]
+2012-04-14 12:19:14 (115 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn-dark.gif' saved [612/612]
 
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/buttons/bg-btn-blue.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/buttons/bg-btn-blue.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 635 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn-blue.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn-blue.gif'
 
-     0K                                                       100% 58.8M=0s
+     0K                                                       100%  117M=0s
 
-2011-12-01 14:39:05 (58.8 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn-blue.gif' saved [635/635]
+2012-04-14 12:19:14 (117 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn-blue.gif' saved [635/635]
 
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/buttons/bg-btn-chart.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/buttons/bg-btn-chart.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 589 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn-chart.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn-chart.gif'
 
-     0K                                                       100% 51.5M=0s
+     0K                                                       100%  108M=0s
 
-2011-12-01 14:39:05 (51.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn-chart.gif' saved [589/589]
+2012-04-14 12:19:14 (108 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn-chart.gif' saved [589/589]
 
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/buttons/bg-btn-mint.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/buttons/bg-btn-mint.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 605 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn-mint.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn-mint.gif'
 
-     0K                                                       100% 55.2M=0s
+     0K                                                       100%  110M=0s
 
-2011-12-01 14:39:05 (55.2 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn-mint.gif' saved [605/605]
+2012-04-14 12:19:14 (110 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn-mint.gif' saved [605/605]
 
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/buttons/bg-btn-green.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/buttons/bg-btn-green.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 600 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn-green.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn-green.gif'
 
-     0K                                                       100% 56.4M=0s
+     0K                                                       100%  113M=0s
 
-2011-12-01 14:39:05 (56.4 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn-green.gif' saved [600/600]
+2012-04-14 12:19:14 (113 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn-green.gif' saved [600/600]
 
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/buttons/bg-btn-pink.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/buttons/bg-btn-pink.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 609 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn-pink.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn-pink.gif'
 
-     0K                                                       100% 49.5M=0s
+     0K                                                       100%  114M=0s
 
-2011-12-01 14:39:05 (49.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn-pink.gif' saved [609/609]
+2012-04-14 12:19:14 (114 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn-pink.gif' saved [609/609]
 
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/buttons/bg-btn-red.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/buttons/bg-btn-red.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 592 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn-red.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn-red.gif'
 
-     0K                                                       100% 55.6M=0s
+     0K                                                       100%  106M=0s
 
-2011-12-01 14:39:05 (55.6 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn-red.gif' saved [592/592]
+2012-04-14 12:19:14 (106 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn-red.gif' saved [592/592]
 
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/buttons/bg-btn-yellow.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/buttons/bg-btn-yellow.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 947 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn-yellow.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn-yellow.gif'
 
-     0K                                                       100% 87.6M=0s
+     0K                                                       100%  178M=0s
 
-2011-12-01 14:39:05 (87.6 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/buttons/bg-btn-yellow.gif' saved [947/947]
+2012-04-14 12:19:14 (178 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/buttons/bg-btn-yellow.gif' saved [947/947]
 
---2011-12-01 14:39:05--  http://a0.twimg.com/a/1322681100/images/geo_firefox_help_banner_back.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/geo_firefox_help_banner_back.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 23468 (23K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/geo_firefox_help_banner_back.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/geo_firefox_help_banner_back.png'
 
-     0K .......... .......... ..                              100%  486K=0.05s
+     0K .......... .......... ..                              100% 12.5M=0.002s
 
-2011-12-01 14:39:06 (486 KB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/geo_firefox_help_banner_back.png' saved [23468/23468]
+2012-04-14 12:19:14 (12.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/geo_firefox_help_banner_back.png' saved [23468/23468]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/geo_chrome_help_banner_back.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/geo_chrome_help_banner_back.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 10820 (11K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/geo_chrome_help_banner_back.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/geo_chrome_help_banner_back.png'
 
-     0K ..........                                            100% 4.20M=0.002s
+     0K ..........                                            100% 15.1M=0.001s
 
-2011-12-01 14:39:06 (4.20 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/geo_chrome_help_banner_back.png' saved [10820/10820]
+2012-04-14 12:19:14 (15.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/geo_chrome_help_banner_back.png' saved [10820/10820]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/geo_ie_gtb_help_banner_back.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/geo_ie_gtb_help_banner_back.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 16552 (16K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/geo_ie_gtb_help_banner_back.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/geo_ie_gtb_help_banner_back.png'
 
-     0K .......... ......                                     100% 2.29M=0.007s
+     0K .......... ......                                     100% 13.4M=0.001s
 
-2011-12-01 14:39:06 (2.29 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/geo_ie_gtb_help_banner_back.png' saved [16552/16552]
+2012-04-14 12:19:14 (13.4 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/geo_ie_gtb_help_banner_back.png' saved [16552/16552]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/geo_creation_hint_arrow.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/geo_creation_hint_arrow.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 114 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/geo_creation_hint_arrow.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/geo_creation_hint_arrow.gif'
 
-     0K                                                       100% 12.0M=0s
+     0K                                                       100% 21.6M=0s
 
-2011-12-01 14:39:06 (12.0 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/geo_creation_hint_arrow.gif' saved [114/114]
+2012-04-14 12:19:14 (21.6 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/geo_creation_hint_arrow.gif' saved [114/114]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/oauth2/gradient-background.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/oauth2/gradient-background.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 346 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/oauth2/gradient-background.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/oauth2/gradient-background.png'
 
-     0K                                                       100% 36.2M=0s
+     0K                                                       100% 60.1M=0s
 
-2011-12-01 14:39:06 (36.2 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/oauth2/gradient-background.png' saved [346/346]
+2012-04-14 12:19:14 (60.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/oauth2/gradient-background.png' saved [346/346]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/oauth2/connect_129px.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/oauth2/connect_129px.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 4409 (4.3K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/oauth2/connect_129px.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/oauth2/connect_129px.png'
 
-     0K ....                                                  100% 1.27M=0.003s
+     0K ....                                                  100% 21.6M=0s
 
-2011-12-01 14:39:06 (1.27 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/oauth2/connect_129px.png' saved [4409/4409]
+2012-04-14 12:19:14 (21.6 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/oauth2/connect_129px.png' saved [4409/4409]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/oauth2/connect_146px.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/oauth2/connect_146px.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 5132 (5.0K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/oauth2/connect_146px.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/oauth2/connect_146px.png'
 
-     0K .....                                                 100% 43.5M=0s
+     0K .....                                                 100% 25.2M=0s
 
-2011-12-01 14:39:06 (43.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/oauth2/connect_146px.png' saved [5132/5132]
+2012-04-14 12:19:14 (25.2 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/oauth2/connect_146px.png' saved [5132/5132]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/oauth2/connect_170px.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/oauth2/connect_170px.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 5870 (5.7K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/oauth2/connect_170px.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/oauth2/connect_170px.png'
 
-     0K .....                                                 100% 5.54M=0.001s
+     0K .....                                                 100% 17.5M=0s
 
-2011-12-01 14:39:06 (5.54 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/oauth2/connect_170px.png' saved [5870/5870]
+2012-04-14 12:19:14 (17.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/oauth2/connect_170px.png' saved [5870/5870]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/oauth2/connect_236px.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/oauth2/connect_236px.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 8909 (8.7K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/oauth2/connect_236px.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/oauth2/connect_236px.png'
 
-     0K ........                                              100% 2.55M=0.003s
+     0K ........                                              100% 15.2M=0.001s
 
-2011-12-01 14:39:06 (2.55 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/oauth2/connect_236px.png' saved [8909/8909]
+2012-04-14 12:19:14 (15.2 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/oauth2/connect_236px.png' saved [8909/8909]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/oauth2/rays-box.jpg
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/oauth2/rays-box.jpg
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 4641 (4.5K) [image/jpeg]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/oauth2/rays-box.jpg'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/oauth2/rays-box.jpg'
 
-     0K ....                                                  100% 8.73M=0.001s
+     0K ....                                                  100% 22.6M=0s
 
-2011-12-01 14:39:06 (8.73 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/oauth2/rays-box.jpg' saved [4641/4641]
+2012-04-14 12:19:14 (22.6 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/oauth2/rays-box.jpg' saved [4641/4641]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/oauth2/t_170px.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/oauth2/t_170px.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 392 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/oauth2/t_170px.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/oauth2/t_170px.png'
 
-     0K                                                       100% 36.4M=0s
+     0K                                                       100% 71.7M=0s
 
-2011-12-01 14:39:06 (36.4 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/oauth2/t_170px.png' saved [392/392]
+2012-04-14 12:19:14 (71.7 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/oauth2/t_170px.png' saved [392/392]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/oauth2/check.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/oauth2/check.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 215 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/oauth2/check.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/oauth2/check.png'
 
-     0K                                                       100% 19.6M=0s
+     0K                                                       100% 39.9M=0s
 
-2011-12-01 14:39:06 (19.6 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/oauth2/check.png' saved [215/215]
+2012-04-14 12:19:14 (39.9 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/oauth2/check.png' saved [215/215]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/divvy.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/divvy.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 206 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/divvy.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/divvy.png'
 
-     0K                                                       100% 19.2M=0s
+     0K                                                       100% 37.8M=0s
 
-2011-12-01 14:39:06 (19.2 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/divvy.png' saved [206/206]
+2012-04-14 12:19:14 (37.8 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/divvy.png' saved [206/206]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/divvy-up.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/divvy-up.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 198 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/divvy-up.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/divvy-up.png'
 
-     0K                                                       100% 20.4M=0s
+     0K                                                       100% 36.6M=0s
 
-2011-12-01 14:39:06 (20.4 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/divvy-up.png' saved [198/198]
+2012-04-14 12:19:14 (36.6 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/divvy-up.png' saved [198/198]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/divvy.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/divvy.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 99 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/divvy.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/divvy.gif'
 
-     0K                                                       100% 8.17M=0s
+     0K                                                       100% 18.9M=0s
 
-2011-12-01 14:39:06 (8.17 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/divvy.gif' saved [99/99]
+2012-04-14 12:19:14 (18.9 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/divvy.gif' saved [99/99]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/toggle_down_light.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/toggle_down_light.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 214 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toggle_down_light.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toggle_down_light.png'
 
-     0K                                                       100% 19.5M=0s
+     0K                                                       100% 39.0M=0s
 
-2011-12-01 14:39:06 (19.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toggle_down_light.png' saved [214/214]
+2012-04-14 12:19:14 (39.0 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toggle_down_light.png' saved [214/214]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/toggle_down_light.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/toggle_down_light.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 154 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toggle_down_light.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toggle_down_light.gif'
 
-     0K                                                       100% 13.9M=0s
+     0K                                                       100% 29.4M=0s
 
-2011-12-01 14:39:06 (13.9 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toggle_down_light.gif' saved [154/154]
+2012-04-14 12:19:14 (29.4 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toggle_down_light.gif' saved [154/154]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/toggle_down_dark.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/toggle_down_dark.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 150 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toggle_down_dark.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toggle_down_dark.gif'
 
-     0K                                                       100% 21.3M=0s
+     0K                                                       100% 27.5M=0s
 
-2011-12-01 14:39:06 (21.3 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toggle_down_dark.gif' saved [150/150]
+2012-04-14 12:19:14 (27.5 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toggle_down_dark.gif' saved [150/150]
 
---2011-12-01 14:39:06--  http://a0.twimg.com/a/1322681100/images/toggle_up_dark.gif
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/toggle_up_dark.gif
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 150 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toggle_up_dark.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toggle_up_dark.gif'
 
-     0K                                                       100% 13.0M=0s
+     0K                                                       100% 28.3M=0s
 
-2011-12-01 14:39:07 (13.0 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/toggle_up_dark.gif' saved [150/150]
+2012-04-14 12:19:14 (28.3 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/toggle_up_dark.gif' saved [150/150]
 
---2011-12-01 14:39:07--  http://a0.twimg.com/a/1322681100/images/bg-btn-blue.png
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/bg-btn-blue.png
 Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 343 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/bg-btn-blue.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/bg-btn-blue.png'
 
-     0K                                                       100% 29.0M=0s
+     0K                                                       100% 62.8M=0s
 
-2011-12-01 14:39:07 (29.0 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/bg-btn-blue.png' saved [343/343]
+2012-04-14 12:19:14 (62.8 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/bg-btn-blue.png' saved [343/343]
 
---2011-12-01 14:39:07--  http://a1.twimg.com/a/1322681100/images/buttons/bg-btn.gif
-Connecting to a1.twimg.com (a1.twimg.com)|204.2.145.65|:80... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 594 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/buttons/bg-btn.gif'
-
-     0K                                                       100% 49.0M=0s
-
-2011-12-01 14:39:07 (49.0 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/buttons/bg-btn.gif' saved [594/594]
-
---2011-12-01 14:39:07--  http://a1.twimg.com/a/1322681100/images/sprite-icons.png
-Reusing existing connection to a1.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 16702 (16K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/sprite-icons.png'
-
-     0K .......... ......                                     100%  234K=0.07s
-
-2011-12-01 14:39:07 (234 KB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/sprite-icons.png' saved [16702/16702]
-
---2011-12-01 14:39:07--  http://a1.twimg.com/a/1322681100/images/oauth2/gradient-background.png
-Reusing existing connection to a1.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 346 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/oauth2/gradient-background.png'
-
-     0K                                                       100% 32.3M=0s
-
-2011-12-01 14:39:07 (32.3 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/oauth2/gradient-background.png' saved [346/346]
-
---2011-12-01 14:39:07--  http://a1.twimg.com/a/1322681100/images/oauth2/connect_129px.png
-Reusing existing connection to a1.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 4409 (4.3K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/oauth2/connect_129px.png'
-
-     0K ....                                                  100% 3.67M=0.001s
-
-2011-12-01 14:39:07 (3.67 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/oauth2/connect_129px.png' saved [4409/4409]
-
---2011-12-01 14:39:07--  http://a1.twimg.com/a/1322681100/images/oauth2/connect_146px.png
-Reusing existing connection to a1.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 5132 (5.0K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/oauth2/connect_146px.png'
-
-     0K .....                                                 100% 8.33M=0.001s
-
-2011-12-01 14:39:07 (8.33 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/oauth2/connect_146px.png' saved [5132/5132]
-
---2011-12-01 14:39:07--  http://a1.twimg.com/a/1322681100/images/oauth2/connect_170px.png
-Reusing existing connection to a1.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 5870 (5.7K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/oauth2/connect_170px.png'
-
-     0K .....                                                 100% 1.32M=0.004s
-
-2011-12-01 14:39:07 (1.32 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/oauth2/connect_170px.png' saved [5870/5870]
-
---2011-12-01 14:39:07--  http://a1.twimg.com/a/1322681100/images/oauth2/connect_236px.png
-Reusing existing connection to a1.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 8909 (8.7K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/oauth2/connect_236px.png'
-
-     0K ........                                              100% 3.93M=0.002s
-
-2011-12-01 14:39:07 (3.93 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/oauth2/connect_236px.png' saved [8909/8909]
-
---2011-12-01 14:39:07--  http://a1.twimg.com/a/1322681100/images/oauth2/rays-box.jpg
-Reusing existing connection to a1.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 4641 (4.5K) [image/jpeg]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/oauth2/rays-box.jpg'
-
-     0K ....                                                  100% 7.91M=0.001s
-
-2011-12-01 14:39:07 (7.91 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/oauth2/rays-box.jpg' saved [4641/4641]
-
---2011-12-01 14:39:07--  http://a1.twimg.com/a/1322681100/images/oauth2/t_170px.png
-Reusing existing connection to a1.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 392 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/oauth2/t_170px.png'
-
-     0K                                                       100% 42.8M=0s
-
-2011-12-01 14:39:07 (42.8 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/oauth2/t_170px.png' saved [392/392]
-
---2011-12-01 14:39:07--  http://a1.twimg.com/a/1322681100/images/oauth2/check.png
-Reusing existing connection to a1.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 215 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/oauth2/check.png'
-
-     0K                                                       100% 22.1M=0s
-
-2011-12-01 14:39:07 (22.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/images/oauth2/check.png' saved [215/215]
-
---2011-12-01 14:39:07--  http://a2.twimg.com/a/1322681100/images/jobs/next.png
-Connecting to a2.twimg.com (a2.twimg.com)|184.169.75.33|:80... connected.
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/jobs/next.png
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 616 [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/images/jobs/next.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/jobs/next.png'
 
-     0K                                                       100% 66.4M=0s
+     0K                                                       100%  109M=0s
 
-2011-12-01 14:39:07 (66.4 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/images/jobs/next.png' saved [616/616]
+2012-04-14 12:19:14 (109 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/jobs/next.png' saved [616/616]
 
---2011-12-01 14:39:07--  http://a0.twimg.com/a/1322681100/images/arrow-small-right.gif
-Connecting to a0.twimg.com (a0.twimg.com)|204.2.145.90|:80... connected.
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/arrow-small-right.gif
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 75 [image/gif]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/arrow-small-right.gif'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/arrow-small-right.gif'
 
-     0K                                                       100% 6.39M=0s
+     0K                                                       100% 13.9M=0s
 
-2011-12-01 14:39:07 (6.39 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/images/arrow-small-right.gif' saved [75/75]
+2012-04-14 12:19:14 (13.9 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/arrow-small-right.gif' saved [75/75]
 
---2011-12-01 14:39:07--  http://a2.twimg.com/a/1322681100/phoenix/img/twitter_logo_right.png
-Connecting to a2.twimg.com (a2.twimg.com)|184.169.75.33|:80... connected.
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/phoenix/img/twitter_logo_right.png
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 1046 (1.0K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/phoenix/img/twitter_logo_right.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/phoenix/img/twitter_logo_right.png'
 
-     0K .                                                     100% 83.8M=0s
+     0K .                                                     100%  179M=0s
 
-2011-12-01 14:39:07 (83.8 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/phoenix/img/twitter_logo_right.png' saved [1046/1046]
+2012-04-14 12:19:14 (179 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/phoenix/img/twitter_logo_right.png' saved [1046/1046]
 
---2011-12-01 14:39:07--  http://a2.twimg.com/a/1322681100/phoenix/img/sprite-icons.png
-Reusing existing connection to a2.twimg.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 19149 (19K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/phoenix/img/sprite-icons.png'
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/img/sprite-icons.png
+Reusing existing connection to a0.twimg.com:80.
+HTTP request sent, awaiting response... 404 Forbidden
+2012-04-14 12:19:14 ERROR 404: Forbidden.
 
-     0K .......... ........                                   100%  998K=0.02s
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/img/toggle_down_light.png
+Reusing existing connection to a0.twimg.com:80.
+HTTP request sent, awaiting response... 404 Forbidden
+2012-04-14 12:19:14 ERROR 404: Forbidden.
 
-2011-12-01 14:39:07 (998 KB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/phoenix/img/sprite-icons.png' saved [19149/19149]
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/img/toggle_up_light.png
+Reusing existing connection to a0.twimg.com:80.
+HTTP request sent, awaiting response... 404 Forbidden
+2012-04-14 12:19:14 ERROR 404: Forbidden.
 
---2011-12-01 14:39:07--  http://a2.twimg.com/a/1322681100/img/sprite-icons.png
-Reusing existing connection to a2.twimg.com:80.
-HTTP request sent, awaiting response... 403 Forbidden
-2011-12-01 14:39:08 ERROR 403: Forbidden.
-
---2011-12-01 14:39:08--  http://a2.twimg.com/a/1322681100/img/toggle_down_light.png
-Reusing existing connection to a2.twimg.com:80.
-HTTP request sent, awaiting response... 403 Forbidden
-2011-12-01 14:39:08 ERROR 403: Forbidden.
-
---2011-12-01 14:39:08--  http://a2.twimg.com/a/1322681100/img/toggle_up_light.png
-Reusing existing connection to a2.twimg.com:80.
-HTTP request sent, awaiting response... 403 Forbidden
-2011-12-01 14:39:08 ERROR 403: Forbidden.
-
---2011-12-01 14:39:08--  http://a2.twimg.com/a/1322681100/images/twitter_logo_header-2.png
-Reusing existing connection to a2.twimg.com:80.
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/images/twitter_logo_header-2.png
+Reusing existing connection to a0.twimg.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 2118 (2.1K) [image/png]
-Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/images/twitter_logo_header-2.png'
+Saving to: `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/twitter_logo_header-2.png'
 
-     0K ..                                                    100% 46.1M=0s
+     0K ..                                                    100%  310M=0s
 
-2011-12-01 14:39:08 (46.1 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/images/twitter_logo_header-2.png' saved [2118/2118]
+2012-04-14 12:19:14 (310 MB/s) - `code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/images/twitter_logo_header-2.png' saved [2118/2118]
 
---2011-12-01 14:39:08--  http://a2.twimg.com/a/1322681100/img/twitter_logo_right.png
-Reusing existing connection to a2.twimg.com:80.
-HTTP request sent, awaiting response... 403 Forbidden
-2011-12-01 14:39:08 ERROR 403: Forbidden.
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/img/twitter_logo_right.png
+Reusing existing connection to a0.twimg.com:80.
+HTTP request sent, awaiting response... 404 Forbidden
+2012-04-14 12:19:14 ERROR 404: Forbidden.
 
---2011-12-01 14:39:08--  http://a2.twimg.com/a/1322681100/img/light.png
-Reusing existing connection to a2.twimg.com:80.
-HTTP request sent, awaiting response... 403 Forbidden
-2011-12-01 14:39:08 ERROR 403: Forbidden.
+--2012-04-14 12:19:14--  http://a0.twimg.com/a/1334333797/img/light.png
+Reusing existing connection to a0.twimg.com:80.
+HTTP request sent, awaiting response... 404 Forbidden
+2012-04-14 12:19:14 ERROR 404: Forbidden.
 
-FINISHED --2011-12-01 14:39:08--
-Total wall clock time: 11s
-Downloaded: 117 files, 831K in 1.5s (562 KB/s)
+FINISHED --2012-04-14 12:19:14--
+Total wall clock time: 0.8s
+Downloaded: 106 files, 767K in 0.2s (3.86 MB/s)
 Converting code/../crawls/twitter.com/Terms-of-Service/raw/twitter.com/tos.html... 24-17
-Converting code/../crawls/twitter.com/Terms-of-Service/raw/a3.twimg.com/a/1322681100/stylesheets/layout_newtwitter.css?1322504248.css... nothing to do.
-Converting code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/stylesheets/twitter.css?1322504248.css... 154-5
-Converting code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/stylesheets/internal.css?1322504248.css... 4-0
-Converting code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/stylesheets/terms.css?1322504248.css... 1-0
-Converting code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1322681100/stylesheets/geo.css?1322504248.css... 21-0
-Converting code/../crawls/twitter.com/Terms-of-Service/raw/a2.twimg.com/a/1322681100/stylesheets/layout_newtwitter_topbar.css?1322504248.css... 5-10
-Converting code/../crawls/twitter.com/Terms-of-Service/raw/a1.twimg.com/a/1322681100/stylesheets/buttons_new.css?1322504248.css... 14-0
-Converted 8 files in 0.06 seconds.
+Converting code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/layout_newtwitter.css?1334337170.css... nothing to do.
+Converting code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/layout_newtwitter_topbar.css?1334337170.css... 5-10
+Converting code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/geo.css?1334337170.css... 21-0
+Converting code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/internal.css?1334337170.css... 4-0
+Converting code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/terms.css?1334337170.css... 1-0
+Converting code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/twitter.css?1334337170.css... 154-5
+Converting code/../crawls/twitter.com/Terms-of-Service/raw/a0.twimg.com/a/1334333797/stylesheets/buttons_new.css?1334337170.css... 14-0
+Converted 8 files in 0.01 seconds.

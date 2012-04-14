@@ -23,7 +23,7 @@ min-height:310px; padding:10px}
 .center{ text-align:center }
 
 /* UI Change
-.link_primary {background: url(../images/buttons/btn_blue_caged_arrow.gif) no-repeat; float:left; color:#067ab4; padding-left: 20px; text-decoration:none;	font-size:11px; height:15px;} */
+.link_primary {background: url(/esupport/images/buttons/btn_blue_caged_arrow.gif) no-repeat; float:left; color:#067ab4; padding-left: 20px; text-decoration:none;	font-size:11px; height:15px;} */
 
 .col_182 {border:1px solid #CCCCCC; display:inline; float:left; margin-bottom:10px; margin-left:10px; position:relative; width:180px;}
 
@@ -121,7 +121,7 @@ ul#icon_bullet_chat li {background:transparent url(../images/bullet-3x3.gif) no-
 
 #supportTopics li {float:left;}
 
-#supportTopics li {background:transparent url(../images/buttons/btn-small-white-caged-arrow.gif) no-repeat scroll 0 3px; padding-bottom:0.6em; padding-left:18px;}*/
+#supportTopics li {background:transparent url(/esupport/images/buttons/btn-small-white-caged-arrow.gif) no-repeat scroll 0 3px; padding-bottom:0.6em; padding-left:18px;}*/
 /* hiding for UI Change 
 .first_230 { position:relative!important; float:left; display:inline; width:228px; max-width: 228px; clear:left; border:1px solid #ccc; margin-bottom:10px}*/
 h4 {color:#656565; font-size:12px; font-weight:bold; line-height:14px; margin-bottom:5px;}
@@ -178,7 +178,7 @@ div.first_230 {
 }
 div.kiosk_3tile, div.kiosk_2tile {
     height: 239px;
-    width: 464px;
+   /* width: 464px;*/
 }
 /* UI Change for new UI 14-02-2011 Start */
 

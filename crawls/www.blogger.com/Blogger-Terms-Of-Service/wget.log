@@ -1,211 +1,120 @@
---2011-12-01 14:38:51--  http://www.blogger.com/terms.g
-Resolving www.blogger.com (www.blogger.com)... 74.125.39.191
-Connecting to www.blogger.com (www.blogger.com)|74.125.39.191|:80... connected.
+--2012-04-14 12:19:32--  http://www.blogger.com/terms.g
+Resolving www.blogger.com... 173.194.79.191
+Connecting to www.blogger.com|173.194.79.191|:80... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: http://www.google.com/accounts/TOS [following]
+--2012-04-14 12:19:32--  http://www.google.com/accounts/TOS
+Resolving www.google.com... 173.194.79.104, 173.194.79.105, 173.194.79.106, ...
+Connecting to www.google.com|173.194.79.104|:80... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: http://www.google.com/intl/en/policies/terms/ [following]
+--2012-04-14 12:19:32--  http://www.google.com/intl/en/policies/terms/
+Reusing existing connection to www.google.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/html]
 Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/terms.g.html'
 
-     0K .......... ......                                      93.9K=0.2s
+     0K .......... ....                                         614K=0.02s
 
-2011-12-01 14:38:52 (93.9 KB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/terms.g.html' saved [16506]
+2012-04-14 12:19:32 (614 KB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/terms.g.html' saved [15091]
 
---2011-12-01 14:38:52--  http://fonts.googleapis.com/css?family=Open+Sans:300
-Resolving fonts.googleapis.com (fonts.googleapis.com)... 74.125.39.95
-Connecting to fonts.googleapis.com (fonts.googleapis.com)|74.125.39.95|:80... connected.
+--2012-04-14 12:19:32--  http://www.google.com/js/gweb/analytics/autotrack.js
+Reusing existing connection to www.google.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/javascript]
+Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.google.com/js/gweb/analytics/autotrack.js'
+
+     0K ...                                                    60.7M=0s
+
+2012-04-14 12:19:32 (60.7 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.google.com/js/gweb/analytics/autotrack.js' saved [4072]
+
+--2012-04-14 12:19:32--  http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin
+Resolving fonts.googleapis.com... 173.194.79.95
+Connecting to fonts.googleapis.com|173.194.79.95|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/css]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/fonts.googleapis.com/css?family=Open+Sans:300.css'
+Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin.css'
 
-     0K                                                        29.3M=0s
+     0K .                                                       105M=0s
 
-2011-12-01 14:38:52 (29.3 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/fonts.googleapis.com/css?family=Open+Sans:300.css' saved [279]
+2012-04-14 12:19:32 (105 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin.css' saved [1108]
 
---2011-12-01 14:38:52--  http://www.blogger.com/static/v1/v-css/498211308-new_ui_static_pages.css
-Connecting to www.blogger.com (www.blogger.com)|74.125.39.191|:80... connected.
+--2012-04-14 12:19:32--  http://www.google.com/policies/css/default.css
+Connecting to www.google.com|173.194.79.104|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/css]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/static/v1/v-css/498211308-new_ui_static_pages.css'
+Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.google.com/policies/css/default.css'
 
-     0K .......... .......... .                                 115K=0.2s
+     0K ..                                                      202M=0s
 
-2011-12-01 14:38:53 (115 KB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/static/v1/v-css/498211308-new_ui_static_pages.css' saved [21617]
+2012-04-14 12:19:32 (202 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.google.com/policies/css/default.css' saved [2189]
 
---2011-12-01 14:38:53--  http://img1.blogblog.com/img/new-ui/blogger-logo-small.png
-Resolving img1.blogblog.com (img1.blogblog.com)... 74.125.39.191
-Reusing existing connection to www.blogger.com:80.
+--2012-04-14 12:19:32--  http://www.google.com/images/logos/google_logo_41.png
+Reusing existing connection to www.google.com:80.
 HTTP request sent, awaiting response... 200 OK
-Length: 2106 (2.1K) [image/png]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/img1.blogblog.com/img/new-ui/blogger-logo-small.png'
+Length: 6321 (6.2K) [image/png]
+Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.google.com/images/logos/google_logo_41.png'
 
-     0K ..                                                    100% 52.6M=0s
+     0K ......                                                100% 26.4M=0s
 
-2011-12-01 14:38:53 (52.6 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/img1.blogblog.com/img/new-ui/blogger-logo-small.png' saved [2106/2106]
+2012-04-14 12:19:32 (26.4 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.google.com/images/logos/google_logo_41.png' saved [6321/6321]
 
---2011-12-01 14:38:53--  http://themes.googleusercontent.com/static/fonts/opensans/v5/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf
-Resolving themes.googleusercontent.com (themes.googleusercontent.com)... 74.125.39.132
-Connecting to themes.googleusercontent.com (themes.googleusercontent.com)|74.125.39.132|:80... connected.
+--2012-04-14 12:19:32--  http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf
+Resolving themes.googleusercontent.com... 74.125.224.108, 74.125.224.106, 74.125.224.107
+Connecting to themes.googleusercontent.com|74.125.224.108|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [font/ttf]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/themes.googleusercontent.com/static/fonts/opensans/v5/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf'
+Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf'
 
-     0K .......... .......... .......... ......                 157K=0.2s
+     0K .......... .......... .......... .....                 5.18M=0.007s
 
-2011-12-01 14:38:54 (157 KB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/themes.googleusercontent.com/static/fonts/opensans/v5/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf' saved [37816]
+2012-04-14 12:19:32 (5.18 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf' saved [36492]
 
---2011-12-01 14:38:54--  http://www.blogger.com/img/features/features_icon_template.png
-Connecting to www.blogger.com (www.blogger.com)|74.125.39.191|:80... connected.
+--2012-04-14 12:19:32--  http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf
+Reusing existing connection to themes.googleusercontent.com:80.
 HTTP request sent, awaiting response... 200 OK
-Length: 6531 (6.4K) [image/png]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_template.png'
+Length: unspecified [font/ttf]
+Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf'
 
-     0K ......                                                100%  954K=0.007s
+     0K .......... .......... .......... ......                8.59M=0.004s
 
-2011-12-01 14:38:54 (954 KB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_template.png' saved [6531/6531]
+2012-04-14 12:19:32 (8.59 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf' saved [37816]
 
---2011-12-01 14:38:54--  http://www.blogger.com/img/features/features_icon_post.png
-Reusing existing connection to www.blogger.com:80.
+--2012-04-14 12:19:32--  http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf
+Reusing existing connection to themes.googleusercontent.com:80.
 HTTP request sent, awaiting response... 200 OK
-Length: 1654 (1.6K) [image/png]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_post.png'
+Length: unspecified [font/ttf]
+Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf'
 
-     0K .                                                     100%  118M=0s
+     0K .......... .......... .......... .......               9.42M=0.004s
 
-2011-12-01 14:38:54 (118 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_post.png' saved [1654/1654]
+2012-04-14 12:19:32 (9.42 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf' saved [38108]
 
---2011-12-01 14:38:54--  http://www.blogger.com/img/features/features_icon_easy.png
-Reusing existing connection to www.blogger.com:80.
+--2012-04-14 12:19:32--  http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf
+Reusing existing connection to themes.googleusercontent.com:80.
 HTTP request sent, awaiting response... 200 OK
-Length: 872 [image/png]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_easy.png'
+Length: unspecified [font/ttf]
+Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf'
 
-     0K                                                       100%  135M=0s
+     0K .......... .......... .......... ......                10.4M=0.003s
 
-2011-12-01 14:38:55 (135 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_easy.png' saved [872/872]
+2012-04-14 12:19:32 (10.4 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf' saved [37568]
 
---2011-12-01 14:38:55--  http://www.blogger.com/img/features/features_icon_url.png
-Reusing existing connection to www.blogger.com:80.
+--2012-04-14 12:19:32--  http://www.google.com/css/maia.css
+Connecting to www.google.com|173.194.79.104|:80... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: 800 [image/png]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_url.png'
+Length: unspecified [text/css]
+Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.google.com/css/maia.css'
 
-     0K                                                       100% 56.7M=0s
+     0K .......... .......... .......... ........               800K=0.05s
 
-2011-12-01 14:38:55 (56.7 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_url.png' saved [800/800]
+2012-04-14 12:19:32 (800 KB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.google.com/css/maia.css' saved [39496]
 
---2011-12-01 14:38:55--  http://www.blogger.com/img/features/features_icon_photos.png
-Reusing existing connection to www.blogger.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 1527 (1.5K) [image/png]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_photos.png'
-
-     0K .                                                     100%  142M=0s
-
-2011-12-01 14:38:55 (142 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_photos.png' saved [1527/1527]
-
---2011-12-01 14:38:55--  http://www.blogger.com/img/features/features_icon_earn.png
-Reusing existing connection to www.blogger.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 6300 (6.2K) [image/png]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_earn.png'
-
-     0K ......                                                100% 8.25M=0.001s
-
-2011-12-01 14:38:55 (8.25 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_earn.png' saved [6300/6300]
-
---2011-12-01 14:38:55--  http://www.blogger.com/img/features/features_icon_followers.png
-Reusing existing connection to www.blogger.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 1901 (1.9K) [image/png]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_followers.png'
-
-     0K .                                                     100%  168M=0s
-
-2011-12-01 14:38:56 (168 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_followers.png' saved [1901/1901]
-
---2011-12-01 14:38:56--  http://www.blogger.com/img/features/features_icon_feedback.png
-Reusing existing connection to www.blogger.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 1323 (1.3K) [image/png]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_feedback.png'
-
-     0K .                                                     100%  107M=0s
-
-2011-12-01 14:38:56 (107 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_feedback.png' saved [1323/1323]
-
---2011-12-01 14:38:56--  http://www.blogger.com/img/features/features_icon_identity.png
-Reusing existing connection to www.blogger.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 1106 (1.1K) [image/png]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_identity.png'
-
-     0K .                                                     100%  174K=0.006s
-
-2011-12-01 14:38:56 (174 KB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_identity.png' saved [1106/1106]
-
---2011-12-01 14:38:56--  http://www.blogger.com/img/features/features_icon_notify.png
-Reusing existing connection to www.blogger.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 1477 (1.4K) [image/png]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_notify.png'
-
-     0K .                                                     100%  128M=0s
-
-2011-12-01 14:38:56 (128 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_notify.png' saved [1477/1477]
-
---2011-12-01 14:38:56--  http://www.blogger.com/img/features/features_icon_languages.png
-Reusing existing connection to www.blogger.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 1254 (1.2K) [image/png]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_languages.png'
-
-     0K .                                                     100%  249K=0.005s
-
-2011-12-01 14:38:57 (249 KB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_languages.png' saved [1254/1254]
-
---2011-12-01 14:38:57--  http://www.blogger.com/img/features/features_icon_pages.png
-Reusing existing connection to www.blogger.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 6767 (6.6K) [image/png]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_pages.png'
-
-     0K ......                                                100% 3.56M=0.002s
-
-2011-12-01 14:38:57 (3.56 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_pages.png' saved [6767/6767]
-
---2011-12-01 14:38:57--  http://www.blogger.com/img/features/features_icon_onthego.png
-Reusing existing connection to www.blogger.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 1410 (1.4K) [image/png]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_onthego.png'
-
-     0K .                                                     100%  112M=0s
-
-2011-12-01 14:38:57 (112 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_onthego.png' saved [1410/1410]
-
---2011-12-01 14:38:57--  http://www.blogger.com/img/features/features_icon_group.png
-Reusing existing connection to www.blogger.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 1206 (1.2K) [image/png]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_group.png'
-
-     0K .                                                     100%  112M=0s
-
-2011-12-01 14:38:57 (112 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_group.png' saved [1206/1206]
-
---2011-12-01 14:38:57--  http://www.blogger.com/img/features/features_icon_3rdparty.png
-Reusing existing connection to www.blogger.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 960 [image/png]
-Saving to: `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_3rdparty.png'
-
-     0K                                                       100% 97.6M=0s
-
-2011-12-01 14:38:57 (97.6 MB/s) - `code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/img/features/features_icon_3rdparty.png' saved [960/960]
-
-FINISHED --2011-12-01 14:38:57--
-Total wall clock time: 6.4s
-Downloaded: 20 files, 111K in 0.6s (181 KB/s)
-Converting code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/terms.g.html... 5-9
-Converting code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/fonts.googleapis.com/css?family=Open+Sans:300.css... 1-0
-Converting code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/static/v1/v-css/498211308-new_ui_static_pages.css... 15-0
-Converted 3 files in 0.003 seconds.
+FINISHED --2012-04-14 12:19:32--
+Total wall clock time: 0.5s
+Downloaded: 10 files, 213K in 0.09s (2.29 MB/s)
+Converting code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.blogger.com/terms.g.html... 4-9
+Converting code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.google.com/css/maia.css... nothing to do.
+Converting code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin.css... 4-0
+Converting code/../crawls/www.blogger.com/Blogger-Terms-Of-Service/raw/www.google.com/policies/css/default.css... 1-0
+Converted 4 files in 0.002 seconds.

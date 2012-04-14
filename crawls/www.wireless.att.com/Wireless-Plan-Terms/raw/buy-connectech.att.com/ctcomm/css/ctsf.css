@@ -36,7 +36,7 @@ input, textarea, select{border:1px solid #ccc; vertical-align:middle; background
 #wrapper{background: url(../../images/page_topSlice.gif) #ededed no-repeat left top; margin: 10px auto 0px; width: 985px; padding-top: 5px; height: 100%;}
 
 /**** UNIVERSAL NAV CONTAINER ****/
-#universalNav{position:relative; top:0; left:0; background:url(https://buy-connectech.att.com/images/buttons/btn_back.jpg) bottom repeat-x; width:973px; text-align:right; height:3.0em}
+#universalNav{position:relative; top:0; left:0; background:url(../../images/buttons/btn_back.jpg) bottom repeat-x; width:973px; text-align:right; height:3.0em}
 
 /**** TOP NAV ****/
 .topNav {font-family:verdana;font-size:10px;padding:0;float:right;Color: #0a94d6;margin:0;margin-top:9px;}
@@ -101,7 +101,7 @@ ul.middleNav li.headerUser{border:0;padding-right:10px;color:#FF7200;}
 #loginPage #right ul {font-size:11px; float:left; width:420px; padding: 0px 20px 15px; }
 #loginUsername , #loginPassword {display:inline-block;}
 #loginPage #loginDisclaimer {font-size:10px; font-family: verdana; color:#858585;margin:0px 0 0 10px; clear:both;}
-#loginPage .quesIcon {margin-top:-5px; width:18px; height:30px; position:absolute; background:url('https://buy-connectech.att.com/images/ques.png') no-repeat 0 0; display:inline;}
+#loginPage .quesIcon {margin-top:-5px; width:18px; height:30px; position:absolute; background:url('../../images/ques.png') no-repeat 0 0; display:inline;}
 #loginPage ul li {padding: 10px 0px; }
 #loginInput,#password {height: 16px;}
 #loginPage #left ul li#submitBtn input#loginBtn {background:url('../../images/buttons/btn_login.gif') no-repeat; width:92px; height:24px; border:0; position:relative; top:0; color:#fff; padding-bottom:5px;float:left;}
@@ -717,7 +717,8 @@ ul.middleNav li.headerUser{border:0;padding-right:10px;color:#FF7200;}
 	.contact table tr{border-bottom: 1px solid #333;padding-bottom: 15px;}
 	.contact table tr.last{border-bottom: 0px;}
 	.contact table caption {font-size:12px;}
-	.contact table tr td {padding:5px 5px 10px; font-size:11px; width: 50%;}
+	.contact table tr td {padding:10px 5px; font-size:11px; width: 50%;border-bottom: 1px solid #858585;}
+	.contact table tr td p {margin:0;}
 	.contact-nav {margin:5px 0 0 0;cursor: pointer;float:left;position:relative;display:block;height:135px;width:950px;clear:both;overflow:hidden;}
 	.contact-nav li {vertical-align: middle;padding: 10px 0px 0px;width: 310px;height:125px;text-align:center;float:left;margin-right: 10px;font: 12px Verdana, Helvetica, sans-serif;color: #585858; background: transparent url(../../images/contact_box_back.gif) 0 0 no-repeat;}
 	.contact-nav li.last {margin-right: 0px;}
@@ -1142,6 +1143,8 @@ ul.middleNav li.headerUser{border:0;padding-right:10px;color:#FF7200;}
 	
 	/*----------------------Review and submit order----------*/
 	.productDisclaimer{font:10px verdana; color:#858585;margin:15px 0px 0px 10px;}
+	.productDisclaimer ul li{list-style-type: disc;list-style-position: inside;}
+	.productDisclaimer ol li{list-style-type: decimal;list-style-position: inside;}
 	.productDisclaimerTitle{font-weight:bold;}
 	.productDisclaimerContent{font:10px verdana; color:#858585;margin-left:10px;margin-top:5px;}
 	.cartProductDisclaimer{font:10px verdana; color:#858585;margin:10px 0 0px 0px;}
@@ -1210,14 +1213,14 @@ ul.middleNav li.headerUser{border:0;padding-right:10px;color:#FF7200;}
 	.errorContainerSmall{background:url(../../images/ErrorBGSmall.png) no-repeat left top;}
 	.errorDetailsSmall{background:url(../../images/ErrorBGSmall.png) no-repeat left bottom;}
 	.errorValueSmall{width:705px;}	
-	.errorContainerFull{background:url(https://buy-connectech.att.com/images/ErrorBGFull.png) no-repeat left top;}
-	.errorDetailsFull{background:url(https://buy-connectech.att.com/images/ErrorBGFull.png) no-repeat left bottom;}
+	.errorContainerFull{background:url(../../images/ErrorBGFull.png) no-repeat left top;}
+	.errorDetailsFull{background:url(../../images/ErrorBGFull.png) no-repeat left bottom;}
 	.errorValueFull{width:875px;}
 	.errorContainerCatalog{background:url(../../images/ErrorBGCatalog.png) no-repeat left top;}
 	.errorDetailsCatalog{background:url(../../images/ErrorBGCatalog.png) no-repeat left bottom;}
 	.errorValueCatalog{width:685px;}
-	.errorContainerSubCategory{background:url(https://buy-connectech.att.com/images/ErrorBGSubCategory.png) no-repeat left top;}
-	.errorDetailsSubCategory{background:url(https://buy-connectech.att.com/images/ErrorBGSubCategory.png) no-repeat left bottom;}
+	.errorContainerSubCategory{background:url(../../images/ErrorBGSubCategory.png) no-repeat left top;}
+	.errorDetailsSubCategory{background:url(../../images/ErrorBGSubCategory.png) no-repeat left bottom;}
 	.errorValueSubCategory{width:645px;}
 	.errorColor{color:#cc0000;}
 	.errorContainerUpdate{background:url(../../images/ErrorBGUpdate.png) no-repeat left top;}

@@ -129,6 +129,11 @@ width:275px;
 	margin:0;
 	width:765px;
 }
+
+.w463 li {
+	list-style-position:outside;
+margin-left:14px;	
+}
 /* shopping help shadow box positioning to prevent global nav overlay*/
 .shoppingHelp {
 height:10px;
@@ -1012,17 +1017,23 @@ padding-bottom:60px;
 .pkgCol .pkgName h4{
 	font-size: 2.1em;	
 }
+.pkgCol .pkgOfferHDIcon img {
+	display:block;
+}
 .pkgCol .pkgOfferCt{
 	font-size: 1.2em;
-	padding:16px 0 0  0;
+	padding:25px 0 0 0;
 }
-.pkgCol .pkgOfferCt p{
+.pkgCol .pkgOfferCtHD {
+    font-size: 1.2em;
+}
+.pkgCol .pkgOfferCt p, .pkgCol .pkgOfferCtHD p {
 	text-transform:uppercase;
 	font-size:12px;
 }
-.pkgCol .pkgOfferCt .count{
-	font-size:12px;
-	line-height: 0.8em;
+.pkgCol .pkgOfferCt .count, .pkgCol .pkgOfferCtHD .count {
+	font-size:32px;
+	line-height: 1em;
 }
 .pkgCol .horizSep {
 	width: 80%;
@@ -1038,7 +1049,7 @@ padding-bottom:60px;
 	padding:0px 0 0 0;
 }
 #tvOffers .pkgCol .pkgCopy {
-	height:220px;
+	height:230px;
 	padding: 15px 15px 30px;
 	background-color: #eee;
 }
@@ -1900,7 +1911,7 @@ margin-top:-85px;
 /*----------------------- upperfunnel device landing page style -----------------------*/
 
 .deviceMainContainer {
-	padding-top:10px;
+	padding-top:30px;
 }
 
 .deviceSocialMediaVerticalBar {
@@ -1915,97 +1926,124 @@ margin-top:-85px;
 	overflow: hidden;
 	position: absolute;
 	right: 0;
+	top: 6px;
 	width: 340px;
-	z-index: 1;
+	z-index: 5;
 }
 
 .deviceMarqueeContainer {
 	position: relative;
 	top: -6px;
 	left: -1px;
-	width:974px;
+	width:972px;
+	height:615px;
 }
 
-#deviceMainImageContainer {
-	float:left;
+#ie .deviceMarqueeContainer {
+	position: relative;
+	top: -11px;
+	left: -1px;
+	width:972px;
+	height:615px;
 }
 
-#deviceVideoLayerContainer {
+#bannerLayover {
 	position:absolute;
-	z-index: 1;
-	top:50px;
-	right:400px;
+	left:-7px;
+	top:40px;
+	z-index:6;
 }
 
-.devicePriceBlockContainer {
+#legal {
 	position:absolute;
-	z-index:999;
-	top:358px;
-	left:170px;
-	width:290px;
+	font-size:9px;
+	color:#666666;
+	z-index:5;
+}
+
+#marqueeEmailCapture {
+	position:absolute;
 	text-align:left;
+	z-index:5;
 }
 
-.devicePriceBlockContainer .devicePrice {
-	float: left;
-	padding:31px 20px 0 0;
+#marqueeEmailCapture p {
+	font:normal normal normal 14px arial;
+	color:#333333;
 }
 
-.devicePriceBlockContainer .devicePrice p {
-	font-size:3em;
+#marqueeEmailCapture #emailCapture .box {
+	width:150px;
+	height:26px;
+	color:#777777;
+	vertical-align:top;
 }
 
-.devicePriceBlockContainer .devicePriceDivider {
-	float:left;
-	width:3px;
-}
-
-.devicePriceBlockContainer .devicePriceDivider img {
-	height:100px;
-	width:3px;
-}
-
-.devicePriceBlockContainer .deviceBuyNow {
-	float:left;
-	padding:30px 0 0 25px;
-	width:110px;
+#marqueeEmailCapture #emailCapture .arrow {
+	margin:2px 0 0 1px;
 }
 
 .deviceContent {
-	margin:-80px 0 0 15px;
+	margin:-90px 0 0 12px;
 	position:relative;
 	float:left;
+	z-index:5;
 }
 
 .deviceContent .deviceMainContent {
 	float:left;
-    margin:0 15px 15px 0;
-    width:695px;
+    margin:0 10px 10px 0;
+    width:708px;
+	position:relative;
+}
+
+.deviceContent .appsMainContent {
+	float:left;
+    margin:0 10px 10px 0;
+    width:708px;
 	position:relative;
 	background:url('../../media/att/2011/shop/wireless/landing/lg_thrill_coming_soon_lander/main_section/bg-gradient_AA000VPV.gif') repeat-x scroll left top transparent;
+	-webkit-border-radius:0 5px 5px 5px;
+	-moz-border-radius:0 5px 5px 5px;
+	border-radius:0 5px 5px 5px;
+}
+
+.deviceContent .pageTitle {
+	position:relative;
+	padding:25px;
+	width:658px;
+	font:normal normal normal 25px arial;
+	color:#000000;
+}
+
+.deviceContent .appsMainContent .tab-group {
+	border:0;
+}
+
+.deviceContent .appsMainContent .tab-group .tabcontent {
+	padding:0;
 }
 
 .deviceContent .deviceSideContent {
 	float:left;
-	margin:0 0 15px 0;
-	width: 228px;
+	margin:0 0 10px 0;
+	width: 230px;
 	position:relative;
 }
 
 .deviceContent .deviceLegalContent {
 	float:left;
-	width:940px;
+	width:710px;
 	position:relative;
+	color:#666666;
 }
 
-.deviceContent .deviceLegalContent span {
-	font-weight:bold;
-	color:#000000;
-	font-size:11px;
+.deviceContent .deviceLegalContent b {
+	font:normal normal bold 11px arial;
 }
 
-.lastContent {
-	border:0;
+.deviceContent .deviceLegalContent p {
+	color:#666666;
 }
 
 .leftContent {
@@ -2017,8 +2055,31 @@ margin-top:-85px;
 }
 
 .threeQuarterTile {
-	width:695px;
+	width:708px;
 	clear:both;
+}
+
+.threeQuarterTile .rightContent.abs {
+	right:0;
+}
+
+.threeQuarterTile p {
+	font:normal normal normal 12px/20px arial;
+	color:#666666;
+}
+
+.threeQuarterTile h2 {
+	font:normal normal normal 30px arial;
+	color:#000000;
+}
+
+.threeQuarterTile h3 {
+	font:normal normal normal 20px arial;
+	color:#333333;
+}
+
+.threeQuarterTile img {
+	display:block;
 }
 
 .threeQuarterTile .titleAndCopy {
@@ -2026,35 +2087,45 @@ margin-top:-85px;
 }
 
 .threeQuarterTile .titleAndCopy h2 {
-    font-size: 2.4em;
-    margin-bottom: 30px;
+    margin:0 0 41px;
 }
 
 .threeQuarterTile .titleAndCopy h3 {
-	font-size: 2em;
-    margin-bottom: 10px;
+    margin:0 0 10px;
 }
 
 .threeQuarterTile .titleAndCopy p {
-	font-size: 13px;
-    line-height: 20px;
-    margin-bottom: 9px;
+    margin:0 0 10px;
 }
 
 .threeQuarterTile .titleAndCopy ul {
 	list-style-type:disc;
     margin-left:15px;
+    color:#666666;
 }
 
-.threeQuarterTile .titleAndCopy ul li {
+.threeQuarterTile .titleAndCopy ol {
+	list-style-type:decimal;
+    margin-left:15px;
+    color:#666666;
+}
+
+
+.threeQuarterTile .titleAndCopy ul li, .threeQuarterTile .titleAndCopy ol li,  {
 	line-height: 1.5em;
     padding-bottom: 5px;
+    color:#666666;
+}
+
+.threeQuarterTile .titleAndCopy .tm, .threeQuarterTile .tm {
+	top: -15px;
+	font-size: 9px;
 }
 
 .threeQuarterTile .deviceVideoContainer {
 	font-size:13px;
 	width: 230px;
-	margin: 25px 0 0 0;
+	margin: 25px 0 10px 0;
 	padding:15px 0 20px 110px;
 }
 
@@ -2062,75 +2133,100 @@ margin-top:-85px;
 	line-height:18px;
 }
 
+.threeQuarterTile .dottedDivider {
+	border-bottom: 1px dotted #cccccc;
+	clear: both;
+	margin: 0 0 0 20px;
+}
+
 .threeQuarterTile .specsWrapper {
-	width:673px;
-	margin:0 auto 15px;
+	width:670px;
+	margin:0 auto 20px;
 	padding:0 0 5px;
 }
 
+.specsWrapper .specsTitle {
+	padding:17px 20px 0;
+	margin:0 0 29px;
+}
+
+.specsWrapper .specsTitle p {
+	margin:0 0 9px;
+}
+
+.specsWrapper .specsTitle h3 {
+	margin:0 0 12px;
+}
+
 .specsContainer {
-	margin:-15px 0 0 20px;
-	width:643px;
+	width:670px;
 	clear:both;
 }
 
 .specsTile {
-	margin:0 10px 10px 0;
-	width:310px;
-	height:55px;
+	margin:0 0 7px 0;
+	width:335px;
 	float:left;
-	border-bottom:1px dotted #cccccc;
-}
-
-.specsTile .imgContainer {
-	width:45px;
-	text-align:center;
-}
-
-.specsTile img {
-	margin:0 auto;
 }
 
 .specsTile p {
+	width:258px;
+	margin:0 0 7px;
+}
+
+.specsTile .rightContent {
+	margin:0 17px 0 0;
+}
+
+.specsTile .imgContainer {
+	width:56px;
+}
+
+.specsTile .imgContainer img {
+	float:right;
+}
+
+.specsTile .dottedDivider {
+	border-bottom:1px dotted #cccccc;
+	clear:both;
+	width:255px;
 	margin:0;
-    line-height:15px;
-	width:262px;
 }
 
 .oneQuarterTile {
-	padding:12px;
-	margin:0 0 15px;
-	width:200px;
-	height:135px;
+	padding:12px 0 0;
+	margin:0 0 10px;
+	width:228px;
+	height:143px;
 	clear:both;
 }
 
 .oneQuarterTile h2 {
-	font-size:1.4em;
-	font-weight:bold;
+	font:normal normal normal 16px arial;
+	color:#333333;
+	margin:0 0 0 12px;
 }
 
 .oneQuarterTile p {
-	margin:12px 0 0;
+	margin:12px 5px 0 0;
 	padding:0;
-	width:110px;
-	font-size: 12px;
-	font-weight: normal;
+	width:127px;
+	font:normal normal normal 14px arial;
+	color:#333333;
 }
 
 .oneQuarterTile .btmLink {
 	margin:12px 0 0;
 	padding:0;
 	width:110px;
-	font-size: 12px;
-	font-weight: normal;
 }
 
 a.tileLinkRightArrow {
-	color: #3381B7;
 	text-decoration: none;
 	padding-right: 13px;
 	background: url("../../media/att/2011/global/btn/img_blue_arrow_9x13_AA000OM4.gif") no-repeat scroll right bottom transparent;
+	font:normal normal normal 12px arial;
+	color:#067AB4;
 }
 
 a.tileLinkRightArrow:hover {
@@ -2138,7 +2234,50 @@ a.tileLinkRightArrow:hover {
 }
 
 .oneQuarterTile img {
-	margin:12px 0 0;
+	margin:12px 0 0 5px;
+}
+
+#appTabsLinks .tabs {
+	height: 50px;
+	position:relative;
+	z-index:1;
+}
+
+#appTabsLinks .tabs li {
+	height:49px;
+	float:left;
+	position:relative;
+	margin:0 5px 0 0;
+	border-radius:5px 5px 0 0;
+	border-top:1px solid #E3E3E3;
+	border-right:1px solid #E3E3E3;
+	border-left:1px solid #E3E3E3;
+}
+
+#appTabsLinks .tabs li a {
+	height: 48px;
+    color: #C3C3C3;
+    display: block;
+    font-size: 1.3em;
+    padding: 0 20px;
+    line-height:49px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    background:url('http://www.att.com/media/att/2011/shop/common/gradient_img.png') repeat-x left top;
+    border-bottom:1px solid #eeeeee;
+    border-radius:5px 5px 0 0;
+}
+
+#appTabsLinks .tabs li a.current {
+    color: #333333;
+    background:#ffffff;
+    border-bottom:1px solid #ffffff;
+}
+
+.tabs li div .bottomRound,
+.tabs li div .bottomRound div {
+	background:0;
 }
 
 /*-----------------------upperfunel carousels style----------------------------*/
@@ -2754,3 +2893,5 @@ iframe#social-icons {
 }
 
 /* END: LG THRILL 4 */
+/* Andriod Ace Mobi Scan text style */
+.aceMobiScan {font-size:.9em; position:relative; float:left; top:-15px; left:90px;}

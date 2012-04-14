@@ -1,6 +1,49 @@
 jQuery.noConflict();
 // JavaScript Document
 
+
+/* earnings */
+var currQuarter = '4Q11';
+var currPID = '262';
+
+function renderEarnings() {
+	document.write('<h3 class="link"><a title="AT&amp;T Reports ' + currQuarter + ' Earnings -- View Results" href="/gen/investor-relations?pid=' + currPID + '">AT&amp;T Reports ' + currQuarter + ' Earnings &mdash; View Results</a></h3>');
+}
+
+/* earnings */
+function renderEarningsList() {
+	document.write('<li><a href="http://www.att.com/gen/investor-relations?pid=262" title="4Q 2011">4Q 2011</a></li>'
+				 + '<li><a href="http://www.att.com/gen/investor-relations?pid=290" title="3Q 2011">3Q 2011</a></li>'
+				 + '<li><a href="http://www.att.com/gen/investor-relations?pid=282" title="2Q 2011">2Q 2011</a></li>'
+				 + '<li><a href="http://www.att.com/gen/investor-relations?pid=268" title="1Q 2011">1Q 2011</a></li>'
+				 + '<li><a href="http://www.att.com/earnings" title="Quarterly Earnings">More</a></li>');
+}
+
+
+function renderQuarterlyTabs() {
+	//local code
+	//pid=location.href;
+//	first=pid.indexOf('_');
+//	pid=pid.substr(first+1);
+//	pid=pid.split('_');
+//	pid=pid[0];	
+	//TEAMSITE code
+	pid=location.href;
+	pid=pid.split('=');
+	pid=pid[1]; 
+	checkAnc = pid.indexOf('#');
+	if(checkAnc != '-1') {pid=pid.split('#');pid=pid[0];
+	}
+	pid = pid.toLowerCase();
+
+		document.write('<ul id="navContainer" class="tabs">'
+					+  '<li id="tab3A"'); if(pid=='262') { document.write(' class="active" '); } document.write('><a href="/gen/investor-relations?pid=262" title="4Q 2011">4Q 2011</a></li>'
+					+  '<li id="tab2A"'); if(pid=='290') { document.write(' class="active" '); } document.write('><a href="/gen/investor-relations?pid=290" title="3Q 2011">3Q 2011</a></li>'
+					+  '<li id="tab1A"'); if(pid=='282') { document.write(' class="active" '); } document.write('><a href="/gen/investor-relations?pid=282" title="2Q 2011">2Q 2011</a></li>'
+					+  '<li id="tab4A"'); if(pid=='268') { document.write(' class="active" '); } document.write('><a href="/gen/investor-relations?pid=268" title="1Q 2011">1Q 2011</a></li>'
+					+  '</ul>');
+	}
+	
 jQuery(document).ready(function() {
 
 
@@ -148,7 +191,7 @@ jQuery(document).ready(function() {
 var site = '';
 
 thomson = location.href;
-thomson = thomson.indexOf('phx.corporate');
+thomson = thomson.indexOf('phoenix');
 //alert (thomson);
 
 if (location.href.indexOf('historic_att_stock') == '27') {
@@ -203,6 +246,7 @@ function au_corporate_profile_nav() {
 				 + '<ul>'
 				 + '<li><a href="' + site + '/gen/investor-relations?pid=5711" title="Company Overview">Company Overview</a></li>'
 				 + '<li><a href="' + site + '/gen/general?pid=20344" title="Corporate Awards">Corporate Awards</a></li>'
+				 + '<li><a href="' + site + '/Common/about_us/public_policy/btn_nov-2011.pdf" title="By The Numbers" target="_blank">By The Numbers</a></li>'
 				 + '</ul>'
 				 + '</li>'
 				 + '<li class="col2"><strong>Leadership Profiles</strong>'
@@ -225,7 +269,8 @@ function au_corporate_profile_nav() {
 				 + '<ul>'
 				 + '<li><a href="' + site + '/gen/corporate-citizenship?pid=7738" title="Diversity Management">Diversity Management</a></li>'
 				 + '<li><a href="' + site + '/gen/corporate-citizenship?pid=17725" title="Workforce Inclusion">Workforce Inclusion</a></li>'
-				 + '<li><a href="' + site + '/gen/press-room?pid=2684" title="Our People">Our People</a></li>'
+//				 + '<li><a href="' + site + '/gen/press-room?pid=2684" title="Our People">Our People</a></li>'
+				 + '<li><a href="' + site + '/gen/corporate-citizenship?pid=22018" title="The People of AT&amp;T Report">The People of AT&amp;T Report</a></li>'
 				 + '<li><a href="' + site + '/gen/corporate-citizenship?pid=17721" title="Diversity Awards and Recognition">Diversity Awards and Recognition</a></li>'
 				 + '</ul>'
 				 + '</li>'
@@ -340,6 +385,7 @@ function au_careers_nav() {
 				 + '<li><a href="' + site + '/gen/investor-relations?pid=5711" title="Corporate Profile">Corporate Profile</a></li>'
 				 + '<li><a href="' + site + '/gen/corporate-citizenship?pid=7738" title="Our Diversity Commitment">Our Diversity Commitment</a></li>'
 				 + '<li><a href="' + site + '/gen/corporate-citizenship?pid=7770" title="Investing in our People">Investing in our People</a></li>'
+				 + '<li><a href="' + site + '/gen/corporate-citizenship?pid=22018" title="The People of AT&amp;T Report">The People of AT&amp;T Report</a></li>'
 				 + '</ul>'
 				 + '</li>'
 				 + '</ul>');
@@ -352,7 +398,7 @@ function au_media_resources_nav() {
 				 + '<ul>'
 				 + '<li><a href="' + site + '/Common/about_us/news.html" title="Recent Releases">Recent Releases</a></li>'
 				 + '<li><a href="' + site + '/gen/press-room?pid=9880" title="Search Release Archives">Search Release Archives</a></li>'
-				 + '<li><a href="http://att.centralcast.net/rss/display/default.aspx" title="RSS Feeds">RSS Feeds</a></li>'
+				 + '<li><a href="http://www.att.com/rss" title="RSS Feeds">RSS Feeds</a></li>'
 				 + '<li><a href="http://espanol.att.com" title="AT&amp;T en Espa&ntilde;ol">AT&amp;T en Espa&ntilde;ol</a></li>'
 				 + '<li><a href="http://world.att.com/" title="AT&amp;T World">AT&amp;T World</a></li>'
 				 + '</ul>'
@@ -375,7 +421,7 @@ function mn_recent_releases_nav() {
 				 + '<ul>'
 				 + '<li><a href="' + site + '/Common/about_us/news.html" title="Recent Releases">Recent Releases</a></li>'
 				 + '<li><a href="' + site + '/gen/press-room?pid=9880" title="Search Release Archives">Search Release Archives</a></li>'
-				 + '<li><a href="http://att.centralcast.net/rss/display/default.aspx" title="RSS Feeds">RSS Feeds</a></li>'
+				 + '<li><a href="http://www.att.com/rss" title="RSS Feeds">RSS Feeds</a></li>'
 				 + '<li><a href="http://espanol.att.com" title="AT&amp;T en Espa&ntilde;ol">AT&amp;T en Espa&ntilde;ol</a></li>'
 				 + '<li><a href="http://world.att.com/" title="AT&amp;T World">AT&amp;T World</a></li>'
 				 + '</ul>'
@@ -391,7 +437,7 @@ function mn_recent_releases_nav() {
 				 + '<ul>'
 				 + '<li><a href="' + site + '/gen/press-room?pid=9880" title="Search IR News Release Archives">Search IR News Release Archives</a></li>'
 				 + '<li><a href="http://phx.corporate-ir.net/phoenix.zhtml?c=113088&p=irol-alerts" title="Receive E-mail Alerts">Receive E-mail Alerts</a></li>'
-				 + '<li><a href="http://att.centralcast.net/rss/default.aspx" title="Subscribe to our RSS">Subscribe to our RSS</a></li>'
+				 + '<li><a href="http://www.att.com/rss" title="Subscribe to our RSS">Subscribe to our RSS</a></li>'
 				 + '</ul>'
 				 + '</li>'
 				 + '</ul>');
@@ -402,8 +448,7 @@ function mn_media_kits_nav() {
 				 + '<li class="image" style="background-image:url(' + site + '/Common/global/images/about_us/tray/bkg_tray_media_kits.jpg) !important;">&nbsp;</li>'
 				 + '<li class="col1"><strong>Consumer Goods</strong>'
 				 + '<ul>'
-				 + '<li><a href="' + site + '/gen/press-room?pid=1841" title="Mobile Phones">Mobile Phones</a></li>'
-				 + '<li><a href="' + site + '/gen/press-room?pid=13434" title="Emerging Devices">Emerging Devices</a></li>'
+				 + '<li><a href="' + site + '/gen/press-room?pid=1841" title="Wireless">Wireless</a></li>'
 				 + '<li><a href="' + site + '/gen/press-room?pid=5838" title="U-verse">U-verse</a></li>'
 				 + '<li><a href="' + site + '/gen/press-room?pid=1941" title="Wireless Networks">Wireless Networks</a></li>'
 				 + '<li><a href="' + site + '/gen/press-room?pid=5834" title="More">More</a></li>'
@@ -490,14 +535,13 @@ function w_wireless_innovation_nav() {
 				 + '</li>'
 				 + '<li class="col2"><strong>Texting</strong>'
 				 + '<ul>'
-				 + '<li><a href="' + site + '/gen/press-room?pid=2805" title="Text Messaging">Text Messaging</a></li>'
 				 + '<li><a href="' + site + '/gen/press-room?pid=2964" title="Dangers of Texting and Driving">Dangers of Texting and Driving</a></li>'
 				 + '</ul>'
 				 + '</li>'
 				 + '<li class="col3"><strong>Wireless Options</strong>'
 				 + '<ul>'
 				 + '<li><a href="' + site + '/gen/press-room?pid=2535" title="International Service Plans">International Service Plans</a></li>'
-				 + '<li><a href="' + site + '/gen/press-room?pid=2575" title="Wireless Choice">Wireless Choice</a></li>'
+				 /*+ '<li><a href="' + site + '/gen/press-room?pid=2575" title="Wireless Choice">Wireless Choice</a></li>'*/
 				 + '<li><a href="' + site + '/gen/press-room?pid=2899" title="Apps">Apps</a></li>'
 				 + '</ul>'
 				 + '</li>'
@@ -505,6 +549,7 @@ function w_wireless_innovation_nav() {
 				 + '<ul>'
 				 + '<li><a href="' + site + '/gen/press-room?pid=17789" title="Small Business Mobility Overview">Small Business Mobility Overview</a></li>'
 				 + '<li><a href="' + site + '/gen/press-room?pid=9607" title="Enterprise Mobility Solutions">Enterprise Mobility Solutions</a></li>'
+				 + '<li><a href="' + site + '/gen/press-room?pid=22006" title="Mobile Marketing Solutions">Mobile Marketing Solutions</a></li>'
 				 + '</ul>'
 				 + '</li>'
 				 + '</ul>');
@@ -651,7 +696,8 @@ function bn_enterprise_solutions_nav() {
 				 + '<li><a href="' + site + '/gen/press-room?pid=9659" title="IP VPN">IP VPN</a></li>'
 				 + '<li><a href="' + site + '/gen/press-room?pid=2941" title="Enterprise Security">Enterprise Security</a></li>'
 				 + '<li><a href="' + site + '/gen/press-room?pid=9389" title="BusinessDirect">BusinessDirect</a></li>'
-				 + '<li><a href="' + site + '/gen/press-room?pid=17839" title="Business Continuity Study">Business Continuity Study</a></li>'
+				 + '<li><a href="' + site + '/gen/press-room?pid=19852" title="Business Continuity Study">Business Continuity Study</a></li>'
+				 + '<li><a href="' + site + '/gen/press-room?pid=20106" title="Cloud News">Cloud News</a></li>'
 				 + '</ul>'
 				 + '</li>'
 				 + '<li class="col3"><strong>Innovative Solutions</strong>'
@@ -660,6 +706,8 @@ function bn_enterprise_solutions_nav() {
 				 + '<li><a href="' + site + '/gen/press-room?pid=2820" title="Telepresence">Telepresence</a></li>'
 				 + '<li><a href="' + site + '/gen/press-room?pid=1655" title="Application Acceleration">Application Acceleration</a></li>'
 				 + '<li><a href="' + site + '/gen/press-room?pid=9607" title="Mobility Solutions">Mobility Solutions</a></li>'
+				 + '<li><a href="' + site + '/gen/press-room?pid=21257" title="Education Solutions">Education Solutions</a></li>'
+				 + '<li><a href="' + site + '/gen/press-room?pid=22006" title="Mobile Marketing Solutions">Mobile Marketing Solutions</a></li>'
 				 + '</ul>'
 				 + '</li>'
 				 + '<li class="col4"><strong>What\'s New</strong>'
@@ -692,6 +740,8 @@ function bn_doing_business_nav() {
 				 + '<li class="col1"><strong>Our Collaborators</strong>'
 				 + '<ul>'
 				 + '<li><a href="' + site + '/gen/general?pid=7512" title="Supplier Partnerships">Supplier Partnerships</a></li>'
+				 + '<li><a href="' + site + '/gen/press-room?pid=12201" title="Business Customer News">Business Customer News</a></li>'
+				 + '<li><a href="' + site + '/gen/corporate-citizenship?pid=5882" title="Innovating life - Intellectual Property">Innovating life - Intellectual Property</a></li>'
 				 + '</ul>'
 				 + '</li>'
 				 + '<li class="col2"><strong>Our Business Basics</strong>'
@@ -722,6 +772,7 @@ function bn_other_markets_nav() {
 				 + '<ul>'
 				 + '<li><a href="' + site + '/gen/press-room?pid=18708" title="AT&amp;T ForHealth">AT&amp;T ForHealth</a></li>'
 				 + '<li><a href="' + site + '/gen/general?pid=7786" title="AT&amp;T Business Customer News">AT&amp;T Business Customer News</a></li>'
+				 + '<li><a href="' + site + '/gen/press-room?pid=21257" title="Education Solutions">Education Solutions</a></li>'
 				 + '</ul>'
 				 + '</li>'
 				 + '</ul>');
@@ -765,20 +816,17 @@ function ir_financial_reporting_nav() {
 				 + '</ul>'
 				 + '</li>'
 				 + '<li class="col2"><strong>Quarterly Earnings</strong>'
-				 + '<ul>'
-				 + '<li><a href="' + site + '/gen/investor-relations?pid=290" title="3Q 2011">3Q 2011</a></li>'
-				 + '<li><a href="' + site + '/gen/investor-relations?pid=282" title="2Q 2011">2Q 2011</a></li>'
-				 + '<li><a href="' + site + '/gen/investor-relations?pid=268" title="1Q 2011">1Q 2011</a></li>'
-				 + '<li><a href="' + site + '/gen/investor-relations?pid=262" title="4Q 2010">4Q 2010</a></li>'
-				 + '<li><a href="' + site + '/gen/investor-relations?pid=290" title="Quarterly Earnings">More</a></li>'
-				 + '</ul>'
+				 + '<ul>');
+				 renderEarningsList();
+		document.write('</ul>'
 				 + '</li>'
 				 + '<li class="col3"><strong>Annual Reports</strong>'
 				 + '<ul>'
+				 + '<li><a href="' + site + '/gen/general?pid=22516" title="2011 Annual Report">2011 Annual Report</a></li>'
 				 + '<li><a href="' + site + '/gen/investor-relations?pid=19234" title="2010 Annual Report">2010 Annual Report</a></li>'
 				 + '<li><a href="' + site + '/gen/investor-relations?pid=17393" title="2009 Annual Report">2009 Annual Report</a></li>'
 				 + '<li><a href="' + site + '/gen/investor-relations?pid=13106" title="2008 Annual Report">2008 Annual Report</a></li>'
-				 + '<li><a href="http://www.att.com/Investor/ATT_Annual/2007/" title="2007 Annual Report">2007 Annual Report</a></li>'
+//				 + '<li><a href="http://www.att.com/Investor/ATT_Annual/2007/" title="2007 Annual Report">2007 Annual Report</a></li>'
 				 + '<li><a href="' + site + '/gen/investor-relations?pid=9186" title="Annual Reports">More</a></li>'
 				 + '</ul>'
 				 + '</li>'
@@ -838,7 +886,7 @@ function ir_investor_news_nav() {
 				 + '<ul>'
 				 + '<li><a href="' + site + '/gen/press-room?pid=9880" title="Search News Release Archives">Search News Release Archives</a></li>'
 				 + '<li><a href="http://phx.corporate-ir.net/phoenix.zhtml?c=113088&amp;p=irol-alerts" title="Receive E-mail Alerts">Receive E-mail Alerts</a></li>'
-				 + '<li><a href="http://att.centralcast.net/rss/default.aspx" title="Subscribe to our RSS">Subscribe to our RSS</a></li>'
+				 + '<li><a href="http://www.att.com/rss" title="Subscribe to our RSS">Subscribe to our RSS</a></li>'
 				 + '</ul>'
 				 + '</li>'
 				 + '</ul>');

@@ -735,7 +735,7 @@ TOOLTIP WRAPPERS
 
 /* Configure an arrow image - the script will automatically position it on the correct side of the tip */
 .tip-white .tip-arrow-top {
-	margin-top:-5px;
+	margin-top:-3px;
 	margin-left:15px;
 	top:0;
 	left:44%;

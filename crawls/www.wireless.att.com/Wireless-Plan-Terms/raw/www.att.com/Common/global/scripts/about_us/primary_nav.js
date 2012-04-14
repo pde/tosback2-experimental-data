@@ -3,7 +3,7 @@
 	var site = '';
 
 	thomson = location.href;
-	thomson = thomson.indexOf('phx.corporate');
+	thomson = thomson.indexOf('phoenix');
 	//alert (thomson);
 	if (thomson != '-1') {
 		pid = 'thomson';
@@ -104,28 +104,36 @@ function renderPrimaryNav() {
 		pid = 'CSRBrochure10';
 		site = 'http://www.att.com';
 	}
-
+	if (location.href.indexOf('consumernews') != '-1' || location.href.indexOf('consumerblog') != '-1') {
+		pid = 'consumerblog';
+		site = 'http://www.att.com';
+	}
+	
+	
 	//alert(location.href.indexOf('historic_att_stock'));
 
 	document.write('<ul id="PrimaryNav">'
 				 + '<li class="logo"><a href="http://www.att.com/"><img src="/Common/indc/images/new/att_logo_for_nav.gif" height="40" width="40" alt="AT&amp;T" title="AT&amp;T" /></a></li>'
 				 + '<li');
-				 if (pid == '3309' || pid == 'rss' || pid == 'CSRBrochure10') { document.write(' class="selected"'); }
+				 if (pid == '3309' || pid == 'rss' || pid == 'CSRBrochure10' || pid == 'consumerblog' ) { document.write(' class="selected"'); }
  	document.write('><a href="' + site + '/gen/landing-pages?pid=3309" title="ABOUT US" id="pn-compinfo">ABOUT US</a>'
 				 + '<ul class="secondaryNav" id="about_us_nav">'
 				 + '<li><a href="' + site + '/gen/investor-relations?pid=5711" title="Corporate Profile" id="au_corporate_profile_link">Corporate Profile</a>');
 						au_corporate_profile_nav();
  	document.write('</li>'
-				 + '<li><a href="http://www.mobilizeeverything.com/" title="T-Mobile Merger">T-Mobile Merger</a></li>'
 				 + '<li><a href="' + site + '/Common/about_us/news.html" title="Media Resources" id="au_media_resources_link">Media Resources</a>');
 						au_media_resources_nav();
  	document.write('</li>'
+				 + '<li');
+				 if (pid == 'consumerblog') { document.write(' class="selected"'); }
+ 	document.write('><a href="http://blogs.att.net/consumerblog" title="Consumer Blog" id="au_consumer_blog">Consumer Blog</a></li>'
 				 + '<li><a href="' + site + '/gen/press-room?pid=11366" title="Serving Customers">Serving Customers</a></li>'
 				 + '<li');
 				 if (pid == 'CSRBrochure10') { document.write(' class="selected"'); }
  	document.write('><a href="' + site + '/gen/landing-pages?pid=7735" title="Sustainability" id="au_sustainability_link">Sustainability</a>');
 						au_sustainability_nav();
  	document.write('</li>'
+				 + '<li><a id="au_aspire_link" href="/gen/press-room?pid=2631"> AT&amp;T Aspire </a></li>'
 				 + '<li><a href="http://att.jobs/" title="Careers" id="au_careers_link">Careers</a>');
 						au_careers_nav();
  	document.write('</li>'
@@ -168,7 +176,11 @@ function renderPrimaryNav() {
 				 + '</li>'
 				 + '<li');
 				if (pid == '5838') { document.write(' class="selected"'); }
- 	document.write('><a href="' + site + '/gen/press-room?pid=5838" title="U-verse" id="pn-uverse">U-VERSE</a></li>'
+ 	document.write('><a href="' + site + '/gen/press-room?pid=5838" title="U-verse" id="pn-uverse">U-VERSE</a>'
+				 + '<ul id="uverse_nav" class="secondaryNav">'
+				 + '<li><a id="uv_connect_comm" href="' + site + '/gen/press-room?pid=7881">Connected Communities</a>&nbsp;</li>'
+				 + '</ul>'
+				 + '</li>'
 				 + '<li');
 				if (pid == '21436') { document.write(' class="selected"'); }
  	document.write('><a href="' + site + '/gen/press-room?pid=21436" title="BUSINESS" id="pn-business">BUSINESS</a>'

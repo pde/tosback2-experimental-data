@@ -52,3 +52,7 @@ ul.square_bullets {
 	font-size: 11px;
 	padding-right: 10px;
 }
+
+#footer {
+	font-family:Arial !important;
+}

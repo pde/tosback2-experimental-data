@@ -148,3 +148,5 @@ input#search { border: none; background-color:transparent; color: #808080; font-
 #PrimaryNav li.selected #pn-social, #PrimaryNav li.selected #pn-social:hover, #PrimaryNav li #pn-social:hover { background-position: -323px -55px; width: 110px; }
 /* Updated for tinymce background Issue */
 #tinymce { background-image : none; }
+/* for ConsumerBlog*/
+div#stryTxt ul { margin-left: 30px; list-style:disc outside; }

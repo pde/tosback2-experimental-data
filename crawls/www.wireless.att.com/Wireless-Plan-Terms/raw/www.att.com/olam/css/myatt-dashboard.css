@@ -373,8 +373,8 @@ clear:both;
 
 /*** 51549 wf1 ***/
 .extend3o #marginLeft{margin-left:5px;}
-.extend3o #alignLogIn{width:147px; padding-top:14px;}
-#alignLogIn{width:147px; padding-top:14px;}
+.extend3o #alignLogIn{width:166px; padding-top:14px;}/*changing the width from 147px to 166px to resolve WUP00650871*/
+#alignLogIn{width:166px; padding-top:14px;}/*changing the width from 147px to 166px to resolve WUP00650871*/
 .extend3o #alignLogInRememberme{width:147px; padding-top:12px;}
 #alignLogInRememberme{width:147px; padding-top:12px;}
 
@@ -584,3 +584,7 @@ margin:0 0 15px;
 
 /*Defect WUP00574869  */
 .boxAlign {margin:0px 14px 25px; width:943px;}
+
+/*Shared Data Usage styles begin*/
+.extend3o .dashboard-right{background:url(../images/brand30/dashboard-right.PNG.html) 0 0 no-repeat;padding:0px 0px 20px 0px;width:245px;}
+/*Shared Data Usage styles end*/

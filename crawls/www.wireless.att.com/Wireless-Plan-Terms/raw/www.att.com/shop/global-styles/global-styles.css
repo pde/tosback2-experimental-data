@@ -118,7 +118,7 @@ body{background:url(http://www.att.com/images/global/background_right.jpg) no-re
 *****************/
 #wrapper{margin:0 auto; width:974px; position:relative}
 #main-container{text-align:left; position:relative}
-#content{position:relative; padding:0; width:970px}
+#content{position:relative; padding:0; width:970px; z-index:99}
 
 /****************
  SHOPPING CART 
@@ -137,7 +137,8 @@ CONTENT BACKGROUND IMAGE
 	width: 986px;
 	left: -6px;
 	top: -8px;
-	position:relative }
+	position:relative;
+	z-index:10 }
 .bg-mid-shadow{
 	left:  -6px;
 	top: -8px;
@@ -726,7 +727,7 @@ TOOLTIP WRAPPERS
 
 /* Configure an arrow image - the script will automatically position it on the correct side of the tip */
 .tip-white .tip-arrow-top {
-	margin-top:-5px;
+	margin-top:-3px;
 	margin-left:15px;
 	top:0;
 	left:44%;

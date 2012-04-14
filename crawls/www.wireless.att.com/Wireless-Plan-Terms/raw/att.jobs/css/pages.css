@@ -24,11 +24,13 @@ Company: TMP Worldwide Advertising and Communications, LLC
 		body#learning #snav-benefits h3,
 		body.career-area #snav-careerarea h3,
 		body#otherdivisions  #snav-careerarea h3,
+		body#other-opportunities  #snav-careerarea h3,
 		body#hiring-process #snav-toolstips h3,
 		body#test-guides #snav-toolstips h3,
 		body#interview-tips #snav-toolstips h3,
 		body#academy #snav-toolstips h3,
 		body#events #snav-events h3,
+		body#online-events #snav-events h3,
 		body.student-program #snav-programs h3,
 		body.videos #snav-programs h3,
 		body.talent-network #snav-registernow h3
@@ -52,11 +54,13 @@ Company: TMP Worldwide Advertising and Communications, LLC
 		body#learning #snav-benefits ul,
 		body.career-area #snav-careerarea ul,
         body#otherdivisions #snav-careerarea ul,
+        body#other-opportunities #snav-careerarea ul,
 		body#hiring-process #snav-toolstips ul,
 		body#test-guides #snav-toolstips ul,
 		body#interview-tips #snav-toolstips ul,
 		body#academy #snav-toolstips ul,
 		body#events #snav-events ul,
+		body#online-events #snav-events ul,
 		body.student-program #snav-programs ul,
 		body.talent-network #snav-registernow ul
 		{
@@ -67,6 +71,7 @@ Company: TMP Worldwide Advertising and Communications, LLC
 		body#location #snav-location,
 		body#whatsnew #snav-whatsnew,
 		body#otherdivisions #snav-otherdivisions,
+		body#other-opportunities #snav-otherdivisions,
 		body#history #snav-history,
 		body#citizenship-sustainability #snav-social,
 		body#diversity #snav-diversity,
@@ -89,7 +94,16 @@ Company: TMP Worldwide Advertising and Communications, LLC
 		body#test-guides #snav-guide,
 		body#interview-tips #snav-tips,
 		body#academy #snav-academy,
-		body#events #snav-2010events,
+		
+		body#att-events #snav-2010events,
+		body#events #snav-events1,
+		body#online-events #snav-online-events,
+		
+		
+		
+		
+		
+		
 		body.student #snav-currprog
 		{
 			font-weight:bold;
@@ -108,7 +122,8 @@ Company: TMP Worldwide Advertising and Communications, LLC
 		{
 			background:url("http://att.jobs/images/bg-benefits.png") no-repeat ;
 		}	
-		#events #article-bg
+		#events #article-bg,
+		#online-events #article-bg
 		{
 			width:172px;
 			height:191px;
@@ -417,12 +432,23 @@ Company: TMP Worldwide Advertising and Communications, LLC
 			
 		}
 		
+		
+		#four-piece-module #fm-whatsnew p
+		{
+			line-height:12px !important;
+			font-size:10px;
+			padding-right:5px !important;
+			padding-top:0px !important;
+			
+		}
+		
 	
 		#four-piece-module #fm-whatsnew h2
 		{
 			background:url("http://att.jobs/images/txt-stay-connected.gif") no-repeat scroll left 0px transparent;
 			height:32px !important;
 			padding:0 !important;
+			margin-bottom:5px;
 		}
 		
 		
@@ -474,7 +500,7 @@ Company: TMP Worldwide Advertising and Communications, LLC
 		
 		#four-piece-module #fm-events h2
 		{
-			background:url("http://att.jobs/images/txt-upcoming-events.gif") no-repeat scroll left 0px transparent;
+			background:url("http://att.jobs/images/txt-events.png") no-repeat scroll left 0px transparent;
 			height:19px !important;
 			padding:0 !important;
 		}
@@ -491,13 +517,24 @@ Company: TMP Worldwide Advertising and Communications, LLC
 		
 		#four-piece-module #fm-events p
 		{
-			display:block;
+			/*display:block;
 			font-size:1.0em;
 			margin:0 !important;
 			padding:0 !important;
 			width:250px;
-			height:38px !important;
+			height:38px !important;*/
+			padding:2px 80px 10px 0;
+			line-height:12px !important;
 		}
+		
+		
+		
+		
+	#four-piece-module #fm-events .link-arrow-ico
+		{
+			margin-top:30px;
+		}
+		
 		
 		#four-piece-module div
 		{
@@ -528,10 +565,20 @@ Company: TMP Worldwide Advertising and Communications, LLC
 		{
 			background:url("http://att.jobs/images/btn-four-piece-module.png") repeat scroll 0px -86px transparent;		
 		}
+		
+		
 		#four-piece-module #fm-events
 		{
 			background:url("http://att.jobs/images/btn-four-piece-module.png") repeat scroll 0px -129px transparent;		
 		}
+		
+	
+		#four-piece-module #fm-events div
+		{
+			background:url("http://att.jobs/images/bg-events-module.png") no-repeat top !important;
+		}
+		
+		
 		
 		#four-piece-module .fm-whatsnew-active
 		{
@@ -1093,12 +1140,13 @@ Company: TMP Worldwide Advertising and Communications, LLC
 		/* Why ATT - Careers - Students Landing pages*/
 		#why-att #modules,
 		#careers #modules,
-		#students #modules
+		#students #modules,
+		#att-events #modules
 		{
 			display:none;
 		}
 		
-		#why-att h1,#careers h1,#students h1
+		#why-att h1,#careers h1,#students h1,#att-events h1
 		{
 			width:503px;
 			height:188px;
@@ -1125,14 +1173,21 @@ Company: TMP Worldwide Advertising and Communications, LLC
 			background:url("http://att.jobs/images/txt-students.gif") no-repeat top left ;
 		}
 		
-		#why-att h2, #careers h2,#students h2
+		
+	#att-events h1
+		{
+			background:url("http://att.jobs/images/txt-events.gif") no-repeat top left ;
+		}
+		
+		
+		#why-att h2, #careers h2,#students h2,#att-events h2
 		{
 			font-style:italic;
 			color:#FE8421;
 			font-size:1.4em;
 		}
 		
-		#why-att #flashcontainer,#careers #flashcontainer,#students #flashcontainer
+		#why-att #flashcontainer,#careers #flashcontainer,#students #flashcontainer,#att-events #flashcontainer
 		{
 			background:url("http://att.jobs/images/bg-why-att-flash.gif") no-repeat top left ;
 			height:168px;
@@ -1147,7 +1202,7 @@ Company: TMP Worldwide Advertising and Communications, LLC
 			height:161px;position:absolute;left:0;top:0;text-indent:-999px;overflow:hidden;
 			background:url("http://att.jobs/images/blank.gif") no-repeat top left ;}
 		
-		#why-att #flashcontent,#careers #flashcontent,#students #flashcontent
+		#why-att #flashcontent,#careers #flashcontent,#students #flashcontent,#att-events #flashcontent
 		{
 			width:227px;
 			height:161px;
@@ -1155,7 +1210,7 @@ Company: TMP Worldwide Advertising and Communications, LLC
 		
 	
 		
-		#why-att #article,#careers #article,#students #article
+		#why-att #article,#careers #article,#students #article,#att-events #article
 		{
 			width:759px;
 			border:0;
@@ -1163,14 +1218,14 @@ Company: TMP Worldwide Advertising and Communications, LLC
 			background-color:Transparent !important;
 		}
 		
-		#why-att #article p,#careers #article p,#students #article p
+		#why-att #article p,#careers #article p,#students #article p,#att-events #article p
 		{
 			font-size:1.0em;
 			padding:0 0 10px 0px;
 			line-height:15px;
 		}
 		
-		#why-att #article .intro, #careers #article .intro, #students #article .intro
+		#why-att #article .intro, #careers #article .intro, #students #article .intro, #att-events #article .intro
 		{
 			position:absolute;
 			font-size:1.3em;
@@ -1202,6 +1257,13 @@ Company: TMP Worldwide Advertising and Communications, LLC
 			top:-147px;
 			left:220px;
 		}
+		
+	#evevts #article .intro
+		{
+			top:-147px;
+			left:220px;
+		}
+		
 		
 		#nav-landingpage, #nav-landingpage ul
 		{
@@ -1431,8 +1493,8 @@ Company: TMP Worldwide Advertising and Communications, LLC
 		#talent-network #article h2.prize-title
 		{
 			background:url("http://att.jobs/images/txt-talent-network-prize.png") no-repeat top left ;
-			margin:28px 0 0 337px;
-			height:117px;
+			margin:28px 0 0 387px;
+			height:137px;
 		}
 		
 		#talent-network-form
@@ -1457,22 +1519,26 @@ Company: TMP Worldwide Advertising and Communications, LLC
 		}
 		
 		/* Events */
-		#events #modules
+		#events #modules,
+		#online-events #modules
 		{
 			display:none;
 		}
 		
-		#events #article
+		#events #article,
+		#online-events #article
 		{
 			width:750px;
 		}
 		
-		#events .intro
+		#events .intro,
+		#online-events .intro
 		{
 			padding-right:400px;
 		}
 		
-		#events #article-bg
+		#events #article-bg,
+		#online-events #article-bg
 		{
 			margin-right:250px;
 		}
@@ -1496,12 +1562,15 @@ Company: TMP Worldwide Advertising and Communications, LLC
 .event_pagination_arrow{text-indent: -9999px;overflow: hidden;padding:0px 0 0 0;left:2px;position:relative;top:2px;}
 #event_pagination a{padding-left:1px;font-weight:bold;margin:0;}	
 #event_pagination a.selected{padding-left:1px;color:#7A7A7A;font-weight:bold;}	
-body#events .accordion_wrapper {margin-top:0px;padding-top:0px;}
+body#events .accordion_wrapper,body#online-events .accordion_wrapper {margin-top:0px;padding-top:0px;}
 
-body#events .accordion {width:100%;}
-body#events .accordion div{margin:0px 0 0 22px; /*height:110px;*/ overflow:hidden;width:380px !important;
+
+body#events .accordion,body#online-events .accordion {width:100%;}
+body#events .accordion div, body#online-events .accordion div{margin:0px 0 0 22px; /*height:110px;*/ overflow:hidden;width:380px !important;
                            }
-body#events .accordion h3{margin:0 0 0 12px;
+body#events .accordion h3,
+body#online-events .accordion h3
+{margin:0 0 0 12px;
                           padding-left:23px;
 			background:url("http://att.jobs/images/ico-careerarea-accordion-o.gif") no-repeat top left ;
 			border:0;
@@ -1516,7 +1585,7 @@ body#events .accordion h3{margin:0 0 0 12px;
 .col1 {display:block;width:400px;display:inline-block;}
 .col2 {display:block;width:260px;display:inline-block;}
 
-body#events .accordion table {margin-left:18px;}
+body#events .accordion table,body#online-events .accordion table {margin-left:18px;}
 
 		
 		/* Career Area */
@@ -2071,6 +2140,7 @@ body#events .accordion table {margin-left:18px;}
 			text-indent:0px;
 			padding-left:4px !important;
 			border:1px solid #ccc;
+			z-index:1;
 		}
 	
 		.student-program li.ddl-degree-focus ul li
@@ -2102,6 +2172,7 @@ body#events .accordion table {margin-left:18px;}
 			text-indent:0px;
 			padding-left:4px !important;
 			border:1px solid #ccc;
+			z-index:1;
 		}
 	
 		.student-program li.ddl-level-education:hover ul,
@@ -2125,7 +2196,7 @@ body#events .accordion table {margin-left:18px;}
 		.program-viewall {
 		                 height:18px;display:block;
 		                 margin:0;
-		                 position:absolute;left:287px;top:214px;
+		                 position:absolute;left:287px;top:255px;
 		                 background-color:transparent;
 		                 font-size:1.1em;
 		                 color:#fff;
@@ -2138,10 +2209,10 @@ body#events .accordion table {margin-left:18px;}
 		                 width:66px;height:18px;display:block;
 		                 text-indent: -9999px;
 		                 overflow: hidden;border:0;margin:0;font-size:0;line-height:0;
-		                 position:absolute;left:290px;top:190px;cursor:pointer;}
+		                 position:absolute;left:290px;top:230px;cursor:pointer;}
 		.program-reset {background:#fff url(http://att.jobs/images/btn-student-program.png) no-repeat scroll -66px 0px ;
 		                width:50px;height:18px;display:block;text-indent: -9999px;overflow: hidden;border:0;margin:0;font-size:0;line-height:0;
-		                position:absolute;left:358px;top:190px;cursor:pointer;}
+		                position:absolute;left:358px;top:230px;cursor:pointer;}
 
 		.program-search:hover
 		{
@@ -2160,7 +2231,7 @@ body#events .accordion table {margin-left:18px;}
 			height:59px;
 			text-indent:-9999px;
 			overflow:hidden;
-			margin-top:280px;
+			margin-top:320px;
 		}
 
 		.student-program #article h2.sp-result
@@ -2170,7 +2241,7 @@ body#events .accordion table {margin-left:18px;}
 			height:21px;
 			text-indent:-9999px;
 			overflow:hidden;
-			margin-top:280px;
+			margin-top:310px;
 		}
 
 		.student-program .sp-detail h2
@@ -2208,7 +2279,7 @@ body#events .accordion table {margin-left:18px;}
 		.sp-result-item
 		{
 			width:222px;
-			min-height:167px;height:auto !important;height:167px;
+			min-height:190px;height:auto !important;height:190px;
 			background:url("http://att.jobs/images/bg-sp-result-item.gif") repeat-x bottom;
 			margin-right:18px;
 			margin-bottom:10px;
@@ -2250,7 +2321,7 @@ body#events .accordion table {margin-left:18px;}
 		#sp-detail-nav
 		{
 			list-style:none;
-            padding:270px 0 10px 0 !important;
+            padding:298px 0 10px 0 !important;
             display:block;
             height:30px;
             padding-left:0 !important;
@@ -2426,6 +2497,38 @@ body#events .accordion table {margin-left:18px;}
 		{
 			color:#fff;
 		}
+		
+		.ddl-program-type
+		{
+			float:left;
+		}
+		
+		.cbx-select {		                 
+			position:absolute;
+			left:250px;
+			top:185px;
+			color:#fff;
+			padding:0;
+			margin:0;
+			text-align:right;
+			display:inline-block;
+			vertical-align:middle;
+				line-height:9px !important;
+				}
+		
+		
+		
+	.student-program fieldset .cbx-select label {
+			color:#fff;
+			font-size:1.0em;
+			line-height:11px;
+		}
+		.student-program fieldset .cbx-select input 
+		{
+			height:12px;
+			border:0;
+		}
+		
 		
 		/*End Student Program */
 		
@@ -2925,4 +3028,94 @@ body#events .accordion table {margin-left:18px;}
 	opacity:0.8;
 	filter:alpha(opacity=80);
 	}
+	
+	
+	
+	/*Culture - Military*/
+	
+	.wrapper-testimonials {
+			width:415px;
+			min-height:145px;
+			padding:0 0 15px 0;
+			margin:0 0 15px 0;
+			text-align:left;
+			border-bottom:2px dotted #cccccc !important;
+			border-left:0 !important;
+			border-right:0 !important;
+			border-radius: 0 0 0 0 !important; 
+			overflow:hidden;
+		}
+	
+	.test-more
+	{
+		padding:0 !important;
+		border:0 !important;
+		
+	}
+	body#military .wrapper-testimonials img {
+		float:left;
+		}	
+	
+	body#military .wrapper-testimonials h2 {
+		color:#ff6600;
+		font-size: 1.4em;
+		padding:0;
+		margin:0;
+		font-weight:bold;
+		}
+
+	body#military .wrapper-testimonials h3 {
+		color: #ff6600;
+		font-size: 1.3em;
+		margin:0 !important;
+		padding:0;
+		font-weight:normal;
+		border:0 !important;
+		}
+		
+	body#military .test-detail {
+		width:270px;
+		padding:0;
+		margin:8px 0 0 9px;
+		text-align:left;		
+		float:left;
+		border:0 !important;
+		}	
+		
+		
+	body#military .test-detail a.nav-linkedin:link, 
+	body#military .test-detail a.nav-linkedin:active, 
+	body#military .test-detail a.nav-linkedin:visited {
+       color: #39a4dc;
+       font-size:12px;
+       background:url("http://att.jobs/images/military/icon-linkedin.png") no-repeat top left ;
+       height:14px;
+       display:block;
+       padding:2px 0 0 20px;
+       margin:10px 0 0 0;
+		}
+
+
+	body#military .test-detail a.nav-linkedin:hover 	{
+		text-decoration:none;
+		}
+
+
+	body#military .sp-detail 	{
+		margin-top:35px; 
+		}
+	
+	
+		#home_readmore,
+		#home_readmore1,
+		#home_readmore2,
+	    #home_collapse    {
+	    	text-align:left; 
+	    	margin:0px; 
+	    	padding:0px; 
+
+	    	}
+
+		
+		
 }

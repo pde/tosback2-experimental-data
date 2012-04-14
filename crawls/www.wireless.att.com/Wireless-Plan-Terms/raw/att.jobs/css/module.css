@@ -154,7 +154,8 @@ Company: TMP Worldwide Advertising and Communications, LLC
 	
 	div.mod-talent-network p
 	{
-		padding-right:110px;
+		padding-right:100px;
+		line-height:12px !important;
 	}
 	
 	
@@ -177,14 +178,52 @@ Company: TMP Worldwide Advertising and Communications, LLC
 		margin-right:10px;
 	}
 	
-	#modules div.mod-rssfeed ul li,div.mod-local-jobs ul li, div.mod-realted-content ul li
+	#modules div.mod-rssfeed iframe
 	{
-		padding-top:8px;
+		border:0;
 	}
+	
+	#modules div.mod-rssfeed 
+	{
+		text-align:center;
+	}
+	
+	#modules div.mod-rssfeed  p,
+	#modules div.mod-rssfeed  li,
+	#modules div.mod-rssfeed  h2,
+	#modules div.mod-rssfeed  iframe,
+	#modules div.mod-rssfeed  ul
+	{
+		text-align:left;
+	}
+	
+	
+	div.mod-local-jobs ul li, div.mod-realted-content ul li
+	{
+		padding-top:8px; 
+	}
+	
+	
+	#modules div.mod-html ul {
+		padding:0; 
+		list-style:disc; 
+		margin:0 0 0 15px;
+	}
+	
+	#modules div.mod-rssfeed ul li {
+		padding-top:3px; 
+	}
+	
 	#modules div.mod-rssfeed ul span, div.mod-local-jobs ul span
 	{
 		
 		font-size:0.9em;
+	}
+	#modules div.mod-rssfeed p.centerimage
+	{
+	    padding:0px 10px 0px 0px;
+	    margin:0px 0px 0px 0px;
+	    text-align:center;    
 	}
 
 	#modules div.mod-job-search
@@ -298,6 +337,32 @@ Company: TMP Worldwide Advertising and Communications, LLC
 	#modules div.mod-award .link-arrow-ico
 	{
 		margin-top:12px;
+	}
+	
+	/*Skill translator */
+	.skill-translator
+	{
+		min-height:150px;
+		padding-top:10px;
+	}
+	.skill-translator p
+	{
+		width:120px;
+		float:left;
+		padding-right:0;
+	}
+	
+	.skill-translator img
+	{
+		width:88px;
+		float:left;
+	}
+	
+	.skill-translator a
+	{
+		padding-top:10px;
+		display:block;
+		font-size:13px;
 	}
 
 	/* Video Module */

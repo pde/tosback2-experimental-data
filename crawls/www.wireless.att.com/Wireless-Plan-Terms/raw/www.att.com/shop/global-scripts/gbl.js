@@ -5,6 +5,8 @@
  * 
  */
 
+jQuery.extend(jQuery.browser,{SafariMobile : navigator.userAgent.toLowerCase().match(/iP(hone|ad)/i)});
+var myHostName = window.location.hostname.indexOf("wireless") != -1 ? "www.wireless.att.com" : "www.att.com";
 
 jQuery.noConflict();
 jQuery.support.cors = true;
@@ -19,9 +21,55 @@ jQuery.getScript = function(url, callback, cache){
 	});
 };
 	
-if(typeof HTMLElement != "undefined"){HTMLElement.prototype.__defineGetter__("innerText", function () {return this.textContent})}
-jQuery.extend(jQuery.browser,{SafariMobile : navigator.userAgent.toLowerCase().match(/iP(hone|ad)/i)});
-var myHostName = window.location.hostname.indexOf("wireless") != -1 ? "www.wireless.att.com" : "www.att.com";
+
+(function(jQuery){
+	jQuery.fn.stopOn = function(handler) {
+		return this.each(function() {
+			
+			//safari mobile must have the handler directly bound to the event
+			if(!!jQuery.browser.SafariMobile){
+				jQuery(this).bind("mouseenter focus", handler);
+				return;
+			}
+			
+			var stagnantBeatThreshold, stagnantBeats, beatInterval, element, coords, lastCoords, velocity, moving, monitorVelocity, monitorMouse;
+			
+			stagnantBeatThreshold = 5; //change this number to increase delay - 25 = 250ms
+			stagnantBeats = 0;
+			beatInterval = 10;
+			element = this;
+			coords = {};
+			lastCoords = {};
+			velocity;
+			moving = false;
+			monitorVelocity = function(){
+				velocity =  Math.abs(lastCoords.x - coords.x) + Math.abs(lastCoords.y - coords.y);
+				lastCoords.x = coords.x;
+				lastCoords.y = coords.y;
+				if(velocity != 0){moving = true; stagnantBeats = 0;}
+				if(velocity == 0){stagnantBeats++;}
+				if(stagnantBeats >= stagnantBeatThreshold && moving){
+					clearInterval(element.intervalRef);
+					handler.apply(element);
+					moving = false;
+				}
+			}
+			monitorMouse = function(e){
+				e = e ? e : window.event;
+				if(e.clientX){
+					coords.x = e.clientX + document.body.scrollLeft;
+					coords.y = e.clientY + document.body.scrollTop;
+				}else{
+					coords.x = e.pageX;
+					coords.y = e.pageY;
+				}
+			}
+			jQuery(element).bind("mouseenter.stopOn", function(e){this.intervalRef = setInterval(monitorVelocity, beatInterval);jQuery(element).bind("mousemove.stopOn", monitorMouse)});
+			jQuery(element).bind("mouseleave.stopOn", function(e){clearInterval(this.intervalRef);jQuery(element).unbind("mousemove.stopOn")});
+		});
+	};
+})(jQuery);
+
 
 GlobalNav = {
 	showCart: false,
@@ -35,6 +83,7 @@ GlobalNav = {
 		userInfo: "http://" + myHostName + "/globalnav/includes/user_info.jsp",
 		menuJSON: "http://" + myHostName + "/navservice/navservlet"
 	},
+	resourceParams: {}, 
 	util: {
 		offset: function(element){
 			var curLeft = 0; 
@@ -160,6 +209,8 @@ GlobalNav = {
 				typeof globalNavDefaultSelections.locale != "undefined" 
 			){ajaxData.locale = globalNavDefaultSelections.locale}
 			
+			jQuery.extend(ajaxData, GlobalNav.resourceParams);
+			
 			GlobalNav.util.tieredMenuAjaxOptions = {
 				url:url,
 				data:ajaxData,
@@ -193,18 +244,12 @@ GlobalNav = {
 			
 			GlobalNav.tieredNav.insertBefore(thisMenuList, GlobalNav.Tray.contentContainer);
 			
+			menuItem.unbind();
 			
-			menuItem.bind("mouseenter focus", function(){
-				GlobalNav.PrimaryNav.mouseInside = true;
-				this.mouseInside = true;
-				if(!!GlobalNav.SecondaryNav.visibleMenu && this != GlobalNav.SecondaryNav.visibleMenu){GlobalNav.Tray.hide()}
-				GlobalNav.SecondaryNav.peek.apply(this);
-			});
+			jQuery(menuItem).stopOn(GlobalNav.PrimaryNav.mouseIn);
+			menuItem.bind("focus", GlobalNav.PrimaryNav.mouseIn);
 			menuItem.bind("mouseleave blur", function(){this.mouseInside = false;});
 			menuItem.bind("click", GlobalNav.SecondaryNav.pin);
-			
-			menuItem.unbind("click", GlobalNav.Tray.hide);
-			menuItem.unbind("mouseenter", GlobalNav.Tray.hide);
 			
 			menuItem.data("subMenu", thisMenuList);
 			
@@ -218,7 +263,7 @@ GlobalNav = {
 				anchor = GlobalNav.util.jMerge(GlobalNav.util.createAdvancedAnchor(item));
 				anchor.attr("name", primaryMenuList.id.split("_")[1] + "_" + item.displayName);
 				anchor.addClass("secondaryMenuItem");
-
+				
 				listItem.append(anchor);
 				thisMenuList.append(listItem);
 				
@@ -311,7 +356,8 @@ GlobalNav = {
 					
 					GlobalNav.Tray.contentContainer.append(content);
 					
-					anchor.bind("mouseenter focus", GlobalNav.Tray.show);
+					jQuery(anchor).stopOn(GlobalNav.Tray.show);
+					anchor.bind("focus", GlobalNav.Tray.show);
 					anchor.data("content", GlobalNav.util.jMerge(content));
 					anchor.data("cols", jQuery(content).find(".secondColumn, .firstColumn"));
 				}else{listItem.bind("mouseenter", function(){GlobalNav.SecondaryNav.menuListItems.removeClass("selected");GlobalNav.Tray.hide.apply(this);})}
@@ -499,7 +545,6 @@ GlobalNav = {
 		},
 		mouseIn: function(){
 			this.mouseInside = true;
-			this.timeout = window.setTimeout(GlobalNav.util.forceThis(GlobalNav.SegMenu.showSubMenu, this),250)
 		},
 		initialize: function(){
 			jQuery.each(this.initFunctions, function(){arguments[1]()});
@@ -514,7 +559,7 @@ GlobalNav = {
 			
 			jQuery.each(this.menuListItems, function(index, menuItem){
 				menuItem = GlobalNav.util.jMerge(menuItem);
-				menuItem.attr("name", menuItem.innerText);
+				menuItem.attr("name", jQuery(menuItem).text());
 				
 				if(decodeURI(menuItem.href) != decodeURI(document.location.href.split("#")[0] + "#")){menuItem.addClass("hasURL")}
 				if(!!menuItem.parentNode.getElementsByTagName("ul").length){
@@ -528,6 +573,7 @@ GlobalNav = {
 						menuItem.data("subMenu").bind("mouseenter", GlobalNav.util.forceThis(GlobalNav.SegMenu.showSubMenu, menuItem));
 						menuItem.data("subMenu").bind("mouseleave", GlobalNav.util.forceThis(GlobalNav.SegMenu.hideSubMenu, menuItem));
 					}else{
+						jQuery(menuItem).stopOn(GlobalNav.SegMenu.showSubMenu);
 						menuItem.bind("mouseenter focus", GlobalNav.SegMenu.mouseIn);
 						menuItem.bind("mouseleave blur", GlobalNav.SegMenu.hideSubMenu);
 						menuItem.data("subMenu").bind("mouseenter focus", GlobalNav.util.forceThis(GlobalNav.SegMenu.mouseIn, menuItem));
@@ -539,7 +585,7 @@ GlobalNav = {
 					menuItem.data("subMenu").data("shadow", new GlobalNav.shadow(menuItem.data("subMenu"), "segHasShadow", GlobalNav.SegMenu.shadowOffsets));
 					menuItem.data("subMenu").data("ul", GlobalNav.util.jMerge(menuItem.data("subMenu").getElementsByTagName("ul")[0]));
 					document.getElementById("segMenuBar").appendChild(menuItem.data("subMenu"));
-					jQuery.each(menuItem.data("subMenu").getElementsByTagName("a"), function(index, item){jQuery(item).attr("name", menuItem.innerText + "_" + item.innerText)})
+					jQuery.each(menuItem.data("subMenu").getElementsByTagName("a"), function(index, item){jQuery(item).attr("name", jQuery(menuItem).text() + "_" + jQuery(item).text())})
 				}else{menuItem.addClass("hasNoSubMenu")}
 			});
 		}
@@ -558,7 +604,12 @@ GlobalNav = {
 			msie: {zIndex: "-1", top:-27,left:0,height:2,width:2}, 
 			modern: {zIndex: "0", top:-20,left:0,height:0,width:-2}
 		},
-		
+		mouseIn: function(){
+			GlobalNav.PrimaryNav.mouseInside = true;
+			this.mouseInside = true;
+			if(!!GlobalNav.SecondaryNav.visibleMenu && this != GlobalNav.SecondaryNav.visibleMenu){GlobalNav.Tray.hide()}
+			GlobalNav.SecondaryNav.peek.apply(this);
+		},
 		initialize: function(){
 			jQuery.each(this.initFunctions, function(){arguments[1]()});
 			jQuery.each(GlobalNav.PrimaryNav.menuLinks.get(), function(index, menuItem){
@@ -570,12 +621,8 @@ GlobalNav = {
 					var thisUList = GlobalNav.util.jMerge(menuItem.parentNode.getElementsByTagName("ul")[0]);
 					GlobalNav.tieredNav.insertBefore(thisUList, GlobalNav.Tray.contentContainer);
 					
-					menuItem.bind("mouseenter focus", function(){
-						GlobalNav.PrimaryNav.mouseInside = true;
-						this.mouseInside = true;
-						if(!!GlobalNav.SecondaryNav.visibleMenu && this != GlobalNav.SecondaryNav.visibleMenu){GlobalNav.Tray.hide()}
-						GlobalNav.SecondaryNav.peek.apply(this);
-					});
+					jQuery(menuItem).stopOn(GlobalNav.PrimaryNav.mouseIn);
+					menuItem.bind("focus", GlobalNav.PrimaryNav.mouseIn);
 					menuItem.bind("mouseleave blur", function(){this.mouseInside = false;});
 					menuItem.bind("click", GlobalNav.SecondaryNav.pin);
 					menuItem.data("subMenu", thisUList);
@@ -627,11 +674,7 @@ GlobalNav = {
 			GlobalNav.Tray.shadow.show();
 		},
 		peek: function(){
-			if(!GlobalNav.SecondaryNav.visibleMenu){
-				GlobalNav.SecondaryNav.show.apply(this);
-			}else{
-				window.setTimeout(GlobalNav.util.forceThis(GlobalNav.SecondaryNav.show, this),250);
-			}
+			GlobalNav.SecondaryNav.show.apply(this);
 		},
 		pin: function(){
 			GlobalNav.SecondaryNav.visibleMenu = this;
@@ -664,8 +707,8 @@ GlobalNav = {
 					var thisContent = menuItem.parentNode.getElementsByTagName("div")[0];
 					GlobalNav.Tray.contentContainer.append(thisContent);
 					
+					jQuery(menuItem).stopOn(GlobalNav.Tray.show)
 					menuItem.bind("focus", GlobalNav.Tray.show);
-					menuItem.bind("mouseenter", GlobalNav.Tray.show);
 					menuItem.data("content", GlobalNav.util.jMerge(thisContent));
 					menuItem.data("cols", jQuery(thisContent).find(".secondColumn, .firstColumn"));
 				}else{
@@ -722,6 +765,102 @@ GlobalNav = {
 			jQuery.each(this.initFunctions, function(){arguments[1]()});
 		}
 	},
+	/*
+	##################################
+	
+		Geo-Localization
+	
+	##################################
+	*/
+	GeoLoc: {
+		//type can be 1(Personal), 2(Small Business), 3(Enterprise Business), 4(Wholesale), or 5(Government)
+		localize: function(type, zip, seg, url) {
+			if (this.dtabCookie || this.subDtabCookie) {
+				switch(type) {
+				case 1:
+					this.modifyCookie("DTAB","Tab=Res",365);
+					this.modifyCookie("subDTAB","",-1);
+					break;
+				case 2:
+					this.modifyCookie("DTAB","Tab=Bus",365);
+					this.modifyCookie("subDTAB","",-1);
+					break;
+				case 3:
+					this.modifyCookie("DTAB","Tab=Ent",365);
+					this.modifyCookie("subDTAB","",-1);
+					break;
+				case 4:
+					this.modifyCookie("DTAB","Tab=Ent",365);
+					this.modifyCookie("subDTAB","WHOLESALE",365);
+					break;
+				case 5:
+					this.modifyCookie("DTAB","Tab=Ent",365);
+					this.modifyCookie("subDTAB","GOVERNMENT",365);
+					break;
+				}
+			}
+			if (zip) {
+				jQuery.ajax({
+					url:"http://localization.att.com/loc/controller",
+					type: "GET",
+					data: { ltype: "rev", zip: zip, segment: seg },
+					dataType: "jsonp",
+					complete:function() {
+						window.location.href = url;
+					}
+				});
+			} else {
+				window.location.href = url;
+			}
+		},
+		getCookie: function(name) {
+			var tempCookies = document.cookie.split(";"), value = 0;
+			jQuery.each(tempCookies,function(i,v) {
+				if (v.indexOf(name) !== -1) {
+					value = v;
+					return false;
+				}
+			});
+			return value;
+		},
+		modifyCookie: function(name,value,days) {
+			if (days) {
+				var date = new Date();
+				date.setTime(date.getTime()+(days*24*60*60*1000));
+				var expires = "; expires="+date.toGMTString();
+			} else {
+				var expires = "";
+			}
+			document.cookie = name+"="+value+expires+"; path=/; domain=.att.com";
+		},
+		getZip: function(value) {
+			var zip = 0, tempZip, tempValue;
+			if (value) {
+				tempValue = value.split("|");
+				jQuery.each(tempValue,function(i,v) {
+					if (v.indexOf("zip") !== -1) {
+						tempZip = v.split("=");
+						zip = tempZip[1];
+						return false;
+					}
+				});
+			}
+			return zip;
+		},
+		initialize: function() {
+			this.locCookie = this.getCookie("attPersistantLocalization");
+			this.dtabCookie = this.getCookie("DTAB");
+			this.subDtabCookie = this.getCookie("subDTAB");
+			this.userZip = this.getZip(this.locCookie);
+
+			this.personalLink.click(function(e) { GlobalNav.GeoLoc.localize(1,GlobalNav.GeoLoc.userZip,"res",this.href); e.preventDefault();e.stopPropagation(); });
+			this.businessLink.click(function(e) { GlobalNav.GeoLoc.localize(2,GlobalNav.GeoLoc.userZip,"bus",this.href); e.preventDefault();e.stopPropagation(); });
+			this.smallBusinessLink.click(function(e) { GlobalNav.GeoLoc.localize(2,GlobalNav.GeoLoc.userZip,"bus",this.href); e.preventDefault();e.stopPropagation(); });
+			this.enterpriseLink.click(function(e) { GlobalNav.GeoLoc.localize(3,GlobalNav.GeoLoc.userZip,"ent",this.href); e.preventDefault();e.stopPropagation(); });
+			this.wholesaleLink.click(function(e) { GlobalNav.GeoLoc.localize(4,GlobalNav.GeoLoc.userZip,"ent",this.href); e.preventDefault();e.stopPropagation(); });
+			this.governmentLink.click(function(e) { GlobalNav.GeoLoc.localize(5,GlobalNav.GeoLoc.userZip,"ent",this.href); e.preventDefault();e.stopPropagation(); });
+		}
+	},
 	initFunctions: [],
 	finishFunctions: [],
 	initialize: function(){
@@ -731,7 +870,13 @@ GlobalNav = {
 		this.SegMenu.menuListItems = jQuery("a.segMenuItem");
 		this.SegMenu.initialize();
 		
-
+		this.GeoLoc.personalLink = jQuery("#segMenuItemPersonal");
+		this.GeoLoc.businessLink = jQuery("#segMenuItemBusiness");
+		this.GeoLoc.smallBusinessLink = jQuery('a[name*="Small Business"]');
+		this.GeoLoc.enterpriseLink = jQuery('a[name*="Enterprise Business"]');
+		this.GeoLoc.wholesaleLink = jQuery('a[name*="Wholesale"]');
+		this.GeoLoc.governmentLink = jQuery('a[name*="Government"]');
+		this.GeoLoc.initialize();
 		
 		if(initTieredNav){
 			// retain references to commonly used Elementss.
@@ -798,6 +943,11 @@ jQuery(function(){
 			GlobalNav.resources[resource] = (typeof customGlobalNavResources[resource] != "undefined") ? customGlobalNavResources[resource] : GlobalNav.resources[resource];
 		}
 	}
+	if(typeof globalNavResourceParams != "undefined"){
+		for(resourceParam in globalNavResourceParams){
+			GlobalNav.resourceParams[resourceParam] = globalNavResourceParams[resourceParam];
+		}
+	}
 	var tieredNav = jQuery("#tieredNav");
 	var segMenuBar = jQuery("#segMenuBar");
 	var globalNavUserInfo = jQuery("#globalNavUserInfo");
@@ -822,8 +972,8 @@ jQuery(function(){
 		}
 	});
 	
-	if(segMenuBar.length && segMenuBar.find("*").length < 2){segMenuBar.load(GlobalNav.resources.segmentationMenu, function(responseText, textStatus){if(textStatus == "success"){GlobalNav.SegMenu.isLoaded = true;GlobalNav.util.checkInitConditions()}})}else{GlobalNav.SegMenu.isLoaded = true;GlobalNav.util.checkInitConditions()}
-	if(globalNavUserInfo.length && globalNavUserInfo.find("*").length < 1){globalNavUserInfo.load(GlobalNav.resources.userInfo, function(responseText, textStatus){if(textStatus == "success"){GlobalNav.UserInfo.isLoaded = true;GlobalNav.util.checkInitConditions()}})}else{GlobalNav.UserInfo.isLoaded = true;GlobalNav.util.checkInitConditions()}
+	if(segMenuBar.length && segMenuBar.find("*").length < 2){jQuery.get(GlobalNav.resources.segmentationMenu, GlobalNav.resourceParams, function(responseText, textStatus){if(textStatus == "success"){GlobalNav.SegMenu.isLoaded = true;segMenuBar.html(responseText);GlobalNav.util.checkInitConditions()}})}else{GlobalNav.SegMenu.isLoaded = true;GlobalNav.util.checkInitConditions()}
+	if(globalNavUserInfo.length && globalNavUserInfo.find("*").length < 1){jQuery.get(GlobalNav.resources.userInfo, GlobalNav.resourceParams, function(responseText, textStatus){if(textStatus == "success"){GlobalNav.UserInfo.isLoaded = true;globalNavUserInfo.html(responseText);GlobalNav.util.checkInitConditions()}})}else{GlobalNav.UserInfo.isLoaded = true;GlobalNav.util.checkInitConditions()}
 });
 
 var reporting_ready = window.reporting_ready || new jQuery.Deferred();
@@ -850,87 +1000,138 @@ jQuery.when(reporting_ready).then(function (reporting) {
 });
 
 //global autosuggest code
-var GlobalSearchDefaultValue = 'Search';
-
-function clearSearch(form) {
-  if (form.q.value == GlobalSearchDefaultValue) {
-	  form.q.value = '';
-  }
-}		
-				
-function validateGlobalSearchForm(form) {
-	String.prototype.trim = function () {
-		return this.replace(/^\s*/, "").replace(/\s*$/, "");
-	}			
-	if ( form.q.value.trim() == '' || form.q.value.toLocaleLowerCase() == DefaultValue.toLocaleLowerCase() ) {
-		alert('Please enter at least one keyword in the Search box.');
-		form.q.focus();
-		return false;
-	}
-  return true;
-}
 var client_id = 1;
-var DefaultValue = 'Search';
 
-function clearSearch(form) {
-	if (form.q.value == DefaultValue) {
-		form.q.value = '';
-	}
-}
-
-function validateSearchHeader(form) {
-	String.prototype.trim = function () {
-		return this.replace(/^\s*/, "").replace(/\s*$/, "");
-	}
-	if ( form.q.value.trim() == '' || form.q.value.toLocaleLowerCase() == DefaultValue.toLocaleLowerCase() ) {
-		alert('Please enter at least one keyword in the Search box.');
-		form.q.focus();
-		return false;
-	}
-	return true;
-}
 function split( val ) {
-	return val.split( /,\s*/ );
+	return val.split( /,\s*?/ );
 }
 
 jQuery(window).load(function(){
 	if(jQuery('#search').length != 0){
-		jQuery.getScript('//www.att.com/scripts/jquery-ui-1.8.11.custom.min.js', jQuery.fn.autocompleteConfig, true);
+		scriptLoader('//www.att.com/scripts/jquery-ui-1.8.11.custom.min.js', jQuery.fn.autocompleteConfig);
 	}
+});
+
+jQuery(document).ready(function(){
+	var isValidChar = /^[a-zA-Z0-9\,.#&'\- ]{1,}$/, initVal = "", self, srch = jQuery('#search'); //new to handle spanish
+
+	validateSearchForm();
+
+	srch.focus(function(){
+		self = jQuery(this);
+		if(self.val().toLowerCase() == 'search'){
+			self.val('');
+			return initVal = "Search"; //new to handle spanish
+		}
+		else if(self.val().toLowerCase() == 'buscar'){ //new to handle spanish
+			self.val('');
+			return initVal = "Buscar";
+		}
+	});
+	srch.blur(function(){
+		self = jQuery(this);
+		var searchStr = self.val();
+		searchStr = searchStr.replace(/\s+/g, ' ');
+		self.val(jQuery.trim(searchStr));
+
+		if(!isValidChar.test(searchStr)){
+			self.val(initVal); //new to handle spanish
+		}
+	});
 	
 });
 
+function scriptLoader(url, callback){
+    var doc = document, script = doc.createElement("script");
+    script.type = "text/javascript";
+
+	if (callback == undefined) callback = function(){};
+	
+    if (script.readyState){//IE
+        script.onreadystatechange = function(){
+            if (script.readyState == "loaded" || script.readyState == "complete"){
+                script.onreadystatechange = null;
+                callback();
+            }
+        };
+    } else {//Others
+        script.onload = function(){
+            callback();
+        };
+    }
+
+    script.src = url;
+    doc.getElementsByTagName("head")[0].appendChild(script);
+}
+
+function validateSearchForm(){
+	var srch = jQuery('#search'), srchForm = jQuery('#searchForm');
+	
+	jQuery('#searchForm button').click(function(){
+		if (srch.val().toLowerCase() == 'search' || srch.val().toLowerCase() == 'buscar' || srch.val() == '') {
+			alert('Please enter at least one keyword in the Search box.');
+			srch.focus();
+			return false;
+		}
+		else{
+			srchForm.submit();
+		}
+	});
+	
+	srchForm.submit(function(){
+		if (srch.val().toLowerCase() == 'search' || srch.val().toLowerCase() == 'buscar' || srch.val() == '') {
+			alert('Please enter at least one keyword in the Search box.');
+			srch.focus();
+			return false;
+		}
+		else{
+			return true;
+		}
+	});
+}
+
 (function(jQuery){
 	jQuery.fn.autocompleteConfig = function() {
+		var autoSuggestBox = jQuery("#autoSuggestBox"), ui_autocomplete = jQuery(".ui-autocomplete"), srch = jQuery("#search"), asState = jQuery('input[name="autoSuggest"]');
 		
-		jQuery("#search").autocomplete({
+		asState.val("FALSE"); //set hidden field to false as default until autosuggest is utilized and changes to TRUE in the select property below.
 
+		srch.autocomplete({
 			appendTo:"#autoSuggestBox",
-			delay: 0,	
-			open: function(event, ui) { jQuery("#autoSuggestBox").show(); var $ui_autocomplete = jQuery(".ui-autocomplete");
-			$ui_autocomplete.css("top","0px");
-			$ui_autocomplete.css("left","0px");},
-			close: function(event, ui) { jQuery("#autoSuggestBox").hide(); },		
-			position: { my : "left top", at: "left top", of:"#autoSuggestBox",collision: "fit"},
-			select: function(event, ui) {document.getElementById('search').value=ui.item.value ;document.getElementById('searchForm').submit();},
-			
-
-			source: function( request, response ) {
-				
+			delay: 0,
+			open: function(event, ui) {
+				autoSuggestBox.show();
+				ui_autocomplete.css({"top":"0px","left":"0px"});
+			},
+			close: function(event, ui) {
+				autoSuggestBox.hide();
+			},
+			position: { my : "left top", at: "left top", of:"#autoSuggestBox", collision: "fit"},
+			select: function(event, ui) {
+				srch.val(ui.item.value);
+				asState.val("TRUE");
+				document.getElementById('searchForm').submit();
+			},
+			source: function(request, response) {
 				jQuery.ajax({
-					url: "/global/search/autoSuggest.jsp?q="+jQuery("#search").val(),
-					//url: "/shop/sharedSegments/autoSuggest.jsp?q="+jQuery("#search").val(),
-					success: function(data){
-						if(split(data)==''){jQuery("#autoSuggestBox").hide();return false;}else{
-						response( jQuery.each( split(data), function( item ) {
-							return {label: item,value: item}}
-						
-						));
-						}}	
-					});
-				},
+					url: "//www.att.com/global/search/autoSuggestJson.jsp?q=" + srch.val() + "&callback=insertAutoSuggestions",
+					dataType: "jsonp",
+					jsonpCallback: "insertAutoSuggestions",
+					success: function(data) {
+						var ra = [];
+ 	                	if(data.length == 0) {
+                    		jQuery("#autoSuggestBox").hide();
+                    		return false;
+                        } else {
+	 						jQuery.each(data, function(raindex, raval){
+	 							ra[raindex] = {"label": raval.short, "value": raval.short};
+ 							});
+ 							response(ra);
+						}
+					}
+				});
+			},
 			minLength:1
-		})
-	}
-	
-})(jQuery);
+		});
+	};
+}(jQuery));

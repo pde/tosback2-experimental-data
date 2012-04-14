@@ -149,7 +149,6 @@
 
 
 
-
  
 
 
@@ -275,8 +274,8 @@
 
 
 
-
-
+	
+	
 	
 	
 
@@ -316,17 +315,16 @@
 			<META HTTP-EQUIV="EXPIRES" CONTENT="-1">
 			
 			
-			<script type="text/javascript" src="../scripts/commonFunc.js%3F2011-12-01-03-37-26"></script>
-			<script type="text/javascript" src="../scripts/formFunc.js%3F2011-12-01-03-37-26"></script>
-			<script type="text/javascript" src="../scripts/ShoppingCart.js%3F2011-12-01-03-37-26"></script>
-			<script type="text/javascript" src="../scripts/uverse.js%3F2011-12-01-03-37-26"></script>
-			<script type="text/javascript" src="../dwr/interface/DWRRequestManager.js%3F2011-12-01-03-37-26"></script>
-			<script type="text/javascript" src="../dwr/engine.js%3F2011-12-01-03-37-26"></script>
-			<script type="text/javascript" src="../dwr/util.js%3F2011-12-01-03-37-26"></script>
-			<script type="text/javascript" src="../scripts/hoverTooltip.js%3F2011-12-01-03-37-26"></script>
-			<script type="text/javascript" src="../../media/gvp/gvpUtils.js%3F2011-12-01-03-37-26"></script>
+			<script type="text/javascript" src="../scripts/commonFunc.js%3F2012-04-14-03-00-43"></script>
+			<script type="text/javascript" src="../scripts/formFunc.js%3F2012-04-14-03-00-43"></script>
+			<script type="text/javascript" src="../scripts/ShoppingCart.js%3F2012-04-14-03-00-43"></script>
+			<script type="text/javascript" src="../scripts/uverse.js%3F2012-04-14-03-00-43"></script>
+			<script type="text/javascript" src="../dwr/interface/DWRRequestManager.js%3F2012-04-14-03-00-43"></script>
+			<script type="text/javascript" src="../dwr/engine.js%3F2012-04-14-03-00-43"></script>
+			<script type="text/javascript" src="../dwr/util.js%3F2012-04-14-03-00-43"></script>
+			<script type="text/javascript" src="../scripts/hoverTooltip.js%3F2012-04-14-03-00-43"></script>
+			<script type="text/javascript" src="../../media/gvp/gvpUtils.js%3F2012-04-14-03-00-43"></script>
 			<script type="text/javascript" src="../../webtrends/scripts/dcs_tag_TOP.js"></script>
-
 			
 			<script> 
 					
@@ -638,6 +636,7 @@ if(window.location.host != "www.att.com"){
 
 
 
+
 	
 	
 	
@@ -706,8 +705,8 @@ if(window.location.host != "www.att.com"){
 <meta NAME="DCSext.wtStatusCode" 			CONTENT="" />
 
 
-<meta NAME="DCSext.wtPN" 					CONTENT="" />
-<meta NAME="DCSext.sessionid" 				CONTENT="TP52TYQhkSCZTGRgz1dXfYyk!1704192946!1322778682279" />
+
+<meta NAME="DCSext.sessionid" 				CONTENT="0BQvPJMfQqJbndDZrRXGBpvG!-788357371!1334430751905" />
 <meta NAME="DCSext.flowtype" 				CONTENT="UVERSE" />
 <meta NAME="DCSext.wtCustType" 				CONTENT="Consumer">
 <meta NAME="DCSext.wtCustTypeSub"  			CONTENT="Residential" />
@@ -885,7 +884,15 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		{selector: 'head:page(address-changed)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_AddressChanged'},
 		{selector: 'head:page(service-already-exists)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_ServiceAlreadyExists'},
 		{selector: 'head:page(service-not-available)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_ServiceNotAvailable'},
-		{selector: 'head:page(multiple-address)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_MultipleAddress'},
+		//{selector: 'head:page(multiple-address)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_MultipleAddress'},
+		// Fix for Prod11-3183 :check availability success flag 
+		{selector: 'head:page(multiple-address)', type: 'wtmeta', name: 'wtStatusMsg', value:function() {
+		if ('unknown'=='green') 
+		return '';
+		else
+		return 'UV_MultipleAddress';
+		}},
+		//End of Fix for Prod11-3183 :check availability success flag 
 		{selector: 'head:page(address-changed)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_AddressChanged'},
 		{selector: 'head:page(address-not-found)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_AddressNotFound'},
 		{selector: 'head:page(number-not-found)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_NumberNotFound'},
@@ -914,7 +921,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		{selector: 'head:page(customize)', type: 'wtmeta', name: 'wtLinkLoc', value: function() {
 		var successURL = '/u-verse/shop/customize.jsp';
 		if (successURL.match('/cart/index.jsp') && successURL.match('submit=true') && '' == '')
-		return location.href+"#vucbbb";
+		return "UVerse Check Availability Success_Body";
 		else 
 		return "";}},
 		
@@ -973,7 +980,13 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		//sweepstakes
 		{selector: '#sweepsEnterNowLink', type: 'wtparam', name: 'wtLinkName', value: 'EnterNow'},
 		{selector: '#sweepsEnterNowLink', type: 'wtparam', name: 'wtLinkLoc', value: 'http://att.promotions.com/uverse2/front.do'},
-		{selector: '#sweepsEnterNowLink', type: 'wtlink', name: '', params: 'wtLinkName,wtLinkLoc', trigger: 'mousedown'}
+		{selector: '#sweepsEnterNowLink', type: 'wtlink', name: '', params: 'wtLinkName,wtLinkLoc', trigger: 'mousedown'},
+
+		{selector: 'head:page(combined-billing)', type: 'wtmeta', name: 'wtSysRespCode', value: ''},
+		//ECOM1203-134 Fix
+		{selector: 'head:page(creditcard-information)', type: 'wtmeta', name: 'wtSysRespCode', value: ''}
+		
+		
 	]);
 
 	reporting.tag.perform('inline');
@@ -1185,13 +1198,13 @@ function handleLastFieldInteracted(e) {
 			
 			
 			
-				<link rel="stylesheet" type="text/css" href="../styles/checkout.css%3F2011-12-01-03-37-26.css" />
+				<link rel="stylesheet" type="text/css" href="../styles/checkout.css%3F2012-04-14-03-00-43.css" />
 			
-			<link rel="stylesheet" type="text/css" href="../styles/availability.css%3F2011-12-01-03-37-26.css" />
-			<link rel="stylesheet" type="text/css" href="../styles/uverse.css%3F2011-12-01-03-37-26.css" />
-			<link rel="stylesheet" type="text/css" href="../styles/uverse2.css%3F2011-12-01-03-37-26.css" />
-			<link rel="stylesheet" type="text/css" href="../../global/styles/grids.css%3F2011-12-01-03-37-26.css" />
-			<link rel="stylesheet" type="text/css" href="../styles/hoverTooltip.css%3F2011-12-01-03-37-26.css" />
+			<link rel="stylesheet" type="text/css" href="../styles/availability.css%3F2012-04-14-03-00-43.css" />
+			<link rel="stylesheet" type="text/css" href="../styles/uverse.css%3F2012-04-14-03-00-43.css" />
+			<link rel="stylesheet" type="text/css" href="../styles/uverse2.css%3F2012-04-14-03-00-43.css" />
+			<link rel="stylesheet" type="text/css" href="../../global/styles/grids.css%3F2012-04-14-03-00-43.css" />
+			<link rel="stylesheet" type="text/css" href="../styles/hoverTooltip.css%3F2012-04-14-03-00-43.css" />
 			
 			
 			
@@ -1225,7 +1238,7 @@ function handleLastFieldInteracted(e) {
 <script type="text/javascript" charset="utf-8">
 	function SessionVars() {
 		this.getCurrSessId = function() {
-			var pSessionId = 'TP52TYQhkSCZTGRgz1dXfYyk!1704192946!1322778682279';
+			var pSessionId = '0BQvPJMfQqJbndDZrRXGBpvG!-788357371!1334430751905';
 			return pSessionId;
 		};
 
@@ -1265,7 +1278,7 @@ function handleLastFieldInteracted(e) {
 	var forceFlashDebugMode = false;
 	var getTimeOffset = function() {
 		var offset = new Number();
-		var servertime = 1322778706842;
+		var servertime = 1334430775916;
 		var clientdateObj = new Date();
 		var clienttime = clientdateObj.getTime();
 		offset = clienttime - servertime;
@@ -1277,7 +1290,6 @@ function handleLastFieldInteracted(e) {
 	    return (typeof this[methodName] != 'undefined');
 	}
 </script>
-
  
 
 			
@@ -1717,16 +1729,6 @@ function handleLastFieldInteracted(e) {
 	
 		
 	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
 	
 	
 	
@@ -1738,16 +1740,6 @@ function handleLastFieldInteracted(e) {
 	
 	
 	
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
 	
 		
 	
@@ -1867,6 +1859,623 @@ function handleLastFieldInteracted(e) {
 								
 								<li class=" selected"><a href="../../shop/index.jsp.html" id="primary_Shop" name="Shop" class="primaryMenuItem">Shop<span></span></a>
 									
+										<ul id="secondaryMenu_Shop" class="secondaryMenu">
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/wireless/index.html" name="Shop_Wireless" >Wireless</a>
+													
+														
+															
+															
+															
+															
+														
+														<div class="trayContentItem trayFiveCol">
+															<div class="firstColumn">
+																<div class="columnContent">
+																	<img src='../../media/att/2011/global/nav/img-wireless_AA000R48.png' alt='Wireless' />
+																</div>
+															</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Phones &amp; Devices</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phones/index.html" name="Shop_Wireless_Shop By Category" >Shop By Category</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phones/pda-phones-smartphones.jsp.html" name="Shop_Wireless_Smartphones" >Smartphones</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/specials/netbooks.jsp.html" name="Shop_Wireless_Tablets and Internet Devices" >Tablets and Internet Devices</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/packages/index.jsp.html" name="Shop_Wireless_Packages &amp; Deals" >Packages &amp; Deals</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phones/cell-phones.jsp.html" name="Shop_Wireless_View All Devices" >View All Devices</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Plans</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phone-plans/index.jsp.html" name="Shop_Wireless_Shop By Category" >Shop By Category</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phone-plans/individual-cell-phone-plans.jsp.html" name="Shop_Wireless_Individual Plans" >Individual Plans</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phone-plans/family-cell-phone-plans.jsp.html" name="Shop_Wireless_Family Plans" >Family Plans</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/go-phones/index.jsp.html" name="Shop_Wireless_Prepaid GoPhone&reg; Plans" >Prepaid GoPhone&reg; Plans</a></li>
+																			
+																				
+																				
+																				<li><a href="../../shop/wireless/plans/data-plans.jsp.html" name="Shop_Wireless_Data Plans" >Data Plans</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Extras</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/accessories/index.jsp.html" name="Shop_Wireless_Accessories" >Accessories</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/services/index.jsp.html" name="Shop_Wireless_Messaging, Data &amp; More" >Messaging, Data &amp; More</a></li>
+																			
+																				
+																				
+																				<li><a href="../../shop/apps/index.jsp.html" name="Shop_Wireless_Ringtones &amp; Apps" >Ringtones &amp; Apps</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/transfer-your-number/index.html" name="Shop_Wireless_Transfer My Number" >Transfer My Number</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/coverageviewer/index.html#?type=voice" name="Shop_Wireless_Coverage Maps" >Coverage Maps</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Existing Customers</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../olam/passthroughAction.myworld%3FactionType=UpgradePhone.html" name="Shop_Wireless_Upgrade Phone" >Upgrade Phone</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/passthroughAction.myworld%3FactionType=AddALine.html" name="Shop_Wireless_Add a Line to My Account" >Add a Line to My Account</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute%3Ftarget=CRP.html" name="Shop_Wireless_Change Rate Plan" >Change Rate Plan</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/passthroughAction.myworld%3FactionType=ManageFeatures.html" name="Shop_Wireless_Manage Features" >Manage Features</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/learn/international/index.html" name="Shop_Wireless_International" >International</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+														</div>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/bundles/index.html" name="Shop_Bundles" >Bundles</a>
+													
+														
+															
+															
+															
+															
+														
+														<div class="trayContentItem trayFourCol">
+															<div class="firstColumn">
+																<div class="columnContent">
+																	<img src='../../media/att/2011/global/nav/img-bundles_AA000R46.png' alt='Bundles' />
+																</div>
+															</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Bundles with U-verse</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="index.jsp.html" name="Shop_Bundles_Popular U-verse Bundles" >Popular U-verse Bundles</a></li>
+																			
+																				
+																				
+																				<li><a href="index.jsp%3FshopFilterId=100003.html#fbid=" name="Shop_Bundles_U-verse TV and Internet" >U-verse TV and Internet</a></li>
+																			
+																				
+																				
+																				<li><a href="index.jsp%3FshopFilterId=200001.html#fbid=" name="Shop_Bundles_U-verse TV, Internet and Phone" >U-verse TV, Internet and Phone</a></li>
+																			
+																				
+																				
+																				<li><a href="customize.jsp.html#vucbbb" name="Shop_Bundles_Build My Own U-verse Bundle" >Build My Own U-verse Bundle</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Bundles without U&#8209;verse</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fprod-snip=res_globnav_popular_bundles.html" name="Shop_Bundles_Popular Bundles" >Popular Bundles</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fprod-snip=res_globnav_build_bundles.html" name="Shop_Bundles_Build My Own Bundle" >Build My Own Bundle</a></li>
+																			
+																				
+																				
+																				<li><a href="../../gen/general%3Fpid=11122.html" name="Shop_Bundles_Compare Bundles" >Compare Bundles</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Existing Customers</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute.html" name="Shop_Bundles_Change My Service" >Change My Service</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_globnav_move_service.html" name="Shop_Bundles_Move My Service" >Move My Service</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+														</div>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/tv/index.html" name="Shop_Digital TV" >Digital TV</a>
+													
+														
+															
+															
+															
+															
+														
+														<div class="trayContentItem trayFourCol">
+															<div class="firstColumn">
+																<div class="columnContent">
+																	<img src='../../media/att/2011/global/nav/img-television_AA000R49.png' alt='Digital TV' />
+																</div>
+															</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Plans &amp; Channels</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../shop/tv/index.html" name="Shop_Digital TV_U-verse TV" >U-verse TV</a></li>
+																			
+																				
+																				
+																				<li><a href="channel-lineup.jsp.html" name="Shop_Digital TV_U-verse Channel Line-up" >U-verse Channel Line-up</a></li>
+																			
+																				
+																				
+																				<li><a href="../../gen/general%3Fpid=7901.html" name="Shop_Digital TV_DIRECTV&reg; Programming Packages" >DIRECTV&reg; Programming Packages</a></li>
+																			
+																				
+																				
+																				<li><a href="../../Common/PDF/DIRECTV_English_Channel_Lineup.pdf" name="Shop_Digital TV_DIRECTV&reg; Channel Line-up (PDF)" >DIRECTV&reg; Channel Line-up (PDF)</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Equipment</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../remotes.html" name="Shop_Digital TV_U-verse Remotes" >U-verse Remotes</a></li>
+																			
+																				
+																				
+																				<li><a href="../explore/wireless-receiver.jsp.html" name="Shop_Digital TV_U-verse Wireless Receiver" >U-verse Wireless Receiver</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Existing Customers</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Change My Plan" >Change My Plan</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Add Receivers" >Add Receivers</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../uversetv.att.yahoo.com/index.html" name="Shop_Digital TV_Access My DVR" >Access My DVR</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Upgrade to HD" >Upgrade to HD</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Add or Remove Channels" >Add or Remove Channels</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+														</div>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/internet/index.html" name="Shop_Internet" >Internet</a>
+													
+														
+															
+															
+															
+															
+														
+														<div class="trayContentItem trayFiveCol">
+															<div class="firstColumn">
+																<div class="columnContent">
+																	<img src='../../media/att/2011/global/nav/img-internet_AA000R4V.png' alt='Internet' />
+																</div>
+															</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Plans</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../explore/internet-landing.jsp.html" name="Shop_Internet_U-verse Internet" >U-verse Internet</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_globnav_dsl_plans.html" name="Shop_Internet_DSL High Speed Internet" >DSL High Speed Internet</a></li>
+																			
+																				
+																				
+																				<li><a href="../../dsl/shop/plansDirect.jsp.html" name="Shop_Internet_Internet Without a Phone Line" >Internet Without a Phone Line</a></li>
+																			
+																				
+																				
+																				<li><a href="../../gen/general%3Fpid=9212.html" name="Shop_Internet_Internet Broadband via Satellite" >Internet Broadband via Satellite</a></li>
+																			
+																				
+																				
+																				<li><a href="../../gen/general%3Fpid=10974.html" name="Shop_Internet_Dial-Up" >Dial-Up</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Equipment</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../shop/internet/index.html#tab3" name="Shop_Internet_U-verse Internet Equipment" >U-verse Internet Equipment</a></li>
+																			
+																				
+																				
+																				<li><a href="../../equipment/index.html" name="Shop_Internet_DSL Equipment" >DSL Equipment</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Extras</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../www.att.net/s/s.dll%3Fep=16323&amp;ch=at%252Ftb%252Fsec.html" name="Shop_Internet_Internet Security Suite" >Internet Security Suite</a></li>
+																			
+																				
+																				
+																				<li><a href="../../gen/general%3Fpid=5949.html" name="Shop_Internet_AT&amp;T Wi-Fi" >AT&amp;T Wi-Fi</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../buy-connectech.att.com/ctcomm/home/index.jsp.html" name="Shop_Internet_AT&amp;T Support Plus" >AT&amp;T Support Plus</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Existing Customers</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_globnav_move_service.html" name="Shop_Internet_Move My DSL Service" >Move My DSL Service</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fprod-snip=res_dsl_upgrd_promo.html" name="Shop_Internet_Change My Plan" >Change My Plan</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+														</div>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/home-phone/index.html" name="Shop_Home Phone" >Home Phone</a>
+													
+														
+															
+															
+															
+															
+														
+														<div class="trayContentItem trayFourCol">
+															<div class="firstColumn">
+																<div class="columnContent">
+																	<img src='../../media/att/2011/global/nav/img-homephone_AA000R4B.png' alt='Home Phone' />
+																</div>
+															</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Plans</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../explore/phone-landing.jsp%3FwtSlotClick=1-001SNC-0-1&amp;WT.svl=calltoaction.html" name="Shop_Home Phone_AT&amp;T U-verse Voice" >AT&amp;T U-verse Voice</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_homephone_services.html" name="Shop_Home Phone_Home Phone Plans" >Home Phone Plans</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_long_distance_landing.html" name="Shop_Home Phone_Long Distance Plans" >Long Distance Plans</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_lifeline.html" name="Shop_Home Phone_Lifeline" >Lifeline</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Equipment</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../equipment/index.jsp.html" name="Shop_Home Phone_Home Phone Equipment" >Home Phone Equipment</a></li>
+																			
+																				
+																				
+																				<li><a href="../../shop/home-phone/index.html#tab3" name="Shop_Home Phone_AT&amp;T U-verse Voice Equipment" >AT&amp;T U-verse Voice Equipment</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Existing Customers</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fprod-snip=accountmanager.html" name="Shop_Home Phone_Change My Plan" >Change My Plan</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_globnav_move_service.html" name="Shop_Home Phone_Move My Service" >Move My Service</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fprod-snip=accountmanager.html" name="Shop_Home Phone_Manage Features" >Manage Features</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+														</div>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/u-verse/index.html" name="Shop_U-verse" >U-verse</a>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/special-offers/index.html" name="Shop_Special Offers" >Special Offers</a>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/help/index.html" name="Shop_Shopping Help" >Shopping Help</a>
+													
+												</li>
+											
+										</ul>
+									
 								</li>
 							
 								
@@ -1900,6 +2509,12 @@ function handleLastFieldInteracted(e) {
 								</li>
 							
 							<li id="primary_Search">
+								
+									
+									
+										
+									
+								
 								
 									
 									
@@ -2057,7 +2672,8 @@ function handleLastFieldInteracted(e) {
 			
 		
 	
-	<ul>
+	<ul><!-- ss195j PROD11-2096 -->
+	 
 		
 			
 				
@@ -2070,9 +2686,16 @@ function handleLastFieldInteracted(e) {
 						
 							
 							
+						
 						<li class="last"><a rel="nofollow" href="http://www.att.com/u-verse/cart/retrieve-cart.jsp">Retrieve Cart</a></li>
-						<li class="last"><a rel="nofollow" href="http://www.att.com/u-verse/cart/retrieve-cart.jsp"><img src="../../global/images/cart_icon.jpg" height="15" width="20" border="0" alt="View Cart" /></a></li>
-							
+						<li class="last"><a rel="nofollow" href="http://www.att.com/u-verse/cart/retrieve-cart.jsp"><img src="../../global/images/cart_icon.jpg" height="15" width="20" border="0" alt="Review cart" /></a></li>
+						
+						
+						
+						
+						
+						
+						
 							
 							
 						
@@ -2082,7 +2705,7 @@ function handleLastFieldInteracted(e) {
 				
 			
 			
-		
+		<!-- ss195j PROD11-2096 End -->
 	</ul>
 </div>
 
@@ -2170,7 +2793,7 @@ function handleLastFieldInteracted(e) {
             
                
             
-				<div style="position: absolute; top: 20px; width: 390px; right: 0px; "> <img src="../../media/en_US/images/ico/ico_link_uverse_address.jpg"/><span style="font-size: 12px;">Already have AT&T U-verse? <a target="_blank" href="https://www.att.com/olam/dashboardAction.olamexecute">Sign in for Exclusive Offers</a></span> </div>
+				<div style="position: absolute; top: 20px; width: 390px; right: 0px; "> <img alt="" src="../../media/en_US/images/ico/ico_link_uverse_address.jpg"/><span style="font-size: 12px;">Already have AT&T U-verse? <a target="_blank" href="https://www.att.com/olam/dashboardAction.olamexecute">Sign in for Exclusive Offers</a></span> </div>
 			
 			
 			
@@ -2390,11 +3013,11 @@ function handleLastFieldInteracted(e) {
 	
 	<div id="content">
 		<div id="primary-content">
-			<div style="width:710px;">
+			<div style="width:710px; float:left;">
 				<div style="float:left;width:270px;"><h1 class="padLft">Shop Popular Bundles</h1></div>
 				<div style="float:left;width:300px; padding-top: 3px;">
 					<div style="float:left;">
-						<iframe src="../../../www.facebook.com/plugins/like.php%3Fhref=http:%252F%252Fbzzabout.it%252F71&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light.html" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:21px;" allowTransparency="true"></iframe>
+						<iframe src="../../../www.facebook.com/plugins/like.php%3Fhref=http:%252F%252Fbzzabout.it%252F71&amp;layout=button_count&amp;show_faces=false&amp;width=450&amp;action=like&amp;colorscheme=light.html" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:85px; height:21px;" allowTransparency="true" title="Facebook"></iframe>
 					</div>
 					<div style="float:left;">
 						<g:plusone size="medium" href="/u-verse/shop/index.jsp"></g:plusone>
@@ -2450,14 +3073,11 @@ function handleLastFieldInteracted(e) {
 						
 							
 								
-<script type="text/javascript" src="../scripts/flash.js"></script> 
-<script type="text/javascript" src="../../media/gvp/gvpUtils.js"></script> 
+<script type="text/javascript" src="../../media/en_US/scripts/JSAM/JSAM_min.js"></script> 
+<script type="text/javascript" src="http://www.att.com/media/gvp/gvpUtils.js"></script> 
 <div id="marqueeHolder"></div> 
 <script type="text/javascript"> 
-var altFlash = '<a href="http://www.att.com/u-verse/availability/?wtSlotClick=1-006SMA!900430-0-1" target="_blank"><img src="../../images/Wireless/FlashAssets/uverse/marquees_ad_manager/ifNoflash/bnr_60820_ShopLander_AA000KUV.jpg" border="0" /></a>'; 
-var rplFlash = function () { $('marqueeHolder').innerHTML = altFlash; $('geotartgeted_9state').hide(); return true;} 
-if(flash.hasVersion(9)) { flash.embedMovie("/images/Wireless/FlashFramework/AdManager/loader/AdManager_AA0009RT_60.swf?configXML=/u-verse/marquees/en_US/offers/marquee1/L9.xml","628","184","#ffffff",9,'','wmode=transparent,id=geotartgeted_9state');} 
-else{ document.write(altFlash);} 
+	JSAM.createMarquee('/u-verse/marquees/en_US/offers/marquee1/L9.xml', {width:628, height:184}); 
 </script> 
 
 
@@ -2505,24 +3125,25 @@ else{ document.write(altFlash);}
 
 
 
+
 <!-- googleoff: all --> 
 
 	
 	
 		   	
-			<div id="wtContentID1" style="display:none">006SL7!900430</div>
+			<div id="wtContentID1" style="display:none">007F37!900430</div>
 		
 
 	
 	
 		   	
-			<div id="wtContentID2" style="display:none">006SBG!900430</div>
+			<div id="wtContentID2" style="display:none">007DE9!900430</div>
 		
 
 	
 	
 		   	
-			<div id="wtContentID3" style="display:none">006SB6!900430</div>
+			<div id="wtContentID3" style="display:none">007F2Y!900430</div>
 		
 
 <!-- googleon: all -->
@@ -2648,7 +3269,7 @@ else{ document.write(altFlash);}
 virtually anywhere in your home.
 <br><br>
 <ul class ="links-list"> 
-<li ><a id="exploreUverseLink" style="vertical-align:middle;" href="http://www.att.com/u-verse/explore/wireless-receiver.jsp" onclick="shouldShowCenter(); return false;">Learn more</a></li>
+<li ><a id="exploreUverseLink" style="vertical-align:middle;" href="../explore/wireless-receiver.jsp.html" onclick="shouldShowCenter(); return false;">Learn more</a></li>
 </ul>
 </p></div>
 					
@@ -2744,7 +3365,7 @@ virtually anywhere in your home.
 								<div style="width: 1px; height: 32px; background-color: #666666; margin-left: 8px; margin-right: 8px; float: left;"></div>
 								<div style="width: 320; font-size: 10px; font-family: Verdana; color: #666666; float: left; margin-top: 8px;">
 									<span style="margin-right: 3px; float: left;">Filter by:</span>
-									<select id="shopFilter" onchange="submitFliter();" style="margin-right: 6px; float: left; width: 170px; z-index: 5;">
+									<select id="shopFilter" onchange="submitFliter();" title="Filter By" style="margin-right: 6px; float: left; width: 170px; z-index: 5;">
 										
 											
 											
@@ -2845,7 +3466,7 @@ virtually anywhere in your home.
 												
 												
 												
-													<option value="600001" >Existing AT&T Wireless</option>
+													<option value="600001" >Existing AT&T wireless</option>
 												
 											
 												
@@ -3260,13 +3881,13 @@ virtually anywhere in your home.
 	<p>
 		Offers will display in your Cart when minimum requirements are met.<br/>
 	</p>
-	<img class="wtpn Uverse_Special_Offers_Selection_Modal_Pg" src="../../global/images/transparent.gif" border="0" width="1" height="1" />
+	<img class="wtpn Uverse_Special_Offers_Selection_Modal_Pg" alt="" src="../../global/images/transparent.gif" border="0" width="1" height="1" />
 </div>
 <div id="savingSelectionsPopupButton" style="display:none;" uri="specialoffersselection.jsp">
 	
 		<div style="padding-left:10px;">
 			<div style="float:right;">
-				<img src="../../media/en_US/images/btn/btn_Cont_disabled.gif" title="Please select a savings option to continue" class="clever-button-disabled" >
+				<img alt="Continue" src="../../media/en_US/images/btn/btn_Cont_disabled.gif" title="Please select a savings option to continue" class="clever-button-disabled" >
 				<a id="continueLink" class="wtx Uverse_SelectSpecialOffersSubmit" onclick="getDefaultRadio(this, 'uv80007');savingSelectionContinue();" onmousedown="window.wtUserResp=$('selText' + formFunc.getSelectedRadio('savingsSelection').value).innerHTML" rel="nofollow" href="http://www.att.com/u-verse/shop/customize.jsp?wtLinkLoc=UverseShopPg_MostPopular_Domino_1&amp;q_usedOffer=uv80007&amp;wtLinkName=Build_Your_Own_uv80007">
 					
 					
@@ -3301,7 +3922,14 @@ virtually anywhere in your home.
 	
 
 <script>
-	formFunc.setRadioClick('U-verse BYO');		
+   formFunc.setRadioClick('U-verse BYO');
+   function callPopupTV(tvShortDispName){
+	showPopupByUrl('/u-verse/shop/fragments/iptv.jsp?q_IPTVShortDisplayName='+tvShortDispName, '',  true, 1020);
+	}
+	function callPopuphsia(hsiaShortDispName){
+		showPopupByUrl('/u-verse/shop/fragments/hsia.jsp?q_HSIAShortDisplayName='+hsiaShortDispName, '',  true, 792);
+		dcsMultiTrack('DCS.dcsuri','/u-verse/shop/fragments/hsia.jsp?q_HSIAShortDisplayName='+hsiaShortDispName,'DCS.dcsref',window.location.href,'DCSext.wtPN','Uverse HSIA Offers Modal Pg','DCSext.wtBuyFlowType', 'PROVIDE', 'DCSext.flowtype', 'UVERSE');
+	}
 </script>
 
 
@@ -3322,18 +3950,18 @@ virtually anywhere in your home.
 															<div style="padding-top:5px; ">
 																<div id="iptv_icon" style="display: none;">
 																	<div style="height:45px;width: 100px;">
-																		<div style="float:left;width:45px;"><img src="../../media/en_US/images/ico/ico_TV_med_AA0009PK.gif" /></div>
+																		<div style="float:left;width:45px;"><img alt="iptv" src="../../media/en_US/images/ico/ico_TV_med_AA0009PK.gif" /></div>
 																		<div class="uverse_purple" style="float:left;padding-left:8px;padding-top:10px;font-weight:bold;font-size:12px;">
 																			<a href="http://www.att.com/global/cms/u-verse/en_US/popups/uverse_tv.jsp" onclick="showPopupByUrl(this.href, 'AT&T U-verse TV', true, 700, 500); return false;"><span style="color:#0099FF;cursor:hand; cursor:pointer;">TV</span></a>
 																		</div>
 																	</div>
 																	<div style="float:left;width:144px;border-top:1px dotted #ccc;">
-																		<img src="../../media/en_US/images/btn/btn_preview_AA0005XY.gif" />
+																		<img alt="Preview" src="../../media/en_US/images/btn/btn_preview_AA0005XY.gif" />
 																		<a href="javascript:void(0);" onclick="gvp.showPopUp('', true, true, 'gvp','video_resources/xml/gvp_Surreal-U-verse-Why-Switch_640x360.xml&gvpLgFormat'); return false;">Why switch?</a>
 																	</div>
 																</div>
 																<div id="iptv_icon_disabled">
-																	<div style="float:left;padding-left:10px;"><img src="../../media/en_US/images/ico/ico_TV_med_disable_AA0009PM.gif" /></div>
+																	<div style="float:left;padding-left:10px;"><img alt="iptv disabled" src="../../media/en_US/images/ico/ico_TV_med_disable_AA0009PM.gif" /></div>
 																	<div class="uverse_purple" style="float:left;padding-left:8px;padding-top:10px;font-weight:bold;font-size:12px;">
 																		<a href="http://www.att.com/global/cms/u-verse/en_US/popups/uverse_tv.jsp" onclick="showPopupByUrl(this.href, 'AT&T U-verse TV', true, 700, 500); return false;"><span style="color:#999999;cursor:hand; cursor:pointer;">TV</span></a>
 																	</div>
@@ -3347,7 +3975,7 @@ virtually anywhere in your home.
 																<div style="padding-top:0px;">
 																	<div id="hsia_icon" style="display: none;">
 																		<div style="height:45px;width: 110px;">
-																			<div style="float:left;width:45px;"><img src="../../media/en_US/images/ico/ico_internet_med_AA0009P8.gif" /></div>
+																			<div style="float:left;width:45px;"><img alt="hsia" src="../../media/en_US/images/ico/ico_internet_med_AA0009P8.gif" /></div>
 																			<div class="uverse_blue" style="float:left;padding-left:8px;padding-top:15px;font-weight:bold;font-size:12px;">
 																				<a href="http://www.att.com/global/cms/u-verse/en_US/popups/uverse_internet.jsp" onclick="showPopupByUrl(this.href, 'AT&T U-verse High Speed Internet', true, 700, 500); return false;"><span style="color:#0099FF;cursor:hand; cursor:pointer;">Internet</span></a>
 																			</div>
@@ -3367,18 +3995,18 @@ virtually anywhere in your home.
 															<div style="padding-top:0px;">
 																<div id="voip_icon" style="display: none;">
 																	<div style="height:45px;width: 100px;">
-																		<div style="float:left;width:45px;"><img src="../../media/en_US/images/ico/ico_phone_med_AA0009PE.gif" /></div>
+																		<div style="float:left;width:45px;"><img alt="voip" src="../../media/en_US/images/ico/ico_phone_med_AA0009PE.gif" /></div>
 																		<div class="uverse_green" style="float:left;padding-left:8px;padding-top:10px;font-weight:bold;font-size:12px;">
 																			<a href="http://www.att.com/global/cms/u-verse/en_US/popups/uverse_phone.jsp" onclick="showPopupByUrl(this.href, 'AT&T U-verse Voice', true, 700, 500); return false;"><span style="color:#0099FF;cursor:hand; cursor:pointer;">Phone</span></a>		
 																		</div>
 																	</div>
 																	<div style="width:144px;float:left;border-top:1px dotted #ccc;">
-																		<img src="../../media/en_US/images/btn/btn_preview_AA0005XY.gif" />
+																		<img alt="Preview" src="../../media/en_US/images/btn/btn_preview_AA0005XY.gif" />
 																		<a href="javascript:void(0);" onclick="gvp.showPopUp('', true, true, 'gvp','video_resources/xml/gvp_Uverse-Voice-VoIP_640x360.xml&gvpLgFormat'); return false;">Watch a video</a>
 																	</div>
 																</div>
 																<div id="voip_icon_disabled">
-																	<div style="float:left;"><img src="../../media/en_US/images/ico/ico_phone_med_disable_AA0009PG.gif" /></div>
+																	<div style="float:left;"><img alt="voip disabled" src="../../media/en_US/images/ico/ico_phone_med_disable_AA0009PG.gif" /></div>
 																	<div class="uverse_green" style="float:left;padding-left:8px;padding-top:10px;font-weight:bold;font-size:12px;">
 																		<a href="http://www.att.com/global/cms/u-verse/en_US/popups/uverse_phone.jsp" onclick="showPopupByUrl(this.href, 'AT&T U-verse Voice', true, 700, 500); return false;"><span style="color:#999999;cursor:hand; cursor:pointer;">Phone</span></a>		
 																	</div>
@@ -3527,11 +4155,11 @@ virtually anywhere in your home.
 						
 						
 						
-							<img src="../../images/Wireless/Promotions/Bubbles/ur_77434_pink_100_back_AA000PZB.jpg" />
+							<img alt="Cash Back Item" src="../../images/Wireless/Promotions/Bubbles/ur_77434_pink_100_back_AA000PZB.jpg" />
 							<div style="font-size: 8px; font-weight: bold; width: 44px; text-align: right; overflow: hidden; margin-top: -4px;">
 								<a href="javascript:showPopup('prod4860258Pop',true)">Details</a></div>
                                
-						<div id="prod4860258Pop" title="Offer Details" style="display: none">Offer ends 1/21/2012. New residential U-verse customers with minimum purchase of U-family TV and U-verse Internet Pro online at att.com receive $43 off for 6 months. After 6 months, U-verse service will be billed at then existing standard rate unless cancelled by customer. $100 in promotion card(s) with minimum purchase of U-family TV and U-verse Internet Pro online at att.com. One offer per service address. Card redemption required. Card sent 4-6 weeks after redemption to customers who retain qualifying service(s). Not redeemable for cash, for use at automated gasoline pumps or for cash withdrawal at ATMs. Card expires 90 days after issuance. For cardholder agreement/terms and conditions go to http://rewardcenter.att.com/myrewardcard/agreement.pdf. Cards are issued by U.S. Bank National Association, pursuant to a license from Visa U.S.A. Inc.</div>
+						<div id="prod4860258Pop" title="Offer Details" style="display: none">Offer ends 7/14/2012. New residential U-verse customers with minimum purchase of U-family TV and U-verse Internet Pro online at att.com receive $46 off for 6 months. After 6 months, U-verse service will be billed at then existing standard rate unless cancelled by customer. $100 in promotion card(s) with minimum purchase of U-family TV and U-verse Internet Pro online at att.com. One offer per service address. Card redemption required. Card sent 4-6 weeks after redemption to customers who retain qualifying service(s). Not redeemable for cash, for use at automated gasoline pumps or for cash withdrawal at ATMs. Card expires 90 days after issuance. For cardholder agreement/terms and conditions go to http://rewardcenter.att.com/myrewardcard/agreement.pdf. Cards are issued by U.S. Bank National Association, pursuant to a license from Visa U.S.A. Inc.</div>
 					</div> 
 					<h2 style="font-weight:bold; font-size:15px; color:#f37d01; padding-bottom:4px; height:37px; ">
 						TV & Internet
@@ -3582,7 +4210,7 @@ virtually anywhere in your home.
 					</a>
 				</div>
 				
-					<div style="padding-left:9px; padding-top:4px; padding-bottom:12px;"><input id="prod4860258;top" name="/att/ecom/uverse/view/CompareFormHandler.productCompareList" value="prod4860258" onclick="$('prod4860258;bottom').checked = this.checked;" type="checkbox"><input name="_D:/att/ecom/uverse/view/CompareFormHandler.productCompareList" value=" " type="hidden">&nbsp;Select to compare</div>
+					<div style="padding-left:9px; padding-top:4px; padding-bottom:12px;"><input id="prod4860258;top" name="/att/ecom/uverse/view/CompareFormHandler.productCompareList" value="prod4860258" onclick="$('prod4860258;bottom').checked = this.checked;" type="checkbox"><input name="_D:/att/ecom/uverse/view/CompareFormHandler.productCompareList" value=" " type="hidden">&nbsp;<label for="prod4860258;top">Select to compare</label></div>
 				
 			</div>
 			
@@ -3597,18 +4225,17 @@ virtually anywhere in your home.
 						background-image:url(../../media/en_US/images/img/img_div-point_gradient_AA000EPI.gif); background-repeat:repeat-x;">
 						<div style="">
 							
-							
 							<div style="vertical-align:text-top;padding-top:10px;padding-left:4px;">
 								
 								
-								<a href="javascript:showPopupByUrl('/u-verse/shop/fragments/iptv.jsp?q_IPTVShortDisplayName=U-family', '&lt;span class=&quot;modal-header-title&quot;&gt;AT&amp;T U-verse TV&lt;/span&gt;',  true, 1020);" class="call-to-action tooltip shopPageAlert" style="position:relative;" title="Up to 130 of the best family-oriented digital channels including local channels and 1 HD-ready receiver. ">
+								<a href="javascript:void(0);" onclick="callPopupTV('U-family');" class="call-to-action tooltip shopPageAlert" style="position:relative;" title="Up to 130 of the best family-oriented digital channels including local channels and 1 HD-ready receiver. ">
 								<span class="bold">U-family</span></a>
 							</div>
 							
 							    
 							<div style="vertical-align:text-top;padding-left:4px;">Up to <a href="http://www.att.com/u-verse/shop/channellineupPopup.jsp?pkgId=U-family&amp;locale=" onclick="dotComPopUp(this.href, 1030, 780);return false;" target="_blank">130 channels</a></div>
 			             	 
-			             	<img src='../../global/images/transparent.gif' width='1' height='1'
+			             	<img alt="" src='../../global/images/transparent.gif' width='1' height='1'
 			            		onload="if ($('iptv_icon') && $('iptv_icon_disabled')) {$('iptv_icon_disabled').style.display='none'; $('iptv_icon').style.display='block';}" />
 						</div>
 					</div>
@@ -3625,7 +4252,7 @@ virtually anywhere in your home.
 						
 						
 						<div style="vertical-align:text-top;font-weight:bold;padding-top:10px;padding-left:4px;">
-							<a href="javascript:showPopupByUrl('/u-verse/shop/fragments/hsia.jsp?q_HSIAShortDisplayName=Pro', '&lt;span class=&quot;modal-header-title&quot;&gt;AT&amp;T U-verse High Speed Internet&lt;/span&gt;',  true, 792);" class="call-to-action" style="position:relative;">
+							<a href="javascript:void(0);" onclick="callPopuphsia('Pro');" class="call-to-action" style="position:relative;">
 								<span class="bold">Pro &nbsp;</span>
 							</a>
 						</div>
@@ -3643,7 +4270,7 @@ virtually anywhere in your home.
         	                        	                  
                             
                         
-                        <img src='../../global/images/transparent.gif' width='1' height='1'
+                        <img alt="" src='../../global/images/transparent.gif' width='1' height='1'
             			onload="if ($('hsia_icon') && $('hsia_icon_disabled')) {$('hsia_icon_disabled').style.display='none'; $('hsia_icon').style.display='block';}" />    
 					</div>
 				
@@ -3777,10 +4404,10 @@ virtually anywhere in your home.
 							
 							 
 							
-								<div style="float: right; padding-right: 2px;"><img src="../../global/images/en/btn_info.gif" class="tooltip shopPageAlert" title="Get $43 off your monthly price for 6 months. Requires minimum purchase of U-family TV and Pro Internet."/></div>
+								<div style="float: right; padding-right: 2px;"><img src="../../global/images/en/btn_info.gif" class="tooltip shopPageAlert" title="Get $46 off your monthly price for 6 months and get $100 back via promotion card when you order Ufamily TV or higher, Pro Internet or higher. No Term Req."/></div>
 								<li>
-									<B>$43 off</B> your monthly price for 6 months
-									<input type="hidden" name="cpp_prod4860258" id="cpp_prod4860258" value="prod5070271" />
+									Get <b>$46 off</b> your monthly price for 6 months
+									<input type="hidden" name="cpp_prod4860258" id="cpp_prod4860258" value="prod5790232" />
 								</li>
 							
 							
@@ -3826,7 +4453,14 @@ virtually anywhere in your home.
 	
 
 <script>
-	formFunc.setRadioClick('TV &amp; Internet');		
+   formFunc.setRadioClick('TV &amp; Internet');
+   function callPopupTV(tvShortDispName){
+	showPopupByUrl('/u-verse/shop/fragments/iptv.jsp?q_IPTVShortDisplayName='+tvShortDispName, '<span class="modal-header-title">AT&T U-verse TV</span>',  true, 1020);
+	}
+	function callPopuphsia(hsiaShortDispName){
+		showPopupByUrl('/u-verse/shop/fragments/hsia.jsp?q_HSIAShortDisplayName='+hsiaShortDispName, '<span class="modal-header-title">AT&T U-verse High Speed Internet</span>',  true, 792);
+		dcsMultiTrack('DCS.dcsuri','/u-verse/shop/fragments/hsia.jsp?q_HSIAShortDisplayName='+hsiaShortDispName,'DCS.dcsref',window.location.href,'DCSext.wtPN','Uverse HSIA Offers Modal Pg','DCSext.wtBuyFlowType', 'PROVIDE', 'DCSext.flowtype', 'UVERSE');
+	}
 </script>
 
 
@@ -3962,11 +4596,11 @@ virtually anywhere in your home.
 						
 						
 						
-							<img src="../../images/Wireless/Promotions/Bubbles/ur_77434_pink_100_back_AA000PZB.jpg" />
+							<img alt="Cash Back Item" src="../../images/Wireless/Promotions/Bubbles/ur_77434_pink_100_back_AA000PZB.jpg" />
 							<div style="font-size: 8px; font-weight: bold; width: 44px; text-align: right; overflow: hidden; margin-top: -4px;">
 								<a href="javascript:showPopup('prod4860259Pop',true)">Details</a></div>
                                
-						<div id="prod4860259Pop" title="Offer Details" style="display: none">Offer ends 1/21/2012. New residential U-verse customers with minimum purchase of U-family TV and U-verse Internet Pro online at att.com receive $43 off for 6 months. After 6 months, U-verse service will be billed at then existing standard rate unless cancelled by customer. $100 in promotion card(s) with minimum purchase of U-family TV and U-verse Internet Pro online at att.com. One offer per service address. Card redemption required. Card sent 4-6 weeks after redemption to customers who retain qualifying service(s). Not redeemable for cash, for use at automated gasoline pumps or for cash withdrawal at ATMs. Card expires 90 days after issuance. For cardholder agreement/terms and conditions go to http://rewardcenter.att.com/myrewardcard/agreement.pdf. Cards are issued by U.S. Bank National Association, pursuant to a license from Visa U.S.A. Inc.</div>
+						<div id="prod4860259Pop" title="Offer Details" style="display: none">Offer ends 7/14/2012. New residential U-verse customers with minimum purchase of U300 TV and U-verse Internet Elite online at att.com receive $46 off for 6 months. After 6 months, U-verse service will be billed at then existing standard rate unless cancelled by customer. $100 in promotion card(s) with minimum purchase of U-family TV and U-verse Internet Pro online at att.com. One offer per service address. Card redemption required. Card sent 4-6 weeks after redemption to customers who retain qualifying service(s). Not redeemable for cash, for use at automated gasoline pumps or for cash withdrawal at ATMs. Card expires 90 days after issuance. For cardholder agreement/terms and conditions go to http://rewardcenter.att.com/myrewardcard/agreement.pdf. Cards are issued by U.S. Bank National Association, pursuant to a license from Visa U.S.A. Inc.</div>
 					</div> 
 					<h2 style="font-weight:bold; font-size:15px; color:#f37d01; padding-bottom:4px; height:37px; ">
 						TV & Internet
@@ -4017,7 +4651,7 @@ virtually anywhere in your home.
 					</a>
 				</div>
 				
-					<div style="padding-left:9px; padding-top:4px; padding-bottom:12px;"><input id="prod4860259;top" name="/att/ecom/uverse/view/CompareFormHandler.productCompareList" value="prod4860259" onclick="$('prod4860259;bottom').checked = this.checked;" type="checkbox"><input name="_D:/att/ecom/uverse/view/CompareFormHandler.productCompareList" value=" " type="hidden">&nbsp;Select to compare</div>
+					<div style="padding-left:9px; padding-top:4px; padding-bottom:12px;"><input id="prod4860259;top" name="/att/ecom/uverse/view/CompareFormHandler.productCompareList" value="prod4860259" onclick="$('prod4860259;bottom').checked = this.checked;" type="checkbox"><input name="_D:/att/ecom/uverse/view/CompareFormHandler.productCompareList" value=" " type="hidden">&nbsp;<label for="prod4860259;top">Select to compare</label></div>
 				
 			</div>
 			
@@ -4032,18 +4666,17 @@ virtually anywhere in your home.
 						background-image:url(../../media/en_US/images/img/img_div-point_gradient_AA000EPI.gif); background-repeat:repeat-x;">
 						<div style="">
 							
-							
 							<div style="vertical-align:text-top;padding-top:10px;padding-left:4px;">
 								
 								
-								<a href="javascript:showPopupByUrl('/u-verse/shop/fragments/iptv.jsp?q_IPTVShortDisplayName=U200', '&lt;span class=&quot;modal-header-title&quot;&gt;AT&amp;T U-verse TV&lt;/span&gt;',  true, 1020);" class="call-to-action tooltip shopPageAlert" style="position:relative;" title="Up to 270 of the most popular digital channels including local and music channels and 1 HD-ready receiver. ">
+								<a href="javascript:void(0);" onclick="callPopupTV('U200');" class="call-to-action tooltip shopPageAlert" style="position:relative;" title="Up to 270 of the most popular digital channels including local and music channels and 1 HD-ready receiver. ">
 								<span class="bold">U200</span></a>
 							</div>
 							
 							    
 							<div style="vertical-align:text-top;padding-left:4px;">Up to <a href="http://www.att.com/u-verse/shop/channellineupPopup.jsp?pkgId=U200&amp;locale=" onclick="dotComPopUp(this.href, 1030, 780);return false;" target="_blank">270 channels</a></div>
 			             	 
-			             	<img src='../../global/images/transparent.gif' width='1' height='1'
+			             	<img alt="" src='../../global/images/transparent.gif' width='1' height='1'
 			            		onload="if ($('iptv_icon') && $('iptv_icon_disabled')) {$('iptv_icon_disabled').style.display='none'; $('iptv_icon').style.display='block';}" />
 						</div>
 					</div>
@@ -4060,7 +4693,7 @@ virtually anywhere in your home.
 						
 						
 						<div style="vertical-align:text-top;font-weight:bold;padding-top:10px;padding-left:4px;">
-							<a href="javascript:showPopupByUrl('/u-verse/shop/fragments/hsia.jsp?q_HSIAShortDisplayName=Elite', '&lt;span class=&quot;modal-header-title&quot;&gt;AT&amp;T U-verse High Speed Internet&lt;/span&gt;',  true, 792);" class="call-to-action" style="position:relative;">
+							<a href="javascript:void(0);" onclick="callPopuphsia('Elite');" class="call-to-action" style="position:relative;">
 								<span class="bold">Elite &nbsp;</span>
 							</a>
 						</div>
@@ -4078,7 +4711,7 @@ virtually anywhere in your home.
         	                        	                  
                             
                         
-                        <img src='../../global/images/transparent.gif' width='1' height='1'
+                        <img alt="" src='../../global/images/transparent.gif' width='1' height='1'
             			onload="if ($('hsia_icon') && $('hsia_icon_disabled')) {$('hsia_icon_disabled').style.display='none'; $('hsia_icon').style.display='block';}" />    
 					</div>
 				
@@ -4212,10 +4845,10 @@ virtually anywhere in your home.
 							
 							 
 							
-								<div style="float: right; padding-right: 2px;"><img src="../../global/images/en/btn_info.gif" class="tooltip shopPageAlert" title="Get $43 off your monthly price for 6 months. Requires minimum purchase of U-family TV and Pro Internet."/></div>
+								<div style="float: right; padding-right: 2px;"><img src="../../global/images/en/btn_info.gif" class="tooltip shopPageAlert" title="Get $46 off your monthly price for 6 months and get $100 back via promotion card when you order Ufamily TV or higher, Pro Internet or higher. No Term Req."/></div>
 								<li>
-									<B>$43 off</B> your monthly price for 6 months
-									<input type="hidden" name="cpp_prod4860259" id="cpp_prod4860259" value="prod5070271" />
+									Get <b>$46 off</b> your monthly price for 6 months
+									<input type="hidden" name="cpp_prod4860259" id="cpp_prod4860259" value="prod5790232" />
 								</li>
 							
 							
@@ -4261,7 +4894,14 @@ virtually anywhere in your home.
 	
 
 <script>
-	formFunc.setRadioClick('TV &amp; Internet');		
+   formFunc.setRadioClick('TV &amp; Internet');
+   function callPopupTV(tvShortDispName){
+	showPopupByUrl('/u-verse/shop/fragments/iptv.jsp?q_IPTVShortDisplayName='+tvShortDispName, '<span class="modal-header-title">AT&T U-verse TV</span>',  true, 1020);
+	}
+	function callPopuphsia(hsiaShortDispName){
+		showPopupByUrl('/u-verse/shop/fragments/hsia.jsp?q_HSIAShortDisplayName='+hsiaShortDispName, '<span class="modal-header-title">AT&T U-verse High Speed Internet</span>',  true, 792);
+		dcsMultiTrack('DCS.dcsuri','/u-verse/shop/fragments/hsia.jsp?q_HSIAShortDisplayName='+hsiaShortDispName,'DCS.dcsref',window.location.href,'DCSext.wtPN','Uverse HSIA Offers Modal Pg','DCSext.wtBuyFlowType', 'PROVIDE', 'DCSext.flowtype', 'UVERSE');
+	}
 </script>
 
 
@@ -4397,11 +5037,11 @@ virtually anywhere in your home.
 						
 						
 						
-							<img src="../../images/Wireless/Promotions/Bubbles/ur_77434_pink_100_back_AA000PZB.jpg" />
+							<img alt="Cash Back Item" src="../../images/Wireless/Promotions/Bubbles/ur_77434_pink_100_back_AA000PZB.jpg" />
 							<div style="font-size: 8px; font-weight: bold; width: 44px; text-align: right; overflow: hidden; margin-top: -4px;">
 								<a href="javascript:showPopup('prod4860257Pop',true)">Details</a></div>
                                
-						<div id="prod4860257Pop" title="Offer Details" style="display: none">Offer ends 1/21/2012. New residential U-verse customers with minimum purchase of U300 TV and U-verse Internet Elite online at att.com receive $53 off for 6 months. After 6 months, U-verse service will be billed at then existing standard rate unless cancelled by customer. $100 in promotion card(s) with minimum purchase of U-family TV and U-verse Internet Pro online at att.com. One offer per service address. Card redemption required. Card sent 4-6 weeks after redemption to customers who retain qualifying service(s). Not redeemable for cash, for use at automated gasoline pumps or for cash withdrawal at ATMs. Card expires 90 days after issuance. For cardholder agreement/terms and conditions go to http://rewardcenter.att.com/myrewardcard/agreement.pdf. Cards are issued by U.S. Bank National Association, pursuant to a license from Visa U.S.A. Inc.</div>
+						<div id="prod4860257Pop" title="Offer Details" style="display: none">Offer ends 7/14/2012. New residential U-verse customers with minimum purchase of U300 TV and U-verse Internet Max online at att.com receive $56 off for 6 months. After 6 months, U-verse service will be billed at then existing standard rate unless cancelled by customer. $100 in promotion card(s) with minimum purchase of U-family TV and U-verse Internet Pro online at att.com. One offer per service address. Card redemption required. Card sent 4-6 weeks after redemption to customers who retain qualifying service(s). Not redeemable for cash, for use at automated gasoline pumps or for cash withdrawal at ATMs. Card expires 90 days after issuance. For cardholder agreement/terms and conditions go to http://rewardcenter.att.com/myrewardcard/agreement.pdf. Cards are issued by U.S. Bank National Association, pursuant to a license from Visa U.S.A. Inc.</div>
 					</div> 
 					<h2 style="font-weight:bold; font-size:15px; color:#f37d01; padding-bottom:4px; height:37px; ">
 						TV & Internet
@@ -4414,7 +5054,7 @@ virtually anywhere in your home.
 								
 									
 										<div style="font-size:32px; padding-top:4px; float: left; line-height:32px; letter-spacing:-2px;">
-											74
+											79
 										</div>
 									
 									
@@ -4452,7 +5092,7 @@ virtually anywhere in your home.
 					</a>
 				</div>
 				
-					<div style="padding-left:9px; padding-top:4px; padding-bottom:12px;"><input id="prod4860257;top" name="/att/ecom/uverse/view/CompareFormHandler.productCompareList" value="prod4860257" onclick="$('prod4860257;bottom').checked = this.checked;" type="checkbox"><input name="_D:/att/ecom/uverse/view/CompareFormHandler.productCompareList" value=" " type="hidden">&nbsp;Select to compare</div>
+					<div style="padding-left:9px; padding-top:4px; padding-bottom:12px;"><input id="prod4860257;top" name="/att/ecom/uverse/view/CompareFormHandler.productCompareList" value="prod4860257" onclick="$('prod4860257;bottom').checked = this.checked;" type="checkbox"><input name="_D:/att/ecom/uverse/view/CompareFormHandler.productCompareList" value=" " type="hidden">&nbsp;<label for="prod4860257;top">Select to compare</label></div>
 				
 			</div>
 			
@@ -4467,18 +5107,17 @@ virtually anywhere in your home.
 						background-image:url(../../media/en_US/images/img/img_div-point_gradient_AA000EPI.gif); background-repeat:repeat-x;">
 						<div style="">
 							
-							
 							<div style="vertical-align:text-top;padding-top:10px;padding-left:4px;">
 								
 								
-								<a href="javascript:showPopupByUrl('/u-verse/shop/fragments/iptv.jsp?q_IPTVShortDisplayName=U300', '&lt;span class=&quot;modal-header-title&quot;&gt;AT&amp;T U-verse TV&lt;/span&gt;',  true, 1020);" class="call-to-action tooltip shopPageAlert" style="position:relative;" title="Up to 360 of the best digital channels including 53 premium movie channels, local and music channels, and 1 HD-ready receiver. ">
+								<a href="javascript:void(0);" onclick="callPopupTV('U300');" class="call-to-action tooltip shopPageAlert" style="position:relative;" title="Up to 360 of the best digital channels including 53 premium movie channels, local and music channels, 1 Total Home DVR&reg; and 1 HD-ready receiver.">
 								<span class="bold">U300</span></a>
 							</div>
 							
 							    
 							<div style="vertical-align:text-top;padding-left:4px;">Up to <a href="http://www.att.com/u-verse/shop/channellineupPopup.jsp?pkgId=U300&amp;locale=" onclick="dotComPopUp(this.href, 1030, 780);return false;" target="_blank">360 channels</a></div>
 			             	 
-			             	<img src='../../global/images/transparent.gif' width='1' height='1'
+			             	<img alt="" src='../../global/images/transparent.gif' width='1' height='1'
 			            		onload="if ($('iptv_icon') && $('iptv_icon_disabled')) {$('iptv_icon_disabled').style.display='none'; $('iptv_icon').style.display='block';}" />
 						</div>
 					</div>
@@ -4490,30 +5129,30 @@ virtually anywhere in your home.
 				
 				
 					
-					<div id='Elite' style="width:550px;display:none;" title="Elite">Elite is super fast with one dynamic IP address at up to 6.0 Mbps download.  Whether you&#39;re a gamer or a business owner, it&#39;s perfect for you, supporting multiple-users, high-resolution graphics, large attachment uploads, desktop video, and even hosting a website! No matter where you want to go with your Internet connection, Elite will get you there faster. In addition, you&#39;ll also enjoy: online photo and video storage, up to 10 additional email accounts, pop-up blocker, and much more from AT&amp;T.</div>
+					<div id='Max' style="width:550px;display:none;" title="Max">Max is ideal for active Internet users. One dynamic IP address at up to 12.0 Mbps download. Max is perfect for active gamers, people who share photos, music lovers and other sophisticated Internet users who need speed. In addition, you&#39;ll also enjoy: online photo and video storage, up to 10 additional email accounts, pop-up blocker, and much more.</div>
 					<div style="height:70px;padding-left:5px;border-bottom:1px solid #CCCCCC ;">
 						
 						
 						<div style="vertical-align:text-top;font-weight:bold;padding-top:10px;padding-left:4px;">
-							<a href="javascript:showPopupByUrl('/u-verse/shop/fragments/hsia.jsp?q_HSIAShortDisplayName=Elite', '&lt;span class=&quot;modal-header-title&quot;&gt;AT&amp;T U-verse High Speed Internet&lt;/span&gt;',  true, 792);" class="call-to-action" style="position:relative;">
-								<span class="bold">Elite &nbsp;</span>
+							<a href="javascript:void(0);" onclick="callPopuphsia('Max');" class="call-to-action" style="position:relative;">
+								<span class="bold">Max &nbsp;</span>
 							</a>
 						</div>
 						<div style="float:left;padding-left:4px;">
 							
-							<img onerror="if (this.lowsrc) {this.src=this.lowsrc; this.lowsrc=''}; this.onerror='';" id="AT&T U-verse High Speed Internet Elite_image" height="16" alt="AT&T U-verse High Speed Internet Elite" width="81" src="../../../www.wireless.att.com/catalog/en/skus/images/att-uverse-high-speed-internet-elite-81x16.gif" border="0" lowsrc="../../catalog/en/skus/images/att-uverse-high-speed-internet-elite-81x16.gif"></img>
+							<img onerror="if (this.lowsrc) {this.src=this.lowsrc; this.lowsrc=''}; this.onerror='';" id="AT&T U-verse High Speed Internet Max_image" height="16" alt="AT&T U-verse High Speed Internet Max" width="81" src="../../../www.wireless.att.com/catalog/en/skus/images/att-uverse-high-speed-internet-max-81x16.gif" border="0" lowsrc="../../catalog/en/skus/images/att-uverse-high-speed-internet-max-81x16.gif"></img>
 						</div>
                         
 	                            
-                          	
-		                        <div style="float: left;padding-left:4px;">Downstream speeds up to 6Mbps</div>									
-        	                 
+                          	 
                             
+		                        <div style="float: left;padding-left:4px;">Downstream speeds up to 12Mbps</div>									
+        	                
         	                
         	                        	                  
                             
                         
-                        <img src='../../global/images/transparent.gif' width='1' height='1'
+                        <img alt="" src='../../global/images/transparent.gif' width='1' height='1'
             			onload="if ($('hsia_icon') && $('hsia_icon_disabled')) {$('hsia_icon_disabled').style.display='none'; $('hsia_icon').style.display='block';}" />    
 					</div>
 				
@@ -4609,7 +5248,7 @@ virtually anywhere in your home.
 									
 									
 										<li>
-											<b>3 months FREE</b> Onlive Playback with unlimited access to 100+ games
+											<b>3 months FREE</b> Onlive Playback with unlimited access to 125+ games
 										</li>
 									
 									
@@ -4657,10 +5296,10 @@ virtually anywhere in your home.
 							
 							 
 							
-								<div style="float: right; padding-right: 2px;"><img src="../../global/images/en/btn_info.gif" class="tooltip shopPageAlert" title="Get $53 off your monthly price for 6 months. Requires minimum purchase of U300 TV and Elite Internet."/></div>
+								<div style="float: right; padding-right: 2px;"><img src="../../global/images/en/btn_info.gif" class="tooltip shopPageAlert" title="Get $56 off your monthly price for 6 months and get $100 back via promotion card when you order U300 TV or higher, Max Internet or higher. No Term Req."/></div>
 								<li>
-									<B>$53 off</B> your monthly price for 6 months
-									<input type="hidden" name="cpp_prod4860257" id="cpp_prod4860257" value="prod5070273" />
+									Get <b>$56 off</b> your monthly price for 6 months
+									<input type="hidden" name="cpp_prod4860257" id="cpp_prod4860257" value="prod5790233" />
 								</li>
 							
 							
@@ -4690,7 +5329,7 @@ virtually anywhere in your home.
 						
 							
 							
-								<li>Add HBO® or  HBO®/Cinemax® and get it <b>free for 3 months!</b></li><li>NBA TV and MLB Network included</li><li><b>Movie package</b></li><li>Better <b>DVR</b> included</li>
+								<li>Add HBO® or  HBO®/Cinemax® and get it <b>free for 3 months!</b></li><li>NBA TV and MLB Network included</li><li>Movie Package</li><li>2 HD-ready receivers with Total Home <b>DVR</b> capability included</li>
 								<div style="clear: both; padding-bottom: 2px;"></div>
 							
 						
@@ -4706,7 +5345,14 @@ virtually anywhere in your home.
 	
 
 <script>
-	formFunc.setRadioClick('TV &amp; Internet');		
+   formFunc.setRadioClick('TV &amp; Internet');
+   function callPopupTV(tvShortDispName){
+	showPopupByUrl('/u-verse/shop/fragments/iptv.jsp?q_IPTVShortDisplayName='+tvShortDispName, '<span class="modal-header-title">AT&T U-verse TV</span>',  true, 1020);
+	}
+	function callPopuphsia(hsiaShortDispName){
+		showPopupByUrl('/u-verse/shop/fragments/hsia.jsp?q_HSIAShortDisplayName='+hsiaShortDispName, '<span class="modal-header-title">AT&T U-verse High Speed Internet</span>',  true, 792);
+		dcsMultiTrack('DCS.dcsuri','/u-verse/shop/fragments/hsia.jsp?q_HSIAShortDisplayName='+hsiaShortDispName,'DCS.dcsref',window.location.href,'DCSext.wtPN','Uverse HSIA Offers Modal Pg','DCSext.wtBuyFlowType', 'PROVIDE', 'DCSext.flowtype', 'UVERSE');
+	}
 </script>
 
 
@@ -4844,11 +5490,11 @@ virtually anywhere in your home.
 						
 						
 						
-							<img src="../../images/Wireless/Promotions/Bubbles/ur_77434_pink_200_back_AA000PZD.jpg" />
+							<img alt="Cash Back Item" src="../../images/Wireless/Promotions/Bubbles/ur_77434_pink_200_back_AA000PZD.jpg" />
 							<div style="font-size: 8px; font-weight: bold; width: 44px; text-align: right; overflow: hidden; margin-top: -4px;">
 								<a href="javascript:showPopup('prod4860260Pop',true)">Details</a></div>
                                
-						<div id="prod4860260Pop" title="Offer Details" style="display: none">Get $28 off per month, PLUS a 12 month price guarantee when you order U-family or higher TV with High Speed Internet Pro or higher and any U-verse Voice. One year term required for bundled U-verse services. Bundle Offer ends 1/31/12. For new residential U-verse customers. An early termination fee of up to $180 may apply if U-verse services are terminated. After 12 months, standard rates apply for U-verse service(s). $200 AT&T U-verse Reward Card online at att.com. One offer per service address. Card redemption required. Card sent 4-6 weeks after redemption to customers who retain qualifying service(s). Not redeemable for cash, for use at automated gasoline pumps or for cash withdrawal at ATMs. Card expires 90 days after issuance. For cardholder agreement/terms and conditions go to http://rewardcenter.att.com/myrewardcard/agreement.pdf. Cards are issued by U.S. Bank National Association, pursuant to a license from Visa U.S.A. Inc.</div>
+						<div id="prod4860260Pop" title="Offer Details" style="display: none">Get $41 off per month, PLUS a 12 month price guarantee when you order U-family or higher TV with High Speed Internet Pro or higher and any U-verse Voice. One year term required for bundled U-verse services. Bundle Offer ends 7/14/12. For new residential U-verse customers. After 12 months, standard rates apply for U-verse service(s). $200 AT&T U-verse Reward Card online at att.com. One offer per service address. Card redemption required. Card sent 4-6 weeks after redemption to customers who retain qualifying service(s). Not redeemable for cash, for use at automated gasoline pumps or for cash withdrawal at ATMs. Card expires 90 days after issuance. For cardholder agreement/terms and conditions go to http://rewardcenter.att.com/myrewardcard/agreement.pdf. Cards are issued by U.S. Bank National Association, pursuant to a license from Visa U.S.A. Inc.</div>
 					</div> 
 					<h2 style="font-weight:bold; font-size:15px; color:#f37d01; padding-bottom:4px; height:37px; ">
 						TV, Internet & Phone
@@ -4861,7 +5507,7 @@ virtually anywhere in your home.
 								
 									
 										<div style="font-size:32px; padding-top:4px; float: left; line-height:32px; letter-spacing:-2px;">
-											89
+											79
 										</div>
 									
 									
@@ -4899,7 +5545,7 @@ virtually anywhere in your home.
 					</a>
 				</div>
 				
-					<div style="padding-left:9px; padding-top:4px; padding-bottom:12px;"><input id="prod4860260;top" name="/att/ecom/uverse/view/CompareFormHandler.productCompareList" value="prod4860260" onclick="$('prod4860260;bottom').checked = this.checked;" type="checkbox"><input name="_D:/att/ecom/uverse/view/CompareFormHandler.productCompareList" value=" " type="hidden">&nbsp;Select to compare</div>
+					<div style="padding-left:9px; padding-top:4px; padding-bottom:12px;"><input id="prod4860260;top" name="/att/ecom/uverse/view/CompareFormHandler.productCompareList" value="prod4860260" onclick="$('prod4860260;bottom').checked = this.checked;" type="checkbox"><input name="_D:/att/ecom/uverse/view/CompareFormHandler.productCompareList" value=" " type="hidden">&nbsp;<label for="prod4860260;top">Select to compare</label></div>
 				
 			</div>
 			
@@ -4914,18 +5560,17 @@ virtually anywhere in your home.
 						background-image:url(../../media/en_US/images/img/img_div-point_gradient_AA000EPI.gif); background-repeat:repeat-x;">
 						<div style="">
 							
-							
 							<div style="vertical-align:text-top;padding-top:10px;padding-left:4px;">
 								
 								
-								<a href="javascript:showPopupByUrl('/u-verse/shop/fragments/iptv.jsp?q_IPTVShortDisplayName=U-family', '&lt;span class=&quot;modal-header-title&quot;&gt;AT&amp;T U-verse TV&lt;/span&gt;',  true, 1020);" class="call-to-action tooltip shopPageAlert" style="position:relative;" title="Up to 130 of the best family-oriented digital channels including local channels and 1 HD-ready receiver. ">
+								<a href="javascript:void(0);" onclick="callPopupTV('U-family');" class="call-to-action tooltip shopPageAlert" style="position:relative;" title="Up to 130 of the best family-oriented digital channels including local channels and 1 HD-ready receiver. ">
 								<span class="bold">U-family</span></a>
 							</div>
 							
 							    
 							<div style="vertical-align:text-top;padding-left:4px;">Up to <a href="http://www.att.com/u-verse/shop/channellineupPopup.jsp?pkgId=U-family&amp;locale=" onclick="dotComPopUp(this.href, 1030, 780);return false;" target="_blank">130 channels</a></div>
 			             	 
-			             	<img src='../../global/images/transparent.gif' width='1' height='1'
+			             	<img alt="" src='../../global/images/transparent.gif' width='1' height='1'
 			            		onload="if ($('iptv_icon') && $('iptv_icon_disabled')) {$('iptv_icon_disabled').style.display='none'; $('iptv_icon').style.display='block';}" />
 						</div>
 					</div>
@@ -4942,7 +5587,7 @@ virtually anywhere in your home.
 						
 						
 						<div style="vertical-align:text-top;font-weight:bold;padding-top:10px;padding-left:4px;">
-							<a href="javascript:showPopupByUrl('/u-verse/shop/fragments/hsia.jsp?q_HSIAShortDisplayName=Pro', '&lt;span class=&quot;modal-header-title&quot;&gt;AT&amp;T U-verse High Speed Internet&lt;/span&gt;',  true, 792);" class="call-to-action" style="position:relative;">
+							<a href="javascript:void(0);" onclick="callPopuphsia('Pro');" class="call-to-action" style="position:relative;">
 								<span class="bold">Pro &nbsp;</span>
 							</a>
 						</div>
@@ -4960,7 +5605,7 @@ virtually anywhere in your home.
         	                        	                  
                             
                         
-                        <img src='../../global/images/transparent.gif' width='1' height='1'
+                        <img alt="" src='../../global/images/transparent.gif' width='1' height='1'
             			onload="if ($('hsia_icon') && $('hsia_icon_disabled')) {$('hsia_icon_disabled').style.display='none'; $('hsia_icon').style.display='block';}" />    
 					</div>
 				
@@ -4974,10 +5619,10 @@ virtually anywhere in your home.
 					<div style="height:60px;padding-left:8px;">
 						
 						<div style="vertical-align:text-top;padding-top:10px;">
-							<a href="javascript:showPopup('250 Minutes', 'true');"><span class="bold">250 Minutes</span></a>
+							<a href="javascript:void(0);" onclick="javascript:showPopup('250 Minutes', 'true');"><span class="bold">250 Minutes</span></a>
 						</div>
 						<div style="float: left;">Includes 20 features plus Voicemail.</div>
-						<img src='../../global/images/transparent.gif' width='1' height='1'
+						<img alt="" src='../../global/images/transparent.gif' width='1' height='1'
             			onload="if ($('voip_icon') && $('voip_icon_disabled')) {$('voip_icon_disabled').style.display='none'; $('voip_icon').style.display='block';}" />
 					</div>
 				
@@ -5059,10 +5704,10 @@ virtually anywhere in your home.
 							
 							 
 							
-								<div style="float: right; padding-right: 2px;"><img src="../../global/images/en/btn_info.gif" class="tooltip shopPageAlert" title="Get $28 off your monthly price for 12 months. Requires minimum purchase of U-family TV, Pro Internet and Voice 250. 1 year service agreement required."/></div>
+								<div style="float: right; padding-right: 2px;"><img src="../../global/images/en/btn_info.gif" class="tooltip shopPageAlert" title="Get $41 off your monthly price for 12 months and get $200 back via promotion card when you order Ufam TV or higher, Pro Internet or higher and Voice 250 or higher. 1 year service agreement required."/></div>
 								<li>
-									<B>$28 off</B> per month for 12 months with 1 year service agreement
-									<input type="hidden" name="cpp_prod4860260" id="cpp_prod4860260" value="prod5020289" />
+									Get <b>$41 off</b> per month for 12 months with 1 year service agreement
+									<input type="hidden" name="cpp_prod4860260" id="cpp_prod4860260" value="prod5790237" />
 								</li>
 							
 							
@@ -5092,7 +5737,7 @@ virtually anywhere in your home.
 						
 							
 							
-								<li>Add HBO® or  HBO®/Cinemax® and get it <b>free for 3 months!</b></li><li><b>Price Guaranteed</b> for 1 year</li><li><b>DVR</b> included</li>
+								<li>Add HBO® or  HBO®/Cinemax® and get it <b>free for 3 months!</b></li><li>Price Guaranteed for 1 year</li><li><b>DVR</b> included</li>
 								<div style="clear: both; padding-bottom: 2px;"></div>
 							
 						
@@ -5108,7 +5753,14 @@ virtually anywhere in your home.
 	
 
 <script>
-	formFunc.setRadioClick('TV, Internet &amp; Phone');		
+   formFunc.setRadioClick('TV, Internet &amp; Phone');
+   function callPopupTV(tvShortDispName){
+	showPopupByUrl('/u-verse/shop/fragments/iptv.jsp?q_IPTVShortDisplayName='+tvShortDispName, '<span class="modal-header-title">AT&T U-verse TV</span>',  true, 1020);
+	}
+	function callPopuphsia(hsiaShortDispName){
+		showPopupByUrl('/u-verse/shop/fragments/hsia.jsp?q_HSIAShortDisplayName='+hsiaShortDispName, '<span class="modal-header-title">AT&T U-verse High Speed Internet</span>',  true, 792);
+		dcsMultiTrack('DCS.dcsuri','/u-verse/shop/fragments/hsia.jsp?q_HSIAShortDisplayName='+hsiaShortDispName,'DCS.dcsref',window.location.href,'DCSext.wtPN','Uverse HSIA Offers Modal Pg','DCSext.wtBuyFlowType', 'PROVIDE', 'DCSext.flowtype', 'UVERSE');
+	}
 </script>
 
 
@@ -5246,11 +5898,11 @@ virtually anywhere in your home.
 						
 						
 						
-							<img src="../../images/Wireless/Promotions/Bubbles/ur_77434_pink_200_back_AA000PZD.jpg" />
+							<img alt="Cash Back Item" src="../../images/Wireless/Promotions/Bubbles/ur_77434_pink_200_back_AA000PZD.jpg" />
 							<div style="font-size: 8px; font-weight: bold; width: 44px; text-align: right; overflow: hidden; margin-top: -4px;">
 								<a href="javascript:showPopup('prod4860261Pop',true)">Details</a></div>
                                
-						<div id="prod4860261Pop" title="Offer Details" style="display: none">Get $38 off per month, PLUS a 12 month price guarantee when you order U300 or higher TV with High Speed Internet Elite or higher and any U-verse Voice. One year term required for bundled U-verse services. Bundle Offer ends 1/31/12. For new residential U-verse customers. An early termination fee of up to $180 may apply if U-verse services are terminated. After 12 months, standard rates apply for U-verse service(s). $200 AT&T U-verse Reward Card online at att.com. One offer per service address. Card redemption required. Card sent 4-6 weeks after redemption to customers who retain qualifying service(s). Not redeemable for cash, for use at automated gasoline pumps or for cash withdrawal at ATMs. Card expires 90 days after issuance. For cardholder agreement/terms and conditions go to http://rewardcenter.att.com/myrewardcard/agreement.pdf. Cards are issued by U.S. Bank National Association, pursuant to a license from Visa U.S.A. Inc.</div>
+						<div id="prod4860261Pop" title="Offer Details" style="display: none">Get $51 off per month, PLUS a 12 month price guarantee when you order U300 or higher TV with High Speed Internet Max or higher and any U-verse Voice. One year term required for bundled U-verse services. Bundle Offer ends 7/14/12. For new residential U-verse customers. After 12 months, standard rates apply for U-verse service(s). $200 AT&T U-verse Reward Card online at att.com. One offer per service address. Card redemption required. Card sent 4-6 weeks after redemption to customers who retain qualifying service(s). Not redeemable for cash, for use at automated gasoline pumps or for cash withdrawal at ATMs. Card expires 90 days after issuance. For cardholder agreement/terms and conditions go to http://rewardcenter.att.com/myrewardcard/agreement.pdf. Cards are issued by U.S. Bank National Association, pursuant to a license from Visa U.S.A. Inc.</div>
 					</div> 
 					<h2 style="font-weight:bold; font-size:15px; color:#f37d01; padding-bottom:4px; height:37px; ">
 						TV, Internet & Phone
@@ -5263,7 +5915,7 @@ virtually anywhere in your home.
 								
 									
 										<div style="font-size:32px; padding-top:4px; float: left; line-height:32px; letter-spacing:-2px;">
-											162
+											151
 										</div>
 									
 									
@@ -5301,7 +5953,7 @@ virtually anywhere in your home.
 					</a>
 				</div>
 				
-					<div style="padding-left:9px; padding-top:4px; padding-bottom:12px;"><input id="prod4860261;top" name="/att/ecom/uverse/view/CompareFormHandler.productCompareList" value="prod4860261" onclick="$('prod4860261;bottom').checked = this.checked;" type="checkbox"><input name="_D:/att/ecom/uverse/view/CompareFormHandler.productCompareList" value=" " type="hidden">&nbsp;Select to compare</div>
+					<div style="padding-left:9px; padding-top:4px; padding-bottom:12px;"><input id="prod4860261;top" name="/att/ecom/uverse/view/CompareFormHandler.productCompareList" value="prod4860261" onclick="$('prod4860261;bottom').checked = this.checked;" type="checkbox"><input name="_D:/att/ecom/uverse/view/CompareFormHandler.productCompareList" value=" " type="hidden">&nbsp;<label for="prod4860261;top">Select to compare</label></div>
 				
 			</div>
 			
@@ -5316,18 +5968,17 @@ virtually anywhere in your home.
 						background-image:url(../../media/en_US/images/img/img_div-point_gradient_AA000EPI.gif); background-repeat:repeat-x;">
 						<div style="">
 							
-							
 							<div style="vertical-align:text-top;padding-top:10px;padding-left:4px;">
 								
 								
-								<a href="javascript:showPopupByUrl('/u-verse/shop/fragments/iptv.jsp?q_IPTVShortDisplayName=U450', '&lt;span class=&quot;modal-header-title&quot;&gt;AT&amp;T U-verse TV&lt;/span&gt;',  true, 1020);" class="call-to-action tooltip shopPageAlert" style="position:relative;" title="An extensive lineup of up to 430 digital channels including 105 premium movie channels, local and music channels, and over 145 HD channels. Also includes 1 HD-ready receiver. ">
+								<a href="javascript:void(0);" onclick="callPopupTV('U450');" class="call-to-action tooltip shopPageAlert" style="position:relative;" title="An extensive lineup of up to 430 digital channels including 105 premium movie channels, local and music channels, and over 145 HD channels. Also includes 1 Total Home DVR&reg; and 1 HD-ready receiver.">
 								<span class="bold">U450</span></a>
 							</div>
 							
 							    
 							<div style="vertical-align:text-top;padding-left:4px;">Up to <a href="http://www.att.com/u-verse/shop/channellineupPopup.jsp?pkgId=U450&amp;locale=" onclick="dotComPopUp(this.href, 1030, 780);return false;" target="_blank">430 channels</a></div>
 			             	 
-			             	<img src='../../global/images/transparent.gif' width='1' height='1'
+			             	<img alt="" src='../../global/images/transparent.gif' width='1' height='1'
 			            		onload="if ($('iptv_icon') && $('iptv_icon_disabled')) {$('iptv_icon_disabled').style.display='none'; $('iptv_icon').style.display='block';}" />
 						</div>
 					</div>
@@ -5344,7 +5995,7 @@ virtually anywhere in your home.
 						
 						
 						<div style="vertical-align:text-top;font-weight:bold;padding-top:10px;padding-left:4px;">
-							<a href="javascript:showPopupByUrl('/u-verse/shop/fragments/hsia.jsp?q_HSIAShortDisplayName=Max', '&lt;span class=&quot;modal-header-title&quot;&gt;AT&amp;T U-verse High Speed Internet&lt;/span&gt;',  true, 792);" class="call-to-action" style="position:relative;">
+							<a href="javascript:void(0);" onclick="callPopuphsia('Max');" class="call-to-action" style="position:relative;">
 								<span class="bold">Max &nbsp;</span>
 							</a>
 						</div>
@@ -5362,7 +6013,7 @@ virtually anywhere in your home.
         	                        	                  
                             
                         
-                        <img src='../../global/images/transparent.gif' width='1' height='1'
+                        <img alt="" src='../../global/images/transparent.gif' width='1' height='1'
             			onload="if ($('hsia_icon') && $('hsia_icon_disabled')) {$('hsia_icon_disabled').style.display='none'; $('hsia_icon').style.display='block';}" />    
 					</div>
 				
@@ -5376,10 +6027,10 @@ virtually anywhere in your home.
 					<div style="height:60px;padding-left:8px;">
 						
 						<div style="vertical-align:text-top;padding-top:10px;">
-							<a href="javascript:showPopup('Unlimited', 'true');"><span class="bold">Unlimited</span></a>
+							<a href="javascript:void(0);" onclick="javascript:showPopup('Unlimited', 'true');"><span class="bold">Unlimited</span></a>
 						</div>
 						<div style="float: left;">Includes 20 features plus Voicemail.</div>
-						<img src='../../global/images/transparent.gif' width='1' height='1'
+						<img alt="" src='../../global/images/transparent.gif' width='1' height='1'
             			onload="if ($('voip_icon') && $('voip_icon_disabled')) {$('voip_icon_disabled').style.display='none'; $('voip_icon').style.display='block';}" />
 					</div>
 				
@@ -5423,7 +6074,7 @@ virtually anywhere in your home.
 									
 									
 										<li>
-											<b>3 months FREE</b> Onlive Playback with unlimited access to 100+ games
+											<b>3 months FREE</b> Onlive Playback with unlimited access to 125+ games
 										</li>
 									
 									
@@ -5471,10 +6122,10 @@ virtually anywhere in your home.
 							
 							 
 							
-								<div style="float: right; padding-right: 2px;"><img src="../../global/images/en/btn_info.gif" class="tooltip shopPageAlert" title="Get $38 off your monthly price for 12 months when you order U300 TV or higher, Elite Internet or higher and Voice 250 or Voice Unlimited. 1 year service agreement required."/></div>
+								<div style="float: right; padding-right: 2px;"><img src="../../global/images/en/btn_info.gif" class="tooltip shopPageAlert" title="Get $51 off your monthly price for 12 months and get $200 back via promotion card when you order U300 TV or higher, Max Internet or higher and Voice 250 or higher. 1 year service agreement required."/></div>
 								<li>
-									<B>$38 off</B> per month for 12 months with 1 year service agreement
-									<input type="hidden" name="cpp_prod4860261" id="cpp_prod4860261" value="prod5020291" />
+									Get <b>$51 off</b> per month for 12 months with 1 year service agreement
+									<input type="hidden" name="cpp_prod4860261" id="cpp_prod4860261" value="prod5790240" />
 								</li>
 							
 							
@@ -5504,7 +6155,7 @@ virtually anywhere in your home.
 						
 							
 							
-								<li><b>Price Guaranteed</b> for 1 year</li><li>Better <b>DVR</b> included</li><li>NBA TV & MLB Network included</li><li><b>Movie Package</b></li><li><b>HD</b> included</li>
+								<li>Price Guaranteed for 1 year</li><li>2 HD-ready receivers with Total Home <b>DVR</b> capability included</li><li>NBA TV & MLB Network included</li><li>Movie Package</li><li><b>HD</b> included</li>
 								<div style="clear: both; padding-bottom: 2px;"></div>
 							
 						
@@ -5520,7 +6171,14 @@ virtually anywhere in your home.
 	
 
 <script>
-	formFunc.setRadioClick('TV, Internet &amp; Phone');		
+   formFunc.setRadioClick('TV, Internet &amp; Phone');
+   function callPopupTV(tvShortDispName){
+	showPopupByUrl('/u-verse/shop/fragments/iptv.jsp?q_IPTVShortDisplayName='+tvShortDispName, '<span class="modal-header-title">AT&T U-verse TV</span>',  true, 1020);
+	}
+	function callPopuphsia(hsiaShortDispName){
+		showPopupByUrl('/u-verse/shop/fragments/hsia.jsp?q_HSIAShortDisplayName='+hsiaShortDispName, '<span class="modal-header-title">AT&T U-verse High Speed Internet</span>',  true, 792);
+		dcsMultiTrack('DCS.dcsuri','/u-verse/shop/fragments/hsia.jsp?q_HSIAShortDisplayName='+hsiaShortDispName,'DCS.dcsref',window.location.href,'DCSext.wtPN','Uverse HSIA Offers Modal Pg','DCSext.wtBuyFlowType', 'PROVIDE', 'DCSext.flowtype', 'UVERSE');
+	}
 </script>
 
 
@@ -5603,12 +6261,6 @@ virtually anywhere in your home.
 														
 															
 															
-															
-														
-															
-															
-															
-																
 															
 														
 															
@@ -5941,7 +6593,7 @@ virtually anywhere in your home.
 			</div>
 			
 				<div style="clear:both; height: 45px; padding-top: 12px;"><input type="checkbox" id="prod4860258;bottom" value="prod4860258" 
-					class="phCompare" onclick="$('prod4860258;top').checked = this.checked;"/>&nbsp;Select to compare
+					class="phCompare" onclick="$('prod4860258;top').checked = this.checked;"/>&nbsp;<label for="prod4860258;bottom">Select to compare</label>
 				</div>
 			
 			</div>
@@ -6209,7 +6861,7 @@ virtually anywhere in your home.
 			</div>
 			
 				<div style="clear:both; height: 45px; padding-top: 12px;"><input type="checkbox" id="prod4860259;bottom" value="prod4860259" 
-					class="phCompare" onclick="$('prod4860259;top').checked = this.checked;"/>&nbsp;Select to compare
+					class="phCompare" onclick="$('prod4860259;top').checked = this.checked;"/>&nbsp;<label for="prod4860259;bottom">Select to compare</label>
 				</div>
 			
 			</div>
@@ -6459,7 +7111,7 @@ virtually anywhere in your home.
 							
 								
 									<div style="font-size:32px; padding-top:4px; float: left; line-height:32px; letter-spacing:-2px;">
-										74
+										79
 									</div>
 								
 								
@@ -6492,7 +7144,7 @@ virtually anywhere in your home.
 			</div>
 			
 				<div style="clear:both; height: 45px; padding-top: 12px;"><input type="checkbox" id="prod4860257;bottom" value="prod4860257" 
-					class="phCompare" onclick="$('prod4860257;top').checked = this.checked;"/>&nbsp;Select to compare
+					class="phCompare" onclick="$('prod4860257;top').checked = this.checked;"/>&nbsp;<label for="prod4860257;bottom">Select to compare</label>
 				</div>
 			
 			</div>
@@ -6727,7 +7379,7 @@ virtually anywhere in your home.
 							
 								
 									<div style="font-size:32px; padding-top:4px; float: left; line-height:32px; letter-spacing:-2px;">
-										89
+										79
 									</div>
 								
 								
@@ -6760,7 +7412,7 @@ virtually anywhere in your home.
 			</div>
 			
 				<div style="clear:both; height: 45px; padding-top: 12px;"><input type="checkbox" id="prod4860260;bottom" value="prod4860260" 
-					class="phCompare" onclick="$('prod4860260;top').checked = this.checked;"/>&nbsp;Select to compare
+					class="phCompare" onclick="$('prod4860260;top').checked = this.checked;"/>&nbsp;<label for="prod4860260;bottom">Select to compare</label>
 				</div>
 			
 			</div>
@@ -6962,7 +7614,7 @@ virtually anywhere in your home.
 							
 								
 									<div style="font-size:32px; padding-top:4px; float: left; line-height:32px; letter-spacing:-2px;">
-										162
+										151
 									</div>
 								
 								
@@ -6995,7 +7647,7 @@ virtually anywhere in your home.
 			</div>
 			
 				<div style="clear:both; height: 45px; padding-top: 12px;"><input type="checkbox" id="prod4860261;bottom" value="prod4860261" 
-					class="phCompare" onclick="$('prod4860261;top').checked = this.checked;"/>&nbsp;Select to compare
+					class="phCompare" onclick="$('prod4860261;top').checked = this.checked;"/>&nbsp;<label for="prod4860261;bottom">Select to compare</label>
 				</div>
 			
 			</div>
@@ -7179,7 +7831,7 @@ virtually anywhere in your home.
 				<img src="../../media/en_US/images/ico/ico_CartEmpty_AA00017Q.gif" border="0"/>
 				<span align="top" style="font-size:11px;text-transform:uppercase;"><b>Cart in Progress</b></span>
 				<div style="text-align:right; margin-top: -20px; margin-left: 250px;" onclick="$('shopMicroCart').style.display='none';"><a href="javascript:void(0);">Close</a> <img src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif" /></div>
-           		<img class="wtpn Uverse_Shop_Cart_Pg" src="../../global/images/transparent.gif" width="1" height="1" style="border: 1px solid green;"/>
+           		<img alt="" class="wtpn Uverse_Shop_Cart_Pg" src="../../global/images/transparent.gif" width="1" height="1" style="border: 1px solid green;"/>
 			</div>
 		</div>
 		
@@ -7291,7 +7943,7 @@ virtually anywhere in your home.
 				</div>
 				<div style="clear:both;"></div>
 				<div style="padding-left:23px; background-color:#F8F8F8; padding-bottom:10px; font-size: 10px; font-weight: normal; line-height: 12px;" uri="learnaboutcharges.jsp"> 
-					<img src="../../media/en_US/images/btn/btn_preview_AA0005XY.gif" />&nbsp;<a class="wtpn Uverse_Learn_About_Charges_Modal_Pg" href="javascript:showPopupByUrl('/global/cms/u-verse/en_US/popups/mini-cart-learn-more.jsp', 'Learn more about charges', true);">Learn more about charges</a>
+					<img alt="Preview Button" src="../../media/en_US/images/btn/btn_preview_AA0005XY.gif" />&nbsp;<a class="wtpn Uverse_Learn_About_Charges_Modal_Pg" href="javascript:showPopupByUrl('/global/cms/u-verse/en_US/popups/mini-cart-learn-more.jsp', 'Learn more about charges', true);">Learn more about charges</a>
 				</div>
 			</div> 
 						
@@ -7325,6 +7977,15 @@ virtually anywhere in your home.
 	
 	
 	
+	
+		
+		
+					
+		
+	
+	
+	
+	
 
 </div>
 		</div>
@@ -7332,7 +7993,7 @@ virtually anywhere in your home.
 	</div>
 
 
-		<img src='../../global/images/transparent.gif' width='1' height='1' onload="new Draggable('shopMicroCart', {handle: $('cartHandle'), starteffect: null, endeffect: null});" />
+		<img alt="" src='../../global/images/transparent.gif' width='1' height='1' onload="new Draggable('shopMicroCart', {handle: $('cartHandle'), starteffect: null, endeffect: null});" />
 	</div>
 
 	<div id="shopPageAlert" class="rounded" style="position: absolute; display: none; z-index: 100; width: 172px;">
@@ -7410,7 +8071,7 @@ Select Cancel to keep what's already in your Cart.</td>
 	
 		
 		
-			<img src="../../global/images/transparent.gif" width="1" height="1" 
+			<img alt="" src="../../global/images/transparent.gif" width="1" height="1" 
 			onload="var slots=$$('.slots .unordered-list'); window.h=50; for(var i=0; i<slots.length; ++i) h = [slots[i].offsetHeight, h].max(); slots=$$('.slots'); for(var i=0; i<slots.length; ++i) {if (slots[i].innerHTML.length > 771) slots[i].style.height=h+75+'px'; else slots[i].style.height='0px'}; $$('.slot0')[0].style.height = h+57+'px';" />
 		
 	
@@ -7698,7 +8359,7 @@ Select Cancel to keep what's already in your Cart.</td>
 						
 					
 				</div>
-				<a href="../../gen/privacy-policy%3Fpid=2587.html">&copy;2011 AT&amp;T Intellectual Property</a>. All rights reserved. AT&amp;T, the AT&amp;T logo and all other AT&amp;T marks contained herein are trademarks of AT&amp;T Intellectual Property and/or AT&amp;T affiliated companies. AT&amp;T 36USC220506
+				<a href="../../gen/privacy-policy%3Fpid=2587.html">&copy;2012 AT&amp;T Intellectual Property</a>. All rights reserved. AT&amp;T, the AT&amp;T logo and all other AT&amp;T marks contained herein are trademarks of AT&amp;T Intellectual Property and/or AT&amp;T affiliated companies. AT&amp;T 36USC220506
 			</div>
 			<div class="logoBlock">
 				
@@ -7720,7 +8381,7 @@ Select Cancel to keep what's already in your Cart.</td>
 					
 					
 						
-						<a target="_blank" href="../../../clicktoverify.truste.com/pvr.php%3Fpage=validate&amp;companyName=AT&amp;T&amp;sealid=101.html"><img title="This site is certified by TRUSTe" alt="This site is certified by TRUSTe" src="http://www.att.com/media/att/2011/global/nav/en_US/logoTRUSTe.png"></a>
+						<a target="_blank" href="../../../clicktoverify.truste.com/pvr.php%3Fpage=validate&amp;companyName=AT%2526T&amp;sealid=101.html"><img title="This site is certified by TRUSTe" alt="This site is certified by TRUSTe" src="http://www.att.com/media/att/2011/global/nav/en_US/logoTRUSTe.png"></a>
 					
 				
 					
@@ -7780,7 +8441,7 @@ Select Cancel to keep what's already in your Cart.</td>
 								<span id="popCloseButtonSpan" onClick="closePopup();">
 									<a href="javascript:void(0);">
 										Close
-									</a> <img style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/>
+									</a> <img alt="Close" style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/>
 								</span>
 							
 						
@@ -7796,7 +8457,7 @@ Select Cancel to keep what's already in your Cart.</td>
             <div style="min-height:68px;height:37px;background-image:url(../../media/en_US/images/img/img_uverse-gradient-4x37_AA0009R6.gif); background-repeat:repeat-x; border-top:#FFFFFF solid 1px; border-left:#FFFFFF solid 1px; border-right:#FFFFFF solid 1px;">
                 <div style="padding:10px;">
                     <div style="float:left; padding-left:10px; "><h1 id="mainPopUpTitle2"></h1></div>
-                    <div style="text-align:right;" id="popCloseButton2"><span onClick="closePopup('2')"><a href="javascript:void(0);">Close</a> <img style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/></span></div>
+                    <div style="text-align:right;" id="popCloseButton2"><span onClick="closePopup('2')"><a href="javascript:void(0);">Close</a> <img alt="Close" style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/></span></div>
                 </div>
             </div>
             <div id="mainPopupBody2" style="padding:10px; border:#CCCCCC solid 1px; margin:10px;"></div>
@@ -7808,9 +8469,9 @@ Select Cancel to keep what's already in your Cart.</td>
             <div style="min-height:45px;height:37px;background-image:url(../../media/att/2011/shop/u-verse/channel-lineup/bkd-filter-tab.gif); background-repeat:repeat-x; border-top:#FFFFFF solid 1px; border-left:#FFFFFF solid 1px; border-right:#FFFFFF solid 1px;">
 	          <div style="padding:10px;">
                     <div style="float:left; padding-left:10px; "><h1 id="mainPopupTitleChannelLineup"></h1></div>
-					<div style="font-size:1.1em;*font-size:1.3em;text-align:center;width:77px;float:right" id="popCloseButton2"><div style="*margin-top:4px;margin-left:-15px;*height:20px;" onClick="closePopup('2')"><a href="javascript:void(0);">Close</a>&nbsp;&nbsp;</div><div style="margin-top:-18px;*margin-top:-25px;margin-left:43px;" onClick="closePopup('2')"><a href="javascript:void(0);"><img style="cursor: pointer; cursor: hand;" src="../../media/att/2011/global/btn/btn_close.gif"/></a></div></div>
+					<div style="font-size:1.1em;*font-size:1.3em;text-align:center;width:77px;float:right" id="popCloseButton2"><div style="*margin-top:4px;margin-left:-15px;*height:20px;" onClick="closePopup('2')"><a href="javascript:void(0);">Close</a>&nbsp;&nbsp;</div><div style="margin-top:-18px;*margin-top:-25px;margin-left:43px;" onClick="closePopup('2')"><a href="javascript:void(0);"><img alt="Close Disabled" style="cursor: pointer; cursor: hand;" src="../../media/att/2011/global/btn/btn_close.gif"/></a></div></div>
 					
-					<div id="printChannelLineup" style="font-size:1.1em;*font-size:1.3em;width:77px;border-right:1px solid #CCC;text-align:center; float:right;display:none;"><div style="margin-right:-17px;*margin-top:3px;*height:0px;" onclick="printChannels()"><a href="javascript:void(0);">Print</a></div><div style="margin-top:-15px;*margin-top:-1px;margin-right:37px;" onclick="printChannels()"><a href="javascript:void(0);"><img src="../../media/att/2011/global/ico/ico_print.gif" style="cursor: pointer;"/></a></div></div>
+					<div id="printChannelLineup" style="font-size:1.1em;*font-size:1.3em;width:77px;border-right:1px solid #CCC;text-align:center; float:right;display:none;"><div style="margin-right:-17px;*margin-top:3px;*height:0px;" onclick="printChannels()"><a href="javascript:void(0);">Print</a></div><div style="margin-top:-15px;*margin-top:-1px;margin-right:37px;" onclick="printChannels()"><a href="javascript:void(0);"><img alt="Print" src="../../media/att/2011/global/ico/ico_print.gif" style="cursor: pointer;"/></a></div></div>
                 </div>
             </div>
 			<div id="mainPopupBodyChannelLineup"  ></div>
@@ -7843,7 +8504,7 @@ Select Cancel to keep what's already in your Cart.</td>
     	</div>
         <div style="text-align: right; padding-top: 10px;">
 	        <span onclick="if ($('modalFooterCancel')) $('modalFooterCancel').onclick();">
-	        <img style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/></span></div>
+	        <img alt="Close" style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/></span></div>
     	<div id="mainPopUpTitleIDM" style="display: none;"></div>
     </div>
         
@@ -7873,7 +8534,7 @@ Select Cancel to keep what's already in your Cart.</td>
 						</div>
 				<div id="modalFooterSave" style="float:right; padding-left:10px; cursor: pointer; cursor: hand;">
 					<div title="Add to Cart"><img id="addToCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_Save_green_disabled_AA000IWR.gif" alt="Add to Cart"></div>
+						src="../../media/en_US/images/btn/btn_Save_green_disabled_AA000IWR.gif" alt="Add to Cart Disabled"></div>
 					
 					
 					
@@ -7886,13 +8547,13 @@ Select Cancel to keep what's already in your Cart.</td>
 					
 						
 					<div title="Return to Cart"><img id="returnToCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_ReturnToCart_dis.gif" alt="Return to Cart"></div>
+						src="../../media/en_US/images/btn/btn_ReturnToCart_dis.gif" alt="Return to Cart Disabled"></div>
 					<div title="Return to Cart"><img id="returnToCartEna" style="cursor: pointer; cursor: hand; display:none; margin-bottom: 20px;" class="modal submit" onclick="if (!portPhoneLineslist()) cancelModal(null);" 
 						src="../../media/en_US/images/btn/btn_ReturnToCart_grn.gif" alt="Return to Cart"></div>
 					
 					
 					<div title="Update Cart"><img id="updateCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_UpdateCart_dis.gif" alt="Update Cart"></div>
+						src="../../media/en_US/images/btn/btn_UpdateCart_dis.gif" alt="Update Cart Disabled"></div>
 				
 					
 					
@@ -7932,7 +8593,7 @@ Select Cancel to keep what's already in your Cart.</td>
 					<div style="padding:10px;">
 						<div style="float:left; padding-left:10px; "><h1 id="mainPopUpTitleIDM2" style="display: none;"></h1></div>
 						<div style="text-align:right;"><span onClick="if ($('modalFooterCancel2')) $('modalFooterCancel2').onclick();">
-							<img style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/>
+							<img alt="Close" style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/>
 						</span></div>
 					</div>
 				</div>
@@ -7962,7 +8623,7 @@ Select Cancel to keep what's already in your Cart.</td>
 						</div>
 				<div id="modalFooterSave" style="float:right; padding-left:10px; cursor: pointer; cursor: hand;">
 					<div title="Add to Cart"><img id="addToCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_Save_green_disabled_AA000IWR.gif" alt="Add to Cart"></div>
+						src="../../media/en_US/images/btn/btn_Save_green_disabled_AA000IWR.gif" alt="Add to Cart Disabled"></div>
 					
 					
 					
@@ -7975,13 +8636,13 @@ Select Cancel to keep what's already in your Cart.</td>
 					
 						
 					<div title="Return to Cart"><img id="returnToCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_ReturnToCart_dis.gif" alt="Return to Cart"></div>
+						src="../../media/en_US/images/btn/btn_ReturnToCart_dis.gif" alt="Return to Cart Disabled"></div>
 					<div title="Return to Cart"><img id="returnToCartEna" style="cursor: pointer; cursor: hand; display:none; margin-bottom: 20px;" class="modal submit" onclick="if (!portPhoneLineslist()) cancelModal(null);" 
 						src="../../media/en_US/images/btn/btn_ReturnToCart_grn.gif" alt="Return to Cart"></div>
 					
 					
 					<div title="Update Cart"><img id="updateCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_UpdateCart_dis.gif" alt="Update Cart"></div>
+						src="../../media/en_US/images/btn/btn_UpdateCart_dis.gif" alt="Update Cart Disabled"></div>
 				
 					
 					
@@ -8010,7 +8671,7 @@ Select Cancel to keep what's already in your Cart.</td>
 		
 		<div id="sessionTimeOut" style="width:450px;display:none;" title="Session Time Out">
 			<table border="0" cellspacing="10"><tr>
-			<td valign="top"><img src="../../media/en_US/images/ico/ico_alert_AA0009QS.gif" alt="Warning Message"/></td>
+			<td valign="top"><img src="../../media/en_US/images/ico/ico_alert_AA0009QS.gif" alt="Alert"/></td>
 			<td valign="top">Your session has timed out. As a security measure, your session ends after 30 minutes of inactivity. Select Continue to return to the AT&T U-verse Home page.</td>
 			</tr></table>
 		</div>
@@ -8028,11 +8689,11 @@ Select Cancel to keep what's already in your Cart.</td>
         
 		<div id="sessionTimeOutWarning" style="width:450px;display:none;" title="Session Time Out" uri="timeoutwarning.jsp">
 			<table border="0" cellspacing="10"><tr>
-			<td valign="top"><img src="../../media/en_US/images/ico/ico_alert_AA0009QS.gif" alt="Warning Message"/></td>
+			<td valign="top"><img src="../../media/en_US/images/ico/ico_alert_AA0009QS.gif" alt="Alert"/></td>
 			<td valign="top"><p>As a security measure, your session will expire after 30 minutes of inactivity.</p> 
 <p>If you would like more time, click Continue.</p></td>
 			</tr></table>
-			<img class="wtpn Uverse_Session_Time_Out_Warning_Modal_Pg" src="../../global/images/transparent.gif" width="1" height="1" />
+			<img class="wtpn Uverse_Session_Time_Out_Warning_Modal_Pg" src="../../global/images/transparent.gif" alt="" width="1" height="1" />
 		</div>
 		<div id="sessionTimeOutWarningButton" style="width:450px;display:none;" >
 			<table border="0" width="100%">
@@ -8246,18 +8907,18 @@ Select Cancel to keep what's already in your Cart.</td>
 
 	
 	<script>document.write('<s'+'cript language="JavaScript" src="http://view.atdmt.com/jaction/Uverse_LandingPage"></s'+'cript>')</script>
-	<noscript><iframe src="../../../view.atdmt.com/iaction/Uverse_LandingPage.html" width="1" height="1" frameborder="0" scrolling="No" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0"></iframe></noscript>
+	<noscript><iframe src="../../../view.atdmt.com/iaction/Uverse_LandingPage.html" width="1" height="1" frameborder="0" scrolling="No" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" title="Uverse landing page"></iframe></noscript>
 
 
 	
-    <iframe src="../../../view.atdmt.com/iaction/cntacp_22uverseLP_UAT.html" width="1" height="1" frameborder="0" scrolling="No" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0"></iframe>
+    <iframe src="../../../view.atdmt.com/iaction/cntacp_22uverseLP_UAT.html" width="1" height="1" frameborder="0" scrolling="No" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" title="Uverse landing page"></iframe>
 	<script language="JavaScript">
 		var b3Path = location.href;
 		var b3Query = "";
 		if(b3Path.indexOf("?") != -1) {
         	b3Query=b3Path.substring(b3Path.indexOf("?")+1,b3Path.length);
 		}
-		document.write("<iframe src='../../../b3.mookie1.com/2/TRACK_ATT/LP/cntacp_22StateURock_LP_1@Bottom3.html' WIDTH=0 HEIGHT=0 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000'></iframe>");
+		document.write("<iframe src='../../../b3.mookie1.com/2/TRACK_ATT/LP/cntacp_22StateURock_LP_1@Bottom3.html' WIDTH=0 HEIGHT=0 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR='#000000' title='Uverse landing page'></iframe>");
 	</script>
 
 
@@ -8283,6 +8944,32 @@ Select Cancel to keep what's already in your Cart.</td>
 		vs_orderAbandonPopupCouponAppliedFlag: <br/>
 		</div>
 -->		<div id="couponApplied" style="display:none;"></div>
+		
+		
+		<script>
+			function showWirelessReferralOfferDescPopUp(event) {
+				if(!event){ 
+					event = window.event; 
+					
+				}
+	        	showPopup('wirelessReferralBundleOfferDesc',true,true);
+				
+				
+				if(window.event){		
+					//IE - for stopping the control flow
+					event.cancelBubble = true;
+					event.returnValue = false;
+				}else{
+				//Firefox
+					event.preventDefault();
+					event.stopPropagation();
+				}		
+				
+	        }
+		</script>
+		
+		
+        
 	</body>
 	</html>
 

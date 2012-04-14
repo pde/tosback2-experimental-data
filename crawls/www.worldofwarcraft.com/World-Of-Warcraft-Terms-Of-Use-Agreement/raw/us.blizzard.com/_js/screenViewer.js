@@ -164,19 +164,58 @@ var sV = {
 		if(clickedLink){
 			$j(".videoThumbnail").removeClass("selected");
 			$j(clickedLink).addClass("selected");
+
 		}
+
 		var gameType = gt;
 
 		var altLocale = (gameTrailersLoc[name] != '')?gameTrailersLoc[name]:locale
 
 		var videoArray = gameType + "-" + name + "-" + altLocale  + ":" + gameType + "-" + name + ":" + "games/" + gameType + "/" + name;
 
+		var ageGateStatus = "";
+
+		if (gameType == "d3" && (name == "intro-movie" || name == "blacksoulstone" || name == "teaser")) {
+
+			//GlobalVideoPlayer.initialize("videoContainer");
+
+			if(locale != "en_us" && gameType == "d3" && (name == "intro-movie" || name == "blacksoulstone")) {
+				cPath = akamaiBaseUrl + "blizzard/movies/games/" + gameType + "/" + name + "/captions/" + locale + ".xml";
+				cDefaultOn = true;
+			} else if ((locale == "es_mx" && gameType == "d3") || (locale == "pt_br" && gameType == "d3") || (locale == "pl_pl" && gameType == "d3")) {
+				cPath = akamaiBaseUrl + "blizzard/movies/games/" + gameType + "/" + name + "/captions/" + locale + ".xml";
+				cDefaultOn = true;
+			} else {
+				cPath = akamaiBaseUrl + "blizzard/movies/games/" + gameType + "/" + name + "/captions/" + locale + ".xml";
+				cDefaultOn = false;
+			}
+
+			ageGateStatus = GlobalVideoPlayer.getAgeGateStatus();
+
+		} else {
+			cPath = "";
+			cDefaultOn = false;
+		}
+
+
+		if (gameType == "d3" || gameType == "sc2" || gameType == "wow") {
+			cRatingPath = akamaiBaseUrl + "global-video-player/ratings/" + gameType + "/" + locale.replace('_','-') + ".jpg"
+		} else {
+			cRatingPath = ""
+		}
+
 		var newFlashVars = {
-		    flvPath: akamaiUrl + "movies/games/" + gameType + "/" + name + "/" + gameType + "-" + name + "-" + altLocale + ".flv",
+		    flvPath: akamaiBaseUrl + "blizzard/movies/games/" + gameType + "/" + name + "/" + gameType + "-" + name + "-" + altLocale + ".flv",
 		    flvWidth: width,
 		    flvHeight: height,
-		    autoPlay: true
+		    autoPlay: true,
+			ratingPath: cRatingPath,
+			captionsDefaultOn: cDefaultOn,
+			captionsPath: cPath
 		};
+
+
+
 
 		var noCache = new Date();
         noCache = "?nocache=" + noCache.getTime();
@@ -197,7 +236,29 @@ var sV = {
 
 		sV.setVideo(title, width, height);
 
-		swfobject.embedSWF(akamaiBaseUrl + "global-video-player/themes/" + videoPlayerTheme + "/video-player.swf" + noCache, "videoContainer", width, height, "10", akamaiBaseUrl + "global-video-player/expressInstall.swf", newFlashVars, defaultVideoParams, attributes);
+		if (ageGateStatus == "prompt" || ageGateStatus == "unavailable") {
+
+			$j("#video_list", sV.content).hide();
+
+			checkAgeGateVideo(function() {
+
+				swfobject.embedSWF(akamaiBaseUrl + "global-video-player/themes/" + videoPlayerTheme + "/video-player.swf" + noCache, "videoContainer", width, height, "10", akamaiBaseUrl + "global-video-player/expressInstall.swf", newFlashVars, defaultVideoParams, attributes);
+				$j("#video_list", sV.content).show();
+			})
+			/*
+			newFlashVars.ageGatePath = akamaiBaseUrl + "global-video-player/themes/wow/age-gate.swf";
+		   	newFlashVars.minAge      = ageGateMinAge;
+		   	newFlashVars.dateFormat  = ageGateDateFormat;
+		   	newFlashVars.locale      = loc;
+		   	newFlashVars.ageGateStatus = ageGateStatus;
+
+		   	GlobalVideoPlayer.initialize("videoContainer");
+		   	*/
+	   	} else {
+	   		swfobject.embedSWF(akamaiBaseUrl + "global-video-player/themes/" + videoPlayerTheme + "/video-player.swf" + noCache, "videoContainer", width, height, "10", akamaiBaseUrl + "global-video-player/expressInstall.swf", newFlashVars, defaultVideoParams, attributes);
+	   	}
+
+
 
 	},
 	//load the image and set the dimensions

@@ -1,6 +1,7 @@
 var _selectedDataTypeID = ESRIConfig.defaultDataTypeID;
 var _usingDynamicMap = false;
 var _initialPageLoad = true;
+var _hasInputUrlParams = false;
 
 var theSlider = null;
 
@@ -26,6 +27,7 @@ function addressKeyPressHandler(e){
 	    characterCode = e.keyCode; // IE specific code
 	}if (characterCode == 13) // // Enter key is 13
 	{
+
 		var address = dojo.byId(UIConfig.addressInputID).value;
 		var city = dojo.byId(UIConfig.cityInputID).value;
 		var state = dojo.byId(UIConfig.stateInputID).value;
@@ -538,11 +540,12 @@ function staticSlideronChange(args){
 //
 // --------------------------------------------------------------------------
 function addURLParams(){
- window.location.hash = createURLParams();
+	if (! _hasInputUrlParams) {
+ 		window.location.hash = createURLParams();
+ 	}
 }
 
 function createURLParams(showDynamicMap){
-	
 	if (showDynamicMap == null) {
 		showDynamicMap = _usingDynamicMap;
 	}
@@ -569,10 +572,10 @@ function createURLParams(showDynamicMap){
 }
 
 function getURLParam(strParamName){
-	var strReturn = "";
 	var strHref = window.location.href;
+	var strReturn = "";
 
-	if ( strHref.indexOf("?") > -1 ){
+	if ( _hasInputUrlParams) {
 		var strQueryString = strHref.substr(strHref.lastIndexOf("?")).toLowerCase();
 		var aQueryString = strQueryString.split("&");
 		
@@ -587,7 +590,15 @@ function getURLParam(strParamName){
 	return strReturn;
 }
 
+function checkUrlParams(){ 
+	var strHref = window.location.href; 
+	if ( strHref.indexOf("?") > -1 ){ 
+		_hasInputUrlParams = true; 
+	} 
+}
+
 function handleUrlParams(){
+	checkUrlParams();
 	var latParam = getURLParam('lat');
 	var lonParam = getURLParam('lon');
 	var lod = getURLParam('sci');

@@ -28,13 +28,13 @@ var searchAsYouTypeConfiguration = {
     // /styles. Should end with a slash. 
     // e.g. http://intranet.company.com/search-as-you-type/
       resourcesPath: 
-      "http://www.corp.att.com/attsearch/sayt/",
+      "http://corp.aldc.att.com/attsearch/sayt/",
 
 
     // The fully qualified URL to the Ajax responder. 
     // e.g. http://intranet.company.com/search-as-you-type/responder.php
     ajaxResponderUrl:
-            "http://www.corp.att.com/responder",
+            "http://corp.aldc.att.com/responder",
 
 
     // The fully qualified URL to the help page. Leave as empty string if
@@ -672,6 +672,7 @@ SearchAsYouType.prototype.search_ = function(dontDelayShowResults) {
   URL += "?query=" + encodeURIComponent(this.typedQuery);
   URL += "&mode=sayt";
   URL += "&jsonp=searchAsYouType.handleAjaxResponse";
+  URL += "&sourl="+this.location;
   if (this.debugMode) {
     URL += "&debug=1";
   }

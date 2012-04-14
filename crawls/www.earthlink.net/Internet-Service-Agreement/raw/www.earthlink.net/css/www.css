@@ -96,6 +96,59 @@
 	vertical-align: middle;
 }
 
+/* HOMEPAGE ONLY */
+.components_box_wrapper_homepage { /*display: table-cell;*/
+	vertical-align: middle;
+	text-align: left;
+	width:244px;
+	margin-top:85px;
+	margin-left:25px;
+}
+
+.components_box_homepage {
+	font-size: 10px;
+	color: #666666;
+	font-weight: bold;
+	display: block;
+	overflow: hidden;
+	width: 305px;
+	height:315px;
+	position: relative;
+	background-image: url(../img/www/home/prequal-widget-background.png);
+	background-repeat: no-repeat; 
+	/*z-index: 10;*/
+}
+
+.components_box_qualify_homepage {
+	font-size: 10px;
+	color: #666666;
+	font-weight: bold;
+	display: block;
+	overflow: hidden;
+	width: 305px;
+	height:315px;
+	position: relative;
+	background-image: url(../img/www/home/prequal-widget-qualify-background.png);
+	background-repeat: no-repeat; 
+	/*z-index: 10;*/
+}
+
+.components_box_pqe_homepage {
+	font-size: 10px;
+	color: #666666;
+	font-weight: bold;
+	display: block;
+	overflow: hidden;
+	width: 305px;
+	height:315px;
+	position: relative;
+	background-image: url(../img/www/home/prequal-widget-pqe-background.png);
+	background-repeat: no-repeat; 
+	/*z-index: 10;*/
+}
+
+/* END HOMPEAGE ONLY */
+
 .components_box {
 	font-size: 10px;
 	color: #666666;
@@ -215,8 +268,7 @@ select:focus  {
 
 input.components_box_radio {
 	font-size: 11px;
-	position: relative;
-	top: 2px;
+
 }
 
 .components_box_radio_text {
@@ -456,6 +508,10 @@ input.components_box_radio {
 
 /* component formatting styles */
 #components_dialup_pricing .comp_pricing_special { color: #FF6600;}
+
+#components_dialup_pricing {
+	margin-top:30px;
+}
 
 .comp_price_tbl {
 	width: 215px;
@@ -704,13 +760,12 @@ h3.prodh3 {
 
 .www_home_promos {
 	clear: both;
-	border-top: 1px solid #CCCCCC;
 	margin-top: 0px;
-	padding-top: 0px;
-	height: 100px;
-	width: 925px;
+	padding-top: 15px;
+	height: 222px;
+	width: 940px;
 	text-align: left;
-	background: url(../img/www/home/www_hometile_bg.gif) 50% 0 repeat-y;
+	background: url(../img/www/home/product_tiles_background.png) no-repeat;
 }
 
 
@@ -750,30 +805,49 @@ h3.prodh3 {
 	background: url(../img/www/home/www_splash_member_bg.jpg) 95% 100% no-repeat;	
 }
 .www_column1 p { padding: 6px 0; margin: 0; }
-.www_product_nav { margin-top: 15px; }
+
+.www_product_nav { 
+	background-image: url(../img/www/nav/dropdown/subnav_bg.png);
+	background-repeat: no-repeat;	
+	width: 938px;
+	height: 41px;
+}
 .www_product_tabs {
-	position: relative;  margin: 0; padding: 0;
-	width: 940px; height: 37px;
-	background-repeat: repeat-x;
+	padding-top:12px;
+	padding-left:30px;
+
 }
 .www_product_tabs .www_product_tabs_item { padding-left: 10px; }
 
+.www_product_tabs .www_product_tabs_item a {
+	text-decoration:none;
+}
+
+.www_product_tabs .www_product_tabs_item a .active  {
+	font-weight:bold;
+	color:#df6020;
+}
+
+.sub_nav_arrow {
+	padding-top:5px;
+	padding-right:3px;
+}
+
+
 #www_product_internet_tabs {
-	background-image: url(../img/www/access/nav/www_nav_stripe_bg.gif);
-	width: 666px; margin-bottom: 10px;		 
+
 }
 #www_product_phone_tabs {
-	background-image: url(../img/www/phone/www_nav_stripe_bg.gif);
-	width: 666px; margin-bottom: 10px;
+
 }
 #www_product_hosting_tabs {
-	background-image: url(../img/www/hosting/www_nav_stripe_bg.gif);
+
 }
 #www_product_software_tabs {
-	background-image: url(../img/www/software/www_nav_stripe_bg.gif);
+
 }	
 #www_product_membercenter_tabs {
-	background-image: url(../img/www/membercenter/www_nav_stripe_bg.gif);	
+
 }
 #www_product_about_tabs {
 	background-image: url(../img/www/about/www_nav_stripe_bg.gif);	
@@ -839,6 +913,17 @@ ul.gry_bullets_sm {
 }
 
 /* used on product detail page */
+.single_column {
+	width:938px;
+	height:41px;
+	background-image: url(../img/www/nav/dropdown/nav-background.png);
+	background-repeat: repeat-x;
+	border-left:1px solid #cacaca;
+	border-right:1px solid #cacaca;
+	border-bottom:1px solid #cacaca;
+}
+
+
 .twocolumn_col1_subcol1 {
 	padding-left: 0px;
 }
@@ -974,12 +1059,12 @@ A#www_pqe_live_chat {
 #domain_search_box h2 { font-size: 13px;}
 
 /* Homepage Promo Tiles */
-.promo_tile_wrapper { margin-left: 5px; width: 295px; height: 110px;}
-.promo_tile_img {float: left; }
-.promo_tile_content {float: left; padding-top: 10px; width: 230px; height: 60px;}
+.promo_tile_wrapper { margin-left: 10px; width: 295px; height: 205px;}
+.promo_tile_img {text-align:center;}
+.promo_tile_content {text-align:center; padding-top: 10px; width: 280px; height: 60px;}
 .promo_tile_content a, .promo_tile_content a:visited {font-weight: bold; text-decoration: none; color: black;}
 .promo_tile_content a:hover { text-decoration: underline; }
-.promo_tile_learnmore { float: left; width: 280px; padding: 10px 10px 0 0; text-align: right;}
+.promo_tile_learnmore { text-align:center; width: 280px; padding: 10px 10px 0 0;}
 
 /* Arrow Link Buttons */
 .btn_link_gray, .btn_link_black, .btn_link_orange, .btn_link_purple, .btn_link_skyblue, .btn_link_seablue, .btn_link_green { 
@@ -1092,9 +1177,12 @@ a.btn_link_green:link, a.btn_link_green:hover, a.btn_link_green:visited
 #ViewCart span {  
 	display: none;
 }
+/*
 #live_chat_link {
+ 
   float: left;  display: block;  width: 31px;  height: 46px; padding-left: 12px; padding-right: 12px;
   background: url(../img/www/topright/chatnow.gif) no-repeat 0 0;  
+
 }
 #live_chat_link:hover { 
   background-position: 0 -46px;
@@ -1102,6 +1190,7 @@ a.btn_link_green:link, a.btn_link_green:hover, a.btn_link_green:visited
 #live_chat_link span {  
 	display: none;
 }
+
 #CallMe {
   float: left; display: block;  width: 31px;  height: 46px; padding-left: 12px; padding-right: 12px;
   background: url(../img/www/topright/callme.gif) no-repeat 0 0;  
@@ -1112,6 +1201,7 @@ a.btn_link_green:link, a.btn_link_green:hover, a.btn_link_green:visited
 #CallMe span {  
 	display: none;
 }
+*/
 /* end of top right */
 /* Holdfree Chat */
 #holdfree_chat_component {
@@ -1152,3 +1242,32 @@ a.btn_link_green:link, a.btn_link_green:hover, a.btn_link_green:visited
 	background:url(../img/www/topright/holdfree_chat_window.gif) 0 0 no-repeat;
 }
 
+/* Community Page */
+
+#corpProfileTxt {
+	padding-top:15px;
+}
+
+.float-img-right {
+	padding-left:5px;
+	padding-bottom:10px;
+}
+
+#corpProfileTxt hr {
+	border:1px solid #ccc;
+}	
+
+#corpProfileTxt h2 {
+	color:#e3680e;
+	font-weight:bold;
+}	
+/* used for corp top right */
+#new_topRight a { color: #2f2f2f;; text-decoration:none; }
+#new_topRight a:visited {	color: #2f2f2f; }
+#new_topRight a:hover { color: #2f2f2f; text-decoration: underline; }
+#new_topRight a:active { outline: none; }
+#new_topRight a:visited, a:hover, a:active { text-decoration: underline; } 
+
+#new_topRight {
+	margin-left:45px;
+}

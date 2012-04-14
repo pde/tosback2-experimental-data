@@ -560,7 +560,11 @@ Company: TMP Worldwide Advertising and Communications, LLC
 	}
 
 	.wai,#why-att h1 embed,#careers h1 embed,#students h1 embed,
-		#why-att h1 object,#careers h1 object,#students h1 object {
+		#why-att h1 object,#careers h1 object,#students h1 object,
+		#att-events h1 object,#att-events h1 embed
+		
+		
+		 {
 	width: 0;
 	height: 0;
 	position: absolute;

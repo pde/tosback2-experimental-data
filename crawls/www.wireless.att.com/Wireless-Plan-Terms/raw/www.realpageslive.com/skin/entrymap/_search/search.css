@@ -50,43 +50,43 @@ font-size: 11px;
 }
 .whiteBorders_top
 {
-background: url(../images/styleimg/borderWhiteTop.gif) 0 0 repeat-x;
+background: url('../images/styleimg/borderWhiteTop.gif') 0 0 repeat-x;
 float: right;
 }
 .whiteBorders_bottom
 {
-background: url(../images/styleimg/borderWhiteBottom.gif) 100% 100% repeat-x;
+background: url('../images/styleimg/borderWhiteBottom.gif') 100% 100% repeat-x;
 background-color: White;
 float: left;
 }
 .whiteBorders_right
 {
-background: url(../images/styleimg/borderWhiteRight.gif) 100% 0 repeat-y;
+background: url('../images/styleimg/borderWhiteRight.gif') 100% 0 repeat-y;
 float: right;
 }
 .whiteBorders_left
 {
-background: url(../images/styleimg/borderWhiteLeft.gif) 0 100% repeat-y;
+background: url('../images/styleimg/borderWhiteLeft.gif') 0 100% repeat-y;
 float: left;
 }
 .whitecorners_bl
 {
-background: url(../images/styleimg/cornerWhiteBL.gif) 0 100% no-repeat;
+background: url('../images/styleimg/cornerWhiteBL.gif') 0 100% no-repeat;
 float: left;
 }
 .whitecorners_br
 {
-background: url(../images/styleimg/cornerWhiteBR.gif) 100% 100% no-repeat;
+background: url('../images/styleimg/cornerWhiteBR.gif') 100% 100% no-repeat;
 float: right;
 }
 .whitecorners_tl
 {
-background: url(../images/styleimg/cornerWhiteTL.gif) 0 0 no-repeat;
+background: url('../images/styleimg/cornerWhiteTL.gif') 0 0 no-repeat;
 float: left;
 }
 .whitecorners_tr
 {
-background: url(../images/styleimg/cornerWhiteTR.gif) 100% 0 no-repeat;
+background: url('../images/styleimg/cornerWhiteTR.gif') 100% 0 no-repeat;
 float: right;
 }
 .whitecorners_tr p
@@ -97,49 +97,49 @@ margin:0px;
 }
 .border_shadow_yellow_top
 {
-background: url(../images/styleimg/border_shadow_yellow_top.gif) 0 0 repeat-x;
+background: url('../images/styleimg/border_shadow_yellow_top.gif') 0 0 repeat-x;
 float: right;
 }
 .border_shadow_yellow_bottom
 {
-background: url(../images/styleimg/border_shadow_yellow_bottom.gif) 100% 100% repeat-x;
+background: url('../images/styleimg/border_shadow_yellow_bottom.gif') 100% 100% repeat-x;
 background-color: #f2d200;
 float: left;
 }
 .border_shadow_yellow_right
 {
-background: url(../images/styleimg/border_shadow_yellow_right.gif) 100% 0 repeat-y;
+background: url('../images/styleimg/border_shadow_yellow_right.gif') 100% 0 repeat-y;
 float: right;
 }
 .border_shadow_yellow_left
 {
-background: url(../images/styleimg/border_shadow_yellow_left.gif) 0 100% repeat-y;
+background: url('../images/styleimg/border_shadow_yellow_left.gif') 0 100% repeat-y;
 float: left;
 }
 .corner_shadow_yellow_bl
 {
-background: url(../images/styleimg/corner_shadow_yellow_bl.gif) 0 100% no-repeat;
+background: url('../images/styleimg/corner_shadow_yellow_bl.gif') 0 100% no-repeat;
 float: left;
 }
 .corner_shadow_yellow_br
 {
-background: url(../images/styleimg/corner_shadow_yellow_br.gif) 100% 100% no-repeat;
+background: url('../images/styleimg/corner_shadow_yellow_br.gif') 100% 100% no-repeat;
 float: right;
 }
 .corner_shadow_yellow_tl
 {
-background: url(../images/styleimg/corner_shadow_yellow_tl.gif) 0 0 no-repeat;
+background: url('../images/styleimg/corner_shadow_yellow_tl.gif') 0 0 no-repeat;
 float: left;
 }
 .corner_shadow_yellow_tr
 {
-background: url(../images/styleimg/corner_shadow_yellow_tr.gif) 100% 0 no-repeat;
+background: url('../images/styleimg/corner_shadow_yellow_tr.gif') 100% 0 no-repeat;
 float: right;
 padding: 45px 4px 45px 4px;
 }
 .corner_white_tr
 {
-background: url(../images/styleimg/corner_white_tr.gif) 100% 0 no-repeat;
+background: url('../images/styleimg/corner_white_tr.gif') 100% 0 no-repeat;
 float: right;
 padding: 45px 4px 45px 4px;
 }
@@ -263,7 +263,7 @@ margin:6px 0px 0px 23px;
 .wrapper .mainContainer .topBar ul #topBarMyIYP
 {
 height: 25px;
-background:url('../images/styleimg/iYPIcon.png') no-repeat 6px 5px;
+background:url('../images/styleimg/iYPIcon.png.html') no-repeat 6px 5px;
 }
 .wrapper .mainContainer .topBar ul #topBarMyIYP a
 {
@@ -883,49 +883,49 @@ padding: 0px;
 .corners_gray_bl
 {
 width: 100%;
-background: #dbdbdb url(../images/styleimg/corner_gray_bl.gif) 0 100% no-repeat;
+background: #dbdbdb url('../images/styleimg/corner_gray_bl.gif') 0 100% no-repeat;
 float: left;
 }
 .corners_gray_br
 {
 width: 100%;
-background: url(../images/styleimg/corner_gray_br.gif) 100% 100% no-repeat;
+background: url('../images/styleimg/corner_gray_br.gif') 100% 100% no-repeat;
 float: right;
 }
 .corners_gray_tl
 {
 width: 100%;
-background: url(../images/styleimg/corner_gray_tl.gif) 0 0 no-repeat;
+background: url('../images/styleimg/corner_gray_tl.gif') 0 0 no-repeat;
 float: left;
 }
 .corners_cream_tl
 {
 width: 100%;
-background: #fdf9dc url(../images/styleimg/corner_cream_tl.gif) 100% 0 no-repeat;
+background: #fdf9dc url('../images/styleimg/corner_cream_tl.gif') 100% 0 no-repeat;
 float: left;
 }
 .corners_white_tl
 {
 width: 100%;
-background: #fff url(../images/styleimg/corner_white_tl.gif) 0 0 no-repeat;
+background: #fff url('../images/styleimg/corner_white_tl.gif') 0 0 no-repeat;
 float: left;
 }
 .corners_white_tr
 {
 width: 100%;
-background: url(../images/styleimg/corner_white_tr.gif) 100% 0 no-repeat;
+background: url('../images/styleimg/corner_white_tr.gif') 100% 0 no-repeat;
 float: right;
 }
 .corners_cream_tr
 {
 width: 100%;
-background: url(../images/styleimg/corner_cream_tr.gif) 0 0 no-repeat;
+background: url('../images/styleimg/corner_cream_tr.gif') 0 0 no-repeat;
 float: right;
 }
 .corners_gray_tr
 {
 width: 100%;
-background: url(../images/styleimg/corner_gray_tr.gif) 100% 0 no-repeat;
+background: url('../images/styleimg/corner_gray_tr.gif') 100% 0 no-repeat;
 float: right;
 }
 .corners_gray_tr #content
@@ -1375,13 +1375,13 @@ display: block;
 }
 .corner_shadow_grey_tl
 {
-background: url(../images/styleimg/corner_shadow_grey_tl.gif) 0 0 no-repeat;
+background: url('../images/styleimg/corner_shadow_grey_tl.gif') 0 0 no-repeat;
 float: left;
 }
 .corner_shadow_grey_tr
 {
 width: 100%;
-background: url(../images/styleimg/corner_shadow_grey_tr.gif) 100% 0 no-repeat;
+background: url('../images/styleimg/corner_shadow_grey_tr.gif') 100% 0 no-repeat;
 float: right;
 }
 .widgetContainer .widgetBody
@@ -2027,4 +2027,4 @@ width: auto;
 display: inline;
 float: left;
 margin-right: -1px;
-}
+}   

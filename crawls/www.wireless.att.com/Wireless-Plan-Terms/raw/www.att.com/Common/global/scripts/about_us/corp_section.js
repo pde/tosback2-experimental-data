@@ -3,13 +3,26 @@
 
 jQuery(document).ready(function() {
 
+	/* bargaining blog = bargaining.att.com/corewireline */
+	if ( document.domain == 'bargaining.att.com' ) {
+			if ( window.location.href.indexOf("corewireline") ) {
+				//alert('tetst');
+				jQuery('<div style="border:1px solid #eaeaea;background:#f5f5f5;margin:0 20px 40px 20px;padding:15px 30px 15px 15px;"><p style="font-size:14px;color:#000;"><em>&quot;As one of the largest employers in America, we&#39;re proud of the number of quality middle class careers we&#39;ve provided to our employees, with wages and benefits that are among the best in the country. We have a longstanding cooperative relationship with our unions, and we&#39;re committed to working together to bargain a fair contract that will allow us to protect those careers.&quot;</p><p style="font-size:14px;color:#000;margin-bottom:0;">&mdash; Mark Royse, Executive Vice President &ndash; Labor Relations</em></p></div>').insertAfter('#logoHeaderBA');
+			}
+	}
+
+
+
 	if (pid == '5000') { /* SOCIAL MEDIA */
 		jQuery('#PrimaryNav li a#pn-compinfo').parent('li').addClass('selected');	
 		jQuery('#PrimaryNav li a#au_media_resources_link').parent('li').addClass('selected');	
 	}
 
 
-
+if ( pid == '2631' || pid == '22591' || pid == '22592' || pid == '22593' || pid == '11547' || pid == '22594' || pid == '22595' ) { /* ASPIRE */
+		jQuery('#PrimaryNav #about_us_secondary_nav li').removeClass('selected');
+		jQuery('#PrimaryNav li a#au_aspire_link').parent('li').addClass('selected');	
+	}
 	
 	
 	if ( jQuery('#main-menu-cs div.menuContent').length != '0' ) {

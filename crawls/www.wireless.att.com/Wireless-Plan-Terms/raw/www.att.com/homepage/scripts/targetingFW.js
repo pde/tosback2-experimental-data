@@ -9,12 +9,40 @@
 // homepage targeting framework
 //***************************************************
 
+/*
+Rich Media Hash
+Author: Zac Winstrom
+This function replaces the Hash function
+from prototype, removing the last remnants
+of the prototype library from this file
+*/
+function Rich_Media_Hash() {
+	var keyList = [];
+	var map = {};
+	
+	this.set = function (key, value) {
+		keyList.push(key);
+		map[key] = value;
+	}
+	
+	this.get = function (key) {
+		return map[key];
+	}
+	
+	this.each = function(action){
+		for (var i=0; i<keyList.length; i++) {
+			var pair = {key: keyList[i], value: map[keyList[i]]};
+			action(pair);
+		}
+	}
+}
+
 if(typeof console !== 'undefined') {var debug = false;}
 
 var currentGeoList = '';
 //global function to be called by flash adManager for geolocation
 var getPageLevelGeos = function() {
-	if(debug){console.log('getPageLevelGeos called, returned: '+currentGeoList);}
+	//if(debug){console.log('getPageLevelGeos called, returned: '+currentGeoList);}
 	if(typeof ABSplitVal != 'undefined') {
 		currentGeoList += ','+ABSplitVal;
 	}
@@ -23,13 +51,14 @@ var getPageLevelGeos = function() {
 function targetingFWLib() {
 
 	// global stuff
+	var isDomReady = false;
 	var marqueeBuffer;
 	var marqueeInjected = false;
 	slotCaller = new Array();
 	var contentDropletRequestURL = '/homepage/contentItemDroplet.jsp?q_name=';
 	var emergencySlotName = 'HRUF_emergency_response_slot1';
-	var userDataHash = new Hash();
-	var contentItems = new Hash();
+	var userDataHash = new Rich_Media_Hash();
+	var contentItems = new Rich_Media_Hash();
 	var geoTargetedSlots = new Array('marquee1', 'mainSlot1', 'mainSlot2', 'mainSlot3', 'menuTray0Slot5', 'menuTray1Slot5', 'menuTray2Slot5', 'menuTray3Slot5', 'menuTray4Slot5', 'menuTray5Slot5'); // add slot names here to enable geo flagging, marquee is first item
 	var stateBucket;
 	var region_13_state = new Array('AR','KS','MS','OK',"TX",'CA','NE','CO','IL','IN','MI','OH','WI');
@@ -41,11 +70,14 @@ function targetingFWLib() {
 	var validTargetCodes = new Array('3_13_UM','3_13_DM_UG','3_13_DM','3_13_M_UG','3_13_M','3_13_U','3_13_D_UG','3_13_D','2_13_UG','2_13_CI','2_13','3_9_UM','3_9_DM','3_9_DM_UG','3_9_M_UG','3_9_M','3_9_U','3_9_D_UG','3_9_D','2_9_UG','2_9_CI','2_9','3_OF_M','2_OF','1');
 	//var uverseLGDMACodes = new Array('4','13','16');
 	
+	// to force the default marquee to show for all states, set this to true
+	var forceDefaultMarquee = false;
+	
 	// to trigger emergency content item in slot1 for any DMA overriding all other parameters, add to this array.
-	var emergencyDMA = new Array('');
+	var emergencyDMA = new Array();
 	
 	// global to hold querystring params for overriding akamai headers during testing
-	var overrideArgs = '';
+	var overrideArgs = {};
 	
 	// vars to pivot targeting
 	var existingCustomerType = 1;
@@ -68,26 +100,26 @@ function targetingFWLib() {
 	}
 	
 	this.setPageLevelGeos = function() {
-		if(debug){console.log('in setGeos');}
+		//if(debug){console.log('in setGeos');}
 		if(userDataHash.get('DCSext.wt_aka_region_code')) {
 			currentGeoList += userDataHash.get('DCSext.wt_aka_region_code');
-			if(debug){console.log('state set to '+currentGeoList);}
+			//if(debug){console.log('state set to '+currentGeoList);}
 		}
 		if(currentGeoList != '' && userDataHash.get('DCSext.wt_aka_dma')) {
 			currentGeoList += ','+userDataHash.get('DCSext.wt_aka_dma');
-			if(debug){console.log('added DMA '+currentGeoList);}
+			//if(debug){console.log('added DMA '+currentGeoList);}
 		} else if(currentGeoList == '' && userDataHash.get('DCSext.wt_aka_dma')) {
 			currentGeoList += userDataHash.get('DCSext.wt_aka_dma');
-			if(debug){console.log('added DMA '+currentGeoList);}
+			//if(debug){console.log('added DMA '+currentGeoList);}
 		}
 		if(currentGeoList != '' && userDataHash.get('idFlow')) {
 			currentGeoList += ','+'IDCompleted';
-			if(debug){console.log('added ID '+currentGeoList);}
+			//if(debug){console.log('added ID '+currentGeoList);}
 		} else if(currentGeoList == '' && userDataHash.get('idFlow')) {
 			currentGeoList += 'IDCompleted';
-			if(debug){console.log('added ID '+currentGeoList);}
+			//if(debug){console.log('added ID '+currentGeoList);}
 		}
-		if(debug){console.log('PageLevelGeos set '+currentGeoList);}
+		//if(debug){console.log('PageLevelGeos set '+currentGeoList);}
 	}
 	
 	// convert texas to tx and vice-versa
@@ -97,11 +129,11 @@ function targetingFWLib() {
 		var foundRetVal = false;
 		var foundLocation;
 		if(name.length > 2) {
-			var foundLocation = region_13_state_fullName.indexOf(name);
+			var foundLocation = jQuery.inArray(name, region_13_state_fullName);
 			if(foundLocation == -1) {
-				foundLocation = region_9_state_fullName.indexOf(name);
+				foundLocation = jQuery.inArray(name, region_9_state_fullName);
 				if(foundLocation == -1) {
-					foundLocation = region_OF_fullName.indexOf(name);	
+					foundLocation = jQuery.inArray(name, region_OF_fullName);
 					if(foundLocation == -1) {
 						// not in a US state
 					}
@@ -123,8 +155,15 @@ function targetingFWLib() {
 	// method for overriding akamai headers during testing
 	this.checkOverrideArgs = function() {
 		var retval = false;
-		overrideArgs = window.location.href.parseQuery();
-		if(overrideArgs != '' && overrideArgs.testMode == 'testing') {
+		if(location.search.indexOf('testMode=testing') != -1) {
+			if (debug) {console.log('targetingFW: testing!');}
+			var params = window.location.search.substring(1).split('&');
+			for (i=0; i<params.length; i++) {
+				var temp = params[i].split('=');
+				if (temp[0] && temp[1])
+					overrideArgs[temp[0]] = temp[1]; 
+			}
+			if (debug) {console.log(overrideArgs);}
 			retval = true;
 			testing = true;
 		}
@@ -182,11 +221,11 @@ function targetingFWLib() {
 			if(userDataHash.get('idFlow')) {
 				trackingPageParam += '~ID';	
 			}
-			if(debug){console.info('in getUserScheme scheme= '+pUserScheme);}
+			//if(debug){console.info('in getUserScheme scheme= '+pUserScheme);}
 			userDataHash.set('mUserScheme' ,pUserScheme);
 			return pUserScheme;
 		} else {
-			if(debug){console.info('userScheme already computed, returning value from userDataHash');}
+			//if(debug){console.info('userScheme already computed, returning value from userDataHash');}
 			return userDataHash.get('mUserScheme');
 		}
 	}
@@ -200,7 +239,7 @@ function targetingFWLib() {
 		
 		//var uverseStatus = 'uverse_green';
 		
-		var isValidType = validTargetCodes.indexOf(userType);
+		var isValidType = jQuery.inArray(userType, validTargetCodes);
 		if(isValidType == -1) {
 			userType = '1';
 			trackingPageParam='1~~~~';
@@ -227,9 +266,9 @@ function targetingFWLib() {
 	
 	// determines if user is 9 or 13 state and stores that information
 	this.setStateBucket = function(stateToMatch) {
-		var foundLocation = region_13_state.indexOf(stateToMatch);
+		var foundLocation = jQuery.inArray(stateToMatch, region_13_state);
 		if(foundLocation == -1) {
-			foundLocation = region_9_state.indexOf(stateToMatch);
+			foundLocation = jQuery.inArray(stateToMatch, region_9_state);
 			if(foundLocation == -1) {
 				stateBucket = 'region_0';
 				region = 'OF';
@@ -286,7 +325,7 @@ function targetingFWLib() {
 		contentItems.each(function(pair) {
 			reqURI = contentDropletRequestURL + pair.value;	
 
-			if(geoTargetedSlots.indexOf(pair.key) != -1 && typeof userDataHash.get('DCSext.wt_aka_dma') != 'undefined') {
+			if(jQuery.inArray(pair.key, geoTargetedSlots) != -1 && typeof userDataHash.get('DCSext.wt_aka_dma') != 'undefined') {
 				reqURI = contentDropletRequestURL + pair.value + '&q_geography=' + userDataHash.get('DCSext.wt_aka_dma') + '&q_default=false';
 			} else {
 				reqURI = contentDropletRequestURL + pair.value + '&q_default=true';
@@ -295,42 +334,58 @@ function targetingFWLib() {
 			if(pair.key == 'marquee1') {
 				
 				// hack for CA content
-				found = caliMarqueeNames.indexOf(pair.value);
+				found = jQuery.inArray(pair.value, caliMarqueeNames);
 				if(isCali && found != -1) {
-					subst = pair.value.sub('_marquee', '_CA_marquee');
-					if(geoTargetedSlots.indexOf(pair.key) != -1 && typeof userDataHash.get('DCSext.wt_aka_dma') != 'undefined') {
+					subst = pair.value.replace('_marquee', '_CA_marquee');
+					if(jQuery.inArray(pair.key, geoTargetedSlots) != -1 && typeof userDataHash.get('DCSext.wt_aka_dma') != 'undefined') {
 						reqURI = contentDropletRequestURL + subst + '&q_geography=' + userDataHash.get('DCSext.wt_aka_dma') + '&q_default=false';
 					} else {
 						reqURI = contentDropletRequestURL + subst;
 					}
 				}
+				
+				// force the default marquee to show for all states
+				if (forceDefaultMarquee) {
+					reqURI = contentDropletRequestURL + 'HRUF_1_marquee1&q_default=true';
+				}
+				
 				jQuery.get(reqURI, function(data) {
 					marqueeBuffer = data.replace('<script type="text/javascript" src="/media/en_US/scripts/flash.js"></script>', '');
+					if (isDomReady) {
+						if (debug) {console.log('targetingFW: failsafe marquee injection');}
+						targetingFW.populateMarquee();
+					}
 				});
 			} 
 			else {
 				// hack for CA content
-				found = caliSlotNames.indexOf(pair.value);
+				found = jQuery.inArray(pair.value, caliSlotNames);
 				if(isCali && found != -1) {
-					if (pair.value.include('_Wireless_Slot')) {
-						subst = pair.value.sub('_Wireless_Slot', '_CA_Wireless_Slot');
-					} else if (pair.value.include('_DigitalTV_Slot')) {
-						subst = pair.value.sub('_DigitalTV_Slot', '_CA_DigitalTV_Slot');
-					} else if (pair.value.include('_Internet_Slot')) {
-						subst = pair.value.sub('_Internet_Slot', '_CA_Internet_Slot');
-					} else if (pair.value.include('_HomePhone_Slot')) {
-						subst = pair.value.sub('_HomePhone_Slot', '_CA_HomePhone_Slot');
-					} else if (pair.value.include('_Bundles_Slot')) {
-						subst = pair.value.sub('_Bundles_Slot', '_CA_Bundles_Slot');
-					} else if (pair.value.include('_ATTUverse_Slot')) {
-						subst = pair.value.sub('_ATTUverse_Slot', '_CA_ATTUverse_Slot');
+					if (pair.value.indexOf('_Wireless_Slot') != -1) {
+						subst = pair.value.replace('_Wireless_Slot', '_CA_Wireless_Slot');
+					} else if (pair.value.indexOf('_DigitalTV_Slot') != -1) {
+						subst = pair.value.replace('_DigitalTV_Slot', '_CA_DigitalTV_Slot');
+					} else if (pair.value.indexOf('_Internet_Slot') != -1) {
+						subst = pair.value.replace('_Internet_Slot', '_CA_Internet_Slot');
+					} else if (pair.value.indexOf('_HomePhone_Slot') != -1) {
+						subst = pair.value.replace('_HomePhone_Slot', '_CA_HomePhone_Slot');
+					} else if (pair.value.indexOf('_Bundles_Slot') != -1) {
+						subst = pair.value.replace('_Bundles_Slot', '_CA_Bundles_Slot');
+					} else if (pair.value.indexOf('_ATTUverse_Slot') != -1) {
+						subst = pair.value.replace('_ATTUverse_Slot', '_CA_ATTUverse_Slot');
 					} else {
-						subst = pair.value.sub('_slot', '_CA_slot');
+						subst = pair.value.replace('_slot', '_CA_slot');
 					}
 					reqURI = contentDropletRequestURL + subst;
 				}	
 				
-				if(emergencyDMA.length > 0 && typeof (emergencyDMA.indexOf('US') || userDataHash.get('DCSext.wt_aka_dma') != 'undefined') ) {
+				var hasUsDma = false;
+				for (var i=0; i<emergencyDMA.length; i++) {
+					if (emergencyDMA[i] === 'US')
+						hasUsDma = true;
+				}
+				
+				if(emergencyDMA.length > 0 && (hasUsDma || typeof userDataHash.get('DCSext.wt_aka_dma') != 'undefined') ) {
 					var hasEmergency = false;
 					emergencyDMA.each(function(item){
 						if(item == 'US' || item == userDataHash.get('DCSext.wt_aka_dma')){
@@ -398,8 +453,8 @@ function targetingFWLib() {
 							this.setStateBucket(convertedStateName);
 							userDataHash.set('DCSext.wt_aka_region_code', convertedStateName);
 							if(region == 'OF') {
-								if(accountType.include('D')) {
-									accountType = accountType.sub('D', '');
+								if(accountType.indexOf('D') != -1) {
+									accountType = accountType.replace('D', '');
 									if(accountType == '') {existingCustomerType = 2}
 								}
 								compISP = '';
@@ -408,7 +463,7 @@ function targetingFWLib() {
 					}
 					break; 
 				case 'attTargetUverse' :
-					if(!accountType.include('U') && pRegion != 'OF') {
+					if(accountType.indexOf('U') == -1 && pRegion != 'OF') {
 						userDataHash.set('uverseGreen', true);
 						uverseEligible = uverseEligible + 'UG';
 						if(compISP == 'CI') {compISP = ''}
@@ -418,7 +473,7 @@ function targetingFWLib() {
 					if(pRegion != 'OF') {
 						userDataHash.set('uverse', true);
 						cookieCtr++;
-						accountType = accountType.gsub('D', '') + 'U';
+						accountType = accountType.replace(/D/g, '') + 'U';
 						compISP = '';
 					}
 					break; 
@@ -443,7 +498,7 @@ function targetingFWLib() {
 	// call parser on a list of cookies and set values in hash
 	this.parseCookies = function() {
 		var cookieList = new Array('attPersistantLocalization', 'uvp_env', 'attTargetUverse', 'colam_ctn', 'IDcookie');
-		for(i = 0; i < cookieList.size(); i++) {
+		for(i = 0; i < cookieList.length; i++) {
 			this.parseCookie(cookieList[i]);
 		}
 	}
@@ -470,8 +525,8 @@ function targetingFWLib() {
 			}
 		}
 		else {
-			for(var i = 0; i < metaTagsInHead.size(); i++) {
-				if(metaTagsInHead[i].name.toString().include('aka_')) {	
+			for(var i = 0; i < metaTagsInHead.length; i++) {
+				if(metaTagsInHead[i].name.toString().indexOf('aka_') != -1) {	
 					userDataHash.set(metaTagsInHead[i].name, metaTagsInHead[i].content);
 					akaMetaCtr++;
 				}			
@@ -485,7 +540,7 @@ function targetingFWLib() {
 			if(typeof userDataHash.get('DCSext.wt_aka_network') != 'undefined') {
 				var pRegion = this.getRegion();
 				if(userDataHash.get('DCSext.wt_aka_network') == 'att' || userDataHash.get('DCSext.wt_aka_network') == 'sbc_internet' || userDataHash.get('DCSext.wt_aka_network') == 'prodigy') {
-					if(!accountType.include('U') && region != 'OF') {					
+					if(accountType.indexOf('U') == -1 && region != 'OF') {					
 						accountType = 'D' + accountType;
 						existingCustomerType = 3;
 					}
@@ -502,9 +557,9 @@ function targetingFWLib() {
 	
 	//tracking stuff
 	this.initTracking = function() {
-		for(var i = 0; i < metaTagsInHead.size(); i++) {
-			if(metaTagsInHead[i].name.toString().include('wtPN')) {	
-				metaTagsInHead[i].setAttribute("content", 'ATT Homepage|' + trackingPageParam);
+		for(var i = 0; i < metaTagsInHead.length; i++) {
+			if(metaTagsInHead[i].name.toString().indexOf('wtPN') != -1) {	
+				jQuery(metaTagsInHead[i]).attr('content', 'ATT Homepage|' + trackingPageParam);
 			}
 		}
 		
@@ -524,7 +579,7 @@ function targetingFWLib() {
 	// this sets up any linkfarm differences in the link farm for user types
 	/*
 	this.setupLinkFarm = function() {
-		if(this.getUserType().include('9') || this.getUserType().include('13')) {
+		if(this.getUserType().indexOf('9') != -1 || this.getUserType().indexOf('13') != -1) {
 			$('movingLink').show();
 		}
 	}
@@ -540,9 +595,10 @@ function targetingFWLib() {
 		this.getContentItems();
 		
 		jQuery(document).ready(function() {
-			if (!JSAM.preloaded) {
-				targetingFW.populateMarquee();
-			}
+			isDomReady = true;
+		
+			if (debug) {console.log('targetingFW: DOMready marquee injection');}
+			targetingFW.populateMarquee();
 			
 			targetingFW.populateSlots();
 			
@@ -553,9 +609,12 @@ function targetingFWLib() {
 	}
 	
 	this.populateMarquee = function() {
-		if (!marqueeInjected) {
+		if (debug) {console.log('targetingFW: typeof marqueeBuffer? ' + typeof marqueeBuffer);};
+		if (debug) {console.log('targetingFW: marquee already injected? ' + marqueeInjected);}
+		if (marqueeBuffer && !marqueeInjected) {
 			marqueeInjected = true;
 			jQuery('#' + geoTargetedSlots[0]).html(marqueeBuffer);
+			if (debug) {console.log('targetingFW: marquee injected!')};
 		}
 	}
 
@@ -575,5 +634,5 @@ function targetingFWLib() {
 }
 // Instantiation of the class
 var targetingFW = new targetingFWLib();
-if(debug){setTimeout('console.info(getPageLevelGeos())', 3000);}
+//if(debug){setTimeout('console.info(getPageLevelGeos())', 3000);}
 targetingFW.runTargeting();

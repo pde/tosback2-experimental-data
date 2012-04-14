@@ -25,7 +25,7 @@
 }
 
 function RemoteMethod(ScriptHandler, MethodName, Argument, SecureRequest) { 
-    this.RemoteURL = ScriptHandler + '.cajax';
+    this.RemoteURL = ScriptHandler + '.cajax?SCRedirect=true';
     if (SecureRequest) {
         var url = location.href;
         if (url.indexOf('https://') != 0) {

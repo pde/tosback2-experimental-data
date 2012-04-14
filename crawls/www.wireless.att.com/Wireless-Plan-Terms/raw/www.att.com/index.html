@@ -298,7 +298,6 @@
 <meta name="copyright" content="Copyright (c) 2011 - AT&amp;T Intellectual Property. All rights reserved. AT&amp;T, AT&amp;T logo and all other marks contained herein are trademarks of AT&amp;T Intellectual Property and/or AT&amp;T affiliated companies." />
 <meta name="author" content="AT&amp;T Intellectual Property" />
 <meta name="verify-v1" content="byKACSdFnpnvPyDbbtC1Ca4gjO9crDrmfX9T0LrkRaI=" />
-<meta name="y_key" content="1543af448e9750db" />
 <meta name="msvalidate.01" content="1A67BDDDDB844ABA85FD37D994D537C8" />
 
 <meta name="DCSext.sessionid" content="null" />
@@ -321,7 +320,7 @@
 <meta name="DCSext.wt_aka_continent" content="NA" />
 <meta name="DCSext.wt_aka_throughput" content="vhigh" />
 <meta name="DCSext.wt_aka_bw" content="5000" />
-<meta name="DCSext.wt_aka_asnum" content="32329" />
+<meta name="DCSext.wt_aka_asnum" content="26914" />
 <meta name="DCSext.wt_aka_location_id" content="0" />
 
 <!-- GTM CORE Display String -->
@@ -537,24 +536,26 @@
 	
 		
 	<script src="http://www.att.com/scripts/jquery.min.js" type="text/javascript" ></script>
-	<script src="http://www.att.com/scripts/reporting.js" type="text/javascript"></script>
-	<script src="scripts/skatools.js" type="text/javascript"></script>
-	<script src="http://www.att.com/scripts/gbl.js" type="text/javascript"></script>
-	<script src="global/scripts/prototype_162.js" type="text/javascript"></script><!-- PROTOTYPE -->
 	
 	
 		<script src="homepage/scripts/targetingFW.js" type="text/javascript"></script>
 	
+	<script src="http://www.att.com/scripts/reporting.js" type="text/javascript"></script>
+	<script src="scripts/skatools.js" type="text/javascript"></script>
+	<script src="http://www.att.com/scripts/gbl.js" type="text/javascript"></script>
+	<script src="global/scripts/prototype_162.js" type="text/javascript"></script><!-- PROTOTYPE -->
 	<script src="global/scripts/effects_182.js" type="text/javascript"></script>
 	<script src="http://www.att.com/global/scripts/popups.js" type="text/javascript"></script>
 	<script src="global/scripts/utils.js" type="text/javascript"></script>	
 	
 	
 	
+
+
 <script type="text/javascript" charset="utf-8">
 	function SessionVars() {
 		this.getCurrSessId = function() {
-			var pSessionId = 'null';
+			var pSessionId = '';
 			return pSessionId;
 		};
 
@@ -592,7 +593,7 @@
 		var forceFlashDebugMode = false;
 		var getTimeOffset = function() {
 			var offset = new Number();
-			var servertime = 1322778682315;
+			var servertime = 1334430751933;
 			var clientdateObj = new Date();
 			var clienttime = clientdateObj.getTime();
 			offset = clienttime - servertime;
@@ -652,9 +653,10 @@
 
 
 <meta NAME="DCSext.wtPN" 					CONTENT="" />
-<meta NAME="DCSext.sessionid" 				CONTENT="TP52TYQhkSCZTGRgz1dXfYyk!1704192946!1322778682279" />
+<meta NAME="DCSext.sessionid" 				CONTENT="0BQvPJMfQqJbndDZrRXGBpvG!-788357371!1334430751905" />
 <meta NAME="DCSext.wtSysRespCode" 			CONTENT="" />
 <meta NAME="DCSext.wtSysTransID" 			CONTENT="" />
+<meta NAME="DCSext.wtNoHit"					CONTENT="" />
 
 
 	
@@ -709,8 +711,6 @@ jQuery.when(reporting_ready).then(function (reporting) {
 
 <script type="text/javascript" src='homepage/Common/indc/homepage/scripts/homeServicesPopup.js'></script>
 
-
-
 <script language="javascript">
 	 var tracker = new AutoTiles();
 	 tracker.init();
@@ -722,7 +722,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 	var forceFlashDebugMode = false;
 	var getTimeOffset = function() {
 		var offset = new Number();
-		var servertime = 1322778682317;
+		var servertime = 1334430751935;
 		var clientdateObj = new Date();
 		var clienttime = clientdateObj.getTime();
 		offset = clienttime - servertime;
@@ -1381,11 +1381,11 @@ jQuery.when(reporting_ready).then(function (reporting) {
 																			
 																				
 																				
-																				<li><a href="olam/loginAction.olamexecute%3Ftarget=UpgradePH.html" name="Shop_Wireless_Upgrade Phone" >Upgrade Phone</a></li>
+																				<li><a href="olam/passthroughAction.myworld%3FactionType=UpgradePhone.html" name="Shop_Wireless_Upgrade Phone" >Upgrade Phone</a></li>
 																			
 																				
 																				
-																				<li><a href="olam/loginAction.olamexecute%3Ftarget=AAL.html" name="Shop_Wireless_Add a Line to My Account" >Add a Line to My Account</a></li>
+																				<li><a href="olam/passthroughAction.myworld%3FactionType=AddALine.html" name="Shop_Wireless_Add a Line to My Account" >Add a Line to My Account</a></li>
 																			
 																				
 																				
@@ -1393,7 +1393,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 																			
 																				
 																				
-																				<li><a href="olam/loginAction.olamexecute%3Ftarget=MF.html" name="Shop_Wireless_Manage Features" >Manage Features</a></li>
+																				<li><a href="olam/passthroughAction.myworld%3FactionType=ManageFeatures.html" name="Shop_Wireless_Manage Features" >Manage Features</a></li>
 																			
 																				
 																				
@@ -1450,10 +1450,6 @@ jQuery.when(reporting_ready).then(function (reporting) {
 																				
 																				
 																				<li><a href="u-verse/shop/customize.jsp.html#vucbbb" name="Shop_Bundles_Build My Own U-verse Bundle" >Build My Own U-verse Bundle</a></li>
-																			
-																				
-																				
-																				<li><a href="u-verse/shop/index.jsp%3FshopFilterId=700001.html#fbid=" name="Shop_Bundles_Latino Programming Bundles" >Latino Programming Bundles</a></li>
 																			
 																		</ul>
 																	</div>
@@ -1522,7 +1518,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 															
 															
 														
-														<div class="trayContentItem trayThreeCol">
+														<div class="trayContentItem trayFourCol">
 															<div class="firstColumn">
 																<div class="columnContent">
 																	<img src='media/att/2011/global/nav/img-television_AA000R49.png' alt='Digital TV' />
@@ -1564,6 +1560,28 @@ jQuery.when(reporting_ready).then(function (reporting) {
 																<div class="secondColumn ">
 																	<div class="columnContent">
 																		
+																			<h3>Equipment</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="remotes.html" name="Shop_Digital TV_U-verse Remotes" >U-verse Remotes</a></li>
+																			
+																				
+																				
+																				<li><a href="u-verse/explore/wireless-receiver.jsp.html" name="Shop_Digital TV_U-verse Wireless Receiver" >U-verse Wireless Receiver</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
 																			<h3>Existing Customers</h3>
 																			
 																		
@@ -1575,19 +1593,19 @@ jQuery.when(reporting_ready).then(function (reporting) {
 																			
 																				
 																				
-																				<li><a href="olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Manage My Equipment" >Manage My Equipment</a></li>
+																				<li><a href="olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Add Receivers" >Add Receivers</a></li>
 																			
 																				
 																				
-																				<li><a href="../uversetv.att.yahoo.com/index.html" name="Shop_Digital TV_Manage My DVR" >Manage My DVR</a></li>
+																				<li><a href="../uversetv.att.yahoo.com/index.html" name="Shop_Digital TV_Access My DVR" >Access My DVR</a></li>
 																			
 																				
 																				
-																				<li><a href="olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Manage HD" >Manage HD</a></li>
+																				<li><a href="olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Upgrade to HD" >Upgrade to HD</a></li>
 																			
 																				
 																				
-																				<li><a href="olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Manage Channels" >Manage Channels</a></li>
+																				<li><a href="olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Add or Remove Channels" >Add or Remove Channels</a></li>
 																			
 																		</ul>
 																	</div>
@@ -1882,6 +1900,12 @@ jQuery.when(reporting_ready).then(function (reporting) {
 								
 									
 									
+										
+									
+								
+								
+									
+									
 										<form method="get" id="searchForm" name="searchForm" action="http://www.att.com/global-search/search.jsp" >
 											<fieldset>
 												
@@ -2007,187 +2031,76 @@ jQuery.when(reporting_ready).then(function (reporting) {
 
 
 
-<div id="1~002VEV!CIHPA01V2OF" style="display:none;">1~002VEV!CIHPA01V2OF</div>
+
+
+<div id="1~002VEV!CIHPA01V2OF" style="display:none">1~002VEV!CIHPA01V2OF</div>
 <meta NAME="DCSext.wtSlotContent" CONTENT="1~002VEV!CIHPA01V2OF">
+
 
 
 
 <div id="loginSection" class="box">
 	<meta NAME="DCSext.wtSlotContent" CONTENT="1~002SVU!CIHPA01V2OF">
+	<h3>Access Your Account</h3><img class="lockIcon" src="media/att/2011/global/ico/img_lock.gif" alt="" />
+	<div class="loginRibbon"><strong>NEW!</strong> No need to select an account type. Just enter your User ID and password to access your AT&amp;T account.</div>
 	
-	<h3>Access Your Account </h3><img class="lockIcon"  src="media/att/2011/global/ico/img_lock.gif" alt="" />
-	
+	<div class="clear"></div>
 	<div class="accContent">
-		<div class="accPromo" style="">
-			<style type="text/css">
-				.styled_forms span.textInput-wrapper.error {background:url(http://www.att.com/images/global/forms/input-right-err.gif) no-repeat scroll 100% 1px transparent ;}
-				.styled_forms span.textInput-wrapper span.error {background:url(http://www.att.com/images/global/forms/input-left-err.gif) no-repeat scroll 0 1px transparent}
-				.formErrorMessage {margin:0}
-			</style>
-							
-			<!-- Logins -->
-			<form action="index.html#" id="login-select-form" name="login-select-form" class="styled_forms" style="text-align: left;">
-				<p>Choose account:</p>
-				<select name="select" id="login-select" onchange="loginSwitch('nonce')" title="Choose account">
-				  <option value="wireless" selected="selected">Wireless</option>
-				  <option value="account">Home Phone &amp; Internet</option>
-				  <option value="uverse">AT&amp;T U-verse</option>
-				</select>
-			</form>
-			
-			<!-- Wireless -->
+		<div class="accPromo">
+			<!-- begin login form -->
 			<div id="divWireless">
-				
-				<form action="index.html#" id="Wireless" name="Wireless" method="post" class="styled_forms" onSubmit="return doWirelessSubmit()">
-				<!-- Username -->
-					<div class="formErrorMessage" style="display: none;">
-						<p class="redtxt">Please enter a valid phone number including area code.</p>
-					</div>
-					
-					<fieldset class="fieldset-dimensions one-box" style="text-align: left; position: relative;">
-						
-						<input type="text" name="wireless_num" value="" id="numWireless" class="one-box" style="border: none; width: 170px;" maxlength="50" onblur="this.value=cleanString(this.value);" title="Wireless Number" />
-						<div class="userInputNote">Wireless Number</div>
+				<form action="index.html#" id="Wireless" name="Wireless" method="post" class="styled_forms" autocomplete="off">
+					<!-- User ID -->
+					<fieldset id="fsID" class="fieldset-dimensions one-box">
+						<div id="unError" class="formErrorMessage"><p class="redtxt">Please enter a valid User ID.</p></div>
+						<input type="text" name="wireless_num" value="User ID" id="numWireless" class="one-box" maxlength="50" title="User ID" />
 						<input name="actionEvent" value="dotComLogin" type="hidden">
-						<input name="loginType" value="WIRELESS" type="hidden">
 					</fieldset>
 					
 					<!-- Password -->
-					<div class="formErrorMessage" style="display: none;">
-						<p class="redtxt">Please enter your password.</p>
-					</div>
-					
-					<fieldset class="fieldset-dimensions one-box" style="text-align: left; position: relative">
-						<input type="password" name="pass" value="" id="passWireless" maxlength="60" style="border: none; width: 170px;" title="Password" />
-						<div class="passInputNote" >Password</div>
+					<fieldset id="fsPWD" class="fieldset-dimensions one-box">
+						<div id="passError" class="formErrorMessage"><p class="redtxt">Please enter your password.</p></div>
+						<div id="passInputWrapper" style="display:none;"><input type="password" name="pass" id="passWireless" maxlength="60" title="Password" /></div>
+						<div id="passInputNoteWrapper" style="display:block;"><input type="text" name="passInputNote" value="Password" id="passInputNote" maxlength="60" title="Password" /></div>
 						<p class="capsLock">CAPS Lock on</p>
 					</fieldset>
 
 					<!-- Remember me / Log in -->		
 					<table width="100%">
 						<tr height="20">
-							
-							<td width="15px"><input type="checkbox" name="rememberme" value="yes" id="remWireless" align="left" style="text-align:left;" /></td>
-							<td><label for="remWireless">Remember me</label></td>
-							<td align="right"><input tabindex=4 type="image" src="media/att/2011/global/btn/btn-en-login-blu29.gif" border="0" value="Go" alt="Log in" class="btnGo" style="border: 0px;" onClick="doWirelessSubmit();"/></td>
+							<td width="15px"><input type="checkbox" name="rememberme" value="yes" id="rem" /></td>
+							<td><label for="rem">Remember me</label></td>
+							<td align="right"><input type="image" src="media/att/2011/global/btn/btn-en-login-blu29.gif" value="Go" alt="Log in" class="btnGo" onclick="expireCookies()"/></td>
 						</tr>
 					</table>
-					
+
 					<!-- Forgot your password -->
 					<fieldset class="loginLinks">
-						<a href="https://www.att.com/olam/forgotPasswordAction.olamexecute?forgotPasswordActionEvent=forgotPasswordStep1" onClick="dcsMultiTrack('DCS.dcsuri','/olam/','DCS.dcssip','www.wireless.att.com','DCS.dcsref',window.location.href,'DCSext.wtLinkName','Forgot myWireless password','DCSext.wtLinkLoc','Link Farm','DCSext.wtNoHit','1','WT.svl','','DCSext.pid','');">Forgot your password?</a><br /><br />
-						<a href="https://www.att.com/olam/registrationAction.olamexecute">Register</a>
+						<a href="https://www.att.com/olam/enterEmailForgotId.myworld" onclick="expireCookies()">Forgot your User ID?</a><br /><br />
+						<a href="https://www.att.com/olam/forgotPasswordAction.olamexecute?forgotPasswordActionEvent=forgotPasswordStep1" onclick="expireCookies()">Forgot your password?</a><br /><br />
+						<a href="https://www.att.com/olam/registrationAction.olamexecute" onclick="expireCookies()">Register</a><br /><br />                 
 					</fieldset>
 				</form>
-			</div>
-			<!-- end Wireless -->
-
-			<!-- Home Phone and Internet -->
-			<div id="divAccountmanager">
-				
-				<form action="index.html#" name="Telco" id="Telco" method="post" class="styled_forms" onSubmit="return doPhoneInternetSubmit();">
-				<!-- Username -->
-					<div class="formErrorMessage" style="display: none;">
-						<p class="redtxt">Please enter your username.</p>
-					</div>
-					
-					<fieldset class="fieldset-dimensions one-box" style="text-align: left; position: relative;">
-						<input type="text" name="wireless_num" value="" id="userAccountmanager" maxlength="60" style="border: none; width: 170px;" title="Username" />
-						<div class="userInputNote" >Username</div>
-						<input name="actionEvent" value="dotComLogin" type="hidden">
-						<input name="loginType" value="TELCO" type="hidden">
-					</fieldset>
-
-					<!-- Password -->
-					<div class="formErrorMessage" style="display: none;">
-						<p class="redtxt">Please enter your password.</p>
-					</div>
-					
-					<fieldset class="fieldset-dimensions one-box" style="text-align: left; position: relative;">
-						<input type="password" name="pass" value="" id="passAccountmanager" maxlength="60" style="border: none; width: 170px;" title="Password" />
-						<div class="passInputNote" >Password</div>
-						<p class="capsLock">CAPS Lock on</p>
-					</fieldset>
-
-					<!-- Remember me / Log in -->	
-					<table width="100%">
-						<tr height="20">
-							
-							<td width="15px"><input type="checkbox" name="rememberme" value="yes" id="remAccountmanager" align="left" style="text-align:left;" /></td>
-							<td><label for="remAccountmanager">Remember me</label></td>
-							<td align="right"><input tabindex=4 type="image" src="media/att/2011/global/btn/btn-en-login-blu29.gif" border="0" value="Go" alt="Log in" class="btnGo" style="border: 0px;" onClick="doPhoneInternetSubmit();"/></td>
-							</tr>
-						</table>
-
-						<!-- Forgot your password -->		
-						<fieldset class="loginLinks">
-							<a href="https://www.att.com/olam/enterEmailForgotId.myworld">Forgot your username?</a><br /><br />
-							<a href="https://www.att.com/olam/forgotPasswordAction.olamexecute?forgotPasswordActionEvent=forgotPasswordStep1">Forgot your password?</a><br /><br />
-							<a href="https://www.att.com/olam/registrationAction.olamexecute">Register</a>
-						</fieldset>
-					</form>	
-				</div>
-				<!-- end Home Phone and Internet-->	
-
-				<!-- U-Verse -->
-				<div id="divUverse">
-					
-					<form action="index.html#" id="Uverse" name="Uverse" method="post" class="styled_forms" onSubmit="return doUverseSubmit();">
-					<!-- Username -->
-						<div class="formErrorMessage" style="display: none;">
-							<p class="redtxt">Please enter your U-verse Member ID.</p>
+				<div id="bubble">
+					<div id="bubbleTop">
+						<div id="bubbleBtm">
+							<p>To access your AT&amp;T account enter one of the following:</p>
+							<img src="media/att/2012/homepage/bubble_separator.png" alt="" />
+							<ul>
+								<li><strong>Wireless Number</strong><br />ex: 123-456-7890 or 1234567890</li>
+								<li><strong>U-verse or att.net Member ID</strong><br />ex: jks@att.net</li>
+								<li><strong>Home Phone &amp; Internet Username</strong><br />ex: jksample</li>
+								<li><strong>AT&amp;T Access ID</strong></li>
+							</ul>
 						</div>
-				
-						<fieldset class="fieldset-dimensions one-boxUV" style="text-align: left; position: relative;">
-							<input type="text" name="wireless_num" value="" id="accUverse" style="border: none; width: 170px;" title="U-verse Member ID" />
-							<div class="userInputNote" >U-verse Member ID</div>
-							<input type="hidden" name="loginType" value="UVERSE" />
-							<input name="actionEvent" value="dotComLogin" type="hidden">
-						</fieldset>
-
-						<!-- Password -->
-						<div class="formErrorMessage" style="display: none;">
-							<p class="redtxt">Please enter your password.</p>
-						</div>
-				
-						<fieldset class="fieldset-dimensions one-boxUV" style="text-align: left; position: relative;">
-							<input type="password" name="pass" value="" id="passUverse" style="border: none; width: 170px;" title="Password" />
-							<div class="passInputNote">Password</div>
-							<p class="capsLock">CAPS Lock on</p>
-						</fieldset>
-
-						<!-- Remember me / Log in -->
-						<table width="100%">
-							<tr height="20">
-								
-								<td width="15px"><input type="checkbox" name="rememberme" value="yes" id="remUverse" align="left" style="text-align:left;" /></td>
-								<td><label for="remUverse">Remember me</label></td>
-								<td align="right"><input tabindex=4 type="image" src="media/att/2011/global/btn/btn-en-login-blu29.gif" border="0" value="Go" alt="Log in" class="btnGo" style="border: 0px;" onClick="doUverseSubmit();"/></td>
-							</tr>
-						</table>
-
-						<!-- Forgot your password -->			
-						<fieldset class="loginLinks">
-							<a href="https://www.att.com/olam/enterEmailForgotId.myworld">Forgot your U-verse Member ID?</a><br /><br />
-							<a href="https://www.att.com/olam/forgotPasswordAction.olamexecute?forgotPasswordActionEvent=forgotPasswordStep1">Forgot your password?</a><br /><br />
-							<a href="https://www.att.com/olam/registrationAction.olamexecute">Register</a>
-						</fieldset> 
-					</form>	
+					</div>
 				</div>
-				<!-- end U-Verse -->		
-
-			<!-- end Logins -->		
 			</div>
-
-								
+			<!-- end login form -->			
 		</div>
 	</div>
-
+</div>			
 	<meta name="DCSext.wtVC" content="CIHPA01V2OF" /> 		
-	<script type="text/javascript">
-    	loginOnload();
-		var formActionHrefPrefix = "https://www.att.com";
-	</script>
 
 
 
@@ -2342,7 +2255,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		
 		
 
-<meta NAME="DCSext.wtSlotContent" CONTENT="1~005R9W"/>
+<meta NAME="DCSext.wtSlotContent" CONTENT="1~007BON"/>
 
 		
 <div class="tile linkTile">
@@ -2350,13 +2263,13 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		<h2>Your Plan</h2>
 		<p></p>
 		<ul> 
-			<li><a href="https://www.att.com/olam/loginAction.olamexecute?wtSlotClick=1-005R9W-0-1&target=AAL" onclick="">Add a Line</a></li>
-			<li><a href="https://www.att.com/olam/loginAction.olamexecute?wtSlotClick=1-005R9W-0-2&target=UpgradePH" onclick="">Upgrade</a></li>
-			<li><a href="https://www.wireless.att.com/olam/loginAction.olamexecute?wtSlotClick=1-005R9W-0-3&target=CRP" onclick="">Change Your Rate Plan</a></li>
-			<li><a href="https://www.att.com/olam/loginAction.olamexecute?wtSlotClick=1-005R9W-0-4&target=MF&dreferrer=&dsource=Features_Support_CHP_ACC" onclick="">Add Data and Messaging</a></li>
+			<li><a href="https://www.att.com/olam/passthroughAction.myworld?wtSlotClick=1-007BON-0-1&actionType=AddALine&target=AAL" onclick="">Add a Line</a></li>
+			<li><a href=" https://www.att.com/olam/passthroughAction.myworld?wtSlotClick=1-007BON-0-2&actionType=UpgradePhone" onclick="">Upgrade</a></li>
+			<li><a href="https://www.wireless.att.com/olam/loginAction.olamexecute?wtSlotClick=1-007BON-0-3&target=CRP" onclick="">Change Your Rate Plan</a></li>
+			<li><a href="https://www.att.com/olam/loginAction.olamexecute?wtSlotClick=1-007BON-0-4&target=MF&dreferrer=&dsource=Features_Support_CHP_ACC" onclick="">Add Data and Messaging</a></li>
 		</ul>
 	</div>
-	<a href="https://www.att.com/olam/loginAction.olamexecute?wtSlotClick=1-005R9W-0-5" onclick=""  class="bottomAlign">Manage Your Account<img src="media/att/2011/global/btn/img_blue_arrow_9x13_AA000OM4.gif" /></a>
+	<a href="https://www.att.com/olam/loginAction.olamexecute?wtSlotClick=1-007BON-0-5" onclick=""  class="bottomAlign">Manage Your Account<img src="media/att/2011/global/btn/img_blue_arrow_9x13_AA000OM4.gif" alt=""/></a>
 </div>
 	
 
@@ -2651,7 +2564,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		
 		
 
-<meta NAME="DCSext.wtSlotContent" CONTENT="1~005RA9"/>
+<meta NAME="DCSext.wtSlotContent" CONTENT="1~007DXF"/>
 
 		
 <div class="tile linkTile">
@@ -2659,13 +2572,12 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		<h2>Digital TV Essentials</h2>
 		<p></p>
 		<ul> 
-			<li><a href="http://www.att.com/shop/tv/index.jsp?wtSlotClick=1-005RA9-0-1" onclick="">Why U-verse TV?</a></li>
-			<li><a href="http://www.att.com/shop/tv/index.jsp?wtSlotClick=1-005RA9-0-2" onclick="">Advanced Technology</a></li>
-			<li><a href="index.html#?wtSlotClick=1-005RA9-0-3" onclick="javascript:showPopupByFullUrl('/global/cms/u-verse/en_US/popups/channel-lineup.jsp', '', 770, 750)">Channels</a></li>
-			<li><a href="index.html#?wtSlotClick=1-005RA9-0-4" onclick="javascript:showPopupByUrl('/global/cms/u-verse/en_US/popups/programming-packages.html', 'Programming Packages', true, 692)">Premium Channels</a></li>
+			<li><a href="http://www.att.com/shop/tv/index.jsp?wtSlotClick=1-007DXF-0-1" onclick="">Why U-verse TV?</a></li>
+			<li><a href="http://www.att.com/shop/tv/index.jsp?wtSlotClick=1-007DXF-0-2" onclick="">Advanced Technology</a></li>
+			<li><a href="http://www.att.com/channellineup/u-verse/channel-lineup.jsp?wtSlotClick=1-007DXF-0-3" onclick="">Channels</a></li>
 		</ul>
 	</div>
-	<a href="http://www.att.com/shop/tv/index.jsp?wtSlotClick=1-005RA9-0-5" onclick=""  class="bottomAlign">View more essentials<img src="media/att/2011/global/btn/img_blue_arrow_9x13_AA000OM4.gif" /></a>
+	<a href="http://www.att.com/shop/tv/index.jsp?wtSlotClick=1-007DXF-0-4" onclick=""  class="bottomAlign">View more essentials<img src="media/att/2011/global/btn/img_blue_arrow_9x13_AA000OM4.gif" alt=""/></a>
 </div>
 	
 
@@ -4402,7 +4314,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		
 		
 
-<meta NAME="DCSext.wtSlotContent" CONTENT="1~005OU1"/>
+<meta NAME="DCSext.wtSlotContent" CONTENT="1~007E5P"/>
 
 		
 	
@@ -4425,7 +4337,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 <div style="background: url('media/att/2011/tiles/w247h236/clo-TryRiskFreeUverse_AA000RIZ.png') top right no-repeat;" class="tile h238 trayPromo">
 	<div class="bottomBlock">
 		<p class="price orange"  style="line-height:20px;"><span class="detail">30-day money-<br />back guarantee</span><br /></p> 
-		<a href="http://www.att.com/u-verse/shop/index.jsp?wtSlotClick=1-005OU1-0-1" onclick=""><img src='media/att/2011/global/btn/btn-en-LearnMore-blu24_AA000RG1.gif' height="24" alt ="Learn more" ></a>
+		<a href="http://www.att.com/u-verse/shop/index.jsp?wtSlotClick=1-007E5P-0-1" onclick=""><img src='media/att/2011/global/btn/btn-en-LearnMore-blu24_AA000RG1.gif' height="24" alt="Learn more" ></a>
 	</div>
 </div>
 			
@@ -4507,7 +4419,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		
 		
 
-<meta NAME="DCSext.wtSlotContent" CONTENT="1~0068N7"/>
+<meta NAME="DCSext.wtSlotContent" CONTENT="1~007E7B"/>
 
 		
 	
@@ -4528,20 +4440,20 @@ jQuery.when(reporting_ready).then(function (reporting) {
 <div class="serviceItemsTile">
 		<div class="serviceItemArea">
 			<div class="serviceItemContainer">
-				<div class="serviceItem"><a href="http://www.att.com/shop/wireless/index.jsp?wtSlotClick=1-0068N7-0-1" onclick=""><img src="media/att/2011/homepage/lob_wireless_off_AA000ROK.gif" alt="Wireless" /><img src="media/att/2011/homepage/lob_wireless_AA000PEC.gif" alt="Wireless" style="display:none;"/><br/><span class="productLabel">Wireless</span></a></div>
-				<div class="serviceItem"><a href="http://www.att.com/shop/tv/index.jsp?wtSlotClick=1-0068N7-0-2" onclick=""><img src="media/att/2011/homepage/lob_tv_off_AA000ROJ.gif" alt="Digital TV" /><img src="media/att/2011/homepage/lob_tv_AA000PEB.gif" alt="Digital TV" style="display:none;"/><br/><span class="productLabel">Digital TV</span></a></div>
-				<div class="serviceItem"><a href="http://www.att.com/shop/internet/index.jsp?wtSlotClick=1-0068N7-0-3" onclick=""><img src="media/att/2011/homepage/lob_internet_off_AA000ROI.gif" alt="Internet" /><img src="media/att/2011/homepage/lob_internet_AA000PEA.gif" alt="Internet" style="display:none;"/><br/><span class="productLabel">Internet</span></a></div>
-				<div class="serviceItem"><a href="http://www.att.com/shop/home-phone/index.jsp?wtSlotClick=1-0068N7-0-4" onclick=""><img src="media/att/2011/homepage/lob_home-phone_off_AA000ROH.gif" alt="Home Phone" /><img src="media/att/2011/homepage/lob_home-phone_AA000PE9.gif" alt="Home Phone" style="display:none;"/><br/><span class="productLabel">Home Phone</span></a></div>
-				<div class="serviceItem"><a href="http://www.att.com/shop/bundles/index.jsp?wtSlotClick=1-0068N7-0-5" onclick=""><img src="media/att/2011/homepage/lob_bundles_off_AA000ROF.gif" alt="Bundles" /><img src="media/att/2011/homepage/lob_bundles_AA000PE7.gif" alt="Bundles" style="display:none;"/><br/><span class="productLabel">Bundles</span></a></div>
-				<div class="serviceItem"><a href="http://www.att.com/shop/u-verse/index.jsp?wtSlotClick=1-0068N7-0-6" onclick=""><img src="media/att/2011/homepage/lob_dvr_off_AA000ROG.gif" alt="AT&amp;T U-verse&reg;" /><img src="media/att/2011/homepage/lob_dvr_AA000PE8.gif" alt="AT&amp;T U-verse&reg;" style="display:none;"/><br/><span class="productLabel">AT&amp;T U-verse&reg;</span></a></div>
+				<div class="serviceItem"><a href="http://www.att.com/shop/wireless/index.jsp?wtSlotClick=1-007E7B-0-1" onclick=""><img src="media/att/2011/homepage/lob_wireless_off_AA000ROK.gif" alt="Wireless" /><img src="media/att/2011/homepage/lob_wireless_AA000PEC.gif" alt="Wireless" style="display:none;"/><br/><span class="productLabel">Wireless</span></a></div>
+				<div class="serviceItem"><a href="http://www.att.com/shop/tv/index.jsp?wtSlotClick=1-007E7B-0-2" onclick=""><img src="media/att/2011/homepage/lob_tv_off_AA000ROJ.gif" alt="Digital TV" /><img src="media/att/2011/homepage/lob_tv_AA000PEB.gif" alt="Digital TV" style="display:none;"/><br/><span class="productLabel">Digital TV</span></a></div>
+				<div class="serviceItem"><a href="http://www.att.com/shop/internet/index.jsp?wtSlotClick=1-007E7B-0-3" onclick=""><img src="media/att/2011/homepage/lob_internet_off_AA000ROI.gif" alt="Internet" /><img src="media/att/2011/homepage/lob_internet_AA000PEA.gif" alt="Internet" style="display:none;"/><br/><span class="productLabel">Internet</span></a></div>
+				<div class="serviceItem"><a href="http://www.att.com/shop/home-phone/index.jsp?wtSlotClick=1-007E7B-0-4" onclick=""><img src="media/att/2011/homepage/lob_home-phone_off_AA000ROH.gif" alt="Home Phone" /><img src="media/att/2011/homepage/lob_home-phone_AA000PE9.gif" alt="Home Phone" style="display:none;"/><br/><span class="productLabel">Home Phone</span></a></div>
+				<div class="serviceItem"><a href="http://www.att.com/shop/bundles/index.jsp?wtSlotClick=1-007E7B-0-5" onclick=""><img src="media/att/2011/homepage/lob_bundles_off_AA000ROF.gif" alt="Bundles" /><img src="media/att/2011/homepage/lob_bundles_AA000PE7.gif" alt="Bundles" style="display:none;"/><br/><span class="productLabel">Bundles</span></a></div>
+				<div class="serviceItem"><a href="http://www.att.com/shop/u-verse/index.jsp?wtSlotClick=1-007E7B-0-6" onclick=""><img src="media/att/2011/homepage/lob_dvr_AA000PE8.gif" alt="AT&amp;T U-verse&reg;" /><img src="media/att/2011/homepage/lob_dvr_AA000PE8.gif" alt="AT&amp;T U-verse&reg;" style="display:none;"/><br/><span class="productLabel">AT&amp;T U-verse&reg;</span></a></div>
 			</div>
 		</div>
 	<img class="vertSep" src="media/att/2011/shop/common/bkd_div_vertical_197_AA000PN6.gif" alt=""/>
 	<div class="rightSide"><h4>My Account</h4>
 		<ul>
-				<li><a href="https://www.att.com/olam/passthroughAction.myworld?wtSlotClick=1-0068N7-0-7&actionType=ViewBillDetails&gnLinkId=t1002" onclick="">Log in to view/pay bill</a></li>
-				<li><a href="https://www.att.com/eos/unauth/eosLogin?wtSlotClick=1-0068N7-0-8" onclick="">Check an order status</a></li>
-				<li><a href="https://www.att.com/olam/passthroughAction.myworld?wtSlotClick=1-0068N7-0-9&actionType=WirelessProductLandingPage" onclick="">Check Wireless usage</a></li>
+				<li><a href="https://www.att.com/olam/passthroughAction.myworld?wtSlotClick=1-007E7B-0-7&actionType=ViewBillDetails&gnLinkId=t1002" onclick="">Log in to view/pay bill</a></li>
+				<li><a href="https://www.att.com/eos/unauth/eosLogin?wtSlotClick=1-007E7B-0-8" onclick="">Check an order status</a></li>
+				<li><a href="https://www.att.com/olam/passthroughAction.myworld?wtSlotClick=1-007E7B-0-9&actionType=WirelessProductLandingPage" onclick="">Check Wireless usage</a></li>
 		</ul>
 	</div>
 	<div class="clear"></div>
@@ -4621,7 +4533,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		
 		
 
-<meta NAME="DCSext.wtSlotContent" CONTENT="1~006VAM"/>
+<meta NAME="DCSext.wtSlotContent" CONTENT="1~0070AE"/>
 
 		
 	
@@ -4646,17 +4558,15 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		
 				
 <div class="featuredItemTile">
-<img src='media/att/2011/tiles/w324h170/clo-season-gifting-324x170_AA001CLA.png' alt="SEASON OF GIFTING SWEEPSTAKES"/>
+<img src='media/att/2011/tiles/w324h170/clo-ATT-Impulse-4G-324x170_AA001B4H.png' alt="AT&T IMPULSE 4G*"/>
 	<div class="textSection">
-		<h4>SEASON OF GIFTING SWEEPSTAKES<span class="headingNote"></span></h4>
-		<p><b>We&#039;re giving away over<br />
-$10,000 in prizes!</b></p>
+		<h4>AT&T IMPULSE 4G*<span class="headingNote"></span></h4>
+		<p>At $29.99, there's no excuse not to get your own.<br />Free shipping included.</p>
 	</div>
 	<div class="cta">
-		<a href="http://gifts.att.com?wtSlotClick=1-006VAM-0-2&source=ECSAabFAC00SOG00S&wtExtndSource=SOGhome&mtag=SOGhome" onclick="" ><img src='media/att/2011/global/btn/btn_en_learnmore_blu29_AA000Q9X.gif' alt="Learn More" ></a>
+		<a href="http://www.wireless.att.com/cell-phone-service/cell-phone-details/?wtSlotClick=1-0070AE-0-2&q_sku=sku5370241" onclick="" ><img src='media/att/2011/global/btn/btn-en-shopnow-blu29_AA000RD8.gif' alt="Shop Now" ></a>
 		<div class="legal">
-No purchase necessary.  Ends Dec. 20, 2011.<br />
-Subject to <a href="http://gifts.att.com/rules?source=ECSAabFAC00SOG00S&wtExtndSource=Hrules&mtag=Hrules" target="_blank">official rules</a>.
+2-yr. term & min. $15/mo. data req'd.<br />Restrictions apply.
 	</div>
 	</div>
 </div>
@@ -4796,7 +4706,7 @@ and High Speed Internet.</p>
 		
 		
 
-<meta NAME="DCSext.wtSlotContent" CONTENT="1~005QBS"/>
+<meta NAME="DCSext.wtSlotContent" CONTENT="1~007E2I"/>
 
 		
 	
@@ -4821,14 +4731,19 @@ and High Speed Internet.</p>
 		
 				
 <div class="featuredItemTile">
-<img src='media/att/2011/tiles/w324h170/clo-BuildBundle_AA000RLY.png' alt ="BUNDLES"/>
+<img src='media/att/2012/tiles/w324h170/clo-DTV-baseball-324x170_AA001HE5.png' alt="DIGITAL TV"/>
 	<div class="textSection">
-		<h4>BUNDLES<span class="headingNote"></span></h4>
-		<p>Huge savings when bundling<br />
-Phone, Internet, Wireless &amp; TV</p>
+		<h4>DIGITAL TV<span class="headingNote"></span></h4>
+		<p>DIRECTV&reg; service from AT&amp;T.<br />
+Access to over 285 channels plus<br />
+HD DVR with PREMIER&trade;.</p>
 	</div>
 	<div class="cta">
-		<a href="http://localization.att.com/loc/controller?wtSlotClick=1-005QBS-0-2&prod-snip=TVLPRed_L13_or_L9" onclick="" ><img src='media/att/2011/global/btn/btn-en-CreateaBundle-blu29_AA000RK3.gif' alt ="Create a Bundle" ></a>
+		<a href="http://localization.att.com/loc/controller?wtSlotClick=1-007E2I-0-2&cdvn=landinglocalization&pid=1080&ltype=res&prod-snip=res_directv" onclick=" ; javascript:window.open(this.href);return false;" ><img src='media/att/2011/global/btn/btn-en-learnmore-blu29_AA000Z6D.gif' alt="Learn More" ></a>
+		<div class="legal">
+<center>Offer ends July 18, 2012.<br />
+New customers only.</center>
+	</div>
 	</div>
 </div>
 
@@ -4887,7 +4802,7 @@ Phone, Internet, Wireless &amp; TV</p>
 </div>
 
 				<div class="clear"></div>
-				
+				<div style="font-size:12px; padding-left:22px;"><strong>Limited 4G LTE availability in select markets. Learn more at <a href="http://www.att.com/network">att.com/network</a></strong></div>
 				
 				
 
@@ -4932,17 +4847,19 @@ Phone, Internet, Wireless &amp; TV</p>
 		
 		
 
-<meta NAME="DCSext.wtSlotContent" CONTENT="1~006KVD"/>
+<meta NAME="DCSext.wtSlotContent" CONTENT="1~007DWY"/>
 <div class="linkFarmCol">
 <div class="linkFarmSection">
 		<h4>I WANT TO</h4>
 		<ul>
-			<li><a href="http://www.att.com/wireless/iphone?wtSlotClick=1-006KVD-0-1" onclick="" >Learn More about iPhone 4S</a></li>
-			<li><a href="https://www.att.com/olam/loginAction.olamexecute?wtSlotClick=1-006KVD-0-2" onclick="" >View or pay my bill</a></li>
-			<li><a href="http://www.att.com/u-verse/explore/default.jsp?wtSlotClick=1-006KVD-0-3" onclick="" >Experience U-verse</a></li>
-			<li><a href="http://www.att.com/shop/special-offers/index.jsp?wtSlotClick=1-006KVD-0-4" onclick="" >See Special Offers</a></li>
-			<li><a href="http://www.wireless.att.com/coverageviewer/?wtSlotClick=1-006KVD-0-5" onclick="" >View Wireless coverage map</a></li>
-			<li><a href="http://www.att.com/gen/general?wtSlotClick=1-006KVD-0-6&pid=18121" onclick="" >Move Service</a></li>
+			<li><a href="https://www.att.com/olam/loginAction.olamexecute?wtSlotClick=1-007DWY-0-1" onclick="" >View or pay my bill</a></li>
+			<li><a href="https://www.att.com/esupport/online-services.jsp?wtSlotClick=1-007DWY-0-2&marq=papbill" onclick="" >Go Paperless</a></li>
+			<li><a href="http://www.att.com/shop/special-offers/index.jsp?wtSlotClick=1-007DWY-0-3" onclick="" >See Special Offers</a></li>
+			<li><a href="https://www.att.com/eos/unauth/eosLogin?wtSlotClick=1-007DWY-0-4" onclick="" >Check order status</a></li>
+			<li><a href="http://www.wireless.att.com/coverageviewer/?wtSlotClick=1-007DWY-0-5" onclick="" >View Wireless coverage map</a></li>
+			<li><a href="https://www.att.com/olam/passthroughAction.myworld?wtSlotClick=1-007DWY-0-6" onclick="" >Check Wireless Usage</a></li>
+			<li><a href="https://swot.sbc.com/swot/qualifyingController.do?" onclick="" >Move Service</a></li>
+			<li><a href="http://www.att.com/u-verse/availability/index.jsp?wtSlotClick=1-007DWY-0-8" onclick="" >Check Available Services</a></li>
 		</ul>
 	</div>
 </div>
@@ -4987,17 +4904,18 @@ Phone, Internet, Wireless &amp; TV</p>
 		
 		
 
-<meta NAME="DCSext.wtSlotContent" CONTENT="1~006MKI"/>
+<meta NAME="DCSext.wtSlotContent" CONTENT="1~006XQM"/>
 <div class="linkFarmCol">
 <div class="linkFarmSection">
-		<h4>HELP &amp; SUPPORT</h4>
+		<h4>SHOP</h4>
 		<ul>
-			<li><a href="http://www.att.com/esupport/billingAndAccount.jsp?wtSlotClick=1-006MKI-0-1" onclick="" >Billing</a></li>
-			<li><a href="http://www.att.com/esupport/main.jsp?wtSlotClick=1-006MKI-0-2&amp;cv=820" onclick="" >Wireless</a></li>
-			<li><a href="http://www.att.com/esupport/main.jsp?wtSlotClick=1-006MKI-0-3&amp;cv=801" onclick="" >Internet/DSL</a></li>
-			<li><a href="http://www.att.com/esupport/main.jsp?wtSlotClick=1-006MKI-0-4&amp;cv=803" onclick="" >U-verse</a></li>
-			<li><a href="http://www.att.com/esupport/main.jsp?wtSlotClick=1-006MKI-0-5&amp;cv=807" onclick="" >Home Phone</a></li>
-			<li><a href="http://www.att.com/repair?wtSlotClick=1-006MKI-0-6" onclick="" >Troubleshoot and Resolve</a></li>
+			<li><a href="http://www.wireless.att.com/cell-phone-service/cell-phone-plans/?wtSlotClick=1-006XQM-0-1" onclick="" >Wireless Plans</a></li>
+			<li><a href="http://www.wireless.att.com/cell-phone-service/cell-phones/?wtSlotClick=1-006XQM-0-2" onclick="" >Cell Phones &amp; Mobile Devices</a></li>
+			<li><a href="http://www.att.com/shop/tv/?wtSlotClick=1-006XQM-0-3" onclick="" >U-verse</a></li>
+			<li><a href="http://www.att.com/gen/general?wtSlotClick=1-006XQM-0-4&pid=13712" onclick="" >Home Phone Plans</a></li>
+			<li><a href="http://www.att.com/dsl/shop/plansShared.jsp?wtSlotClick=1-006XQM-0-5" onclick="" >Internet/DSL Plans</a></li>
+			<li><a href="http://www.att.com/shop/bundles/?wtSlotClick=1-006XQM-0-6" onclick="" >Bundles</a></li>
+			<li><a href="http://www.att.com/shop/tv/?wtSlotClick=1-006XQM-0-7" onclick="" >Digital TV</a></li>
 		</ul>
 	</div>
 </div>
@@ -5042,17 +4960,18 @@ Phone, Internet, Wireless &amp; TV</p>
 		
 		
 
-<meta NAME="DCSext.wtSlotContent" CONTENT="1~006I4J"/>
+<meta NAME="DCSext.wtSlotContent" CONTENT="1~006XQP"/>
 <div class="linkFarmCol">
 <div class="linkFarmSection">
-		<h4>myAT&amp;T</h4>
+		<h4>HELP &amp; SUPPORT</h4>
 		<ul>
-			<li><a href="https://www.att.com/olam/passthroughAction.myworld?wtSlotClick=1-006I4J-0-1&actionType=BillPayments&gnLinkId=s1001" onclick="" >Bill &amp; Payments</a></li>
-			<li><a href="https://www.att.com/olam/passthroughAction.myworld?wtSlotClick=1-006I4J-0-2&actionType=WirelessProductLandingPage" onclick="" >Wireless</a></li>
-			<li><a href="https://www.att.com/olam/passthroughAction.myworld?wtSlotClick=1-006I4J-0-3&actionType=InternetProductLandingPage" onclick="" >Internet/DSL</a></li>
-			<li><a href="https://www.att.com/olam/passthroughAction.myworld?wtSlotClick=1-006I4J-0-4&actionType=HomePhoneProductLandingPage" onclick="" >Home Phone</a></li>
-			<li><a href="https://www.att.com/eos/unauth/eosLogin?wtSlotClick=1-006I4J-0-5" onclick="" >Check an order status</a></li>
-			<li><a href="http://www.att.com/esupport/online-services.jsp?wtSlotClick=1-006I4J-0-6&marq=papbill" onclick="" >Go paperless</a></li>
+			<li><a href="http://www.att.com/esupport/billingAndAccount.jsp?wtSlotClick=1-006XQP-0-1" onclick="" >Billing</a></li>
+			<li><a href="http://www.att.com/esupport/main.jsp?wtSlotClick=1-006XQP-0-2&amp;cv=820" onclick="" >Wireless</a></li>
+			<li><a href="http://www.att.com/esupport/main.jsp?wtSlotClick=1-006XQP-0-3&amp;cv=801" onclick="" >Internet/DSL</a></li>
+			<li><a href="http://www.att.com/esupport/main.jsp?wtSlotClick=1-006XQP-0-4&amp;cv=803" onclick="" >U-verse</a></li>
+			<li><a href="http://www.att.com/esupport/main.jsp?wtSlotClick=1-006XQP-0-5&amp;cv=807" onclick="" >Home Phone</a></li>
+			<li><a href="http://www.att.com/repair?wtSlotClick=1-006XQP-0-6" onclick="" >Troubleshoot &amp; Resolve</a></li>
+			<li><a href="http://www.att.com/esupport?wtSlotClick=1-006XQP-0-7" onclick="" >Support &amp; Help</a></li>
 		</ul>
 	</div>
 </div>
@@ -5097,17 +5016,20 @@ Phone, Internet, Wireless &amp; TV</p>
 		
 		
 
-<meta NAME="DCSext.wtSlotContent" CONTENT="1~0062GT"/>
+<meta NAME="DCSext.wtSlotContent" CONTENT="1~007DPA"/>
 <div class="linkFarmCol">
 <div class="linkFarmSection">
 		<h4>CONNECT WITH AT&amp;T</h4>
 		<ul>
-			<li><a href="http://www.att.com/emergency?wtSlotClick=1-0062GT-0-1" onclick="" >Emergency Planning</a></li>
-			<li><a href="http://www.att.com/innovation?wtSlotClick=1-0062GT-0-2" onclick="" >Innovation</a></li>
-			<li><a href="http://www.att.com/gen/press-room?wtSlotClick=1-0062GT-0-3&pid=2943" onclick="" >Wireless Network News</a></li>
-			<li><a href="http://www.att.com/gen/landing-pages?wtSlotClick=1-0062GT-0-4&pid=6080" onclick="" >Media Newsroom</a></li>
-			<li><a href="http://www.att.com/gen/landing-pages?wtSlotClick=1-0062GT-0-5&pid=5718" onclick="" >Investor Relations</a></li>
+			<li><a href="http://www.att.com/econtactus/?wtSlotClick=1-007DPA-0-1" onclick="" >Contact Us</a></li>
+			<li><a href="../www.att.jobs/index.html" onclick="" >Careers</a></li>
+			<li><a href="http://www.att.com/emergency?wtSlotClick=1-007DPA-0-3" onclick="" >Emergency Planning</a></li>
+			<li><a href="http://www.att.com/gen/press-room?wtSlotClick=1-007DPA-0-4&pid=2943" onclick="" >Wireless Network News</a></li>
+			<li><a href="http://www.att.com/gen/landing-pages?wtSlotClick=1-007DPA-0-5&pid=6080" onclick="" >Media Newsroom</a></li>
+			<li><a href="http://www.att.com/gen/landing-pages?wtSlotClick=1-007DPA-0-6&pid=5718" onclick="" >Investor Relations  </a></li>
 			<li><a href="http://www.universalcard.com/" onclick="" >AT&amp;T Universal Card</a></li>
+			<li><a href="http://developer.att.com?wtSlotClick=1-007DPA-0-8" onclick="" >Developer Program</a></li>
+			<li><a href="http://www.att.com/NetworkImprovements?wtSlotClick=1-007DPA-0-9" onclick="" >Network Improvements</a></li>
 		</ul>
 	</div>
 </div>
@@ -5411,7 +5333,7 @@ Phone, Internet, Wireless &amp; TV</p>
 						
 					
 				</div>
-				<a href="gen/privacy-policy%3Fpid=2587.html">&copy;2011 AT&amp;T Intellectual Property</a>. All rights reserved. AT&amp;T, the AT&amp;T logo and all other AT&amp;T marks contained herein are trademarks of AT&amp;T Intellectual Property and/or AT&amp;T affiliated companies. AT&amp;T 36USC220506
+				<a href="gen/privacy-policy%3Fpid=2587.html">&copy;2012 AT&amp;T Intellectual Property</a>. All rights reserved. AT&amp;T, the AT&amp;T logo and all other AT&amp;T marks contained herein are trademarks of AT&amp;T Intellectual Property and/or AT&amp;T affiliated companies. AT&amp;T 36USC220506
 			</div>
 			<div class="logoBlock">
 				
@@ -5433,7 +5355,7 @@ Phone, Internet, Wireless &amp; TV</p>
 					
 					
 						
-						<a target="_blank" href="../clicktoverify.truste.com/pvr.php%3Fpage=validate&amp;companyName=AT&amp;T&amp;sealid=101.html"><img title="This site is certified by TRUSTe" alt="This site is certified by TRUSTe" src="http://www.att.com/media/att/2011/global/nav/en_US/logoTRUSTe.png"></a>
+						<a target="_blank" href="../clicktoverify.truste.com/pvr.php%3Fpage=validate&amp;companyName=AT%2526T&amp;sealid=101.html"><img title="This site is certified by TRUSTe" alt="This site is certified by TRUSTe" src="http://www.att.com/media/att/2011/global/nav/en_US/logoTRUSTe.png"></a>
 					
 				
 					

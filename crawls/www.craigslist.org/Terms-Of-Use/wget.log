@@ -1,38 +1,37 @@
---2011-12-01 14:39:08--  http://www.craigslist.org/about/terms.of.use
-Resolving www.craigslist.org (www.craigslist.org)... 208.82.238.130
-Connecting to www.craigslist.org (www.craigslist.org)|208.82.238.130|:80... connected.
+--2012-04-14 12:19:49--  http://www.craigslist.org/about/terms.of.use
+Resolving www.craigslist.org... 208.82.238.130
+Connecting to www.craigslist.org|208.82.238.130|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/html]
 Saving to: `code/../crawls/www.craigslist.org/Terms-Of-Use/raw/www.craigslist.org/about/terms.of.use.html'
 
-     0K .......... .......... .........                         727K=0.04s
+     0K .......... .......... .......... ..                    8.84M=0.004s
 
-Last-modified header invalid -- time-stamp ignored.
-2011-12-01 14:39:09 (727 KB/s) - `code/../crawls/www.craigslist.org/Terms-Of-Use/raw/www.craigslist.org/about/terms.of.use.html' saved [30320]
+2012-04-14 12:19:49 (8.84 MB/s) - `code/../crawls/www.craigslist.org/Terms-Of-Use/raw/www.craigslist.org/about/terms.of.use.html' saved [33393]
 
---2011-12-01 14:39:09--  http://www.craigslist.org/styles/craigslist.css
-Connecting to www.craigslist.org (www.craigslist.org)|208.82.238.130|:80... connected.
+--2012-04-14 12:19:49--  http://www.craigslist.org/styles/craigslist.css
+Connecting to www.craigslist.org|208.82.238.130|:80... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: 15138 (15K) [text/css]
+Length: 15728 (15K) [text/css]
 Saving to: `code/../crawls/www.craigslist.org/Terms-Of-Use/raw/www.craigslist.org/styles/craigslist.css'
 
-     0K .......... ....                                       100%  352K=0.04s
+     0K .......... .....                                      100% 7.52M=0.002s
 
-2011-12-01 14:39:09 (352 KB/s) - `code/../crawls/www.craigslist.org/Terms-Of-Use/raw/www.craigslist.org/styles/craigslist.css' saved [15138/15138]
+2012-04-14 12:19:49 (7.52 MB/s) - `code/../crawls/www.craigslist.org/Terms-Of-Use/raw/www.craigslist.org/styles/craigslist.css' saved [15728/15728]
 
---2011-12-01 14:39:09--  http://www.craigslist.org/images/shareSocial.png
-Connecting to www.craigslist.org (www.craigslist.org)|208.82.238.130|:80... connected.
+--2012-04-14 12:19:49--  http://www.craigslist.org/images/shareSocial.png
+Connecting to www.craigslist.org|208.82.238.130|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 6622 (6.5K) [image/png]
 Saving to: `code/../crawls/www.craigslist.org/Terms-Of-Use/raw/www.craigslist.org/images/shareSocial.png'
 
-     0K ......                                                100%  638K=0.01s
+     0K ......                                                100% 6.72M=0.001s
 
-2011-12-01 14:39:09 (638 KB/s) - `code/../crawls/www.craigslist.org/Terms-Of-Use/raw/www.craigslist.org/images/shareSocial.png' saved [6622/6622]
+2012-04-14 12:19:49 (6.72 MB/s) - `code/../crawls/www.craigslist.org/Terms-Of-Use/raw/www.craigslist.org/images/shareSocial.png' saved [6622/6622]
 
-FINISHED --2011-12-01 14:39:09--
-Total wall clock time: 0.2s
-Downloaded: 3 files, 51K in 0.09s (548 KB/s)
+FINISHED --2012-04-14 12:19:49--
+Total wall clock time: 0.04s
+Downloaded: 3 files, 54K in 0.007s (8.13 MB/s)
 Converting code/../crawls/www.craigslist.org/Terms-Of-Use/raw/www.craigslist.org/about/terms.of.use.html... 1-2
 Converting code/../crawls/www.craigslist.org/Terms-Of-Use/raw/www.craigslist.org/styles/craigslist.css... 1-0
-Converted 2 files in 0.003 seconds.
+Converted 2 files in 0.001 seconds.

@@ -252,6 +252,11 @@ function renderStateSelectMenu() {
       $('#ssmenu li#' + index).html('<a href="/residential_customers/att_uverse/uverse_tv/receptor.html?id=' + index  + '" title="U-verse TV" class="initCap">' + value + '</a>');
     }); 
 	 } 
+	else if($('#chooseState').is('.uverse_wireless')) {
+	 $.each(allStates, function(index, value) {  
+      $('#ssmenu li#' + index).html('<a href="/residential_customers/att_uverse/uverse_wireless/index.html?id=' + index  + '" title="U-verse Wireless Receptor" class="initCap">' + value + '</a>');
+    }); 
+	 } 
 	
 	 
 	 
@@ -511,6 +516,11 @@ function renderStateSelectMenu() {
       $('#ssmenu li#' + index).html('<a href="/about_att/corporate_information.html?id=' + index  + '" title="AT&amp;T - Informaci&oacute;n  Corporativa" class="initCap">' + value + '</a>');
     }); 
 	 }
+	else if($('#chooseState').is('.neutrality')) {
+	 $.each(allStates, function(index, value) {  
+      $('#ssmenu li#' + index).html('<a href="/about_att/net_neutrality.html?id=' + index  + '" title="AT&amp;T - Broadband Informaci&oacute;n" class="initCap">' + value + '</a>');
+    }); 
+	 }
 	 
 	 
 	 //PRIVACY POLICY
@@ -540,6 +550,14 @@ function renderStateSelectMenu() {
 	else if($('#chooseState').is('.juanes')) {
 	 $.each(allStates, function(index, value) {  
       $('#ssmenu li#' + index).html('<a href="/juanes/index.html?id=' + index  + '" title="Juanes P.A.R.C.E." class="initCap">' + value + '</a>');
+    }); 
+	 }
+	 
+	
+	 //CPNI
+	else if($('#chooseState').is('.cpni')) {
+	 $.each(allStates, function(index, value) {  
+      $('#ssmenu li#' + index).html('<a href="/cpni.html?id=' + index  + '" title="cpni" class="initCap">' + value + '</a>');
     }); 
 	 }
 	  

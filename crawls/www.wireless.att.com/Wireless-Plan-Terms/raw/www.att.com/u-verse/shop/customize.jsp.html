@@ -109,7 +109,6 @@
 
 
 
-
  
 
 
@@ -233,8 +232,8 @@
 
 
 
-
-
+	
+	
 	
 	
 
@@ -274,17 +273,16 @@
 			<META HTTP-EQUIV="EXPIRES" CONTENT="-1">
 			
 			
-			<script type="text/javascript" src="../scripts/commonFunc.js%3F2011-12-01-03-37-26"></script>
-			<script type="text/javascript" src="../scripts/formFunc.js%3F2011-12-01-03-37-26"></script>
-			<script type="text/javascript" src="../scripts/ShoppingCart.js%3F2011-12-01-03-37-26"></script>
-			<script type="text/javascript" src="../scripts/uverse.js%3F2011-12-01-03-37-26"></script>
-			<script type="text/javascript" src="../dwr/interface/DWRRequestManager.js%3F2011-12-01-03-37-26"></script>
-			<script type="text/javascript" src="../dwr/engine.js%3F2011-12-01-03-37-26"></script>
-			<script type="text/javascript" src="../dwr/util.js%3F2011-12-01-03-37-26"></script>
-			<script type="text/javascript" src="../scripts/hoverTooltip.js%3F2011-12-01-03-37-26"></script>
-			<script type="text/javascript" src="../../media/gvp/gvpUtils.js%3F2011-12-01-03-37-26"></script>
+			<script type="text/javascript" src="../scripts/commonFunc.js%3F2012-04-14-03-00-43"></script>
+			<script type="text/javascript" src="../scripts/formFunc.js%3F2012-04-14-03-00-43"></script>
+			<script type="text/javascript" src="../scripts/ShoppingCart.js%3F2012-04-14-03-00-43"></script>
+			<script type="text/javascript" src="../scripts/uverse.js%3F2012-04-14-03-00-43"></script>
+			<script type="text/javascript" src="../dwr/interface/DWRRequestManager.js%3F2012-04-14-03-00-43"></script>
+			<script type="text/javascript" src="../dwr/engine.js%3F2012-04-14-03-00-43"></script>
+			<script type="text/javascript" src="../dwr/util.js%3F2012-04-14-03-00-43"></script>
+			<script type="text/javascript" src="../scripts/hoverTooltip.js%3F2012-04-14-03-00-43"></script>
+			<script type="text/javascript" src="../../media/gvp/gvpUtils.js%3F2012-04-14-03-00-43"></script>
 			<script type="text/javascript" src="../../webtrends/scripts/dcs_tag_TOP.js"></script>
-
 			
 			<script> 
 					
@@ -596,6 +594,7 @@ if(window.location.host != "www.att.com"){
 
 
 
+
 	
 	
 	
@@ -666,8 +665,10 @@ if(window.location.host != "www.att.com"){
 <meta NAME="DCSext.wtStatusCode" 			CONTENT="" />
 
 
+
 <meta NAME="DCSext.wtPN" 					CONTENT="Uverse Check Availability Address Pg" />
-<meta NAME="DCSext.sessionid" 				CONTENT="TP52TYQhkSCZTGRgz1dXfYyk!1704192946!1322778682279" />
+
+<meta NAME="DCSext.sessionid" 				CONTENT="0BQvPJMfQqJbndDZrRXGBpvG!-788357371!1334430751905" />
 <meta NAME="DCSext.flowtype" 				CONTENT="UVERSE" />
 <meta NAME="DCSext.wtCustType" 				CONTENT="Consumer">
 <meta NAME="DCSext.wtCustTypeSub"  			CONTENT="Residential" />
@@ -838,7 +839,15 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		{selector: 'head:page(address-changed)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_AddressChanged'},
 		{selector: 'head:page(service-already-exists)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_ServiceAlreadyExists'},
 		{selector: 'head:page(service-not-available)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_ServiceNotAvailable'},
-		{selector: 'head:page(multiple-address)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_MultipleAddress'},
+		//{selector: 'head:page(multiple-address)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_MultipleAddress'},
+		// Fix for Prod11-3183 :check availability success flag 
+		{selector: 'head:page(multiple-address)', type: 'wtmeta', name: 'wtStatusMsg', value:function() {
+		if ('unknown'=='green') 
+		return '';
+		else
+		return 'UV_MultipleAddress';
+		}},
+		//End of Fix for Prod11-3183 :check availability success flag 
 		{selector: 'head:page(address-changed)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_AddressChanged'},
 		{selector: 'head:page(address-not-found)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_AddressNotFound'},
 		{selector: 'head:page(number-not-found)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_NumberNotFound'},
@@ -867,7 +876,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		{selector: 'head:page(customize)', type: 'wtmeta', name: 'wtLinkLoc', value: function() {
 		var successURL = '/u-verse/shop/customize.jsp';
 		if (successURL.match('/cart/index.jsp') && successURL.match('submit=true') && '' == '')
-		return location.href+"#vucbbb";
+		return "UVerse Check Availability Success_Body";
 		else 
 		return "";}},
 		
@@ -926,7 +935,13 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		//sweepstakes
 		{selector: '#sweepsEnterNowLink', type: 'wtparam', name: 'wtLinkName', value: 'EnterNow'},
 		{selector: '#sweepsEnterNowLink', type: 'wtparam', name: 'wtLinkLoc', value: 'http://att.promotions.com/uverse2/front.do'},
-		{selector: '#sweepsEnterNowLink', type: 'wtlink', name: '', params: 'wtLinkName,wtLinkLoc', trigger: 'mousedown'}
+		{selector: '#sweepsEnterNowLink', type: 'wtlink', name: '', params: 'wtLinkName,wtLinkLoc', trigger: 'mousedown'},
+
+		{selector: 'head:page(combined-billing)', type: 'wtmeta', name: 'wtSysRespCode', value: ''},
+		//ECOM1203-134 Fix
+		{selector: 'head:page(creditcard-information)', type: 'wtmeta', name: 'wtSysRespCode', value: ''}
+		
+		
 	]);
 
 	reporting.tag.perform('inline');
@@ -978,13 +993,13 @@ function handleLastFieldInteracted(e) {
 			
 			
 			
-				<link rel="stylesheet" type="text/css" href="../styles/checkout.css%3F2011-12-01-03-37-26.css" />
+				<link rel="stylesheet" type="text/css" href="../styles/checkout.css%3F2012-04-14-03-00-43.css" />
 			
-			<link rel="stylesheet" type="text/css" href="../styles/availability.css%3F2011-12-01-03-37-26.css" />
-			<link rel="stylesheet" type="text/css" href="../styles/uverse.css%3F2011-12-01-03-37-26.css" />
-			<link rel="stylesheet" type="text/css" href="../styles/uverse2.css%3F2011-12-01-03-37-26.css" />
-			<link rel="stylesheet" type="text/css" href="../../global/styles/grids.css%3F2011-12-01-03-37-26.css" />
-			<link rel="stylesheet" type="text/css" href="../styles/hoverTooltip.css%3F2011-12-01-03-37-26.css" />
+			<link rel="stylesheet" type="text/css" href="../styles/availability.css%3F2012-04-14-03-00-43.css" />
+			<link rel="stylesheet" type="text/css" href="../styles/uverse.css%3F2012-04-14-03-00-43.css" />
+			<link rel="stylesheet" type="text/css" href="../styles/uverse2.css%3F2012-04-14-03-00-43.css" />
+			<link rel="stylesheet" type="text/css" href="../../global/styles/grids.css%3F2012-04-14-03-00-43.css" />
+			<link rel="stylesheet" type="text/css" href="../styles/hoverTooltip.css%3F2012-04-14-03-00-43.css" />
 			
 			
 			
@@ -1018,7 +1033,7 @@ function handleLastFieldInteracted(e) {
 <script type="text/javascript" charset="utf-8">
 	function SessionVars() {
 		this.getCurrSessId = function() {
-			var pSessionId = 'TP52TYQhkSCZTGRgz1dXfYyk!1704192946!1322778682279';
+			var pSessionId = '0BQvPJMfQqJbndDZrRXGBpvG!-788357371!1334430751905';
 			return pSessionId;
 		};
 
@@ -1058,7 +1073,7 @@ function handleLastFieldInteracted(e) {
 	var forceFlashDebugMode = false;
 	var getTimeOffset = function() {
 		var offset = new Number();
-		var servertime = 1322778711170;
+		var servertime = 1334430780316;
 		var clientdateObj = new Date();
 		var clienttime = clientdateObj.getTime();
 		offset = clienttime - servertime;
@@ -1070,7 +1085,6 @@ function handleLastFieldInteracted(e) {
 	    return (typeof this[methodName] != 'undefined');
 	}
 </script>
-
  
 
 			
@@ -1160,7 +1174,7 @@ function handleLastFieldInteracted(e) {
 	<!-- enable the continue button if any fields are NOT empty->
 	function checkifempty()
 	{ 	
-		var q_localizedZipCode = '';
+		var q_localizedZipCode = '"';
 		
 		if ((q_localizedZipCode == '') || (q_localizedZipCode == null) ) {
 			// do nothing
@@ -1748,16 +1762,6 @@ function handleLastFieldInteracted(e) {
 	
 		
 	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
 	
 	
 	
@@ -1769,16 +1773,6 @@ function handleLastFieldInteracted(e) {
 	
 	
 	
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
 	
 		
 	
@@ -1893,6 +1887,623 @@ function handleLastFieldInteracted(e) {
 								
 								<li class=" selected"><a href="../../shop/index.jsp.html" id="primary_Shop" name="Shop" class="primaryMenuItem">Shop<span></span></a>
 									
+										<ul id="secondaryMenu_Shop" class="secondaryMenu">
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/wireless/index.html" name="Shop_Wireless" >Wireless</a>
+													
+														
+															
+															
+															
+															
+														
+														<div class="trayContentItem trayFiveCol">
+															<div class="firstColumn">
+																<div class="columnContent">
+																	<img src='../../media/att/2011/global/nav/img-wireless_AA000R48.png' alt='Wireless' />
+																</div>
+															</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Phones &amp; Devices</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phones/index.html" name="Shop_Wireless_Shop By Category" >Shop By Category</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phones/pda-phones-smartphones.jsp.html" name="Shop_Wireless_Smartphones" >Smartphones</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/specials/netbooks.jsp.html" name="Shop_Wireless_Tablets and Internet Devices" >Tablets and Internet Devices</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/packages/index.jsp.html" name="Shop_Wireless_Packages &amp; Deals" >Packages &amp; Deals</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phones/cell-phones.jsp.html" name="Shop_Wireless_View All Devices" >View All Devices</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Plans</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phone-plans/index.jsp.html" name="Shop_Wireless_Shop By Category" >Shop By Category</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phone-plans/individual-cell-phone-plans.jsp.html" name="Shop_Wireless_Individual Plans" >Individual Plans</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phone-plans/family-cell-phone-plans.jsp.html" name="Shop_Wireless_Family Plans" >Family Plans</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/go-phones/index.jsp.html" name="Shop_Wireless_Prepaid GoPhone&reg; Plans" >Prepaid GoPhone&reg; Plans</a></li>
+																			
+																				
+																				
+																				<li><a href="../../shop/wireless/plans/data-plans.jsp.html" name="Shop_Wireless_Data Plans" >Data Plans</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Extras</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/accessories/index.jsp.html" name="Shop_Wireless_Accessories" >Accessories</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/services/index.jsp.html" name="Shop_Wireless_Messaging, Data &amp; More" >Messaging, Data &amp; More</a></li>
+																			
+																				
+																				
+																				<li><a href="../../shop/apps/index.jsp.html" name="Shop_Wireless_Ringtones &amp; Apps" >Ringtones &amp; Apps</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/transfer-your-number/index.html" name="Shop_Wireless_Transfer My Number" >Transfer My Number</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/coverageviewer/index.html#?type=voice" name="Shop_Wireless_Coverage Maps" >Coverage Maps</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Existing Customers</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../olam/passthroughAction.myworld%3FactionType=UpgradePhone.html" name="Shop_Wireless_Upgrade Phone" >Upgrade Phone</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/passthroughAction.myworld%3FactionType=AddALine.html" name="Shop_Wireless_Add a Line to My Account" >Add a Line to My Account</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute%3Ftarget=CRP.html" name="Shop_Wireless_Change Rate Plan" >Change Rate Plan</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/passthroughAction.myworld%3FactionType=ManageFeatures.html" name="Shop_Wireless_Manage Features" >Manage Features</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/learn/international/index.html" name="Shop_Wireless_International" >International</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+														</div>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/bundles/index.html" name="Shop_Bundles" >Bundles</a>
+													
+														
+															
+															
+															
+															
+														
+														<div class="trayContentItem trayFourCol">
+															<div class="firstColumn">
+																<div class="columnContent">
+																	<img src='../../media/att/2011/global/nav/img-bundles_AA000R46.png' alt='Bundles' />
+																</div>
+															</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Bundles with U-verse</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="index.jsp.html" name="Shop_Bundles_Popular U-verse Bundles" >Popular U-verse Bundles</a></li>
+																			
+																				
+																				
+																				<li><a href="index.jsp%3FshopFilterId=100003.html#fbid=" name="Shop_Bundles_U-verse TV and Internet" >U-verse TV and Internet</a></li>
+																			
+																				
+																				
+																				<li><a href="index.jsp%3FshopFilterId=200001.html#fbid=" name="Shop_Bundles_U-verse TV, Internet and Phone" >U-verse TV, Internet and Phone</a></li>
+																			
+																				
+																				
+																				<li><a href="customize.jsp.html#vucbbb" name="Shop_Bundles_Build My Own U-verse Bundle" >Build My Own U-verse Bundle</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Bundles without U&#8209;verse</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fprod-snip=res_globnav_popular_bundles.html" name="Shop_Bundles_Popular Bundles" >Popular Bundles</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fprod-snip=res_globnav_build_bundles.html" name="Shop_Bundles_Build My Own Bundle" >Build My Own Bundle</a></li>
+																			
+																				
+																				
+																				<li><a href="../../gen/general%3Fpid=11122.html" name="Shop_Bundles_Compare Bundles" >Compare Bundles</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Existing Customers</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute.html" name="Shop_Bundles_Change My Service" >Change My Service</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_globnav_move_service.html" name="Shop_Bundles_Move My Service" >Move My Service</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+														</div>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/tv/index.html" name="Shop_Digital TV" >Digital TV</a>
+													
+														
+															
+															
+															
+															
+														
+														<div class="trayContentItem trayFourCol">
+															<div class="firstColumn">
+																<div class="columnContent">
+																	<img src='../../media/att/2011/global/nav/img-television_AA000R49.png' alt='Digital TV' />
+																</div>
+															</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Plans &amp; Channels</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../shop/tv/index.html" name="Shop_Digital TV_U-verse TV" >U-verse TV</a></li>
+																			
+																				
+																				
+																				<li><a href="channel-lineup.jsp.html" name="Shop_Digital TV_U-verse Channel Line-up" >U-verse Channel Line-up</a></li>
+																			
+																				
+																				
+																				<li><a href="../../gen/general%3Fpid=7901.html" name="Shop_Digital TV_DIRECTV&reg; Programming Packages" >DIRECTV&reg; Programming Packages</a></li>
+																			
+																				
+																				
+																				<li><a href="../../Common/PDF/DIRECTV_English_Channel_Lineup.pdf" name="Shop_Digital TV_DIRECTV&reg; Channel Line-up (PDF)" >DIRECTV&reg; Channel Line-up (PDF)</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Equipment</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../remotes.html" name="Shop_Digital TV_U-verse Remotes" >U-verse Remotes</a></li>
+																			
+																				
+																				
+																				<li><a href="../explore/wireless-receiver.jsp.html" name="Shop_Digital TV_U-verse Wireless Receiver" >U-verse Wireless Receiver</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Existing Customers</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Change My Plan" >Change My Plan</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Add Receivers" >Add Receivers</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../uversetv.att.yahoo.com/index.html" name="Shop_Digital TV_Access My DVR" >Access My DVR</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Upgrade to HD" >Upgrade to HD</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Add or Remove Channels" >Add or Remove Channels</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+														</div>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/internet/index.html" name="Shop_Internet" >Internet</a>
+													
+														
+															
+															
+															
+															
+														
+														<div class="trayContentItem trayFiveCol">
+															<div class="firstColumn">
+																<div class="columnContent">
+																	<img src='../../media/att/2011/global/nav/img-internet_AA000R4V.png' alt='Internet' />
+																</div>
+															</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Plans</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../explore/internet-landing.jsp.html" name="Shop_Internet_U-verse Internet" >U-verse Internet</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_globnav_dsl_plans.html" name="Shop_Internet_DSL High Speed Internet" >DSL High Speed Internet</a></li>
+																			
+																				
+																				
+																				<li><a href="../../dsl/shop/plansDirect.jsp.html" name="Shop_Internet_Internet Without a Phone Line" >Internet Without a Phone Line</a></li>
+																			
+																				
+																				
+																				<li><a href="../../gen/general%3Fpid=9212.html" name="Shop_Internet_Internet Broadband via Satellite" >Internet Broadband via Satellite</a></li>
+																			
+																				
+																				
+																				<li><a href="../../gen/general%3Fpid=10974.html" name="Shop_Internet_Dial-Up" >Dial-Up</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Equipment</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../shop/internet/index.html#tab3" name="Shop_Internet_U-verse Internet Equipment" >U-verse Internet Equipment</a></li>
+																			
+																				
+																				
+																				<li><a href="../../equipment/index.html" name="Shop_Internet_DSL Equipment" >DSL Equipment</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Extras</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../www.att.net/s/s.dll%3Fep=16323&amp;ch=at%252Ftb%252Fsec.html" name="Shop_Internet_Internet Security Suite" >Internet Security Suite</a></li>
+																			
+																				
+																				
+																				<li><a href="../../gen/general%3Fpid=5949.html" name="Shop_Internet_AT&amp;T Wi-Fi" >AT&amp;T Wi-Fi</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../buy-connectech.att.com/ctcomm/home/index.jsp.html" name="Shop_Internet_AT&amp;T Support Plus" >AT&amp;T Support Plus</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Existing Customers</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_globnav_move_service.html" name="Shop_Internet_Move My DSL Service" >Move My DSL Service</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fprod-snip=res_dsl_upgrd_promo.html" name="Shop_Internet_Change My Plan" >Change My Plan</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+														</div>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/home-phone/index.html" name="Shop_Home Phone" >Home Phone</a>
+													
+														
+															
+															
+															
+															
+														
+														<div class="trayContentItem trayFourCol">
+															<div class="firstColumn">
+																<div class="columnContent">
+																	<img src='../../media/att/2011/global/nav/img-homephone_AA000R4B.png' alt='Home Phone' />
+																</div>
+															</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Plans</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../explore/phone-landing.jsp%3FwtSlotClick=1-001SNC-0-1&amp;WT.svl=calltoaction.html" name="Shop_Home Phone_AT&amp;T U-verse Voice" >AT&amp;T U-verse Voice</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_homephone_services.html" name="Shop_Home Phone_Home Phone Plans" >Home Phone Plans</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_long_distance_landing.html" name="Shop_Home Phone_Long Distance Plans" >Long Distance Plans</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_lifeline.html" name="Shop_Home Phone_Lifeline" >Lifeline</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Equipment</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../equipment/index.jsp.html" name="Shop_Home Phone_Home Phone Equipment" >Home Phone Equipment</a></li>
+																			
+																				
+																				
+																				<li><a href="../../shop/home-phone/index.html#tab3" name="Shop_Home Phone_AT&amp;T U-verse Voice Equipment" >AT&amp;T U-verse Voice Equipment</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Existing Customers</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fprod-snip=accountmanager.html" name="Shop_Home Phone_Change My Plan" >Change My Plan</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_globnav_move_service.html" name="Shop_Home Phone_Move My Service" >Move My Service</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fprod-snip=accountmanager.html" name="Shop_Home Phone_Manage Features" >Manage Features</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+														</div>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/u-verse/index.html" name="Shop_U-verse" >U-verse</a>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/special-offers/index.html" name="Shop_Special Offers" >Special Offers</a>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/help/index.html" name="Shop_Shopping Help" >Shopping Help</a>
+													
+												</li>
+											
+										</ul>
+									
 								</li>
 							
 								
@@ -1926,6 +2537,12 @@ function handleLastFieldInteracted(e) {
 								</li>
 							
 							<li id="primary_Search">
+								
+									
+									
+										
+									
+								
 								
 									
 									
@@ -2083,7 +2700,8 @@ function handleLastFieldInteracted(e) {
 			
 		
 	
-	<ul>
+	<ul><!-- ss195j PROD11-2096 -->
+	 
 		
 			
 				
@@ -2095,10 +2713,17 @@ function handleLastFieldInteracted(e) {
 							
 						
 							
+							
+						
+						
+						
+						
 							
 						<li class="last"><a rel="nofollow" href="http://www.att.com/u-verse/cart/retrieve-cart.jsp">Retrieve Cart</a></li>
-						<li class="last"><a rel="nofollow" href="http://www.att.com/u-verse/cart/retrieve-cart.jsp"><img src="../../global/images/cart_icon.jpg" height="15" width="20" border="0" alt="View Cart" /></a></li>
-							
+						<li class="last"><a rel="nofollow" href="http://www.att.com/u-verse/cart/retrieve-cart.jsp"><img src="../../global/images/cart_icon.jpg" height="15" width="20" border="0" alt="Review cart" /></a></li>
+						
+						
+						
 							
 							
 						
@@ -2108,7 +2733,7 @@ function handleLastFieldInteracted(e) {
 				
 			
 			
-		
+		<!-- ss195j PROD11-2096 End -->
 	</ul>
 </div>
 
@@ -2561,6 +3186,7 @@ function handleLastFieldInteracted(e) {
 
 
 
+<img alt="" src="../../global/images/transparent.gif"  onload="setUpActions();" />
 
 	
 
@@ -2581,14 +3207,14 @@ function handleLastFieldInteracted(e) {
 			<table id="availability-form-section" >
 				<tr >
 					<td >
-						<input id="checkAvailByPhoneId" name="checkAvail" value="true" onclick="existingCustomer();formFunc.setRadioLabel(this,'fontWeight','bold');commonFunc.displayElement('phoneNumberBlock', true);commonFunc.displayElement('addressBlock', false);commonFunc.displayElement('accountIdBlock', false);setFlagWtn('true');document.getElementById('tn1').focus();" type="radio"><input name="_D:checkAvail" value=" " type="hidden">
+						<input id="checkAvailByPhoneId" title="CheckAvailability By PhoneId" name="checkAvail" value="true" onclick="existingCustomer();formFunc.setRadioLabel(this,'fontWeight','bold');commonFunc.displayElement('phoneNumberBlock', true);commonFunc.displayElement('addressBlock', false);commonFunc.displayElement('accountIdBlock', false);setFlagWtn('true');document.getElementById('tn1').focus();" type="radio"><input name="_D:checkAvail" value=" " type="hidden">
 					</td>
 					<td style="text-align:left;">	
-						&nbsp;<span id="checkAvailByPhoneIdlbl">
+						&nbsp;<label for="checkAvailByPhoneId"><span id="checkAvailByPhoneIdlbl">
 									<span id="uverseWTN" style="display:none">Check using my AT&T home phone number (NO WIRELESS NUMBERS; LANDLINE ONLY)</span>
 									<span id="uverseWTNbiz" style="display:none" >Check using my AT&T business phone number (NO WIRELESS; LANDLINE ONLY)</span>			
-								</span>
-					</td>
+								</span></label>
+					</td>			
 				</tr>
 			</table>
 
@@ -2611,7 +3237,7 @@ function handleLastFieldInteracted(e) {
 								<input id="tn3" title="Last four" maxlength="4" style="width:30px;" name="/att/ecom/uverse/view/CheckAvailabilityFormHandler.landlineNumber3" value="" onkeypress="commonFunc.numericOnly(event);;" type="text" size="4"><input name="_D:/att/ecom/uverse/view/CheckAvailabilityFormHandler.landlineNumber3" value=" " type="hidden">
 							</div>
 							<div id="continueEnabledByPhone" style="display:none;float:right; padding-right:310px;" > 
-								<input id="submit1" name="/att/ecom/uverse/view/CheckAvailabilityFormHandler.checkAvailability" value="checkAvailability" onclick="showProcessBar(); webTrendTag('Uverse_Check_Availability_Submit', -2, 'User', 'wtUserResp', [$('tn1').value, $('tn2').value, $('tn3').value].join(' '));" src="../../media/en_US/images/btn/btn_Submit_blu_AA000172.gif" type="image"><input name="_D:/att/ecom/uverse/view/CheckAvailabilityFormHandler.checkAvailability" value=" " type="hidden">							
+								<input id="submit1" alt="Submit" name="/att/ecom/uverse/view/CheckAvailabilityFormHandler.checkAvailability" value="checkAvailability" onclick="showProcessBar(); webTrendTag('Uverse_Check_Availability_Submit', -2, 'User', 'wtUserResp', [$('tn1').value, $('tn2').value, $('tn3').value].join(' '));" src="../../media/en_US/images/btn/btn_Submit_blu_AA000172.gif" type="image"><input name="_D:/att/ecom/uverse/view/CheckAvailabilityFormHandler.checkAvailability" value=" " type="hidden">							
 							</div>					
 							<div id="continueDisabledByPhone" style="float:rightpadding-right:310px;;" > 							
 										<img src="../../media/en_US/images/btn/btn_Submit_dis_AA000COY.gif" />							
@@ -2636,16 +3262,16 @@ function handleLastFieldInteracted(e) {
 			<td >
 			
 		
-				<input id="checkAvailByAddressId" name="checkAvail" value="true" onclick="existingCustomer();formFunc.setRadioLabel(this,'fontWeight','bold');commonFunc.displayElement('phoneNumberBlock', false);commonFunc.displayElement('addressBlock', true);commonFunc.displayElement('accountIdBlock', false);setFlagWtn('false');document.getElementById('serviceAddress1').focus();" type="radio"><input name="_D:checkAvail" value=" " type="hidden">
+				<input id="checkAvailByAddressId" title="CheckAvailability By AddressId" name="checkAvail" value="true" onclick="existingCustomer();formFunc.setRadioLabel(this,'fontWeight','bold');commonFunc.displayElement('phoneNumberBlock', false);commonFunc.displayElement('addressBlock', true);commonFunc.displayElement('accountIdBlock', false);setFlagWtn('false');document.getElementById('serviceAddress1').focus();" type="radio"><input name="_D:checkAvail" value=" " type="hidden">
 				
 				
 					
 			</td>
 			<td >
-				&nbsp;  <span id="checkAvailByAddressIdlbl">
+				&nbsp; <label for="checkAvailByAddressId"> <span id="checkAvailByAddressIdlbl">
 							<span id="uverseAddress" style="display:none">Check using my home address</span>
 							<span id="uverseAddressBiz" style="display:none" >Check using my business address</span>			
-						</span>
+						</span></label>
 			</td>
 		</tr>
 		<tr id="addressBlock" style="display:none;" >
@@ -2729,6 +3355,7 @@ function handleLastFieldInteracted(e) {
 	
 		
 			<table id="zipLocalized" cellspacing="1" cellpadding="1" border="0" style="font-size:10px; margin:10px; width:525px;">
+			<tr><th scope="col"></th></tr>
 				<tr>
 					<td colspan="3">U-verse is available in your general area. Now let's see if it's available for your home address.</td>
 				</tr>
@@ -2737,7 +3364,7 @@ function handleLastFieldInteracted(e) {
 				</tr>
 				<tr id="serviceAddress1Highlight" style="margin-left:10px;" >
 					<td style="text-align:left;width:130px;">
-						<span style="color: #F27D00;">*</span>Street Address
+						<label for="serviceAddress1"><span style="color: #F27D00;">*</span>Street Address</label>
 						<span style="padding-left:10px;"><a class="tooltips" href="customize.jsp.html#residentialAddressLineTip"><img src="../../media/att/2011/global/btn/btn-help-icon.gif" alt="?"></a></span>
 						<span id="residentialAddressLineTip" class="tips">
 							<h3 class="orange">Address Entry Tips</h3>
@@ -2755,7 +3382,7 @@ function handleLastFieldInteracted(e) {
 								
 							
 							
-								<input id="serviceAddress1" maxlength="120" style="width:210px;" name="contentarea" value="" tabindex="1" onkeypress=" " type="text"><input name="_D:contentarea" value=" " type="hidden">
+								<input id="serviceAddress1" title="Service Address" maxlength="120" style="width:210px;" name="contentarea" value="" tabindex="1" onkeypress=" " type="text"><input name="_D:contentarea" value=" " type="hidden">
 							
 						
 					</td>
@@ -2775,32 +3402,32 @@ function handleLastFieldInteracted(e) {
 					
 				</tr>
 				<tr  >
-					<td style="text-align:left;padding-top:5px; ">Apt. or Unit #&nbsp;</td>
+					<td style="text-align:left;padding-top:5px; "><label for="serviceAddress2">Apt. or Unit #&nbsp;<label></td>
 					<td style="padding-top:5px;" >
 							
 							
 
-								<input id="serviceAddress2" maxlength="120" style="width:127px;" name="contentarea2" value="" tabindex="2" onkeypress=" " type="text"><input name="_D:contentarea2" value=" " type="hidden">
+								<input id="serviceAddress2" title="Service Address" maxlength="120" style="width:127px;" name="contentarea2" value="" tabindex="2" onkeypress=" " type="text"><input name="_D:contentarea2" value=" " type="hidden">
 							
 						
 					</td>
 				</tr>
 				<tr id="serviceCityHighlight"  >
-					<td style="text-align:left;padding-top:5px;">City&nbsp;</td>
+					<td style="text-align:left;padding-top:5px;"><label for="serviceCity">City&nbsp;</label></td>
 					<td style="padding-top:5px;" >
 							
 							
 
-								<input id="serviceCity" maxlength="25" style="width:127px;" name="contentarea3" value="" tabindex="3" onkeypress=" " type="text"><input name="_D:contentarea3" value=" " type="hidden">
+								<input id="serviceCity" title="Service City" maxlength="25" style="width:127px;" name="contentarea3" value="" tabindex="3" onkeypress=" " type="text"><input name="_D:contentarea3" value=" " type="hidden">
 							
 						
 					</td>
 				</tr>
 				<tr id="serviceStateHighlight"  >
-					<td style="text-align:left;padding-top:5px;">State&nbsp;</td>
+					<td style="text-align:left;padding-top:5px;"><label for="serviceState">State&nbsp;</label></td>
 					<td  style="padding-top:5px;">
 						
-						<input name="_D:contentarea4" value=" " type="hidden"></input><select id="serviceState" style="width:130px;" name="contentarea4" tabindex="4" onkeypress=" ">
+						<input name="_D:contentarea4" value=" " type="hidden"></input><select id="serviceState" title="Service State" style="width:130px;" name="contentarea4" tabindex="4" onkeypress=" ">
 							 
 								
 							
@@ -2908,9 +3535,9 @@ function handleLastFieldInteracted(e) {
 				 
 				
 				<tr id="serviceZipHighlight" >
-					<td style="text-align:left;padding-top:5px;padding-bottom:15px; "><span id="orange" class="orange">*</span>ZIP Code&nbsp;</td>
+					<td style="text-align:left;padding-top:5px;padding-bottom:15px; "><label for="serviceZip"><span id="orange" class="orange">*</span>ZIP Code&nbsp;</label></td>
 					<td style="padding-top:5px;padding-bottom:15px;" >
-						<input id="serviceZip" maxlength="5" style="width:70px;" name="/att/ecom/uverse/view/CheckAvailabilityFormHandler.serviceZip" value="" tabindex="5" onkeypress="commonFunc.numericOnly(event);" type="text"><input name="_D:/att/ecom/uverse/view/CheckAvailabilityFormHandler.serviceZip" value=" " type="hidden">
+						<input id="serviceZip" title="Service Zip" maxlength="5" style="width:70px;" name="/att/ecom/uverse/view/CheckAvailabilityFormHandler.serviceZip" value="" tabindex="5" onkeypress="commonFunc.numericOnly(event);" type="text"><input name="_D:/att/ecom/uverse/view/CheckAvailabilityFormHandler.serviceZip" value=" " type="hidden">
 					</td>
 				
 				</tr>
@@ -2921,7 +3548,7 @@ function handleLastFieldInteracted(e) {
 							 <div id="continueEnabled" style="display:none;" > 
 									<span style="float:left; padding-right:15px;">
 											
-											<input id="submit1" name="/att/ecom/uverse/view/CheckAvailabilityFormHandler.checkAvailability" value="checkAvailability" onclick="showProcessBar(); webTrendTag('Uverse_Check_Availability_Submit', -2, 'User', 'wtUserResp', [$('serviceAddress1').value, $('serviceAddress2').value, $('serviceCity').value, $('serviceState').value, $('serviceZip').value].join(' '));" src="../../media/en_US/images/btn/btn_Submit_blu_AA000172.gif" type="image"><input name="_D:/att/ecom/uverse/view/CheckAvailabilityFormHandler.checkAvailability" value=" " type="hidden">
+											<input id="submit1" alt="Submit" name="/att/ecom/uverse/view/CheckAvailabilityFormHandler.checkAvailability" value="checkAvailability" onclick="showProcessBar(); webTrendTag('Uverse_Check_Availability_Submit', -2, 'User', 'wtUserResp', [$('serviceAddress1').value, $('serviceAddress2').value, $('serviceCity').value, $('serviceState').value, $('serviceZip').value].join(' '));" src="../../media/en_US/images/btn/btn_Submit_blu_AA000172.gif" type="image"><input name="_D:/att/ecom/uverse/view/CheckAvailabilityFormHandler.checkAvailability" value=" " type="hidden">
 									</span>
 								</div>
 
@@ -2940,13 +3567,13 @@ function handleLastFieldInteracted(e) {
 		</tr>
 		<tr>
 			<td>
-				<input id="checkAvailByAccountId" name="checkAvail" value="true" onclick="formFunc.setRadioLabel(this,'fontWeight','bold');commonFunc.displayElement('phoneNumberBlock', false);commonFunc.displayElement('addressBlock', false);commonFunc.displayElement('accountIdBlock', true);existingCustomer();document.getElementById('accUverse1').focus();" type="radio"><input name="_D:checkAvail" value=" " type="hidden">
+				<input id="checkAvailByAccountId" title="CheckAvailability By AccountId" name="checkAvail" value="true" onclick="formFunc.setRadioLabel(this,'fontWeight','bold');commonFunc.displayElement('phoneNumberBlock', false);commonFunc.displayElement('addressBlock', false);commonFunc.displayElement('accountIdBlock', true);existingCustomer();document.getElementById('accUverse1').focus();" type="radio"><input name="_D:checkAvail" value=" " type="hidden">
 			</td>
 			<td>
-				&nbsp;<span id="checkAvailByAccountIdlbl" >
+				&nbsp;<label for="checkAvailByAccountId"><span id="checkAvailByAccountIdlbl" >
 						<span id="uverseResidential" style="display:none">I'm already an AT&T U-verse customer</span>
 						<span id="uverseBusiness" style="display:none" >I'm already an AT&T U-verse business customer</span>
-					</span>
+					</span></label>
 						
 					
 			</td>
@@ -2955,6 +3582,7 @@ function handleLastFieldInteracted(e) {
 			<td></td>
 			<td>
 				<table border=0 id="accountIdBlock" style="display:none; " >
+					<tr><th scope="col"></th></tr>
 					<tr>
 						<td colspan="2" style="padding-left:10px; padding-top:10px;">
 							<b>My AT&T U-verse Account</b>
@@ -2970,8 +3598,8 @@ function handleLastFieldInteracted(e) {
 						<td><span id="orange" class="orange">*</span>Password</td>
 					</tr>
 					<tr>
-						<td style="padding-left:10px;"><input id="accUverse1" type="text" /></td>
-						<td><input id="passUverse2" type="password" /></td>
+						<td style="padding-left:10px;"><input id="accUverse1" title="Password" type="text" /></td>
+						<td><input id="passUverse2" title="Password" type="password" /></td>
 					</tr>
 					<tr>		
 						<td style="padding-left:10px; padding-bottom:10px;">
@@ -2988,8 +3616,8 @@ function handleLastFieldInteracted(e) {
 						<td>
 						   
 								<div id="existingCustomerSubmit" style="display:none;"  > 						
-									<span style="float:left; padding-left:10px;">
-											<img id="submit2" src="../../media/en_US/images/btn/btn_Submit_blu_AA000172.gif" onmouseover="" onclick="submitUverseForm();" />
+									<span id="active" style="float:left; padding-left:10px;">
+											<img id="submit2" alt="Submit" src="../../media/en_US/images/btn/btn_Submit_blu_AA000172.gif" />
 									</span>
 								</div>
 						</td>
@@ -3004,10 +3632,21 @@ function handleLastFieldInteracted(e) {
 	
 	<script>
 
+		function setUpActions() {
+			var active = document.getElementById("active");
+			active.onclick = onClickSubmitButton; 
+			}
+		
+		function onClickSubmitButton(event) {
+			submitUverseForm();
+			return false;
+		}
+
 		var zipError = 'false';
 		if (zipError == 'true') {
 			commonFunc.getElementObj('checkAvailByAddressId').click();
 		}
+		
 		
 	</script>	
 
@@ -3411,7 +4050,7 @@ function handleLastFieldInteracted(e) {
 						
 					
 				</div>
-				<a href="../../gen/privacy-policy%3Fpid=2587.html">&copy;2011 AT&amp;T Intellectual Property</a>. All rights reserved. AT&amp;T, the AT&amp;T logo and all other AT&amp;T marks contained herein are trademarks of AT&amp;T Intellectual Property and/or AT&amp;T affiliated companies. AT&amp;T 36USC220506
+				<a href="../../gen/privacy-policy%3Fpid=2587.html">&copy;2012 AT&amp;T Intellectual Property</a>. All rights reserved. AT&amp;T, the AT&amp;T logo and all other AT&amp;T marks contained herein are trademarks of AT&amp;T Intellectual Property and/or AT&amp;T affiliated companies. AT&amp;T 36USC220506
 			</div>
 			<div class="logoBlock">
 				
@@ -3433,7 +4072,7 @@ function handleLastFieldInteracted(e) {
 					
 					
 						
-						<a target="_blank" href="../../../clicktoverify.truste.com/pvr.php%3Fpage=validate&amp;companyName=AT&amp;T&amp;sealid=101.html"><img title="This site is certified by TRUSTe" alt="This site is certified by TRUSTe" src="http://www.att.com/media/att/2011/global/nav/en_US/logoTRUSTe.png"></a>
+						<a target="_blank" href="../../../clicktoverify.truste.com/pvr.php%3Fpage=validate&amp;companyName=AT%2526T&amp;sealid=101.html"><img title="This site is certified by TRUSTe" alt="This site is certified by TRUSTe" src="http://www.att.com/media/att/2011/global/nav/en_US/logoTRUSTe.png"></a>
 					
 				
 					
@@ -3493,7 +4132,7 @@ function handleLastFieldInteracted(e) {
 								<span id="popCloseButtonSpan" onClick="closePopup();">
 									<a href="javascript:void(0);">
 										Close
-									</a> <img style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/>
+									</a> <img alt="Close" style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/>
 								</span>
 							
 						
@@ -3509,7 +4148,7 @@ function handleLastFieldInteracted(e) {
             <div style="min-height:68px;height:37px;background-image:url(../../media/en_US/images/img/img_uverse-gradient-4x37_AA0009R6.gif); background-repeat:repeat-x; border-top:#FFFFFF solid 1px; border-left:#FFFFFF solid 1px; border-right:#FFFFFF solid 1px;">
                 <div style="padding:10px;">
                     <div style="float:left; padding-left:10px; "><h1 id="mainPopUpTitle2"></h1></div>
-                    <div style="text-align:right;" id="popCloseButton2"><span onClick="closePopup('2')"><a href="javascript:void(0);">Close</a> <img style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/></span></div>
+                    <div style="text-align:right;" id="popCloseButton2"><span onClick="closePopup('2')"><a href="javascript:void(0);">Close</a> <img alt="Close" style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/></span></div>
                 </div>
             </div>
             <div id="mainPopupBody2" style="padding:10px; border:#CCCCCC solid 1px; margin:10px;"></div>
@@ -3521,9 +4160,9 @@ function handleLastFieldInteracted(e) {
             <div style="min-height:45px;height:37px;background-image:url(../../media/att/2011/shop/u-verse/channel-lineup/bkd-filter-tab.gif); background-repeat:repeat-x; border-top:#FFFFFF solid 1px; border-left:#FFFFFF solid 1px; border-right:#FFFFFF solid 1px;">
 	          <div style="padding:10px;">
                     <div style="float:left; padding-left:10px; "><h1 id="mainPopupTitleChannelLineup"></h1></div>
-					<div style="font-size:1.1em;*font-size:1.3em;text-align:center;width:77px;float:right" id="popCloseButton2"><div style="*margin-top:4px;margin-left:-15px;*height:20px;" onClick="closePopup('2')"><a href="javascript:void(0);">Close</a>&nbsp;&nbsp;</div><div style="margin-top:-18px;*margin-top:-25px;margin-left:43px;" onClick="closePopup('2')"><a href="javascript:void(0);"><img style="cursor: pointer; cursor: hand;" src="../../media/att/2011/global/btn/btn_close.gif"/></a></div></div>
+					<div style="font-size:1.1em;*font-size:1.3em;text-align:center;width:77px;float:right" id="popCloseButton2"><div style="*margin-top:4px;margin-left:-15px;*height:20px;" onClick="closePopup('2')"><a href="javascript:void(0);">Close</a>&nbsp;&nbsp;</div><div style="margin-top:-18px;*margin-top:-25px;margin-left:43px;" onClick="closePopup('2')"><a href="javascript:void(0);"><img alt="Close Disabled" style="cursor: pointer; cursor: hand;" src="../../media/att/2011/global/btn/btn_close.gif"/></a></div></div>
 					
-					<div id="printChannelLineup" style="font-size:1.1em;*font-size:1.3em;width:77px;border-right:1px solid #CCC;text-align:center; float:right;display:none;"><div style="margin-right:-17px;*margin-top:3px;*height:0px;" onclick="printChannels()"><a href="javascript:void(0);">Print</a></div><div style="margin-top:-15px;*margin-top:-1px;margin-right:37px;" onclick="printChannels()"><a href="javascript:void(0);"><img src="../../media/att/2011/global/ico/ico_print.gif" style="cursor: pointer;"/></a></div></div>
+					<div id="printChannelLineup" style="font-size:1.1em;*font-size:1.3em;width:77px;border-right:1px solid #CCC;text-align:center; float:right;display:none;"><div style="margin-right:-17px;*margin-top:3px;*height:0px;" onclick="printChannels()"><a href="javascript:void(0);">Print</a></div><div style="margin-top:-15px;*margin-top:-1px;margin-right:37px;" onclick="printChannels()"><a href="javascript:void(0);"><img alt="Print" src="../../media/att/2011/global/ico/ico_print.gif" style="cursor: pointer;"/></a></div></div>
                 </div>
             </div>
 			<div id="mainPopupBodyChannelLineup"  ></div>
@@ -3556,7 +4195,7 @@ function handleLastFieldInteracted(e) {
     	</div>
         <div style="text-align: right; padding-top: 10px;">
 	        <span onclick="if ($('modalFooterCancel')) $('modalFooterCancel').onclick();">
-	        <img style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/></span></div>
+	        <img alt="Close" style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/></span></div>
     	<div id="mainPopUpTitleIDM" style="display: none;"></div>
     </div>
         
@@ -3586,7 +4225,7 @@ function handleLastFieldInteracted(e) {
 						</div>
 				<div id="modalFooterSave" style="float:right; padding-left:10px; cursor: pointer; cursor: hand;">
 					<div title="Add to Cart"><img id="addToCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_Save_green_disabled_AA000IWR.gif" alt="Add to Cart"></div>
+						src="../../media/en_US/images/btn/btn_Save_green_disabled_AA000IWR.gif" alt="Add to Cart Disabled"></div>
 					
 					
 					
@@ -3599,13 +4238,13 @@ function handleLastFieldInteracted(e) {
 					
 						
 					<div title="Return to Cart"><img id="returnToCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_ReturnToCart_dis.gif" alt="Return to Cart"></div>
+						src="../../media/en_US/images/btn/btn_ReturnToCart_dis.gif" alt="Return to Cart Disabled"></div>
 					<div title="Return to Cart"><img id="returnToCartEna" style="cursor: pointer; cursor: hand; display:none; margin-bottom: 20px;" class="modal submit" onclick="if (!portPhoneLineslist()) cancelModal(null);" 
 						src="../../media/en_US/images/btn/btn_ReturnToCart_grn.gif" alt="Return to Cart"></div>
 					
 					
 					<div title="Update Cart"><img id="updateCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_UpdateCart_dis.gif" alt="Update Cart"></div>
+						src="../../media/en_US/images/btn/btn_UpdateCart_dis.gif" alt="Update Cart Disabled"></div>
 				
 					
 					
@@ -3645,7 +4284,7 @@ function handleLastFieldInteracted(e) {
 					<div style="padding:10px;">
 						<div style="float:left; padding-left:10px; "><h1 id="mainPopUpTitleIDM2" style="display: none;"></h1></div>
 						<div style="text-align:right;"><span onClick="if ($('modalFooterCancel2')) $('modalFooterCancel2').onclick();">
-							<img style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/>
+							<img alt="Close" style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/>
 						</span></div>
 					</div>
 				</div>
@@ -3675,7 +4314,7 @@ function handleLastFieldInteracted(e) {
 						</div>
 				<div id="modalFooterSave" style="float:right; padding-left:10px; cursor: pointer; cursor: hand;">
 					<div title="Add to Cart"><img id="addToCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_Save_green_disabled_AA000IWR.gif" alt="Add to Cart"></div>
+						src="../../media/en_US/images/btn/btn_Save_green_disabled_AA000IWR.gif" alt="Add to Cart Disabled"></div>
 					
 					
 					
@@ -3688,13 +4327,13 @@ function handleLastFieldInteracted(e) {
 					
 						
 					<div title="Return to Cart"><img id="returnToCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_ReturnToCart_dis.gif" alt="Return to Cart"></div>
+						src="../../media/en_US/images/btn/btn_ReturnToCart_dis.gif" alt="Return to Cart Disabled"></div>
 					<div title="Return to Cart"><img id="returnToCartEna" style="cursor: pointer; cursor: hand; display:none; margin-bottom: 20px;" class="modal submit" onclick="if (!portPhoneLineslist()) cancelModal(null);" 
 						src="../../media/en_US/images/btn/btn_ReturnToCart_grn.gif" alt="Return to Cart"></div>
 					
 					
 					<div title="Update Cart"><img id="updateCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_UpdateCart_dis.gif" alt="Update Cart"></div>
+						src="../../media/en_US/images/btn/btn_UpdateCart_dis.gif" alt="Update Cart Disabled"></div>
 				
 					
 					
@@ -3723,7 +4362,7 @@ function handleLastFieldInteracted(e) {
 		
 		<div id="sessionTimeOut" style="width:450px;display:none;" title="Session Time Out">
 			<table border="0" cellspacing="10"><tr>
-			<td valign="top"><img src="../../media/en_US/images/ico/ico_alert_AA0009QS.gif" alt="Warning Message"/></td>
+			<td valign="top"><img src="../../media/en_US/images/ico/ico_alert_AA0009QS.gif" alt="Alert"/></td>
 			<td valign="top">Your session has timed out. As a security measure, your session ends after 30 minutes of inactivity. Select Continue to return to the AT&T U-verse Home page.</td>
 			</tr></table>
 		</div>
@@ -3741,7 +4380,7 @@ function handleLastFieldInteracted(e) {
                 <div style="height:37px; background-image:url(../../media/en_US/images/img/img_uverse-gradient-4x37_AA0009R6.gif); background-repeat:repeat-x; border-top:#FFFFFF solid 1px; border-left:#FFFFFF solid 1px; border-right:#FFFFFF solid 1px;">
 					<div style="padding:10px;">
 						<div style="float:left; padding-left:10px; "><h1 id="formPopUpTitle"></h1></div>
-						<div style="text-align:right;" id="formPopupCloseButton"><span onClick="closeFormPopup()"><a href="javascript:void(0);">Close</a> <img style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/></span></div>
+						<div style="text-align:right;" id="formPopupCloseButton"><span onClick="closeFormPopup()"><a href="javascript:void(0);">Close</a> <img alt="Close" style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/></span></div>
 					</div>
                 </div>
                 <div id="formPopupBody" style="padding:10px; border:#CCCCCC solid 1px; margin:10px;">
@@ -3785,11 +4424,11 @@ function handleLastFieldInteracted(e) {
         
 		<div id="sessionTimeOutWarning" style="width:450px;display:none;" title="Session Time Out" uri="timeoutwarning.jsp">
 			<table border="0" cellspacing="10"><tr>
-			<td valign="top"><img src="../../media/en_US/images/ico/ico_alert_AA0009QS.gif" alt="Warning Message"/></td>
+			<td valign="top"><img src="../../media/en_US/images/ico/ico_alert_AA0009QS.gif" alt="Alert"/></td>
 			<td valign="top"><p>As a security measure, your session will expire after 30 minutes of inactivity.</p> 
 <p>If you would like more time, click Continue.</p></td>
 			</tr></table>
-			<img class="wtpn Uverse_Session_Time_Out_Warning_Modal_Pg" src="../../global/images/transparent.gif" width="1" height="1" />
+			<img class="wtpn Uverse_Session_Time_Out_Warning_Modal_Pg" src="../../global/images/transparent.gif" alt="" width="1" height="1" />
 		</div>
 		<div id="sessionTimeOutWarningButton" style="width:450px;display:none;" >
 			<table border="0" width="100%">
@@ -3992,14 +4631,14 @@ function handleLastFieldInteracted(e) {
 
 	
 	<script>document.write('<s'+'cript language="JavaScript" src="http://view.atdmt.com/jaction/Uverse_LandingPage"></s'+'cript>')</script>
-	<noscript><iframe src="../../../view.atdmt.com/iaction/Uverse_LandingPage.html" width="1" height="1" frameborder="0" scrolling="No" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0"></iframe></noscript>
+	<noscript><iframe src="../../../view.atdmt.com/iaction/Uverse_LandingPage.html" width="1" height="1" frameborder="0" scrolling="No" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" title="Uverse landing page"></iframe></noscript>
 
 
 
 
 	
 	<script>document.write('<s'+'cript language="JavaScript" src="http://view.atdmt.com/jaction/Uverseavailable"></s'+'cript>')</script>
-	<noscript><iframe src="../../../view.atdmt.com/iaction/Uverseavailable.html" width="1" height="1" frameborder="0" scrolling="No" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0"></iframe></noscript>
+	<noscript><iframe src="../../../view.atdmt.com/iaction/Uverseavailable.html" width="1" height="1" frameborder="0" scrolling="No" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0" title="Uverse landing page"></iframe></noscript>
 
 
 
@@ -4021,6 +4660,32 @@ function handleLastFieldInteracted(e) {
 		vs_orderAbandonPopupCouponAppliedFlag: <br/>
 		</div>
 -->		<div id="couponApplied" style="display:none;"></div>
+		
+		
+		<script>
+			function showWirelessReferralOfferDescPopUp(event) {
+				if(!event){ 
+					event = window.event; 
+					
+				}
+	        	showPopup('wirelessReferralBundleOfferDesc',true,true);
+				
+				
+				if(window.event){		
+					//IE - for stopping the control flow
+					event.cancelBubble = true;
+					event.returnValue = false;
+				}else{
+				//Firefox
+					event.preventDefault();
+					event.stopPropagation();
+				}		
+				
+	        }
+		</script>
+		
+		
+        
 	</body>
 	</html>
 

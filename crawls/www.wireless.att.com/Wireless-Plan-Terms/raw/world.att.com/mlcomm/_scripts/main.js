@@ -23,7 +23,7 @@ function renderFooter() {
 	document.write('    	<li><a href="/privacy_policy/privacy_terms_of_use.html?id=' + state + '" class="nb" title="Terms of use">Terms of use</a></li>');
 	document.write('    </ul>');
 	document.write('    <div class="clear"></div>');
-	document.write('    <p><a href="http://www.att.com/gen/privacy-policy?pid=2587" class="nb" title="AT&amp;T Intellectual Property">© 2003-2011 AT&amp;T Intellectual Property.</a>  All rights reserved. <a href="http://www.yellowpages.com" class="nb">YELLOWPAGES.COM</a></p>');
+	document.write('    <p><a href="http://www.att.com/gen/privacy-policy?pid=2587" class="nb" title="AT&amp;T Intellectual Property">© 2003-2012 AT&amp;T Intellectual Property.</a>  All rights reserved. <a href="http://www.yellowpages.com" class="nb">YELLOWPAGES.COM</a></p>');
 	document.write('</div>');
 	
 	document.write('<div id="pop"> </div>');

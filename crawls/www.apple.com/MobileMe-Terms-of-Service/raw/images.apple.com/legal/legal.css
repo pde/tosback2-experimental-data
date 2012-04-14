@@ -51,7 +51,7 @@ body.serviceproducts 	 .sidebar a#serviceproducts,
 	body.premiumsvc 	 .sidebar a#premiumsvc, 
 	body.techsptsvcs	 .sidebar a#techsptsvcs, 
 	body.applecareplusforiphone	     .sidebar a#applecareplusforiphone, 
-body.terms 				 .sidebar a#terms, 
+	body.terms 				 .sidebar a#terms, 
 	body.site 			 .sidebar a#site, 
 	body.ichataccount 	 .sidebar a#ichataccount, 
 	body.iworkcom 	 	 .sidebar a#iworkcom, 
@@ -85,7 +85,9 @@ body.trademark		 .sidebar a#trademark,
 body.contacts		 .sidebar a#contacts, 
 body.export			 .sidebar a#export, 
 body.provisions		 .sidebar a#provisions,
-body.warranty_privacy .sidebar a#warranty_privacy 
+body.warranty_privacy .sidebar a#warranty_privacy,
+body.applecareplusforipad    .sidebar a#applecareplusforipad,
+body.remoteatatc          .sidebar a#remoteatatc
 { font-weight: bold; color: #000; }
 
 
@@ -113,3 +115,8 @@ body.sla #licenses ul { margin-top: 15px; margin-bottom: 30px; }
 body.terms #main { margin:30px auto; width:700px; padding:30px 30px 10px; border:1px solid #ccc; -webkit-border-radius:10px; -moz-border-radius:10px; border-radius:10px; }
 body.terms #main h1 { margin:-20px -30px 30px; padding:0 30px 10px; border-bottom:1px solid #ccc; text-align:center; }
 body.terms #container .center { text-align:center; }
+
+#address p{ margin-left: 220px; }
+.remoteaccess ul li { margin: 18px 0px 24px; }
+.remoteaccess ul li span { display: table-cell; vertical-align: middle; padding-left: 10px; }
+.remoteaccess ul li a { display:table; }

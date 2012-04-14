@@ -209,7 +209,7 @@ Enjoy!
 			if(!!is_mac) {
 				spanTag.css('width',eval(elem.widestSize()-26)+'px');
 			}else {
-				spanTag.css('width',eval(elem.widestSize()-6)+'px'); //alert('safari'); //safari doesnt like the width of the selects so dont add pixels
+				spanTag.css('width',eval(elem.widestSize()-26)+'px'); //alert('safari'); //safari doesnt like the width of the selects so dont add pixels
 			}
 		} else {
 			spanTag.css('width',eval(elem.widestSize()-26)+'px'); //other browsers IE and FF same as chrome

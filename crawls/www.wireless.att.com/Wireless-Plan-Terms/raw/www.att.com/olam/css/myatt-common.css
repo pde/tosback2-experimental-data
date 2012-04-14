@@ -1,4 +1,4 @@
-i@import url("https://www.att.com/olam/css/myatt-carousel.css");
+@import url("https://www.att.com/olam/css/myatt-carousel.css");
 
 /****** 1106 CSS Starts *******/
 
@@ -39,7 +39,7 @@ body.extend3o{background:url(../../images/global/background_right.jpg) no-repeat
 .extend3o .hide{display:none}
 
 /*****************
- CSS3 TREATMENTS gh
+ CSS3 TREATMENTS 
 *****************/
 
 @media screen{
@@ -269,6 +269,7 @@ CONTENT BACKGROUND IMAGE
 .extend3o .w248{float:left; width:248px; margin:0 0 0 0}
 .extend3o .w255{float:left; width:255px; margin:0 14px 14px 0}
 .extend3o .w390{width:390px !important;}
+.extend3o .w410{width:405px;}/*important:Do not re-use this style w410*/
 .extend3o .w330{width:330px }
 .extend3o .w148{width:148px !important;}
 .extend3o .w160{width:160px;}
@@ -280,6 +281,7 @@ CONTENT BACKGROUND IMAGE
 .extend3o .w118{width:118px;}
 .extend3o .w110{width:110px;}
 .extend3o .w177{width:177px;}
+.extend3o .w177px{width:177px !important;}
 .extend3o .w112px{width:112px;}
 .extend3o .w123{width:123px;}
 .extend3o .w100px{width:100px;}
@@ -304,6 +306,7 @@ CONTENT BACKGROUND IMAGE
 .extend3o .w346{float:left; width:346px;}
 .extend3o .w355{ width:355px;}
 .extend3o .w350{ width:350px;}
+.extend3o .w370{ width:370px !important;}
 .extend3o .w292{float:left; width:292px;}
 .extend3o .w296{float:left; width:296px;}
 .extend3o .w296{float:left; width:296px;}
@@ -313,6 +316,7 @@ CONTENT BACKGROUND IMAGE
 .extend3o .w446{float:left; width:446px; margin:0 14px 14px 0} /*** 1/2 primary or 9x26px ***/
 .extend3o .w386{float:left; width:386px; margin:0 14px 14px 0} 
 .extend3o .w418{float:left; width:418px; margin:0 14px 14px 0} 
+.extend3o .w425{float:left; width:425px; margin:0 14px 14px 0} 
 .extend3o .w426{float:left; width:426px; margin:0 14px 14px 0} 
 .extend3o .w466{float:left; width:466px; margin:0 14px 14px 0} 
 .extend3o .w468{float:left; width:468px; margin:0 14px 14px 0} 
@@ -419,7 +423,7 @@ CONTENT BACKGROUND IMAGE
 .extend3o #secondary-content .row-seamless, .extend3o #left-column .row-seamless{margin:0 15px; padding:15px 0 0 0}
 /*** ROW SEAM DOTTED ***/
 .extend3o #primary-content .row-seam-dotted, .extend3o #primary-content-full .row-seam-dotted{background:url(../../images/global/row-seam-dotted.gif) left bottom repeat-x; margin:0 14px; padding:14px 11px 10px 11px}
-.extend3o .tabs .row-seam-dotted, .extend3o .ajaxtabs .row-seam-dotted{background:url(../../images/global/row-seam-dotted.gif) left bottom repeat-x; margin:0 20px; padding:14px 0 10px 0}
+.extend3o .tabs .row-seam-dotted, .extend3o .ajaxtabs .row-seam-dotted, .extend3o .myattajaxtabs .row-seam-dotted{background:url(../../images/global/row-seam-dotted.gif) left bottom repeat-x; margin:0 20px; padding:14px 0 10px 0}
 .extend3o #secondary-content .row-seam-dotted, .extend3o #left-column .row-seam-dotted{background:url(../../images/global/row-seam-dotted.gif) left bottom repeat-x; margin:0 14px; padding:14px 0 9px 0 }
 .extend3o #secondary-content .row-seam-dotted2 {background:url(../../images/global/row-seam-dotted.gif) left bottom repeat-x; margin:0 14px; padding:14px 0 0px 0 }
  .row-seam-dotted2 {background:url(../../images/global/row-seam-dotted.gif) left bottom repeat-x; margin:0 14px; padding:14px 0 0px 0 } /* added to handle for non-extend3o*/
@@ -431,7 +435,7 @@ CONTENT BACKGROUND IMAGE
 
 .extend3o .left-30	{margin-left: 30px}
 .extend3o .left-35	{margin-left: 35px}
-.extend3o .left-25	{margin-left: 25px}
+.extend3o .left-25	{margin-left: 25px!important;}
 .extend3o .left-17	{margin-left: 17px}
 .left-17 {margin-left: 17px}
 .extend3o .left-10	{margin-left: 10px}
@@ -652,7 +656,7 @@ Invalid use of tags
 }
 .extend3o .errorMsg ul#error-sublist{list-style:disc outside none;}*/
 .extend3o .errorMsg.box { border:1px solid #fd0200; margin:0 0 10px 0; padding:12px 14px 5px 14px }
-.extend3o .errorMsg.box p:first-child { color:#fd0200; background:url(../../images/global/iconError46x43.png) top left no-repeat; padding:14px 14px 15px 50px; margin-bottom:0px;}
+.extend3o .errorMsg.box p:first-child { color:#fd0200; background:url(../../images/global/iconError46x43.png) top left no-repeat; /*padding:14px 14px 15px 50px;*/ padding:8px 14px 17px 50px; margin-bottom:0px;} /* changed to accomodate the new location*/
 .extend3o .errorMsg.box ul{
 	position:relative;
 	top:-15px;
@@ -664,6 +668,16 @@ Invalid use of tags
 .extend3o .errorMsg.box ul li{
 	color:#f20200 !important;
 }
+/*WUP00672296*/
+.extend3o .errorMsg.box p {color:#fd0200; padding:8px 14px 17px 50px;margin-bottom:0px;}
+.extend3o .errorMsg p ul{border:none !important;background:none !important}
+.errorMsg p ul{border:none !important;background:none !important}
+.extend3o .errorMsg li p{background:none !important;border:none !important;}
+/*end - WUP00672296*/
+/*WUP00686521*/
+.extend3o .loginRibbon{height:63px;width:283px;position:relative;top:-10px;left:-40px;margin:20px 0 0 0 !important;color: #FFFFFF;font-size: 12px;padding:12px 20px 0 20px;background:transparent url("https://www.att.com/olam/English/brand30/OLAM-LOGIN-ribbons_ENG.png") no-repeat scroll left top}
+.extend3o .loginRibbonEs {background: url("https://www.att.com/olam/Spanish/brand30/OLAM-LOGIN-ribbons_SP.png") no-repeat scroll left top transparent;color: #FFFFFF;font-size: 12px;height: 80px;left: -40px;margin: 20px 0 0 !important;padding: 12px 20px 0;position: relative;top: -10px;width: 283px;}
+
 /*.extend3o  #ie .errorMsg.box p:first-child {margin-bottom:0px;}*/
 .extend3o  #ie .modalContent .errorMsg.box p{margin-bottom:0px;}
 /*.errorMsg { border:1px solid #fd0200; margin:0 0 10px 0; padding:11px 14px 5px 14px }
@@ -726,16 +740,18 @@ padding:20px 14px;
 *************/
 .extend3o .tabs, 
 .extend3o .tabs, 
-.extend3o .ajaxtabs{ 
+.extend3o .ajaxtabs,
+.extend3o .myattajaxtabs{ 
 	clear:left; 
 	/*min-height:60px;*/ 
 	min-height:36px; 
 	position:relative; 
-	z-index:1;
+	z-index:89;/*set to 89 from 1999.*/
 }
 
 .extend3o .tabs li, 
-.extend3o .ajaxtabs li{
+.extend3o .ajaxtabs li,
+.extend3o .myattajaxtabs li{
 	position:relative;
 	float:left; 
 	margin-right:5px;
@@ -747,8 +763,9 @@ padding:20px 14px;
 
 .extend3o #ie .tabs li, 
 .extend3o #ie .ajaxtabs li {top:2px}
+.extend3o #ie .myattajaxtabs li {top:2px}
 .extend3o .tabs a, 
-.extend3o .ajaxtabs a{
+.extend3o .ajaxtabs a, .extend3o .myattajaxtabs a{
 	position:relative;
 	min-height:16px;
 	display:block; 
@@ -772,10 +789,10 @@ padding:20px 14px;
 /* End of wireless Online Payment*/
 
 .extend3o .tabs a.current,
-.extend3o .ajaxtabs a.current{color:#333; border-bottom:1px solid #ffffff; top:1px}
+.extend3o .ajaxtabs a.current, .extend3o .myattajaxtabs a.current{color:#333; border-bottom:1px solid #ffffff; top:1px}
 .extend3o #ie .tabs a.current{color:#333; border-bottom:1px solid #ffffff; top:1px; z-index:5000!important;}
 .extend3o #ie .tabs a.current,
-.extend3o #ie .ajaxtabs a.current{top:0}
+.extend3o #ie .ajaxtabs a.current, .extend3o #ie .myattajaxtabs a.current{top:0}
 
 .extend3o .tab-group{clear:both; position:relative; border:1px solid #e3e3e3; margin-bottom:14px }
 
@@ -937,8 +954,8 @@ padding:20px 14px;
 
 .extend3o .meterwrapper .minutes-used, .extend3o .meterwrapper .total-minutes { font-weight:bold }
 .extend3o .usageUnlimited { color:#70940e }
-.extend3o .usageYellow {color: #F7BA00;}
-.extend3o .usageOver { color:#c00 }
+.extend3o .usageYellow {color: #D89E01;}/*changed from F7BA00 to DB9E01*/
+.extend3o .usageOver { color:#FF0000 }/*changed from c00 to FF0000*/
 .extend3o .box.lte { -webkit-border-radius:15px; -moz-border-radius:15px; border-radius:15px; background:#fff; border:2px solid #e3e3e3; margin-bottom:14px; width:420px; }
 .extend3o .boxNew { -webkit-border-radius:15px; -moz-border-radius:15px; background:#fff; border:2px solid #e3e3e3; margin-bottom:14px;  }
 .extend3o .box1 { -webkit-border-radius:15px; -moz-border-radius:15px; border-radius:15px; background:#fff; border:2px solid #e3e3e3;  }
@@ -952,7 +969,7 @@ padding:20px 14px;
 	font-size:16px;
 	min-height:56px;
 	line-height:56px;	
-	background:#fff url(https://www.att.com/images/global/grad-heading.gif) bottom left repeat-x }
+	/*background:#fff url(//www.att.com/images/global/grad-heading.gif) bottom left repeat-x*/ }/* commenting as fix for WUP00643670*/
 .extend3o .mod-accordion h4.first {background:#fff url(https://www.att.com/images/global/accordion-header-noborder.gif) bottom left repeat-x}
 .extend3o .mod-accordion h4 a,
 .extend3o .mod-accordion h4 a:active,
@@ -961,6 +978,22 @@ padding:20px 14px;
 .extend3o .mod-accordion h4 a:focus{color:#0f99d8; text-decoration:none; outline:none !important;}
 .extend3o .mod-accordion .accContent{position:relative}
 .extend3o .mod-accordion .accContent div{font-size: 12px; padding:15px 15px 20px 15px;}
+.mod-accordion h4{
+                font-size:16px;
+                min-height:56px;
+                line-height:56px;              
+                /*background:#fff url(//www.att.com/images/global/grad-heading.gif) bottom left repeat-x;*/}
+                /*The above background is commented because the new style guide is having an image with top border for optional accordian. The required image will be taken from global styles*/
+.mod-accordion h4.first {background:#fff url(https://www.att.com/images/global/accordion-header-noborder.gif) bottom left repeat-x;}
+.mod-accordion h4 a,
+.mod-accordion h4 a:active,
+.mod-accordion h4 a:visited{display:block; min-height:43px; color:#333; padding:0 14px; font-size:16px; outline:none !important;}
+.mod-accordion h4 a:hover,
+.mod-accordion h4 a:focus{color:#0f99d8; text-decoration:none; outline:none !important;}
+.mod-accordion .accContent{position:relative;}
+.mod-accordion .accContent div{font-size: 12px; padding:15px 15px 20px 15px;}
+.mod-accordion li a{font-size:12px; color:#005B95;}
+.mod-accordion li{font-size:12px;}
 /**************************** OPTIONAL ACCORDION - ENDS ***************************************/
 
 /*****************
@@ -1006,7 +1039,8 @@ padding:20px 14px;
 .extend3o .modalContent  .msg p{margin-bottom:0px;}
 .extend3o .modalContent .subHeading{font-size:14px;}
 .extend3o .modalScroll{ height:200px; overflow:scroll; border:1px solid #ccc; padding:15px;position:relative}
-.extend3o .modalScrollY{ height:200px; overflow-y:scroll; border:1px solid #ccc; padding:15px;position:relative}
+.extend3o .modalScrollY{ height:200px; overflow-y:scroll; overflow-x:hidden; border:1px solid #ccc; padding:15px;position:relative}/*overflow-x:hidden is added*/
+.modalScrollY{ height:200px; overflow-y:scroll; border:1px solid #ccc; padding:15px;position:relative}/* adding non extend3o definition*/
 .extend3o .modalContent  p.noBtmMar{ margin-bottom:0 }
 .extend3o .btnInsideRowSeam{
 border-top:1px solid #DBDBDB;
@@ -1022,9 +1056,9 @@ padding:20px 0 0
 .extend3o  .botMar14{margin-bottom:14px !important}
 /*#ie .modalContent{width:500px}*/
 .extend3o .modalPrint {position:absolute;top:30px;right:60px}
+/*printModalLink updated for WUP00640148*/
 .extend3o .printModalLink {
-	background:url(../../images/global/icon_print.gif) 0px 3px no-repeat;
-	width:30px;
+	background:url(../../images/global/icon_print.gif) 0px 1px no-repeat;
 	height:20px;
 	padding-left:20px
 }
@@ -1034,6 +1068,9 @@ padding:20px 0 0
 .extend3o .bt_right {float:right;}
 .extend3o .bt_left{float:left;}
 .bt_left{float:left;}
+/*WUP00640122*/
+.modalscroll{overflow-y : scroll; height: 224px; position: relative; padding-right: 25px;}
+.modalScroll{ height:200px; overflow:scroll; border:1px solid #ccc; padding:15px;position:relative}
 
 
 /* COLORBOX MODAL STYLES */
@@ -1111,11 +1148,16 @@ padding:20px 0 0
 .alertNew{color:#ff0000;}
 .extend3o .alertRedForce{color:#ff0000 !important;}
 .alertRedForce{color:#ff0000 !important;} /* For WUP00594931 */
-.extend3o .SecContoverage {background:url("../../images/global/iconError.png") no-repeat scroll left center transparent;color:#CC0000;min-height:16px;padding-left:20px !important;padding-top:10px;width:180px;}
-.extend3o .overageNoBg {color:#fd0200; font-weight:inherit; font-size:inherit } 
+.extend3o .SecContoverage {background:url("../../images/global/iconError.png") no-repeat scroll left center transparent;color:#FF0000;min-height:16px;padding-left:20px !important;padding-top:10px;width:180px;}/*CC0000 to FF0000*/
+.extend3o .overageNoBg {color:#FF0000; font-weight:inherit; font-size:inherit } /*changed from fd0200 to FF0000*/
 .extend3o .upsellIndent { background:url(../../images/global/iconExclamation.png) left center no-repeat; padding:10px 20px; margin-left:10px }
-.extend3o .overageIndent { background:url(../../images/global/iconError.png) left center no-repeat; padding-left:20px; color:#c00; margin-left:10px }
+.extend3o .overageIndent { background:url(../../images/global/iconError.png) left center no-repeat; padding-left:20px; color:#FF0000; margin-left:10px }/*c00 to ff0000*/
 .extend3o .calendar img{ vertical-align:middle; padding-left:10px }
+/* Classes added to provide the Due date in calendar with width*/
+.extend3o .calendar_due a{ padding: 4px!important; color: #005B95; width: 34px; }
+.extend3o .calendar_due{ padding: 4px!important; color: #000000; width: 34px; }
+.calendar_due{ padding: 4px; color: #005B95; width: 34px;}
+/*End of calendar Due date classes*/
 .extend3o .breadcrumb { margin-left:14px } /****Added style for breadcrumb located about the page title****/
 .breadcrumb { margin-left:14px } /****Added style for breadcrumb located about the page title****/
 .extend3o .breadcrumbNoMargin { margin-left:0px !important;} /****Added style for breadcrumb located about the page title****/
@@ -1141,7 +1183,7 @@ TOOLTIP WRAPPERS
 .extend3o .tip-white {
 	margin-top:10px; 
 	opacity:1;
-	z-index:1000;
+	z-index:2000;/*changed from 1000*/
 	text-align:left;
 	border:none;
 	padding:3px;
@@ -1252,6 +1294,13 @@ TOOLTIP WRAPPERS
 	position:relative;
 	top:6px;
 	vertical-align:top;}
+/* Added to handle a change in the structure noticed in WUP00648383*/
+.extend3o .styled_forms > div > div > a.tooltips{
+	display:inline-block;
+	margin:0;
+	position:relative;
+	top:6px;
+	vertical-align:top;}
 
 /*WUP00582161 - added non extend3o version */
 .styled_forms > div > a.tooltips{
@@ -1280,8 +1329,8 @@ TOOLTIP WRAPPERS
 .extend3o .styled_forms > div span#statictxt-popup{top:5px;}
 
 .extend3o .styled_forms > div span.redtxt{
-	color:red !important;
-}
+	color:#FF0000 !important;
+}/*changed from red to #FF0000*/
 
 .extend3o .styled_forms div.login > label{
 	color:#333;
@@ -1842,7 +1891,7 @@ STYLED FORMS ERROR CHECKING MOD
 	margin-left:209px;
 	margin-top:0 !important;
 }
-.extend3o .formErrorMessage .redtxt{font-weight:bold;color:#FD0200}
+.extend3o .formErrorMessage .redtxt{font-weight:bold;color:#FF0000}/*changed from FD0200 to FF0000*/
 
 /*
 
@@ -1989,6 +2038,12 @@ Not advised to edit stuff below this line
 */
 .extend3o #footer{z-index:0}
 #footer{z-index:0}
+/* These styles added to fix WUP00647343. The footer styles are added to prevent an overlap in IE*/
+.section-title .usm_menu ul{min-height:0px}
+.extend3o .section-title .usm_menu ul{min-height:0px}
+
+.extend3o #ie #footer{z-index:-1}
+#ie #footer{z-index:-1}
 
 #footer .separator, #footer .copyright{font-size:1.2em; margin-bottom: 0.5em;}
 #footer .separator a, #preFooter a{/*font-size:1em;*/ font-size:11px;} /* size updated for new footer*/
@@ -2045,7 +2100,7 @@ Not advised to edit stuff below this line
 .extend3o .right			{ text-align:right !important }
 .table td.right {text-align:right !important;}
 
-.extend3o .vtop				{ vertical-align:top}
+.extend3o .vtop				{ vertical-align:top !important}
 .extend3o .vmid				{ vertical-align:middle}
 .extend3o .vbot				{ vertical-align:bottom}
 
@@ -2113,7 +2168,7 @@ Not advised to edit stuff below this line
 .extend3o .LeftSolidBorder{border-left:1px solid #e5e5e5;}
 .extend3o .LeftDotBorder{border-left:1px dotted #e5e5e5;}
 .extend3o .LeftDotBorderCC{border-left:1px dotted #cccccc;}
-.extend3o .TopDotBorder{border-top:1px dotted #e5e5e5;}
+.extend3o .TopDotBorder,.extend3o tr.TopDotBorder td {border-top:1px dotted #e5e5e5;} /* Adding for WUP00636822*/
 .extend3o .TopDotBorderCC{border-top:1px dotted #cccccc;}
 .TopDotBorderCC{border-top:1px dotted #cccccc;}
 .extend3o .TopSolidBorder{border-top:1px solid #cccccc;}
@@ -2244,8 +2299,11 @@ Device Hover Change Picture Hover
 	width:118px;
 }
 .extend3o .changeImageBg .tooltips{
-	top:110px;
+	top:110px;/*!important is removed*/
 	left:-5px
+}
+#ie .changeImageBg .tooltips{  left: -5px;
+    top: 110px !important;
 }
 .extend3o .changeImage a.changeHover {
 	float:left;
@@ -2265,10 +2323,7 @@ Device Hover Change Picture Hover
 	height:129px;
 	width:120px;
 }
-.extend3o .changeImageBg .tooltips{
-	top:110px;
-	left:-5px;
-}
+
 .extend3o .changeImageBg a.changeHover {
 	float:left;
 	height:124px;
@@ -2289,7 +2344,7 @@ Check Availability Right
 .extend3o .checkAvailMessage212{margin-top:7px;margin-left:212px}
 .extend3o .checkAvailMessage210{margin-top:7px;margin-left:210px}
 .extend3o .checkAvailMessage{margin-top:7px;margin-left:213px}
-.extend3o .checkAvailMessage .redtxt{color:#FD0200}
+.extend3o .checkAvailMessage .redtxt{color:#FF0000}/*changed from FD0200 to FF0000*/
 
 .extend3o .checkAvailButton{
 	margin-left:40px !important;
@@ -2300,11 +2355,11 @@ Check Availability Right
 /************************
 Password Strength Meter
 *************************/
-.extend3o .passwordStrengthMeter .graphBorder {background:url(https://www.att.com/olam/images/brand30/bkgrd-usage-empty.gif) repeat-x scroll 50% 50% transparent; border:1px solid #ccc; height:10px; float:left; margin:0; padding:0; text-align:left;width:80px}
+.extend3o .passwordStrengthMeter .graphBorder {background:url(https://www.att.com/olam/images/brand30/bkgrd-usage-empty.gif) repeat-x scroll 50% 50% transparent; border:1px solid #ccc; height:10px; float:left; margin:0px 10px 0px 0px; padding:0; text-align:left;width:80px}
 .extend3o .passwordStrengthMeter .graphBkgrd {background:url(https://www.att.com/olam/images/brand30/strengthmeter.gif) repeat-x scroll 0 0 transparent; display:block; height:8px; margin:1px;	padding:0 }
 .extend3o .passwordStrengthMeter .graphBkgrd_yellow {background:url(https://www.att.com/olam/images/brand30/strengthmeter_yellow.gif) repeat-x scroll 0 0 transparent; display:block; height:8px; margin:1px;	padding:0 }
 .extend3o .passwordStrengthMeter .graphBkgrd_red {background:url(https://www.att.com/olam/images/brand30/strengthmeter_red.gif) repeat-x scroll 0 0 transparent; display:block; height:8px; margin:1px;	padding:0 }
-.extend3o .strengthText{float:left;font-size:1.1em;margin-left:10px;color:#333}
+.extend3o .strengthText{float:left;font-size:1.1em;margin:0px 6px 0px 0px;color:#333}
 .extend3o .passwordStrengthMeter{display:inline-block;margin-left:34px;margin-top:0;position:relative;top:6px;width:250px}
 	.extend3o #ie .passwordStrengthMeter{display:inline}
 .extend3o .passwordStrengthMeter a{font-size:1.2em}
@@ -2666,10 +2721,10 @@ Required Fields in a form
 *********************/
 .extend3o .colorOrange{color:#ff7200;}
 .extend3o .colorGrey{color:#666666 !important;}
-.extend3o .colorRed {color:red !important;}
+.extend3o .colorRed {color:#FF0000 !important;}/*changed from red to #FF0000*/
 .extend3o .colorBlue{color:#005B95 !important;}
-.extend3o .colorRedImp {color:red !important;}
-.extend3o .colorRed p{color:red;}
+.extend3o .colorRedImp {color:#FF0000 !important;}/*changed from red to #FF0000*/
+.extend3o .colorRed p{color:#FF0000;}/*changed from red to #FF0000*/
 .extend3o .colorBlack{color:#333 !important;}
 .extend3o .colorGreen{color:#70940e !important;}
 .extend3o .colorInline{color:#bfbfbf !important;}
@@ -2747,6 +2802,7 @@ XPROD******************************/
 .extend3o #ie .MarLeftNeg2{margin-Left:-2px;}
 .extend3o .MarTopNeg2{margin-top:-2px;}
 .MarTopNeg2{margin-top:-2px;}
+.extend3o .MarTopNeg5{margin-top:-5px;}
 .extend3o .MarTopNeg15{margin-top:-15px;}
 .extend3o .MarTopNeg10{margin-top:-12px;}
 .extend3o .MarTop0{margin-top:0px !important;}
@@ -2837,7 +2893,7 @@ XPROD******************************/
 .extend3o .PadLeft35{padding-left:35px;}
 .extend3o .PadLeft40{padding-left:40px;}
 .extend3o .PadLeft55{padding-left:55px;}
-.extend3o .PadLeft65{padding-left:65px;}
+.extend3o .PadLeft65{padding-left:65px !important;}/*important is added*/
 .extend3o .PadLeft13{padding-left:13px;}
 .extend3o .PadLeft14{padding-left:14px;}
 .extend3o .padLtRt25{padding:0px 25px;}
@@ -2949,11 +3005,11 @@ XPROD******************************/
 .extend3o .MarLeft6{margin-left:6px;}
 .extend3o .MarLeft0{margin-left:0px;}
 .extend3o .MarLeft10{margin-left:10px !important;}
-.extend3o .MarLeft15 {margin-left:15px;}
+.extend3o .MarLeft15 {margin-left:15px !important;}/*!important is added*/
 .extend3o .MarLeft105 {margin-left:105px;}
 .extend3o .MarLeft18 {margin-left:18px;}
 .extend3o .MarLeft14 {margin-left:14px;}
-.extend3o .MarLeft12{margin-left:12px;}
+.extend3o .MarLeft12{margin-left:12px!important;}/*!important is added*/
 
 .extend3o .MarLeft20 {margin-left:20px;}
 .extend3o .MarLeft20Force {margin-left:20px !important;}
@@ -2965,7 +3021,7 @@ XPROD******************************/
 .extend3o .MarLeft25 {margin-left:25px!important;}
 /* WUP00510294 and WUP00497034*/
 .MarLeft25 {
-    margin-left: 25px;
+    margin-left: 25px !important;/*!important is added*/
 }
 .extend3o #ie .MarLeft29IE {margin-left:29px !important;}
 .extend3o .MarLeft24 {margin-left:24px !important;}
@@ -3150,7 +3206,7 @@ XPROD******************************/
     color: #2B60DE;
 }
 .extend3o .tipPad a.top0{top:0px;}
-.extend3o .msg p#red-font-para{color:#c00;margin-top:20px; margin-bottom:20px;}
+.extend3o .msg p#red-font-para{color:#FF0000;margin-top:20px; margin-bottom:20px;}/*changed from c00 to #FF0000*/
 .extend3o #ie #crwf13CVVspan .radio{top:-2px;}
 .extend3o #ie #crwf13CEXspan .radio{top:-2px;}
 .extend3o  #ie .left5px{left:5px !important;}
@@ -3163,14 +3219,14 @@ XPROD******************************/
 .extend3o  #ie .top3px{top:3px !important;}
 .extend3o .top5px{top:5px !important;}
 .extend3o .top4px{top:4px !important;}
-.extend3o .top6px{top:6px !important; position:relative;}
+.extend3o .top6px{top:6px !important; }/*position:relative; removed*/
 .extend3o .top7px{top:7px !important;}
 .extend3o .top10px{top:10px !important;}
 .extend3o .top12px{top:12px !important;}
 .extend3o .top-2px{top:-2px !important;position:relative;}
 .extend3o .top-2pxie{top:-2px !important;}
 .top-2px{top:-2px !important;} /*Added to fix WUP00534173*/
-.extend3o .top-4px{top:-4px !important;}
+.extend3o .top-4px{top:-4px !important; position:relative;}/* position:relative added*/
 .extend3o .top-1px{top:-1px !important;}
 .extend3o .top-42px{top:-42px !important;}
 .extend3o .top-3px{top:-3px !important;}
@@ -3189,7 +3245,7 @@ XPROD******************************/
 .extend3o .left-23px{left:-23px !important;}
 .extend3o .ForceMarRight10{margin-right:10px !important;}
 .extend3o .ForcePadTop5{padding-top:5px !important;}
-.extend3o .forceRight{text-align:right !important;}
+.extend3o .forceRight{text-align:right !important;}	
 .forceRight{text-align:right !important;} /*to support without extend3o - wireline alignment issue*/
 .extend3o .sub-group-title h3 a, .sub-group-title h4 a{float:left;}
 .extend3o .PadRight0{padding-right:0px !important;}
@@ -3285,13 +3341,13 @@ Radio button needs 8 pixel padding between them
 .extend3o #content #primary-content form.styled_forms div.selector select.dropDown210{width:210px;}
 /*Drop down width 210px*/
 /*Drop down width 265px. For defect WUP00600912*/
-.extend3o #content #primary-content form.styled_forms div.selector select.dropDown265{width:265px;}
+.extend3o #content #primary-content form.styled_forms div.selector select.dropDown265{width:265px!important;}/*important added*/
 /*Drop down width 265px*/
 .extend3o #primary-content .tooltips .helpImg { margin-left:6px; margin-right:10px;}
-.extend3o #primary-content .tooltips .helpImg1 { margin-left:2px; margin-right:0px; top:-4px;}
+.extend3o #primary-content .tooltips .helpImg1 { margin-left:2px; margin-right:0px; top:-1px;}
 #primary-content .tooltips .helpImg1 { margin-left:2px; margin-right:0px; top:-4px;}
 .extend3o #ie .helpImgCheckbox { margin-left:4px!important; margin-right:0px; top:-4px;}
-.extend3o #primary-content .tooltips .helpImg2 { margin-left:3px; margin-right:6px;}
+.extend3o #primary-content .tooltips .helpImg2 { margin-left:4px; margin-right:6px;}/*margin-left changed from 3 to 4*/
 .extend3o  .modalContent .tooltips .helpImg2 { margin-left:3px; margin-right:6px;}
 .extend3o #primary-content .tooltips .helpImg3 { margin-left: 1px;margin-right: 5px;}
 .extend3o #primary-content #padRt0 .noRtMar { padding:0 0 0 25px;}
@@ -3306,7 +3362,7 @@ Radio button needs 8 pixel padding between them
 .extend3o #ie #primary-content .tooltips .radioTextImg{position:relative;top:1px; margin-left:1px;}
 
 /**************************** STEP INDICATOR - BEGINS *****************************************/
-.extend3o #secondary-content .steps .row-seam { background:#FFFFFF url(../images/brand30/global/grad-heading.gif) repeat-x scroll left bottom; padding:15px 5px; }/*Removing the scroll as it causes extra thick border around the step indicator - aa4230*/
+.extend3o #secondary-content .steps .row-seam { background:#FFFFFF url(../images/brand30/global/grad-heading.gif) repeat-x scroll left bottom; padding:15px 5px; }/*Removing the scroll as it causes extra thick border around the step indicator - aa4230*/ 
 /*.extend3o #secondary-content .steps .row-seam { background:#FFFFFF url(/olam/images/brand30/global/grad-heading.gif) repeat-x; padding:15px 5px; }*/ /*reverting the change by aa4230 since steps break if it is a 2-line - sb7037*/
 .extend3o #secondary-content .steps h4{font-size: 12px; Color: #333333; line-height:1.2em;/*Changed from 2em to 1.2em-sb7037*/}
 .extend3o #secondary-content .steps .past h4{font-size: 12px; Color: #005B95;}
@@ -3354,7 +3410,7 @@ Radio button needs 8 pixel padding between them
 
 .extend3o .descLOB .noborder{border:0}
 .extend3o #content .noAllborder{border: none !important;}
-.extend3o .descLOB .redtxt{font-weight:bold;color:#FD0200}
+.extend3o .descLOB .redtxt{font-weight:bold;color:#FF0000}/*FD0200 to FF0000*/
 /*Online Registration Styles*/
 .extend3o .OrImgMarRt25{margin-right:25px !important;}
 /*Online Registration Styles End*/
@@ -3688,14 +3744,14 @@ p tag that comes last (since row-seamless has 13px padding-bot)
 .extend3o #ie .btnNew {
 padding:20px 25px 0px;
 }
-.extend3o #ie .ie7MarTop0{margin-top:0px;}
+.extend3o #ie .ie7MarTop0{margin-top:0px!important;}/*!important added*/
 .extend3o #ie .ie7MarTop10{margin-top:10px;}
 .extend3o #ie .posie7{position:absolute;}
 .extend3o #ie .PadLeft5ie {padding-left:5px;}
 .extend3o #ie .OC2PAbtnBot {margin-bottom: 15px;}
 .extend3o #ie .top5ie {top:5px;position:relative;}
 
-.extend3o #ie .PadTopBot20{padding-top:20px;padding-bottom:20px;margin-bottom:20px;}
+.extend3o #ie .PadTopBot20{padding-top:20px;padding-bottom:20px;margin-bottom:0px;}/*margin-bottom changed from 20px to 0px*/
 .extend3o #ie .PadBottom{padding-bottom:20px;margin-bottom:20px;}
 .extend3o #ie #boxlogin .tipsNew img {
     padding-left: 4px;
@@ -3871,12 +3927,18 @@ p + .styled_forms {
 .extend3o .buttonmargin{margin-top:5px;margin-bottom:0px;}
 
 .extend3o .PadTop3imp{padding-top:3px;}
+.extend3o .PadTop8imp{padding-top:8px;}
+.PadTop8imp{padding-top:8px;}
+.extend3o .ForcePadTop3{padding-top:3px!important;}
+.extend3o  #ie .ForcePadTop3{padding-top:3px!important;}
 .top6px {
     position: relative;
     top: 6px !important;
 }
 
 .extend3o .table th.headerSortUp a { background: url(../../images/global/sort-up.gif) 100% 60% no-repeat; padding-right:10px; zoom:1 } 
+th.headerSortUp a { background: url(../../images/global/sort-up.gif) 100% 60% no-repeat; padding-right:10px !important; zoom:1 }
+th.headerSortDown a{ background: url(../../images/global/sort-down.gif) 100% 60% no-repeat; padding-right:10px !important;  zoom:1 }
 /********************
 USM Module
 *********************/
@@ -4056,7 +4118,6 @@ li.usmTitle > a, li.usmTitle > a:hover {
 	text-decoration:none !important;
 	cursor:default;
 }
-
 
 .extend3o .usm_menu li a.selected {
 	display:inline-block !important;
@@ -4431,7 +4492,7 @@ padding: 10px 20px 0 0;
 
 .padLeft25{padding-left:25px;}
 
-.colorRed{color:red;}
+.colorRed{color:#FF0000;}/*red to FF0000*/
 .extend3o .marLeft338{margin-left:338px;}/*Added for video on demand issue*/
 .extend3o .marLeft363{margin-left:363px;}/*Added for pay per view issue*/
 /****  End of OC2PA CR-51600 CSs without .extend3o****/
@@ -4457,10 +4518,18 @@ padding: 10px 20px 0 0;
 .extend3o .widthAuto { width:auto !important; }
 .extend3o .smallBox{text-align:center; margin-bottom:14px;}
 .extend3o .smallBoxMar{margin:0; padding:5px 0;}
-.extend3o .smallBoxTxt{border:1px solid #E3E3E3; border-radius:5px 5px 5px 5px; padding:6px 23px 7px 23px; color:#FF7200; font-size:26px; font-weight:bold; width:inherit;}
+.extend3o .smallBoxTxt
+{
+ /*border:1px solid #E3E3E3; border-radius:5px 5px 5px 5px;*/ 
+ margin-bottom:0px;
+ padding:6px 23px 7px 23px; 
+ color:#FF7200;
+ font-size:26px;
+ font-weight:bold; width:inherit;
+}
 
 /*WUP00555215*/
-.fixwidtrun{overflow:hidden;}
+/*.fixwidtrun{overflow:hidden;}*/
 .secondaryModFixWidth{width:185px;}
 
 .extend3o .smallBoxFixWidth {
@@ -4485,6 +4554,10 @@ padding: 10px 20px 0 0;
 /***Print***/
 @media print {
 #secondary-content {display:none;}
+.printFontPassChange{font-size:20px !important} /*fix for WUP00637648*/
+.modalContent .terms {height:auto !important} /*fix for WUP00661582*/
+.extend3o .modalContent .terms {height:auto !important}
+
 }
 
 .extend3o .wid167 { width:167px; }
@@ -4824,7 +4897,7 @@ background: url("../../images/global/icon_print.gif") no-repeat scroll 0 3px    
 .extend3o .visToggleHidden{visibility:hidden !important;}
 .extend3o .visToggleVisible{visibility:visible !important;}
 /*Super Bill*/
-.extend3o .alertLink{color:red !important; font-size:11px !important;}
+.extend3o .alertLink{color:#FF0000 !important; font-size:11px !important;}/*red to FF0000*/
 
 /*Titan5.2*/
 .extend3o #usmModule .usm_menu .minHeight5 { min-height: 5px !important;}
@@ -4952,7 +5025,7 @@ background: -o-linear-gradient(#FFFFFF, #F5F5F5);
 box-shadow: #E6E0E0 2px 0px 2px ;
 -webkit-box-shadow: #E6E0E0 2px 0px 2px ;
 -moz-box-shadow: #E6E0E0 2px 0px 2px ;
-behavior: url(https://www.att.com/olam/css/js/PIE.htc);
+/*behavior: url(js/PIE.htc);*/
 }
 
 .LoginArrowbubble1{
@@ -4977,11 +5050,18 @@ background: -o-linear-gradient(#FFFFFF, #F5F5F5);
 box-shadow: #E6E0E0 2px 0px 2px ;
 -webkit-box-shadow: #E6E0E0 2px 0px 2px ;
 -moz-box-shadow: #E6E0E0 2px 0px 2px ;
-behavior: url(https://www.att.com/olam/css/js/PIE.htc);
+/*behavior: url(js/PIE.htc);*/
 }
 
 .extend3o #loginBubbleUnit{position:relative; left:275px;} /* Added to fix the login bubble issue */
 .extend3o #ie #loginBubbleUnit{left:275px;} /* Added to fix the login bubble issue */
+#loginBubble{
+	background: transparent url("https://www.att.com/olam/images/brand30/global/bubble_top2.png") no-repeat left top !important;
+	width:252px !important;
+	height:87px !important;
+	z-index:11 !important;
+}
+.extend3o #loginBubble img{display:none}
 .extend3o #loginBubbleDiv{position:relative; left:345px;}
 
 .extend3o .LoginArrowbubble2{
@@ -5058,7 +5138,7 @@ background: -o-linear-gradient(#FFFFFF, #F5F5F5);
 box-shadow: #E6E0E0 2px 0px 2px ;
 -webkit-box-shadow: #E6E0E0 2px 0px 2px ;
 -moz-box-shadow: #E6E0E0 2px 0px 2px ;
-behavior: url(https://www.att.com/olam/css/js/PIE.htc);
+/*behavior: url(js/PIE.htc);*/
 }
 
 
@@ -5084,7 +5164,7 @@ background: -o-linear-gradient(#FFFFFF, #F5F5F5);
 box-shadow: #E6E0E0 2px 0px 2px ;
 -webkit-box-shadow: #E6E0E0 2px 0px 2px ;
 -moz-box-shadow: #E6E0E0 2px 0px 2px ;
-behavior: url(https://www.att.com/olam/css/js/PIE.htc);
+/*behavior: url(js/PIE.htc);*/
 }
 
 .extend3o .LoginArrowbubble{
@@ -5210,7 +5290,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFF', endC
     min-height: 56px;}
 .extend3o .mybilldiv{margin: 0 0px 14px;width: 974px;padding-bottom: 0 !important;}
 .extend3o .mybilldiv .msg.box {margin:15px 25px !important;}
-.extend3o .mybilldiv .msg.box + .msg.box{margin:0px 25px 15px !important;}
+/*.extend3o .mybilldiv .msg.box .msg.box{margin:0px 25px 15px !important;}*/
 
 .extend3o .w409{width: 409px !important;}
 .extend3o .w203{width: 203px !important;}
@@ -5365,7 +5445,7 @@ table th.vertBase{vertical-align:baseline;}
 #content .noAllborder{border: none !important;}
 .w200{width:200px;}
 .w120{width: 120px !important;}
-.MarRight20{margin-right:20px;}
+.MarRight20{margin-right:20px!important;}/*!important added*/
 .colorSparingGreen{color:#87CC33 !important;}
 .PadRight15{padding-right:15px !important;}
 .alertNew{color:#ff0000;}
@@ -5378,6 +5458,7 @@ table th.vertBase{vertical-align:baseline;}
 .MarLR10Force{margin: 0 10px !important;}
 .Mar20Pad15{margin: 0 20px; padding: 10px 0 15px 0;}
 .overage { background:url(../../images/global/iconError.png) left center no-repeat; padding-left:20px!important; color:#ff0000;line-height:15px;}
+.overageTop { background:url(../../images/global/iconError.png) left top no-repeat; padding-left:20px!important; color:#ff0000;line-height:15px;} /*WUP00683456*/
 .PadTop5{padding-top:5px !important;}
 .font12imp { font-size:12px !important;}
 .Mar17Pad15{margin: 0 17px; padding: 15px 0 15px 0;}/*change as per cxt review comments*/
@@ -5419,7 +5500,7 @@ table th.vertBase{vertical-align:baseline;}
 }
 .extend3o #groupTab ul li a.current{/*font-weight:bold;*/ background:#fff; top:-2px; color:#f47b20; height:60px;}
 .extend3o .hoverBG{background-color:#f0f0f0;}
-.extend3o #groupTab ul li.last, .extend3o .groupTabInd li.last {border-right:none; background:none;}
+.extend3o #groupTab ul li.last, .extend3o .groupTabInd li.last {border-right:none !important; background:none;}/* Given Imp to solve SDGP1a issue*/ 
 .extend3o .groupTabInd ul {height:44px;}
 .extend3o .groupTabInd li { border-right:none; height:44px; border-left:none; border-top:none; border-bottom:none; margin-right:0px; background: url("https://www.att.com/olam/images/brand30/secondary_nav_divider.gif") no-repeat bottom right;}
 .extend3o .groupTabInd li a{color:#333; font-size: 12px; margin:2px 0px 0px 0px;height:32px; }
@@ -5430,8 +5511,8 @@ table th.vertBase{vertical-align:baseline;}
 .extend3o #ie .groupTabInd li img.orangeImg{padding:4px 0px 0px 0px;}
 .extend3o #ie .groupTabInd li {top:0px;}
 
-.extend3o .tabGroupDiv .tabcontent { padding: 15px 0px 20px 0px;}
-.extend3o .tab-container div.tab-content{display:none;}
+.extend3o .tabGroupDiv .tabcontent { padding: 20px 10px 20px 10px;}/*Changed for SDG*/
+.extend3o .tab-container div.tab-content{display:block !important;} /*attribute important added to resolve QC - 1644*/
 .extend3o .tab-container table.usage-meter-table th, .extend3o .tabGroupDiv table.usage-meter-table th{width:170px;}
 .extend3o .tab-group-topBorder{border-top:1px solid #e3e3e3; border-bottom:none; border-left:none; border-right:none; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; margin-bottom:0px;}
 
@@ -5448,17 +5529,16 @@ table th.vertBase{vertical-align:baseline;}
 .extend3o .addDropDown{ z-index:0;}
 .extend3o .addDropDownGrp{background: none;}
 
-.extend3o .dropDownBGInd {background: url("http://portalmigration.att.net/myatt_3.0/olam/images/brand30/Gray_DropDownfull.png") no-repeat scroll center center transparent; float:right;top:-40px; height:291px; width:166px; position:absolute; right:0px; z-index:1000;}
-.extend3o .dropDownBGGrp{/*background: url("http://portalmigration.att.net/myatt_3.0/olam/images/brand30/Gray_DropDownfull.png") no-repeat scroll center center transparent;*/ float:right;top:-2px; height:291px; width:166px; position:absolute; right:-111px; z-index:1000;}
+.extend3o .dropDownBGInd {/*background: url("/olam/images/brand30/Gray_DropDownfull.png") no-repeat scroll center center transparent; */float:right;top:-40px; /*height:291px;*/ width:166px; position:absolute; right:0px; z-index:2000 !important;}
+.extend3o .dropDownBGGrp{/*background: url("/olam/images/brand30/Gray_DropDownfull.png") no-repeat scroll center center transparent;*/ float:right;top:-2px; /*height:291px;*/ width:166px; position:absolute; right:-111px; z-index:2000;}
 .extend3o .dropDownBGInd ul li, .extend3o .dropDownBGGrp ul li {margin-bottom:5px;}
-.extend3o .dropDownBGInd ul:first-child li a, .extend3o .dropDownBGGrp ul:first-child li a{cursor:auto;}
 .extend3o .dropDownBGInd ul li a,.extend3o .dropDownBGGrp ul li a {font-size:11px;}
-.extend3o .dropDownBGGrp ul li.selected , .extend3o .dropDownBGInd ul li.selected {background:url('../../images/global/usm/iconCheckMark.png') no-repeat 116px 0px;}
+.extend3o .dropDownBGGrp ul li.selected , .extend3o .dropDownBGInd ul li.selected {background:url('../../images/global/usm/iconCheckMark.png') no-repeat right 0px;}
 
 .extend3o .dropDownBGGrp .dropDownBotBG-Top ul,.extend3o .dropDownBGInd .dropDownBotBG-Top ul {padding:10px 2px;}
 .extend3o .dropDownBGGrp .dropDownBotBG-Top ul li,.extend3o .dropDownBGInd .dropDownBotBG-Top ul li{padding:0px 23px;}
 .extend3o .dropDownBGGrp .dropDownBotBG-Top ul li a:hover,.extend3o .dropDownBGInd .dropDownBotBG-Top ul li a:hover,.extend3o .dropDownBGGrp .dropDownMidBG ul li a:hover,.extend3o .dropDownBGInd .dropDownMidBG ul li a:hover {text-decoration:none;cursor:pointer;}
-.extend30 #primary-content .dropDownTopBG{ background: url('http://portalmigration.att.net/myatt_3.0/olam/images/brand30/Top_strip.png') no-repeat scroll 0 0 transparent; width:166px; height:56px; z-index:1000;}
+.extend30 #primary-content .dropDownTopBG{ background: url('https://www.att.com/olam/images/brand30/Top_strip.png') no-repeat scroll 0 0 transparent; width:166px; height:56px; z-index:1000;}
 .extend30 #primary-content .dropDownBGGrp .dropDownMidBG{ background: url("https://www.att.com/olam/images/brand30/Middle_strip.png") repeat scroll 0 0 transparent;}
 .extend30 #primary-content .dropDownBGGrp .dropDownBotBG-Top{ background: url("https://www.att.com/olam/images/brand30/Btm_Middle_strip.png") repeat scroll 0 0 transparent;}
 .extend30 #primary-content .dropDownBGGrp .dropDownBotBG-Bot{ background: url("https://www.att.com/olam/images/brand30/bottom_strip.png") no-repeat scroll 0 0 transparent;}
@@ -5470,14 +5550,14 @@ table th.vertBase{vertical-align:baseline;}
 .extend3o .dbAcctMyBill {
     float: left;
     min-height: 120px;
-    width: 302px;
-	}
+    width: 307px;
+	}/*Changed width from 302px for SDG shadow*/
 .extend3o .w599{float: left;
     margin: 0 14px 14px 0;
     width: 599px;}
 .extend3o .w630{float: left;
     margin: 0 14px 14px 0;
-    width: 630px;}
+    width: 625px;}/*previously 630px changed for shadow issue by SDG team*/	
 .extend3o .MyBillArrowBg {  background: url("https://www.att.com/olam/images/brand30/BG_Image.png") no-repeat scroll 0 0 transparent; height:185px}
 .extend3o .MyBillDDBg { background: url("https://www.att.com/olam/images/brand30/DropDown_Btn.png") no-repeat scroll 0 0 transparent; width: 239px;}
 
@@ -5506,15 +5586,16 @@ table th.vertBase{vertical-align:baseline;}
 .extend3o #content .no-top-round{-webkit-border-top-left-radius:0px; -webkit-border-top-right-radius:0px; -moz-border-radius-topleft:0px; -moz-border-radius-topright:0px; border-top-left-radius:0px; border-top-right-radius:0px }
 .extend3o .w230px{width:230px; float:left;}
 .extend3o #secondary-content .section-title h5.font16{font-size:16px;}
+#secondary-content .section-title h5.font16{font-size:16px;}/*adding non-extend3o version to resolve WUP00648657*/
 .extend3o #secondary-content .pad14{padding:14px;}
 .extend3o .ShadowForTab {
     -moz-box-shadow: #C0C0C0 0px -4px 10px;
 	-webkit-box-shadow: #C0C0C0 0px -4px 10px;
 	box-shadow: #C0C0C0 0px -4px 10px;	
 }
-.extend3o #ie .ShadowForTab{behavior: url(https://www.att.com/olam/css/js/PIE.htc);}
-.extend3o .ajaxtabs a.pad1003{padding:10px 3px;}
-.extend3o .ajaxtabs a.pad10{padding:10px 10px;}
+/*.extend3o #ie .ShadowForTab{behavior: url(js/PIE.htc);}*/
+.extend3o .ajaxtabs a.pad1003, .extend3o .myattajaxtabs a.pad1003{padding:10px 3px;}
+.extend3o .ajaxtabs a.pad10, .extend3o .myattajaxtabs a.pad10{padding:10px 10px;}
 /* Adding this to support old layout till SPRINT2*/
 .bgGradient {
     background: url("https://www.att.com/olam/images/brand30/global/bg-billing.png") repeat-x scroll 0 0 transparent !important;
@@ -5540,7 +5621,7 @@ table th.vertBase{vertical-align:baseline;}
 .extend3o .w98{width:102px!important;}
 .extend3o .myMsgLast{border-bottom:none;-moz-border-radius: 5px 5px 5px 5px;}
 .extend3o .styled_forms span.textInput-wrapper span.error {
-    background: url("http://www.att.com/images/global/forms/input-right-err.gif") no-repeat scroll 0 1px transparent;
+    background: url("../../images/global/forms/input-right-err.gif") no-repeat scroll 0 1px transparent;
     display: inline-block;
     height: 26px;
     margin-right: 2px;
@@ -5558,7 +5639,7 @@ table th.vertBase{vertical-align:baseline;}
     width: 972px;
 }
 .extend3o .w135{width:135px;}
-.extend3o .w119{width:119px;}
+.extend3o .w119{width:119px; min-height:1px;} /*fix for WUP00648284*/
 .extend3o .w470{width:470px;}
 .extend3o .w46{width:46px;}
 .extend3o .alertMsg p:first-child { color:#fd0200; background:url(../../images/global/iconError46x43.png) center left no-repeat; padding:14px 14px 15px 50px; margin-bottom:0px;}
@@ -5608,7 +5689,7 @@ table th.vertBase{vertical-align:baseline;}
 	text-align: right  !important;
 	background: #fff;
 	font-size: 1.1em  !important;
-	background: #fff url('https://www.att.com/olam/css/..olam/images/brand30/gradient.jpg') top left repeat-x;
+	background: #fff url('https://www.att.com/olam/images/brand30/gradient.jpg') top left repeat-x;
 	}
 .extend3o .popupGlobal-close { 	
 	position: absolute;
@@ -5701,7 +5782,7 @@ table th.vertBase{vertical-align:baseline;}
 	box-shadow: #C0C0C0 0px 0px 6px ;
 	-webkit-box-shadow: #C0C0C0 0px 0px 6px ;
 	-moz-box-shadow: #C0C0C0 0px 0px 6px ;
-	behavior: url(https://www.att.com/olam/css/js/PIE.htc);	
+	/*behavior: url(js/PIE.htc);*/
 	}	
 	.extend3o .FPORightDiv{
 	width:485px;float:right;padding:50px 50px 0px 0;
@@ -5715,7 +5796,7 @@ table th.vertBase{vertical-align:baseline;}
 	.extend3o .FPORightSecDiv{padding-left: 30px; padding-top: 10px;}	
 	.extend3o .FPOGAMDiv{ float: left;
     padding-top: 10px;
-    width: 225px;}	
+    width: 350px;}	
 	.extend3o .FPOLastDiv{padding-top: 10px;}
 	.extend3o .FPOLastDiv a{font-size:10px;}
 	.extend3o .FPOLastDiv p{font-size:10px;color: #7A7A7A;}
@@ -5744,7 +5825,7 @@ table th.vertBase{vertical-align:baseline;}
 	box-shadow: #E6E0E0 0px 0px 4px ;
 	-webkit-box-shadow: #E6E0E0 0px 0px 4px ;
 	-moz-box-shadow: #E6E0E0 0px 0px 4px ;
-	behavior: url(https://www.att.com/olam/css/js/PIE.htc);
+	/*behavior: url(js/PIE.htc);*/
 	margin-bottom:13px;
 	height: 41px;
 	width: 965px;
@@ -5762,7 +5843,7 @@ table th.vertBase{vertical-align:baseline;}
 	box-shadow: #C0C0C0 0px 0px 6px ;
 	-webkit-box-shadow: #C0C0C0 0px 0px 6px ;
 	-moz-box-shadow: #C0C0C0 0px 0px 6px ;
-	behavior: url(https://www.att.com/olam/css/js/PIE.htc);
+	/*behavior: url(js/PIE.htc);*/
 	}
 	.extend3o #ie.PaperlessBillMainDiv{	
 	height:453px;	
@@ -5775,8 +5856,8 @@ table th.vertBase{vertical-align:baseline;}
 	.extend3o .PaperlessRightSecDiv{padding-left: 57px; padding-top: 10px;}
 	.extend3o .PaperlessChecklinkDiv{padding-left: 15px;padding-top:0px;}
 	.extend3o .PaperlessGreenChPara{color: #7A7A7A; margin-bottom: 5px;}
-	.extend3o .PaperlessNoThanksDiv{float:left;width:200px; padding-top:15px;}
-	.extend3o .PaperlessNoThanksButDiv{float:right;padding-top:5px;}
+	.extend3o .PaperlessNoThanksDiv{float:right;width:200px; padding-top:15px;} /* changing to float right as per WUP00640424*/
+	.extend3o .PaperlessNoThanksButDiv{float:left;padding-top:5px;} /* changing to float left as per WUP00640424*/
 	.extend3o .PaperlessLastDiv{padding-left: 25px; padding-top: 30px;}
 	.extend3o .PaperlessContentdivBot{Margin-bottom:3px;}
 	.extend3o #ie .PaperlessContentdivBot{Margin-bottom:0px;}
@@ -5788,7 +5869,7 @@ table th.vertBase{vertical-align:baseline;}
 	box-shadow: #C0C0C0 0px 2px 4px ;
 	-webkit-box-shadow: #C0C0C0 0px 2px 4px  ;
 	-moz-box-shadow: #C0C0C0 0px 2px 4px  ;
-	behavior: url(https://www.att.com/olam/css/js/PIE.htc);
+	/*behavior: url(js/PIE.htc);*/
 	margin-bottom:13px;
 	height: 41px;
 	width: 969px;
@@ -5796,6 +5877,8 @@ table th.vertBase{vertical-align:baseline;}
 	.extend3o #ie.PaperlessPreFooter{
 	margin-top:-16px !important;
 	}	
+	.en_US  .spanishWidth100 {width:100px !important;} /*WUP00640424 - adding this definition as the Spanish button is longer*/
+
 /*SPRINT 2 -Login style ends*/
 
 /*WOPA CR-53188*/
@@ -5850,7 +5933,7 @@ background: -o-linear-gradient(#FFFFFF, #F5F5F5);
 box-shadow: #E6E0E0 2px 0px 2px ;
 -webkit-box-shadow: #E6E0E0 2px 0px 2px ;
 -moz-box-shadow: #E6E0E0 2px 0px 2px ;
-behavior: url(https://www.att.com/olam/css/js/PIE.htc);
+/*behavior: url(js/PIE.htc);*/
 }
 .alertRedForce{color:#ff0000 !important;} /*Added to provide the consistent red color as per defect WUP0059431*/
 .extend3o .greyColorText{ Color: #A0A0A0!important;}
@@ -5947,10 +6030,10 @@ behavior: url(https://www.att.com/olam/css/js/PIE.htc);
 .extend3o  #ie .PadBot0ie{padding-bottom:0px !important;}
 .extend3o .normalFontWeight{font-weight:normal !important;}
 .extend3o .normalFont {font-weight: normal !important;}
-.extend3o .MarTop5{padding-top:5px;}
+.extend3o .MarTop5{margin-top:5px;}/*changed form padding to margin*/
 .right1{text-align: right;padding-right:15px;list-style="display-none"}
 .extend3o .noPadding{padding:0px !important;}
-.extend3o #ie .ie7MarTop0{margin-bottom:0px;}
+/*.extend3o #ie .ie7MarTop0{margin-bottom:0px;}*/
 
 /*Redundant classes ends here  - Not to be used further*/
 
@@ -5963,7 +6046,7 @@ behavior: url(https://www.att.com/olam/css/js/PIE.htc);
 /*Converged STARTS*/
 /*Passthru Login*/
 
-.w260{width:260px;}
+.w260{width:260px!important;}
 .PadLeft15{padding-left:15px;}
 .Padbot0{padding-bottom:0px !important;}
 .top-3px{top:-3px !important;}
@@ -6021,8 +6104,8 @@ behavior: url(https://www.att.com/olam/css/js/PIE.htc);
 /* ---- */
 
 /*GVP STYLES*/
-/*.extend3o .GVPVideoIcon {background:url(/olam/english/brand30/video-camera-icon.gif) no-repeat right 4px;padding-right:20px;}*/
-/*.extend3o .GVPVideoIcon:after{content:url(/olam/english/brand30/video-camera-icon.gif);}*/
+/*.extend3o .GVPVideoIcon {background:url(/olam/images/brand30/video-camera-icon.gif) no-repeat right 4px;padding-right:20px;}*/
+/*.extend3o .GVPVideoIcon:after{content:url(/olam/images/brand30/video-camera-icon.gif);}*/
 .extend3o .GVPVideoIcon{background:none}
 .extend3o .GVPVideoIcon img{position:relative;top:0px !important;padding-left:5px;border-bottom:2px solid white !important}
 .extend3o #ie .GVPVideoIcon img{;border-bottom:none !important}
@@ -6100,7 +6183,6 @@ margin: 0 40px 0 15px;
 body.NewLoginbgGradient{
 	background: url("https://www.att.com/olam/images/brand30/Interstitial_bg.png") repeat-x scroll left top transparent;
 }
-*/
 
 /* WUP00610997 */
 #ie .section-title, .extend3o #ie .section-title{
@@ -6116,7 +6198,7 @@ body.NewLoginbgGradient{
 	z-index: 999 !important;	
 }
 
-.redtxt{color:#FD0200}
+.redtxt{color:#FF0000}/*FD0200 to FF0000*/
 
 .alignImage {
     float: left;
@@ -6172,7 +6254,963 @@ body.NewLoginbgGradient{
 	font-size: 12px;
 }
 /*End of addition for WUP00621197. */
-.Padbot10{padding-bottom:10px !important;}/*updating the class for WUP00625596*/
-.extend3o #ie .w435{width:435px !important;} /* fix for WUP00623973. IE specific as the issue occurs in IE alone */
 .extend3o .PadRight28{padding-right:28px !important;}/*fix for wireline history page alignment issue*/
 .PadRight28{padding-right:28px !important}/*fix for wireline history page alignment issue*/
+.Padbot10{padding-bottom:10px !important;}/*updating the class for WUP00625596*/
+.extend3o #ie .w435{width:435px !important;} /* fix for WUP00623973. IE specific as the issue occurs in IE alone */
+/*WUP00636904*/
+.extend3o .labelModal label{float: left;}
+.extend3o .labelModal  .helpDiv{float: left; width:25px;}
+/* End of WUP00636904 changes*/
+/*WUP00638170 */
+.extend3o #ie .MarLeft17IE {margin-left:17px !important;}
+.extend3o #ie .rightArrowIE  dd{line-height:14px;}
+/*WUP00639953*/
+.styled_forms.modalForms label {
+    font-weight: bold; 
+    line-height: 1.9em;
+}
+.extend3o .styled_forms .botMar5{margin-bottom:5px;}
+.extend3o .safariComp .helpDiv{float: left; width:25px; margin-right:7px}
+.extend3o .w253{width:253px!important;}
+.w253{width:253px!important;}
+.top2px{top:2px !important;}
+.MarLeft77 {margin-left:77px!important;}
+.right { text-align:right !important }
+.styled_forms > div{margin-bottom:15px;}
+
+.modalForms label, .modalForms dd p{margin-bottom:.5em}
+
+.safariComp .helpDiv{float: left; width:25px; margin-right:7px}
+
+.MarTop4{margin-top:4px;}
+
+#ie .ie7MarTop0{margin-top:0px !important;}
+
+#ie .styled_forms .tipPad .tooltips{
+                
+                margin-right:7px;
+                top:6px;
+                vertical-align:top !important;
+}
+
+
+/* Adding for WUP00636822*/
+.TopDotBorder,  tr.TopDotBorder td {border-top: 1px dotted #E5E5E5}
+
+.forceRight {text-align: right !important;}
+/* WUP00638124 */
+#segMenuBar #segMenuItemLinkedAccounts {
+    min-width: 155px; /*updated for WUP00643084*/
+    width: auto;
+}
+#segMenuBar .segMenu li a.segMenuItem.hasSubMenu span {
+    padding-right: 35px;
+}
+/* WUP00638938 */
+#segMenuBar div.segSubMenu ul li {
+    color: #515151;
+    font-size: 12px;
+}
+/*WUP00638901 */
+#segMenuBar .segMenu li a.segMenuItem.selectedChevron {
+    background-position: left -68px;
+    color:#ffffff;
+}
+#segMenuBar .segMenu li a.segMenuItem.selectedChevron span {
+    background-position: right -68px;
+}
+#segMenuItemLinkedAccountsMenu {min-width: 180px;}
+#segMenuItemInternationalMenu {min-width:105px;}
+#segMenuItemBusinessMenu {min-width:100px;}
+/*OCPA CR 62173*/
+.extend3o .modalContent .modalAccAlign ul {
+    display: inline;
+    float: left;
+    line-height: 0;
+    min-height: 0;
+}
+.extend3o .modalContent .modalAccAlign li {
+    display: inline;
+    line-height: 16px !important;
+    white-space: nowrap;
+}
+.extend3o .section-title .accountSectionTitle p {
+    float: left;
+    padding-top: 15px;
+}
+.extend3o .MarLeft24  .bt_left span.PadRight10 {position:relative; top:-4px;}
+.extend3o #ie  .MarLeft24  .bt_left span.PadRight10 {position:relative; top:-3px; padding-right:6px;}
+.extend3o .MarLeft24   ul.bt_left {padding-top:7px;}
+.extend3o  #ie  .MarLeft24   ul.bt_left {padding-top:8px;}
+/*End of OCPA CR 62173*/
+.extend3o .styled_forms .tipPad.safariComp .tooltips{                
+                margin-right:7px;
+                top:1px;
+                vertical-align:baseline !important;
+} 
+/*begin-added to support without extend3o*/
+.styled_forms .tipPad.safariComp .tooltips{
+	margin-right:7px;
+	top:1px;
+	position:relative;
+	vertical-align:baseline !important;
+} 
+#ie .styled_forms .tipPad .tooltips{
+	margin-right:7px;
+	top:6px;
+	position:relative;
+	vertical-align:top !important;
+} 
+.styled_forms .safariComp .radioGrp {top:2px !important;}
+#ie .styled_forms .safariComp .radioGrp {top:-5px !important;}
+.styled_forms .safariComp .radioGrp label{margin-bottom:2px;}
+.modalForms .safariComp div.w253 {margin-right:2px!important}
+.PadLeft286{padding-left:286px;}
+.MarTop5{margin-top:5px;}
+.styled_forms .safariComp .clear{padding:0px !important; height:0px !important;}
+.botMar15Force{ margin-bottom:15px !important;}
+.styled_forms .safariComp .w320{ width:320px; Margin-bottom:0px !important;}
+/*end-added to support without extend3o*/
+/*WUP00642588*/
+.extend3o .styled_forms .safariComp span.textInput-wrapper input{padding:1px!important; margin:2px 3px 0 5px;}
+#ie .top1pxie{top:1px !important;}/*non extend3o to provide definition as required by WUP00643263*/
+/* WUP00645471 */
+.extend3o #loginBubble2{
+	background: transparent url("https://www.att.com/olam/images/brand30/global/bubble_bottom2.png") no-repeat left bottom !important;
+	border:none !important;
+	top:87px !important;
+	left:0px !important;
+	width:252px !important;
+	padding:0px !important;
+	box-shadow:none !important;
+	filter:none !important;
+}
+.extend3o #loginBubble2>div{	
+	padding:30px 20px 0px 25px !important;
+	top:-87px !important;
+	position:relative !important;
+	z-index:99 !important;	
+}
+.extend3o #loginBubble2>div ul{
+	background: transparent url("https://www.att.com/media/att/2012/homepage/bubble_separator.png") no-repeat left -10px !important;
+	padding-top:30px !important;
+	margin-left:15px !important;
+}
+.extend3o #loginBubble2>div ul li{list-style:disc none outside !important;}
+.extend3o #loginBubble2>div ul li span{margin-left:0 !important}
+.extend3o #loginBubble2 ul li{ list-style: disc inside none; margin-bottom:10px;}
+.extend3o #loginBubble2 ul li span{ margin-left:12px;}
+.extend3o #ie #loginBubble2 ul li span{ margin-left:16px;}
+/*WUP00645446*/
+.tableTextWrap{ word-wrap:break-word; table-layout:fixed;}
+/*WUP00643590 */
+.extend3o #secondary-content #askQuestion {padding-bottom:9px !important;}
+.extend3o  #ie .Padbot10ie{padding-bottom:10px !important;}/*WUP00648271*/
+.extend3o .radio {vertical-align: middle!important;}/*WUP00648383*/
+/*WUP00649844*/
+.changeImage a .hoverIcon, .changeImageBg a .hoverIcon {left:-12px}
+.changeImageBg a.changeHover img{left:9px}
+/*WUP00649824*/
+/*#ie .usm_scroll li{left:-20px !important}
+.usm_scroll{left:0px !important}*/
+/*WUP00649806*/
+.extend3o #ie .modalAccAlign .PadRight10 {padding-right:5px!important;}
+#ie  span.MarLeft5.PadRight10.font16{padding-right:5px!important;}
+/*WUP00648818*/
+.w190{width:190px!important;} 
+.w235{width:235px!important;}
+.top4px{top:4px !important;}
+/*WUP00648818*/
+.extend3o .styled_forms_label255 > div > label:first-child {width:255px !important}/*WUP00650571*/
+.extend3o .MarLeft74{margin-left:74px ;}
+/*WUP00653324*/
+.extend3o .inline-links a.begin {margin-right:5px!important;}
+.inline-links a.begin {margin-right:5px!important;}
+/*WUP00642388*/
+.btnRt img {vertical-align: middle;}
+.extend3o .btnRt img {vertical-align: middle;}
+/*WUP00656918*/
+.extend3o .bottom14 {position:absolute; bottom:14px;}
+.btn {
+border-top:1px solid #DBDBDB;
+padding:20px 0;
+margin: 0 25px 0 25px;
+width:655px;
+margin-right:14px 
+}
+/*START:SDG Common to Usage And Dashboard */
+.extend3o .meter-container .normal-interior{background:url("https://www.att.com/olam/images/brand30/usage_meter/Green-interior.png") 0 0 repeat-x;}
+.extend3o .meter-container .warning-interior{background:url("https://www.att.com/olam/images/brand30/usage_meter/Yellow-interior.png") 0 0 repeat-x;}
+.extend3o .meter-container .alert-interior{background:url("https://www.att.com/olam/images/brand30/usage_meter/Red-interior.png") 0 0 repeat-x;}
+.extend3o .meter-container .alert-inv-interior{background:url("https://www.att.com/olam/images/brand30/usage_meter/Red-inverted.png") no-repeat left;}
+.extend3o #ie .meter-container .normal-interior{background:url("https://www.att.com/olam/images/brand30/usage_meter/Green.png") no-repeat right;}
+.extend3o #ie .meter-container .warning-interior{background:url("https://www.att.com/olam/images/brand30/usage_meter/Yellow.png") no-repeat right;}
+.extend3o #ie .meter-container .alert-interior{background:url("https://www.att.com/olam/images/brand30/usage_meter/Red.png") no-repeat right;}
+.extend3o .SDGContextUpsellWebOverA{float:left;}
+.extend3o .SDGContextUpsellWebOverP{float:left;padding-right:10px;}
+.extend3o .planSeparator{background:url(https://www.att.com/olam/images/brand30/global/PlanSeparator.png) 50% 0 no-repeat;min-height:32px}
+.extend3o .SDGShowMore{background:url("https://www.att.com/olam/English/brand30/showMore.png") 65% 0 no-repeat;padding-left:470px;padding-bottom:5px;}
+.extend3o .SDGShowLess{background:url("https://www.att.com/olam/English/brand30/showLess.png") 65% 0 no-repeat;padding-left:470px;padding-bottom:5px;}
+/*Usage divider arrow image*/
+.extend3o .sprint-usageDivider-container-warning  .usageDivider-arrow{background: url(https://www.att.com/olam/images/brand30/yellow_arrow.png) left bottom no-repeat;height:38px;position:relative}
+.extend3o .sprint-usageDivider-container-normal .usageDivider-arrow{background: url(https://www.att.com/olam/images/brand30/green_arrow.png) left bottom no-repeat;height:38px;position:relative}
+.extend3o .sprint-usageDivider-container-alert .usageDivider-arrow{background: url(https://www.att.com/olam/images/brand30/red_arrow.png) left bottom no-repeat;height:38px;position:relative}
+.extend3o .sprint-usageDivider-container-warning  .usageDivider-arrow{top:-2px;}
+.extend3o .lengthier_section_divider{background: url(https://www.att.com/olam/images/brand30/lengthier_section_divider.png) no-repeat;}
+.extend3o a.showMoreLess:hover{text-decoration:none !important;}
+.extend3o a.showMoreLess{text-decoration:none !important;}
+.extend3o .usage-meter-table span.font14{font-size:14px!important;}
+.extend3o .planSeparator a{outline:none}
+.extend3o .SDGusageTypeLabelOverage a.tooltips{padding-left:3px;}
+.extend3o .SDGcycle{margin-bottom:25px;margin-top:5px;} /*Margin-top 5px added to resolve the padding issue if Account Nickname was not present*/
+.extend3o .SDGSecHeaderP{font-size:20px;padding-left:15PX;padding-bottom:0px !important;}
+.extend3o .SDGSecHeader{float:left;width:15.6%;} /*WUP00700004 changed from 104px to resolve issues when zooming*/
+.extend3o .SDGPlans{float:left;width:84.4%;margin-top:5px;} /*WUP00700004 changed from 563px to resolve issues when zooming*/
+.extend3o .SDGusageTypeLabel{padding-bottom:2px;}
+.extend3o .SDGusageTypeLabelOverage{float:left;padding-top:3px ;padding-left:4px;padding-right:5px;}
+.extend3o .SDGWebLearnOverage{padding-left:132px;}
+.extend3o .SDGWebOverageContainer {padding-top:10px;padding-bottom:15px;}
+.extend3o .SDGPlanHeaderP{font-size:14px;margin-bottom:0px}
+.extend3o .SDGUsageTypeLabelP{float:left;margin-bottom:5px;}
+.extend3o .SDGUsageAmountLabel{font-size:11px;margin-top:5px;color:#333!important;float:left;}
+.extend3o .SDGusageType{margin-left:10px;padding-top:7px;}
+.extend3o .SDGRollOverLabel{margin-top:5px;}
+.extend3o .SDGRollOverLabelP{font-size:11px;margin-bottom:0px;}
+.extend3o .SDGText{padding-top:20px;}
+.extend3o .SDGWeb{padding-top:20px;}
+.extend3o .SDGLinksAtTop{margin-bottom:0px; float:right; padding-top:3px;}
+.extend3o .SDGPlanContainer{padding-bottom:20px;}
+.extend3o .SDGRatePlan{float:left;width:346px;}
+.extend3o .SDGDataCalculator{top:-3px;padding-left:3px;}
+.extend3o .SDGusageType  .usageDivider-arrow{top:-1px !important;}	/*Added to match the triangle with the Usage and comps*/
+.extend3o .SDGusageType  .usageDivider-arrow .sprintUsageDividerTextDB{top:10px !important;}	/*Added to match the triangle with the Usage and comps*/
+.extend3o #ie .SDGusageTypeLabel .tooltips{padding-left:5px;}
+.extend3o .SDGUnlimitedP{margin-bottom:0px;font-size:11px;line-height:24px;}
+.extend3o  .prorationUsageOv p{line-height:24px;}
+.extend3o .SDGUnlimitedLabel{font-size:14px;color:#70940E;font-weight:bold;}
+.extend3o .SDGUnlimitedValue{font-size:12px;font-weight:bold;color:#333333;}/*color changed for WUP00701488*/
+.extend3o .SDGUsageTypeUnlimited{padding-top:15px;}
+.extend3o p.SDGWebOverageP1{color:#FF0000;float:left;font-size:12px; margin-bottom:0px; line-height:22px;}/*red to ff0000*/
+.extend3o p.SDGWebOverageP2{padding-top:0px;padding-left:5px;float:left;font-size:12px; margin-bottom:0px; line-height:22px;}
+.extend3o .SDGUsageTypeUnlimitedCTN{padding-top:7px;}
+.extend3o .SDGUsageTypeUnlimitedCTN .SDGUsageTypeLabelP{margin-bottom:0px;}
+.extend3o .SDGShowMore{background:url("https://www.att.com/olam/English/brand30/showMore.png") 65% 0 no-repeat;padding-left:470px;padding-bottom:5px;}
+.extend3o .SDGShowLess{background:url("https://www.att.com/olam/English/brand30/showLess.png") 65% 0 no-repeat;padding-left:470px;padding-bottom:5px;}
+.extend3o .SDGLinksAtBottomCTN{padding-bottom:25px;}
+/*END:SDG Common to Usage And Dashboard */
+
+/*START:SDG Common to Usage And Dashboard and WLP*/
+.extend3o .groupTabInd li.last {border-left:none !important;}
+.extend3o .groupTabInd li a.current{color:#ffffff; /*background:#f47b20;*/ background: url("https://www.att.com/olam/images/brand30/dashboardSelector.png") repeat-x scroll center center transparent; margin:2px 4px 0px 2px;height:32px;}/*Changed repeat position to repeat-x to occupy the orange BG entire width-Hussain*/
+.extend3o #MainTab li img{padding:17px 5px 5px 15px; margin-top:7px;}
+.extend3o .tab-group-topBorder{border-top:1px solid #e3e3e3; border-bottom:none; border-left:none; border-right:none; -webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px; margin-bottom:0px;z-index:9000px;}/*Z-index is given to make the drop down come properly*/
+.extend3o #subPage  .dropDownBotBG-Top   .addLine{ padding: 0px 0px 0px 25px; /*background: url("/olam/images/brand30/Plus_Img1.png") no-repeat scroll left center transparent !important;*/background: url("https://www.att.com/olam/images/brand30/add_button.png") no-repeat scroll left center transparent !important;} /*background image is Changed By SDG Phase One team to have better Image with shadow for the Plus image in Dropdown*/
+.extend3o #SDG #subPage  .dropDownBotBG-Top   .addLine{ padding: 0px 0px 0px 25px; background: url("https://www.att.com/olam/images/brand30/add_button.png") no-repeat scroll left center transparent !important;}
+.extend3o #ie  .dropDownBGGrp{z-index:1000001 !important;}
+
+.extend3o .dropDownBGInd .cancelDD.dropDownBotBG-Top ul.ajaxtabsMain li,.extend3o .dropDownBGGrp .cancelDD.dropDownBotBG-Top ul.ajaxtabsMain li{padding:0px 0px;}
+.extend3o .dropDownBGGrp .dropDownBotBG-Top ul li a:hover,.extend3o .dropDownBGInd .dropDownBotBG-Top ul li a:hover,.extend3o .dropDownBGGrp .dropDownMidBG ul li a:hover,.extend3o .dropDownBGInd .dropDownMidBG ul li a:hover {text-decoration:none;cursor:pointer;z-index:9000;}
+.extend30 #primary-content .dropDownTopBG{ background: url('https://www.att.com/olam/images/brand30/Top_strip.png') no-repeat scroll 0 0 transparent; width:166px; height:56px; z-index:9000;}
+.extend30 #primary-content .dropDownBGGrp .dropDownMidBG{ background: url("https://www.att.com/olam/images/brand30/Middle_strip.png") repeat scroll 0 0 transparent;z-index:9000;}
+.extend30 #primary-content .dropDownBGGrp .dropDownBotBG-Top{ background: url("https://www.att.com/olam/images/brand30/Btm_Middle_strip.png") repeat scroll 0 0 transparent;z-index:9000;}
+.extend30 #primary-content .dropDownBGGrp .dropDownBotBG-Bot{ background: url("https://www.att.com/olam/images/brand30/bottom_strip.png") no-repeat scroll 0 0 transparent;z-index:9000;}
+.extend30 #primary-content .topStripImg{background: url('https://www.att.com/olam/images/brand30/Top_strip.png') no-repeat scroll 0 0 transparent; width:166px; height:56px;}
+.extend30 #primary-content .midStripImg{background: url('https://www.att.com/olam/images/brand30/Middle_strip.png') repeat scroll 0 0 transparent; width:166px;}
+.extend30 #primary-content .midBtmStripImg{background: url('https://www.att.com/olam/images/brand30/Btm_Middle_strip.png') repeat scroll 0 0 transparent; width:166px; border-top:1px solid #e3e3e3;}
+.extend30 #primary-content .btmStripImg{background: url('https://www.att.com/olam/images/brand30/bottom_strip.png') no-repeat scroll 0 0 transparent; width:166px; height:9px;}
+.extend3o .ajaxtabs a.pad120310, .extend3o .myattajaxtabs a.pad120310{padding-top:12px!important; padding-bottom:10px!important;padding-right:3px!important;padding-left:3px!important;}
+.extend3o .ajaxtabs a.pad100310, .extend3o .myattajaxtabs a.pad100310{padding-top:10px!important; padding-bottom:10px!important;padding-right:3px!important;padding-left:3px!important;}
+.extend3o #subTabMain.groupTabInd li a.current {
+    background: url("https://www.att.com/olam/images/brand30/dashboardSelector.png") repeat scroll center center transparent;
+    color: #FFFFFF;
+    height: 32px;
+	
+    margin: 2px 4px 0 2px;
+}
+
+.extend3o  #SDG #subTabMain.groupTabInd li a.current{color:#ffffff; /*background:#f47b20;*/ top:-1px;background: url("https://www.att.com/olam/images/brand30/dashboardSelector.png") repeat-x scroll center center transparent; margin:2px 4px 0px 2px;height:34px;}/*Added for red line issue*/
+.extend3o  .IndPlan  a.current{background-repeat:repeat-x !important;}
+.extend3o  #subTabMain.groupTabInd li a.currentTab{color:#ffffff; /*background:#f47b20;*/ background: url("https://www.att.com/olam/images/brand30/dashboardSelector.png") repeat-x scroll center center transparent; margin:2px 4px 0px 2px;height:32px;}
+/*START: Fix Comment given on DEC-6*/
+.extend3o .top-48px{top:-48px !important;}/*Dont reuse this Style for any request other than SDG*/
+.extend3o #groupTab #MainTab   li a{font-size:12px;font-weight:bold;}
+.extend3o #groupTab #MainTab   li a span.top-8px{font-weight:bold;}
+.extend3o #groupTab #MainTab   li a.current span.top-48px{color:#333;}
+.extend3o #groupTab #MainTab   li a span.top-48px{font-size:11px;}
+.extend3o #subPage li.selected a{ color:gray; cursor:default !important;}
+.extend3o #mainPage li.selected a{ color:gray; cursor:default !important;}
+.extend3o #subPage li.selected a:hover{ text-decoration:none !important;}
+.extend3o #mainPage li.selected a:hover{ text-decoration:none !important;}
+/*END: Fix Comment given on DEC-6*/
+.extend3o  #SDG  #groupTab.section-title{z-index:4 !important;}
+.extend3o .cancelAccAlert{ cursor:pointer; background:url("https://www.att.com/olam/images/brand30/iconErrorNew.png") left center no-repeat; padding-left:15px!important; display:inline-block; height:15px; vertical-align:middle;}
+/*START : Classes Added to fix Inline Styles*/
+.extend3o .SDGBStrpImgTop{background: url('https://www.att.com/olam/images/brand30/Top_strip.png') no-repeat scroll 0 0 transparent; width:166px; height:56px; z-index:9000;}
+.extend3o .SDGBStrpImgTop6kZi{background: url('https://www.att.com/olam/images/brand30/Top_strip.png') no-repeat scroll 0 0 transparent; width:166px; height:56px; z-index:9000;}
+.extend3o .SDGBStrpImgMid{background: url('https://www.att.com/olam/images/brand30/Btm_Middle_strip.png') repeat scroll 0 0 transparent; width:166px; z-index:1000; border-top:1px solid #e3e3e3; z-index:9000}
+.extend3o .SDGBStrpImg{background: url('https://www.att.com/olam/images/brand30/Btm_Middle_strip.png') repeat scroll 0 0 transparent; width:166px; z-index:1000; border-top:1px solid #e3e3e3; z-index:9000}
+.extend3o .SDGBStrpImgWithoutBrd{background: url('https://www.att.com/olam/images/brand30/bottom_strip.png') no-repeat scroll 0 0 transparent; width:166px; height:9px; z-index:9000;}
+.extend3o .SDGBStrpImgMiddle{background: url('https://www.att.com/olam/images/brand30/Middle_strip.png') repeat scroll 0 0 transparent; width:166px; z-index:1000;}
+/*End: Classes Added to fix Inline Styles*/
+/*Styles Addes to Remove inline in Dropdown Starts*/
+#subPage.DDPos{left:672px;top:-50px;z-index:12;}
+
+#subPage .middleStripDDBg{background: url('https://www.att.com/olam/images/brand30/Middle_strip.png') repeat scroll 0 0 transparent; width:166px; z-index:12;/*z-index:1000; Commented by SDG Phase One Team To Solve a issue*/}
+#subPage .dropDownMidBG .Pad1025{padding:10px 25px;}
+#subPage .dropDownMidBG .Pad10251007{padding:10px 25px 10px 7px;}
+#subPage .dropDownBotBG-Top  ul.ajaxtabsMain.Pad10251007{padding:10px 25px 10px 7px;}
+#mainPage .dropDownMidBG .Pad10251007{padding:10px 25px 10px 7px;}
+#mainPage .dropDownBotBG-Top  ul.ajaxtabsMain.Pad10251007{padding:10px 25px 10px 7px;}
+#subPage .InvisibleStripTopDDBg{background: url('https://www.att.com/olam/images/brand30/Btm_Middle_strip.png') repeat scroll 0 0 transparent; width:166px;z-index:12;/*z-index:1000; Commented by SDG Phase One Team To Solve a issue*/ border-top:1px solid #e3e3e3;}
+#subPage .InvisibleStripBotDDBg{background: url('https://www.att.com/olam/images/brand30/bottom_strip.png') no-repeat scroll 0 0 transparent; width:166px; height:9px; z-index:12;/*z-index:1000; Commented by SDG Phase One Team To Solve a issue*/}
+#subPage .topStripDDBg{background: url('https://www.att.com/olam/images/brand30/Top_strip.png') no-repeat scroll 0 0 transparent; width:166px; height:56px; z-index:12;/*z-index:1000; Commented by SDG Phase One Team To Solve a issue*/}
+
+#mainPage.DDPos{left:672px;top:-50px;z-index:12;}
+#mainPage .middleStripDDBg{background: url('https://www.att.com/olam/images/brand30/Middle_strip.png') repeat scroll 0 0 transparent; width:166px; z-index:12;/*z-index:1000; Commented by SDG Phase One Team To Solve a issue*/}
+#mainPage .dropDownMidBG .Pad1025{padding:10px 25px;}
+#mainPage .InvisibleStripTopDDBg{background: url('https://www.att.com/olam/images/brand30/Btm_Middle_strip.png') repeat scroll 0 0 transparent; width:166px; z-index:12;/*z-index:1000; Commented by SDG Phase One Team To Solve a issue*/ border-top:1px solid #e3e3e3;}
+#mainPage .InvisibleStripBotDDBg{background: url('https://www.att.com/olam/images/brand30/bottom_strip.png') no-repeat scroll 0 0 transparent; width:166px; height:9px; z-index:12; /*z-index:1000; Commented by SDG Phase One Team To Solve a issue*/}
+#mainPage .topStripDDBg{background: url('https://www.att.com/olam/images/brand30/Top_strip.png') no-repeat scroll 0 0 transparent; width:166px; height:56px; z-index:12;/*z-index:6000; Commented by SDG Phase One Team To Solve a issue*/ }
+/*Styles Addes to Remove inline in Dropdown Ends*/
+#subTabMain img.addDropDown{padding-left:17px; position:relative; top:2px;}
+#groupTab img.addDropDownGrpAcc{position:relative; top:2px;}
+/*END:SDG Common to Usage And Dashboard and WLP*/
+
+
+/*START:SDG Common to All SDG Modules i.e billing profile usage dashboard services*/
+	.extend3o .PadTopBot5{padding-top:5px;padding-bottom:5px}
+	.extend3o .minHeight1PerCent {min-height:1%;}
+	 #OtherBowser .forceTop4pxFF{top:4px !important;}
+	.extend3o table.SDPDataUsageTableCTN td.right {padding-right:30px;}
+	.extend3o .forcePadLeft18{padding-left:18px !important;}
+	.extend3o #ie .vtop1 .radioGrp{padding-top:0px !important;top:-1px !important}
+	.extend3o #ie .vtop1 .padTop2{padding-top:0px !important;}
+	.extend3o .ClearNewForUSM{clear:both;}
+	.extend3o #ie .ClearNewForUSM{margin:0px!important;padding-left:0px!important;padding-right:0px!important;padding-bottom:0px!important;padding-top:0px}
+	.ClearNewForUSM{clear:both;}
+	 #ie .ClearNewForUSM{margin:0px!important;padding-left:0px!important;padding-right:0px!important;padding-bottom:0px!important;padding-top:0px}
+	.extend3o #ie .ConvdashLinksecdiv {
+		/*background-color: #F6F6F6;*/
+		margin: 10px 25px 0px 10px;
+	}
+	.extend3o #content .styled_forms div.selector select.ConvdashSelectWidth {
+		width: 145px;
+	}
+	.extend3o .padLeftRight25{padding-left:25px;padding-right:25px;}
+	.extend3o .padTopBot2px{padding-top:2px;padding-bottom:2px}
+	.extend3o .totalColor{color:#666666}
+	/*.extend3o td.totalColor{width:453px;}
+	.extend3o td.totalColor.amount{width:50px;}*/
+	.extend3o #primary-content.sharedUsagePrimaryContent{width:945px!important;}
+	.extend3o .botDotBorder{border-bottom:1px dotted #cccccc;}
+	.extend3o table th.padTopBot15{padding:15px 0px 15px 0px;}
+	@media screen{
+			.extend3o .meter-value-individual{
+				-moz-border-radius:9px 0px 0px 9px; 
+				-webkit-border-radius:9px 0px 0px 9px; 
+				border-radius:9px 0px 0px 9px;
+			}
+			.extend3o .meter-value-individual.borderRadius9{
+				-moz-border-radius:9px; 
+				-webkit-border-radius:9px; 
+				border-radius:9px;
+			}
+		}
+		.extend3o .meter-value-individual{
+			height:18px;
+			margin:0;
+		}
+		.extend3o .meter-value-individual div{
+			height:18px;
+			margin:0;
+		}
+		@media screen{
+			.extend3o .meter-value-rest{
+				-moz-border-radius:0px 11px 11px 0px; 
+				-webkit-border-radius:0px 11px 11px 0px; 
+				border-radius:0px 11px 11px 0px;
+			}
+		}
+		.extend3o .meter-value-rest{
+			height:20px;
+			margin:0;
+			top:-19px;
+			position:relative;
+		}
+	
+	
+	/*information box*/
+
+	.extend3o .infonote{background:#EAEAE8; margin:0 0 20px 0; padding:20px 14px;}
+	.extend3o .infonote p{color:#333; line-height:normal; margin-bottom:0px;}
+	.extend3o .infonote.box{padding:20px 14px;}
+	.extend3o .infonoteCTN{background:#EAEAE8; margin:10px 0 10px 0; padding:20px 14px;}
+	.extend3o .infonoteCTN p{color:#333; line-height:normal; margin-bottom:0px;}
+	.extend3o .infonoteCTN.box{padding:20px 14px;}
+	/*information box ends*/
+
+	.extend3o .w35{width:35px;}
+	.extend3o .displayNone{display:none;}
+	.extend3o .w21{width:21px;}
+	.extend3o .forcePadLeft8{padding-left:8px!important;}
+	.extend3o  .helpIconTable{ background:url(https://www.att.com/images/global/icn-help.png) right center no-repeat;}
+	.extend3o .MarLtRt20{margin-right:20px;margin-left:20px;}
+	.extend3o .fixWidth92{width:92px!important;}
+	.extend3o .ForcebtmBorderNone td{border-bottom:none!important;}
+	.extend3o .w40{width: 40px }
+	.extend3o .w330{width: 330px }
+	.extend3o .w15Per{width: 15%;}
+	.extend3o .w16Per{width: 16%;}
+	tr.TopDotBorder td{border-top:1px dotted #e5e5e5;}
+	.extend3o .w135{width:135px;}/*SDG Team: Dont Reuse this class*/
+	.extend3o .w132{width:132px;}/*SDG Team: Dont Reuse this class*/
+	.extend3o .minHeight1PerCent {min-height:1%;}
+	.extend3o #ie .botMar7IE{ margin-bottom:7px !important;}
+	.extend3o  .left10px{left:10px }
+	.top5px{top:5px !important;}
+	.extend3o .top-8px{top:-8px !important;}
+	.extend3o .top-23px{top:-23px !important;}
+	.hidden {visibility:hidden}
+	/*SDG Phase 1-A*/
+	.extend3o .w52{width:52px;}
+	.extend3o .w375{width:375px;}
+	.extend3o .padLtRt11{padding:0px 11px 0px 11px;}
+	.extend3o .w25Force{width:25px !important;} /* Added for SDG P2 */
+	/*SDG Phase 1-A*/
+	.extend3o .PadLeft157{padding-left:157px;}
+	.extend30 #primary-content .zIndx1k{ z-index:1000;}
+	.extend30 #primary-content .zIndx9k{ z-index:9000!important;}
+.extend3o .MyBillArrowBg {  background: url("https://www.att.com/olam/images/brand30/BG_Image.png") no-repeat scroll 0px 0 transparent; height:185px}	
+.extend3o .testShadowForBox .MyBillArrowBg {  background: url("https://www.att.com/olam/images/brand30/BG_Image.png") no-repeat scroll 5px 0 transparent; height:185px}
+.extend3o #ie  #secGroupTab {z-index:5 !important;}
+.extend3o #ie .zIndex9imp{z-index:9 !important;}
+.extend3o .topMinus3px{top:-3px !important;}
+.extend3o .topMinus4px{top:-4px !important;}
+.extend3o .topMinus40px{top:-40px !important;}
+.extend3o .w98px{width:98px !important;}
+.extend3o .groupOverviewLabel{left:7px !important;}
+.extend3o .myattajaxtabs .groupOverviewLabel{left:0px !important;} /*added as fix for WUP00699989*/
+.extend3o .PadTopBot0SDG{padding-top:0px !important;padding-bottom:0px !important;}
+.extend3o .SDGBorderRtNone{border-right:none !important; }
+.extend3o .SDGBorderRtNone1{ background:none !important;}
+.extend3o  .SDGbg{background:#f0f0f0 !important;}
+.extend3o  .SDGPadRightForSel{padding-right:10px !important;}
+.extend3o  .SDGErrorMgUl{padding-bottom:0px !important;padding-left:50px !important;}
+.extend3o  #ie  .SDGCurrentTop{top:-3px;}
+.extend3o  #ie  .SDGCurrentTop2{top:-2px;}
+.extend3o  .SDGzeroHeight{height:0; overflow:hidden}
+.extend3o .SDGMsgBox{margin-bottom:10px !important;}
+.extend3o .SDGHead2{padding-bottom:4px;padding-top:0px;}
+.extend3o .SDGHead1{padding-top:10px;}
+.extend3o .SDGHeadUsage{float:left;font-size:20px;margin-bottom:0px;}
+.extend3o  .SDGName{margin-bottom:0px; float:left;position:relative;font-size:17px;padding-top:4px;width:102px;}/*updated for WUP00668093.*/
+.extend3o   .SDGColorBlack{color:#333;}
+.extend3o  .SDGPipeSeparatorType1{ margin-bottom:0px; float:left;font-size:17px;position:relative;top:2px;padding-left:10px;padding-right:10px;color: #BFBFBF !important;}
+.extend3o  .SDGPipeSeparatorType2{font-size:12px;padding-left:5px;padding-right:5px;color: #BFBFBF !important;}
+.extend3o  .SDGPipeSeparatorType3{color: #BFBFBF !important;cursor:default;}
+.extend3o  .SDGPipeSeparatorType3:hover{text-decoration:none;color: #BFBFBF !important;cursor:default;}
+.extend3o  .report .selector{margin-top:-2px;}
+.extend3o .SDGLinksAtBottom{float:right;padding-right:30px;}
+.extend3o  #ie .SDGLinksAtBottom a.tooltips{padding-left:5px}
+.extend3o  #ie  .SDGCacheImage{filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+.extend3o  #ie   .SDGMinHeight31ie{min-height:31px !important;}
+.extend3o .toggleIndent{margin-left:30px}
+.extend3o .toggleHidden{position: relative; display: none;}
+
+	.extend3o  .SDGForcePadLeft1Rt0{padding-left:1px !important;padding-right:0px !important;}
+	.extend3o table.table tr.NoBtmbdrBgTable th{border-bottom:none;background:none;}
+
+	.extend3o .MarLt32Rt85{margin-left:32px;margin-right:85px;}/*Dont Reuse it .it may change in future*/
+	.extend3o .MarLt5Rt5{margin-left:5px;margin-right:5px;}/*Dont Reuse it .it may change in future*/
+	.extend3o .SDGusageType  .meterwrapper  .meter-container.MarLeft10 {margin-left:0px !important;}/*Modified by SDG Team to avoid to change in every page we done this css change*/
+
+
+	.extend3o  .pipeColorGrey{font-size:12px;color: #BFBFBF !important;padding-left:3px;padding-right:3px;}
+
+	.extend3o .TopBtmDotBrdrWitoutPad{
+		border-bottom: 1px dotted #CCCCCC !important;
+		border-top: 1px dotted #CCCCCC !important;
+	   
+	}
+	/*Classes Added to fix Inline Styles*/
+	.extend3o .PadTB10LR25{padding:10px 25px!important;}
+	.extend3o .FntWtNrml{font-weight: normal;}
+	.extend3o .opacity0{opacity: 0;}
+	/* End Classes Added to fix Inline Styles*/
+	.extend3o .PadLeft20imp {padding-left:20px !important;}
+	.extend3o  .SummaryTitle{float:left;font-size:14px;padding-top:1px;}
+	.extend3o  .forceHeight20{height:20px !important;}
+	.extend3o .SDGBorderRtNone{border-right:none !important; background:none !important;}
+	.extend3o .SDGWebWrapper{margin-right:60px;}
+
+	.extend3o .box.lte.w420{width:420px;}
+	.extend3o .PadTop55{padding-top:55px;}
+	.extend3o .w444{width:444px;}
+	.extend3o .pipeImage {position:relative; top:0px; line-height:1.3em; color:#333; background:url(../../images/global/divider-h2.gif) 0 50% no-repeat; margin: 0px 5px 0px 10px; padding:0px 0px 0px 11px;}
+	.extend3o .pad6all{padding:6px;}
+	.extend3o .marTop55{margin-top:55px;}
+	.extend3o .marLeft68{margin-left:68px;}
+	/*Styles Addes to solve red line issues Starts*/
+	.extend3o .SDGNotesAtTop{margin-left:3px;margin-right:15px;}
+	.extend3o .height80{height:80px;}
+	.extend3o .SDGLinksAtBottomView{padding-bottom:38px;}
+	/*Styles Addes to solve red line issues Ends*/
+	.SDGusageTypeLabelOverage p.SDGUsageTypeLabelP{font-size:11px;}
+	
+	/*Shared Data Phase One CR60813 style Starts*/
+	.extend3o #ie .ietop12px{top:12px !important;}
+	.extend3o #ie .ietop15px{top:15px !important;}	
+	.w310{width: 310px !important;}
+	.extend3o .w436imp{width:436px !important;}
+	.extend3o .infonoteCTN.MarbotNote40IE0{margin-bottom:40px;}
+	.extend3o #ie .MarbotNote40IE0{margin-bottom:10px;}
+	.extend3o .MarLtRt25{margin-left:25px;margin-right:25px;}
+	.extend3o span.nicknamePos{left:18px;}
+	.extend3o span.accountPos{left:7px;}
+	.extend3o .vBase{vertical-align:baseline;}
+	.extend3o #primary-content.sharedUsagePrimaryContent .table th{vertical-align:bottom;}
+	.extend3o p.noTopPad {padding-top: 0 !important;} /* added to fix SDG Redline issue*/
+	/*Shared Data Phase One CR60813 style ends*/
+.extend3o .sdgLabel{
+	/*float:left;/*Isabel: Added to fix alignment*/
+	color:#333;
+	display:inline-block;
+	font-family:Arial,sans-serif;
+	font-size:1.2em;
+	font-weight:bold;
+	margin:0 30px 2px 2px;
+	position:relative;
+	text-align:right;
+	vertical-align:top;
+	width:179px;
+	top:5px }
+.botMar5{ margin-bottom:5px !important;}
+.extend3o .cursorPointer{cursor:pointer;}
+.terms {margin: 3px 0 3px 3px; min-height: 150px; overflow: auto; padding: 5px;}
+
+.extend3o .MarLeft117 {margin-left: 117px;}
+.extend3o .MarLeft23imp{margin-left:23px !important;}
+.MarTop2{margin-top:2px;}
+.MarTop3{margin-top:3px;}
+.extend3o .MarTop4{margin-top:4px;}
+.extend3o .MarTop11{margin-top:11px;}
+.extend3o .MarTop28{margin-top:28px;}
+.extend3o .MarTop137{margin-top:137px;}
+.extend3o #ie .PadTop6IE{padding-top:6px !important;}
+.extend3o .PadTop17{padding-top:17px;}
+#ie  .ieForcePadTop10{padding-top:10px!important;}
+.extend3o .padLtRt30{padding-left:30px;padding-right:30px;}
+.extend3o .padLtRt10{padding-left:10px;padding-right:10px;}
+.extend3o .MarLtRt10{margin-left:10px !important; margin-right:10px !important;}
+.extend3o .padTopBot25{padding-top:25px; padding-bottom:25px;}
+.extend3o .PadTopBot20imp{padding-top:20px !important;padding-bottom:20px !important;}
+.MarRight7{margin-right:7px;}
+.MarRight18{margin-right:18px;}
+.extend3o .MarBot2{margin-bottom:2px;}
+.extend3o .MarAll7{margin:7px !important;}
+.extend3o .botMar11{ margin-bottom:11px }
+.extend3o .botMar13{ margin-bottom:13px }
+
+#ie .Padbot10ie{padding-bottom:10px !important;}
+.extend3o .MarLeft4imp {margin-left:4px !important;}
+.extend3o #ie .ieMarLeft0{margin-left:0px !important;}
+.extend3o .forceMarLeft18 {margin-left:18px!important;}
+
+.extend3o .PadLeft235 {padding-left:235px;}
+.extend3o  .PadLeft5imp{padding-left: 5px !important;}
+.extend3o .padLeft10New {padding-left:10px ;}/*Added by SDG TEAM as all padleft classes are having important*/
+.extend3o #ie .padLeft25ie {padding-left:25px ;}
+.extend3o #ie .PadRight20ie{padding-right:20px;}
+.extend3o #ie .PadRight10ie{padding-right:10px;}
+.extend3o .PadRight43 {padding-right:43px;}
+.extend3o .PadLeft25imp {padding-left:25px !important;}
+.extend3o .PadLeft7imp {padding-left:7px!important;}
+
+.extend3o .PadLeft208{padding-left:208px;}
+.extend3o .MarLeft285{margin-left:285px!important;}
+.extend3o .MarLeft290{margin-left:290px;}
+.extend3o .PadLeft80imp{padding-left:80px !important;}
+.extend3o .PadRight190{padding-right:190px ;}
+
+.extend3o  .left-1px{left:-1px !important;}
+
+.extend3o .top-12px{top:-12px !important;}
+.extend3o .top111px{top:111px !important;}
+
+.extend3o .borderNone {border:none!important;}
+#content #primary-content form.styled_forms div.selector select.dropDown220{width:220px;} /*To support without extend3o*/
+.extend3o .tableborder{
+background: url("https://www.att.com/images/global/grad-heading.gif") repeat-x scroll left bottom #FFFFFF;}
+
+
+.extend3o .height114{height:114px;}
+.extend3o .helpIcon_bgImage{ top:-1px;height:15px; width:16px; background: url(https://www.att.com/images/global/icn-help.png) repeat;cursor:pointer;}
+.extend3o .lineHeight16{line-height:16px;}
+#primary-content .tooltips .helpLabel { margin-left: 0px;margin-right: 7px;}
+#primary-content .tooltips .helpLabel1 { margin-left: -2px;margin-right: 8px;}
+#ie #primary-content .tooltips .helpLabel1 { margin-left: -2px;margin-right: 0px;}
+#primary-content .tooltips .helpLabel2 { margin-left: -3px;margin-right: 2px;}
+.extend3o .w460{width:460px;}
+.w460{width:460px;}
+.extend3o #ie .bottomIE3{bottom:3px;}
+.extend3o .w200imp{width:200px !important;}
+.styled_forms .width190 > label:first-child {width:190px;}
+.styled_forms.width190 > div > label:first-child {width:190px;}
+.width430 {width:430px!important}
+#ie .iePadTop15{padding-top:15px !important;}
+.extend3o #ie .tabGroupDiv .tabcontent { padding: 20px 10px 20px 10px;}
+.extend3o .tabGroupDiv .tabcontent.SDGForcePadLeft1Rt0{ padding: 20px 0px 0px 0px;}/*This is added as for sdg-1 red line issue in CTN section*/
+.extend3o #subPage  .dropDownBotBG-Top   .addLine{ padding: 0px 0px 0px 25px; /*background: url("/olam/images/brand30/Plus_Img1.png") no-repeat scroll left center transparent !important;*/background: url("https://www.att.com/olam/images/brand30/add_button.png") no-repeat scroll left center transparent !important;} /*background image is Changed By SDG Phase One team to have better Image with shadow for the Plus image in Dropdown*/
+.extend3o #SDG #subPage  .dropDownBotBG-Top   .addLine{ padding: 0px 0px 0px 25px; background: url("https://www.att.com/olam/images/brand30/add_button.png") no-repeat scroll left center transparent !important;}
+
+.w470{width:470px;}
+.extend3o .tablepadleft12  tr  td:first-child {padding-left:12px!important;}
+.extend3o .tablepadleft12  tr td:last-child{ padding-right:6px!important;}
+.extend3o #ie .tablepadleft12  tr  td.right { padding-right:10px!important;}
+
+.extend3o .spanish.SDGShowMore{background:url("https://www.att.com/olam/spanish/brand30/showMore.png") 65% 0 no-repeat;padding-left:470px;padding-bottom:5px;}
+.extend3o .spanish.SDGShowLess{background:url("https://www.att.com/olam/spanish/brand30/showLess.png") 65% 0 no-repeat;padding-left:470px;padding-bottom:5px;}
+
+.extend3o  .SDGPipeSeparatorType4{position:relative; color: #BFBFBF !important;}
+
+/* START:  Classes Added fix new overage conatiner*/
+	/*For Usage Pages*/
+	.extend3o .tabcontent td.meterwrapper table.usage-meter-table td{width:29%;}
+	.extend3o .tabcontent td.meterwrapper table.usage-meter-table td.meterwrapper{width:71%;}
+	/*For Usage Pages*/
+	/*For Dashboard Pages*/
+	.extend3o .tabcontent .SDGWebOverageContainer .lte-meter-container{position:relative;top:-3px;}
+	/*For Dashboard Pages*/
+	/*Changing width from 177 to 170 for WUP00699600*/
+.extend3o .tabcontent  .lte-meter-container { 
+	background: url("https://www.att.com/olam/images/brand30/Overage-Usage-Shorter.png") no-repeat scroll 0 0 transparent;
+	width:170px;
+ 	padding-top:5px;
+}
+
+.extend3o ul#subTabMain  li.w187{width:187px !important;}/*SDG Team:Dont Reuse this*/
+
+.extend3o #ie .ieMarBot15{margin-bottom:15px !important;}
+
+
+.extend3o .sharedDataGroupRadio{padding:0 20px 2px 10px;border-right:1px solid #e5e5e5;}
+.extend3o .sharedDataGroup {background:url(https://www.att.com/olam/images/brand30/bluDivider.png) repeat-x;position:relative;zoom: 1;padding-top:10px;}
+.extend3o .sharedDataGroup > table {background:url(https://www.att.com/olam/images/brand30/bluDivider1.png) repeat-x bottom;width:100%}
+.extend3o .sharedDataGroup > table th{background:none !important}
+.extend3o .sharedDataGroup > table th span{font-weight:normal}
+.extend3o .sharedDataGroup > table th:first-child, .extend3o .sharedDataGroup > table td:first-child{padding-left:20px}
+
+
+
+
+
+.extend3o .sharedDataGroup > table td.grey{padding-left:0px;color:#ADADAD}
+.extend3o .sharedDataGroup > table td.grey .plus{visibility:hidden}
+.extend3o .sharedDataGroup .styled_forms > div {margin-bottom:0px;min-height:25px}
+.extend3o .sharedDataGroup  .ineligibleMembers {background: none repeat scroll 0 0 #F7FBFC/*#ECF4F7*/;border: 1px solid #ECF4F7;padding: 0 14px 10px 14px !important;margin-bottom:20px;/*opacity:0.4;filter: Alpha(opacity:40);zoom:1;*/}
+.extend3o .sharedDataGroup  .ineligibleMembers  table {width:100%;}
+.extend3o .sharedDataGroup  .ineligibleMembers  th{font-size:14px;background:none !important}.extend3o .sharedDataGroup .ineligibleMembers > table th:first-child, .extend3o .sharedDataGroup .ineligibleMembers > table td:first-child{padding-left:0px;}
+.extend3o .sharedDataGroup .ineligibleMembers > table tbody td:first-child{padding-left:20px;}
+.extend3o .sharedDataGroup  .ineligibleMembers  tbody td {color:#999;font-size:14px;border-top:1px dotted #cccccc;}.extend3o .sharedDataGroup  .sharedDataMember td{border-top:1px dotted #cccccc}.extend3o .memberPlansAmounts span, .extend3o .memberPlansAmountsPlus span{-font-size:12px;position:relative}
+.extend3o .group-title .lineheight30imp{line-height:30px !important;}
+/*Begin fix for issue OCPA Pop up form missalignment*/
+.extend3o .w280Inline {width:280px !important; display:inline-block;}
+/*End fix*/
+
+.extend3o .LoginArrowbubble1,.LoginArrowbubble1,.extend3o .LoginArrowbubble2_withouterror,.LoginArrowbubble2_withouterror,.extend3o #ie .ShadowForTab,.extend3o #ie .ShadowForBox,.extend3o .FPOMainDiv,.extend3o #preFooter.FPOPreFooter,.extend3o .PaperlessBillMainDiv,.extend3o #preFooter.PaperlessPreFooter,.extend3o .videoContainer{/*behavior: url(js/PIE.htc);*/}
+.extend3o #ie .ShadowForTab,.extend3o #ie .ShadowForBox{ /*behavior: url(js/PIE.htc);*/}
+.extend3o .TestShadowForBox, .extend3o .TestShadowForTab
+{
+	box-shadow: 0 0 5px #666666;
+	-webkit-box-shadow: 0 0 5px #666666;
+	-moz-box-shadow: 0 0 5px #666666;
+	zoom:1;
+	position:relative;
+}
+
+.extend3o #ie .TestShadowForBox
+{
+	zoom:1;
+	-ms-filter: progid:DXImageTransform.Microsoft.DropShadow(OffX=3, OffY=3, Color=#cccccc);
+	filter: progid:DXImageTransform.Microsoft.DropShadow(OffX=3, OffY=3, Color=#cccccc);
+	z-index:-15!important;
+}
+
+.extend3o #ie .TestShadowForTab
+ {
+	zoom:1;
+	filter:
+	progid:DXImageTransform.Microsoft.Shadow(Color=#eeeeee,Strength=2, Direction=0)
+	progid:DXImageTransform.Microsoft.Shadow(Color=#eeeeee,Strength=2, Direction=90)
+	progid:DXImageTransform.Microsoft.Shadow(Color=#eeeeee,Strength=2, Direction=270);
+	z-index:0!important;
+	}
+
+.Forcez-index-1{z-index:-1!important;}
+.Forcez-index9000{z-index:9000!important;}
+.extend3o .testShadowForBox{
+background: url(https://www.att.com/olam/english/brand30/shadow/left_shadow.png) repeat-y left; border:none!important;
+}
+
+.extend3o .shadowRight{
+background:url(https://www.att.com/olam/english/brand30/shadow/right_shadow.png) repeat-y right; 
+border:none!important;
+}
+.extend3o #secondary-content .shadowRight div{
+/*background:url(/olam/english/brand30/shadow/right_shadow.png) repeat-y right; */
+margin-right:5px;
+margin-left:5px;
+/*border:none!important;*/
+}
+
+.extend3o .shadowTopLeft {
+    background: url("https://www.att.com/olam/english/brand30/shadow/top-left_rounded.png") no-repeat scroll left top transparent;
+    border: medium none;
+    height: 10px;
+    left: -1px;
+    position: relative;
+    top: 1px;
+    width: 100%;
+}
+.extend3o .shadowTopLeft div {
+    background: url("https://www.att.com/olam/english/brand30/shadow/top_shadow.png") repeat-x scroll left top transparent;
+    height: 5px;
+    left: 10px;
+    position: relative;
+    top: -0.5px;
+}
+.extend3o .shadowTopLeft div.shadowTop {
+    background: url("https://www.att.com/olam/english/brand30/shadow/top-right_rounded.png") no-repeat scroll right top transparent;
+    height: 10px;
+    left: 10px;
+    position: relative;
+    top: 0;
+}
+
+.extend3o .shadowBotLeft{
+	position:relative;
+	bottom:14px;
+	left:0px;
+	background:url(https://www.att.com/olam/english/brand30/shadow/bottom-left_rounded.png) top left no-repeat;
+	height:10px;
+	width:100%;
+	z-index:-1;
+}
+.extend3o .shadowBotLeft div{
+	background: url(https://www.att.com/olam/english/brand30/shadow/bottom_shadow.png) bottom left repeat-x;
+	position:relative;
+	left:10px;
+	height:5px;
+	bottom:-5px;
+	z-index:-1;
+}
+.extend3o .shadowBotLeft div .shadowBottom{
+	background: url(https://www.att.com/olam/english/brand30/shadow/bottom-right_rounded.png) top right no-repeat;
+	position:relative;
+	left:10px;
+	height:10px;
+	bottom:5px;
+	z-index:-1;
+}
+
+.extend3o .marLtRt30{margin:0px 30px 0px 30px;}
+.extend3o .marLtRt22{margin:0px 22px 0px 22px;}
+
+.extend3o .usageTableHeader{display:inline-block;}
+.extend3o #ie .usageTableHeader{zoom:1; *display:inline;}
+
+#ie #primary-content .tooltips .MarRight0IE { margin-right:0px!important;}
+#primary-content .styled_forms .MarLeft2{margin-left:2px;}
+
+.sprintContent .TopNote{margin:0 0 12px;}
+
+
+.NewConvMyBillArrowBg {
+	 background: url("https://www.att.com/olam/images/brand30/NewConvDashArrow.jpg") no-repeat left bottom;
+	width:747px;	
+	/*-webkit-border-radius: 4px 0 0px 4px;
+	-moz-border-radius: 4px 0 0px 4px;
+	border-radius: 4px 0 0px 4px; 
+	behavior: url(js/PIE.htc);*/
+	}
+.ConvDashvertSep {
+    background: url("https://www.att.com/olam/images/brand30/dot.PNG") no-repeat scroll left center transparent;
+}
+/* syles modified for defect WUP00633020 */
+.Convdashh2div {height:60px; padding:12px 0px 0px 10px;}
+.Convdashh2div>a,.extend3o .Convdashh2div>span{ /*margin-left:12px;*/ margin-left:0px}
+.Convdashh2div h2{font-size:16px; /*margin: 12px 0 0px 10px*/margin:0px ;min-height:25px;}
+
+.convdashbotsolidborder{border-bottom:1px solid #e3e3e3;
+margin: 0 40px 0 15px;
+}
+.bgFaded {
+    background: url("https://www.att.com/olam/images/brand30/global/box-faded.png") no-repeat scroll left top transparent;
+}
+.ConvDashUsageDetails .tab-group{ border: 0px solid #E3E3E3;}
+.ConvdashPadLeftRight20{padding:1px 20px 0 !important}
+.ConvdashMainvertSep {
+    background: url("../images/brand30/vertSeparator1x105.png.html") no-repeat scroll left center transparent;
+}
+.ConvdashLinksecdiv{margin: 10px 25px 10px 10px;}
+.minHt54{min-height:54px;}
+.minHt25{min-height:25px;}
+.w150Ht65{width: 150px; min-height: 70px;}
+.fontDescLob{font-size: 1.14em;}
+.PadLeftRight20{padding: 0 20px;}
+.minHt15{min-height:15px;}
+.convdashbotsolidborder .descLOB h3 {
+    font-size: 15px;
+}
+
+.extend3o .tableNoPad.tdPadRt20 td{padding-right:20px;}
+
+.extend3o .padding15{padding:15px;}
+
+/*/WUP00649844*/
+/*Begin-Titan 61102*/
+.extend3o .MarTop25Force{margin-top:25px!important;}
+/*End-Titan 61102*/
+#ie .top-3pxIE{top:-3px !important; position:relative;}
+
+/*END: Common to All SDG Modules i.e billing profile usage dashboard services*/
+/*START: Classes added for SDP - screen 11.14*/
+.extend3o .memberPlansAmounts span, .extend3o .memberPlansAmountsPlus span{-font-size:14px;position:relative}
+.extend3o .SDGMemberTable{width:100%;}
+.extend3o #primary-content .SDGMemberTD{padding-top:10px;padding-bottom:10px;padding-left:0px;padding-right:0px}
+.extend3o #primary-content .memberDiv{font-size:14px}
+.extend3o #primary-content .SDGMemberTable .memberPrimary{font-size:14px}
+.extend3o #primary-content .SDGMemberInnerTD{width:249px;border:none;padding-right:5px;padding-left:20px;padding-top:0px;padding-bottom:0px}
+.extend3o #primary-content .SDGMemberPlansTD{width:212px;border:none;padding-right:5px;padding-left:5px;padding-top:0px;padding-bottom:0px}
+.extend3o #primary-content .SDGMemberPlanAmtTD{font-size:14px;width:68px;border:none;padding-right:5px;padding-left:5px;padding-top:0px;padding-bottom:0px}
+.extend3o #primary-content .SDGMemberPlanAmtPlusTD{font-size:14px;width:73px;border:none;padding-right:5px;padding-left:0px;padding-top:0px;padding-bottom:0px}
+/*END: Classes added for SDP - screen 11.14*/
+/*START: Classes added for SDP - screen 11.15*/
+.extend3o #primary-content .SDGalreadyMemberTD{width:403px;border:none;padding-right:5px;padding-left:20px;padding-top:0px;padding-bottom:0px}
+.extend3o .sharedDataGroup  .SDGalreadyMember td{border-top:1px dotted #cccccc}
+/*END: Classes added for SDP - screen 11.15*/
+
+/*Class to provide shadow for tabs in IE*/
+.extend3o #ie #groupTab .ajaxtabsMain .ShadowForTab 
+{
+                zoom:1;
+                filter:
+                progid:DXImageTransform.Microsoft.Shadow(Color=#eeeeee,Strength=4, Direction=0)
+                progid:DXImageTransform.Microsoft.Shadow(Color=#eeeeee,Strength=4, Direction=90)
+                progid:DXImageTransform.Microsoft.Shadow(Color=#eeeeee,Strength=4, Direction=270);         
+                z-index:0!important;
+                top:-6px;
+                left:-3px;
+}
+.extend3o #ie #groupTab .ajaxtabsMain .addDropDownGrpAcc.ShadowForTab.w191px{width:183px !important;left:-1px;}
+.extend3o #ie #groupTab .ajaxtabsMain .ShadowForTab.w177px{width:169px !important;}
+.extend3o #ie #groupTab .ajaxtabsMain .ShadowForTab.w132{width:124px;}
+.extend3o #ie #groupTab .ajaxtabsMain .ShadowForTab.w173px{width:167px !important;left:0px;}
+.extend3o #ie #groupTab .ajaxtabsMain .ShadowForTab.w188{width:180px !important;}
+.extend3o #ie .ShadowForBox .topRound{z-index:-1;}
+.extend3o .NoScroll{ height:210px;  padding:15px;position:relative} /*WUP00661822*/
+.extend3o #groupTab ul li a.currentPriInitial{/*font-weight:bold;*/ background:#fff; top:-2px; color:#f47b20; height:60px;}/*added for desired tabbing*/
+/*START: To Solve the smooth Corner issue in Tab Page added*/
+.extend3o .bottomRound2.red{background:url(../../images/global/bottom-round-red.gif) 0 0 no-repeat;}
+.extend3o .bottomRound2.yellow{background:url(../../images/global/bottom-round-yellow.gif) 0 0 no-repeat;}
+.extend3o .bottomRound2.red div{background:url(../../images/global/bottom-round-right-red.gif) top right no-repeat;}
+.extend3o .bottomRound2.yellow div{background:url(../../images/global/bottom-round-right-yellow.gif) top right no-repeat;}
+/*END: To Solve the smooth Corner issue in Tab Page added*/
+/*Adding to resolve WUP00664384*/
+.height255{height:255px;}
+.top140px{top:140px;}
+#ie .top137pxIE{top:137px;}
+.extend3o .lineHt1pt3 .tooltips{line-height:1.3em !important;} /*for defect WUP00666323*/
+.styled_forms.modalForms.lineHt1pt3 label {line-height: 1.3em;} /*for defect WUP00691205*/
+.extend3o .styled_forms.modalForms.lineHt1pt3 label {line-height: 1.3em;} /*for defect WUP00691205*/
+/* Class Added for New Drop Down*/
+
+#subPage .newtopStripDDBg{background: url('https://www.att.com/olam/images/brand30/newTop_strip.png') no-repeat scroll 0 0 transparent; margin-bottom:-5px; width:184px; height:19px; z-index:12;}
+#mainPage .newtopStripDDBg{background: url('https://www.att.com/olam/images/brand30/newTop_strip.png') no-repeat scroll 0 0 transparent; margin-bottom:-5px; width:184px; height:19px; z-index:12;}
+#subPage .newmiddleStripDDBg{background: url('https://www.att.com/olam/images/brand30/newMiddle_strip.png') repeat scroll 0 0 transparent; border-right: 0px solid #CCCCCC; width:184px; z-index:12;}
+#mainPage .newmiddleStripDDBg{background: url('https://www.att.com/olam/images/brand30/newMiddle_strip.png') repeat scroll 0 0 transparent; border-right: 0px solid #CCCCCC; width:184px; z-index:12;}
+#subPage .newInvisibleStripTopDDBg{border-right: 0px solid #CCCCCC;  border-top: 0px solid #E3E3E3;background: url('https://www.att.com/olam/images/brand30/newMiddle_strip.png') repeat scroll 0 0 transparent; width:184px;z-index:12;}
+#mainPage .newInvisibleStripTopDDBg{background: url('https://www.att.com/olam/images/brand30/newBot_strip.png') repeat scroll 0 0 transparent;  width:184px; z-index:12;}
+#subPage .newInvisibleStripBotDDBg{border-bottom: 0px solid #E3E3E3;    border-right: 0px solid #CCCCCC; background: url('https://www.att.com/olam/images/brand30/newBot_strip.png') no-repeat scroll 0 0 transparent;  width:184px; height:9px; z-index:12;}
+#mainPage .newInvisibleStripBotDDBg{background: url('https://www.att.com/olam/images/brand30/newBot_strip.png') no-repeat scroll 0 0 transparent; width:184px; height:9px; z-index:12;}
+.extend3o  .w173px{width: 173px !important;}
+.extend3o  .newmiddleStripDDBg ul li{
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-right: 25px;
+}
+.extend3o  .newmiddleStripDDBg ul.selected {    
+	padding-right: 25px;
+}
+
+.extend3o  .newmiddleStripDDBg ul.TopSolidBorderE5 {    
+	width: 167px !important;
+}
+.extend3o .newmiddleStripDDBg .cancelAccAlert {padding-left:17px  !important;}
+.extend3o #subTabMain.groupTabInd li div.selectOtherCTN {
+    background: url("https://www.att.com/olam/images/brand30/dashboardSelector.png") repeat-x scroll center center transparent !important;
+	color: #FFFFFF;
+    height: 37px;
+    margin:2px 0px 0px 2px;
+	border-bottom: 1px solid #FFFFFF;    
+    top: 0px;
+	
+}
+.extend3o #subTabMain.groupTabInd li div.selectOtherCTN  a span{color: #FFFFFF;  }
+.extend3o #groupTab ul li div.selectOtherMain {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #F47B20;
+    height: 60px;
+    top: -2px;
+}
+.extend3o #groupTab #MainTab li div.selectOtherMain span.top-48px {
+    color: #333333;
+}
+.extend3o  .selectOtherCTN .cancelAccAlert{ cursor:pointer; background:url("https://www.att.com/olam/images/brand30/iconErrorNew.png") left center no-repeat; padding-left:20px !important; display:inline-block; height:15px; vertical-align:middle;}
+/* Class Added for New Drop Down*/
+/*WUP00678927*/
+.extend3o .w503{width:503px;}
+.extend3o .PadTop12  .SDGLinksAtTop{float:none;}
+/*END:WUP00678927*/
+/*WUP00679715*/
+.errorMsg.box ul li ul{top:0px;}
+.extend3o .errorMsg.box ul li ul{top:0px;}
+.errorMsg.box.noDisc ul{list-style-type:none;}
+.extend3o .errorMsg.box.noDisc ul{list-style-type:none;} 
+/*End defect WUP00679715*/
+/*SDG - Classes for message proration on dashboard and usage*/
+.extend3o .prorationMsg{padding-top:5px; padding-bottom:5px;} 
+/*END:SDG - Classes for message proration on dashboard and usage*/
+.extend3o .PadLt5Rt5{padding:0px 5px 0px 5px !important;} /*provides padding for content in the dropdown tab for CR62483*/
+.modalContent  p{margin-bottom:20px;} /*for WUP00642388 and WUP00644876*/
+/*Usage Landing Page Classes*/
+.w156px {width:156px;}
+.w191px{width:191px;}
+.extend3o .w188{width:188px!important;}
+/*to support non-extend3o for WUP00691205*/
+.w410{width:410px;}
+.styled_forms.modalForms label.normalFont{font-weight:normal !important;}
+.safariComp .helpDiv.w18{width:18px;}
+#ie .top-5pxIE{top:-5px !important;}
+.w179{width:179px;}
+/*to support non-extend3o WUP00691205*/
+/*Resolving global drop down issues*/
+.extend3o .styled_forms select, .styled_forms select{font-family: Arial !important,sans-serif;font-size: 12px !important}
+.extend3o .styled_forms select option, .styled_forms select option{padding:0 5px 0 3px !important}
+.extend3o .autoWidth, .autoWidth{width:auto !important}
+/*Styles for M2M popup*/
+.extend3o .gray {color: gray;}
+.extend3o .marRight140 {margin-right:140px;} 
+.extend3o .changeImage a .hoverIcon.hoverIconPos, .extend3o .changeImageBg a .hoverIcon.hoverIconPos{left:0px !important;top:-105px !important;} /*WUP00693370*/
+.extend3o a.OC2PAInvisible, a:hover.OC2PAInvisible {cursor:default;text-decoration:none;}/*WUP00689457*/
+/*For defect WUP00701180*/
+.w389 {width:389px; float:left;}
+#ie .PadBot0ie{padding-bottom:0px !important;}
+.extend3o .w340Inline {display: inline-block; width: 340px !important;}/*WUP00702177*/
+/*WUP00700105*/
+.whiteSpaceNormal{white-space:normal;}
+.posStatic{position:static !important;}
+.extend3o .page-title .btnRt {min-height:31px}/*WUP00702197*/
+.extend3o .serviceTable tr td div.ConvdashMainvertSep div:first-child{line-height:26px !important;}/*WUP00700862*/
+.extend3o .w210Imp{width:210px !important;}/*WUP00702188*/

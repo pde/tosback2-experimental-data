@@ -9,7 +9,7 @@ jQuery(function($){
 		});
 	};
 
-	if($('.tooltips').length != 0 && !$.browser.opera){
+	if($('.tooltips').length != 0){
 		$.getScript('http://www.att.com/scripts/jquery.poshytip.js', $.fn.tooltips, true);
 	}
 });

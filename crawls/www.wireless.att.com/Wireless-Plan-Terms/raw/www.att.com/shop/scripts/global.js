@@ -171,10 +171,10 @@ jQuery(function($){
 		window.scrollTo(0,0);		
 	}
 
-	if($('.tooltips').length != 0 && !$.browser.opera){
+	if($('.tooltips').length != 0){
 		$.getScript('http://www.att.com/scripts/jquery.poshytip.js', $.fn.tooltips, true);
 	}
-	if($('.mod-accordion').length != 0 && !$.browser.opera){
+	if($('.mod-accordion').length != 0){
 		$.getScript('http://www.att.com/scripts/jquery.accordion.js', $.fn.startAccordion, true);
 		$.fn.mod_accordion();
 	}

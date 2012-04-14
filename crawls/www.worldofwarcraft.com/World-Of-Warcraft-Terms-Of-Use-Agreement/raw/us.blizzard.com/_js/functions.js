@@ -699,7 +699,7 @@ if(shotList) sV.setImageCollection(shotList,thisScreenshot)
 else window.location.href = thisScreenshot; return; 
 }
 
-function ga_track(someurl,somehref,newwin)
+function ga_track(someurl,somehref,newwin,pageTracker)
 { if(pageTracker) pageTracker._trackPageview(someurl);
   if(newwin) window.open(somehref); 
   else location.href = somehref;

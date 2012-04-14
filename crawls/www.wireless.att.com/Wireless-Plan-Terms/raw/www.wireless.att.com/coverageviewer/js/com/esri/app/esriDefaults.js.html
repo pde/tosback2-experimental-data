@@ -7,6 +7,25 @@ function ESRIDefaults(){
 //
 //--------------------------------------------------------------------------
 
+//CHANGE 4.G START 
+/** 
+* 
+* This defines the Initial Extent to the entire world 
+* This will force the static images to display initially 
+* 
+* Originally the initial extent of the basemap did this 
+* since we removed the basemap layer we need to manually 
+* define and set the initial extent.  
+*/ 
+ESRIDefaults.initialExtent = new esri.geometry.Extent({ 
+	xmin : -180, 
+	ymin : -90, 
+	xmax : 180, 
+	ymax : 90, 
+	spatialReference : { wkid : 4326 } 
+}); 
+//CHANGE 4.G END
+
 //Data Type LOD Settings
 ESRIDefaults.mapZoneMinLODs = new Array();
 ESRIDefaults.mapZoneMinLODs[ESRIConfig.mapZoneContiguousUSA] = 1;

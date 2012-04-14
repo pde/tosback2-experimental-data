@@ -49,10 +49,10 @@
 		<script type='text/javascript' src='../dwr/interface/DWRRequestManager.js'></script>
 		<script type='text/javascript' src='../dwr/engine.js'></script>
 		<script type='text/javascript' src='../dwr/util.js'></script>
-		<script type='text/javascript' src='../../media/gvp/gvpUtils.js'></script>
+		<script type='text/javascript' src='http://www.att.com/media/gvp/gvpUtils.js'></script>
 		
 		<script>
-			gZip = '30319';
+			gZip = '';
 			var v_contextRoot = '/u-verse';
 			var v_mediaContextRoot = '/media/en_US';
 			var v_timeOut_id = null;
@@ -195,6 +195,7 @@ if(window.location.host != "www.att.com"){
 
 
 
+
 	
 	
 	
@@ -263,8 +264,8 @@ if(window.location.host != "www.att.com"){
 <meta NAME="DCSext.wtStatusCode" 			CONTENT="" />
 
 
-<meta NAME="DCSext.wtPN" 					CONTENT="" />
-<meta NAME="DCSext.sessionid" 				CONTENT="TP52TYQhkSCZTGRgz1dXfYyk!1704192946!1322778682279" />
+
+<meta NAME="DCSext.sessionid" 				CONTENT="0BQvPJMfQqJbndDZrRXGBpvG!-788357371!1334430751905" />
 <meta NAME="DCSext.flowtype" 				CONTENT="UVERSE" />
 <meta NAME="DCSext.wtCustType" 				CONTENT="Consumer">
 <meta NAME="DCSext.wtCustTypeSub"  			CONTENT="residential" />
@@ -301,6 +302,13 @@ if(window.location.host != "www.att.com"){
 
 
 
+
+	
+		
+	
+	
+		
+	
 
 
 
@@ -435,7 +443,15 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		{selector: 'head:page(address-changed)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_AddressChanged'},
 		{selector: 'head:page(service-already-exists)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_ServiceAlreadyExists'},
 		{selector: 'head:page(service-not-available)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_ServiceNotAvailable'},
-		{selector: 'head:page(multiple-address)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_MultipleAddress'},
+		//{selector: 'head:page(multiple-address)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_MultipleAddress'},
+		// Fix for Prod11-3183 :check availability success flag 
+		{selector: 'head:page(multiple-address)', type: 'wtmeta', name: 'wtStatusMsg', value:function() {
+		if ('unknown'=='green') 
+		return '';
+		else
+		return 'UV_MultipleAddress';
+		}},
+		//End of Fix for Prod11-3183 :check availability success flag 
 		{selector: 'head:page(address-changed)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_AddressChanged'},
 		{selector: 'head:page(address-not-found)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_AddressNotFound'},
 		{selector: 'head:page(number-not-found)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_NumberNotFound'},
@@ -464,7 +480,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		{selector: 'head:page(customize)', type: 'wtmeta', name: 'wtLinkLoc', value: function() {
 		var successURL = '/u-verse/shop/customize.jsp';
 		if (successURL.match('/cart/index.jsp') && successURL.match('submit=true') && '' == '')
-		return location.href+"#vucbbb";
+		return "UVerse Check Availability Success_Body";
 		else 
 		return "";}},
 		
@@ -523,7 +539,13 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		//sweepstakes
 		{selector: '#sweepsEnterNowLink', type: 'wtparam', name: 'wtLinkName', value: 'EnterNow'},
 		{selector: '#sweepsEnterNowLink', type: 'wtparam', name: 'wtLinkLoc', value: 'http://att.promotions.com/uverse2/front.do'},
-		{selector: '#sweepsEnterNowLink', type: 'wtlink', name: '', params: 'wtLinkName,wtLinkLoc', trigger: 'mousedown'}
+		{selector: '#sweepsEnterNowLink', type: 'wtlink', name: '', params: 'wtLinkName,wtLinkLoc', trigger: 'mousedown'},
+
+		{selector: 'head:page(combined-billing)', type: 'wtmeta', name: 'wtSysRespCode', value: ''},
+		//ECOM1203-134 Fix
+		{selector: 'head:page(creditcard-information)', type: 'wtmeta', name: 'wtSysRespCode', value: ''}
+		
+		
 	]);
 
 	reporting.tag.perform('inline');
@@ -613,7 +635,7 @@ function handleLastFieldInteracted(e) {
 <script type="text/javascript" charset="utf-8">
 	function SessionVars() {
 		this.getCurrSessId = function() {
-			var pSessionId = 'TP52TYQhkSCZTGRgz1dXfYyk!1704192946!1322778682279';
+			var pSessionId = '0BQvPJMfQqJbndDZrRXGBpvG!-788357371!1334430751905';
 			return pSessionId;
 		};
 
@@ -653,7 +675,7 @@ function handleLastFieldInteracted(e) {
 	var forceFlashDebugMode = false;
 	var getTimeOffset = function() {
 		var offset = new Number();
-		var servertime = 1322778718157;
+		var servertime = 1334430788979;
 		var clientdateObj = new Date();
 		var clienttime = clientdateObj.getTime();
 		offset = clienttime - servertime;
@@ -665,7 +687,6 @@ function handleLastFieldInteracted(e) {
 	    return (typeof this[methodName] != 'undefined');
 	}
 </script>
-
  
 
 		
@@ -1084,16 +1105,6 @@ function handleLastFieldInteracted(e) {
 	
 		
 	
-		
-	
-		
-	
-		
-	
-		
-	
-		
-	
 	
 	
 	
@@ -1105,16 +1116,6 @@ function handleLastFieldInteracted(e) {
 	
 	
 	
-	
-		
-	
-		
-	
-		
-	
-		
-	
-		
 	
 		
 	
@@ -1229,6 +1230,623 @@ function handleLastFieldInteracted(e) {
 								
 								<li class=" selected"><a href="../../shop/index.jsp.html" id="primary_Shop" name="Shop" class="primaryMenuItem">Shop<span></span></a>
 									
+										<ul id="secondaryMenu_Shop" class="secondaryMenu">
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/wireless/index.html" name="Shop_Wireless" >Wireless</a>
+													
+														
+															
+															
+															
+															
+														
+														<div class="trayContentItem trayFiveCol">
+															<div class="firstColumn">
+																<div class="columnContent">
+																	<img src='../../media/att/2011/global/nav/img-wireless_AA000R48.png' alt='Wireless' />
+																</div>
+															</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Phones &amp; Devices</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phones/index.html" name="Shop_Wireless_Shop By Category" >Shop By Category</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phones/pda-phones-smartphones.jsp.html" name="Shop_Wireless_Smartphones" >Smartphones</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/specials/netbooks.jsp.html" name="Shop_Wireless_Tablets and Internet Devices" >Tablets and Internet Devices</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/packages/index.jsp.html" name="Shop_Wireless_Packages &amp; Deals" >Packages &amp; Deals</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phones/cell-phones.jsp.html" name="Shop_Wireless_View All Devices" >View All Devices</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Plans</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phone-plans/index.jsp.html" name="Shop_Wireless_Shop By Category" >Shop By Category</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phone-plans/individual-cell-phone-plans.jsp.html" name="Shop_Wireless_Individual Plans" >Individual Plans</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/cell-phone-plans/family-cell-phone-plans.jsp.html" name="Shop_Wireless_Family Plans" >Family Plans</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/go-phones/index.jsp.html" name="Shop_Wireless_Prepaid GoPhone&reg; Plans" >Prepaid GoPhone&reg; Plans</a></li>
+																			
+																				
+																				
+																				<li><a href="../../shop/wireless/plans/data-plans.jsp.html" name="Shop_Wireless_Data Plans" >Data Plans</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Extras</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/accessories/index.jsp.html" name="Shop_Wireless_Accessories" >Accessories</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/services/index.jsp.html" name="Shop_Wireless_Messaging, Data &amp; More" >Messaging, Data &amp; More</a></li>
+																			
+																				
+																				
+																				<li><a href="../../shop/apps/index.jsp.html" name="Shop_Wireless_Ringtones &amp; Apps" >Ringtones &amp; Apps</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/cell-phone-service/transfer-your-number/index.html" name="Shop_Wireless_Transfer My Number" >Transfer My Number</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/coverageviewer/index.html#?type=voice" name="Shop_Wireless_Coverage Maps" >Coverage Maps</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Existing Customers</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../olam/passthroughAction.myworld%3FactionType=UpgradePhone.html" name="Shop_Wireless_Upgrade Phone" >Upgrade Phone</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/passthroughAction.myworld%3FactionType=AddALine.html" name="Shop_Wireless_Add a Line to My Account" >Add a Line to My Account</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute%3Ftarget=CRP.html" name="Shop_Wireless_Change Rate Plan" >Change Rate Plan</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/passthroughAction.myworld%3FactionType=ManageFeatures.html" name="Shop_Wireless_Manage Features" >Manage Features</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../www.wireless.att.com/learn/international/index.html" name="Shop_Wireless_International" >International</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+														</div>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/bundles/index.html" name="Shop_Bundles" >Bundles</a>
+													
+														
+															
+															
+															
+															
+														
+														<div class="trayContentItem trayFourCol">
+															<div class="firstColumn">
+																<div class="columnContent">
+																	<img src='../../media/att/2011/global/nav/img-bundles_AA000R46.png' alt='Bundles' />
+																</div>
+															</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Bundles with U-verse</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../shop/index.jsp.html" name="Shop_Bundles_Popular U-verse Bundles" >Popular U-verse Bundles</a></li>
+																			
+																				
+																				
+																				<li><a href="../shop/index.jsp%3FshopFilterId=100003.html#fbid=" name="Shop_Bundles_U-verse TV and Internet" >U-verse TV and Internet</a></li>
+																			
+																				
+																				
+																				<li><a href="../shop/index.jsp%3FshopFilterId=200001.html#fbid=" name="Shop_Bundles_U-verse TV, Internet and Phone" >U-verse TV, Internet and Phone</a></li>
+																			
+																				
+																				
+																				<li><a href="../shop/customize.jsp.html#vucbbb" name="Shop_Bundles_Build My Own U-verse Bundle" >Build My Own U-verse Bundle</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Bundles without U&#8209;verse</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fprod-snip=res_globnav_popular_bundles.html" name="Shop_Bundles_Popular Bundles" >Popular Bundles</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fprod-snip=res_globnav_build_bundles.html" name="Shop_Bundles_Build My Own Bundle" >Build My Own Bundle</a></li>
+																			
+																				
+																				
+																				<li><a href="../../gen/general%3Fpid=11122.html" name="Shop_Bundles_Compare Bundles" >Compare Bundles</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Existing Customers</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute.html" name="Shop_Bundles_Change My Service" >Change My Service</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_globnav_move_service.html" name="Shop_Bundles_Move My Service" >Move My Service</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+														</div>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/tv/index.html" name="Shop_Digital TV" >Digital TV</a>
+													
+														
+															
+															
+															
+															
+														
+														<div class="trayContentItem trayFourCol">
+															<div class="firstColumn">
+																<div class="columnContent">
+																	<img src='../../media/att/2011/global/nav/img-television_AA000R49.png' alt='Digital TV' />
+																</div>
+															</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Plans &amp; Channels</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../shop/tv/index.html" name="Shop_Digital TV_U-verse TV" >U-verse TV</a></li>
+																			
+																				
+																				
+																				<li><a href="../shop/channel-lineup.jsp.html" name="Shop_Digital TV_U-verse Channel Line-up" >U-verse Channel Line-up</a></li>
+																			
+																				
+																				
+																				<li><a href="../../gen/general%3Fpid=7901.html" name="Shop_Digital TV_DIRECTV&reg; Programming Packages" >DIRECTV&reg; Programming Packages</a></li>
+																			
+																				
+																				
+																				<li><a href="../../Common/PDF/DIRECTV_English_Channel_Lineup.pdf" name="Shop_Digital TV_DIRECTV&reg; Channel Line-up (PDF)" >DIRECTV&reg; Channel Line-up (PDF)</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Equipment</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../remotes.html" name="Shop_Digital TV_U-verse Remotes" >U-verse Remotes</a></li>
+																			
+																				
+																				
+																				<li><a href="wireless-receiver.jsp.html" name="Shop_Digital TV_U-verse Wireless Receiver" >U-verse Wireless Receiver</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Existing Customers</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Change My Plan" >Change My Plan</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Add Receivers" >Add Receivers</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../uversetv.att.yahoo.com/index.html" name="Shop_Digital TV_Access My DVR" >Access My DVR</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Upgrade to HD" >Upgrade to HD</a></li>
+																			
+																				
+																				
+																				<li><a href="../../olam/loginAction.olamexecute%3FcustomerType=U.html" name="Shop_Digital TV_Add or Remove Channels" >Add or Remove Channels</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+														</div>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/internet/index.html" name="Shop_Internet" >Internet</a>
+													
+														
+															
+															
+															
+															
+														
+														<div class="trayContentItem trayFiveCol">
+															<div class="firstColumn">
+																<div class="columnContent">
+																	<img src='../../media/att/2011/global/nav/img-internet_AA000R4V.png' alt='Internet' />
+																</div>
+															</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Plans</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="internet-landing.jsp.html" name="Shop_Internet_U-verse Internet" >U-verse Internet</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_globnav_dsl_plans.html" name="Shop_Internet_DSL High Speed Internet" >DSL High Speed Internet</a></li>
+																			
+																				
+																				
+																				<li><a href="../../dsl/shop/plansDirect.jsp.html" name="Shop_Internet_Internet Without a Phone Line" >Internet Without a Phone Line</a></li>
+																			
+																				
+																				
+																				<li><a href="../../gen/general%3Fpid=9212.html" name="Shop_Internet_Internet Broadband via Satellite" >Internet Broadband via Satellite</a></li>
+																			
+																				
+																				
+																				<li><a href="../../gen/general%3Fpid=10974.html" name="Shop_Internet_Dial-Up" >Dial-Up</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Equipment</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../shop/internet/index.html#tab3" name="Shop_Internet_U-verse Internet Equipment" >U-verse Internet Equipment</a></li>
+																			
+																				
+																				
+																				<li><a href="../../equipment/index.html" name="Shop_Internet_DSL Equipment" >DSL Equipment</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Extras</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../www.att.net/s/s.dll%3Fep=16323&amp;ch=at%252Ftb%252Fsec.html" name="Shop_Internet_Internet Security Suite" >Internet Security Suite</a></li>
+																			
+																				
+																				
+																				<li><a href="../../gen/general%3Fpid=5949.html" name="Shop_Internet_AT&amp;T Wi-Fi" >AT&amp;T Wi-Fi</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../buy-connectech.att.com/ctcomm/home/index.jsp.html" name="Shop_Internet_AT&amp;T Support Plus" >AT&amp;T Support Plus</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Existing Customers</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_globnav_move_service.html" name="Shop_Internet_Move My DSL Service" >Move My DSL Service</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fprod-snip=res_dsl_upgrd_promo.html" name="Shop_Internet_Change My Plan" >Change My Plan</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+														</div>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/home-phone/index.html" name="Shop_Home Phone" >Home Phone</a>
+													
+														
+															
+															
+															
+															
+														
+														<div class="trayContentItem trayFourCol">
+															<div class="firstColumn">
+																<div class="columnContent">
+																	<img src='../../media/att/2011/global/nav/img-homephone_AA000R4B.png' alt='Home Phone' />
+																</div>
+															</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Plans</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="phone-landing.jsp%3FwtSlotClick=1-001SNC-0-1&amp;WT.svl=calltoaction.html" name="Shop_Home Phone_AT&amp;T U-verse Voice" >AT&amp;T U-verse Voice</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_homephone_services.html" name="Shop_Home Phone_Home Phone Plans" >Home Phone Plans</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_long_distance_landing.html" name="Shop_Home Phone_Long Distance Plans" >Long Distance Plans</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_lifeline.html" name="Shop_Home Phone_Lifeline" >Lifeline</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Equipment</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../equipment/index.jsp.html" name="Shop_Home Phone_Home Phone Equipment" >Home Phone Equipment</a></li>
+																			
+																				
+																				
+																				<li><a href="../../shop/home-phone/index.html#tab3" name="Shop_Home Phone_AT&amp;T U-verse Voice Equipment" >AT&amp;T U-verse Voice Equipment</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+																
+																
+																<div class="secondColumn ">
+																	<div class="columnContent">
+																		
+																			<h3>Existing Customers</h3>
+																			
+																		
+																		<ul class="trayNoBullet">
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fprod-snip=accountmanager.html" name="Shop_Home Phone_Change My Plan" >Change My Plan</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fltype=res&amp;prod-snip=res_globnav_move_service.html" name="Shop_Home Phone_Move My Service" >Move My Service</a></li>
+																			
+																				
+																				
+																				<li><a href="../../../localization.att.com/loc/controller%3Fprod-snip=accountmanager.html" name="Shop_Home Phone_Manage Features" >Manage Features</a></li>
+																			
+																		</ul>
+																	</div>
+																</div>
+															
+														</div>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/u-verse/index.html" name="Shop_U-verse" >U-verse</a>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/special-offers/index.html" name="Shop_Special Offers" >Special Offers</a>
+													
+												</li>
+											
+												
+												
+												<li>
+													<a class="secondaryMenuItem" href="../../shop/help/index.html" name="Shop_Shopping Help" >Shopping Help</a>
+													
+												</li>
+											
+										</ul>
+									
 								</li>
 							
 								
@@ -1262,6 +1880,12 @@ function handleLastFieldInteracted(e) {
 								</li>
 							
 							<li id="primary_Search">
+								
+									
+									
+										
+									
+								
 								
 									
 									
@@ -1419,7 +2043,8 @@ function handleLastFieldInteracted(e) {
 			
 		
 	
-	<ul>
+	<ul><!-- ss195j PROD11-2096 -->
+	 
 		
 			
 				
@@ -1431,10 +2056,17 @@ function handleLastFieldInteracted(e) {
 							
 						
 							
+							
+						
+						
+						
+						
 							
 						<li class="last"><a rel="nofollow" href="http://www.att.com/u-verse/cart/retrieve-cart.jsp">Retrieve Cart</a></li>
-						<li class="last"><a rel="nofollow" href="http://www.att.com/u-verse/cart/retrieve-cart.jsp"><img src="../../global/images/cart_icon.jpg" height="15" width="20" border="0" alt="View Cart" /></a></li>
-							
+						<li class="last"><a rel="nofollow" href="http://www.att.com/u-verse/cart/retrieve-cart.jsp"><img src="../../global/images/cart_icon.jpg" height="15" width="20" border="0" alt="Review cart" /></a></li>
+						
+						
+						
 							
 							
 						
@@ -1444,7 +2076,7 @@ function handleLastFieldInteracted(e) {
 				
 			
 			
-		
+		<!-- ss195j PROD11-2096 End -->
 	</ul>
 </div>
 
@@ -1916,13 +2548,10 @@ function handleLastFieldInteracted(e) {
 						
 							
 								
-<script type="text/javascript" src="../scripts/flash.js"></script> 
+<script type="text/javascript" src="../../media/en_US/scripts/JSAM/JSAM_min.js"></script> 
 <div id="marqueeHolder"></div> 
-<script language="javascript"> 
-var altFlash = '<a href="http://www.att.com/u-verse/explore/uverse-difference.jsp?wtSlotClick=1-0030UA!900925-0-1" ><img src="../../images/Wireless/FlashAssets/uverse/marquees_ad_manager/ifNoflash/urock_lite_INTERNET_static_AA000CJY.gif" border="0" /></a>'; 
-var rplFlash = function () { $('marqueeHolder').innerHTML = altFlash; $('exploreinternet').hide(); return true;} 
-if(flash.hasVersion(9)) { flash.embedMovie("/images/Wireless/FlashFramework/AdManager/loader/AdManager_AA0009RT_52.swf?configXML=/u-verse/marquees/en_US/internet-landing/marquee1/default.xml","500","250","#ffffff",9,'','wmode=transparent,id=exploreinternet');} 
-else{ document.write(altFlash);} 
+<script type="text/javascript"> 
+	JSAM.createMarquee('/u-verse/marquees/en_US/internet-landing/marquee1/default.xml', {width:500, height:250}); 
 </script> 
 
 
@@ -1953,14 +2582,15 @@ else{ document.write(altFlash);}
 
 
 
+<!-- googleoff: all --> 
 
 	
 	
 		   	
-			<div id="wtContentID1" style="display:none">001WO1!900925</div>
+			<div id="wtContentID1" style="display:none">007CNI!900925</div>
 		
 
-
+<!-- googleon: all -->
 
 						
 						
@@ -2521,7 +3151,7 @@ Includes access at home and on-the-go to the entire national AT&T Wi-Fi Hot Spot
 						
 					
 				</div>
-				<a href="../../gen/privacy-policy%3Fpid=2587.html">&copy;2011 AT&amp;T Intellectual Property</a>. All rights reserved. AT&amp;T, the AT&amp;T logo and all other AT&amp;T marks contained herein are trademarks of AT&amp;T Intellectual Property and/or AT&amp;T affiliated companies. AT&amp;T 36USC220506
+				<a href="../../gen/privacy-policy%3Fpid=2587.html">&copy;2012 AT&amp;T Intellectual Property</a>. All rights reserved. AT&amp;T, the AT&amp;T logo and all other AT&amp;T marks contained herein are trademarks of AT&amp;T Intellectual Property and/or AT&amp;T affiliated companies. AT&amp;T 36USC220506
 			</div>
 			<div class="logoBlock">
 				
@@ -2543,7 +3173,7 @@ Includes access at home and on-the-go to the entire national AT&T Wi-Fi Hot Spot
 					
 					
 						
-						<a target="_blank" href="../../../clicktoverify.truste.com/pvr.php%3Fpage=validate&amp;companyName=AT&amp;T&amp;sealid=101.html"><img title="This site is certified by TRUSTe" alt="This site is certified by TRUSTe" src="http://www.att.com/media/att/2011/global/nav/en_US/logoTRUSTe.png"></a>
+						<a target="_blank" href="../../../clicktoverify.truste.com/pvr.php%3Fpage=validate&amp;companyName=AT%2526T&amp;sealid=101.html"><img title="This site is certified by TRUSTe" alt="This site is certified by TRUSTe" src="http://www.att.com/media/att/2011/global/nav/en_US/logoTRUSTe.png"></a>
 					
 				
 					
@@ -2636,7 +3266,7 @@ Includes access at home and on-the-go to the entire national AT&T Wi-Fi Hot Spot
     	</div>
         <div style="text-align: right; padding-top: 10px;">
 	        <span onclick="if ($('modalFooterCancel')) $('modalFooterCancel').onclick();">
-	        <img style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/></span></div>
+	        <img alt="Close" style="cursor: pointer; cursor: hand;" src="../../media/en_US/images/btn/btn_close-popup_red_AA0009RA.gif"/></span></div>
     	<div id="mainPopUpTitleIDM" style="display: none;"></div>
     </div>
         
@@ -2667,7 +3297,7 @@ Includes access at home and on-the-go to the entire national AT&T Wi-Fi Hot Spot
 						</div>
 				<div id="modalFooterSave" style="float:right; padding-left:10px; cursor: pointer; cursor: hand;">
 					<div title="Add to Cart"><img id="addToCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_Save_green_disabled_AA000IWR.gif" alt="Add to Cart"></div>
+						src="../../media/en_US/images/btn/btn_Save_green_disabled_AA000IWR.gif" alt="Add to Cart Disabled"></div>
 					
 					
 					
@@ -2680,13 +3310,13 @@ Includes access at home and on-the-go to the entire national AT&T Wi-Fi Hot Spot
 					
 						
 					<div title="Return to Cart"><img id="returnToCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_ReturnToCart_dis.gif" alt="Return to Cart"></div>
+						src="../../media/en_US/images/btn/btn_ReturnToCart_dis.gif" alt="Return to Cart Disabled"></div>
 					<div title="Return to Cart"><img id="returnToCartEna" style="cursor: pointer; cursor: hand; display:none; margin-bottom: 20px;" class="modal submit" onclick="if (!portPhoneLineslist()) cancelModal(null);" 
 						src="../../media/en_US/images/btn/btn_ReturnToCart_grn.gif" alt="Return to Cart"></div>
 					
 					
 					<div title="Update Cart"><img id="updateCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_UpdateCart_dis.gif" alt="Update Cart"></div>
+						src="../../media/en_US/images/btn/btn_UpdateCart_dis.gif" alt="Update Cart Disabled"></div>
 				
 					
 					
@@ -2743,7 +3373,7 @@ Includes access at home and on-the-go to the entire national AT&T Wi-Fi Hot Spot
 						</div>
 				<div id="modalFooterSave" style="float:right; padding-left:10px; cursor: pointer; cursor: hand;">
 					<div title="Add to Cart"><img id="addToCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_Save_green_disabled_AA000IWR.gif" alt="Add to Cart"></div>
+						src="../../media/en_US/images/btn/btn_Save_green_disabled_AA000IWR.gif" alt="Add to Cart Disabled"></div>
 					
 					
 					
@@ -2756,13 +3386,13 @@ Includes access at home and on-the-go to the entire national AT&T Wi-Fi Hot Spot
 					
 						
 					<div title="Return to Cart"><img id="returnToCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_ReturnToCart_dis.gif" alt="Return to Cart"></div>
+						src="../../media/en_US/images/btn/btn_ReturnToCart_dis.gif" alt="Return to Cart Disabled"></div>
 					<div title="Return to Cart"><img id="returnToCartEna" style="cursor: pointer; cursor: hand; display:none; margin-bottom: 20px;" class="modal submit" onclick="if (!portPhoneLineslist()) cancelModal(null);" 
 						src="../../media/en_US/images/btn/btn_ReturnToCart_grn.gif" alt="Return to Cart"></div>
 					
 					
 					<div title="Update Cart"><img id="updateCartDis" style="display:none; margin-bottom: 20px;" 
-						src="../../media/en_US/images/btn/btn_UpdateCart_dis.gif" alt="Update Cart"></div>
+						src="../../media/en_US/images/btn/btn_UpdateCart_dis.gif" alt="Update Cart Disabled"></div>
 				
 					
 					
@@ -3007,6 +3637,7 @@ Includes access at home and on-the-go to the entire national AT&T Wi-Fi Hot Spot
 
 
 
+
 	
 	
 	
@@ -3075,8 +3706,8 @@ Includes access at home and on-the-go to the entire national AT&T Wi-Fi Hot Spot
 <meta NAME="DCSext.wtStatusCode" 			CONTENT="" />
 
 
-<meta NAME="DCSext.wtPN" 					CONTENT="" />
-<meta NAME="DCSext.sessionid" 				CONTENT="TP52TYQhkSCZTGRgz1dXfYyk!1704192946!1322778682279" />
+
+<meta NAME="DCSext.sessionid" 				CONTENT="0BQvPJMfQqJbndDZrRXGBpvG!-788357371!1334430751905" />
 <meta NAME="DCSext.flowtype" 				CONTENT="UVERSE" />
 <meta NAME="DCSext.wtCustType" 				CONTENT="Consumer">
 <meta NAME="DCSext.wtCustTypeSub"  			CONTENT="residential" />
@@ -3113,6 +3744,13 @@ Includes access at home and on-the-go to the entire national AT&T Wi-Fi Hot Spot
 
 
 
+
+	
+		
+	
+	
+		
+	
 
 
 
@@ -3247,7 +3885,15 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		{selector: 'head:page(address-changed)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_AddressChanged'},
 		{selector: 'head:page(service-already-exists)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_ServiceAlreadyExists'},
 		{selector: 'head:page(service-not-available)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_ServiceNotAvailable'},
-		{selector: 'head:page(multiple-address)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_MultipleAddress'},
+		//{selector: 'head:page(multiple-address)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_MultipleAddress'},
+		// Fix for Prod11-3183 :check availability success flag 
+		{selector: 'head:page(multiple-address)', type: 'wtmeta', name: 'wtStatusMsg', value:function() {
+		if ('unknown'=='green') 
+		return '';
+		else
+		return 'UV_MultipleAddress';
+		}},
+		//End of Fix for Prod11-3183 :check availability success flag 
 		{selector: 'head:page(address-changed)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_AddressChanged'},
 		{selector: 'head:page(address-not-found)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_AddressNotFound'},
 		{selector: 'head:page(number-not-found)', type: 'wtmeta', name: 'wtStatusMsg', value: 'UV_NumberNotFound'},
@@ -3276,7 +3922,7 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		{selector: 'head:page(customize)', type: 'wtmeta', name: 'wtLinkLoc', value: function() {
 		var successURL = '/u-verse/shop/customize.jsp';
 		if (successURL.match('/cart/index.jsp') && successURL.match('submit=true') && '' == '')
-		return location.href+"#vucbbb";
+		return "UVerse Check Availability Success_Body";
 		else 
 		return "";}},
 		
@@ -3335,7 +3981,13 @@ jQuery.when(reporting_ready).then(function (reporting) {
 		//sweepstakes
 		{selector: '#sweepsEnterNowLink', type: 'wtparam', name: 'wtLinkName', value: 'EnterNow'},
 		{selector: '#sweepsEnterNowLink', type: 'wtparam', name: 'wtLinkLoc', value: 'http://att.promotions.com/uverse2/front.do'},
-		{selector: '#sweepsEnterNowLink', type: 'wtlink', name: '', params: 'wtLinkName,wtLinkLoc', trigger: 'mousedown'}
+		{selector: '#sweepsEnterNowLink', type: 'wtlink', name: '', params: 'wtLinkName,wtLinkLoc', trigger: 'mousedown'},
+
+		{selector: 'head:page(combined-billing)', type: 'wtmeta', name: 'wtSysRespCode', value: ''},
+		//ECOM1203-134 Fix
+		{selector: 'head:page(creditcard-information)', type: 'wtmeta', name: 'wtSysRespCode', value: ''}
+		
+		
 	]);
 
 	reporting.tag.perform('inline');

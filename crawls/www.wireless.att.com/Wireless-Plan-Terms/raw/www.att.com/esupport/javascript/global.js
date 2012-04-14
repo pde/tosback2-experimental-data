@@ -109,7 +109,7 @@ jQuery(function($){
 	}
 
 	if($('.tooltips').length != 0 && !$.browser.opera){
-		$.getScript('/esupport/javascript/jquery.poshytip.js', $.fn.tooltips, true);
+		$.getScript('/esupport/javascript/jquery-combined.js', $.fn.tooltips, true);
 	}
 	if($('.mod-accordion').length != 0 && !$.browser.opera){
 		$.getScript('/esupport/javascript/jquery.accordion.js', startAccordion, true);
@@ -124,9 +124,7 @@ jQuery(function($){
 	if($('.ajaxtabs').length != 0){
 		$.getScript('/esupport/javascript/jquery.tabs.js', ajaxtabs, true);
 	}
-	if($('.openModal').length != 0){
-		$.getScript('/esupport/javascript/jquery.nyroModal-1.6.2.min.js', modals, false);
-	}
+
 	if($('form').length != 0){
 		$.getScript('/esupport/javascript/jquery.uniform.js', morphForms, true);
 	}
@@ -147,7 +145,7 @@ jQuery(function($){
 	/* IE SPECIFIC */
 	if ($.browser.msie && $.browser.version < 9) {  
 //		$('.errorMsg p:first-child').css({ 'color':'#fd0200', 'background':'url(//www.att.com/images/global/iconError46x43.png) top left no-repeat', 'padding':'14px 14px 15px 60px' }); 
-		IEcorners(); 
+		//IEcorners(); 
 	}
 });
 
@@ -171,7 +169,7 @@ function IEcorners(){
 }
 
 function morphForms(){
-	 jQuery(".styled_forms input, .styled_forms textarea, .styled_forms select").uniform();
+	 //jQuery(".styled_forms input, .styled_forms textarea, .styled_forms select").uniform();
 }
 
 function special(){
@@ -247,7 +245,7 @@ function tooltips(){
 			offsetX: 10,
 			allowTipHover: true,
 			bgImageFrameSize: 6,
-			backgroundGradient: '../images/tooltip/tip-white/backgroundwhite.gif',
+			backgroundGradient: '/esupport/images/tooltip/tip-white/backgroundwhite.gif',
 		/*	showOn: 'focus', */
 			fade: true,
 			slide: false

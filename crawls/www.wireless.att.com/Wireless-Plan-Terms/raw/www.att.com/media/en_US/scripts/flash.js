@@ -27,53 +27,27 @@ if (typeof flash === 'undefined') {
 		var logDebug = false;
 		
 		/* begin JSAM variables */
-		var JSAM_hasFlash;
 		var JSAM_loaded;
 		//URLs to use JSAM on
 		var JSAM_urls = ['/shop/', '/shop/index.jsp', '/shop/bundles/', '/shop/bundles/index.jsp', '/shop/wireless/', '/shop/wireless/index.jsp', '/shop/tv/', '/shop/tv/index.jsp', '/shop/internet/', '/shop/internet/index.jsp', '/shop/home-phone/', '/shop/home-phone/index.jsp', '/shop/u-verse/', '/shop/u-verse/index.jsp', '/shop/special-offers/', '/shop/special-offers/index.jsp'];
-		var JSAM_onlyUrls = ['/', '/homepage/index.jsp'];
+		var JSAM_isHomepage = function() {
+			if (typeof targetingFW != 'undefined')
+				return true;
+			return false;
+		}();
 		var JSAM_myURL = location.pathname.replace(location.hash,'').replace(location.search,'');
-		var JSAM_isActive = function() {
-			if (location.search.indexOf('disableJSAM=true') != -1) {
+		var JSAM_takeOver = function() {
+			if (location.search.indexOf('disableJSAM=true')!= -1) {
 				return false;
 			}
+			if (JSAM_isHomepage)
+				return true;
 			for (var i=0; i<JSAM_urls.length; i++) {
 				if (JSAM_urls[i] === JSAM_myURL) {
 					return true;
 				}
 			}
 			return false;
-		}();
-		var JSAM_takeOver = function() {
-			if (location.search.indexOf('disableJSAM=true')!= -1) {
-				return false;
-			}
-			for (var i=0; i<JSAM_onlyUrls.length; i++) {
-				if (JSAM_onlyUrls[i] === JSAM_myURL) {
-					return true;
-				}
-			}
-			return false;
-		}();
-		var JSAM_theHomepage = ['/', '/homepage/index.jsp'];
-		var JSAM_isHomepage = function() {
-			if (JSAM_myURL === '/' || JSAM_myURL === '/homepage/index.jsp')
-				return true;
-			return false;
-		}();
-		var JSAM_isMobileDevice = function() {
-			var isIphone = (navigator.userAgent.indexOf("iPhone") !== -1) ? true : false;
-			var isIpad = (navigator.userAgent.indexOf("iPad") !== -1) ? true : false;
-			var isAndroid = (navigator.userAgent.indexOf("Android") !== -1) ? true : false;
-			var isWindows = (navigator.userAgent.indexOf("IEMobile") !== -1) ? true : false;
-			var isTablet = (navigator.userAgent.indexOf("Tablet") !== -1) ? true : false;
-			var isPhone = (navigator.userAgent.indexOf("Phone") !== -1) ? true : false;
-			var isMobile = (navigator.userAgent.indexOf("Mobile") !== -1) ? true : false;
-
-			if(isIphone || isIpad || isAndroid || isWindows || isTablet || isPhone || isMobile)
-				return true;
-			else
-				return false;
 		}();
 		var JSAM_isEnabled = function() {
 			if (location.search.indexOf('enableJSAM=true') != -1) {
@@ -149,8 +123,7 @@ if (typeof flash === 'undefined') {
 		//this function supports not changing the public API enough to have to modify teamsite
 		this.hasVersion = function(version) {
 			//override for pages with JSAM
-			if (JSAM_takeOver || JSAM_isActive) {
-				JSAM_hasFlash = swfobject.hasFlashPlayerVersion(version.toString());
+			if (JSAM_takeOver) {
 				return true;
 			}
 			return swfobject.hasFlashPlayerVersion(version.toString());
@@ -190,7 +163,7 @@ if (typeof flash === 'undefined') {
 					.css({'position':'absolute', 'left':Math.round((myWidth-43)/2) + 'px', 'top':Math.round((myHeight-43)/2) + 'px'});
 				if (JSAM_isHomepage)
 					loader.css('top', '290px');
-				jQuery('#marqueeHolder').css({'height':myHeight+'px', 'width':myWidth+'px', 'position':'relative', 'z-index':'0'})
+				jQuery('#marqueeHolder').css({'height':myHeight+'px', 'width':myWidth+'px', 'position':'relative'})
 					.append(loader);
 				if (typeof JSAM == 'undefined') {
 					jQuery.getScript('/media/en_US/scripts/JSAM/JSAM_min.js');
@@ -198,7 +171,7 @@ if (typeof flash === 'undefined') {
 				JSAM_loaded = true;
 			}
 			if (typeof JSAM !== 'undefined' && typeof JSAM_json !== 'undefined') {
-				JSAM.createMarquee(myParams, {height:myHeight, width:myWidth, isMobileDevice:JSAM_isMobileDevice});
+				JSAM.createMarquee(myParams, {height:myHeight, width:myWidth});
 			}
 			else {
 				if (typeof numOfReps === 'undefined')
@@ -239,15 +212,7 @@ if (typeof flash === 'undefined') {
 		// main embed function signature from AWEd flash js
 		this.embedMovie = function(divToUpdate,swfFile,width,height,bgcolor,ver,altFormat,params, callbackFn){
 			// JSAM start
-			if (!JSAM_isEnabled && (JSAM_takeOver || JSAM_isActive) && ((arguments[6] && (arguments[6].indexOf('es_US') !== -1 || arguments[6].indexOf('id=es_') !== -1) || (arguments[7] && (arguments[7].indexOf('es_US') !== -1 || arguments[7].indexOf('id=es_') !== -1))))) {
-				JSAM_takeOver = false;
-				JSAM_isActive = false;
-				if(flash.hasVersion(9)) { flash.embedMovie.apply(this, arguments);} 
-				else{
-					flash.showNoFlash('marqueeHolder',altFlash);
-				} 
-			}
-			else if (JSAM_isEnabled || JSAM_takeOver || (JSAM_isActive && (!JSAM_hasFlash || JSAM_isMobileDevice))) {
+			if (JSAM_isEnabled || JSAM_takeOver) {
 				var myParams;
 				var myWidth;
 				var myHeight;

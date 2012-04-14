@@ -1,6 +1,7 @@
 // -- START WebTrends --
 //  DATE     MODIFICATION                                                                       Author
-//======================================================================================================
+//===========================================================================================================
+//  02/21/2012 per jira ECAP-1446 added function dcsSrcImpExt to support 'wtSourceUID' & 'wtExtndSource'   ms 
 //  08/16/2011 add processing for cookie 'fsr.s'                                                    ms
 /// 07/27/2011 added '/olam/uverseDashboardAction.olamexecute' for source code impression           ms
 //  06/09/2011 add "mc_id" initialization to dcsMultiTrack                                          ms
@@ -54,7 +55,6 @@
 //  10/30/2006:		                                                                                ms
 //    1)For those parms being built in "dcsqry", check to see if we want to strip it from SDC log entry. 
 //    2)Remove WT.ti (i.e. page title) name/value pair from the SDC log. It's taking up log space.
-//    3)Created/added function "dcsTrackObject" to help track forms & gifs.                              
 //  06/2006 added cookie/parm "inUser" for filtering out dev/tester work.                       ms
 //  02/2006 added dcsMultiTrack() function to support tracking event commands, gifs, pdfs etc.  ms
 //  04/2006 added dcsQP() function                                                              ms
@@ -663,31 +663,6 @@
 			return newdcsqry;
 		} //end function dcsStripParms
 
-		//===========================================================================================
-		// MS: 10/2006 Use function "dcsTrackObject" to help track forms & gifs. 
-		//			   A virtual link is passed & written to SDC so SmartView can map to it.
-		function dcsTrackObject(objLink){
-			var gDomain="wls.cingular.com";
-			var gDcsId="dcsw1sx8x45vbwmw7v63tbf8m_1h2f";
-			var dCurrent=new Date();
-			var dcsdat=dCurrent.getTime();
-
-			var dcssip=window.location.hostname;
-			if (dcssip == 'cingular.com'){
-			   dcssip = 'www.cingular.com';
-			}
-
-			var dcsref=window.location.href;
-			var dcsuri="/"+objLink.pathname;
-			var P="http://"+gDomain+(gDcsId==""?'':'/'+gDcsId)+"/dcs.gif?&dcsdat="+dcsdat+"&dcssip="+dcssip+"&dcsuri="+dcsuri+"&dcsref="+dcsref;
-
-			//write to SDC log:
-			dcsCreateImage(P);
-
-		} //end function dcsTrackObject
-		// ===============   end function dcsTrackObject =========================================
-
-
 		/**************************************************************************************************************************/ 
 		/* MS 03/2007 Interrogate URL for the parm "source" & "bref", return value back & assign it as the campaign, pass it across all pages, and finally, assign it to a WT campaign. */
 		function dcsChkForSource() {
@@ -741,7 +716,7 @@
 				var paramre=new RegExp(param,"i");
 				var len=document.links.length;
 				var pos=end=-1;
-				var anch=urlp=value="";
+		        anch=urlp=value="";
 				var urlpre;
 				var url=document.URL+"";
 				var start=url.search(paramre);
@@ -773,19 +748,16 @@
 								value=anch.substring(start,(end!=-1)?end:anch.length);
 
 								// delimit it by pipe for eDM parsing. Also creating a new parm to show impressions:
-								DCSext.wtSrcImp = DCSext.wtSrcImp?(DCSext.wtSrcImp +"|"+value):value;
-			
+								DCSext.wtSrcImp=DCSext.wtSrcImp?(DCSext.wtSrcImp +"|"+value):value;
+								//==============       BEGIN:  PROCESS POSSIBLE 'wtSourceUID'  =============================
+								// now look for possible 'wtSourceUID' and append that to respective 'source' code value with delimiter '-' (changed from '~') :
+								var param="wtSourceUID";
+							    uIdSrch=anch.search(param);	 // where the possible parm 'wtSourceUID' NAME begins
+								dcsSrcImpExt(param);
 								//==============       BEGIN:  PROCESS POSSIBLE 'wtExtndSource'  =============================
-								// now look for possible 'wtExtndSource' and append that to respective 'source' code value with delimiter '~' :
-								var param2="wtExtndSource";
-								var param2len=param2.length;
-								var pos2=anch.search(param2);		// where the parm 'wtExtndSource' NAME begins
-								if (pos2!=-1){
-									start2=pos2+param2len+1;       	// where the parm 'wtExtndSource' VALUE begins
-									end2=anch.indexOf("&",start2); 	// where the parm 'wtExtndSource' VALUE ends
-									value2=anch.substring(start2,(end2!=-1)?end2:anch.length);
-									DCSext.wtSrcImp = DCSext.wtSrcImp?(DCSext.wtSrcImp +"~"+value2):value2;
-								}
+								// now look for possible 'wtExtndSource' and append that to respective 'source' code value with delimiter '-' (changed from '~') :
+								param="wtExtndSource";
+								dcsSrcImpExt(param);
 							}
 							//==============       END:  PROCESS POSSIBLE 'wtExtndSource'  ===============================
 						}
@@ -795,7 +767,30 @@
 			} //endif
 		}// end function dcsSrcImp
 		// ===============   end function dcsSrcImp =========================================
-		
+
+
+		// ================================================================================
+		// 02/21/2012 per jira ECAP-1446:
+		function dcsSrcImpExt(paramExt) {
+
+			var paramExtlen=paramExt.length;
+			var posExt=anch.search(paramExt);		// where the parm's NAME begins
+			
+			// check to see if we need a placeholder extra tilde symbol or not. That is,if the uid is NOT there but the extended source is we'll use the placeholder:  
+			if (uIdSrch==-1 && anch.search('wtExtndSource')!=-1 ){ 
+				//should 'wtSourceUID' NOT be found and, when looking ahead, we see a wtExtndSource then use a placeholder tilde (i.e. '~') for it:
+				DCSext.wtSrcImp = DCSext.wtSrcImp + '~';
+				uIdSrch=''; // initialize for next time url cycle 
+			}
+
+			if (posExt != -1){  //the looked for parm is found:
+				startExt=posExt+paramExtlen+1;      // where the parm's VALUE begins
+				endExt=anch.indexOf("&",startExt); 	// where the parm's VALUE ends
+				valueExt=anch.substring(startExt,(endExt!=-1)?endExt:anch.length);
+				DCSext.wtSrcImp = DCSext.wtSrcImp?(DCSext.wtSrcImp +"~"+valueExt):valueExt;
+			}
+		} 
+		// ===============   end function dcsSrcImpExt =========================================
 		
 
 // ms 08/2007 Check for the bypass indicator. If it comes in, due to calling the special duplicate version of

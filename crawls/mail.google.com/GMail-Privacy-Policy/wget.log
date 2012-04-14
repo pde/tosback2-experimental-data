@@ -1,193 +1,116 @@
---2011-12-01 14:40:32--  http://mail.google.com/mail/help/intl/en/privacy.html
-Resolving mail.google.com (mail.google.com)... 74.125.39.19, 74.125.39.83, 74.125.39.17, ...
-Connecting to mail.google.com (mail.google.com)|74.125.39.19|:80... connected.
+--2012-04-14 12:18:54--  http://mail.google.com/mail/help/intl/en/privacy.html
+Resolving mail.google.com... 74.125.224.86, 74.125.224.85
+Connecting to mail.google.com|74.125.224.86|:80... connected.
 HTTP request sent, awaiting response... 301 Moved Permanently
-Location: http://www.google.com/intl/en/privacy/privacy-policy.html [following]
---2011-12-01 14:40:32--  http://www.google.com/intl/en/privacy/privacy-policy.html
-Resolving www.google.com (www.google.com)... 74.125.39.104, 74.125.39.105, 74.125.39.106, ...
-Connecting to www.google.com (www.google.com)|74.125.39.104|:80... connected.
+Location: http://www.google.com/intl/en/policies/privacy/ [following]
+--2012-04-14 12:18:54--  http://www.google.com/intl/en/policies/privacy/
+Resolving www.google.com... 173.194.79.99, 173.194.79.103, 173.194.79.104, ...
+Connecting to www.google.com|173.194.79.99|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/html]
 Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/mail.google.com/mail/help/intl/en/privacy.html'
 
-     0K .......... ...                                         76.6K=0.2s
+     0K .......... ..........                                   444K=0.05s
 
-2011-12-01 14:40:33 (76.6 KB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/mail.google.com/mail/help/intl/en/privacy.html' saved [13740]
+2012-04-14 12:18:54 (444 KB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/mail.google.com/mail/help/intl/en/privacy.html' saved [21477]
 
---2011-12-01 14:40:33--  http://www.google.com/intl/en/privacy/css/default.css
-Reusing existing connection to www.google.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: unspecified [text/css]
-Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/intl/en/privacy/css/default.css'
-
-     0K ...                                                     132M=0s
-
-2011-12-01 14:40:33 (132 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/intl/en/privacy/css/default.css' saved [3492]
-
---2011-12-01 14:40:33--  http://www.google.com/js/gweb/analytics/autotrack.js
+--2012-04-14 12:18:54--  http://www.google.com/js/gweb/analytics/autotrack.js
 Reusing existing connection to www.google.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/javascript]
 Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/js/gweb/analytics/autotrack.js'
 
-     0K ...                                                     167M=0s
+     0K ...                                                    53.7M=0s
 
-2011-12-01 14:40:33 (167 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/js/gweb/analytics/autotrack.js' saved [3719]
+2012-04-14 12:18:55 (53.7 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/js/gweb/analytics/autotrack.js' saved [4072]
 
---2011-12-01 14:40:33--  http://www.google.com/images/logos/google_logo_41.png
+--2012-04-14 12:18:55--  http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin
+Resolving fonts.googleapis.com... 173.194.79.95
+Connecting to fonts.googleapis.com|173.194.79.95|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/css]
+Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin.css'
+
+     0K .                                                       103M=0s
+
+2012-04-14 12:18:55 (103 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin.css' saved [1108]
+
+--2012-04-14 12:18:55--  http://www.google.com/policies/css/default.css
+Connecting to www.google.com|173.194.79.99|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/css]
+Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/policies/css/default.css'
+
+     0K ..                                                      204M=0s
+
+2012-04-14 12:18:55 (204 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/policies/css/default.css' saved [2189]
+
+--2012-04-14 12:18:55--  http://www.google.com/images/logos/google_logo_41.png
 Reusing existing connection to www.google.com:80.
 HTTP request sent, awaiting response... 200 OK
 Length: 6321 (6.2K) [image/png]
 Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/logos/google_logo_41.png'
 
-     0K ......                                                100% 9.42M=0.001s
+     0K ......                                                100%  603M=0s
 
-2011-12-01 14:40:33 (9.42 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/logos/google_logo_41.png' saved [6321/6321]
+2012-04-14 12:18:55 (603 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/logos/google_logo_41.png' saved [6321/6321]
 
---2011-12-01 14:40:33--  http://www.google.com/css/go-x.css
-Reusing existing connection to www.google.com:80.
+--2012-04-14 12:18:55--  http://themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf
+Resolving themes.googleusercontent.com... 74.125.224.106, 74.125.224.107, 74.125.224.108
+Connecting to themes.googleusercontent.com|74.125.224.106|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [font/ttf]
+Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf'
+
+     0K .......... .......... .......... ......                5.22M=0.007s
+
+2012-04-14 12:18:55 (5.22 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/themes.googleusercontent.com/static/fonts/opensans/v6/DXI1ORHCpsQm3Vp6mXoaTYnF5uFdDttMLvmWuJdhhgs.ttf' saved [37816]
+
+--2012-04-14 12:18:55--  http://themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf
+Reusing existing connection to themes.googleusercontent.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [font/ttf]
+Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf'
+
+     0K .......... .......... .......... ......                8.25M=0.004s
+
+2012-04-14 12:18:55 (8.25 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/themes.googleusercontent.com/static/fonts/opensans/v6/MTP_ySUJH_bn48VBG8sNSonF5uFdDttMLvmWuJdhhgs.ttf' saved [37568]
+
+--2012-04-14 12:18:55--  http://themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf
+Reusing existing connection to themes.googleusercontent.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [font/ttf]
+Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf'
+
+     0K .......... .......... .......... .......               10.1M=0.004s
+
+2012-04-14 12:18:55 (10.1 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/themes.googleusercontent.com/static/fonts/opensans/v6/k3k702ZOKiLJc3WVjuplzInF5uFdDttMLvmWuJdhhgs.ttf' saved [38108]
+
+--2012-04-14 12:18:55--  http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf
+Reusing existing connection to themes.googleusercontent.com:80.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [font/ttf]
+Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf'
+
+     0K .......... .......... .......... .....                 10.9M=0.003s
+
+2012-04-14 12:18:55 (10.9 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3aCWcynf_cDxXwCLxiixG1c.ttf' saved [36492]
+
+--2012-04-14 12:18:55--  http://www.google.com/css/maia.css
+Connecting to www.google.com|173.194.79.99|:80... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [text/css]
-Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/css/go-x.css'
+Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/css/maia.css'
 
-     0K ......                                                 4.32M=0.001s
+     0K .......... .......... .......... ........               797K=0.05s
 
-2011-12-01 14:40:33 (4.32 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/css/go-x.css' saved [6393]
+2012-04-14 12:18:55 (797 KB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/css/maia.css' saved [39496]
 
---2011-12-01 14:40:33--  http://www.google.com/images/icons/feature/assorted_ads-y32.png
-Reusing existing connection to www.google.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 551 [image/png]
-Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/assorted_ads-y32.png'
-
-     0K                                                       100% 55.0M=0s
-
-2011-12-01 14:40:33 (55.0 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/assorted_ads-y32.png' saved [551/551]
-
---2011-12-01 14:40:33--  http://www.google.com/images/icons/product/analytics-32.png
-Reusing existing connection to www.google.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 779 [image/png]
-Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/product/analytics-32.png'
-
-     0K                                                       100% 67.2M=0s
-
-2011-12-01 14:40:34 (67.2 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/product/analytics-32.png' saved [779/779]
-
---2011-12-01 14:40:34--  http://www.google.com/images/icons/feature/chat-b32.png
-Reusing existing connection to www.google.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 557 [image/png]
-Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/chat-b32.png'
-
-     0K                                                       100% 56.7M=0s
-
-2011-12-01 14:40:34 (56.7 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/chat-b32.png' saved [557/557]
-
---2011-12-01 14:40:34--  http://www.google.com/images/icons/product/chrome-32.png
-Reusing existing connection to www.google.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 1310 (1.3K) [image/png]
-Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/product/chrome-32.png'
-
-     0K .                                                     100%  100M=0s
-
-2011-12-01 14:40:34 (100 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/product/chrome-32.png' saved [1310/1310]
-
---2011-12-01 14:40:34--  http://www.google.com/images/icons/feature/controlpanel-b32.png
-Reusing existing connection to www.google.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 845 [image/png]
-Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/controlpanel-b32.png'
-
-     0K                                                       100% 71.7M=0s
-
-2011-12-01 14:40:34 (71.7 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/controlpanel-b32.png' saved [845/845]
-
---2011-12-01 14:40:34--  http://www.google.com/intl/en/press/images/dataliberation-35.gif
-Reusing existing connection to www.google.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 1574 (1.5K) [image/gif]
-Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/intl/en/press/images/dataliberation-35.gif'
-
-     0K .                                                     100% 40.4M=0s
-
-2011-12-01 14:40:34 (40.4 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/intl/en/press/images/dataliberation-35.gif' saved [1574/1574]
-
---2011-12-01 14:40:34--  http://www.google.com/images/icons/feature/padlock-g32.png
-Reusing existing connection to www.google.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 862 [image/png]
-Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/padlock-g32.png'
-
-     0K                                                       100% 74.4M=0s
-
-2011-12-01 14:40:34 (74.4 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/padlock-g32.png' saved [862/862]
-
---2011-12-01 14:40:34--  http://www.google.com/images/icons/feature/filing_cabinet_search-g32.png
-Reusing existing connection to www.google.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 1914 (1.9K) [image/png]
-Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/filing_cabinet_search-g32.png'
-
-     0K .                                                     100% 54.1M=0s
-
-2011-12-01 14:40:35 (54.1 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/filing_cabinet_search-g32.png' saved [1914/1914]
-
---2011-12-01 14:40:35--  http://www.google.com/images/icons/feature/map_with_pin-g32.png
-Reusing existing connection to www.google.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 873 [image/png]
-Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/map_with_pin-g32.png'
-
-     0K                                                       100% 91.1M=0s
-
-2011-12-01 14:40:35 (91.1 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/map_with_pin-g32.png' saved [873/873]
-
---2011-12-01 14:40:35--  http://www.google.com/images/icons/feature/checklist_pencil-b32.png
-Reusing existing connection to www.google.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 710 [image/png]
-Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/checklist_pencil-b32.png'
-
-     0K                                                       100% 72.5M=0s
-
-2011-12-01 14:40:35 (72.5 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/checklist_pencil-b32.png' saved [710/710]
-
---2011-12-01 14:40:35--  http://www.google.com/images/icons/feature/personalization-y32.png
-Reusing existing connection to www.google.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 1762 (1.7K) [image/png]
-Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/personalization-y32.png'
-
-     0K .                                                     100% 43.4M=0s
-
-2011-12-01 14:40:35 (43.4 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/personalization-y32.png' saved [1762/1762]
-
---2011-12-01 14:40:35--  http://www.google.com/images/icons/product/maps-32.gif
-Reusing existing connection to www.google.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 1140 (1.1K) [image/gif]
-Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/product/maps-32.gif'
-
-     0K .                                                     100% 86.8M=0s
-
-2011-12-01 14:40:35 (86.8 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/product/maps-32.gif' saved [1140/1140]
-
---2011-12-01 14:40:35--  http://www.google.com/images/icons/feature/clapper-b32.png
-Reusing existing connection to www.google.com:80.
-HTTP request sent, awaiting response... 200 OK
-Length: 572 [image/png]
-Saving to: `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/clapper-b32.png'
-
-     0K                                                       100% 56.8M=0s
-
-2011-12-01 14:40:36 (56.8 MB/s) - `code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/images/icons/feature/clapper-b32.png' saved [572/572]
-
-FINISHED --2011-12-01 14:40:36--
-Total wall clock time: 3.9s
-Downloaded: 18 files, 46K in 0.2s (259 KB/s)
-Converting code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/mail.google.com/mail/help/intl/en/privacy.html... 3-24
-Converting code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/css/go-x.css... 0-8
-Converting code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/intl/en/privacy/css/default.css... 14-0
-Converted 3 files in 0.003 seconds.
+FINISHED --2012-04-14 12:18:55--
+Total wall clock time: 0.5s
+Downloaded: 10 files, 219K in 0.1s (1.88 MB/s)
+Converting code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/mail.google.com/mail/help/intl/en/privacy.html... 4-28
+Converting code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin.css... 4-0
+Converting code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/css/maia.css... nothing to do.
+Converting code/../crawls/mail.google.com/GMail-Privacy-Policy/raw/www.google.com/policies/css/default.css... 1-0
+Converted 4 files in 0.002 seconds.

@@ -85,7 +85,7 @@ jQuery.extend(jQuery.easing, {
  * $LastChangedDate: 2007-07-21 19:45:56 -0400 (Sat, 21 Jul 2007) - Rev: 2447 - Version 2.1.1 */
 (function($){$.fn.bgIframe=$.fn.bgiframe=function(s){if($.browser.msie&&/6.0/.test(navigator.userAgent)){s=$.extend({top:'auto',left:'auto',width:'auto',height:'auto',opacity:true,src:'javascript:false;'},s||{});var prop=function(n){return n&&n.constructor==Number?n+'px':n;},html='<iframe class="bgiframe"frameborder="0"tabindex="-1"src="'+s.src+'"'+'style="display:block;position:absolute;z-index:-1;'+(s.opacity!==false?'filter:Alpha(Opacity=\'0\');':'')+'top:'+(s.top=='auto'?'expression(((parseInt(this.parentNode.currentStyle.borderTopWidth)||0)*-1)+\'px\')':prop(s.top))+';'+'left:'+(s.left=='auto'?'expression(((parseInt(this.parentNode.currentStyle.borderLeftWidth)||0)*-1)+\'px\')':prop(s.left))+';'+'width:'+(s.width=='auto'?'expression(this.parentNode.offsetWidth+\'px\')':prop(s.width))+';'+'height:'+(s.height=='auto'?'expression(this.parentNode.offsetHeight+\'px\')':prop(s.height))+';'+'"/>';return this.each(function(){if($('> iframe.bgiframe',this).length==0)this.insertBefore(document.createElement(html),this.firstChild);});}return this;};})(jQuery);
 
-/**
+/* 
 * hoverIntent r5 // 2007.03.27 // jQuery 1.1.2+
 * <http://cherne.net/brian/resources/jquery.hoverIntent.html>
 * @param  f  onMouseOver function || An object with configuration options
@@ -113,12 +113,10 @@ jQuery(function($){
 		window.scrollTo(0,0);		
 	}
 	
-	if(jQuery('.mod-accordion').length != 0 && !jQuery.browser.opera){
-		jQuery.getScript('/scripts/jquery.accordion.js', jQuery.fn.startAccordion, true);
-		jQuery.fn.mod_accordion();
+	if(jQuery('.mod-accordion').length != 0){
+		jQuery.getScript('/scripts/jquery.accordion.js', jQuery.fn.startAccordion, true);		
 	}
-
-	if($('.tooltips').length != 0 && !$.browser.opera){
+	if($('.tooltips').length != 0){
 		$.getScript('/scripts/jquery.poshytip.js', $.fn.tooltips, true);
 	}
 	if($('.sortable').length != 0){
@@ -136,11 +134,6 @@ jQuery(function($){
 	if($('form').length != 0){
 		$.getScript('/scripts/jquery.uniform.js', $.fn.morphForms, true);
 	}
-	/*
-	if($('input[type=text], input[type=checkbox], input[type=radio], input[type=password], textarea, select').length != 0){
-		$.getScript('/scripts/jquery.uniform.js', $.fn.morphForms, true);
-	}
-	*/
 	if($('#usmModule').length != 0){
 		$.getScript('/scripts/jquery.usm.js', function(){}, true);
 	}
@@ -155,15 +148,14 @@ jQuery(function($){
 	/* IE SPECIFIC */
 	if ($.browser.msie && $.browser.version < 9) {	
 		$('.errorMsg p:first-child').css({ 'color':'#fd0200', 'background':'url(//www.att.com/images/global/iconError46x43.png) top left no-repeat', 'padding':'14px 14px 15px 50px' });
-		//$('.errorMsg p:first-child').css({ 'color':'#fd0200', 'background':'url(//www.att.com/images/global/iconError46x43.png) top left no-repeat', 'padding':'6px 0px 13px 50px', 'margin-bottom':'0px', 'min-height':'28px' });
 		IEcorners();
 	}
 	
 });
 
 /*************************************
-Some things have to fire after 
-page has loaded due to dynamic content 
+ Some things have to fire after 
+ page has loaded due to dynamic content 
 **************************************/
 jQuery(window).load(function(){
 	if(jQuery('.autoSize').length != 0){ setAutoHeight(); }
@@ -197,8 +189,7 @@ jQuery(window).load(function(){
 	
 	/* FORM TRANSFORMATION */
 	$.fn.morphForms = function(){
-		$(".styled_forms input, .styled_forms textarea, .styled_forms select").uniform();
-		//$('input[type=text], input[type=checkbox], input[type=radio], input[type=password], textarea, select').uniform();
+		$(".styled_forms input, .styled_forms textarea, .styled_forms select").uniform();		
 	};
 
 	/* SERVICE MARK, TRADEMARK MOD */
@@ -218,7 +209,16 @@ jQuery(window).load(function(){
 
 	/* START ACCORDION */
 	$.fn.startAccordion = function(){
-		$('.mod-accordion').accordion({header: 'h4', event:'mouseover', autoHeight:false, animated:'slide'});	
+		if( $('.accContent div').html() != 0){
+			$('.mod-accordion').accordion({header: 'h4', event:'mouseover', autoHeight:false, animated:'slide'});		
+			$.fn.mod_accordion();		
+		}
+		else{
+			$(window).load(function(){
+				$('.mod-accordion').accordion({header: 'h4', event:'mouseover', autoHeight:false, animated:'slide'});	
+				$.fn.mod_accordion();
+			});
+		}			
 	};
 
 	/* MOD ACCORDION*/

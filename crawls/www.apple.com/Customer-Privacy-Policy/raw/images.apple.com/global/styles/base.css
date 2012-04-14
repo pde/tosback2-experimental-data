@@ -114,6 +114,13 @@ a.block:hover { text-decoration: none; }
 a.block:hover span,
 a.block:hover em { color: #08c; text-decoration: underline; }
 a.more, em.more, span.more { white-space: nowrap; padding-right: 10px; background: url(../elements/arrows/morearrow_08c.gif) no-repeat 100% 50%; cursor: pointer; zoom: 1; }
+a.morelarge, em.morelarge, span.morelarge { white-space:nowrap; padding-right:12px; background:url(../elements/arrows/morearrow_big_08c.gif) no-repeat 100% 50%; cursor:pointer; zoom:1; }
+a.lesslarge, em.lesslarge, span.lesslarge { white-space:nowrap; padding-left:12px; background:url(../elements/arrows/lessarrow_big_08c.gif) no-repeat 0 50%; cursor:pointer; zoom:1; }
+@media only screen {
+	a.more, em.more, span.more { background-image:url(../elements/arrows/morearrow_08c.svg); }
+	a.morelarge, em.morelarge, span.morelarge { background-image:url(../elements/arrows/morearrow_big_08c.svg); }
+	a.lesslarge, em.lesslarge, span.lesslarge { background-image:url(../elements/arrows/lessarrow_big_08c.svg); }
+}
 a.external, em.external, span.external { white-space: nowrap; padding-right: 15px; background: url(../elements/icons/external10x10.gif) no-repeat 100% 49%; cursor: pointer; zoom: 1; }
 a[rel="external"] { white-space: nowrap; padding-right: 15px; background: url(../elements/icons/external10x10.gif) no-repeat 100% 49%; cursor: pointer; zoom: 1; }
 em.more, span.more, em.external, span.external { color:#08c; font-style: normal; cursor: pointer; }
@@ -211,7 +218,7 @@ body.specs #main { font-size: 11px; line-height: 16px; }
 #globalfooter ol#breadcrumbs li.home a { margin: 0; padding: 0 10px; width: 15px; text-indent: -9999px; overflow: hidden; }
 
 /*--- Directory Nav ---*/
-#directorynav { font-size: 11px; line-height:14px; padding-top:2px; background: url(../elements/breadory/directory_bg.png) repeat-y; border-top: 1px solid #e5e5e5; float: left; width: 100%; margin-top: -4px; *position: relative; }
+#directorynav { font-size: 11px; line-height:14px; padding-top:2px; background: url(../elements/breadory/directory_bg.png) repeat-y; border-top: 1px solid #ddd; float: left; width: 100%; margin-top: -4px; *position: relative; }
 #directorynav .column { width: 120px; padding: 9px 0 2px 18px; }
 #directorynav .column.last { float: left !important; padding-right: 0; }
 #directorynav h3 { color: #666; margin: 0; font-size: 1em; line-height: 14px; font-weight: bold; padding-bottom: 4px; }
@@ -242,6 +249,12 @@ body.specs #main { font-size: 11px; line-height: 16px; }
 #breadory ol#breadcrumbs li.home { background: none; margin: 0; padding: 0; }
 #breadory ol#breadcrumbs li.home a { background: url(../elements/breadory/breadcrumb_home.png) no-repeat 1.25em 50%; margin: 0; padding: 0 0 0 1.25em; width: 30px; text-indent: -9999px; overflow: hidden; }
 #breadory ol#breadcrumbs li.home a:hover { background-image: url(../elements/breadory/breadcrumb_home_over.png); }
+
+@media only screen { 
+	#breadory ol#breadcrumbs li a { background-image:url(../elements/breadory/breadcrumb_separator.svg); }
+	#breadory ol#breadcrumbs li.home a { background-image:url(../elements/breadory/breadcrumb_home.svg); }
+	#breadory ol#breadcrumbs li.home a:hover { background-image:url(../elements/breadory/breadcrumb_home_over.svg); }
+}
 
 #breadory #directorynav { background: none; clear: both; float: none; margin-top: 0; }
 #breadory #directorynav .capbottom { height: 0; font-size: 1px; _display: none; }

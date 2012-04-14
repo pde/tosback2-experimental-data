@@ -138,7 +138,7 @@ function videoSelector()
 			popupType[index] = jQuery(this).attr("popupType");
 			if(typeof(console) != "undefined"){console.log("popupType " + popupType[index]);}
 			
-			jQuery("#thumbImage" + index).click(function(thisObject)
+			jQuery("#thumbImage" + index).add("#thumbArrow" + index).click(function(thisObject)
 			{
 				var tempXMLPath = videoSelectorXML.find("video:eq(" + index + ")").attr("gvpSrc");
 				xmlStringForGVPCall = "video_resources/xml/" + tempXMLPath;

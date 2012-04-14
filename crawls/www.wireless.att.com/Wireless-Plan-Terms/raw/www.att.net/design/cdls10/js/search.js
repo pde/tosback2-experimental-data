@@ -286,15 +286,21 @@ function handleRogueSeperator(){
 function OnSubmitForm()
 {
 	
-   var ip = d.getElementById('IPTYPE').value
-   var cobrand = d.getElementById('searchcobrand').value
-   //alert(ip);
-   //alert(cobrand);
+   var ip = d.getElementById('IPTYPE').value;
+   var cobrand = d.getElementById('searchcobrand').value;
    var srchType = d.getElementById('searchType').value;
+   var searchcobrand1 = d.getElementById('url_SearchCobrand').value;
+   var URL1 = location.href;
+   var ind = URL1.search(searchcobrand1);
+	//alert(searchcobrand1);
+   if(ind != -1)
+   {
+		document.getElementById('fs').action = cobrand;
+   }
    if(srchType == "yp" && ip.search(':') != -1)
    {
-   document.getElementById('fs').action = cobrand;
-	//alert("cobrand should change");
+		document.getElementById('fs').action = cobrand;
+		//alert("cobrand should change");
    }
    var urlChannel = d.getElementById('url_Channel').value;
     

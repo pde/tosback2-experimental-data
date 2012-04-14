@@ -1,5 +1,5 @@
 /* CSS updated 5/16/2011 by SMK to combine mediakits.css, global_corp.css, global_corp_3.css and remove global nav elements to gbl_corp_nav.css 
-updated 9/30/2011 by SMK for new Global Nav*/
+updated 12/1/2011 by SMK for new MK tab styling */
 /*** CSS Reset ***/
 html { background-color:#fff; }
 html, .ie-corner-shadow-left { background: url(http://www.att.com/images/global/background_right.jpg) right 35px no-repeat !important; }
@@ -801,7 +801,7 @@ margin-right:10px; position:relative; margin-bottom:10px; }
 /* sidebar */
 #side-content .divider, #content .mod_f .divider, #content #gallery .divider, #main-content .divider { border-top:1px solid #ccc !important; padding-top:20px !important; margin-top:30px !important; }
 #wrapper #gallery, #wrapper .mod_f, #wrapper mod_d3, #wrapper .col_230 .mod_d2, #wrapper .first_710 .first_710 .mod_d2, .mod_a { background-image: none !important; border-width: 0 !important; padding-top: 0; }
-#wrapper #gallery { /*padding:0; margin:0; */border:0 !important; background:transparent !important; }
+#wrapper #gallery { /*padding:0; margin:0; */ border:0 !important; background:transparent !important; }
 #pr1916 #side-content #gallery { margin-left: 10px; }
 #gallery h5 { padding-top:8px; }
 #gallery h5.first { border-top:0; }
@@ -920,7 +920,7 @@ Landing Page 6080
 #lp6080 #headlines, #lp6080 #investor_relations { border:0; }
 #lp6080 #headlines { padding-top:10px; }
 #lp6080 #headlines ul.news-headlines { margin-right:60px; }
-#content #lp6080 ul, #content #lp6080 li { background:none; list-style:none outside; padding-left:0; }
+#content #lp6080 ul, #content #lp6080 li { background:none; list-style:none outside !important; padding-left:0; }
 #content #lp6080 ul { padding-bottom:0; }
 #lp6080 #media { padding-bottom:16px; }
 #lp6080 #ie #media { padding-bottom:0; }
@@ -991,7 +991,7 @@ body > div#btmContainer { margin: 0 auto; width: 985px; }
 .archive-newsrelease #content p:first-child b, .archive-newsrelease #content h1 { color:#FF7200; margin-bottom:8px; line-height:1.3em !important; font-weight:bold; font-size:16px; }
 #ie .archive-newsrelease #content p b { font-weight:normal; }
 /*NR-specific CSS*/
-#newsreleasediv, #newsreleasediv p, #newsreleasediv li, #newsreleasediv div {/*font-family:Arial, Helvetica, sans-serif;*/color:#333;}
+#newsreleasediv, #newsreleasediv p, #newsreleasediv li, #newsreleasediv div {/*font-family:Arial, Helvetica, sans-serif;*/ color:#333; }
 #newsreleasediv #news-headlines { margin:0 0 10px; }
 #newsreleasediv #news-article { margin:20px 0; font-size:12px; }
 #newsreleasediv #news-article ul { margin-left: 20px; }
@@ -1011,10 +1011,24 @@ body > div#btmContainer { margin: 0 auto; width: 985px; }
 /* Updated for tinymce background Issue */
 #DCREditor { white-space:nowrap; clear:both; }
 #tinymce { background-image: none !important; }
-
-
-/* news article teamsite updates... */
-div#page-edit-html ul#universalNav {background-image:none;}
+/* media kit tabs */
+#content #mk-tabs { background: url("../../../about_us/images/mediakit/holiday/bkg_box_top.png") no-repeat scroll right 44px #fff; float: left; height: 46px; margin-left: 1px; width: 602px; }
+#content #mk-tabs li { background: url("../../../about_us/images/mediakit/holiday/bkg_tab_right.png") no-repeat scroll right top #fff !important; cursor: pointer; display: inline; float: left; font-size: 1.3em; height: 46px; margin: 0 !important; overflow: hidden; padding: 0 15px 0 0 !important; text-align: center; width: auto; }
+#content #mk-tabs li strong { display:block; margin:0; background:url(../../../about_us/images/mediakit/holiday/bkg_tab_left.png) no-repeat left top !important; padding:14px 0 14px 11px; margin:0; font-weight:normal !important; color:#333; }
+#content #mk-tabs li.active { background-position:right -46px !important; }
+#content #mk-tabs li.active strong { background-position:left -46px !important; }
+#content #mktab-content { border-color: #E5E5E5 !important; -moz-border-radius-topleft: 0px; -moz-border-radius-topright: 0px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px; -webkit-border-radius: 0px 0px 5px 5px; border-radius: 0px 0px 5px 5px; border-style: none solid solid; border-width: 0 1px 1px; float: left; margin-left: 1px; min-height: 300px; width: 600px; }
+/*#content #mktab-content li { padding: 0 0 0 10px !important; color: #005b95; margin: 0 0 3px 0; cursor: pointer; }*/
+#content #mktab-content .details { float: left; width: 720px; display: none; }
+#content #mktab-content .details li { padding: 0 !important; }
+#content #mktab-content .active { background: url(../../../about_us/images/wireless_news/arrow_active_md.jpg) left center no-repeat !important; }
+#content .mktab-box { padding: 30px 0 50px 20px; float: left; display: none; margin-right: 25px; }
+#content .mktab-box h3 { color: #ff7200; font-size: 1.9em; font-weight: bold; font-family: Arial, Helvetica, sans-serif; line-height: 20px; }
+#content #mktab-content .details img { float: left; }
+#content .mktab-box h3 { font-size:18px; margin:0 0 10px; }
+#content .mktab-box p, #content .mktab-box li { font-size:12px; }
+#content .mktab-box .spaced li { margin-bottom:8px !important; }
+#content .mktab-box h3, .mktab-box h3 a { color:#ff7200; }
  @media print {
 .scroll { overflow:visible !Important; }
 *, #page, #wrapper { overflow:visible !important; }

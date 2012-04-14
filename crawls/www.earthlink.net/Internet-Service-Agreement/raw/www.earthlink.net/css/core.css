@@ -179,7 +179,7 @@ html[xmlns] .clearfix {	display: block; }
 /* column layout */
 .twocolumn_col2,
 .threecolumn_col3 {
-	position: relative;
+
 	float: right;
 	width: 238px;
 	
@@ -203,8 +203,9 @@ html[xmlns] .clearfix {	display: block; }
 	width: 151px;
 }
 .twocolumn_col1_subcol2 {
-	margin-left: 173px;
+	margin-left: 160px;
 	width: 493px;
+
 }
 
 .twocolumn_col1_subcol1 .twocolumn_col1_subcol1_header,
@@ -219,8 +220,10 @@ html[xmlns] .clearfix {	display: block; }
 	float: left;
 	width: 151px;
 }
-  /* main content */
-.twocol_c2 { margin-left: 173px; }
+  /* main content previous value was 173px */
+.twocol_c2 { 
+	margin-left: 160px;
+}
 
 /* end column layout */
 

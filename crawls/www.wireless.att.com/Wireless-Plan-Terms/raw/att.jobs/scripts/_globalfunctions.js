@@ -4,6 +4,14 @@ $(document).ready(function() {
     //Settign focus on the first enabled text box
     //$("input[type='text']:enabled:first").focus();
 
+    var isiPad = navigator.userAgent.match(/iPad/i) != null;
+
+    if (isiPad) {
+
+
+    }
+
+
 
     if ($.browser.msie && $.browser.version == "6.0") {
         $('#default #article').append('<a href="http://www.browserupgrade.info/ie6/" target="_blank"><img src="/images/old-vers-browser-msg.gif" width="528" height="38" alt="You do not have access to the full version of our site due to using an older browser. Please upgrade your browser by clicking here." /></a>');
@@ -51,10 +59,10 @@ $(document).ready(function() {
 
     /*Home page */
     $('#btn-slide, #btn-slideclose').click(function(e) {
-    $('#slider').css("z-index", "999999");
-        if($("#sd-facebook").html().length==0)
+        $('#slider').css("z-index", "999999");
+        if ($("#sd-facebook").html().length == 0)
             $("#sd-facebook").html('<iframe src="http://www.facebook.com/plugins/likebox.php?id=122379087373&amp;width=421&amp;connections=50&amp;stream=true&amp;header=false&amp;height=480" title="from-facebook" scrolling="no" frameborder="0" id="frm-facebook" ></iframe>');
-        
+
         var sRight = -500;
         if ($("#slider").css("right") == "-500px")
             sRight = 0;
@@ -142,6 +150,17 @@ $(document).ready(function() {
         'type': 'iframe'
     });
 
+    $(".modal-iframe-skill").fancybox({
+        'width': 740,
+        'height': 510,
+        'overlayOpacity': 0.7,
+        'overlayColor': '#000',
+        'autoScale': false,
+        'transitionIn': 'none',
+        'transitionOut': 'none',
+        'type': 'iframe'
+    });
+
 
 
     $(".modal-iframe-admin-small").fancybox({
@@ -167,7 +186,12 @@ $(document).ready(function() {
     });
 
     //Accordian Setup
-    $(".accordion").accordion({ autoHeight: false, active: 0 });
+    if ($('#military').length > 0) {
+
+        $(".accordion").accordion({ autoHeight: false, active: 50 });
+    }
+    else
+        $(".accordion").accordion({ autoHeight: false, active: 0 });
 
     //SearchJobs
     $('#ctl00_ctl07_btnSearchJobGo').click(function(e) {
@@ -302,7 +326,80 @@ $(document).ready(function() {
         $("#" + selID).show();
     });
 
+    //Special treatment for IPAD
+    if ($("body#videos").length) {
+
+
+        if (isiPad) {
+            $('.ddl-select-category').click(function() {
+                $(this).find("ul").css("left", 0);
+            });
+
+            $('.ddl-select-category li a').click(function() {
+
+                $(this).parent().parent().css("left", -999);
+            });
+        }
+    }
+
+
+
+    var timeoutPlayVideo = null;
+    //Video
+    $("#videos .level1 a").hover(function() {
+
+        $(this).css({ 'z-index': '11' }); /*Add a higher z-index value so this image stays on top*/
+        //$(this).animate({ opacity: 1.0 }, 300);
+
+        var CrrentTitle = $(this).find("img").attr("title");
+        //alert(CrrentTitle);
+
+        $(".video-tooltip").empty().append(CrrentTitle);
+
+        //Get current position
+        var posX = $(this).position().left;
+        var posY = $(this).position().top;
+        $(".video-tooltip").css("left", posX);
+        $(".video-tooltip").css("top", posY - 48);
+        $(".video-tooltip").fadeIn(200);
+
+        ActiveVideoThump = $(this).attr("id");
+        //alert(isiPad);
+
+        
+
+        if (isiPad) {
+
+            clearTimeout(timeoutPlayVideo);
+            timeoutPlayVideo = setTimeout("playVideo('" + $(this).attr("id") + "')", 3000);
+        }
+
+
+        $(this).addClass("hover").stop() /* Add class of "hover", then stop animation queue buildup*/
+		.animate({
+		    marginTop: '-15px', /* The next 4 lines will vertically align this image */
+		    marginLeft: '-15px',
+		    width: '144px', /* Set new width */
+		    height: '100px', /* Set new height */
+		    padding: '0px'
+		}, 200); /* this value of "200" is the speed of how fast/slow this hover animates */
+
+    }, function() {
+        $(this).css({ 'z-index': '10' }); /* Set z-index back to 0 */
+        $(this).removeClass("hover").stop()  /* Remove the "hover" class , then stop animation queue buildup*/
+		.animate({
+		    marginTop: '0', /* Set alignment back to default */
+		    marginLeft: '0',
+		    width: '124px', /* Set width back to default */
+		    height: '80px', /* Set height back to default */
+		    padding: '0px'
+		}, 400);
+        $(".video-tooltip").hide();
+    });
+
 });
+
+var ActiveVideoThump = "";
 
 
 
@@ -456,3 +553,17 @@ $.extend({
     }
 });
 
+
+// Military Read Maore
+function switchMenu(obj,obj2) {
+	var el = document.getElementById(obj);
+	var rm = document.getElementById(obj2);
+	if ( el.style.display != "none" ) {
+		el.style.display = 'none';
+		rm.style.display = '';
+	}
+	else {
+		el.style.display = '';
+		rm.style.display = 'none';
+	}
+}

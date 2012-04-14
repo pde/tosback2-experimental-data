@@ -1,14 +1,14 @@
 jQuery(document).ready(function(){
 	if (jQuery(document.body).data("initModals") != true) {
 		jQuery(document.body).data("initModals", true);
-		jQuery("a.openModal").live('click', function(){
+		jQuery("a.openModal").click(function(e) {
 			var classes = this.className.split(" ");/* second class should be modal type */
 			if (classes.length > 1 && modalProfiles[classes[1]]) {
 				var modal =  modalProfiles[classes[1]];
 				modal.preConfig({element:this, config:modal});
 				jQuery.colorbox(modal.cbConfig);
-				return false;
 			}
+			e.preventDefault();e.stopPropagation();
 		});
 	}
 });
@@ -60,5 +60,6 @@ var modalProfiles = {/* cbConfig : colorbox configuration | preConfig : function
 		intentModal : {cbConfig : {iframe:false, scrolling:false, width:505, onComplete:modalUtils.init, href:''}, preConfig:modalUtils.config},
 		modal705x400 : {cbConfig : {iframe:false, scrolling:false, width:705, onComplete:modalUtils.init, height:400, href:''}, preConfig:modalUtils.config},
 		channelModal : {cbConfig : {iframe:false, scrolling:false, width:1010, onComplete:modalUtils.init, href:''}, preConfig:modalUtils.config},
+		offerDetailsModal : {cbConfig : {iframe:false, scrolling:false, onComplete:modalUtils.init, href:''}, preConfig:modalUtils.config},
 		localModal : {cbConfig : {iframe:true, scrolling:false, width:505, height:315, onComplete:modalUtils.initIframe, href:'/shop/localization/index.jsp'}, preConfig:modalUtils.localModalInit}
 };
