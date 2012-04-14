@@ -12,6 +12,17 @@ from lxml import etree
 # TODO(dta) use multiprocessing module
 # at some point in the future
 
+# parse command line args
+xml_test = False
+dry_run = False
+keep_failed = False
+force_data_branch = False
+if "--xml_test" in sys.argv: xml_test = True
+if "--dry_run" in sys.argv: dry_run = True
+if "--keep_failed" in sys.argv: keep_failed = True
+if "--force_data_branch" in sys.argv: force_data_branch = True
+
+FILELENGTH_MAX = 127
 GLOBAL_UAS = ["Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.1.3) Gecko/20090824 Firefox/3.5.3 (.NET CLR 3.5.30729)"]
 CODE_PATH = os.path.dirname(sys.argv[0])
 
@@ -30,8 +41,25 @@ class TOSCrawler(object):
         xmlData = etree.parse(os.path.join(CODE_PATH, "..", "rules", file_name))
         data = {}
         for node in xmlData.iter():
-            data[str(node.tag)] = node.attrib['name']
+        	data[str(node.tag)] = node.attrib['name']
         return data
+
+    def read2(self, file_name):
+	"""Parses XML file."""
+	# EDIT CJR for multiple docnames within a sitename
+	xmlData = etree.parse(os.path.join(CODE_PATH, "..", "rules", file_name))
+	dataLst = []
+	for node in xmlData.iter("sitename"):
+		sname = node.attrib['name']
+		break
+	for doc in xmlData.iter("docname"):
+		data = {}
+		data['docname'] = doc.attrib['name']
+		data['sitename'] = sname
+		for child in doc.iter():
+			data[str(child.tag)] = child.attrib['name']
+		dataLst.append(data)
+	return dataLst
 
     def process(self, data):
         # 0. Determine parameters for this crawl
@@ -86,6 +114,18 @@ class TOSCrawler(object):
         subprocess.call(args)
         return reltarget
 
+def max_filename_length(root_dir):
+	my_max = (0,"")
+	names = os.listdir(root_dir)
+	for name in names:
+		full_name = os.path.join(root_dir,name)
+		if len(name) > my_max[0]:
+			my_max = (len(name),name)
+		if os.path.isdir(full_name):
+			m = max_filename_length(full_name)
+			if m[0] > my_max[0]:
+				my_max = m
+	return my_max
 
 def main():
     # 1. make a git branch to work in
@@ -94,6 +134,9 @@ def main():
     gitrepo = git.Repo(repopath)
     committed = False
     original_branch = gitrepo.active_branch
+    if force_data_branch and str(original_branch) != "data":
+        print "In '%s' branch, but must be in 'data' branch. Aborting!" % original_branch
+        return
     try:
         gitrepo.create_head(branchname)
         gitrepo.branches[branchname].checkout()
@@ -105,15 +148,29 @@ def main():
         crawl_paths = []
         parsed_xml_files = []
         for fi in os.listdir(os.path.join(CODE_PATH,"..","rules")):
-            if fi[-4:]!=".xml": continue
-            print "Reading in XML file %s" % fi
-            parsed_xml_files.append(t.read(fi))
+		if fi[-4:]!=".xml": continue
+		print "Reading in XML file %s" % fi
+		for i in t.read2(fi):
+		    parsed_xml_files.append(i)
+
+        if xml_test:
+            print "XML test only. Exiting"
+            return
 
         for data in parsed_xml_files:
             path = t.process(data)
             crawl_paths.append(path)
 
         # 4. commit results
+	crawls_dir = os.path.join(CODE_PATH,"..","crawls")
+        (maxlen, maxfname) = max_filename_length(crawls_dir)
+	if maxlen > FILELENGTH_MAX:
+		print "The longest filename you crawled is too long. Use our version of wget."
+		return
+
+        if dry_run:
+            print "Dry run. Not commiting results"
+            return
 
         print "Committing results..."
         gitrepo.index.add(crawl_paths)
@@ -125,12 +182,18 @@ def main():
 
     finally:
         original_branch.checkout()
-        if not committed and ("--keep-failed" not in sys.argv):
+
+        if not committed and not keep_failed:
             # We didn't finish the crawl; unless the user asked for it we
-            # won't keep the result
+            # won't keep the result. PS -- who on earth designed this API
             gitrepo.branches[branchname].delete(gitrepo,branchname)
             if branchname in gitrepo.branches:
                 print "Failed to delete crawl branch %s for mysterious reasons" % branchname
-            # PS -- who on earth designed this API
+            # rm rf
+            crawls_dir = os.path.join(CODE_PATH,"..","crawls")
+            shutil.rmtree(crawls_dir)
+            if not os.path.isdir(crawls_dir):
+                os.makedirs(crawls_dir)
+            # todo think about whether "git reset --hard" makes sense
 
 main()
